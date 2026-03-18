@@ -213,7 +213,7 @@ The `@JsFun` bodies implement the same logic as the `jsMain` version but inline 
 
 ### JVM actuals
 
-Add two no-ops to `Platform.jvm.kt` alongside the existing 4:
+Add two no-ops to `Platform.jvm.kt` alongside the existing 5:
 
 ### `webMain/main.kt` script injection
 
