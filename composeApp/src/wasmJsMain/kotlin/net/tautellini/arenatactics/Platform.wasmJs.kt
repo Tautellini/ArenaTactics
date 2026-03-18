@@ -1,8 +1,8 @@
 package net.tautellini.arenatactics
 
-import kotlin.js.JsFun
 import kotlinx.browser.window
 
+@OptIn(ExperimentalWasmJsInterop::class)
 @JsFun("() => window.__appBase || ''")
 private external fun getAppBase(): String
 
