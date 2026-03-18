@@ -48,9 +48,10 @@ fun CompositionSelectionScreen(
             is CompositionSelectionState.Success -> {
                 LazyColumn(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                     items(s.compositions) { rich ->
-                        CompositionCard(rich) {
-                            navigator.push(Screen.GearView(gameModeId, rich.composition.id))
-                        }
+                        CompositionCard(
+                            richComposition = rich,
+                            onClick = { navigator.push(Screen.GearView(gameModeId, rich.composition.id)) }
+                        )
                     }
                 }
             }
