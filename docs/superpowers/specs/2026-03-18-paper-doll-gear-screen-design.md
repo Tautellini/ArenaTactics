@@ -68,12 +68,16 @@ Icon URLs:
 
 Replace `GearScreen.kt` content. New composables (all in `GearScreen.kt`):
 
+The existing `GearScreen.kt` also contains `CompositionHubScreen` (the tabbed wrapper used by `App.kt`) — **this must be preserved**. Only the `GearTabContent` private composable is being replaced.
+
 | Composable | Responsibility |
 |---|---|
-| `GearTabContent(viewModel)` | Phase tab switcher + `FlowRow` of two `PaperDoll`s |
+| `GearTabContent(viewModel)` | **Replaces** the existing private `GearTabContent`. Phase tab switcher + `FlowRow` of two `PaperDoll`s |
 | `PaperDoll(classId, className, phases, selectedPhase)` | Single class paper doll with slot grid |
 | `GearSlot(item)` | One equipment slot — icon, name, hover/click behavior |
 | `EmptyGearSlot(slotName)` | Placeholder for slots with no item in this phase |
+
+`CompositionHubScreen`, `CompositionTab`, and `GearScreen.kt`'s imports for matchup tab delegation are all **unchanged**.
 
 ### Phase tab switcher
 
@@ -163,30 +167,57 @@ AsyncImage(
 
 ### New `expect/actual` declarations
 
-**`commonMain/Platform.kt`** — two new functions added:
+**`commonMain/Platform.kt`** — add these two declarations alongside the 5 existing `expect` functions (do NOT replace them):
 ```kotlin
 expect fun showWowheadTooltip(itemId: Int, cursorX: Float, cursorY: Float)
 expect fun hideWowheadTooltip()
 ```
 
-### Web actuals (`jsMain` + `wasmJsMain`)
+### `jsMain` actuals
+
+`Platform.js.kt` already has 5 `actual` functions. Add two more alongside them:
 
 Lazy-create one shared `<a id="wh-tt">` element appended to `document.body` on first call.
 
 **`showWowheadTooltip`:**
-1. Set `href="https://www.wowhead.com/tbc/item={itemId}"`, `data-wowhead="item={itemId}&domain=tbc"`
+1. Set `href="https://www.wowhead.com/tbc/item={itemId}"`, `data-wowhead="item={itemId}&domain=tbc"` via `element.setAttribute(...)`
 2. Position: `style="position:fixed; left:{x}px; top:{y}px; width:1px; height:1px; opacity:0; pointer-events:none;"`
-3. Call `WH?.refreshLinks()` to process the element
-4. Dispatch synthetic `mouseover` event on the element
+3. Call `js("if (window.WH) WH.refreshLinks()")` — pure string literal, no variable reference, safe for jsMain
+4. Dispatch synthetic `mouseover` event on the element via `element.dispatchEvent(...)`
 
 **`hideWowheadTooltip`:**
 1. Dispatch `mouseout` on the element
 
-**JVM actuals:** both no-ops.
+### `wasmJsMain` actuals
+
+`Platform.wasmJs.kt` already has 5 `actual` functions. Add two more alongside them.
+
+**Important Wasm constraint:** `js()` in `wasmJsMain` only accepts string literals — no variable interpolation. All DOM operations must go through `kotlinx.browser` typed APIs or `@JsFun` helpers.
+
+```kotlin
+@OptIn(ExperimentalWasmJsInterop::class)
+@JsFun("(id, x, y) => { /* create/update <a> element, call WH.refreshLinks(), dispatch mouseover */ }")
+private external fun showWowheadTooltipJs(itemId: Int, x: Float, y: Float)
+
+@OptIn(ExperimentalWasmJsInterop::class)
+@JsFun("() => { /* dispatch mouseout on element */ }")
+private external fun hideWowheadTooltipJs()
+
+actual fun showWowheadTooltip(itemId: Int, cursorX: Float, cursorY: Float) =
+    showWowheadTooltipJs(itemId, cursorX, cursorY)
+
+actual fun hideWowheadTooltip() = hideWowheadTooltipJs()
+```
+
+The `@JsFun` bodies implement the same logic as the `jsMain` version but inline in the annotation string (where variable parameters are safe because they are JS function parameters, not Kotlin variable references in `js()`).
+
+### JVM actuals
+
+Add two no-ops to `Platform.jvm.kt` alongside the existing 4:
 
 ### `webMain/main.kt` script injection
 
-Replaces the previously removed `power.js` with the correct current Wowhead script:
+Add the following to `webMain/main.kt` before `ComposeViewport(...)`. The current file has no script injection — add from scratch:
 
 ```kotlin
 // Config — disable auto-scanning; we only want programmatic tooltip display
@@ -234,7 +265,7 @@ Modifier.pointerInput(item.wowheadId) {
 | `Platform.jvm.kt` | Add 2 no-op actuals |
 | `Platform.js.kt` | Add 2 web actuals (shared DOM element) |
 | `Platform.wasmJs.kt` | Add 2 web actuals (shared DOM element) |
-| `presentation/screens/GearScreen.kt` | Full rewrite — PaperDollScreen, PaperDoll, GearSlot |
+| `presentation/screens/GearScreen.kt` | Replace private `GearTabContent` only; preserve `CompositionHubScreen` |
 | `webMain/main.kt` | Inject whTooltips config + tooltips.js |
 
 ---
