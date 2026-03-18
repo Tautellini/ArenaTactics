@@ -1,6 +1,10 @@
 package net.tautellini.arenatactics
 
+import kotlin.js.JsFun
 import kotlinx.browser.window
+
+@JsFun("() => window.__appBase || ''")
+private external fun getAppBase(): String
 
 private var popCallback: (() -> Unit)? = null
 
@@ -13,7 +17,7 @@ actual fun openUrl(url: String) {
 }
 
 actual fun pushNavigationState(path: String) {
-    window.history.pushState(null, "", path)
+    window.history.pushState(null, "", getAppBase() + path)
 }
 
 actual fun registerPopCallback(callback: () -> Unit) {

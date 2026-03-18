@@ -9,6 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="styles.css">
+    <script>
+        // 1. Capture the app base path before any navigation changes the URL.
+        //    Dev:          window.location.pathname = '/'              → __appBase = ''
+        //    GitHub Pages: window.location.pathname = '/ArenaTactics/' → __appBase = '/ArenaTactics'
+        window.__appBase = window.location.pathname.replace(/\/$/, '');
+
+        // 2. Restore a deep-link route saved by 404.html (GitHub Pages SPA redirect).
+        (function () {
+            var route = sessionStorage.getItem('spa-route');
+            if (route) {
+                sessionStorage.removeItem('spa-route');
+                window.history.replaceState(null, '', window.__appBase + route);
+            }
+        })();
+    </script>
 </head>
 <body style="text-align: center; align-content: center">
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 50 50" role="presentation">

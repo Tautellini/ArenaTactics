@@ -13,7 +13,8 @@ actual fun openUrl(url: String) {
 }
 
 actual fun pushNavigationState(path: String) {
-    window.history.pushState(null, "", path)
+    val base = js("window.__appBase || ''") as String
+    window.history.pushState(null, "", base + path)
 }
 
 actual fun registerPopCallback(callback: () -> Unit) {
