@@ -1,5 +1,7 @@
 package net.tautellini.arenatactics
 
+import kotlinx.browser.window
+
 private var popCallback: (() -> Unit)? = null
 
 actual fun refreshWowheadTooltips() {
@@ -7,11 +9,11 @@ actual fun refreshWowheadTooltips() {
 }
 
 actual fun openUrl(url: String) {
-    js("window.open(url, '_blank')")
+    window.open(url, "_blank")
 }
 
 actual fun pushNavigationState(path: String) {
-    js("history.pushState(null, '', path)")
+    window.history.pushState(null, "", path)
 }
 
 actual fun registerPopCallback(callback: () -> Unit) {
@@ -19,4 +21,4 @@ actual fun registerPopCallback(callback: () -> Unit) {
     js("window.onpopstate = function() { net.tautellini.arenatactics.invokePopCallback() }")
 }
 
-fun invokePopCallback() { popCallback?.invoke() }
+internal fun invokePopCallback() { popCallback?.invoke() }
