@@ -25,7 +25,7 @@ class GameModeSelectionViewModel(
         viewModelScope.launch {
             _state.value = try {
                 GameModeSelectionState.Success(repository.getAll())
-            } catch (e: Exception) {
+            } catch (e: Throwable) {
                 GameModeSelectionState.Error(e.message ?: "Failed to load game modes")
             }
         }

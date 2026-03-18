@@ -33,7 +33,7 @@ class CompositionSelectionViewModel(
                 val compositions = compositionRepository.getCompositions(mode.compositionSetId)
                 val rich = CompositionGenerator.generate(classes, compositions)
                 CompositionSelectionState.Success(rich)
-            } catch (e: Exception) {
+            } catch (e: Throwable) {
                 CompositionSelectionState.Error(e.message ?: "Failed to load compositions")
             }
         }

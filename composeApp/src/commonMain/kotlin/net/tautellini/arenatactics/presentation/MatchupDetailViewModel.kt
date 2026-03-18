@@ -38,7 +38,7 @@ class MatchupDetailViewModel(
                 val matchup = matchupRepository.getById(compositionId, matchupId)
                     ?: throw IllegalArgumentException("Matchup not found: $matchupId")
                 MatchupDetailState.Success(matchup, classMap)
-            } catch (e: Exception) {
+            } catch (e: Throwable) {
                 MatchupDetailState.Error(e.message ?: "Failed to load matchup")
             }
         }

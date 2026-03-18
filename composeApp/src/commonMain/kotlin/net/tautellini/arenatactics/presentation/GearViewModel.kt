@@ -38,7 +38,7 @@ class GearViewModel(
                 val classNameMap = classes.associate { it.id to it.name }
                 val gear = gearRepository.getGearForComposition(compositionId, mode.compositionSetId)
                 GearState.Success(gear, classNameMap)
-            } catch (e: Exception) {
+            } catch (e: Throwable) {
                 GearState.Error(e.message ?: "Failed to load gear")
             }
         }

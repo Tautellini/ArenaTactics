@@ -39,7 +39,7 @@ class MatchupListViewModel(
                 val classMap = classes.associateBy { it.id }
                 val matchups = matchupRepository.getForComposition(compositionId)
                 MatchupListState.Success(matchups, classMap)
-            } catch (e: Exception) {
+            } catch (e: Throwable) {
                 MatchupListState.Error(e.message ?: "Failed to load matchups")
             }
         }
