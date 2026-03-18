@@ -18,7 +18,5 @@ actual fun pushNavigationState(path: String) {
 
 actual fun registerPopCallback(callback: () -> Unit) {
     popCallback = callback
-    js("window.onpopstate = function() { net.tautellini.arenatactics.invokePopCallback() }")
+    window.onpopstate = { popCallback?.invoke() }
 }
-
-internal fun invokePopCallback() { popCallback?.invoke() }

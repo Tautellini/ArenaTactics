@@ -7,7 +7,7 @@ internal fun parseMatchups(jsonString: String): List<Matchup> =
     appJson.decodeFromString(jsonString)
 
 class MatchupRepository {
-    private var cache: Map<String, Matchup>? = null
+    private val cache = mutableMapOf<String, Map<String, Matchup>>()
 
     suspend fun getForComposition(compositionId: String): List<Matchup> {
         return getCache(compositionId).values.toList()
@@ -18,10 +18,10 @@ class MatchupRepository {
     }
 
     private suspend fun getCache(compositionId: String): Map<String, Matchup> {
-        return cache ?: run {
+        return cache.getOrPut(compositionId) {
             val bytes = Res.readBytes("files/matchups/matchups_$compositionId.json")
             val matchups = parseMatchups(bytes.decodeToString())
-            matchups.associateBy { it.id }.also { cache = it }
+            matchups.associateBy { it.id }
         }
     }
 }
