@@ -25,4 +25,8 @@ if (config.devServer) {
     });
 
     config.devServer.static = staticEntries;
+
+    // Serve index.html for all unknown routes so client-side navigation
+    // works when deep links are opened directly in the browser.
+    config.devServer.historyApiFallback = true;
 }
