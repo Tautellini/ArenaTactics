@@ -54,3 +54,7 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - Web: `webMain/main.kt` — uses `ComposeViewport(document.body!!)`
 
 **Dependency versions** are managed via the version catalog at `gradle/libs.versions.toml`. Key versions: Kotlin 2.3.0, Compose Multiplatform 1.10.0, Material3 1.10.0-alpha05, Coroutines 1.10.2.
+
+## Additional Code Guidance
+-  any exception-generating code on the web path (IO, JS interop) needs catch
+   (Throwable) and must never be left uncaught in a LaunchedEffect
