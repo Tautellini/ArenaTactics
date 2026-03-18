@@ -21,7 +21,6 @@ import net.tautellini.arenatactics.presentation.MatchupListViewModel
 import net.tautellini.arenatactics.presentation.screens.components.BackButton
 import net.tautellini.arenatactics.presentation.screens.components.ItemRow
 import net.tautellini.arenatactics.presentation.theme.*
-import net.tautellini.arenatactics.refreshWowheadTooltips
 
 enum class CompositionTab { GEAR, MATCHUPS }
 
@@ -89,10 +88,6 @@ fun CompositionHubScreen(
 @Composable
 private fun GearTabContent(viewModel: GearViewModel) {
     val state by viewModel.state.collectAsState()
-
-    LaunchedEffect(state) {
-        if (state is GearState.Success) refreshWowheadTooltips()
-    }
 
     when (val s = state) {
         is GearState.Loading -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
