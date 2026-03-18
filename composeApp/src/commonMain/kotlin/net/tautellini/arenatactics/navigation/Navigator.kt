@@ -5,8 +5,8 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import net.tautellini.arenatactics.pushNavigationState
 
-class Navigator {
-    private val _stack = MutableStateFlow<List<Screen>>(listOf(Screen.GameModeSelection))
+class Navigator(initialStack: List<Screen> = listOf(Screen.GameModeSelection)) {
+    private val _stack = MutableStateFlow(initialStack)
     val stack: StateFlow<List<Screen>> = _stack.asStateFlow()
 
     val current: Screen get() = _stack.value.last()

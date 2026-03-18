@@ -16,7 +16,10 @@ fun App() {
     val compositionRepository = remember { CompositionRepository() }
     val gearRepository = remember { GearRepository(compositionRepository) }
     val matchupRepository = remember { MatchupRepository() }
-    val navigator = remember { Navigator() }
+    val navigator = remember {
+        val initialScreen = Screen.fromPath(getInitialPath())
+        Navigator(Screen.buildStack(initialScreen))
+    }
 
     // Wire browser back button to navigator.pop()
     DisposableEffect(navigator) {

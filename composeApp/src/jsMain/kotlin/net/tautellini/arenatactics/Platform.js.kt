@@ -20,3 +20,4 @@ actual fun registerPopCallback(callback: () -> Unit) {
     popCallback = callback
     window.onpopstate = { popCallback?.invoke() }
 }
+actual fun getInitialPath(): String = window.location.pathname
