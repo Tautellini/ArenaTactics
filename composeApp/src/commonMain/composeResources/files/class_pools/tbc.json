@@ -1,0 +1,11 @@
+[
+  { "id": "druid",   "name": "Druid",   "color": "#FF7D0A" },
+  { "id": "hunter",  "name": "Hunter",  "color": "#ABD473" },
+  { "id": "mage",    "name": "Mage",    "color": "#69CCF0" },
+  { "id": "paladin", "name": "Paladin", "color": "#F58CBA" },
+  { "id": "priest",  "name": "Priest",  "color": "#FFFFFF" },
+  { "id": "rogue",   "name": "Rogue",   "color": "#FFF569" },
+  { "id": "shaman",  "name": "Shaman",  "color": "#0070DE" },
+  { "id": "warlock", "name": "Warlock", "color": "#9482C9" },
+  { "id": "warrior", "name": "Warrior", "color": "#C79C6E" }
+]

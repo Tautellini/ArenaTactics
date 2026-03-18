@@ -1,0 +1,23 @@
+{
+  "phase": 2,
+  "classId": "mage",
+  "items": [
+    { "wowheadId": 31011, "name": "Merciless Gladiator's Silk Cowl",          "slot": "Head",      "enchant": "Glyph of Power",                    "gems": ["Chaotic Skyfire Diamond", "Runed Blood Garnet", "Veiled Flame Spessarite"] },
+    { "wowheadId": 31012, "name": "Vindicator's Pendant of Conquest",          "slot": "Neck",      "enchant": null,                               "gems": ["Runed Blood Garnet"] },
+    { "wowheadId": 31008, "name": "Merciless Gladiator's Silk Amice",          "slot": "Shoulders", "enchant": "Greater Inscription of Discipline", "gems": ["Runed Blood Garnet"] },
+    { "wowheadId": 28971, "name": "Cloak of Arcane Evasion",                   "slot": "Back",      "enchant": "Enchant Cloak - Subtlety",          "gems": [] },
+    { "wowheadId": 31007, "name": "Merciless Gladiator's Silk Raiment",        "slot": "Chest",     "enchant": "Enchant Chest - Exceptional Stats",  "gems": ["Runed Blood Garnet", "Runed Blood Garnet", "Veiled Flame Spessarite"] },
+    { "wowheadId": 34473, "name": "Vindicator's Silk Cuffs",                   "slot": "Wrists",    "enchant": "Enchant Bracer - Spellpower",        "gems": [] },
+    { "wowheadId": 31009, "name": "Merciless Gladiator's Silk Handguards",     "slot": "Hands",     "enchant": "Enchant Gloves - Spell Strike",     "gems": ["Runed Blood Garnet"] },
+    { "wowheadId": 34474, "name": "Vindicator's Silk Belt",                    "slot": "Waist",     "enchant": null,                                "gems": ["Runed Blood Garnet"] },
+    { "wowheadId": 31010, "name": "Merciless Gladiator's Silk Trousers",       "slot": "Legs",      "enchant": "Runic Spellthread",                 "gems": ["Runed Blood Garnet", "Runed Blood Garnet"] },
+    { "wowheadId": 31006, "name": "Merciless Gladiator's Silk Footwraps",      "slot": "Feet",      "enchant": "Enchant Boots - Boar's Speed",      "gems": ["Runed Blood Garnet"] },
+    { "wowheadId": 31852, "name": "Merciless Gladiator's Band of Dominance",   "slot": "Ring",      "enchant": "Enchant Ring - Spellpower",         "gems": [] },
+    { "wowheadId": 29281, "name": "Violet Signet of the Archmage",             "slot": "Ring",      "enchant": "Enchant Ring - Spellpower",         "gems": [] },
+    { "wowheadId": 29131, "name": "Medallion of the Horde",                    "slot": "Trinket",   "enchant": null,                                "gems": [] },
+    { "wowheadId": 29376, "name": "Icon of the Silver Crescent",               "slot": "Trinket",   "enchant": null,                                "gems": [] },
+    { "wowheadId": 31818, "name": "Merciless Gladiator's Spellblade",          "slot": "Main Hand", "enchant": "Enchant Weapon - Soulfrost",        "gems": [] },
+    { "wowheadId": 31857, "name": "Merciless Gladiator's Endgame",             "slot": "Off Hand",  "enchant": null,                                "gems": [] },
+    { "wowheadId": 31858, "name": "Merciless Gladiator's Touch of Defeat",     "slot": "Wand",      "enchant": null,                                "gems": [] }
+  ]
+}

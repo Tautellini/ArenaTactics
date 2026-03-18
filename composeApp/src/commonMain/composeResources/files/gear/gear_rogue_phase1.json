@@ -1,0 +1,23 @@
+{
+  "phase": 1,
+  "classId": "rogue",
+  "items": [
+    { "wowheadId": 28210, "name": "Gladiator's Leather Helm",       "slot": "Head",       "enchant": "Glyph of Ferocity",               "gems": ["Relentless Earthstorm Diamond", "Shifting Nightseye"] },
+    { "wowheadId": 28738, "name": "Pendant of the Peril",           "slot": "Neck",       "enchant": null,                              "gems": ["Jagged Crimson Spinel"] },
+    { "wowheadId": 28214, "name": "Gladiator's Leather Spaulders",  "slot": "Shoulders",  "enchant": "Greater Inscription of Vengeance", "gems": ["Bright Blood Garnet"] },
+    { "wowheadId": 28256, "name": "Drape of the Dark Reavers",      "slot": "Back",       "enchant": "Enchant Cloak - Subtlety",        "gems": [] },
+    { "wowheadId": 28208, "name": "Gladiator's Leather Tunic",      "slot": "Chest",      "enchant": "Enchant Chest - Exceptional Stats","gems": ["Bright Blood Garnet", "Bright Blood Garnet", "Shifting Nightseye"] },
+    { "wowheadId": 28278, "name": "Bracers of Maliciousness",       "slot": "Wrists",     "enchant": "Enchant Bracer - Assault",        "gems": [] },
+    { "wowheadId": 28211, "name": "Gladiator's Leather Gloves",     "slot": "Hands",      "enchant": "Enchant Gloves - Superior Agility","gems": ["Bright Blood Garnet"] },
+    { "wowheadId": 31913, "name": "Vindicator's Leather Belt",      "slot": "Waist",      "enchant": null,                              "gems": ["Bright Blood Garnet"] },
+    { "wowheadId": 28213, "name": "Gladiator's Leather Legguards",  "slot": "Legs",       "enchant": "Nethercobra Leg Armor",           "gems": ["Bright Blood Garnet", "Bright Blood Garnet"] },
+    { "wowheadId": 28209, "name": "Gladiator's Leather Boots",      "slot": "Feet",       "enchant": "Enchant Boots - Cat's Swiftness", "gems": ["Bright Blood Garnet"] },
+    { "wowheadId": 28304, "name": "Gladiator's Band of Triumph",    "slot": "Ring",       "enchant": "Enchant Ring - Striking",         "gems": [] },
+    { "wowheadId": 28765, "name": "Band of the Ranger-General",     "slot": "Ring",       "enchant": "Enchant Ring - Striking",         "gems": [] },
+    { "wowheadId": 29131, "name": "Medallion of the Horde",         "slot": "Trinket",    "enchant": null,                              "gems": [] },
+    { "wowheadId": 29383, "name": "Bloodlust Brooch",               "slot": "Trinket",    "enchant": null,                              "gems": [] },
+    { "wowheadId": 28272, "name": "Gladiator's Shanker",            "slot": "Main Hand",  "enchant": "Enchant Weapon - Mongoose",       "gems": [] },
+    { "wowheadId": 28270, "name": "Gladiator's Shiv",               "slot": "Off Hand",   "enchant": "Enchant Weapon - Mongoose",       "gems": [] },
+    { "wowheadId": 28275, "name": "Gladiator's War Edge",           "slot": "Ranged",     "enchant": null,                              "gems": [] }
+  ]
+}

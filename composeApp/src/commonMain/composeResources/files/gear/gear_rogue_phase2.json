@@ -1,0 +1,23 @@
+{
+  "phase": 2,
+  "classId": "rogue",
+  "items": [
+    { "wowheadId": 31017, "name": "Merciless Gladiator's Leather Helm",      "slot": "Head",      "enchant": "Glyph of Ferocity",                "gems": ["Relentless Earthstorm Diamond", "Shifting Nightseye", "Jagged Crimson Spinel"] },
+    { "wowheadId": 28738, "name": "Pendant of the Peril",                    "slot": "Neck",      "enchant": null,                               "gems": ["Jagged Crimson Spinel"] },
+    { "wowheadId": 31021, "name": "Merciless Gladiator's Leather Spaulders", "slot": "Shoulders", "enchant": "Greater Inscription of Vengeance",  "gems": ["Bright Blood Garnet"] },
+    { "wowheadId": 28256, "name": "Drape of the Dark Reavers",               "slot": "Back",      "enchant": "Enchant Cloak - Subtlety",          "gems": [] },
+    { "wowheadId": 31015, "name": "Merciless Gladiator's Leather Tunic",     "slot": "Chest",     "enchant": "Enchant Chest - Exceptional Stats",  "gems": ["Bright Blood Garnet", "Bright Blood Garnet", "Shifting Nightseye"] },
+    { "wowheadId": 34462, "name": "Vindicator's Leather Bracers",            "slot": "Wrists",    "enchant": "Enchant Bracer - Assault",           "gems": [] },
+    { "wowheadId": 31018, "name": "Merciless Gladiator's Leather Gloves",    "slot": "Hands",     "enchant": "Enchant Gloves - Superior Agility",  "gems": ["Bright Blood Garnet"] },
+    { "wowheadId": 34467, "name": "Merciless Gladiator's Leather Belt",      "slot": "Waist",     "enchant": null,                                "gems": ["Bright Blood Garnet"] },
+    { "wowheadId": 31020, "name": "Merciless Gladiator's Leather Legguards", "slot": "Legs",      "enchant": "Nethercobra Leg Armor",              "gems": ["Bright Blood Garnet", "Bright Blood Garnet"] },
+    { "wowheadId": 31016, "name": "Merciless Gladiator's Leather Boots",     "slot": "Feet",      "enchant": "Enchant Boots - Cat's Swiftness",    "gems": ["Bright Blood Garnet"] },
+    { "wowheadId": 31854, "name": "Merciless Gladiator's Band of Triumph",   "slot": "Ring",      "enchant": "Enchant Ring - Striking",            "gems": [] },
+    { "wowheadId": 28765, "name": "Band of the Ranger-General",              "slot": "Ring",      "enchant": "Enchant Ring - Striking",            "gems": [] },
+    { "wowheadId": 29131, "name": "Medallion of the Horde",                  "slot": "Trinket",   "enchant": null,                                "gems": [] },
+    { "wowheadId": 31193, "name": "Tsunami Talisman",                        "slot": "Trinket",   "enchant": null,                                "gems": [] },
+    { "wowheadId": 31826, "name": "Merciless Gladiator's Shanker",           "slot": "Main Hand", "enchant": "Enchant Weapon - Mongoose",          "gems": [] },
+    { "wowheadId": 31827, "name": "Merciless Gladiator's Shiv",              "slot": "Off Hand",  "enchant": "Enchant Weapon - Mongoose",          "gems": [] },
+    { "wowheadId": 32040, "name": "Merciless Gladiator's War Edge",          "slot": "Ranged",    "enchant": null,                                "gems": [] }
+  ]
+}

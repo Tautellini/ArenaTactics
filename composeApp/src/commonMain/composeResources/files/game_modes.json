@@ -1,0 +1,9 @@
+[
+  {
+    "id": "tbc_anniversary_2v2",
+    "name": "TBC Anniversary 2v2",
+    "description": "World of Warcraft: The Burning Crusade Classic (Anniversary) — 2v2 Arena",
+    "classPoolId": "tbc",
+    "compositionSetId": "tbc_2v2"
+  }
+]

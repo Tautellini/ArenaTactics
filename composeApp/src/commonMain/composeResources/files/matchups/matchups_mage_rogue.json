@@ -1,0 +1,152 @@
+[
+  {
+    "id": "mage_rogue_vs_druid_warrior",
+    "enemyClass1Id": "druid",
+    "enemyClass2Id": "warrior",
+    "strategyMarkdown": "## Kill Target\nWarrior\n\n## Win Condition\nPoly the Druid and burst the Warrior while unhealed. Rogue opens with Cheap Shot → Kidney Shot chain. Mage keeps Poly on Druid — re-poly immediately if it breaks.\n\n---\n\n## Key Notes\n\n- If Warrior pops Recklessness, use Frost Nova + Blink to reset distance.\n- Watch for Druid going Bear Form to trinket Poly — have CS ready.\n- If Warrior trinkets, re-CC with Gouge → Blind rotation.\n- Don't tunnel — switch to Druid briefly to force cooldown usage, then back to Warrior."
+  },
+  {
+    "id": "mage_rogue_vs_priest_warrior",
+    "enemyClass1Id": "priest",
+    "enemyClass2Id": "warrior",
+    "strategyMarkdown": "## Kill Target\nWarrior\n\n## Win Condition\nCounterspell / Silence the Priest during burst windows. Rogue bursts Warrior. Mage applies Frostbolt slow and interrupts every heal possible.\n\n---\n\n## Key Notes\n\n- Shadow Priest variant: Respect Psychic Scream. Break fear with Trinket or Berserker Rage if available.\n- Holy Priest: Easier target due to no shadow form — CS on Greater Heal wins.\n- Warrior must never be in range to land a full Bladestorm without being Frost Nova'd."
+  },
+  {
+    "id": "mage_rogue_vs_mage_rogue",
+    "enemyClass1Id": "mage",
+    "enemyClass2Id": "rogue",
+    "strategyMarkdown": "## Kill Target\nEither — prefer enemy Mage\n\n## Win Condition\nThis is a mirror. CS the enemy Mage to prevent burst. Your Mage should stay near your Rogue to benefit from Smoke Screen. Whoever lands the first non-trinketed CC chain usually wins.\n\n---\n\n## Key Notes\n\n- Counterspell wars are the core of this matchup — never waste yours.\n- Detect Invisibility or Detect Traps can reveal stealthed enemy Rogue early.\n- If enemy Rogue opens on your Mage, Frost Nova + Blink immediately.\n- Don't both target the same player until CC is locked on the other."
+  },
+  {
+    "id": "mage_rogue_vs_rogue_warrior",
+    "enemyClass1Id": "rogue",
+    "enemyClass2Id": "warrior",
+    "strategyMarkdown": "## Kill Target\nWarrior\n\n## Win Condition\nHeavy cleave comp — they will train your Rogue hard. Your Mage must peel with Frost Nova and sheep the enemy Rogue. Kill Warrior while enemy Rogue is CCd.\n\n---\n\n## Key Notes\n\n- This matchup is about surviving their initial burst then recovering control.\n- Ice Block is a critical survival tool — save it for Rogue + Warrior overlap.\n- Your Rogue should use Evasion when double-trained to survive the burst window.\n- Once you get them separated with Poly, the Warrior should die quickly."
+  },
+  {
+    "id": "mage_rogue_vs_priest_warlock",
+    "enemyClass1Id": "priest",
+    "enemyClass2Id": "warlock",
+    "strategyMarkdown": "## Kill Target\nWarlock\n\n## Win Condition\nInterrupt Drain Life with Counterspell. Rogue bursts Warlock with Blind on Priest. Silence / CS prevents Priest from healing during burst window.\n\n---\n\n## Key Notes\n\n- Fear is the biggest threat — both players need PvP Trinkets. Trinket Fear immediately to avoid chain CC.\n- Warlock will try to Curse of Exhaustion + Drain Life kite — Blink is your answer.\n- If Priest is Shadow: they deal significant damage themselves; consider killing Priest first if Warlock is defensive spec.\n- Counterspell should be saved for big heals (Greater Heal / Flash Heal) not DoT casts."
+  },
+  {
+    "id": "mage_rogue_vs_druid_warlock",
+    "enemyClass1Id": "druid",
+    "enemyClass2Id": "warlock",
+    "strategyMarkdown": "## Kill Target\nWarlock\n\n## Win Condition\nPoly the Druid repeatedly. Rogue bursts Warlock. Mage interrupts Drain Life with Counterspell. This is a manageable matchup if Poly is kept on Druid.\n\n---\n\n## Key Notes\n\n- Druid will use Nature's Grasp defensively — don't stand in melee as Mage.\n- Warlock Fear: trinket immediately, do not let them chain Fear into a Poly from Druid.\n- If Druid swaps to Tree of Life, expect sustained healing — switch damage to Druid briefly to force a defensive cooldown.\n- Counterspell Drain Life, not Shadowbolt — the sustained drain is the real threat."
+  },
+  {
+    "id": "mage_rogue_vs_rogue_warlock",
+    "enemyClass1Id": "rogue",
+    "enemyClass2Id": "warlock",
+    "strategyMarkdown": "## Kill Target\nWarlock\n\n## Win Condition\nFrost Nova the Warlock, Rogue + Mage burst while Rogue has the enemy Rogue controlled. CC chain the Warlock during burst windows.\n\n---\n\n## Key Notes\n\n- Enemy Rogue will attempt to Blind your Rogue at the same time you try to Blind theirs — anticipate the timing.\n- Warlock will Fear — your PvP Trinket should break it. Rogue uses Berserker Rage if available.\n- Rogue/Warlock is a sustained pressure comp. Don't let them kite you — stay aggressive."
+  },
+  {
+    "id": "mage_rogue_vs_druid_rogue",
+    "enemyClass1Id": "druid",
+    "enemyClass2Id": "rogue",
+    "strategyMarkdown": "## Kill Target\nDruid\n\n## Win Condition\nOne of the hardest matchups. The enemy Druid has unmatched mobility and mana regeneration. Focus sustained pressure on the Druid — force cooldown usage. Your Rogue should Blind the enemy Rogue when he tries to peel for Druid.\n\n---\n\n## Key Notes\n\n- Druid will shift out of Polymorph instantly — don't spam Poly. Use it to buy a GCD during burst.\n- Druid's HoTs mean you need to burst hard after a CS, not spread damage.\n- If Druid goes into Moonkin, treat him as a damage dealer and consider swapping target.\n- Patience is key — they play for attrition, you need to create 1v1 windows."
+  },
+  {
+    "id": "mage_rogue_vs_druid_mage",
+    "enemyClass1Id": "druid",
+    "enemyClass2Id": "mage",
+    "strategyMarkdown": "## Kill Target\nEnemy Mage\n\n## Win Condition\nCS the enemy Mage immediately on burst windows. Your Mage mirrors their Mage while your Rogue kills them. Poly the Druid to prevent healing.\n\n---\n\n## Key Notes\n\n- Enemy Mage will attempt to CS your Mage — position behind a pillar to LoS.\n- If enemy Mage has Ice Block, coordinate the burst to burn it, then finish.\n- Druid will spam Rejuvenation on the enemy Mage — your burst needs to overcome HoT healing."
+  },
+  {
+    "id": "mage_rogue_vs_mage_priest",
+    "enemyClass1Id": "mage",
+    "enemyClass2Id": "priest",
+    "strategyMarkdown": "## Kill Target\nEnemy Mage\n\n## Win Condition\nCS the enemy Mage during Rogue burst windows. Blind the Priest. Enemy Mage dies before Priest can recover. Clean up Priest after.\n\n---\n\n## Key Notes\n\n- Shadow Priest adds heavy pressure — don't let Vampiric Embrace sustain them.\n- If Holy Priest: straightforward. CS Greater Heal, Rogue kills Mage fast.\n- Enemy Mage will try to CS your Mage too — be ready to Blink out of burst range."
+  },
+  {
+    "id": "mage_rogue_vs_druid_hunter",
+    "enemyClass1Id": "druid",
+    "enemyClass2Id": "hunter",
+    "strategyMarkdown": "## Kill Target\nHunter\n\n## Win Condition\nAvoid Freeze Trap entirely. Poly the Druid, Rogue closes on Hunter. Use Blink to break Frost Trap if caught. Burst Hunter during Druid Poly.\n\n---\n\n## Key Notes\n\n- Hunter has Deterrence — coordinate burst to avoid wasting it.\n- Druid will Innervate after mana drain — don't waste CC on low-mana Druid.\n- Watch for Hunter's Scatter Shot breaking your Rogue's CCs.\n- Freezing Trap on your Rogue — trinket or wait out the short duration."
+  },
+  {
+    "id": "mage_rogue_vs_hunter_priest",
+    "enemyClass1Id": "hunter",
+    "enemyClass2Id": "priest",
+    "strategyMarkdown": "## Kill Target\nHunter\n\n## Win Condition\nSilence / CS Priest to prevent healing. Rogue closes on Hunter and bursts. Mage uses Blink to close gap if Hunter Disengage.\n\n---\n\n## Key Notes\n\n- Scatter Shot into Freeze Trap is their win condition — never stand together as a team.\n- Rogue uses Blind on Priest during burst window on Hunter.\n- Shadow Priest + Hunter can have insane sustained DPS — don't let the fight go long."
+  },
+  {
+    "id": "mage_rogue_vs_hunter_rogue",
+    "enemyClass1Id": "hunter",
+    "enemyClass2Id": "rogue",
+    "strategyMarkdown": "## Kill Target\nHunter\n\n## Win Condition\nSmoke Screen negates Hunter's ranged damage on your Rogue. Poly the enemy Rogue briefly while your Rogue kills Hunter. Mage Frost Nova keeps Hunter in place.\n\n---\n\n## Key Notes\n\n- Smoke Screen is extremely strong here — use it aggressively during burst.\n- Enemy Rogue will try to Blind your Mage to prevent Poly. Rogue should Blind their Rogue first.\n- Hunter's Disengage + Trap combination: never stand on a blue circle (Frost Trap already placed)."
+  },
+  {
+    "id": "mage_rogue_vs_hunter_warrior",
+    "enemyClass1Id": "hunter",
+    "enemyClass2Id": "warrior",
+    "strategyMarkdown": "## Kill Target\nHunter\n\n## Win Condition\nSheep the Warrior, kill Hunter. Heavy cleave comp but both targets are controllable. Frost Nova Warrior to prevent him reaching your Mage.\n\n---\n\n## Key Notes\n\n- Keep Warrior sheeped — he's the cleave threat, not the primary kill target.\n- Hunter Disengage makes burst tricky — use Rogue's Cheap Shot to lock him down.\n- Counterspell is not very useful here (Hunter is physical) — use it to interrupt Warrior Shouts if needed."
+  },
+  {
+    "id": "mage_rogue_vs_rogue_shaman",
+    "enemyClass1Id": "rogue",
+    "enemyClass2Id": "shaman",
+    "strategyMarkdown": "## Kill Target\nShaman\n\n## Win Condition\nInterrupt Earth Shield application with Counterspell or Kick. Poly the enemy Rogue when Shaman is in danger. Burst Shaman during CS lockout.\n\n---\n\n## Key Notes\n\n- Shaman's Purge will remove your Mage's Mana Shield — reapply when safe.\n- Grounding Totem negates Poly — Kick it or wait for it to expire before casting.\n- Shaman healing is powerful but interruptible — CS on every Healing Wave cast.\n- Enemy Rogue will peel for Shaman with Blind on your Mage."
+  },
+  {
+    "id": "mage_rogue_vs_mage_shaman",
+    "enemyClass1Id": "mage",
+    "enemyClass2Id": "shaman",
+    "strategyMarkdown": "## Kill Target\nEnemy Mage\n\n## Win Condition\nCS the enemy Mage, Rogue bursts. Shaman alone cannot sustain their Mage under coordinated pressure with healing interrupts.\n\n---\n\n## Key Notes\n\n- Grounding Totem will eat your Poly — always destroy it before sheeping.\n- Shaman will Wind Shear your Mage's Frostbolts — be aware of interrupt lockout.\n- Focus the enemy Mage hard — Shaman's off-heals aren't enough if Mage dies fast."
+  },
+  {
+    "id": "mage_rogue_vs_shaman_warrior",
+    "enemyClass1Id": "shaman",
+    "enemyClass2Id": "warrior",
+    "strategyMarkdown": "## Kill Target\nWarrior\n\n## Win Condition\nInterrupt Shaman heals with CS. Frost Nova Warrior, burst him down. Rogue uses Blind on Shaman during burst.\n\n---\n\n## Key Notes\n\n- Shaman's totems provide powerful utility — destroy Grounding Totem before every Poly attempt.\n- Warrior's charge gap closer is dangerous for Mage — keep pillars between you."
+  },
+  {
+    "id": "mage_rogue_vs_hunter_shaman",
+    "enemyClass1Id": "hunter",
+    "enemyClass2Id": "shaman",
+    "strategyMarkdown": "## Kill Target\nShaman\n\n## Win Condition\nRogue locks down Shaman with stuns while Mage CS interrupts heals. Hunter is largely ignored until Shaman dies.\n\n---\n\n## Key Notes\n\n- Grounding Totem will eat Poly — kick it before attempting CC.\n- Scatter Shot from Hunter will break your Rogue's CC chains — stay spread.\n- Once Shaman dies, 1v1 Hunter with Rogue is straightforward."
+  },
+  {
+    "id": "mage_rogue_vs_paladin_warrior",
+    "enemyClass1Id": "paladin",
+    "enemyClass2Id": "warrior",
+    "strategyMarkdown": "## Kill Target\nWarrior\n\n## Win Condition\nCS Divine Shield (Bubble) the moment Paladin casts it. With Bubble CS'd, burst Warrior immediately. Rogue should save Kidney Shot for the post-bubble window.\n\n---\n\n## Key Notes\n\n- This is one of the hardest matchups. Paladin has near-unlimited mana and cannot be out-healed.\n- Counterspell timing on Bubble is everything — a missed CS loses the game.\n- You cannot outlast them on mana. Create burst windows and commit fully.\n- Warrior will be very aggressive — use Frost Nova + Blink to peel off your Mage."
+  },
+  {
+    "id": "mage_rogue_vs_paladin_rogue",
+    "enemyClass1Id": "paladin",
+    "enemyClass2Id": "rogue",
+    "strategyMarkdown": "## Kill Target\nPaladin\n\n## Win Condition\nCS Divine Shield. Rogue bursts Paladin while enemy Rogue is Polyed. Paladin dies before they can recover without bubble.\n\n---\n\n## Key Notes\n\n- Enemy Rogue's Blind will be aimed at your Mage — anticipate and position behind pillars.\n- Without bubble, Paladins are surprisingly killable under coordinated burst.\n- Watch for Paladin's Repentance — it's a cast that CCs your Rogue. Kick or LoS it."
+  },
+  {
+    "id": "mage_rogue_vs_paladin_warlock",
+    "enemyClass1Id": "paladin",
+    "enemyClass2Id": "warlock",
+    "strategyMarkdown": "## Kill Target\nWarlock\n\n## Win Condition\nSave CS for Divine Shield. Fear from Warlock is the primary threat — trinket it. Rogue Blinds Paladin while Mage bursts Warlock with CS on Drain Life.\n\n---\n\n## Key Notes\n\n- Paladin/Warlock sustains through Fear + slow Paladin heals. Create burst windows after CS'ing bubble.\n- Warlock's Curse of Exhaustion makes kiting difficult — Blink is critical."
+  },
+  {
+    "id": "mage_rogue_vs_mage_paladin",
+    "enemyClass1Id": "mage",
+    "enemyClass2Id": "paladin",
+    "strategyMarkdown": "## Kill Target\nEnemy Mage\n\n## Win Condition\nCS the enemy Mage. Rogue burst kills Mage while Paladin is LoS'd behind a pillar. Paladin cannot heal what he cannot see.\n\n---\n\n## Key Notes\n\n- This is a LoS-heavy matchup. Force Paladin to walk out from behind pillars to heal.\n- CS Divine Shield to prevent Paladin from saving the Mage during burst.\n- Enemy Mage's Ice Block gives them one free emergency — plan burst around burning it first."
+  },
+  {
+    "id": "mage_rogue_vs_hunter_paladin",
+    "enemyClass1Id": "hunter",
+    "enemyClass2Id": "paladin",
+    "strategyMarkdown": "## Kill Target\nHunter\n\n## Win Condition\nCS Paladin's Divine Shield / heals. Rogue closes on Hunter using pillars. Freeze Trap avoidance is critical.\n\n---\n\n## Key Notes\n\n- Hunter Disengage + Paladin peel is their defensive rotation. Aggressive re-engagement after every disengage.\n- Paladin's Repentance on your Rogue enables Hunter free damage — kick Repentance cast.\n- If both healers (Divine Shield + Mend Pet) are active simultaneously, sit on Hunter and wait them out."
+  },
+  {
+    "id": "mage_rogue_vs_priest_rogue",
+    "enemyClass1Id": "priest",
+    "enemyClass2Id": "rogue",
+    "strategyMarkdown": "## Kill Target\nPriest\n\n## Win Condition\nBlind the enemy Rogue. Rogue + Mage burst the Priest with CS on heals. Without a Rogue peel, Priest dies quickly under burst.\n\n---\n\n## Key Notes\n\n- Priest's Psychic Scream: stand near pillars to LoS the fear.\n- Shadow Priest variant: Respectable damage output — CS Vampiric Touch/Mind Blast, not just heals.\n- Enemy Rogue's Blind will target your Mage — position carefully."
+  },
+  {
+    "id": "mage_rogue_vs_shaman_warlock",
+    "enemyClass1Id": "shaman",
+    "enemyClass2Id": "warlock",
+    "strategyMarkdown": "## Kill Target\nWarlock\n\n## Win Condition\nInterrupt Shaman heals. Rogue Blinds Shaman during Warlock burst. CS Drain Life on Warlock.\n\n---\n\n## Key Notes\n\n- Grounding Totem will absorb Poly — destroy it before CCing Shaman.\n- Warlock Fear is the primary threat — PvP Trinket the Fear and re-engage.\n- Wind Shear from Shaman will lock out your Mage's Frost school — avoid standing in Shaman's melee range."
+  }
+]
