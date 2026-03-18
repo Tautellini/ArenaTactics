@@ -3,6 +3,7 @@ package net.tautellini.arenatactics.presentation.screens
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
@@ -59,13 +60,15 @@ fun MatchupDetailScreen(
                     if (c1 != null) ClassBadge(c1.id, c1.name, modifier = Modifier.padding(end = 6.dp))
                     if (c2 != null) ClassBadge(c2.id, c2.name)
                 }
-                Column(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .verticalScroll(rememberScrollState())
-                        .padding(horizontal = 24.dp, vertical = 8.dp)
-                ) {
-                    MarkdownText(matchup.strategyMarkdown)
+                SelectionContainer {
+                    Column(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .verticalScroll(rememberScrollState())
+                            .padding(horizontal = 24.dp, vertical = 8.dp)
+                    ) {
+                        MarkdownText(matchup.strategyMarkdown)
+                    }
                 }
             }
         }

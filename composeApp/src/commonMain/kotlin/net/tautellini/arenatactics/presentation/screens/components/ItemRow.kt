@@ -2,7 +2,7 @@ package net.tautellini.arenatactics.presentation.screens.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.material3.Text
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -13,50 +13,77 @@ import net.tautellini.arenatactics.data.model.GearItem
 import net.tautellini.arenatactics.openUrl
 import net.tautellini.arenatactics.presentation.theme.*
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ItemRow(item: GearItem, modifier: Modifier = Modifier) {
     val wowheadUrl = "https://www.wowhead.com/tbc/item=${item.wowheadId}"
-    Column(
-        modifier = modifier
-            .fillMaxWidth()
-            .clickable { openUrl(wowheadUrl) }
-            .padding(horizontal = 16.dp, vertical = 8.dp)
-    ) {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(8.dp)
-        ) {
-            Text(
-                text = item.slot,
-                color = TextSecondary,
-                fontSize = 11.sp,
-                modifier = Modifier.width(80.dp)
-            )
-            Text(
-                text = item.name,
-                color = Accent,
-                fontSize = 13.sp,
-                fontWeight = FontWeight.Medium
-            )
-        }
-        if (item.enchant != null || item.gems.isNotEmpty()) {
-            Row(
-                modifier = Modifier.padding(start = 88.dp),
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
+    TooltipBox(
+        positionProvider = TooltipDefaults.rememberTooltipPositionProvider(TooltipAnchorPosition.Above),
+        tooltip = {
+            RichTooltip(
+                title = { Text(item.name, fontWeight = FontWeight.SemiBold) }
             ) {
-                if (item.enchant != null) {
+                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Text("Slot: ${item.slot}", fontSize = 12.sp)
+                    if (item.enchant != null) {
+                        Text("✦ ${item.enchant}", fontSize = 12.sp)
+                    }
+                    if (item.gems.isNotEmpty()) {
+                        Text(item.gems.joinToString("  ") { "◆ $it" }, fontSize = 12.sp)
+                    }
                     Text(
-                        text = "✦ ${item.enchant}",
-                        color = TextSecondary,
-                        fontSize = 11.sp
+                        "Click to view on Wowhead →",
+                        fontSize = 11.sp,
+                        color = Accent,
+                        modifier = Modifier.padding(top = 4.dp)
                     )
                 }
-                if (item.gems.isNotEmpty()) {
-                    Text(
-                        text = item.gems.joinToString(" · ") { "◆ $it" },
-                        color = TextSecondary,
-                        fontSize = 11.sp
-                    )
+            }
+        },
+        state = rememberTooltipState()
+    ) {
+        Column(
+            modifier = modifier
+                .fillMaxWidth()
+                .clickable { openUrl(wowheadUrl) }
+                .padding(horizontal = 16.dp, vertical = 8.dp)
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Text(
+                    text = item.slot,
+                    color = TextSecondary,
+                    fontSize = 11.sp,
+                    modifier = Modifier.width(80.dp)
+                )
+                Text(
+                    text = item.name,
+                    color = Accent,
+                    fontSize = 13.sp,
+                    fontWeight = FontWeight.Medium
+                )
+            }
+            if (item.enchant != null || item.gems.isNotEmpty()) {
+                Row(
+                    modifier = Modifier.padding(start = 88.dp),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    if (item.enchant != null) {
+                        Text(
+                            text = "✦ ${item.enchant}",
+                            color = TextSecondary,
+                            fontSize = 11.sp
+                        )
+                    }
+                    if (item.gems.isNotEmpty()) {
+                        Text(
+                            text = item.gems.joinToString(" · ") { "◆ $it" },
+                            color = TextSecondary,
+                            fontSize = 11.sp
+                        )
+                    }
                 }
             }
         }

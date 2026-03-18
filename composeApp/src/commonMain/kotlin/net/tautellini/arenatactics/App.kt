@@ -1,6 +1,5 @@
 package net.tautellini.arenatactics
 
-import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.runtime.*
 import androidx.lifecycle.viewmodel.compose.viewModel
 import net.tautellini.arenatactics.data.repository.*
@@ -30,7 +29,6 @@ fun App() {
     val stack by navigator.stack.collectAsState()
 
     ArenaTacticsTheme {
-        SelectionContainer {
         when (val screen = stack.last()) {
             is Screen.GameModeSelection -> {
                 val vm = viewModel { GameModeSelectionViewModel(gameModeRepository) }
@@ -114,6 +112,5 @@ fun App() {
                 MatchupDetailScreen(vm, navigator)
             }
         }
-        } // SelectionContainer
     }
 }

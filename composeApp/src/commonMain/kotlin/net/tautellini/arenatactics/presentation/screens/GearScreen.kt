@@ -72,14 +72,16 @@ fun CompositionHubScreen(
         }
         HorizontalDivider(color = DividerColor)
 
-        when (selectedTab) {
-            CompositionTab.GEAR -> GearTabContent(gearViewModel)
-            CompositionTab.MATCHUPS -> MatchupListScreen(
-                gameModeId = gameModeId,
-                compositionId = compositionId,
-                viewModel = matchupListViewModel,
-                navigator = navigator
-            )
+        Box(modifier = Modifier.weight(1f).fillMaxWidth()) {
+            when (selectedTab) {
+                CompositionTab.GEAR -> GearTabContent(gearViewModel)
+                CompositionTab.MATCHUPS -> MatchupListScreen(
+                    gameModeId = gameModeId,
+                    compositionId = compositionId,
+                    viewModel = matchupListViewModel,
+                    navigator = navigator
+                )
+            }
         }
     }
 }
@@ -102,7 +104,7 @@ private fun GearTabContent(viewModel: GearViewModel) {
             modifier = Modifier.padding(24.dp)
         )
         is GearState.Success -> {
-            LazyColumn {
+            LazyColumn(modifier = Modifier.fillMaxSize()) {
                 s.gearByClass.forEach { (classId, phases) ->
                     val className = s.classNames[classId] ?: classId
                     phases.forEach { phase ->
