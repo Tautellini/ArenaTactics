@@ -26,10 +26,9 @@ fun main() {
     )
     document.documentElement!!.appendChild(overlay)
 
-    // Ensure Wowhead tooltip popup renders above the Compose canvas
-    val style = document.createElement("style")
-    style.textContent = "#wowhead-tooltip { z-index: 10000 !important; }"
-    document.head!!.appendChild(style)
+    // Reparent Wowhead tooltip divs from body into the overlay as they are created,
+    // so they paint above the Compose canvas (which lives in body's shadow root).
+    observeWowheadTooltips()
 
     // popstate wiring handled inside App.kt via registerPopCallback + DisposableEffect
 

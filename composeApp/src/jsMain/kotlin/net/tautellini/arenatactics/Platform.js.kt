@@ -46,3 +46,19 @@ actual fun showWowheadTooltip(itemId: Int, cursorX: Float, cursorY: Float) {
 actual fun hideWowheadTooltip() {
     js("var e=document.getElementById('wh-tt'); if(e) e.dispatchEvent(new MouseEvent('mouseout',{bubbles:true,view:window,relatedTarget:document.body}))")
 }
+
+actual fun observeWowheadTooltips() {
+    js("""
+        var overlay = document.getElementById('gear-overlay');
+        if (!overlay) return;
+        new MutationObserver(function(mutations) {
+            mutations.forEach(function(m) {
+                m.addedNodes.forEach(function(n) {
+                    if (n.nodeType === 1 && n.id && n.id.indexOf('wowhead') >= 0) {
+                        overlay.appendChild(n);
+                    }
+                });
+            });
+        }).observe(document.body, { childList: true });
+    """)
+}

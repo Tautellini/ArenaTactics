@@ -14,3 +14,8 @@ expect fun getInitialPath(): String
 // On JVM: no-op.
 expect fun showWowheadTooltip(itemId: Int, cursorX: Float, cursorY: Float)
 expect fun hideWowheadTooltip()
+
+// Installs a MutationObserver that reparents Wowhead's tooltip divs from
+// document.body into the gear-overlay element so they paint above the canvas.
+// On JVM: no-op.
+expect fun observeWowheadTooltips()

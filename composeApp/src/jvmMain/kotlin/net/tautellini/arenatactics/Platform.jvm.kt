@@ -7,3 +7,4 @@ actual fun registerPopCallback(callback: () -> Unit) {}
 actual fun getInitialPath(): String = "/"
 actual fun showWowheadTooltip(itemId: Int, cursorX: Float, cursorY: Float) {}
 actual fun hideWowheadTooltip() {}
+actual fun observeWowheadTooltips() {}

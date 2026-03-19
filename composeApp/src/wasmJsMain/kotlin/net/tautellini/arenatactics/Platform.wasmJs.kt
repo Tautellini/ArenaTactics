@@ -51,3 +51,21 @@ actual fun showWowheadTooltip(itemId: Int, cursorX: Float, cursorY: Float) =
     showWowheadTooltipJs(itemId, cursorX, cursorY)
 
 actual fun hideWowheadTooltip() = hideWowheadTooltipJs()
+
+@OptIn(ExperimentalWasmJsInterop::class)
+@JsFun("""() => {
+    var overlay = document.getElementById('gear-overlay');
+    if (!overlay) return;
+    new MutationObserver(function(mutations) {
+        mutations.forEach(function(m) {
+            m.addedNodes.forEach(function(n) {
+                if (n.nodeType === 1 && n.id && n.id.indexOf('wowhead') >= 0) {
+                    overlay.appendChild(n);
+                }
+            });
+        });
+    }).observe(document.body, { childList: true });
+}""")
+private external fun observeWowheadTooltipsJs()
+
+actual fun observeWowheadTooltips() = observeWowheadTooltipsJs()
