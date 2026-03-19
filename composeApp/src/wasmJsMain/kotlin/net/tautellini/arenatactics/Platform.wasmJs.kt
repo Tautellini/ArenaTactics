@@ -8,6 +8,7 @@ private external fun getAppBase(): String
 
 private var popCallback: (() -> Unit)? = null
 
+@OptIn(ExperimentalWasmJsInterop::class)
 actual fun refreshWowheadTooltips() {
     js("if (typeof WH !== 'undefined' && typeof WH.refreshLinks === 'function') WH.refreshLinks()")
 }
@@ -16,6 +17,7 @@ actual fun openUrl(url: String) {
     window.open(url, "_blank")
 }
 
+@OptIn(ExperimentalWasmJsInterop::class)
 actual fun pushNavigationState(path: String) {
     window.history.pushState(null, "", getAppBase() + path)
 }
@@ -34,14 +36,14 @@ actual fun getInitialPath(): String = window.location.pathname
     el.setAttribute('data-wowhead', 'item=' + id + '&domain=tbc');
     el.style.cssText = 'position:fixed;left:' + x + 'px;top:' + y + 'px;width:1px;height:1px;opacity:0;pointer-events:none;';
     if (window.WH && typeof WH.refreshLinks === 'function') WH.refreshLinks();
-    el.dispatchEvent(new MouseEvent('mouseover', {bubbles:true}));
+    el.dispatchEvent(new MouseEvent('mouseover', {bubbles:true, view:window, relatedTarget:document.body}));
 }""")
 private external fun showWowheadTooltipJs(id: Int, x: Float, y: Float)
 
 @OptIn(ExperimentalWasmJsInterop::class)
 @JsFun("""() => {
     var el = document.getElementById('wh-tt');
-    if (el) el.dispatchEvent(new MouseEvent('mouseout', {bubbles:true}));
+    if (el) el.dispatchEvent(new MouseEvent('mouseout', {bubbles:true, view:window, relatedTarget:document.body}));
 }""")
 private external fun hideWowheadTooltipJs()
 

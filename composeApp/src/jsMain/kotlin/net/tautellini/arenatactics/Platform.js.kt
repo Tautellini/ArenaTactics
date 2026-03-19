@@ -40,9 +40,9 @@ actual fun showWowheadTooltip(itemId: Int, cursorX: Float, cursorY: Float) {
     el.style.cssText =
         "position:fixed;left:${cursorX}px;top:${cursorY}px;width:1px;height:1px;opacity:0;pointer-events:none;"
     js("if (window.WH && typeof WH.refreshLinks === 'function') WH.refreshLinks()")
-    js("var e=document.getElementById('wh-tt'); if(e) e.dispatchEvent(new MouseEvent('mouseover',{bubbles:true}))")
+    js("var e=document.getElementById('wh-tt'); if(e) e.dispatchEvent(new MouseEvent('mouseover',{bubbles:true,view:window,relatedTarget:document.body}))")
 }
 
 actual fun hideWowheadTooltip() {
-    js("var e=document.getElementById('wh-tt'); if(e) e.dispatchEvent(new MouseEvent('mouseout',{bubbles:true}))")
+    js("var e=document.getElementById('wh-tt'); if(e) e.dispatchEvent(new MouseEvent('mouseout',{bubbles:true,view:window,relatedTarget:document.body}))")
 }
