@@ -1,7 +1,7 @@
 package net.tautellini.arenatactics.presentation.screens
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -19,8 +19,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import coil3.compose.AsyncImage
-import coil3.compose.SubcomposeAsyncImage
 import net.tautellini.arenatactics.data.model.GearItem
 import net.tautellini.arenatactics.data.model.GearPhase
 import net.tautellini.arenatactics.hideWowheadTooltip
@@ -30,6 +28,7 @@ import net.tautellini.arenatactics.presentation.GearState
 import net.tautellini.arenatactics.presentation.GearViewModel
 import net.tautellini.arenatactics.presentation.MatchupListViewModel
 import net.tautellini.arenatactics.presentation.screens.components.BackButton
+import net.tautellini.arenatactics.presentation.screens.components.GearIcon
 import net.tautellini.arenatactics.presentation.theme.*
 import net.tautellini.arenatactics.showWowheadTooltip
 
@@ -223,13 +222,13 @@ private fun PaperDoll(
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center
                 ) {
-                    AsyncImage(
-                        model = "https://wow.zamimg.com/images/wow/icons/large/classicon_$classId.jpg",
+                    GearIcon(
+                        url = "https://wow.zamimg.com/images/wow/icons/large/classicon_$classId.jpg",
                         contentDescription = className,
-                        modifier = Modifier
-                            .size(72.dp)
-                            .clip(RoundedCornerShape(8.dp))
-                            .border(2.dp, classColor(classId), RoundedCornerShape(8.dp))
+                        modifier = Modifier.size(72.dp),
+                        cornerRadius = 8.dp,
+                        borderColor = classColor(classId),
+                        borderWidth = 2.dp
                     )
                     Spacer(Modifier.height(8.dp))
                     Text(
@@ -293,11 +292,11 @@ private fun GearSlot(item: GearItem, modifier: Modifier = Modifier) {
             .padding(4.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        SubcomposeAsyncImage(
-            model = "https://wow.zamimg.com/images/wow/icons/medium/${item.icon}.jpg",
+        GearIcon(
+            url = "https://wow.zamimg.com/images/wow/icons/medium/${item.icon}.jpg",
             contentDescription = item.name,
-            modifier = Modifier.size(48.dp).clip(RoundedCornerShape(6.dp)),
-            error = { EmptyIconPlaceholder() }
+            modifier = Modifier.size(48.dp),
+            cornerRadius = 6.dp
         )
         Text(
             text = item.name,
