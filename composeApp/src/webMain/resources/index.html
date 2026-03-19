@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArenaTactics</title>
@@ -9,10 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="styles.css">
     <script>
-        // 1. Capture the app base path before any navigation changes the URL.
-        //    Dev:          window.location.pathname = '/'              → __appBase = ''
-        //    GitHub Pages: window.location.pathname = '/ArenaTactics/' → __appBase = '/ArenaTactics'
-        window.__appBase = window.location.pathname.replace(/\/$/, '');
+        // 1. Derive the app base path from the <base href> tag so it is always
+        //    correct regardless of the current URL (handles deep-link reloads).
+        //    Dev:          <base href="/">             → __appBase = ''
+        //    GitHub Pages: <base href="/ArenaTactics/"> → __appBase = '/ArenaTactics'
+        window.__appBase = new URL(document.baseURI).pathname.replace(/\/$/, '');
 
         // 2. Restore a deep-link route saved by 404.html (GitHub Pages SPA redirect).
         (function () {

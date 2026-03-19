@@ -38,6 +38,12 @@ jobs:
       - name: Build wasmJs production bundle
         run: ./gradlew :composeApp:wasmJsBrowserDistribution
 
+      - name: Fix base href for GitHub Pages subdirectory
+        run: |
+          REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
+          sed -i "s|href=\"/\"|href=\"/$REPO_NAME/\"|g" \
+            composeApp/build/dist/wasmJs/productionExecutable/index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
