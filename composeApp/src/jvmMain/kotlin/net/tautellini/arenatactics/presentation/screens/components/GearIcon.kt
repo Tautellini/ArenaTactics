@@ -25,7 +25,8 @@ actual fun GearIcon(
     modifier: Modifier,
     cornerRadius: Dp,
     borderColor: Color,
-    borderWidth: Dp
+    borderWidth: Dp,
+    wowheadItemId: Int
 ) {
     val shape = RoundedCornerShape(cornerRadius)
     val m = modifier

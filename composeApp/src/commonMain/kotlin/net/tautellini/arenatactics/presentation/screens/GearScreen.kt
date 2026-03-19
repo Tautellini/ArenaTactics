@@ -12,8 +12,6 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.input.pointer.PointerEventType
-import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -21,7 +19,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import net.tautellini.arenatactics.data.model.GearItem
 import net.tautellini.arenatactics.data.model.GearPhase
-import net.tautellini.arenatactics.hideWowheadTooltip
 import net.tautellini.arenatactics.navigation.Navigator
 import net.tautellini.arenatactics.openUrl
 import net.tautellini.arenatactics.presentation.GearState
@@ -30,7 +27,6 @@ import net.tautellini.arenatactics.presentation.MatchupListViewModel
 import net.tautellini.arenatactics.presentation.screens.components.BackButton
 import net.tautellini.arenatactics.presentation.screens.components.GearIcon
 import net.tautellini.arenatactics.presentation.theme.*
-import net.tautellini.arenatactics.showWowheadTooltip
 
 enum class CompositionTab { GEAR, MATCHUPS }
 
@@ -276,19 +272,6 @@ private fun GearSlot(item: GearItem, modifier: Modifier = Modifier) {
             .clip(RoundedCornerShape(8.dp))
             .background(Surface)
             .clickable { openUrl(wowheadUrl) }
-            .pointerInput(item.wowheadId) {
-                awaitPointerEventScope {
-                    while (true) {
-                        val event = awaitPointerEvent()
-                        val pos = event.changes.firstOrNull()?.position
-                        when (event.type) {
-                            PointerEventType.Enter ->
-                                pos?.let { showWowheadTooltip(item.wowheadId, it.x, it.y) }
-                            PointerEventType.Exit -> hideWowheadTooltip()
-                        }
-                    }
-                }
-            }
             .padding(4.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -296,7 +279,8 @@ private fun GearSlot(item: GearItem, modifier: Modifier = Modifier) {
             url = "https://wow.zamimg.com/images/wow/icons/medium/${item.icon}.jpg",
             contentDescription = item.name,
             modifier = Modifier.size(48.dp),
-            cornerRadius = 6.dp
+            cornerRadius = 6.dp,
+            wowheadItemId = item.wowheadId
         )
         Text(
             text = item.name,

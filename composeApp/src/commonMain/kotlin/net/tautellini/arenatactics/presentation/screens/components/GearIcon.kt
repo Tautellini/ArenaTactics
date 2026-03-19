@@ -13,5 +13,6 @@ expect fun GearIcon(
     modifier: Modifier = Modifier,
     cornerRadius: Dp = 6.dp,
     borderColor: Color = Color.Transparent,
-    borderWidth: Dp = 0.dp
+    borderWidth: Dp = 0.dp,
+    wowheadItemId: Int = 0
 )
