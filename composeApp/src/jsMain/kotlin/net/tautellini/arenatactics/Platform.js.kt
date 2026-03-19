@@ -7,7 +7,7 @@ import org.w3c.dom.HTMLAnchorElement
 private var popCallback: (() -> Unit)? = null
 
 actual fun refreshWowheadTooltips() {
-    js("if (typeof WH !== 'undefined') WH.refreshLinks()")
+    js("if (typeof WH !== 'undefined' && typeof WH.refreshLinks === 'function') WH.refreshLinks()")
 }
 
 actual fun openUrl(url: String) {
@@ -39,7 +39,7 @@ actual fun showWowheadTooltip(itemId: Int, cursorX: Float, cursorY: Float) {
     el.setAttribute("data-wowhead", "item=$itemId&domain=tbc")
     el.style.cssText =
         "position:fixed;left:${cursorX}px;top:${cursorY}px;width:1px;height:1px;opacity:0;pointer-events:none;"
-    js("if (window.WH) WH.refreshLinks()")
+    js("if (window.WH && typeof WH.refreshLinks === 'function') WH.refreshLinks()")
     js("var e=document.getElementById('wh-tt'); if(e) e.dispatchEvent(new MouseEvent('mouseover',{bubbles:true}))")
 }
 
