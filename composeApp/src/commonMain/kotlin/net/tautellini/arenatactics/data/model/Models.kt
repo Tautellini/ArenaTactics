@@ -31,6 +31,7 @@ data class GearItem(
     val wowheadId: Int,
     val name: String,
     val slot: String,
+    val icon: String = "inv_misc_questionmark",  // default = placeholder if missing from JSON
     val enchant: String? = null,
     val gems: List<String> = emptyList()
 )
