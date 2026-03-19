@@ -36,7 +36,7 @@ actual fun GearIcon(
     val el = remember {
         (document.createElement("a") as HTMLAnchorElement).also {
             it.style.cssText =
-                "display:none;position:fixed;background-size:cover;background-position:center;"
+                "display:none;position:fixed;z-index:9999;background-size:cover;background-position:center;"
             document.body!!.appendChild(it)
         }
     }
