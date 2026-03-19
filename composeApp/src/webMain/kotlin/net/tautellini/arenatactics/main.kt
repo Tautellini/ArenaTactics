@@ -16,6 +16,16 @@ fun main() {
     tooltipScript.setAttribute("src", "https://wow.zamimg.com/js/tooltips.js")
     document.head!!.appendChild(tooltipScript)
 
+    // Overlay layer appended to <html> (outside <body>/shadow root) so it
+    // always paints above the Compose canvas regardless of z-index.
+    val overlay = document.createElement("div")
+    overlay.id = "gear-overlay"
+    overlay.setAttribute(
+        "style",
+        "position:fixed;top:0;left:0;width:0;height:0;pointer-events:none;"
+    )
+    document.documentElement!!.appendChild(overlay)
+
     // Ensure Wowhead tooltip popup renders above the Compose canvas
     val style = document.createElement("style")
     style.textContent = "#wowhead-tooltip { z-index: 10000 !important; }"
