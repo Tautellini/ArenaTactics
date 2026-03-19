@@ -1,26 +1,37 @@
 package net.tautellini.arenatactics.presentation.screens
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.HorizontalDivider
-import androidx.compose.material3.Text
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.input.pointer.PointerEventType
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil3.compose.AsyncImage
+import coil3.compose.SubcomposeAsyncImage
+import net.tautellini.arenatactics.data.model.GearItem
+import net.tautellini.arenatactics.data.model.GearPhase
+import net.tautellini.arenatactics.hideWowheadTooltip
 import net.tautellini.arenatactics.navigation.Navigator
+import net.tautellini.arenatactics.openUrl
 import net.tautellini.arenatactics.presentation.GearState
 import net.tautellini.arenatactics.presentation.GearViewModel
 import net.tautellini.arenatactics.presentation.MatchupListViewModel
 import net.tautellini.arenatactics.presentation.screens.components.BackButton
-import net.tautellini.arenatactics.presentation.screens.components.ItemRow
 import net.tautellini.arenatactics.presentation.theme.*
+import net.tautellini.arenatactics.showWowheadTooltip
 
 enum class CompositionTab { GEAR, MATCHUPS }
 
@@ -85,6 +96,31 @@ fun CompositionHubScreen(
     }
 }
 
+// ─── Slot ordering for paper doll layout ────────────────────────────────────
+
+private val LEFT_SLOTS   = listOf("Head", "Neck", "Shoulders", "Back", "Chest", "Wrists")
+private val RIGHT_SLOTS  = listOf("Hands", "Waist", "Legs", "Feet", "Ring", "Ring")
+private val BOTTOM_SLOTS = listOf("Trinket", "Trinket", "Main Hand", "Off Hand", "Ranged")
+
+/** "Wand" (Mage) occupies the same bottom-row position as "Ranged" (Rogue). */
+private fun normalizeSlot(s: String) = if (s == "Wand") "Ranged" else s
+
+/**
+ * Maps a flat item list to an ordered slot list.
+ * Handles duplicate slots (Ring×2, Trinket×2) by consuming items greedily.
+ * Returns null for slots with no matching item.
+ */
+private fun mapItemsToSlots(items: List<GearItem>, slotList: List<String>): List<GearItem?> {
+    val remaining = items.toMutableList()
+    return slotList.map { slot ->
+        val idx = remaining.indexOfFirst { normalizeSlot(it.slot) == slot }
+        if (idx >= 0) remaining.removeAt(idx) else null
+    }
+}
+
+// ─── GearTabContent (replaces the old flat-list version) ────────────────────
+
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun GearTabContent(viewModel: GearViewModel) {
     val state by viewModel.state.collectAsState()
@@ -93,35 +129,238 @@ private fun GearTabContent(viewModel: GearViewModel) {
         is GearState.Loading -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             CircularProgressIndicator(color = Accent)
         }
-        is GearState.Error -> Text(
-            s.message,
-            color = TextSecondary,
-            modifier = Modifier.padding(24.dp)
-        )
+        is GearState.Error -> Text(s.message, color = TextSecondary, modifier = Modifier.padding(24.dp))
         is GearState.Success -> {
-            LazyColumn(modifier = Modifier.fillMaxSize()) {
-                s.gearByClass.forEach { (classId, phases) ->
-                    val className = s.classNames[classId] ?: classId
-                    phases.forEach { phase ->
-                        item {
+            var selectedPhase by remember { mutableStateOf(1) }
+
+            val availablePhases = remember(s) {
+                s.gearByClass.values.firstOrNull()?.map { it.phase }?.sorted() ?: listOf(1)
+            }
+
+            Column(modifier = Modifier.fillMaxSize()) {
+                // Phase tabs
+                Row(modifier = Modifier.padding(horizontal = 24.dp, vertical = 4.dp)) {
+                    availablePhases.forEach { phase ->
+                        val selected = phase == selectedPhase
+                        Box(
+                            modifier = Modifier
+                                .clickable { selectedPhase = phase }
+                                .padding(horizontal = 12.dp, vertical = 8.dp)
+                        ) {
                             Text(
-                                text = "$className — Phase ${phase.phase}",
-                                color = TextPrimary,
-                                fontSize = 15.sp,
-                                fontWeight = FontWeight.SemiBold,
-                                modifier = Modifier.padding(start = 24.dp, top = 20.dp, bottom = 8.dp)
+                                text = "Phase $phase",
+                                color = if (selected) Accent else TextSecondary,
+                                fontSize = 14.sp,
+                                fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Normal
                             )
                         }
-                        items(phase.items) { gearItem ->
-                            ItemRow(gearItem)
-                            HorizontalDivider(
-                                color = DividerColor,
-                                modifier = Modifier.padding(horizontal = 16.dp)
+                    }
+                }
+                HorizontalDivider(color = DividerColor)
+
+                // Two paper dolls in a flow row (side-by-side on wide screens, stacked on narrow)
+                FlowRow(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .verticalScroll(rememberScrollState())
+                        .padding(16.dp),
+                    horizontalArrangement = Arrangement.spacedBy(16.dp)
+                ) {
+                    s.gearByClass.forEach { (classId, phases) ->
+                        val className = s.classNames[classId] ?: classId
+                        val phase = phases.find { it.phase == selectedPhase } ?: phases.firstOrNull()
+                        if (phase != null) {
+                            PaperDoll(
+                                classId = classId,
+                                className = className,
+                                phase = phase,
+                                modifier = Modifier
+                                    .weight(1f)
+                                    .widthIn(min = 280.dp)
                             )
                         }
                     }
                 }
             }
         }
+    }
+}
+
+// ─── PaperDoll ───────────────────────────────────────────────────────────────
+
+@Composable
+private fun PaperDoll(
+    classId: String,
+    className: String,
+    phase: GearPhase,
+    modifier: Modifier = Modifier
+) {
+    val leftItems   = remember(phase) { mapItemsToSlots(phase.items, LEFT_SLOTS) }
+    val rightItems  = remember(phase) { mapItemsToSlots(phase.items, RIGHT_SLOTS) }
+    val bottomItems = remember(phase) { mapItemsToSlots(phase.items, BOTTOM_SLOTS) }
+
+    Surface(
+        color = CardColor,
+        shape = RoundedCornerShape(12.dp),
+        modifier = modifier.padding(4.dp)
+    ) {
+        Column(modifier = Modifier.padding(12.dp)) {
+            // Top: left slots | class icon center | right slots
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                // Left column
+                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    leftItems.zip(LEFT_SLOTS).forEach { (item, slot) ->
+                        if (item != null) GearSlot(item) else EmptyGearSlot(slot)
+                    }
+                }
+
+                // Center: class icon + name
+                Column(
+                    modifier = Modifier.weight(1f),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    AsyncImage(
+                        model = "https://wow.zamimg.com/images/wow/icons/large/classicon_$classId.jpg",
+                        contentDescription = className,
+                        modifier = Modifier
+                            .size(72.dp)
+                            .clip(RoundedCornerShape(8.dp))
+                            .border(2.dp, classColor(classId), RoundedCornerShape(8.dp))
+                    )
+                    Spacer(Modifier.height(8.dp))
+                    Text(
+                        text = className,
+                        color = classColor(classId),
+                        fontSize = 13.sp,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                }
+
+                // Right column
+                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    rightItems.zip(RIGHT_SLOTS).forEach { (item, slot) ->
+                        if (item != null) GearSlot(item) else EmptyGearSlot(slot)
+                    }
+                }
+            }
+
+            Spacer(Modifier.height(8.dp))
+            HorizontalDivider(color = DividerColor)
+            Spacer(Modifier.height(8.dp))
+
+            // Bottom row: trinkets + weapons
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(4.dp),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                bottomItems.zip(BOTTOM_SLOTS).forEach { (item, slot) ->
+                    if (item != null) GearSlot(item, modifier = Modifier.weight(1f))
+                    else EmptyGearSlot(slot, modifier = Modifier.weight(1f))
+                }
+            }
+        }
+    }
+}
+
+// ─── GearSlot ────────────────────────────────────────────────────────────────
+
+@Composable
+private fun GearSlot(item: GearItem, modifier: Modifier = Modifier) {
+    val wowheadUrl = "https://www.wowhead.com/tbc/item=${item.wowheadId}"
+    Column(
+        modifier = modifier
+            .widthIn(min = 60.dp, max = 80.dp)
+            .clip(RoundedCornerShape(8.dp))
+            .background(Surface)
+            .clickable { openUrl(wowheadUrl) }
+            .pointerInput(item.wowheadId) {
+                awaitPointerEventScope {
+                    while (true) {
+                        val event = awaitPointerEvent()
+                        val pos = event.changes.firstOrNull()?.position
+                        when (event.type) {
+                            PointerEventType.Enter ->
+                                pos?.let { showWowheadTooltip(item.wowheadId, it.x, it.y) }
+                            PointerEventType.Exit -> hideWowheadTooltip()
+                        }
+                    }
+                }
+            }
+            .padding(4.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        SubcomposeAsyncImage(
+            model = "https://wow.zamimg.com/images/wow/icons/medium/${item.icon}.jpg",
+            contentDescription = item.name,
+            modifier = Modifier.size(48.dp).clip(RoundedCornerShape(6.dp)),
+            error = { EmptyIconPlaceholder() }
+        )
+        Text(
+            text = item.name,
+            color = Accent,
+            fontSize = 10.sp,
+            maxLines = 2,
+            overflow = TextOverflow.Ellipsis,
+            textAlign = TextAlign.Center,
+            lineHeight = 12.sp
+        )
+        if (item.enchant != null) {
+            Text(
+                text = "✦",
+                color = TextSecondary,
+                fontSize = 9.sp
+            )
+        }
+    }
+}
+
+// ─── EmptyGearSlot ───────────────────────────────────────────────────────────
+
+@Composable
+private fun EmptyGearSlot(slotName: String, modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier
+            .widthIn(min = 60.dp, max = 80.dp)
+            .clip(RoundedCornerShape(8.dp))
+            .background(CardElevated)
+            .padding(4.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Box(
+            modifier = Modifier
+                .size(48.dp)
+                .clip(RoundedCornerShape(6.dp))
+                .background(Surface),
+            contentAlignment = Alignment.Center
+        ) {
+            Text("?", color = TextSecondary, fontSize = 18.sp)
+        }
+        Text(
+            text = slotName,
+            color = TextSecondary,
+            fontSize = 10.sp,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
+            textAlign = TextAlign.Center
+        )
+    }
+}
+
+// ─── EmptyIconPlaceholder (used by SubcomposeAsyncImage error state) ─────────
+
+@Composable
+private fun EmptyIconPlaceholder() {
+    Box(
+        modifier = Modifier
+            .size(48.dp)
+            .clip(RoundedCornerShape(6.dp))
+            .background(CardElevated),
+        contentAlignment = Alignment.Center
+    ) {
+        Text("?", color = TextSecondary, fontSize = 18.sp)
     }
 }
