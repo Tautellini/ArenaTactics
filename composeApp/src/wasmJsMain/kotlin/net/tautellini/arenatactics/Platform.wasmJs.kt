@@ -9,7 +9,7 @@ private external fun getAppBase(): String
 private var popCallback: (() -> Unit)? = null
 
 actual fun refreshWowheadTooltips() {
-    js("if (typeof WH !== 'undefined') WH.refreshLinks()")
+    js("if (typeof WH !== 'undefined' && typeof WH.refreshLinks === 'function') WH.refreshLinks()")
 }
 
 actual fun openUrl(url: String) {
@@ -33,7 +33,7 @@ actual fun getInitialPath(): String = window.location.pathname
     el.href = 'https://www.wowhead.com/tbc/item=' + id;
     el.setAttribute('data-wowhead', 'item=' + id + '&domain=tbc');
     el.style.cssText = 'position:fixed;left:' + x + 'px;top:' + y + 'px;width:1px;height:1px;opacity:0;pointer-events:none;';
-    if (window.WH) WH.refreshLinks();
+    if (window.WH && typeof WH.refreshLinks === 'function') WH.refreshLinks();
     el.dispatchEvent(new MouseEvent('mouseover', {bubbles:true}));
 }""")
 private external fun showWowheadTooltipJs(id: Int, x: Float, y: Float)
