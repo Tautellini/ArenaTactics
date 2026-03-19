@@ -1,6 +1,5 @@
 package net.tautellini.arenatactics
 
-expect fun refreshWowheadTooltips()
 expect fun openUrl(url: String)
 expect fun pushNavigationState(path: String)
 // Registers a callback invoked by the browser's popstate event (back button).
@@ -9,13 +8,3 @@ expect fun registerPopCallback(callback: () -> Unit)
 // Returns the current URL pathname for deep-link support. Returns "/" on JVM.
 expect fun getInitialPath(): String
 
-// Shows a Wowhead tooltip for the given item ID at the cursor position.
-// On web: creates/updates a 1×1 invisible DOM anchor at the cursor, triggers WH tooltip.
-// On JVM: no-op.
-expect fun showWowheadTooltip(itemId: Int, cursorX: Float, cursorY: Float)
-expect fun hideWowheadTooltip()
-
-// Installs a MutationObserver that reparents Wowhead's tooltip divs from
-// document.body into the gear-overlay element so they paint above the canvas.
-// On JVM: no-op.
-expect fun observeWowheadTooltips()

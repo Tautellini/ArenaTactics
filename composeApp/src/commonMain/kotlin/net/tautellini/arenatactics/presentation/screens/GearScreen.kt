@@ -1,7 +1,6 @@
 package net.tautellini.arenatactics.presentation.screens
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -333,17 +332,3 @@ private fun EmptyGearSlot(slotName: String, modifier: Modifier = Modifier) {
     }
 }
 
-// ─── EmptyIconPlaceholder (used by SubcomposeAsyncImage error state) ─────────
-
-@Composable
-private fun EmptyIconPlaceholder() {
-    Box(
-        modifier = Modifier
-            .size(48.dp)
-            .clip(RoundedCornerShape(6.dp))
-            .background(CardElevated),
-        contentAlignment = Alignment.Center
-    ) {
-        Text("?", color = TextSecondary, fontSize = 18.sp)
-    }
-}

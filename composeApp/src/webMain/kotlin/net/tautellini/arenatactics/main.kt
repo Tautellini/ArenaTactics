@@ -3,6 +3,7 @@ package net.tautellini.arenatactics
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.window.ComposeViewport
 import kotlinx.browser.document
+import org.w3c.dom.HTMLElement
 
 @OptIn(ExperimentalComposeUiApi::class)
 fun main() {
@@ -16,23 +17,18 @@ fun main() {
     tooltipScript.setAttribute("src", "https://wow.zamimg.com/js/tooltips.js")
     document.head!!.appendChild(tooltipScript)
 
-    // Overlay layer appended to <html> (outside <body>/shadow root) so it
-    // always paints above the Compose canvas regardless of z-index.
-    val overlay = document.createElement("div")
-    overlay.id = "gear-overlay"
-    overlay.setAttribute(
-        "style",
-        "position:fixed;top:0;left:0;width:0;height:0;pointer-events:none;"
-    )
-    document.documentElement!!.appendChild(overlay)
-
-    // Reparent Wowhead tooltip divs from body into the overlay as they are created,
-    // so they paint above the Compose canvas (which lives in body's shadow root).
-    observeWowheadTooltips()
+    // Mount Compose into a div with an explicit low z-index instead of document.body.
+    // This makes the shadow root canvas a stacking context at z-index:0, so any
+    // positioned element in document.body with z-index >= 1 (including Wowhead
+    // tooltip divs and our gear icon <a> elements) naturally paints above it.
+    // No MutationObserver or gear-overlay workaround needed.
+    val composeRoot = document.createElement("div") as HTMLElement
+    composeRoot.style.cssText = "position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;"
+    document.body!!.appendChild(composeRoot)
 
     // popstate wiring handled inside App.kt via registerPopCallback + DisposableEffect
 
-    ComposeViewport(document.body!!) {
+    ComposeViewport(composeRoot) {
         App()
     }
 }

@@ -34,11 +34,10 @@ actual fun GearIcon(
     val density = LocalDensity.current.density
 
     val el = remember {
-        val overlay = document.getElementById("gear-overlay") ?: document.documentElement!!
         (document.createElement("a") as HTMLAnchorElement).also {
             it.style.cssText =
-                "display:none;position:fixed;background-size:cover;background-position:center;"
-            overlay.appendChild(it)
+                "display:none;position:fixed;z-index:1;background-size:cover;background-position:center;"
+            document.body!!.appendChild(it)
         }
     }
 
