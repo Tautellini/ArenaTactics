@@ -69,6 +69,11 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - All core models (`Composition`, `Matchup`) must use **`List<String>` for spec slots**, never hardcoded `spec1Id`/`spec2Id` pairs. This is what allows the same model to represent a 2-spec comp and a 5-spec comp without changes.
 - `GameMode` should carry a `teamSize: Int` so repositories and UI can validate and render compositions correctly for any bracket.
 
+## Spec Ordering
+- `specIds` in JSON data files are always **alphabetically sorted** — this is enforced by `Composition.init` and is required for stable IDs and deduplication.
+- `RichComposition.specs` (the display layer) are always reordered **DPS first, HEALER last** in `enrichCompositions()`. Never change this order at the UI layer; fix it at the enrichment layer if it is wrong.
+- When adding new compositions to JSON, keep `specIds` alphabetical. The display order is handled automatically.
+
 ## DESIGN GUIDELINES
 - the overall design is a very modern and dark design with glass-like elements
 - premium feel
