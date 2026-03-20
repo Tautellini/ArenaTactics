@@ -2,6 +2,10 @@ package net.tautellini.arenatactics.presentation.screens.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.AutoAwesome
+import androidx.compose.material.icons.rounded.Diamond
+import androidx.compose.material.icons.rounded.OpenInNew
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -26,17 +30,33 @@ fun ItemRow(item: GearItem, modifier: Modifier = Modifier) {
                 Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     Text("Slot: ${item.slot}", fontSize = 12.sp)
                     if (item.enchant != null) {
-                        Text("✦ ${item.enchant}", fontSize = 12.sp)
+                        Row(
+                            horizontalArrangement = Arrangement.spacedBy(4.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Icon(Icons.Rounded.AutoAwesome, contentDescription = null, modifier = Modifier.size(12.dp), tint = Accent)
+                            Text(item.enchant, fontSize = 12.sp)
+                        }
                     }
                     if (item.gems.isNotEmpty()) {
-                        Text(item.gems.joinToString("  ") { "◆ $it" }, fontSize = 12.sp)
+                        item.gems.forEach { gem ->
+                            Row(
+                                horizontalArrangement = Arrangement.spacedBy(4.dp),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Icon(Icons.Rounded.Diamond, contentDescription = null, modifier = Modifier.size(12.dp), tint = TextSecondary)
+                                Text(gem, fontSize = 12.sp)
+                            }
+                        }
                     }
-                    Text(
-                        "Click to view on Wowhead →",
-                        fontSize = 11.sp,
-                        color = Accent,
-                        modifier = Modifier.padding(top = 4.dp)
-                    )
+                    Row(
+                        modifier = Modifier.padding(top = 4.dp),
+                        horizontalArrangement = Arrangement.spacedBy(4.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text("View on Wowhead", fontSize = 11.sp, color = Accent)
+                        Icon(Icons.Rounded.OpenInNew, contentDescription = null, modifier = Modifier.size(11.dp), tint = Accent)
+                    }
                 }
             }
         },
@@ -68,18 +88,17 @@ fun ItemRow(item: GearItem, modifier: Modifier = Modifier) {
             if (item.enchant != null || item.gems.isNotEmpty()) {
                 Row(
                     modifier = Modifier.padding(start = 88.dp),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
                     if (item.enchant != null) {
-                        Text(
-                            text = "✦ ${item.enchant}",
-                            color = TextSecondary,
-                            fontSize = 11.sp
-                        )
+                        Icon(Icons.Rounded.AutoAwesome, contentDescription = null, modifier = Modifier.size(11.dp), tint = Accent)
+                        Text(item.enchant, color = TextSecondary, fontSize = 11.sp)
                     }
                     if (item.gems.isNotEmpty()) {
+                        Icon(Icons.Rounded.Diamond, contentDescription = null, modifier = Modifier.size(11.dp), tint = TextSecondary)
                         Text(
-                            text = item.gems.joinToString(" · ") { "◆ $it" },
+                            text = item.gems.joinToString(" · "),
                             color = TextSecondary,
                             fontSize = 11.sp
                         )

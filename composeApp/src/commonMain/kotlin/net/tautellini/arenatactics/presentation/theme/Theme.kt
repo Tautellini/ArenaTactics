@@ -1,9 +1,20 @@
 package net.tautellini.arenatactics.presentation.theme
 
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Typography
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
+import arenatactics.composeapp.generated.resources.NotoSans_Bold
+import arenatactics.composeapp.generated.resources.NotoSans_Medium
+import arenatactics.composeapp.generated.resources.NotoSans_Regular
+import arenatactics.composeapp.generated.resources.NotoSans_SemiBold
+import arenatactics.composeapp.generated.resources.Res
+import org.jetbrains.compose.resources.Font
 
 // Background layers
 val Background   = Color(0xFF0D0D0F)
@@ -47,8 +58,26 @@ private val DarkColors = darkColorScheme(
 
 @Composable
 fun ArenaTacticsTheme(content: @Composable () -> Unit) {
+    val notoSans = FontFamily(
+        Font(Res.font.NotoSans_Regular, FontWeight.Normal),
+        Font(Res.font.NotoSans_Medium, FontWeight.Medium),
+        Font(Res.font.NotoSans_SemiBold, FontWeight.SemiBold),
+        Font(Res.font.NotoSans_Bold, FontWeight.Bold),
+    )
+    val typography = Typography(
+        bodyLarge   = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.Normal, fontSize = 16.sp),
+        bodyMedium  = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.Normal, fontSize = 14.sp),
+        bodySmall   = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.Normal, fontSize = 12.sp),
+        labelLarge  = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.Medium, fontSize = 14.sp),
+        labelMedium = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.Medium, fontSize = 12.sp),
+        labelSmall  = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.Medium, fontSize = 11.sp),
+        titleLarge  = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.SemiBold, fontSize = 20.sp),
+        titleMedium = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.SemiBold, fontSize = 16.sp),
+        titleSmall  = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.SemiBold, fontSize = 14.sp),
+    )
     MaterialTheme(
         colorScheme = DarkColors,
+        typography = typography,
         content = content
     )
 }
