@@ -1,6 +1,8 @@
 package net.tautellini.arenatactics.presentation.screens
 
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -12,6 +14,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import net.tautellini.arenatactics.data.model.CompositionTier
+import net.tautellini.arenatactics.domain.RichComposition
 import net.tautellini.arenatactics.navigation.Navigator
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.presentation.CompositionSelectionState
@@ -20,6 +24,13 @@ import net.tautellini.arenatactics.presentation.screens.components.BackButton
 import net.tautellini.arenatactics.presentation.screens.components.CompositionCard
 import net.tautellini.arenatactics.presentation.theme.*
 
+private fun CompositionTier.label() = when (this) {
+    CompositionTier.DOMINANT -> "Dominant"
+    CompositionTier.STRONG   -> "Strong"
+    CompositionTier.PLAYABLE -> "Playable"
+    CompositionTier.OTHERS   -> "Others"
+}
+
 @Composable
 fun CompositionSelectionScreen(
     gameModeId: String,
@@ -27,6 +38,7 @@ fun CompositionSelectionScreen(
     navigator: Navigator
 ) {
     val state by viewModel.state.collectAsState()
+    var othersExpanded by remember { mutableStateOf(false) }
 
     Column(
         modifier = Modifier.fillMaxSize().background(Background).padding(24.dp)
@@ -43,18 +55,86 @@ fun CompositionSelectionScreen(
         }
         Spacer(Modifier.height(24.dp))
         when (val s = state) {
-            is CompositionSelectionState.Loading -> CircularProgressIndicator(color = Accent)
-            is CompositionSelectionState.Error -> Text(s.message, color = TextSecondary)
+            is CompositionSelectionState.Loading ->
+                CircularProgressIndicator(color = Accent)
+            is CompositionSelectionState.Error ->
+                Text(s.message, color = TextSecondary)
             is CompositionSelectionState.Success -> {
                 LazyColumn(verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                    items(s.compositions) { rich ->
-                        CompositionCard(
-                            richComposition = rich,
-                            onClick = { navigator.push(Screen.GearView(gameModeId, rich.composition.id)) }
-                        )
+                    CompositionTier.entries.forEach { tier ->
+                        val comps = s.grouped[tier] ?: return@forEach
+                        if (tier == CompositionTier.OTHERS) {
+                            item {
+                                TierHeader(
+                                    label = tier.label(),
+                                    expandable = true,
+                                    expanded = othersExpanded,
+                                    onToggle = { othersExpanded = !othersExpanded }
+                                )
+                            }
+                            item {
+                                // A nested LazyColumn is not permitted inside LazyColumn.
+                                // Using Column + forEach here is intentional — AnimatedVisibility
+                                // defers animation but all 72 items are composed while collapsed.
+                                // Acceptable for this list size; revisit if performance degrades.
+                                AnimatedVisibility(visible = othersExpanded) {
+                                    Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                                        comps.forEach { rich ->
+                                            CompositionCard(
+                                                richComposition = rich,
+                                                onClick = if (rich.composition.hasData) {
+                                                    { navigator.push(Screen.GearView(gameModeId, rich.composition.id)) }
+                                                } else null
+                                            )
+                                        }
+                                    }
+                                }
+                            }
+                        } else {
+                            item { TierHeader(label = tier.label()) }
+                            items(comps) { rich ->
+                                CompositionCard(
+                                    richComposition = rich,
+                                    onClick = if (rich.composition.hasData) {
+                                        { navigator.push(Screen.GearView(gameModeId, rich.composition.id)) }
+                                    } else null
+                                )
+                            }
+                        }
                     }
                 }
             }
+        }
+    }
+}
+
+@Composable
+private fun TierHeader(
+    label: String,
+    expandable: Boolean = false,
+    expanded: Boolean = false,
+    onToggle: () -> Unit = {}
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .then(if (expandable) Modifier.clickable(onClick = onToggle) else Modifier)
+            .padding(vertical = 4.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.SpaceBetween
+    ) {
+        Text(
+            text = label,
+            color = TextPrimary,
+            fontSize = 14.sp,
+            fontWeight = FontWeight.SemiBold
+        )
+        if (expandable) {
+            Text(
+                text = if (expanded) "▲" else "▼",
+                color = TextSecondary,
+                fontSize = 12.sp
+            )
         }
     }
 }
