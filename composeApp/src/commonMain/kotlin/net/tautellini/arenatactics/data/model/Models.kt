@@ -22,7 +22,7 @@ data class WowClass(
 )
 
 @Serializable
-enum class SpecRole { DPS, HEALER }
+enum class SpecRole { DPS, HEALER }  // TANK omitted: TBC 2v2/3v3 arena has no tank role
 
 @Serializable
 data class WowSpec(
@@ -42,8 +42,11 @@ data class Composition(
     val tier: CompositionTier,
     val hasData: Boolean
 ) {
+    init {
+        require(specIds == specIds.sorted()) { "specIds must be sorted: $specIds" }
+    }
     // Lookup key only — never parse back into spec IDs (underscores are ambiguous)
-    val id: String get() = specIds.sorted().joinToString("_")
+    val id: String get() = specIds.joinToString("_")
 }
 
 @Serializable
