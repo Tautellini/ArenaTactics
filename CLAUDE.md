@@ -68,3 +68,12 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - **Data is currently only curated for TBC Anniversary 2v2** — this is a content scope decision, not an architectural one.
 - All core models (`Composition`, `Matchup`) must use **`List<String>` for spec slots**, never hardcoded `spec1Id`/`spec2Id` pairs. This is what allows the same model to represent a 2-spec comp and a 5-spec comp without changes.
 - `GameMode` should carry a `teamSize: Int` so repositories and UI can validate and render compositions correctly for any bracket.
+
+## DESIGN GUIDELINES
+- the overall design is a very modern and dark design with glass-like elements
+- premium feel
+- modern icon first (and only) design
+- Background color: #042326
+- Foreground color: #0A3A40
+- Primary color: #1D7373
+- Secondary color: #0F5959
