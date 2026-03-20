@@ -8,13 +8,18 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import net.tautellini.arenatactics.data.model.Matchup
 import net.tautellini.arenatactics.data.model.WowClass
+import net.tautellini.arenatactics.data.model.WowSpec
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
 import net.tautellini.arenatactics.data.repository.MatchupRepository
 
 sealed class MatchupDetailState {
     data object Loading : MatchupDetailState()
-    data class Success(val matchup: Matchup, val classMap: Map<String, WowClass>) : MatchupDetailState()
+    data class Success(
+        val matchup:  Matchup,
+        val specMap:  Map<String, WowSpec>,
+        val classMap: Map<String, WowClass>
+    ) : MatchupDetailState()
     data class Error(val message: String) : MatchupDetailState()
 }
 
@@ -32,12 +37,14 @@ class MatchupDetailViewModel(
     init {
         viewModelScope.launch {
             _state.value = try {
-                val mode = gameModeRepository.getAll().first { it.id == gameModeId }
-                val classes = compositionRepository.getClasses(mode.classPoolId)
+                val mode     = gameModeRepository.getAll().first { it.id == gameModeId }
+                val specs    = compositionRepository.getSpecs(mode.specPoolId)
+                val specMap  = specs.associateBy { it.id }
+                val classes  = compositionRepository.getClasses(mode.classPoolId)
                 val classMap = classes.associateBy { it.id }
-                val matchup = matchupRepository.getById(compositionId, matchupId)
+                val matchup  = matchupRepository.getById(compositionId, matchupId)
                     ?: throw IllegalArgumentException("Matchup not found: $matchupId")
-                MatchupDetailState.Success(matchup, classMap)
+                MatchupDetailState.Success(matchup, specMap, classMap)
             } catch (e: Throwable) {
                 MatchupDetailState.Error(e.message ?: "Failed to load matchup")
             }

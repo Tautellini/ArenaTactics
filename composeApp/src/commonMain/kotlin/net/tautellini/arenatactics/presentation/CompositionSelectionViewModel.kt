@@ -6,13 +6,16 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import net.tautellini.arenatactics.data.model.CompositionTier
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
 import net.tautellini.arenatactics.domain.RichComposition
 
 sealed class CompositionSelectionState {
     data object Loading : CompositionSelectionState()
-    data class Success(val compositions: List<RichComposition>) : CompositionSelectionState()
+    data class Success(
+        val grouped: Map<CompositionTier, List<RichComposition>>
+    ) : CompositionSelectionState()
     data class Error(val message: String) : CompositionSelectionState()
 }
 
@@ -29,12 +32,15 @@ class CompositionSelectionViewModel(
             _state.value = try {
                 val mode = gameModeRepository.getAll().first { it.id == gameModeId }
                 val rich = compositionRepository.getRichCompositions(
-                    specPoolId = mode.specPoolId,
-                    classPoolId = mode.classPoolId,
-                    compositionSetId = mode.compositionSetId,
-                    teamSize = mode.teamSize
+                    specPoolId        = mode.specPoolId,
+                    classPoolId       = mode.classPoolId,
+                    compositionSetId  = mode.compositionSetId,
+                    teamSize          = mode.teamSize
                 )
-                CompositionSelectionState.Success(rich)
+                val grouped = CompositionTier.entries
+                    .associateWith { tier -> rich.filter { it.composition.tier == tier } }
+                    .filterValues { it.isNotEmpty() }
+                CompositionSelectionState.Success(grouped)
             } catch (e: Throwable) {
                 CompositionSelectionState.Error(e.message ?: "Failed to load compositions")
             }

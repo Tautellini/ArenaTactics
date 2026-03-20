@@ -8,6 +8,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import net.tautellini.arenatactics.data.model.Matchup
 import net.tautellini.arenatactics.data.model.WowClass
+import net.tautellini.arenatactics.data.model.WowSpec
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
 import net.tautellini.arenatactics.data.repository.MatchupRepository
@@ -16,6 +17,7 @@ sealed class MatchupListState {
     data object Loading : MatchupListState()
     data class Success(
         val matchups: List<Matchup>,
+        val specMap:  Map<String, WowSpec>,
         val classMap: Map<String, WowClass>
     ) : MatchupListState()
     data class Error(val message: String) : MatchupListState()
@@ -34,11 +36,13 @@ class MatchupListViewModel(
     init {
         viewModelScope.launch {
             _state.value = try {
-                val mode = gameModeRepository.getAll().first { it.id == gameModeId }
-                val classes = compositionRepository.getClasses(mode.classPoolId)
+                val mode     = gameModeRepository.getAll().first { it.id == gameModeId }
+                val specs    = compositionRepository.getSpecs(mode.specPoolId)
+                val specMap  = specs.associateBy { it.id }
+                val classes  = compositionRepository.getClasses(mode.classPoolId)
                 val classMap = classes.associateBy { it.id }
                 val matchups = matchupRepository.getForComposition(compositionId)
-                MatchupListState.Success(matchups, classMap)
+                MatchupListState.Success(matchups, specMap, classMap)
             } catch (e: Throwable) {
                 MatchupListState.Error(e.message ?: "Failed to load matchups")
             }
