@@ -12,7 +12,8 @@ import net.tautellini.arenatactics.presentation.theme.ArenaTacticsTheme
 @Composable
 fun App() {
     val gameModeRepository = remember { GameModeRepository() }
-    val compositionRepository = remember { CompositionRepository() }
+    val specRepository = remember { SpecRepository() }
+    val compositionRepository = remember { CompositionRepository(specRepository) }
     val gearRepository = remember { GearRepository(compositionRepository) }
     val matchupRepository = remember { MatchupRepository() }
     val navigator = remember {

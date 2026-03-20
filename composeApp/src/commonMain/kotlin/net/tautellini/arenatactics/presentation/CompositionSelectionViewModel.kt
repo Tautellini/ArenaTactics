@@ -8,7 +8,6 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
-import net.tautellini.arenatactics.domain.CompositionGenerator
 import net.tautellini.arenatactics.domain.RichComposition
 
 sealed class CompositionSelectionState {
@@ -29,9 +28,12 @@ class CompositionSelectionViewModel(
         viewModelScope.launch {
             _state.value = try {
                 val mode = gameModeRepository.getAll().first { it.id == gameModeId }
-                val classes = compositionRepository.getClasses(mode.classPoolId)
-                val compositions = compositionRepository.getCompositions(mode.compositionSetId)
-                val rich = CompositionGenerator.generate(classes, compositions)
+                val rich = compositionRepository.getRichCompositions(
+                    specPoolId = mode.specPoolId,
+                    classPoolId = mode.classPoolId,
+                    compositionSetId = mode.compositionSetId,
+                    teamSize = mode.teamSize
+                )
                 CompositionSelectionState.Success(rich)
             } catch (e: Throwable) {
                 CompositionSelectionState.Error(e.message ?: "Failed to load compositions")

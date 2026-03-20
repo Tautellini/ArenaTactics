@@ -29,8 +29,9 @@ fun CompositionCard(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            ClassBadge(richComposition.class1.id, richComposition.class1.name)
-            ClassBadge(richComposition.class2.id, richComposition.class2.name)
+            richComposition.classes.forEach { cls ->
+                ClassBadge(cls.id, cls.name)
+            }
         }
     }
 }

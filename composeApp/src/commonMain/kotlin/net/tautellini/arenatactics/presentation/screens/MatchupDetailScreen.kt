@@ -55,10 +55,15 @@ fun MatchupDetailScreen(
                         fontSize = 14.sp,
                         modifier = Modifier.padding(end = 8.dp)
                     )
-                    val c1 = s.classMap[matchup.enemyClass1Id]
-                    val c2 = s.classMap[matchup.enemyClass2Id]
-                    if (c1 != null) ClassBadge(c1.id, c1.name, modifier = Modifier.padding(end = 6.dp))
-                    if (c2 != null) ClassBadge(c2.id, c2.name)
+                    matchup.enemySpecIds.forEachIndexed { index, specId ->
+                        val classId = specId.substringBefore("_")
+                        val cls = s.classMap[classId]
+                        if (cls != null) ClassBadge(
+                            cls.id,
+                            cls.name,
+                            modifier = if (index < matchup.enemySpecIds.lastIndex) Modifier.padding(end = 6.dp) else Modifier
+                        )
+                    }
                 }
                 SelectionContainer {
                     Column(

@@ -66,10 +66,11 @@ fun MatchupListScreen(
                                 fontSize = 12.sp,
                                 modifier = Modifier.width(20.dp)
                             )
-                            val c1 = s.classMap[matchup.enemyClass1Id]
-                            val c2 = s.classMap[matchup.enemyClass2Id]
-                            if (c1 != null) ClassBadge(c1.id, c1.name)
-                            if (c2 != null) ClassBadge(c2.id, c2.name)
+                            matchup.enemySpecIds.forEach { specId ->
+                                val classId = specId.substringBefore("_")
+                                val cls = s.classMap[classId]
+                                if (cls != null) ClassBadge(cls.id, cls.name)
+                            }
                         }
                     }
                 }
