@@ -1,11 +1,12 @@
 package net.tautellini.arenatactics.presentation.screens
 
-import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.GridItemSpan
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
@@ -15,7 +16,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import net.tautellini.arenatactics.data.model.CompositionTier
-import net.tautellini.arenatactics.domain.RichComposition
 import net.tautellini.arenatactics.navigation.Navigator
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.presentation.CompositionSelectionState
@@ -60,11 +60,16 @@ fun CompositionSelectionScreen(
             is CompositionSelectionState.Error ->
                 Text(s.message, color = TextSecondary)
             is CompositionSelectionState.Success -> {
-                LazyColumn(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                LazyVerticalGrid(
+                    columns = GridCells.Adaptive(minSize = 280.dp),
+                    modifier = Modifier.weight(1f),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
                     CompositionTier.entries.forEach { tier ->
                         val comps = s.grouped[tier] ?: return@forEach
                         if (tier == CompositionTier.OTHERS) {
-                            item {
+                            item(span = { GridItemSpan(maxLineSpan) }) {
                                 TierHeader(
                                     label = tier.label(),
                                     expandable = true,
@@ -72,26 +77,20 @@ fun CompositionSelectionScreen(
                                     onToggle = { othersExpanded = !othersExpanded }
                                 )
                             }
-                            item {
-                                // A nested LazyColumn is not permitted inside LazyColumn.
-                                // Using Column + forEach here is intentional — AnimatedVisibility
-                                // defers animation but all 72 items are composed while collapsed.
-                                // Acceptable for this list size; revisit if performance degrades.
-                                AnimatedVisibility(visible = othersExpanded) {
-                                    Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                                        comps.forEach { rich ->
-                                            CompositionCard(
-                                                richComposition = rich,
-                                                onClick = if (rich.composition.hasData) {
-                                                    { navigator.push(Screen.GearView(gameModeId, rich.composition.id)) }
-                                                } else null
-                                            )
-                                        }
-                                    }
+                            if (othersExpanded) {
+                                items(comps) { rich ->
+                                    CompositionCard(
+                                        richComposition = rich,
+                                        onClick = if (rich.composition.hasData) {
+                                            { navigator.push(Screen.GearView(gameModeId, rich.composition.id)) }
+                                        } else null
+                                    )
                                 }
                             }
                         } else {
-                            item { TierHeader(label = tier.label()) }
+                            item(span = { GridItemSpan(maxLineSpan) }) {
+                                TierHeader(label = tier.label())
+                            }
                             items(comps) { rich ->
                                 CompositionCard(
                                     richComposition = rich,
