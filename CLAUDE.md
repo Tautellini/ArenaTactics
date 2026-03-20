@@ -58,3 +58,9 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 ## Additional Code Guidance
 -  any exception-generating code on the web path (IO, JS interop) needs catch
    (Throwable) and must never be left uncaught in a LaunchedEffect
+
+## Multi-Bracket & Multi-Addon Scope
+- The app is designed to support **multiple game modes**: 2v2, 3v3, 5v5, and potentially other addons (e.g., Wrath, Retail).
+- **Data is currently only curated for TBC Anniversary 2v2** — this is a content scope decision, not an architectural one.
+- All core models (`Composition`, `Matchup`) must use **`List<String>` for spec slots**, never hardcoded `spec1Id`/`spec2Id` pairs. This is what allows the same model to represent a 2-spec comp and a 5-spec comp without changes.
+- `GameMode` should carry a `teamSize: Int` so repositories and UI can validate and render compositions correctly for any bracket.
