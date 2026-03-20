@@ -18,7 +18,7 @@ import net.tautellini.arenatactics.navigation.Navigator
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.presentation.MatchupListState
 import net.tautellini.arenatactics.presentation.MatchupListViewModel
-import net.tautellini.arenatactics.presentation.screens.components.ClassBadge
+import net.tautellini.arenatactics.presentation.screens.components.SpecBadge
 import net.tautellini.arenatactics.presentation.theme.*
 
 @Composable
@@ -50,9 +50,7 @@ fun MatchupListScreen(
                         color = CardColor,
                         shape = RoundedCornerShape(8.dp),
                         modifier = Modifier.fillMaxWidth().clickable {
-                            navigator.push(
-                                Screen.MatchupDetail(gameModeId, compositionId, matchup.id)
-                            )
+                            navigator.push(Screen.MatchupDetail(gameModeId, compositionId, matchup.id))
                         }
                     ) {
                         Row(
@@ -60,16 +58,11 @@ fun MatchupListScreen(
                             horizontalArrangement = Arrangement.spacedBy(8.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-                            Text(
-                                "vs",
-                                color = TextSecondary,
-                                fontSize = 12.sp,
-                                modifier = Modifier.width(20.dp)
-                            )
+                            Text("vs", color = TextSecondary, fontSize = 12.sp, modifier = Modifier.width(20.dp))
                             matchup.enemySpecIds.forEach { specId ->
-                                val classId = specId.substringBefore("_")
-                                val cls = s.classMap[classId]
-                                if (cls != null) ClassBadge(cls.id, cls.name)
+                                val spec  = s.specMap[specId]  ?: return@forEach
+                                val clazz = s.classMap[spec.classId] ?: return@forEach
+                                SpecBadge(spec, clazz)
                             }
                         }
                     }

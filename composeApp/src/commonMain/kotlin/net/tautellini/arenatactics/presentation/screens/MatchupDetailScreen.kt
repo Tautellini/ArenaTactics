@@ -17,8 +17,8 @@ import net.tautellini.arenatactics.navigation.Navigator
 import net.tautellini.arenatactics.presentation.MatchupDetailState
 import net.tautellini.arenatactics.presentation.MatchupDetailViewModel
 import net.tautellini.arenatactics.presentation.screens.components.BackButton
-import net.tautellini.arenatactics.presentation.screens.components.ClassBadge
 import net.tautellini.arenatactics.presentation.screens.components.MarkdownText
+import net.tautellini.arenatactics.presentation.screens.components.SpecBadge
 import net.tautellini.arenatactics.presentation.theme.*
 
 @Composable
@@ -30,10 +30,7 @@ fun MatchupDetailScreen(
 
     Column(modifier = Modifier.fillMaxSize().background(Background)) {
         when (val s = state) {
-            is MatchupDetailState.Loading -> Box(
-                Modifier.fillMaxSize(),
-                contentAlignment = Alignment.Center
-            ) {
+            is MatchupDetailState.Loading -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                 CircularProgressIndicator(color = Accent)
             }
             is MatchupDetailState.Error -> Text(
@@ -49,20 +46,11 @@ fun MatchupDetailScreen(
                 ) {
                     BackButton { navigator.pop() }
                     Spacer(Modifier.width(12.dp))
-                    Text(
-                        "vs",
-                        color = TextSecondary,
-                        fontSize = 14.sp,
-                        modifier = Modifier.padding(end = 8.dp)
-                    )
-                    matchup.enemySpecIds.forEachIndexed { index, specId ->
-                        val classId = specId.substringBefore("_")
-                        val cls = s.classMap[classId]
-                        if (cls != null) ClassBadge(
-                            cls.id,
-                            cls.name,
-                            modifier = if (index < matchup.enemySpecIds.lastIndex) Modifier.padding(end = 6.dp) else Modifier
-                        )
+                    Text("vs", color = TextSecondary, fontSize = 14.sp, modifier = Modifier.padding(end = 8.dp))
+                    matchup.enemySpecIds.forEach { specId ->
+                        val spec  = s.specMap[specId]  ?: return@forEach
+                        val clazz = s.classMap[spec.classId] ?: return@forEach
+                        SpecBadge(spec, clazz, modifier = Modifier.padding(end = 6.dp))
                     }
                 }
                 SelectionContainer {
