@@ -58,6 +58,10 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 ## Additional Code Guidance
 -  any exception-generating code on the web path (IO, JS interop) needs catch
    (Throwable) and must never be left uncaught in a LaunchedEffect
+-  UI must be fully adaptive — use `GridCells.Adaptive`, `FlowRow`, or equivalent so
+   layouts reflow naturally across screen widths. Never hardcode column counts or fixed
+   widths for list/grid content. Layouts must look correct and visually appealing at both
+   narrow (≈800px) and wide (≈1600px) viewports.
 
 ## Multi-Bracket & Multi-Addon Scope
 - The app is designed to support **multiple game modes**: 2v2, 3v3, 5v5, and potentially other addons (e.g., Wrath, Retail).
