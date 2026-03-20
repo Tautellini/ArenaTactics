@@ -23,7 +23,7 @@ fun CompositionCard(
         color = CardColor,
         shape = RoundedCornerShape(8.dp),
         modifier = modifier
-            .fillMaxWidth()
+            .heightIn(min = 72.dp)
             .alpha(if (hasData) 1f else 0.35f)
             .then(
                 if (onClick != null) Modifier.clickable(onClick = onClick)
