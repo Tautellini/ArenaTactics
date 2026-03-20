@@ -10,7 +10,9 @@ data class GameMode(
     val teamSize: Int,
     val specPoolId: String,
     val classPoolId: String,
-    val compositionSetId: String
+    val compositionSetId: String,
+    val iconName: String,
+    val hasData: Boolean
 )
 
 @Serializable

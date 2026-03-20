@@ -14,7 +14,9 @@ class RepositoryParsingTest {
             "teamSize": 2,
             "specPoolId": "tbc",
             "classPoolId": "tbc",
-            "compositionSetId": "tbc_2v2"
+            "compositionSetId": "tbc_2v2",
+            "iconName": "achievement_arena_2v2_7",
+            "hasData": true
         }]"""
         val result = parseGameModes(json)
         assertEquals(1, result.size)

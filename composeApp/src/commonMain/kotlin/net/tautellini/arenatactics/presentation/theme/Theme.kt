@@ -9,6 +9,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import arenatactics.composeapp.generated.resources.CinzelDecorative_Bold
+import arenatactics.composeapp.generated.resources.CinzelDecorative_Regular
 import arenatactics.composeapp.generated.resources.NotoSans_Bold
 import arenatactics.composeapp.generated.resources.NotoSans_Medium
 import arenatactics.composeapp.generated.resources.NotoSans_Regular
@@ -58,6 +60,12 @@ private val DarkColors = darkColorScheme(
     onSecondary = TextPrimary,
     onBackground = TextPrimary,
     onSurface = TextPrimary
+)
+
+@Composable
+fun cinzelDecorative() = FontFamily(
+    Font(Res.font.CinzelDecorative_Regular, FontWeight.Normal),
+    Font(Res.font.CinzelDecorative_Bold, FontWeight.Bold),
 )
 
 @Composable
