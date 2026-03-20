@@ -4,7 +4,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Surface
@@ -45,24 +44,31 @@ fun MatchupListScreen(
                 contentPadding = PaddingValues(24.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                items(s.matchups) { matchup ->
-                    Surface(
-                        color = CardColor,
-                        shape = RoundedCornerShape(8.dp),
-                        modifier = Modifier.fillMaxWidth().clickable {
-                            navigator.push(Screen.MatchupDetail(gameModeId, compositionId, matchup.id))
-                        }
+                item {
+                    FlowRow(
+                        horizontalArrangement = Arrangement.spacedBy(12.dp),
+                        verticalArrangement = Arrangement.spacedBy(12.dp)
                     ) {
-                        Row(
-                            modifier = Modifier.padding(16.dp),
-                            horizontalArrangement = Arrangement.spacedBy(8.dp),
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            Text("vs", color = TextSecondary, fontSize = 12.sp, modifier = Modifier.width(20.dp))
-                            matchup.enemySpecIds.forEach { specId ->
-                                val spec  = s.specMap[specId]  ?: return@forEach
-                                val clazz = s.classMap[spec.classId] ?: return@forEach
-                                SpecBadge(spec, clazz)
+                        s.matchups.forEach { matchup ->
+                            Surface(
+                                color = CardColor,
+                                shape = RoundedCornerShape(8.dp),
+                                modifier = Modifier.clickable {
+                                    navigator.push(Screen.MatchupDetail(gameModeId, compositionId, matchup.id))
+                                }
+                            ) {
+                                Row(
+                                    modifier = Modifier.padding(8.dp),
+                                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    Text("vs", color = TextSecondary, fontSize = 12.sp, modifier = Modifier.width(20.dp))
+                                    matchup.enemySpecIds.forEach { specId ->
+                                        val spec  = s.specMap[specId]  ?: return@forEach
+                                        val clazz = s.classMap[spec.classId] ?: return@forEach
+                                        SpecBadge(spec, clazz)
+                                    }
+                                }
                             }
                         }
                     }
