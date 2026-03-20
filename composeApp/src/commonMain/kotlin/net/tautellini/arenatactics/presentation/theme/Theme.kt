@@ -17,20 +17,20 @@ import arenatactics.composeapp.generated.resources.Res
 import org.jetbrains.compose.resources.Font
 
 // Background layers
-val Background   = Color(0xFF0D0D0F)
-val Surface      = Color(0xFF16161A)
-val CardColor    = Color(0xFF1C1C21)
-val CardElevated = Color(0xFF222228)
+val Background   = Color(0xFF042326)
+val Surface      = Color(0xFF0A3A40)
+val CardColor    = Color(0xFF0F4A52)
+val CardElevated = Color(0xFF1D6066)
 
 // Text
-val TextPrimary   = Color(0xFFE8E1D6)
-val TextSecondary = Color(0xFF8A8490)
+val TextPrimary   = Color(0xFFE8F4F4)
+val TextSecondary = Color(0xFF7AABAA)
 
 // Accent
-val Accent = Color(0xFFC89B3C)
+val Accent = Color(0xFF1D7373)
 
 // Divider
-val DividerColor = Color(0xFF2A2A32)
+val DividerColor = Color(0xFF0F5959)
 
 // WoW class colors
 val ClassColors = mapOf(
@@ -47,11 +47,15 @@ val ClassColors = mapOf(
 
 fun classColor(classId: String): Color = ClassColors[classId] ?: TextPrimary
 
+val Secondary = Color(0xFF0F5959)
+
 private val DarkColors = darkColorScheme(
     background = Background,
     surface = Surface,
     primary = Accent,
-    onPrimary = Background,
+    secondary = Secondary,
+    onPrimary = TextPrimary,
+    onSecondary = TextPrimary,
     onBackground = TextPrimary,
     onSurface = TextPrimary
 )
