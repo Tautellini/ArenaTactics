@@ -171,7 +171,7 @@ private fun GearTabContent(viewModel: GearViewModel) {
                                 classId = classId,
                                 className = className,
                                 phase = phase,
-                                modifier = Modifier.widthIn(min = 280.dp)
+                                modifier = Modifier.widthIn(min = 280.dp, max = 420.dp)
                             )
                         }
                     }
