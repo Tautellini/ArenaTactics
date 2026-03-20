@@ -799,13 +799,13 @@ class RepositoryParsingTest {
 }
 ```
 
-- [ ] **Step 3: Run all tests — verify everything passes**
+- [ ] **Step 3: Run JVM tests — verify everything passes**
 
 ```bash
-gradlew.bat :composeApp:allTests
+gradlew.bat :composeApp:jvmTest
 ```
 
-Expected: all tests PASS. (App.kt still won't compile until Task 10 — that's fine for test runs which use `jvmTest`.)
+Expected: all tests PASS. (`allTests` would also compile web targets which include `App.kt` — that file is not updated until Task 10, so use `jvmTest` here.)
 
 - [ ] **Step 4: Commit**
 
@@ -1601,6 +1601,7 @@ git commit -m "feat: wire SpecRepository into App.kt — migration complete"
 - Create: `composeApp/src/commonMain/composeResources/files/matchups/matchups_druid_restoration_rogue_subtlety.json`
 - Create: `composeApp/src/commonMain/composeResources/files/matchups/matchups_priest_discipline_warlock_affliction.json`
 - Create: `composeApp/src/commonMain/composeResources/files/matchups/matchups_druid_restoration_warlock_affliction.json`
+- Create: `composeApp/src/commonMain/composeResources/files/matchups/matchups_rogue_subtlety_rogue_subtlety.json`
 
 The old `matchups_mage_rogue.json` (deleted in Task 2) contained matchup strategies for the Frost Mage / Subtlety Rogue composition. These must be migrated to the new spec-based format in `matchups_mage_frost_rogue_subtlety.json`.
 
