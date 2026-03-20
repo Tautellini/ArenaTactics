@@ -28,6 +28,7 @@ import net.tautellini.arenatactics.presentation.GearViewModel
 import net.tautellini.arenatactics.presentation.MatchupListViewModel
 import net.tautellini.arenatactics.presentation.screens.components.BackButton
 import net.tautellini.arenatactics.presentation.screens.components.GearIcon
+import net.tautellini.arenatactics.presentation.screens.components.SpecBadge
 import net.tautellini.arenatactics.presentation.theme.*
 
 enum class CompositionTab { GEAR, MATCHUPS }
@@ -41,20 +42,21 @@ fun CompositionHubScreen(
     navigator: Navigator
 ) {
     var selectedTab by remember { mutableStateOf(CompositionTab.GEAR) }
+    val gearState by gearViewModel.state.collectAsState()
+    val richComposition = (gearState as? GearState.Success)?.richComposition
 
     Column(modifier = Modifier.fillMaxSize().background(Background)) {
         Row(
             modifier = Modifier.fillMaxWidth().padding(horizontal = 24.dp, vertical = 16.dp),
-            verticalAlignment = Alignment.CenterVertically
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             BackButton { navigator.pop() }
-            Spacer(Modifier.width(12.dp))
-            Text(
-                text = compositionId.split("_").joinToString(" / ") { it.replaceFirstChar { c -> c.uppercase() } },
-                color = TextPrimary,
-                fontSize = 18.sp,
-                fontWeight = FontWeight.SemiBold
-            )
+            if (richComposition != null) {
+                richComposition.specs.zip(richComposition.classes).forEach { (spec, wowClass) ->
+                    SpecBadge(spec, wowClass)
+                }
+            }
         }
 
         Row(

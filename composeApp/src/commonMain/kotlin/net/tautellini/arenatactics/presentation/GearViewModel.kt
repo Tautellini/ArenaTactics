@@ -10,10 +10,12 @@ import net.tautellini.arenatactics.data.model.GearPhase
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
 import net.tautellini.arenatactics.data.repository.GearRepository
+import net.tautellini.arenatactics.domain.RichComposition
 
 sealed class GearState {
     data object Loading : GearState()
     data class Success(
+        val richComposition: RichComposition,
         val gearByClass: Map<String, List<GearPhase>>,
         val classNames: Map<String, String>
     ) : GearState()
@@ -34,10 +36,13 @@ class GearViewModel(
         viewModelScope.launch {
             _state.value = try {
                 val mode = gameModeRepository.getAll().first { it.id == gameModeId }
-                val classes = compositionRepository.getClasses(mode.classPoolId)
-                val classNameMap = classes.associate { it.id to it.name }
+                val richComps = compositionRepository.getRichCompositions(
+                    mode.specPoolId, mode.classPoolId, mode.compositionSetId, mode.teamSize
+                )
+                val richComp = richComps.first { it.composition.id == compositionId }
+                val classNameMap = richComp.classes.associate { it.id to it.name }
                 val gear = gearRepository.getGearForComposition(compositionId, mode.compositionSetId)
-                GearState.Success(gear, classNameMap)
+                GearState.Success(richComp, gear, classNameMap)
             } catch (e: Throwable) {
                 GearState.Error(e.message ?: "Failed to load gear")
             }
