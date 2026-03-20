@@ -1,11 +1,11 @@
 [
   { "specIds": ["rogue_subtlety", "rogue_subtlety"],        "tier": "DOMINANT",  "hasData": true  },
-  { "specIds": ["priest_discipline", "rogue_subtlety"],     "tier": "DOMINANT",  "hasData": true  },
+  { "specIds": ["priest_discipline", "rogue_subtlety"],     "tier": "DOMINANT",  "hasData": false },
   { "specIds": ["mage_frost", "rogue_subtlety"],            "tier": "DOMINANT",  "hasData": true  },
-  { "specIds": ["druid_restoration", "rogue_subtlety"],     "tier": "DOMINANT",  "hasData": true  },
-  { "specIds": ["priest_discipline", "warlock_affliction"], "tier": "DOMINANT",  "hasData": true  },
-  { "specIds": ["mage_frost", "priest_discipline"],         "tier": "DOMINANT",  "hasData": true  },
-  { "specIds": ["druid_restoration", "warlock_affliction"], "tier": "DOMINANT",  "hasData": true  },
+  { "specIds": ["druid_restoration", "rogue_subtlety"],     "tier": "DOMINANT",  "hasData": false },
+  { "specIds": ["priest_discipline", "warlock_affliction"], "tier": "DOMINANT",  "hasData": false },
+  { "specIds": ["mage_frost", "priest_discipline"],         "tier": "DOMINANT",  "hasData": false },
+  { "specIds": ["druid_restoration", "warlock_affliction"], "tier": "DOMINANT",  "hasData": false },
 
   { "specIds": ["druid_restoration", "warrior_arms"],           "tier": "STRONG",   "hasData": false },
   { "specIds": ["druid_restoration", "hunter_marksmanship"],    "tier": "STRONG",   "hasData": false },
