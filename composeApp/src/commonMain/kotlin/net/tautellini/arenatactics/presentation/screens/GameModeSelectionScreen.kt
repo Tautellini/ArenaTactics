@@ -3,8 +3,6 @@ package net.tautellini.arenatactics.presentation.screens
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Surface
@@ -56,8 +54,11 @@ fun GameModeSelectionScreen(
                     Text(s.message, color = TextSecondary)
                 }
                 is GameModeSelectionState.Success -> {
-                    LazyColumn(verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                        items(s.modes) { mode ->
+                    FlowRow(
+                        horizontalArrangement = Arrangement.spacedBy(12.dp),
+                        verticalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        s.modes.forEach { mode ->
                             GameModeCard(mode) {
                                 navigator.push(Screen.CompositionSelection(mode.id))
                             }
@@ -83,7 +84,7 @@ private fun GameModeCard(mode: GameMode, onClick: () -> Unit) {
     Surface(
         color = CardColor,
         shape = RoundedCornerShape(8.dp),
-        modifier = Modifier.fillMaxWidth().clickable(onClick = onClick)
+        modifier = Modifier.widthIn(min = 220.dp).clickable(onClick = onClick)
     ) {
         Column(modifier = Modifier.padding(20.dp)) {
             Text(mode.name, color = TextPrimary, fontSize = 16.sp, fontWeight = FontWeight.Medium)

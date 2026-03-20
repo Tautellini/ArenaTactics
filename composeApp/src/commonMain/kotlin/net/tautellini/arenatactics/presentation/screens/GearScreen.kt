@@ -6,6 +6,9 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.AutoAwesome
+import androidx.compose.material.icons.rounded.HelpOutline
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -168,9 +171,7 @@ private fun GearTabContent(viewModel: GearViewModel) {
                                 classId = classId,
                                 className = className,
                                 phase = phase,
-                                modifier = Modifier
-                                    .weight(1f)
-                                    .widthIn(min = 280.dp)
+                                modifier = Modifier.widthIn(min = 280.dp)
                             )
                         }
                     }
@@ -291,11 +292,7 @@ private fun GearSlot(item: GearItem, modifier: Modifier = Modifier) {
             lineHeight = 12.sp
         )
         if (item.enchant != null) {
-            Text(
-                text = "✦",
-                color = TextSecondary,
-                fontSize = 9.sp
-            )
+            Icon(Icons.Rounded.AutoAwesome, contentDescription = null, modifier = Modifier.size(10.dp), tint = Accent)
         }
     }
 }
@@ -319,7 +316,7 @@ private fun EmptyGearSlot(slotName: String, modifier: Modifier = Modifier) {
                 .background(Surface),
             contentAlignment = Alignment.Center
         ) {
-            Text("?", color = TextSecondary, fontSize = 18.sp)
+            Icon(Icons.Rounded.HelpOutline, contentDescription = null, modifier = Modifier.size(24.dp), tint = TextSecondary)
         }
         Text(
             text = slotName,
