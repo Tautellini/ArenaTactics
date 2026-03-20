@@ -1,5 +1,5 @@
 [
-  { "specIds": ["rogue_subtlety", "rogue_subtlety"],        "tier": "DOMINANT",  "hasData": true  },
+  { "specIds": ["rogue_subtlety", "rogue_subtlety"],        "tier": "DOMINANT",  "hasData": false },
   { "specIds": ["priest_discipline", "rogue_subtlety"],     "tier": "DOMINANT",  "hasData": false },
   { "specIds": ["mage_frost", "rogue_subtlety"],            "tier": "DOMINANT",  "hasData": true  },
   { "specIds": ["druid_restoration", "rogue_subtlety"],     "tier": "DOMINANT",  "hasData": false },
