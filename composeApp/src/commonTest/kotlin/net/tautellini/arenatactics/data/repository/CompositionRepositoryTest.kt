@@ -51,10 +51,10 @@ class CompositionRepositoryTest {
         val rich = enrichCompositions(comps, specMap, classMap, teamSize = 2)
 
         assertEquals(1, rich.size)
-        assertEquals("Discipline", rich.first().specs[0].name)
-        assertEquals("Subtlety", rich.first().specs[1].name)
-        assertEquals("Priest", rich.first().classes[0].name)
-        assertEquals("Rogue", rich.first().classes[1].name)
+        assertEquals("Subtlety",   rich.first().specs[0].name)   // DPS first
+        assertEquals("Discipline", rich.first().specs[1].name)   // HEALER second
+        assertEquals("Rogue",  rich.first().classes[0].name)
+        assertEquals("Priest", rich.first().classes[1].name)
     }
 
     @Test

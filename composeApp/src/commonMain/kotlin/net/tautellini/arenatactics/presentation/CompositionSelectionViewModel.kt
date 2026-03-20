@@ -7,6 +7,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import net.tautellini.arenatactics.data.model.CompositionTier
+import net.tautellini.arenatactics.data.model.SpecRole
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
 import net.tautellini.arenatactics.domain.RichComposition
@@ -38,7 +39,14 @@ class CompositionSelectionViewModel(
                     teamSize          = mode.teamSize
                 )
                 val grouped = CompositionTier.entries
-                    .associateWith { tier -> rich.filter { it.composition.tier == tier } }
+                    .associateWith { tier ->
+                        rich.filter { it.composition.tier == tier }
+                            .sortedWith(
+                                compareByDescending<RichComposition> { it.composition.hasData }
+                                    .thenBy { rc -> rc.specs.count { it.role == SpecRole.HEALER } }
+                                    .thenBy { rc -> rc.specs.joinToString { it.name } }
+                            )
+                    }
                     .filterValues { it.isNotEmpty() }
                 CompositionSelectionState.Success(grouped)
             } catch (e: Throwable) {

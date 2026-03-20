@@ -4,6 +4,7 @@ import arenatactics.composeapp.generated.resources.Res
 import kotlinx.serialization.Serializable
 import net.tautellini.arenatactics.data.model.Composition
 import net.tautellini.arenatactics.data.model.CompositionTier
+import net.tautellini.arenatactics.data.model.SpecRole
 import net.tautellini.arenatactics.data.model.WowClass
 import net.tautellini.arenatactics.data.model.WowSpec
 import net.tautellini.arenatactics.domain.RichComposition
@@ -37,13 +38,18 @@ internal fun enrichCompositions(
         require(comp.specIds.size == teamSize) {
             "Composition '${comp.id}' has ${comp.specIds.size} specs but teamSize is $teamSize"
         }
-        val specs = comp.specIds.map { specId ->
-            specMap[specId] ?: error("Unknown specId '$specId' — not in spec pool")
-        }
-        val classes = specs.map { spec ->
-            classMap[spec.classId] ?: error("Unknown classId '${spec.classId}' for spec '${spec.id}'")
-        }
-        RichComposition(composition = comp, specs = specs, classes = classes)
+        val specsAndClasses = comp.specIds
+            .map { specId ->
+                val spec = specMap[specId] ?: error("Unknown specId '$specId' — not in spec pool")
+                val wowClass = classMap[spec.classId] ?: error("Unknown classId '${spec.classId}' for spec '${spec.id}'")
+                spec to wowClass
+            }
+            .sortedBy { (spec, _) -> if (spec.role == SpecRole.DPS) 0 else 1 }
+        RichComposition(
+            composition = comp,
+            specs = specsAndClasses.map { it.first },
+            classes = specsAndClasses.map { it.second }
+        )
     }
 }
 
