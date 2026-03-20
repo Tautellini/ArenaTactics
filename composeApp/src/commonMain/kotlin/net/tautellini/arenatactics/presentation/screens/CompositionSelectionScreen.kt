@@ -3,10 +3,7 @@ package net.tautellini.arenatactics.presentation.screens
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.GridItemSpan
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
@@ -60,16 +57,14 @@ fun CompositionSelectionScreen(
             is CompositionSelectionState.Error ->
                 Text(s.message, color = TextSecondary)
             is CompositionSelectionState.Success -> {
-                LazyVerticalGrid(
-                    columns = GridCells.Adaptive(minSize = 280.dp),
+                LazyColumn(
                     modifier = Modifier.weight(1f),
-                    horizontalArrangement = Arrangement.spacedBy(12.dp),
                     verticalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
                     CompositionTier.entries.forEach { tier ->
                         val comps = s.grouped[tier] ?: return@forEach
                         if (tier == CompositionTier.OTHERS) {
-                            item(span = { GridItemSpan(maxLineSpan) }) {
+                            item {
                                 TierHeader(
                                     label = tier.label(),
                                     expandable = true,
@@ -78,26 +73,38 @@ fun CompositionSelectionScreen(
                                 )
                             }
                             if (othersExpanded) {
-                                items(comps) { rich ->
-                                    CompositionCard(
-                                        richComposition = rich,
-                                        onClick = if (rich.composition.hasData) {
-                                            { navigator.push(Screen.GearView(gameModeId, rich.composition.id)) }
-                                        } else null
-                                    )
+                                item {
+                                    FlowRow(
+                                        horizontalArrangement = Arrangement.spacedBy(12.dp),
+                                        verticalArrangement = Arrangement.spacedBy(12.dp)
+                                    ) {
+                                        comps.forEach { rich ->
+                                            CompositionCard(
+                                                richComposition = rich,
+                                                onClick = if (rich.composition.hasData) {
+                                                    { navigator.push(Screen.GearView(gameModeId, rich.composition.id)) }
+                                                } else null
+                                            )
+                                        }
+                                    }
                                 }
                             }
                         } else {
-                            item(span = { GridItemSpan(maxLineSpan) }) {
-                                TierHeader(label = tier.label())
-                            }
-                            items(comps) { rich ->
-                                CompositionCard(
-                                    richComposition = rich,
-                                    onClick = if (rich.composition.hasData) {
-                                        { navigator.push(Screen.GearView(gameModeId, rich.composition.id)) }
-                                    } else null
-                                )
+                            item { TierHeader(label = tier.label()) }
+                            item {
+                                FlowRow(
+                                    horizontalArrangement = Arrangement.spacedBy(12.dp),
+                                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                                ) {
+                                    comps.forEach { rich ->
+                                        CompositionCard(
+                                            richComposition = rich,
+                                            onClick = if (rich.composition.hasData) {
+                                                { navigator.push(Screen.GearView(gameModeId, rich.composition.id)) }
+                                            } else null
+                                        )
+                                    }
+                                }
                             }
                         }
                     }
