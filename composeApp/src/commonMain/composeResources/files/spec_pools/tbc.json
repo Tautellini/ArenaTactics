@@ -1,0 +1,16 @@
+[
+  { "id": "rogue_subtlety",      "name": "Subtlety",    "classId": "rogue",    "iconName": "ability_stealth",                  "role": "DPS"    },
+  { "id": "mage_frost",          "name": "Frost",       "classId": "mage",     "iconName": "spell_frost_frostbolt02",          "role": "DPS"    },
+  { "id": "warlock_affliction",  "name": "Affliction",  "classId": "warlock",  "iconName": "spell_shadow_deathcoil",           "role": "DPS"    },
+  { "id": "warrior_arms",        "name": "Arms",        "classId": "warrior",  "iconName": "ability_warrior_savageblow",       "role": "DPS"    },
+  { "id": "hunter_marksmanship", "name": "Marksmanship","classId": "hunter",   "iconName": "ability_hunter_focusedaim",        "role": "DPS"    },
+  { "id": "druid_feral",         "name": "Feral",       "classId": "druid",    "iconName": "ability_druid_catform",            "role": "DPS"    },
+  { "id": "paladin_retribution", "name": "Retribution", "classId": "paladin",  "iconName": "spell_holy_auraoflight",           "role": "DPS"    },
+  { "id": "shaman_enhancement",  "name": "Enhancement", "classId": "shaman",   "iconName": "spell_shaman_improvedstormstrike", "role": "DPS"    },
+  { "id": "priest_shadow",       "name": "Shadow",      "classId": "priest",   "iconName": "spell_shadow_shadowwordpain",      "role": "DPS"    },
+  { "id": "druid_balance",       "name": "Balance",     "classId": "druid",    "iconName": "spell_nature_starfall",            "role": "DPS"    },
+  { "id": "priest_discipline",   "name": "Discipline",  "classId": "priest",   "iconName": "spell_holy_powerwordshield",       "role": "HEALER" },
+  { "id": "druid_restoration",   "name": "Restoration", "classId": "druid",    "iconName": "spell_nature_healingtouch",        "role": "HEALER" },
+  { "id": "shaman_restoration",  "name": "Restoration", "classId": "shaman",   "iconName": "spell_nature_magicimmunity",       "role": "HEALER" },
+  { "id": "paladin_holy",        "name": "Holy",        "classId": "paladin",  "iconName": "spell_holy_holybolt",              "role": "HEALER" }
+]

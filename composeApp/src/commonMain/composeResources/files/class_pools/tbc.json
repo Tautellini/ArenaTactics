@@ -1,11 +1,11 @@
 [
-  { "id": "druid",   "name": "Druid",   "color": "#FF7D0A" },
-  { "id": "hunter",  "name": "Hunter",  "color": "#ABD473" },
-  { "id": "mage",    "name": "Mage",    "color": "#69CCF0" },
-  { "id": "paladin", "name": "Paladin", "color": "#F58CBA" },
-  { "id": "priest",  "name": "Priest",  "color": "#FFFFFF" },
-  { "id": "rogue",   "name": "Rogue",   "color": "#FFF569" },
-  { "id": "shaman",  "name": "Shaman",  "color": "#0070DE" },
-  { "id": "warlock", "name": "Warlock", "color": "#9482C9" },
-  { "id": "warrior", "name": "Warrior", "color": "#C79C6E" }
+  { "id": "druid",   "name": "Druid",   "color": "#FF7D0A", "iconName": "classicon_druid"   },
+  { "id": "hunter",  "name": "Hunter",  "color": "#ABD473", "iconName": "classicon_hunter"  },
+  { "id": "mage",    "name": "Mage",    "color": "#69CCF0", "iconName": "classicon_mage"    },
+  { "id": "paladin", "name": "Paladin", "color": "#F58CBA", "iconName": "classicon_paladin" },
+  { "id": "priest",  "name": "Priest",  "color": "#FFFFFF", "iconName": "classicon_priest"  },
+  { "id": "rogue",   "name": "Rogue",   "color": "#FFF569", "iconName": "classicon_rogue"   },
+  { "id": "shaman",  "name": "Shaman",  "color": "#0070DE", "iconName": "classicon_shaman"  },
+  { "id": "warlock", "name": "Warlock", "color": "#9482C9", "iconName": "classicon_warlock" },
+  { "id": "warrior", "name": "Warrior", "color": "#C79C6E", "iconName": "classicon_warrior" }
 ]
