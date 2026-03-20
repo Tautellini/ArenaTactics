@@ -4,26 +4,39 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 
 class RepositoryParsingTest {
+
     @Test
     fun gameModeDeserializes() {
-        val json = """[{"id":"tbc","name":"TBC 2v2","description":"desc","classPoolId":"tbc","compositionSetId":"tbc_2v2"}]"""
+        val json = """[{
+            "id": "tbc_anniversary_2v2",
+            "name": "TBC 2v2",
+            "description": "desc",
+            "teamSize": 2,
+            "specPoolId": "tbc",
+            "classPoolId": "tbc",
+            "compositionSetId": "tbc_2v2"
+        }]"""
         val result = parseGameModes(json)
         assertEquals(1, result.size)
-        assertEquals("tbc", result[0].id)
+        assertEquals("tbc_anniversary_2v2", result[0].id)
+        assertEquals(2, result[0].teamSize)
+        assertEquals("tbc", result[0].specPoolId)
     }
 
     @Test
     fun wowClassDeserializes() {
-        val json = """[{"id":"rogue","name":"Rogue","color":"#FFF569"}]"""
+        val json = """[{"id":"rogue","name":"Rogue","color":"#FFF569","iconName":"classicon_rogue"}]"""
         val result = parseWowClasses(json)
         assertEquals("Rogue", result[0].name)
+        assertEquals("classicon_rogue", result[0].iconName)
     }
 
     @Test
     fun compositionCanonicalId() {
-        val json = """[{"class1Id":"mage","class2Id":"rogue"}]"""
+        // specIds are sorted on parse; verify the id is the sorted join
+        val json = """[{"specIds":["rogue_subtlety","priest_discipline"],"tier":"DOMINANT","hasData":true}]"""
         val result = parseCompositions(json)
-        assertEquals("mage_rogue", result[0].id)
+        assertEquals("priest_discipline_rogue_subtlety", result[0].id)
     }
 
     @Test
@@ -38,8 +51,13 @@ class RepositoryParsingTest {
 
     @Test
     fun matchupDeserializes() {
-        val json = """[{"id":"mage_rogue_vs_druid_warrior","enemyClass1Id":"druid","enemyClass2Id":"warrior","strategyMarkdown":"## Kill Target\nWarrior"}]"""
+        val json = """[{
+            "id": "mage_frost_rogue_subtlety_vs_druid_restoration_warrior_arms",
+            "enemySpecIds": ["druid_restoration", "warrior_arms"],
+            "strategyMarkdown": "## Kill Target\nWarrior"
+        }]"""
         val result = parseMatchups(json)
-        assertEquals("mage_rogue_vs_druid_warrior", result[0].id)
+        assertEquals("mage_frost_rogue_subtlety_vs_druid_restoration_warrior_arms", result[0].id)
+        assertEquals(listOf("druid_restoration", "warrior_arms"), result[0].enemySpecIds)
     }
 }

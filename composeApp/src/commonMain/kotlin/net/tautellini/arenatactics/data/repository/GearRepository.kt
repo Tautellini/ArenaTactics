@@ -12,7 +12,9 @@ class GearRepository(private val compositionRepository: CompositionRepository) {
         compositionSetId: String
     ): Map<String, List<GearPhase>> {
         val comp = compositionRepository.getById(compositionId, compositionSetId) ?: return emptyMap()
-        val classIds = listOf(comp.class1Id, comp.class2Id)
+        // Spec IDs follow {classId}_{specName} format (e.g. "rogue_subtlety" → "rogue").
+        // Class IDs never contain underscores, so substringBefore("_") is always correct.
+        val classIds = comp.specIds.map { it.substringBefore("_") }.distinct()
         return classIds.associateWith { classId -> loadPhasesForClass(classId) }
     }
 
