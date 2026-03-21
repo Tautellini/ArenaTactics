@@ -35,7 +35,7 @@ class ClassGuideListViewModel(
                 val addon   = addonRepository.getById(addonId)
                     ?: throw IllegalArgumentException("Unknown addon: $addonId")
                 val specs   = compositionRepository.getSpecs(addon.specPoolId)
-                    .sortedWith(compareBy({ if (it.role == SpecRole.DPS) 0 else 1 }, { it.name }))
+                    .sortedWith(compareBy({ when (it.role) { SpecRole.DPS -> 0; else -> 1 } }, { it.name }))
                 val classes = compositionRepository.getClasses(addon.classPoolId)
                 val classMap = classes.associateBy { it.id }
                 ClassGuideListState.Success(specs, classMap)

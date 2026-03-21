@@ -37,8 +37,8 @@ fun SpecGuideScreen(viewModel: SpecGuideViewModel) {
         }
         is SpecGuideState.Error -> Text(s.message, color = TextSecondary, modifier = Modifier.padding(24.dp))
         is SpecGuideState.Success -> {
-            var selectedPhase by remember { mutableStateOf(1) }
-            val availablePhases = remember(s) { s.phases.map { it.phase }.sorted().ifEmpty { listOf(1) } }
+            val availablePhases = remember(s.spec.id) { s.phases.map { it.phase }.sorted().ifEmpty { listOf(1) } }
+            var selectedPhase by remember(s.spec.id) { mutableStateOf(availablePhases.firstOrNull() ?: 1) }
 
             Column(modifier = Modifier.fillMaxSize().background(Background)) {
                 // Spec header

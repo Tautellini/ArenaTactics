@@ -44,8 +44,9 @@ fun CompositionSelectionScreen(
         modifier = Modifier.fillMaxSize().background(Background).padding(24.dp)
     ) {
         when (val s = state) {
-            is CompositionSelectionState.Loading ->
+            is CompositionSelectionState.Loading -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                 CircularProgressIndicator(color = Primary)
+            }
             is CompositionSelectionState.Error ->
                 Text(s.message, color = TextSecondary)
             is CompositionSelectionState.Success -> {

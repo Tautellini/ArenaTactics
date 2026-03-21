@@ -209,7 +209,7 @@ fun App() {
                     }
                     composable<Screen.MatchupDetail> { entry ->
                         val screen = entry.toRoute<Screen.MatchupDetail>()
-                        val vm = viewModel(key = screen.matchupId) {
+                        val vm = viewModel(key = "detail_${screen.compositionId}_${screen.matchupId}") {
                             MatchupDetailViewModel(
                                 screen.addonId, screen.gameModeId, screen.compositionId, screen.matchupId,
                                 addonRepository, compositionRepository, matchupRepository

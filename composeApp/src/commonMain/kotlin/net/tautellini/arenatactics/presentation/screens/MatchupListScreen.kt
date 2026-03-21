@@ -3,8 +3,9 @@ package net.tautellini.arenatactics.presentation.screens
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -39,35 +40,35 @@ fun MatchupListScreen(
             modifier = Modifier.padding(24.dp)
         )
         is MatchupListState.Success -> {
-            LazyColumn(
-                modifier = Modifier.fillMaxSize().background(Background),
-                contentPadding = PaddingValues(24.dp),
-                verticalArrangement = Arrangement.spacedBy(12.dp)
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(Background)
+                    .verticalScroll(rememberScrollState())
+                    .padding(24.dp)
             ) {
-                item {
-                    FlowRow(
-                        horizontalArrangement = Arrangement.spacedBy(12.dp),
-                        verticalArrangement = Arrangement.spacedBy(12.dp)
-                    ) {
-                        s.matchups.forEach { matchup ->
-                            Surface(
-                                color = CardColor,
-                                shape = RoundedCornerShape(8.dp),
-                                modifier = Modifier.clickable {
-                                    onNavigate(Screen.MatchupDetail(addonId, gameModeId, compositionId, matchup.id))
-                                }
+                FlowRow(
+                    horizontalArrangement = Arrangement.spacedBy(12.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    s.matchups.forEach { matchup ->
+                        Surface(
+                            color = CardColor,
+                            shape = RoundedCornerShape(8.dp),
+                            modifier = Modifier.clickable {
+                                onNavigate(Screen.MatchupDetail(addonId, gameModeId, compositionId, matchup.id))
+                            }
+                        ) {
+                            Row(
+                                modifier = Modifier.padding(8.dp),
+                                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                                verticalAlignment = Alignment.CenterVertically
                             ) {
-                                Row(
-                                    modifier = Modifier.padding(8.dp),
-                                    horizontalArrangement = Arrangement.spacedBy(8.dp),
-                                    verticalAlignment = Alignment.CenterVertically
-                                ) {
-                                    Text("vs", color = TextSecondary, fontSize = 12.sp, modifier = Modifier.width(20.dp))
-                                    matchup.enemySpecIds.forEach { specId ->
-                                        val spec  = s.specMap[specId]  ?: return@forEach
-                                        val clazz = s.classMap[spec.classId] ?: return@forEach
-                                        SpecBadge(spec, clazz)
-                                    }
+                                Text("vs", color = TextSecondary, fontSize = 12.sp, modifier = Modifier.width(20.dp))
+                                matchup.enemySpecIds.forEach { specId ->
+                                    val spec  = s.specMap[specId]  ?: return@forEach
+                                    val clazz = s.classMap[spec.classId] ?: return@forEach
+                                    SpecBadge(spec, clazz)
                                 }
                             }
                         }
