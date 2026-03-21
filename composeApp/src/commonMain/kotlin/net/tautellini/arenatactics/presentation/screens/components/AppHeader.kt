@@ -108,9 +108,7 @@ private fun BreadcrumbChip(
 
 private fun Screen.breadcrumbLabel(): String = when (this) {
     is Screen.AddonSelection    -> "Home"
-    is Screen.AddonHub          -> addonId.formatId()
-    is Screen.GameModeSelection -> "Tactics"
-    is Screen.CompositionSelection -> gameModeId.formatId()
+    is Screen.CompositionSelection -> "${gameModeId.formatId()} Comps"
     is Screen.MatchupList       -> "Matchups"
     is Screen.MatchupDetail     -> "Detail"
     is Screen.ClassGuideList    -> "Class Guides"

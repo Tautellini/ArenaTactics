@@ -7,8 +7,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 sealed class Screen {
     @Serializable data object AddonSelection : Screen()
-    @Serializable data class AddonHub(val addonId: String) : Screen()
-    @Serializable data class GameModeSelection(val addonId: String) : Screen()
     @Serializable data class CompositionSelection(val addonId: String, val gameModeId: String) : Screen()
     @Serializable data class MatchupList(val addonId: String, val gameModeId: String, val compositionId: String) : Screen()
     @Serializable data class MatchupDetail(val addonId: String, val gameModeId: String, val compositionId: String, val matchupId: String) : Screen()
@@ -17,8 +15,6 @@ sealed class Screen {
 
     val path: String get() = when (this) {
         is AddonSelection       -> "/"
-        is AddonHub             -> "/$addonId"
-        is GameModeSelection    -> "/$addonId/tactics"
         is CompositionSelection -> "/$addonId/tactics/$gameModeId"
         is MatchupList          -> "/$addonId/tactics/$gameModeId/$compositionId/matchups"
         is MatchupDetail        -> "/$addonId/tactics/$gameModeId/$compositionId/matchups/$matchupId"
@@ -52,8 +48,6 @@ sealed class Screen {
 
         fun buildStack(screen: Screen): List<Screen> = when (screen) {
             is AddonSelection       -> listOf(screen)
-            is AddonHub             -> listOf(AddonSelection, screen)
-            is GameModeSelection    -> listOf(AddonSelection, screen)
             is CompositionSelection -> listOf(AddonSelection, screen)
             is MatchupList          -> listOf(AddonSelection, CompositionSelection(screen.addonId, screen.gameModeId), screen)
             is MatchupDetail        -> listOf(AddonSelection, CompositionSelection(screen.addonId, screen.gameModeId), MatchupList(screen.addonId, screen.gameModeId, screen.compositionId), screen)
@@ -82,14 +76,10 @@ fun NavBackStackEntry.toScreen(): Screen {
             .let { Screen.MatchupList(it.addonId, it.gameModeId, it.compositionId) }
         "CompositionSelection" in route -> toRoute<Screen.CompositionSelection>()
             .let { Screen.CompositionSelection(it.addonId, it.gameModeId) }
-        "GameModeSelection"    in route -> toRoute<Screen.GameModeSelection>()
-            .let { Screen.GameModeSelection(it.addonId) }
         "ClassGuideList"       in route -> toRoute<Screen.ClassGuideList>()
             .let { Screen.ClassGuideList(it.addonId) }
         "SpecGuide"            in route -> toRoute<Screen.SpecGuide>()
             .let { Screen.SpecGuide(it.addonId, it.classId, it.specId) }
-        "AddonHub"             in route -> toRoute<Screen.AddonHub>()
-            .let { Screen.AddonHub(it.addonId) }
         else                            -> Screen.AddonSelection // should not happen; all routes are registered above
     }
 }
