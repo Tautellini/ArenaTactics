@@ -26,9 +26,15 @@ import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.navigation.toScreen
 import net.tautellini.arenatactics.presentation.AddonHubViewModel
 import net.tautellini.arenatactics.presentation.AddonSelectionViewModel
+import net.tautellini.arenatactics.presentation.CompositionSelectionViewModel
 import net.tautellini.arenatactics.presentation.GameModeSelectionViewModel
+import net.tautellini.arenatactics.presentation.MatchupDetailViewModel
+import net.tautellini.arenatactics.presentation.MatchupListViewModel
 import net.tautellini.arenatactics.presentation.screens.AddonHubScreen
 import net.tautellini.arenatactics.presentation.screens.AddonSelectionScreen
+import net.tautellini.arenatactics.presentation.screens.CompositionSelectionScreen
+import net.tautellini.arenatactics.presentation.screens.MatchupDetailScreen
+import net.tautellini.arenatactics.presentation.screens.MatchupListScreen
 import net.tautellini.arenatactics.presentation.screens.TacticsGameModeSelectionScreen
 import net.tautellini.arenatactics.presentation.screens.components.AppHeader
 import net.tautellini.arenatactics.presentation.theme.ArenaTacticsTheme
@@ -166,9 +172,47 @@ fun App() {
                         val vm = viewModel(key = screen.addonId) { GameModeSelectionViewModel(screen.addonId, gameModeRepository) }
                         TacticsGameModeSelectionScreen(addonId = screen.addonId, viewModel = vm, onNavigate = { navController.navigate(it) })
                     }
-                    composable<Screen.CompositionSelection> { /* TODO Task 8 */ }
-                    composable<Screen.MatchupList> { /* TODO Task 9 */ }
-                    composable<Screen.MatchupDetail> { /* TODO Task 10 */ }
+                    composable<Screen.CompositionSelection> { entry ->
+                        val screen = entry.toRoute<Screen.CompositionSelection>()
+                        val vm = viewModel(key = "${screen.addonId}_${screen.gameModeId}") {
+                            CompositionSelectionViewModel(
+                                screen.addonId, screen.gameModeId,
+                                addonRepository, gameModeRepository, compositionRepository
+                            )
+                        }
+                        CompositionSelectionScreen(
+                            addonId = screen.addonId,
+                            gameModeId = screen.gameModeId,
+                            viewModel = vm,
+                            onNavigate = { navController.navigate(it) }
+                        )
+                    }
+                    composable<Screen.MatchupList> { entry ->
+                        val screen = entry.toRoute<Screen.MatchupList>()
+                        val vm = viewModel(key = "matchups_${screen.addonId}_${screen.compositionId}") {
+                            MatchupListViewModel(
+                                screen.addonId, screen.gameModeId, screen.compositionId,
+                                addonRepository, compositionRepository, matchupRepository
+                            )
+                        }
+                        MatchupListScreen(
+                            addonId = screen.addonId,
+                            gameModeId = screen.gameModeId,
+                            compositionId = screen.compositionId,
+                            viewModel = vm,
+                            onNavigate = { navController.navigate(it) }
+                        )
+                    }
+                    composable<Screen.MatchupDetail> { entry ->
+                        val screen = entry.toRoute<Screen.MatchupDetail>()
+                        val vm = viewModel(key = screen.matchupId) {
+                            MatchupDetailViewModel(
+                                screen.addonId, screen.gameModeId, screen.compositionId, screen.matchupId,
+                                addonRepository, compositionRepository, matchupRepository
+                            )
+                        }
+                        MatchupDetailScreen(viewModel = vm)
+                    }
                     composable<Screen.ClassGuideList> { /* TODO Task 11 */ }
                     composable<Screen.SpecGuide> { /* TODO Task 12 */ }
                 }

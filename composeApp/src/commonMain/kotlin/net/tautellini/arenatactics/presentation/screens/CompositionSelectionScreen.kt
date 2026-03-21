@@ -32,6 +32,7 @@ private fun CompositionTier.label() = when (this) {
 
 @Composable
 fun CompositionSelectionScreen(
+    addonId: String,
     gameModeId: String,
     viewModel: CompositionSelectionViewModel,
     onNavigate: (Screen) -> Unit
@@ -73,7 +74,7 @@ fun CompositionSelectionScreen(
                                             CompositionCard(
                                                 richComposition = rich,
                                                 onClick = if (rich.composition.hasData) {
-                                                    { onNavigate(Screen.MatchupList("", gameModeId, rich.composition.id)) }
+                                                    { onNavigate(Screen.MatchupList(addonId, gameModeId, rich.composition.id)) }
                                                 } else null
                                             )
                                         }
@@ -91,7 +92,7 @@ fun CompositionSelectionScreen(
                                         CompositionCard(
                                             richComposition = rich,
                                             onClick = if (rich.composition.hasData) {
-                                                { onNavigate(Screen.MatchupList("", gameModeId, rich.composition.id)) }
+                                                { onNavigate(Screen.MatchupList(addonId, gameModeId, rich.composition.id)) }
                                             } else null
                                         )
                                     }
