@@ -25,7 +25,6 @@ import net.tautellini.arenatactics.presentation.theme.*
 
 @Composable
 fun AddonHubScreen(
-    addonId: String,
     viewModel: AddonHubViewModel,
     onNavigate: (Screen) -> Unit
 ) {
@@ -63,13 +62,13 @@ fun AddonHubScreen(
                             icon = Icons.Rounded.AutoAwesome,
                             title = "Tactics",
                             subtitle = "Compositions & matchup guides",
-                            onClick = { onNavigate(Screen.GameModeSelection(addonId)) }
+                            onClick = { onNavigate(Screen.GameModeSelection(s.addon.id)) }
                         )
                         SectionTile(
                             icon = Icons.Rounded.MenuBook,
                             title = "Class Guides",
                             subtitle = "Best-in-slot gear per spec",
-                            onClick = { onNavigate(Screen.ClassGuideList(addonId)) }
+                            onClick = { onNavigate(Screen.ClassGuideList(s.addon.id)) }
                         )
                     }
                 }

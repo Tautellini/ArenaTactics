@@ -159,7 +159,7 @@ fun App() {
                     composable<Screen.AddonHub> { entry ->
                         val screen = entry.toRoute<Screen.AddonHub>()
                         val vm = viewModel(key = screen.addonId) { AddonHubViewModel(screen.addonId, addonRepository) }
-                        AddonHubScreen(addonId = screen.addonId, viewModel = vm, onNavigate = { navController.navigate(it) })
+                        AddonHubScreen(viewModel = vm, onNavigate = { navController.navigate(it) })
                     }
                     composable<Screen.GameModeSelection> { entry ->
                         val screen = entry.toRoute<Screen.GameModeSelection>()

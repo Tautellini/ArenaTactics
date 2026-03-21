@@ -37,17 +37,17 @@ fun TacticsGameModeSelectionScreen(
             verticalArrangement = Arrangement.spacedBy(24.dp),
             modifier = Modifier.padding(24.dp)
         ) {
-            Text("Select your bracket", color = TextSecondary, fontSize = 13.sp, letterSpacing = 2.sp)
             when (val s = state) {
                 is GameModeSelectionState.Loading -> CircularProgressIndicator(color = Primary)
                 is GameModeSelectionState.Error   -> Text(s.message, color = TextSecondary)
                 is GameModeSelectionState.Success -> {
+                    Text("Select your bracket", color = TextSecondary, fontSize = 13.sp, letterSpacing = 2.sp)
                     FlowRow(
                         horizontalArrangement = Arrangement.spacedBy(24.dp),
                         verticalArrangement = Arrangement.spacedBy(24.dp)
                     ) {
                         s.modes.forEach { mode ->
-                            GameModeTileT7(mode) {
+                            GameModeTile(mode) {
                                 onNavigate(Screen.CompositionSelection(addonId, mode.id))
                             }
                         }
@@ -59,7 +59,7 @@ fun TacticsGameModeSelectionScreen(
 }
 
 @Composable
-private fun GameModeTileT7(mode: GameMode, onClick: () -> Unit) {
+private fun GameModeTile(mode: GameMode, onClick: () -> Unit) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.spacedBy(8.dp),
@@ -70,7 +70,7 @@ private fun GameModeTileT7(mode: GameMode, onClick: () -> Unit) {
     ) {
         AsyncImage(
             model = WowheadIcons.large(mode.iconName),
-            contentDescription = mode.description,
+            contentDescription = mode.name,
             modifier = Modifier.size(80.dp).clip(RoundedCornerShape(12.dp))
         )
         Text(mode.description, color = TextPrimary, fontSize = 13.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
