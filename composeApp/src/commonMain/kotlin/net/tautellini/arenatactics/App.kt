@@ -13,6 +13,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.*
+import kotlinx.coroutines.flow.drop
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
@@ -39,16 +40,26 @@ fun App() {
 
     val navController = rememberNavController()
 
-    // Track whether the current nav change was triggered by the browser popstate
-    // so we don't push it back to browser history.
-    var browserPopPending by remember { mutableStateOf(false) }
+    // How many snapshotFlow emissions to skip at startup:
+    //   1 for the initial sync emit (GameModeSelection) +
+    //   (deep-link stack depth - 1) for each nav during deep-link init.
+    val initialSkipCount = remember {
+        Screen.buildStack(Screen.fromPath(getInitialPath())).size
+    }
 
-    // Web URL bridge — push browser history state on each in-app navigation
+    // Web URL bridge — push browser history state on each in-app navigation.
+    // We drop the initial N emissions that correspond to startup/deep-link init
+    // so we never call pushNavigationState for navigations the browser already
+    // has in its history. Browser-triggered navigations (popstate) are handled
+    // separately and must NOT push state; they use a plain ref flag to skip one
+    // emission without triggering recomposition.
+    val skipNextPush = remember { booleanArrayOf(false) }
     LaunchedEffect(navController) {
         snapshotFlow { navController.currentBackStackEntry }
+            .drop(initialSkipCount)
             .collect { entry ->
-                if (browserPopPending) {
-                    browserPopPending = false
+                if (skipNextPush[0]) {
+                    skipNextPush[0] = false
                     return@collect
                 }
                 val path = entry?.toScreen()?.path ?: return@collect
@@ -56,34 +67,30 @@ fun App() {
             }
     }
 
-    // Browser back/forward button support
+    // Browser back/forward button support.
+    // isBack=true  → navigateUp() pops exactly one entry (matches one browser-back step).
+    // isBack=false → navigate(target) adds the target on top (restores forward stack).
+    // Neither calls pushNavigationState; the browser URL is already correct.
     DisposableEffect(navController) {
-        registerPopCallback {
-            browserPopPending = true
-            val target = Screen.fromPath(getCurrentPath())
-            if (target is Screen.GameModeSelection) {
-                navController.popBackStack<Screen.GameModeSelection>(inclusive = false)
+        registerPopCallback { isBack ->
+            skipNextPush[0] = true
+            if (isBack) {
+                navController.navigateUp()
             } else {
-                navController.navigate(target) {
-                    popUpTo<Screen.GameModeSelection>()
-                    launchSingleTop = true
-                }
+                navController.navigate(Screen.fromPath(getCurrentPath()))
             }
         }
-        onDispose { registerPopCallback {} }
+        onDispose { registerPopCallback { _ -> } }
     }
 
-    // Deep-link initialization: navigate to the stack implied by the initial URL
+    // Deep-link initialization: build the nav stack implied by the initial URL.
+    // These navigations are covered by initialSkipCount so no URL push occurs.
     LaunchedEffect(Unit) {
         val initialScreen = Screen.fromPath(getInitialPath())
         if (initialScreen !is Screen.GameModeSelection) {
-            // browserPopPending prevents URL pushes during the init navigations
-            browserPopPending = true
-            Screen.buildStack(initialScreen).drop(1).forEachIndexed { index, screen ->
-                if (index > 0) browserPopPending = true // suppress each push except first handled above
+            Screen.buildStack(initialScreen).drop(1).forEach { screen ->
                 navController.navigate(screen)
             }
-            browserPopPending = false
         }
     }
 
