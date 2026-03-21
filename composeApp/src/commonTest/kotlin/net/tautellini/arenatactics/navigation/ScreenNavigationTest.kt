@@ -11,11 +11,11 @@ class ScreenNavigationTest {
     @Test fun fromPathRoot() =
         assertEquals(Screen.AddonSelection, Screen.fromPath("/"))
 
-    @Test fun fromPathAddonHub() =
-        assertEquals(Screen.AddonHub("tbc_anniversary"), Screen.fromPath("/tbc_anniversary"))
+    @Test fun fromPathAddonIdFallsBackToHome() =
+        assertEquals(Screen.AddonSelection, Screen.fromPath("/tbc_anniversary"))
 
-    @Test fun fromPathGameModeSelection() =
-        assertEquals(Screen.GameModeSelection("tbc_anniversary"), Screen.fromPath("/tbc_anniversary/tactics"))
+    @Test fun fromPathTacticsMissingModeFallsBackToHome() =
+        assertEquals(Screen.AddonSelection, Screen.fromPath("/tbc_anniversary/tactics"))
 
     @Test fun fromPathCompositionSelection() =
         assertEquals(
@@ -55,62 +55,48 @@ class ScreenNavigationTest {
         assertIs<Screen.AddonSelection>(stack[0])
     }
 
-    @Test fun buildStackAddonHub() {
-        val screen = Screen.AddonHub("tbc_anniversary")
+    @Test fun buildStackCompositionSelection() {
+        val screen = Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2")
         val stack = Screen.buildStack(screen)
         assertEquals(2, stack.size)
         assertIs<Screen.AddonSelection>(stack[0])
         assertEquals(screen, stack[1])
     }
 
-    @Test fun buildStackGameModeSelection() {
-        val screen = Screen.GameModeSelection("tbc_anniversary")
-        val stack = Screen.buildStack(screen)
-        assertEquals(3, stack.size)
-        assertIs<Screen.AddonSelection>(stack[0])
-        assertEquals(Screen.AddonHub("tbc_anniversary"), stack[1])
-        assertEquals(screen, stack[2])
-    }
-
-    @Test fun buildStackCompositionSelection() {
-        val screen = Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2")
-        val stack = Screen.buildStack(screen)
-        assertEquals(4, stack.size)
-        assertIs<Screen.AddonSelection>(stack[0])
-        assertEquals(Screen.AddonHub("tbc_anniversary"), stack[1])
-        assertEquals(Screen.GameModeSelection("tbc_anniversary"), stack[2])
-        assertEquals(screen, stack[3])
-    }
-
     @Test fun buildStackMatchupList() {
         val screen = Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue")
         val stack = Screen.buildStack(screen)
-        assertEquals(5, stack.size)
-        assertEquals(screen, stack[4])
+        assertEquals(3, stack.size)
+        assertIs<Screen.AddonSelection>(stack[0])
+        assertEquals(Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2"), stack[1])
+        assertEquals(screen, stack[2])
     }
 
     @Test fun buildStackMatchupDetail() {
         val screen = Screen.MatchupDetail("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue", "m1")
         val stack = Screen.buildStack(screen)
-        assertEquals(6, stack.size)
-        assertEquals(Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue"), stack[4])
-        assertEquals(screen, stack[5])
+        assertEquals(4, stack.size)
+        assertIs<Screen.AddonSelection>(stack[0])
+        assertEquals(Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2"), stack[1])
+        assertEquals(Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue"), stack[2])
+        assertEquals(screen, stack[3])
     }
 
     @Test fun buildStackClassGuideList() {
         val screen = Screen.ClassGuideList("tbc_anniversary")
         val stack = Screen.buildStack(screen)
-        assertEquals(3, stack.size)
-        assertEquals(Screen.AddonHub("tbc_anniversary"), stack[1])
-        assertEquals(screen, stack[2])
+        assertEquals(2, stack.size)
+        assertIs<Screen.AddonSelection>(stack[0])
+        assertEquals(screen, stack[1])
     }
 
     @Test fun buildStackSpecGuide() {
         val screen = Screen.SpecGuide("tbc_anniversary", "druid", "druid_restoration")
         val stack = Screen.buildStack(screen)
-        assertEquals(4, stack.size)
-        assertEquals(Screen.ClassGuideList("tbc_anniversary"), stack[2])
-        assertEquals(screen, stack[3])
+        assertEquals(3, stack.size)
+        assertIs<Screen.AddonSelection>(stack[0])
+        assertEquals(Screen.ClassGuideList("tbc_anniversary"), stack[1])
+        assertEquals(screen, stack[2])
     }
 
     // ─── path round-trip ─────────────────────────────────────────────────────
@@ -118,8 +104,6 @@ class ScreenNavigationTest {
     @Test fun pathRoundTrip() {
         val screens = listOf(
             Screen.AddonSelection,
-            Screen.AddonHub("tbc_anniversary"),
-            Screen.GameModeSelection("tbc_anniversary"),
             Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2"),
             Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue"),
             Screen.MatchupDetail("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue", "some_matchup"),

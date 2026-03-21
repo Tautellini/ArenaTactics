@@ -31,9 +31,9 @@ sealed class Screen {
             val segs = pathname.trim('/').split('/').filter { it.isNotEmpty() }
             val addonId = segs.getOrNull(0) ?: return AddonSelection
             return when (val section = segs.getOrNull(1)) {
-                null      -> AddonHub(addonId)
+                null      -> AddonSelection
                 "tactics" -> {
-                    val modeId = segs.getOrNull(2) ?: return GameModeSelection(addonId)
+                    val modeId = segs.getOrNull(2) ?: return AddonSelection
                     val compId = segs.getOrNull(3) ?: return CompositionSelection(addonId, modeId)
                     // missing or non-"matchups" segment → fall back to composition selection
                     if (segs.getOrNull(4) != "matchups") return CompositionSelection(addonId, modeId)
@@ -53,12 +53,12 @@ sealed class Screen {
         fun buildStack(screen: Screen): List<Screen> = when (screen) {
             is AddonSelection       -> listOf(screen)
             is AddonHub             -> listOf(AddonSelection, screen)
-            is GameModeSelection    -> listOf(AddonSelection, AddonHub(screen.addonId), screen)
-            is CompositionSelection -> listOf(AddonSelection, AddonHub(screen.addonId), GameModeSelection(screen.addonId), screen)
-            is MatchupList          -> listOf(AddonSelection, AddonHub(screen.addonId), GameModeSelection(screen.addonId), CompositionSelection(screen.addonId, screen.gameModeId), screen)
-            is MatchupDetail        -> listOf(AddonSelection, AddonHub(screen.addonId), GameModeSelection(screen.addonId), CompositionSelection(screen.addonId, screen.gameModeId), MatchupList(screen.addonId, screen.gameModeId, screen.compositionId), screen)
-            is ClassGuideList       -> listOf(AddonSelection, AddonHub(screen.addonId), screen)
-            is SpecGuide            -> listOf(AddonSelection, AddonHub(screen.addonId), ClassGuideList(screen.addonId), screen)
+            is GameModeSelection    -> listOf(AddonSelection, screen)
+            is CompositionSelection -> listOf(AddonSelection, screen)
+            is MatchupList          -> listOf(AddonSelection, CompositionSelection(screen.addonId, screen.gameModeId), screen)
+            is MatchupDetail        -> listOf(AddonSelection, CompositionSelection(screen.addonId, screen.gameModeId), MatchupList(screen.addonId, screen.gameModeId, screen.compositionId), screen)
+            is ClassGuideList       -> listOf(AddonSelection, screen)
+            is SpecGuide            -> listOf(AddonSelection, ClassGuideList(screen.addonId), screen)
         }
     }
 }
