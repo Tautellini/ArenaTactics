@@ -13,8 +13,6 @@ class RepositoryParsingTest {
             "description": "desc",
             "teamSize": 2,
             "addonId": "tbc_anniversary",
-            "specPoolId": "tbc",
-            "classPoolId": "tbc",
             "compositionSetId": "tbc_2v2",
             "iconName": "achievement_arena_2v2_7",
             "hasData": true

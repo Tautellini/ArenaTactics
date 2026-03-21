@@ -50,7 +50,7 @@ fun App() {
     val gameModeRepository = remember { GameModeRepository() }
     val specRepository = remember { SpecRepository() }
     val compositionRepository = remember { CompositionRepository(specRepository) }
-    val gearRepository = remember { GearRepository(compositionRepository) }
+    val gearRepository = remember { GearRepository() }
     val matchupRepository = remember { MatchupRepository() }
 
     val navController = rememberNavController()

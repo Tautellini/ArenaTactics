@@ -6,18 +6,7 @@ import net.tautellini.arenatactics.data.model.GearPhase
 internal fun parseGearPhase(jsonString: String): GearPhase =
     appJson.decodeFromString(jsonString)
 
-class GearRepository(private val compositionRepository: CompositionRepository) {
-    suspend fun getGearForComposition(
-        compositionId: String,
-        compositionSetId: String
-    ): Map<String, List<GearPhase>> {
-        val comp = compositionRepository.getById(compositionId, compositionSetId) ?: return emptyMap()
-        // Spec IDs follow {classId}_{specName} format (e.g. "rogue_subtlety" → "rogue").
-        // Class IDs never contain underscores, so substringBefore("_") is always correct.
-        val classIds = comp.specIds.map { it.substringBefore("_") }.distinct()
-        return classIds.associateWith { classId -> loadPhasesForClass(classId) }
-    }
-
+class GearRepository {
     suspend fun getGearForSpec(classId: String): List<GearPhase> =
         loadPhasesForClass(classId)
 

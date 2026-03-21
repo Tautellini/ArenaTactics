@@ -9,8 +9,6 @@ data class GameMode(
     val description: String,
     val teamSize: Int,
     val addonId: String,
-    val specPoolId: String,
-    val classPoolId: String,
     val compositionSetId: String,
     val iconName: String,
     val hasData: Boolean
