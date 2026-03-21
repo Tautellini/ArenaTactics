@@ -24,22 +24,18 @@ import androidx.navigation.toRoute
 import net.tautellini.arenatactics.data.repository.*
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.navigation.toScreen
-import net.tautellini.arenatactics.presentation.AddonHubViewModel
 import net.tautellini.arenatactics.presentation.HomeViewModel
 import net.tautellini.arenatactics.presentation.ClassGuideListViewModel
 import net.tautellini.arenatactics.presentation.CompositionSelectionViewModel
-import net.tautellini.arenatactics.presentation.GameModeSelectionViewModel
 import net.tautellini.arenatactics.presentation.MatchupDetailViewModel
 import net.tautellini.arenatactics.presentation.MatchupListViewModel
 import net.tautellini.arenatactics.presentation.SpecGuideViewModel
-import net.tautellini.arenatactics.presentation.screens.AddonHubScreen
 import net.tautellini.arenatactics.presentation.screens.AddonSelectionScreen
 import net.tautellini.arenatactics.presentation.screens.ClassGuideListScreen
 import net.tautellini.arenatactics.presentation.screens.CompositionSelectionScreen
 import net.tautellini.arenatactics.presentation.screens.MatchupDetailScreen
 import net.tautellini.arenatactics.presentation.screens.MatchupListScreen
 import net.tautellini.arenatactics.presentation.screens.SpecGuideScreen
-import net.tautellini.arenatactics.presentation.screens.TacticsGameModeSelectionScreen
 import net.tautellini.arenatactics.presentation.screens.components.AppHeader
 import net.tautellini.arenatactics.presentation.theme.ArenaTacticsTheme
 import net.tautellini.arenatactics.presentation.theme.Background
@@ -165,16 +161,6 @@ fun App() {
                             )
                         }
                         AddonSelectionScreen(viewModel = vm, onNavigate = { navController.navigate(it) }, shieldModifier = shieldMod)
-                    }
-                    composable<Screen.AddonHub> { entry ->
-                        val screen = entry.toRoute<Screen.AddonHub>()
-                        val vm = viewModel(key = screen.addonId) { AddonHubViewModel(screen.addonId, addonRepository) }
-                        AddonHubScreen(viewModel = vm, onNavigate = { navController.navigate(it) })
-                    }
-                    composable<Screen.GameModeSelection> { entry ->
-                        val screen = entry.toRoute<Screen.GameModeSelection>()
-                        val vm = viewModel(key = screen.addonId) { GameModeSelectionViewModel(screen.addonId, gameModeRepository) }
-                        TacticsGameModeSelectionScreen(addonId = screen.addonId, viewModel = vm, onNavigate = { navController.navigate(it) })
                     }
                     composable<Screen.CompositionSelection> { entry ->
                         val screen = entry.toRoute<Screen.CompositionSelection>()
