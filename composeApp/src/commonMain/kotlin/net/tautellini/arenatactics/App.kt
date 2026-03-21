@@ -25,7 +25,7 @@ import net.tautellini.arenatactics.data.repository.*
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.navigation.toScreen
 import net.tautellini.arenatactics.presentation.AddonHubViewModel
-import net.tautellini.arenatactics.presentation.AddonSelectionViewModel
+import net.tautellini.arenatactics.presentation.HomeViewModel
 import net.tautellini.arenatactics.presentation.ClassGuideListViewModel
 import net.tautellini.arenatactics.presentation.CompositionSelectionViewModel
 import net.tautellini.arenatactics.presentation.GameModeSelectionViewModel
@@ -157,7 +157,7 @@ fun App() {
                     popExitTransition  = { fadeOut(tween(180)) + scaleOut(tween(180), targetScale = 0.95f) }
                 ) {
                     composable<Screen.AddonSelection> {
-                        val vm = viewModel { AddonSelectionViewModel(addonRepository) }
+                        val vm = viewModel { HomeViewModel(addonRepository, gameModeRepository) }
                         val shieldMod = with(sharedScope) {
                             Modifier.sharedElement(
                                 sharedContentState = rememberSharedContentState(key = "shield"),
