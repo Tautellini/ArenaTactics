@@ -2,10 +2,51 @@
   {
     "id": "tbc_anniversary",
     "name": "TBC Anniversary",
+    "shortName": "TBC",
     "description": "The Burning Crusade Anniversary",
-    "iconName": "achievement_arena_2v2_7",
+    "accentColor": "#4FC978",
     "specPoolId": "tbc",
     "classPoolId": "tbc",
     "hasData": true
+  },
+  {
+    "id": "wotlk",
+    "name": "Wrath of the Lich King",
+    "shortName": "WOTLK",
+    "description": "Wrath of the Lich King",
+    "accentColor": "#5BB8F0",
+    "specPoolId": "wotlk",
+    "classPoolId": "wotlk",
+    "hasData": false
+  },
+  {
+    "id": "cata",
+    "name": "Cataclysm",
+    "shortName": "CATA",
+    "description": "Cataclysm",
+    "accentColor": "#F07040",
+    "specPoolId": "cata",
+    "classPoolId": "cata",
+    "hasData": false
+  },
+  {
+    "id": "pandaria",
+    "name": "Mists of Pandaria",
+    "shortName": "MOP",
+    "description": "Mists of Pandaria",
+    "accentColor": "#60D9A0",
+    "specPoolId": "pandaria",
+    "classPoolId": "pandaria",
+    "hasData": false
+  },
+  {
+    "id": "midnight",
+    "name": "Midnight",
+    "shortName": "MID",
+    "description": "The War Within — Midnight",
+    "accentColor": "#B070E0",
+    "specPoolId": "midnight",
+    "classPoolId": "midnight",
+    "hasData": false
   }
 ]

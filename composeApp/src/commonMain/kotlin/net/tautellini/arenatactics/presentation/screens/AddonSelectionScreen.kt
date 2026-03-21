@@ -11,6 +11,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -25,6 +26,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -36,17 +38,12 @@ import net.tautellini.arenatactics.data.model.GameMode
 import net.tautellini.arenatactics.data.model.WowheadIcons
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.presentation.GameModeRowState
+import net.tautellini.arenatactics.presentation.HomeSection
+import net.tautellini.arenatactics.presentation.HomeSelection
 import net.tautellini.arenatactics.presentation.HomeState
 import net.tautellini.arenatactics.presentation.HomeViewModel
 import net.tautellini.arenatactics.presentation.screens.components.ShieldCanvas
 import net.tautellini.arenatactics.presentation.theme.*
-
-private data class HomeSelection(
-    val addon: Addon? = null,
-    val section: Section? = null
-)
-
-private enum class Section { TACTICS, CLASS_GUIDES }
 
 @Composable
 fun AddonSelectionScreen(
@@ -55,7 +52,7 @@ fun AddonSelectionScreen(
     shieldModifier: Modifier = Modifier
 ) {
     val state by viewModel.state.collectAsState()
-    var selection by remember { mutableStateOf(HomeSelection()) }
+    val selection by viewModel.selection.collectAsState()
 
     Box(modifier = Modifier.fillMaxSize().background(Background)) {
         Column(
@@ -84,32 +81,20 @@ fun AddonSelectionScreen(
                             letterSpacing = 2.sp
                         )
                         FlowRow(
-                            horizontalArrangement = Arrangement.spacedBy(24.dp),
-                            verticalArrangement = Arrangement.spacedBy(24.dp)
+                            horizontalArrangement = Arrangement.spacedBy(16.dp),
+                            verticalArrangement = Arrangement.spacedBy(16.dp)
                         ) {
                             s.addons.forEach { addon ->
                                 val isSelected = selection.addon?.id == addon.id
-                                val isDone = selection.section != null
-                                val tileAlpha = when {
-                                    !addon.hasData -> 0.35f
-                                    isSelected -> 1f
-                                    isDone -> 0.6f
-                                    else -> 1f
-                                }
                                 AddonTile(
                                     addon = addon,
                                     isSelected = isSelected,
-                                    alpha = tileAlpha,
+                                    enabled = addon.hasData,
                                     onClick = if (!addon.hasData) null else ({
                                         if (isSelected) {
-                                            // Deselect
-                                            selection = HomeSelection()
-                                            viewModel.resetGameModes()
+                                            viewModel.deselectAddon()
                                         } else {
-                                            // Select new addon
-                                            viewModel.resetGameModes()
-                                            selection = HomeSelection(addon = addon)
-                                            viewModel.loadGameModes(addon.id)
+                                            viewModel.selectAddon(addon)
                                         }
                                     })
                                 )
@@ -145,18 +130,18 @@ fun AddonSelectionScreen(
                                     icon = Icons.Rounded.AutoAwesome,
                                     title = "Tactics",
                                     subtitle = "Compositions & matchup guides",
-                                    isSelected = selection.section == Section.TACTICS,
+                                    isSelected = selection.section == HomeSection.TACTICS,
                                     alpha = tacticsAlpha,
                                     loadingState = s.gameModeRow,
                                     onClick = if (tacticsEnabled) ({
-                                        selection = selection.copy(section = Section.TACTICS)
+                                        viewModel.selectSection(HomeSection.TACTICS)
                                     }) else null
                                 )
                                 SectionTile(
                                     icon = Icons.Rounded.MenuBook,
                                     title = "Class Guides",
                                     subtitle = "Best-in-slot gear per spec",
-                                    isSelected = selection.section == Section.CLASS_GUIDES,
+                                    isSelected = selection.section == HomeSection.CLASS_GUIDES,
                                     alpha = 1f,
                                     loadingState = null,
                                     onClick = {
@@ -171,7 +156,7 @@ fun AddonSelectionScreen(
 
                     // Row 3: Bracket selection — visible when Tactics is selected
                     AnimatedVisibility(
-                        visible = selection.section == Section.TACTICS,
+                        visible = selection.section == HomeSection.TACTICS,
                         enter = fadeIn() + slideInVertically(initialOffsetY = { it / 4 }),
                         exit = fadeOut() + slideOutVertically()
                     ) {
@@ -229,45 +214,88 @@ private fun ShieldLogoBlock(modifier: Modifier = Modifier) {
         label = "shimmer-x"
     )
     Box(contentAlignment = Alignment.Center) {
-        ShieldCanvas(modifier = modifier.size(220.dp, 250.dp), shimmerX = shimmerX)
+        ShieldCanvas(modifier = modifier.size(190.dp, 215.dp), shimmerX = shimmerX)
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(2.dp),
-            modifier = Modifier.padding(bottom = 24.dp)
+            modifier = Modifier.padding(bottom = 20.dp)
         ) {
-            Text("Arena", fontFamily = cinzel, fontWeight = FontWeight.Bold, color = TextPrimary, fontSize = 26.sp, letterSpacing = 3.sp)
-            Text("Tactics", fontFamily = cinzel, fontWeight = FontWeight.Normal, color = Primary, fontSize = 16.sp, letterSpacing = 5.sp)
+            Text("Arena", fontFamily = cinzel, fontWeight = FontWeight.Bold, color = TextPrimary, fontSize = 32.sp, letterSpacing = 3.sp)
+            Text("Tactics", fontFamily = cinzel, fontWeight = FontWeight.Normal, color = Primary, fontSize = 20.sp, letterSpacing = 4.sp)
         }
     }
 }
+
+private fun parseHexColor(hex: String): Color {
+    val cleaned = hex.removePrefix("#")
+    val argb = cleaned.toLong(16) or 0xFF000000
+    return Color(argb.toInt())
+}
+
+private val GreyedOut = Color(0xFF5A6A6B)
+private val GreyedOutBg = Color(0xFF1A2E30)
 
 @Composable
 private fun AddonTile(
     addon: Addon,
     isSelected: Boolean,
-    alpha: Float,
+    enabled: Boolean,
     onClick: (() -> Unit)?
 ) {
-    val shape = RoundedCornerShape(12.dp)
-    Column(
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(8.dp),
+    val accent = if (enabled) parseHexColor(addon.accentColor) else GreyedOut
+    val shape = RoundedCornerShape(16.dp)
+    val cardBg = when {
+        isSelected -> CardElevated
+        enabled -> CardColor
+        else -> GreyedOutBg
+    }
+    val borderMod = when {
+        isSelected -> Modifier.border(2.dp, accent, shape)
+        else -> Modifier
+    }
+
+    Surface(
+        color = cardBg,
+        shape = shape,
         modifier = Modifier
-            .alpha(alpha)
+            .width(130.dp)
+            .then(borderMod)
             .then(if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier)
-            .then(
-                if (isSelected) Modifier.border(2.dp, Primary, shape).background(CardElevated, shape)
-                else Modifier
-            )
-            .padding(8.dp)
     ) {
-        AsyncImage(
-            model = WowheadIcons.large(addon.iconName),
-            contentDescription = addon.name,
-            modifier = Modifier.size(80.dp).clip(shape)
-        )
-        Text(addon.name, color = TextPrimary, fontSize = 13.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
-        Text(addon.description, color = TextSecondary, fontSize = 11.sp, textAlign = TextAlign.Center)
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(10.dp),
+            modifier = Modifier.padding(16.dp)
+        ) {
+            // Rounded "W" emblem
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .size(56.dp)
+                    .border(2.dp, accent, CircleShape)
+                    .background(accent.copy(alpha = if (enabled) 0.15f else 0.06f), CircleShape)
+            ) {
+                val cinzel = cinzelDecorative()
+                Text(
+                    text = "W",
+                    fontFamily = cinzel,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 26.sp,
+                    color = accent,
+                    textAlign = TextAlign.Center
+                )
+            }
+
+            // Short name label
+            Text(
+                text = addon.shortName,
+                color = if (enabled) TextPrimary else GreyedOut,
+                fontSize = 15.sp,
+                fontWeight = FontWeight.Bold,
+                letterSpacing = 2.sp,
+                textAlign = TextAlign.Center
+            )
+        }
     }
 }
 

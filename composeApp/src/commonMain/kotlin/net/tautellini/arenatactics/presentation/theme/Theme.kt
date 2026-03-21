@@ -18,7 +18,7 @@ import arenatactics.composeapp.generated.resources.NotoSans_SemiBold
 import arenatactics.composeapp.generated.resources.Res
 import org.jetbrains.compose.resources.Font
 
-val Primary = Color(0xFF1D7373)
+val Primary = Color(0xFF27E0E0)
 val Secondary = Color(0xFF0F5959)
 val Background   = Color(0xFF042326)
 val Surface      = Color(0xFF0A3A40)

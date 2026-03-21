@@ -6,8 +6,9 @@ import kotlinx.serialization.Serializable
 data class Addon(
     val id: String,
     val name: String,
+    val shortName: String,
     val description: String,
-    val iconName: String,
+    val accentColor: String,
     val specPoolId: String,
     val classPoolId: String,
     val hasData: Boolean

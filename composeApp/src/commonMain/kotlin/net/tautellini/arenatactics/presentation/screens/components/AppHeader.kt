@@ -3,11 +3,21 @@ package net.tautellini.arenatactics.presentation.screens.components
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.animation.core.LinearEasing
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.width
+import androidx.compose.runtime.getValue
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -40,6 +50,12 @@ fun AppHeader(
     shieldModifier: Modifier = Modifier
 ) {
     val stack = Screen.buildStack(currentScreen)
+    val transition = rememberInfiniteTransition(label = "shield-shimmer")
+    val shimmerX by transition.animateFloat(
+        initialValue = -1f, targetValue = 2f,
+        animationSpec = infiniteRepeatable(tween(3000, easing = LinearEasing), RepeatMode.Restart),
+        label = "shimmer-x"
+    )
 
     Row(
         verticalAlignment = Alignment.CenterVertically,
@@ -52,8 +68,10 @@ fun AppHeader(
         // Small shield — caller injects sharedElement() + size() via shieldModifier.
         // Clicking the shield navigates home.
         Box(modifier = Modifier.clickable { onNavigate(Screen.AddonSelection) }) {
-            ShieldCanvas(modifier = shieldModifier)
+            ShieldCanvas(modifier = shieldModifier.size(30.dp, 34.dp), shimmerX = shimmerX)
         }
+
+        Spacer(Modifier.width(8.dp))
 
         // Breadcrumb chips — include AddonSelection ("Home") as first chip
         stack.forEachIndexed { index, screen ->

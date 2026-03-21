@@ -55,8 +55,9 @@ class RepositoryParsingTest {
         val json = """[{
             "id": "tbc_anniversary",
             "name": "TBC Anniversary",
+            "shortName": "TBC",
             "description": "The Burning Crusade Anniversary",
-            "iconName": "achievement_arena_2v2_7",
+            "accentColor": "#4FC978",
             "specPoolId": "tbc",
             "classPoolId": "tbc",
             "hasData": true
@@ -65,6 +66,7 @@ class RepositoryParsingTest {
         assertEquals(1, result.size)
         assertEquals("tbc_anniversary", result[0].id)
         assertEquals("tbc", result[0].specPoolId)
+        assertEquals("TBC", result[0].shortName)
     }
 
     @Test

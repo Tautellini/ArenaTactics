@@ -12,6 +12,13 @@ import net.tautellini.arenatactics.data.model.GameMode
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
 
+enum class HomeSection { TACTICS, CLASS_GUIDES }
+
+data class HomeSelection(
+    val addon: Addon? = null,
+    val section: HomeSection? = null
+)
+
 class HomeViewModel(
     private val addonRepository: AddonRepository,
     private val gameModeRepository: GameModeRepository
@@ -19,6 +26,9 @@ class HomeViewModel(
 
     private val _state = MutableStateFlow<HomeState>(HomeState.Loading)
     val state: StateFlow<HomeState> = _state.asStateFlow()
+
+    private val _selection = MutableStateFlow(HomeSelection())
+    val selection: StateFlow<HomeSelection> = _selection.asStateFlow()
 
     private var lastLoadedAddonId: String? = null
     private var loadJob: Job? = null
@@ -66,6 +76,21 @@ class HomeViewModel(
         if (current is HomeState.Success) {
             _state.value = current.copy(gameModeRow = GameModeRowState.Idle)
         }
+    }
+
+    fun selectAddon(addon: Addon) {
+        resetGameModes()
+        _selection.value = HomeSelection(addon = addon)
+        loadGameModes(addon.id)
+    }
+
+    fun deselectAddon() {
+        _selection.value = HomeSelection()
+        resetGameModes()
+    }
+
+    fun selectSection(section: HomeSection) {
+        _selection.value = _selection.value.copy(section = section)
     }
 }
 

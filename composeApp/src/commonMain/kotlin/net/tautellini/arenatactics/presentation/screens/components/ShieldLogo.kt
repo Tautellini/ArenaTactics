@@ -32,8 +32,8 @@ private fun DrawScope.shieldPath(w: Float, h: Float): Path = Path().apply {
 /**
  * Draws the heraldic shield canvas.
  *
- * The caller MUST provide sizing via [modifier] (e.g. `Modifier.size(220.dp, 250.dp)` for
- * the home screen, `Modifier.size(28.dp, 32.dp)` for AppHeader). The caller also injects
+ * The caller MUST provide sizing via [modifier] (e.g. `Modifier.size(190.dp, 215.dp)` for
+ * the home screen, `Modifier.size(30.dp, 34.dp)` for AppHeader). The caller also injects
  * any `sharedElement()` modifier here so the shield can participate in shared transitions.
  *
  * [shimmerX] is an animated float (-1f..2f) driving the shimmer sweep. Pass -1f for no shimmer.

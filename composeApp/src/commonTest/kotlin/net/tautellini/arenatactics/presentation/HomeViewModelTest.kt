@@ -21,8 +21,9 @@ import kotlin.test.assertIs
 private val ADDON_TBC = Addon(
     id = "tbc_anniversary",
     name = "TBC Anniversary",
+    shortName = "TBC",
     description = "The Burning Crusade",
-    iconName = "inv_misc_tournaments_noticebc",
+    accentColor = "#4FC978",
     specPoolId = "tbc_specs",
     classPoolId = "tbc_classes",
     hasData = true
