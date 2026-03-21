@@ -18,6 +18,9 @@ class GearRepository(private val compositionRepository: CompositionRepository) {
         return classIds.associateWith { classId -> loadPhasesForClass(classId) }
     }
 
+    suspend fun getGearForSpec(classId: String): List<GearPhase> =
+        loadPhasesForClass(classId)
+
     private suspend fun loadPhasesForClass(classId: String): List<GearPhase> {
         val phases = mutableListOf<GearPhase>()
         // Cap at MAX_PHASES to avoid unnecessary 404 requests on the web target.
