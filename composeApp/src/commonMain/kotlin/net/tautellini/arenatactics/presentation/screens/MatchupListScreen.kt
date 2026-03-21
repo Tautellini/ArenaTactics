@@ -53,7 +53,7 @@ fun MatchupListScreen(
                                 color = CardColor,
                                 shape = RoundedCornerShape(8.dp),
                                 modifier = Modifier.clickable {
-                                    onNavigate(Screen.MatchupDetail(gameModeId, compositionId, matchup.id))
+                                    onNavigate(Screen.MatchupDetail("", gameModeId, compositionId, matchup.id))
                                 }
                             ) {
                                 Row(

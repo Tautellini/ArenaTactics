@@ -51,11 +51,11 @@ fun AppHeader(
     ) {
         // Small shield — caller injects sharedElement() + size() via shieldModifier.
         // Clicking the shield navigates home.
-        Box(modifier = Modifier.clickable { onNavigate(Screen.GameModeSelection) }) {
+        Box(modifier = Modifier.clickable { onNavigate(Screen.AddonSelection) }) {
             ShieldCanvas(modifier = shieldModifier)
         }
 
-        // Breadcrumb chips — skip first (GameModeSelection = shield)
+        // Breadcrumb chips — skip first (AddonSelection = shield)
         stack.drop(1).forEachIndexed { index, screen ->
             val isCurrent = screen == currentScreen
             val isAncestor = !isCurrent
@@ -108,11 +108,14 @@ private fun BreadcrumbChip(
 }
 
 private fun Screen.breadcrumbLabel(): String = when (this) {
-    is Screen.GameModeSelection    -> "Home"
+    is Screen.AddonSelection    -> "Home"
+    is Screen.AddonHub          -> addonId.formatId()
+    is Screen.GameModeSelection -> "Tactics"
     is Screen.CompositionSelection -> gameModeId.formatId()
-    is Screen.GearView             -> "Gear"
-    is Screen.MatchupList          -> "Matchups"
-    is Screen.MatchupDetail        -> "Detail"
+    is Screen.MatchupList       -> "Matchups"
+    is Screen.MatchupDetail     -> "Detail"
+    is Screen.ClassGuideList    -> "Class Guides"
+    is Screen.SpecGuide         -> specId.formatId()
 }
 
 /** Converts "tbc-2v2" → "TBC 2v2", "some_id" → "Some Id". */

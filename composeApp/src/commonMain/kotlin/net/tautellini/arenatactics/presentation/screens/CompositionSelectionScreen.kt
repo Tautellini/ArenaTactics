@@ -73,7 +73,7 @@ fun CompositionSelectionScreen(
                                             CompositionCard(
                                                 richComposition = rich,
                                                 onClick = if (rich.composition.hasData) {
-                                                    { onNavigate(Screen.GearView(gameModeId, rich.composition.id)) }
+                                                    { onNavigate(Screen.MatchupList("", gameModeId, rich.composition.id)) }
                                                 } else null
                                             )
                                         }
@@ -91,7 +91,7 @@ fun CompositionSelectionScreen(
                                         CompositionCard(
                                             richComposition = rich,
                                             onClick = if (rich.composition.hasData) {
-                                                { onNavigate(Screen.GearView(gameModeId, rich.composition.id)) }
+                                                { onNavigate(Screen.MatchupList("", gameModeId, rich.composition.id)) }
                                             } else null
                                         )
                                     }

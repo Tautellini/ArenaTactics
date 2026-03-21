@@ -71,7 +71,7 @@ fun GameModeSelectionScreen(
                         ) {
                             s.modes.forEach { mode ->
                                 GameModeTile(mode) {
-                                    onNavigate(Screen.CompositionSelection(mode.id))
+                                    onNavigate(Screen.CompositionSelection("", mode.id))
                                 }
                             }
                         }

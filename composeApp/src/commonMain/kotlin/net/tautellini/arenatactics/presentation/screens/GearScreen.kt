@@ -70,8 +70,8 @@ fun CompositionHubScreen(
                             selectedTab = tab
                             // Sync nav destination when switching tabs
                             when (tab) {
-                                CompositionTab.GEAR     -> onNavigate(Screen.GearView(gameModeId, compositionId))
-                                CompositionTab.MATCHUPS -> onNavigate(Screen.MatchupList(gameModeId, compositionId))
+                                CompositionTab.GEAR     -> onNavigate(Screen.MatchupList("", gameModeId, compositionId))
+                                CompositionTab.MATCHUPS -> onNavigate(Screen.MatchupList("", gameModeId, compositionId))
                             }
                         }
                         .padding(horizontal = 16.dp, vertical = 10.dp)

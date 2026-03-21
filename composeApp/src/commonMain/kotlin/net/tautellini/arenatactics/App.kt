@@ -15,17 +15,13 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.*
 import kotlinx.coroutines.flow.drop
 import androidx.compose.ui.Modifier
-import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.toRoute
 import net.tautellini.arenatactics.data.repository.*
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.navigation.toScreen
-import net.tautellini.arenatactics.presentation.*
-import net.tautellini.arenatactics.presentation.screens.*
 import net.tautellini.arenatactics.presentation.screens.components.AppHeader
 import net.tautellini.arenatactics.presentation.theme.ArenaTacticsTheme
 import net.tautellini.arenatactics.presentation.theme.Background
@@ -41,7 +37,7 @@ fun App() {
     val navController = rememberNavController()
 
     // How many snapshotFlow emissions to skip at startup:
-    //   1 for the initial sync emit (GameModeSelection) +
+    //   1 for the initial sync emit (AddonSelection) +
     //   (deep-link stack depth - 1) for each nav during deep-link init.
     val initialSkipCount = remember {
         Screen.buildStack(Screen.fromPath(getInitialPath())).size
@@ -87,7 +83,7 @@ fun App() {
     // These navigations are covered by initialSkipCount so no URL push occurs.
     LaunchedEffect(Unit) {
         val initialScreen = Screen.fromPath(getInitialPath())
-        if (initialScreen !is Screen.GameModeSelection) {
+        if (initialScreen !is Screen.AddonSelection) {
             Screen.buildStack(initialScreen).drop(1).forEach { screen ->
                 navController.navigate(screen)
             }
@@ -95,7 +91,7 @@ fun App() {
     }
 
     val currentBackStackEntry by navController.currentBackStackEntryAsState()
-    val currentScreen = currentBackStackEntry?.toScreen() ?: Screen.GameModeSelection
+    val currentScreen = currentBackStackEntry?.toScreen() ?: Screen.AddonSelection
 
     ArenaTacticsTheme {
         SharedTransitionLayout {
@@ -105,7 +101,7 @@ fun App() {
 
                 // Persistent AppHeader on all non-home screens
                 AnimatedVisibility(
-                    visible = currentScreen !is Screen.GameModeSelection,
+                    visible = currentScreen !is Screen.AddonSelection,
                     enter = fadeIn(tween(200)) + slideInVertically(tween(200)) { -it },
                     exit = fadeOut(tween(150)) + slideOutVertically(tween(150)) { -it }
                 ) {
@@ -119,11 +115,11 @@ fun App() {
                     AppHeader(
                         currentScreen = currentScreen,
                         onNavigate = { target ->
-                            if (target is Screen.GameModeSelection) {
-                                navController.popBackStack<Screen.GameModeSelection>(inclusive = false)
+                            if (target is Screen.AddonSelection) {
+                                navController.popBackStack<Screen.AddonSelection>(inclusive = false)
                             } else {
                                 navController.navigate(target) {
-                                    popUpTo<Screen.GameModeSelection>()
+                                    popUpTo<Screen.AddonSelection>()
                                     launchSingleTop = true
                                 }
                             }
@@ -134,110 +130,21 @@ fun App() {
 
                 NavHost(
                     navController = navController,
-                    startDestination = Screen.GameModeSelection,
+                    startDestination = Screen.AddonSelection,
                     modifier = Modifier.weight(1f),
-                    enterTransition = {
-                        fadeIn(tween(220)) + scaleIn(tween(220), initialScale = 0.95f)
-                    },
-                    exitTransition = {
-                        fadeOut(tween(180)) + scaleOut(tween(180), targetScale = 1.05f)
-                    },
-                    popEnterTransition = {
-                        fadeIn(tween(220)) + scaleIn(tween(220), initialScale = 1.05f)
-                    },
-                    popExitTransition = {
-                        fadeOut(tween(180)) + scaleOut(tween(180), targetScale = 0.95f)
-                    }
+                    enterTransition  = { fadeIn(tween(220)) + scaleIn(tween(220), initialScale = 0.95f) },
+                    exitTransition   = { fadeOut(tween(180)) + scaleOut(tween(180), targetScale = 1.05f) },
+                    popEnterTransition = { fadeIn(tween(220)) + scaleIn(tween(220), initialScale = 1.05f) },
+                    popExitTransition  = { fadeOut(tween(180)) + scaleOut(tween(180), targetScale = 0.95f) }
                 ) {
-                    composable<Screen.GameModeSelection> {
-                        val vm = viewModel { GameModeSelectionViewModel(gameModeRepository) }
-                        val shieldMod = with(sharedScope) {
-                            Modifier.sharedElement(
-                                sharedContentState = rememberSharedContentState(key = "shield"),
-                                animatedVisibilityScope = this@composable
-                            )
-                        }
-                        GameModeSelectionScreen(
-                            viewModel = vm,
-                            onNavigate = { navController.navigate(it) },
-                            shieldModifier = shieldMod
-                        )
-                    }
-
-                    composable<Screen.CompositionSelection> { entry ->
-                        val screen = entry.toRoute<Screen.CompositionSelection>()
-                        val vm = viewModel(key = screen.gameModeId) {
-                            CompositionSelectionViewModel(
-                                screen.gameModeId,
-                                gameModeRepository,
-                                compositionRepository
-                            )
-                        }
-                        CompositionSelectionScreen(
-                            gameModeId = screen.gameModeId,
-                            viewModel = vm,
-                            onNavigate = { navController.navigate(it) }
-                        )
-                    }
-
-                    composable<Screen.GearView> { entry ->
-                        val screen = entry.toRoute<Screen.GearView>()
-                        val gearVm = viewModel(key = "gear_${screen.compositionId}") {
-                            GearViewModel(
-                                screen.gameModeId, screen.compositionId,
-                                gameModeRepository, compositionRepository, gearRepository
-                            )
-                        }
-                        val matchupVm = viewModel(key = "matchups_${screen.compositionId}") {
-                            MatchupListViewModel(
-                                screen.gameModeId, screen.compositionId,
-                                gameModeRepository, compositionRepository, matchupRepository
-                            )
-                        }
-                        CompositionHubScreen(
-                            gameModeId = screen.gameModeId,
-                            compositionId = screen.compositionId,
-                            gearViewModel = gearVm,
-                            matchupListViewModel = matchupVm,
-                            initialTab = CompositionTab.GEAR,
-                            onNavigate = { navController.navigate(it) }
-                        )
-                    }
-
-                    composable<Screen.MatchupList> { entry ->
-                        val screen = entry.toRoute<Screen.MatchupList>()
-                        val gearVm = viewModel(key = "gear_${screen.compositionId}") {
-                            GearViewModel(
-                                screen.gameModeId, screen.compositionId,
-                                gameModeRepository, compositionRepository, gearRepository
-                            )
-                        }
-                        val matchupVm = viewModel(key = "matchups_${screen.compositionId}") {
-                            MatchupListViewModel(
-                                screen.gameModeId, screen.compositionId,
-                                gameModeRepository, compositionRepository, matchupRepository
-                            )
-                        }
-                        CompositionHubScreen(
-                            gameModeId = screen.gameModeId,
-                            compositionId = screen.compositionId,
-                            gearViewModel = gearVm,
-                            matchupListViewModel = matchupVm,
-                            initialTab = CompositionTab.MATCHUPS,
-                            onNavigate = { navController.navigate(it) }
-                        )
-                    }
-
-                    composable<Screen.MatchupDetail> { entry ->
-                        val screen = entry.toRoute<Screen.MatchupDetail>()
-                        val vm = viewModel(key = screen.matchupId) {
-                            MatchupDetailViewModel(
-                                screen.gameModeId, screen.compositionId, screen.matchupId,
-                                gameModeRepository, compositionRepository, matchupRepository
-                            )
-                        }
-                        MatchupDetailScreen(viewModel = vm)
-                    }
+                    composable<Screen.AddonSelection> { /* TODO Task 5 */ }
+                    composable<Screen.AddonHub> { /* TODO Task 6 */ }
+                    composable<Screen.GameModeSelection> { /* TODO Task 7 */ }
+                    composable<Screen.CompositionSelection> { /* TODO Task 8 */ }
+                    composable<Screen.MatchupList> { /* TODO Task 9 */ }
+                    composable<Screen.MatchupDetail> { /* TODO Task 10 */ }
+                    composable<Screen.ClassGuideList> { /* TODO Task 11 */ }
+                    composable<Screen.SpecGuide> { /* TODO Task 12 */ }
                 }
             }
         }

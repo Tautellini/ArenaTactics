@@ -6,73 +6,59 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 sealed class Screen {
-    @Serializable
-    data object GameModeSelection : Screen()
-
-    @Serializable
-    data class CompositionSelection(val gameModeId: String) : Screen()
-
-    @Serializable
-    data class GearView(val gameModeId: String, val compositionId: String) : Screen()
-
-    @Serializable
-    data class MatchupList(val gameModeId: String, val compositionId: String) : Screen()
-
-    @Serializable
-    data class MatchupDetail(
-        val gameModeId: String,
-        val compositionId: String,
-        val matchupId: String
-    ) : Screen()
+    @Serializable data object AddonSelection : Screen()
+    @Serializable data class AddonHub(val addonId: String) : Screen()
+    @Serializable data class GameModeSelection(val addonId: String) : Screen()
+    @Serializable data class CompositionSelection(val addonId: String, val gameModeId: String) : Screen()
+    @Serializable data class MatchupList(val addonId: String, val gameModeId: String, val compositionId: String) : Screen()
+    @Serializable data class MatchupDetail(val addonId: String, val gameModeId: String, val compositionId: String, val matchupId: String) : Screen()
+    @Serializable data class ClassGuideList(val addonId: String) : Screen()
+    @Serializable data class SpecGuide(val addonId: String, val classId: String, val specId: String) : Screen()
 
     val path: String get() = when (this) {
-        is GameModeSelection    -> "/"
-        is CompositionSelection -> "/modes/$gameModeId"
-        is GearView             -> "/modes/$gameModeId/comp/$compositionId/gear"
-        is MatchupList          -> "/modes/$gameModeId/comp/$compositionId/matchups"
-        is MatchupDetail        -> "/modes/$gameModeId/comp/$compositionId/matchups/$matchupId"
+        is AddonSelection       -> "/"
+        is AddonHub             -> "/$addonId"
+        is GameModeSelection    -> "/$addonId/tactics"
+        is CompositionSelection -> "/$addonId/tactics/$gameModeId"
+        is MatchupList          -> "/$addonId/tactics/$gameModeId/$compositionId/matchups"
+        is MatchupDetail        -> "/$addonId/tactics/$gameModeId/$compositionId/matchups/$matchupId"
+        is ClassGuideList       -> "/$addonId/guides"
+        is SpecGuide            -> "/$addonId/guides/$classId/$specId"
     }
 
     companion object {
-        /**
-         * Parses a URL pathname into a Screen. Works regardless of any base-path prefix.
-         */
         fun fromPath(pathname: String): Screen {
-            val segments = pathname.trim('/').split('/').filter { it.isNotEmpty() }
-            val modesIdx = segments.indexOf("modes")
-            if (modesIdx == -1) return GameModeSelection
-
-            val rel = segments.drop(modesIdx)
-            val gameModeId = rel.getOrNull(1) ?: return GameModeSelection
-            if (rel.getOrNull(2) != "comp") return CompositionSelection(gameModeId)
-
-            val compositionId = rel.getOrNull(3) ?: return CompositionSelection(gameModeId)
-            return when (rel.getOrNull(4)) {
-                "gear"     -> GearView(gameModeId, compositionId)
-                "matchups" -> {
-                    val matchupId = rel.getOrNull(5)
-                    if (matchupId != null) MatchupDetail(gameModeId, compositionId, matchupId)
-                    else MatchupList(gameModeId, compositionId)
+            val segs = pathname.trim('/').split('/').filter { it.isNotEmpty() }
+            val addonId = segs.getOrNull(0) ?: return AddonSelection
+            if (addonId == "modes") return AddonSelection
+            return when (val section = segs.getOrNull(1)) {
+                null      -> AddonHub(addonId)
+                "tactics" -> {
+                    val modeId = segs.getOrNull(2) ?: return GameModeSelection(addonId)
+                    val compId = segs.getOrNull(3) ?: return CompositionSelection(addonId, modeId)
+                    if (segs.getOrNull(4) != "matchups") return CompositionSelection(addonId, modeId)
+                    val matchupId = segs.getOrNull(5)
+                    if (matchupId != null) MatchupDetail(addonId, modeId, compId, matchupId)
+                    else MatchupList(addonId, modeId, compId)
                 }
-                else -> CompositionSelection(gameModeId)
+                "guides"  -> {
+                    val classId = segs.getOrNull(2) ?: return ClassGuideList(addonId)
+                    val specId  = segs.getOrNull(3) ?: return ClassGuideList(addonId)
+                    SpecGuide(addonId, classId, specId)
+                }
+                else      -> AddonSelection
             }
         }
 
-        /**
-         * Builds the full navigation back-stack for a screen so Back works
-         * correctly when a deep link is opened directly.
-         */
         fun buildStack(screen: Screen): List<Screen> = when (screen) {
-            is GameModeSelection    -> listOf(screen)
-            is CompositionSelection -> listOf(GameModeSelection, screen)
-            is GearView             -> listOf(GameModeSelection, CompositionSelection(screen.gameModeId), screen)
-            is MatchupList          -> listOf(GameModeSelection, CompositionSelection(screen.gameModeId), screen)
-            is MatchupDetail        -> listOf(
-                GameModeSelection,
-                CompositionSelection(screen.gameModeId),
-                MatchupList(screen.gameModeId, screen.compositionId),
-                screen
-            )
+            is AddonSelection       -> listOf(screen)
+            is AddonHub             -> listOf(AddonSelection, screen)
+            is GameModeSelection    -> listOf(AddonSelection, AddonHub(screen.addonId), screen)
+            is CompositionSelection -> listOf(AddonSelection, AddonHub(screen.addonId), GameModeSelection(screen.addonId), screen)
+            is MatchupList          -> listOf(AddonSelection, AddonHub(screen.addonId), GameModeSelection(screen.addonId), CompositionSelection(screen.addonId, screen.gameModeId), screen)
+            is MatchupDetail        -> listOf(AddonSelection, AddonHub(screen.addonId), GameModeSelection(screen.addonId), CompositionSelection(screen.addonId, screen.gameModeId), MatchupList(screen.addonId, screen.gameModeId, screen.compositionId), screen)
+            is ClassGuideList       -> listOf(AddonSelection, AddonHub(screen.addonId), screen)
+            is SpecGuide            -> listOf(AddonSelection, AddonHub(screen.addonId), ClassGuideList(screen.addonId), screen)
         }
     }
 }
@@ -87,17 +73,23 @@ sealed class Screen {
  * MatchupDetail is checked before MatchupList to avoid false positive on "Matchup".
  */
 fun NavBackStackEntry.toScreen(): Screen {
-    val route = destination.route ?: return Screen.GameModeSelection
+    val route = destination.route ?: return Screen.AddonSelection
     return when {
-        "GameModeSelection"    in route -> Screen.GameModeSelection
+        "AddonSelection"       in route -> Screen.AddonSelection
         "MatchupDetail"        in route -> toRoute<Screen.MatchupDetail>()
-            .let { Screen.MatchupDetail(it.gameModeId, it.compositionId, it.matchupId) }
-        "GearView"             in route -> toRoute<Screen.GearView>()
-            .let { Screen.GearView(it.gameModeId, it.compositionId) }
+            .let { Screen.MatchupDetail(it.addonId, it.gameModeId, it.compositionId, it.matchupId) }
         "MatchupList"          in route -> toRoute<Screen.MatchupList>()
-            .let { Screen.MatchupList(it.gameModeId, it.compositionId) }
+            .let { Screen.MatchupList(it.addonId, it.gameModeId, it.compositionId) }
         "CompositionSelection" in route -> toRoute<Screen.CompositionSelection>()
-            .let { Screen.CompositionSelection(it.gameModeId) }
-        else                            -> Screen.GameModeSelection
+            .let { Screen.CompositionSelection(it.addonId, it.gameModeId) }
+        "GameModeSelection"    in route -> toRoute<Screen.GameModeSelection>()
+            .let { Screen.GameModeSelection(it.addonId) }
+        "ClassGuideList"       in route -> toRoute<Screen.ClassGuideList>()
+            .let { Screen.ClassGuideList(it.addonId) }
+        "SpecGuide"            in route -> toRoute<Screen.SpecGuide>()
+            .let { Screen.SpecGuide(it.addonId, it.classId, it.specId) }
+        "AddonHub"             in route -> toRoute<Screen.AddonHub>()
+            .let { Screen.AddonHub(it.addonId) }
+        else                            -> Screen.AddonSelection
     }
 }
