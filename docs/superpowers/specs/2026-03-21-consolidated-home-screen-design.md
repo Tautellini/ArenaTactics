@@ -46,6 +46,7 @@ class HomeViewModel(
     // init { viewModelScope.launch { try { ... } catch (t: Throwable) { ... } } }
 
     // Called when addon is tapped. Transitions gameModeRow: Idle → Loading → Ready/Error.
+    // Guard: if gameModeRow is already Ready for this addonId, do nothing (avoids spinner flash on re-tap).
     // Must use catch(Throwable) in the coroutine body; on Throwable emits GameModeRowState.Error.
     fun loadGameModes(addonId: String)
 
@@ -74,14 +75,14 @@ sealed class GameModeRowState {
 
 ### UI selection state (local to composable)
 
-`HomeSelection` and `Section` are defined at file scope inside `AddonSelectionScreen.kt`. They are UI-only types (not domain/data models) and must NOT be extracted to separate files. The project rule "do not place all Models in a singular file" applies to data/domain models, not composable-local state helpers.
+`HomeSelection` and `Section` are defined at file scope inside `AddonSelectionScreen.kt` with `private` visibility. They are UI-only types (not domain/data models) and must NOT be extracted to separate files. The project rule "do not place all Models in a singular file" applies to data/domain models, not composable-local state helpers.
 
 ```kotlin
-data class HomeSelection(
+private data class HomeSelection(
     val addon: Addon? = null,
     val section: Section? = null
 )
-enum class Section { TACTICS, CLASS_GUIDES }
+private enum class Section { TACTICS, CLASS_GUIDES }
 ```
 
 `HomeSelection` is local composable state (`remember { mutableStateOf(HomeSelection()) }`). It is not part of the ViewModel.
@@ -90,7 +91,7 @@ enum class Section { TACTICS, CLASS_GUIDES }
 
 `HomeViewModel` lives in the `ViewModelStore` of the `AddonSelection` `NavBackStackEntry` — it survives while that entry is on the back stack. When the user navigates to a content screen and then returns to home (via breadcrumb or back), `HomeViewModel.state` still holds whatever `GameModeRowState` was set. Meanwhile, `HomeSelection` local state is re-created fresh (no selections).
 
-**This is the desired behaviour:** the home screen always starts clean on re-entry. The user must tap an addon again to re-trigger the section row. The stale `GameModeRowState.Ready` data in the ViewModel is not visible because `HomeSelection.addon == null` — the section row is hidden. When the user taps the same addon again, `loadGameModes` is called again (cheap — modes are small JSON), producing a fresh `Ready` state.
+**This is the desired behaviour:** the home screen always starts clean on re-entry. The user must tap an addon again to re-trigger the section row. The stale `GameModeRowState.Ready` data in the ViewModel is not visible because `HomeSelection.addon == null` — the section row is hidden. When the user taps the same addon again, `loadGameModes` is called — but because the ViewModel guards against re-fetching when already `Ready` for that addonId, no spinner flash occurs.
 
 No `SavedStateHandle`, explicit keying, or `LaunchedEffect` cleanup is needed.
 
@@ -139,6 +140,8 @@ The shield logo block (`ShieldLogoBlock` + shimmer animation + `shieldModifier` 
 ```
 
 The outer `Box(fillMaxSize)` + inner `Column` structure from the current screen is preserved. The inner `Column` gains `verticalScroll` and the two `AnimatedVisibility` row blocks.
+
+Section tiles and bracket tiles use `FlowRow` (same as the existing addon row) — no fixed `Row` with hardcoded item count.
 
 ---
 
@@ -235,7 +238,7 @@ The remaining branches and the `else` fallback are unchanged. `AddonSelection` r
 | File | Change |
 |---|---|
 | `navigation/Screen.kt` | Remove `AddonHub`, `GameModeSelection` sealed entries; update `buildStack`, `fromPath`, `toScreen()` as specified above |
-| `App.kt` | Remove NavHost destinations for `AddonHub`, `GameModeSelection`; wire `HomeViewModel` (both repositories already in scope); replace `import ...AddonSelectionViewModel` with `import ...HomeViewModel` |
+| `App.kt` | Remove NavHost destinations for `AddonHub`, `GameModeSelection`; replace `import ...AddonSelectionViewModel` with `import ...HomeViewModel`; update the `composable<Screen.AddonSelection>` block to: `val viewModel = viewModel { HomeViewModel(addonRepository, gameModeRepository) }` then call `AddonSelectionScreen(viewModel, onNavigate, shieldModifier)` |
 | `presentation/HomeViewModel.kt` | New — `HomeViewModel`, `HomeState`, `GameModeRowState` |
 | `presentation/screens/AddonSelectionScreen.kt` | Full rewrite — cascading home screen; `HomeSelection` + `Section` defined here |
 | `presentation/screens/AddonHubScreen.kt` | Delete |
@@ -249,7 +252,36 @@ The remaining branches and the `else` fallback are unchanged. `AddonSelection` r
 
 ## Implementation Notes
 
-- **`initialSkipCount` in `App.kt`**: The URL bridge deep-link logic computes `Screen.buildStack(Screen.fromPath(...))` and uses the stack size to determine how many synthetic navigation events to skip. After updating `buildStack`, the stack depth for `CompositionSelection` shrinks from 4 to 2. This is automatically correct — `drop(2)` at startup is the right amount; no manual override is needed. Trace: `fromPath("/tbc/tactics/2v2/druid-holy-paladin")` → `CompositionSelection("tbc", "2v2")` → `buildStack` → `[AddonSelection, CompositionSelection]` (size 2) → `drop(2)` skips both startup emissions ✓.
+- **New `AddonSelectionScreen` composable signature:**
+  ```kotlin
+  @Composable
+  fun AddonSelectionScreen(
+      viewModel: HomeViewModel,
+      onNavigate: (Screen) -> Unit,
+      shieldModifier: Modifier = Modifier
+  )
+  ```
+  The parameter name and `shieldModifier` default are unchanged; only the ViewModel type changes.
+
+- **`ScreenNavigationTest.kt`** (`commonTest/kotlin/.../navigation/ScreenNavigationTest.kt`) must be updated — it references `Screen.AddonHub` and `Screen.GameModeSelection` which will no longer exist. Required changes:
+  - `fromPathAddonHub`: change expected value to `Screen.AddonSelection`
+  - `fromPathGameModeSelection`: change expected value to `Screen.AddonSelection`
+  - `buildStackAddonHub`: delete this test (the screen no longer exists)
+  - `buildStackGameModeSelection`: delete this test
+  - `buildStackCompositionSelection`: update to expect size 2, `stack[0]=AddonSelection`, `stack[1]=CompositionSelection`
+  - `buildStackMatchupList`: update to expect size 3
+  - `buildStackMatchupDetail`: update to expect size 4, `stack[2]=MatchupList`, `stack[3]=MatchupDetail`
+  - `buildStackClassGuideList`: update to expect size 2, `stack[0]=AddonSelection`, `stack[1]=ClassGuideList`
+  - `buildStackSpecGuide`: update to expect size 3, `stack[1]=ClassGuideList`, `stack[2]=SpecGuide`
+  - `pathRoundTrip`: remove the two `Screen.AddonHub` and `Screen.GameModeSelection` entries from the list
+
+- **`initialSkipCount` in `App.kt`**: The URL bridge deep-link logic computes `Screen.buildStack(Screen.fromPath(...))` and uses the stack size to determine how many synthetic navigation events to skip. After updating `buildStack`, the stack depths shrink. All cases are automatically correct — verified:
+  | Deep link | Old stack size | New stack size |
+  |---|---|---|
+  | `/tbc/tactics/2v2/druid...` → `CompositionSelection` | 4 | 2 |
+  | `/tbc/guides` → `ClassGuideList` | 3 | 2 |
+  | `/tbc/guides/druid/druid_resto` → `SpecGuide` | 4 | 3 |
+  No manual override is needed.
 
 - **`AddonSelectionState` deletion**: Verified — `AddonSelectionState` is referenced only in `AddonSelectionViewModel.kt` and `AddonSelectionScreen.kt`. Both are being replaced/deleted. No other file is broken.
 
