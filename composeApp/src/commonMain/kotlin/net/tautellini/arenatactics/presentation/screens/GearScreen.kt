@@ -91,6 +91,7 @@ fun CompositionHubScreen(
             when (selectedTab) {
                 CompositionTab.GEAR -> GearTabContent(gearViewModel)
                 CompositionTab.MATCHUPS -> MatchupListScreen(
+                    addonId = "",
                     gameModeId = gameModeId,
                     compositionId = compositionId,
                     viewModel = matchupListViewModel,

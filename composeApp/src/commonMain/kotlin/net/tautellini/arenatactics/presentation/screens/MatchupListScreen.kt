@@ -21,6 +21,7 @@ import net.tautellini.arenatactics.presentation.theme.*
 
 @Composable
 fun MatchupListScreen(
+    addonId: String,
     gameModeId: String,
     compositionId: String,
     viewModel: MatchupListViewModel,
@@ -53,7 +54,7 @@ fun MatchupListScreen(
                                 color = CardColor,
                                 shape = RoundedCornerShape(8.dp),
                                 modifier = Modifier.clickable {
-                                    onNavigate(Screen.MatchupDetail("", gameModeId, compositionId, matchup.id))
+                                    onNavigate(Screen.MatchupDetail(addonId, gameModeId, compositionId, matchup.id))
                                 }
                             ) {
                                 Row(

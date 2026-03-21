@@ -9,8 +9,8 @@ import kotlinx.coroutines.launch
 import net.tautellini.arenatactics.data.model.Matchup
 import net.tautellini.arenatactics.data.model.WowClass
 import net.tautellini.arenatactics.data.model.WowSpec
+import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.CompositionRepository
-import net.tautellini.arenatactics.data.repository.GameModeRepository
 import net.tautellini.arenatactics.data.repository.MatchupRepository
 
 sealed class MatchupListState {
@@ -24,9 +24,10 @@ sealed class MatchupListState {
 }
 
 class MatchupListViewModel(
+    private val addonId: String,
     private val gameModeId: String,
     private val compositionId: String,
-    private val gameModeRepository: GameModeRepository,
+    private val addonRepository: AddonRepository,
     private val compositionRepository: CompositionRepository,
     private val matchupRepository: MatchupRepository
 ) : ViewModel() {
@@ -36,10 +37,11 @@ class MatchupListViewModel(
     init {
         viewModelScope.launch {
             _state.value = try {
-                val mode     = gameModeRepository.getAll().first { it.id == gameModeId }
-                val specs    = compositionRepository.getSpecs(mode.specPoolId)
+                val addon    = addonRepository.getById(addonId)
+                    ?: throw IllegalArgumentException("Unknown addon: $addonId")
+                val specs    = compositionRepository.getSpecs(addon.specPoolId)
                 val specMap  = specs.associateBy { it.id }
-                val classes  = compositionRepository.getClasses(mode.classPoolId)
+                val classes  = compositionRepository.getClasses(addon.classPoolId)
                 val classMap = classes.associateBy { it.id }
                 val matchups = matchupRepository.getForComposition(compositionId)
                 MatchupListState.Success(matchups, specMap, classMap)
