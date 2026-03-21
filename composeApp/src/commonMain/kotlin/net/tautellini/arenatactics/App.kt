@@ -49,6 +49,7 @@ fun App() {
     val gearRepository = remember { GearRepository() }
     val matchupRepository = remember { MatchupRepository() }
 
+    val homeViewModel = remember { HomeViewModel(addonRepository, gameModeRepository) }
     val navController = rememberNavController()
 
     // How many snapshotFlow emissions to skip at startup:
@@ -129,6 +130,7 @@ fun App() {
                     }
                     AppHeader(
                         currentScreen = currentScreen,
+                        homeViewModel = homeViewModel,
                         onNavigate = { target ->
                             if (target is Screen.AddonSelection) {
                                 navController.popBackStack<Screen.AddonSelection>(inclusive = false)
@@ -153,14 +155,13 @@ fun App() {
                     popExitTransition  = { fadeOut(tween(180)) + scaleOut(tween(180), targetScale = 0.95f) }
                 ) {
                     composable<Screen.AddonSelection> {
-                        val vm = viewModel { HomeViewModel(addonRepository, gameModeRepository) }
                         val shieldMod = with(sharedScope) {
                             Modifier.sharedElement(
                                 sharedContentState = rememberSharedContentState(key = "shield"),
                                 animatedVisibilityScope = this@composable
                             )
                         }
-                        AddonSelectionScreen(viewModel = vm, onNavigate = { navController.navigate(it) }, shieldModifier = shieldMod)
+                        AddonSelectionScreen(viewModel = homeViewModel, onNavigate = { navController.navigate(it) }, shieldModifier = shieldMod)
                     }
                     composable<Screen.CompositionSelection> { entry ->
                         val screen = entry.toRoute<Screen.CompositionSelection>()
