@@ -1,0 +1,23 @@
+{
+  "phase": 1,
+  "classId": "warlock",
+  "items": [
+    { "wowheadId": 30187, "name": "Gladiator's Felweave Cowl",       "slot": "Head",      "icon": "inv_helmet_15",               "enchant": "Glyph of Power",                    "gems": ["Chaotic Skyfire Diamond", "Veiled Noble Topaz"] },
+    { "wowheadId": 28245, "name": "Pendant of Dominance",            "slot": "Neck",      "icon": "inv_jewelry_necklace_13",     "enchant": null,                                "gems": [] },
+    { "wowheadId": 24554, "name": "Gladiator's Dreadweave Mantle",   "slot": "Shoulders", "icon": "inv_shoulder_02",             "enchant": "Greater Inscription of Discipline", "gems": ["Runed Blood Garnet"] },
+    { "wowheadId": 28378, "name": "Sergeant's Heavy Cape",           "slot": "Back",      "icon": "inv_misc_cape_18",            "enchant": "Enchant Cloak - Spell Penetration",  "gems": [] },
+    { "wowheadId": 24552, "name": "Gladiator's Dreadweave Robe",     "slot": "Chest",     "icon": "inv_chest_cloth_04",          "enchant": "Enchant Chest - Major Resilience",  "gems": ["Runed Blood Garnet", "Runed Blood Garnet", "Veiled Noble Topaz"] },
+    { "wowheadId": 24249, "name": "Unyielding Bracers",              "slot": "Wrists",    "icon": "inv_bracer_07",               "enchant": "Enchant Bracer - Spellpower",       "gems": [] },
+    { "wowheadId": 24556, "name": "Gladiator's Dreadweave Gloves",   "slot": "Hands",     "icon": "inv_gauntlets_15",            "enchant": "Enchant Gloves - Spell Strike",     "gems": ["Runed Blood Garnet"] },
+    { "wowheadId": 24255, "name": "Unyielding Girdle",               "slot": "Waist",     "icon": "inv_belt_08",                 "enchant": null,                                "gems": ["Runed Blood Garnet"] },
+    { "wowheadId": 24555, "name": "Gladiator's Dreadweave Leggings", "slot": "Legs",      "icon": "inv_pants_cloth_05",          "enchant": "Runic Spellthread",                 "gems": ["Runed Blood Garnet", "Runed Blood Garnet"] },
+    { "wowheadId": 28402, "name": "General's Dreadweave Stalkers",   "slot": "Feet",      "icon": "inv_boots_cloth_01",          "enchant": "Enchant Boots - Boar's Speed",      "gems": ["Runed Blood Garnet"] },
+    { "wowheadId": 28555, "name": "Seal of the Exorcist",            "slot": "Ring",      "icon": "inv_jewelry_ring_28",         "enchant": "Enchant Ring - Spellpower",         "gems": [] },
+    { "wowheadId": 28247, "name": "Band of Dominance",               "slot": "Ring",      "icon": "inv_jewelry_ring_35",         "enchant": "Enchant Ring - Spellpower",         "gems": [] },
+    { "wowheadId": 30343, "name": "Medallion of the Horde",          "slot": "Trinket",   "icon": "inv_jewelry_necklace_31",     "enchant": null,                                "gems": [] },
+    { "wowheadId": 29370, "name": "Icon of the Silver Crescent",     "slot": "Trinket",   "icon": "inv_misc_gem_variety_02",     "enchant": null,                                "gems": [] },
+    { "wowheadId": 28297, "name": "Gladiator's Spellblade",          "slot": "Main Hand", "icon": "inv_sword_74",                "enchant": "Enchant Weapon - Spellsurge",       "gems": [] },
+    { "wowheadId": 29272, "name": "Orb of the Soul-Eater",           "slot": "Off Hand",  "icon": "inv_misc_orb_05",             "enchant": null,                                "gems": [] },
+    { "wowheadId": 28320, "name": "Gladiator's Touch of Defeat",     "slot": "Wand",      "icon": "inv_wand_14",                 "enchant": null,                                "gems": [] }
+  ]
+}
