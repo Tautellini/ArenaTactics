@@ -17,11 +17,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import net.tautellini.arenatactics.data.model.CompositionTier
-import net.tautellini.arenatactics.navigation.Navigator
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.presentation.CompositionSelectionState
 import net.tautellini.arenatactics.presentation.CompositionSelectionViewModel
-import net.tautellini.arenatactics.presentation.screens.components.BackButton
 import net.tautellini.arenatactics.presentation.screens.components.CompositionCard
 import net.tautellini.arenatactics.presentation.theme.*
 
@@ -36,7 +34,7 @@ private fun CompositionTier.label() = when (this) {
 fun CompositionSelectionScreen(
     gameModeId: String,
     viewModel: CompositionSelectionViewModel,
-    navigator: Navigator
+    onNavigate: (Screen) -> Unit
 ) {
     val state by viewModel.state.collectAsState()
     var othersExpanded by remember { mutableStateOf(false) }
@@ -44,17 +42,6 @@ fun CompositionSelectionScreen(
     Column(
         modifier = Modifier.fillMaxSize().background(Background).padding(24.dp)
     ) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            BackButton { navigator.pop() }
-            Spacer(Modifier.width(12.dp))
-            Text(
-                "Select Composition",
-                color = TextPrimary,
-                fontSize = 20.sp,
-                fontWeight = FontWeight.SemiBold
-            )
-        }
-        Spacer(Modifier.height(24.dp))
         when (val s = state) {
             is CompositionSelectionState.Loading ->
                 CircularProgressIndicator(color = Primary)
@@ -86,7 +73,7 @@ fun CompositionSelectionScreen(
                                             CompositionCard(
                                                 richComposition = rich,
                                                 onClick = if (rich.composition.hasData) {
-                                                    { navigator.push(Screen.GearView(gameModeId, rich.composition.id)) }
+                                                    { onNavigate(Screen.GearView(gameModeId, rich.composition.id)) }
                                                 } else null
                                             )
                                         }
@@ -104,7 +91,7 @@ fun CompositionSelectionScreen(
                                         CompositionCard(
                                             richComposition = rich,
                                             onClick = if (rich.composition.hasData) {
-                                                { navigator.push(Screen.GearView(gameModeId, rich.composition.id)) }
+                                                { onNavigate(Screen.GearView(gameModeId, rich.composition.id)) }
                                             } else null
                                         )
                                     }

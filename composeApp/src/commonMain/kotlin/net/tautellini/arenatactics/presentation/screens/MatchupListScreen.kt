@@ -13,7 +13,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import net.tautellini.arenatactics.navigation.Navigator
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.presentation.MatchupListState
 import net.tautellini.arenatactics.presentation.MatchupListViewModel
@@ -25,7 +24,7 @@ fun MatchupListScreen(
     gameModeId: String,
     compositionId: String,
     viewModel: MatchupListViewModel,
-    navigator: Navigator
+    onNavigate: (Screen) -> Unit
 ) {
     val state by viewModel.state.collectAsState()
 
@@ -54,7 +53,7 @@ fun MatchupListScreen(
                                 color = CardColor,
                                 shape = RoundedCornerShape(8.dp),
                                 modifier = Modifier.clickable {
-                                    navigator.push(Screen.MatchupDetail(gameModeId, compositionId, matchup.id))
+                                    onNavigate(Screen.MatchupDetail(gameModeId, compositionId, matchup.id))
                                 }
                             ) {
                                 Row(

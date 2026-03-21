@@ -16,7 +16,8 @@ import net.tautellini.arenatactics.presentation.theme.CardColor
 fun CompositionCard(
     richComposition: RichComposition,
     onClick: (() -> Unit)?,         // null = hasData:false — card is unselectable
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    specBadgeModifier: (specId: String) -> Modifier = { Modifier }
 ) {
     val hasData = richComposition.composition.hasData
     Surface(
@@ -34,8 +35,13 @@ fun CompositionCard(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            SpecBadge(richComposition.specs[0], richComposition.classes[0])
-            SpecBadge(richComposition.specs[1], richComposition.classes[1])
+            richComposition.specs.forEachIndexed { index, spec ->
+                SpecBadge(
+                    spec = spec,
+                    wowClass = richComposition.classes[index],
+                    modifier = specBadgeModifier(richComposition.composition.specIds[index])
+                )
+            }
         }
     }
 }

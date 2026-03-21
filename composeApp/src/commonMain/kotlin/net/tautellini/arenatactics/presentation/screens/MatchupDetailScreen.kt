@@ -12,18 +12,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import net.tautellini.arenatactics.navigation.Navigator
 import net.tautellini.arenatactics.presentation.MatchupDetailState
 import net.tautellini.arenatactics.presentation.MatchupDetailViewModel
-import net.tautellini.arenatactics.presentation.screens.components.BackButton
 import net.tautellini.arenatactics.presentation.screens.components.MarkdownText
 import net.tautellini.arenatactics.presentation.screens.components.SpecBadge
 import net.tautellini.arenatactics.presentation.theme.*
 
 @Composable
 fun MatchupDetailScreen(
-    viewModel: MatchupDetailViewModel,
-    navigator: Navigator
+    viewModel: MatchupDetailViewModel
 ) {
     val state by viewModel.state.collectAsState()
 
@@ -43,8 +40,6 @@ fun MatchupDetailScreen(
                     modifier = Modifier.fillMaxWidth().padding(horizontal = 24.dp, vertical = 16.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    BackButton { navigator.pop() }
-                    Spacer(Modifier.width(12.dp))
                     Text("vs", color = TextSecondary, fontSize = 14.sp, modifier = Modifier.padding(end = 8.dp))
                     matchup.enemySpecIds.forEach { specId ->
                         val spec  = s.specMap[specId]  ?: return@forEach

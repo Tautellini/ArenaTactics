@@ -21,12 +21,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import net.tautellini.arenatactics.data.model.GearItem
 import net.tautellini.arenatactics.data.model.GearPhase
-import net.tautellini.arenatactics.navigation.Navigator
+import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.openUrl
 import net.tautellini.arenatactics.presentation.GearState
 import net.tautellini.arenatactics.presentation.GearViewModel
 import net.tautellini.arenatactics.presentation.MatchupListViewModel
-import net.tautellini.arenatactics.presentation.screens.components.BackButton
 import net.tautellini.arenatactics.presentation.screens.components.GearIcon
 import net.tautellini.arenatactics.presentation.screens.components.SpecBadge
 import net.tautellini.arenatactics.presentation.theme.*
@@ -39,19 +38,19 @@ fun CompositionHubScreen(
     compositionId: String,
     gearViewModel: GearViewModel,
     matchupListViewModel: MatchupListViewModel,
-    navigator: Navigator
+    initialTab: CompositionTab = CompositionTab.GEAR,
+    onNavigate: (Screen) -> Unit
 ) {
-    var selectedTab by remember { mutableStateOf(CompositionTab.GEAR) }
+    var selectedTab by remember { mutableStateOf(initialTab) }
     val gearState by gearViewModel.state.collectAsState()
     val richComposition = (gearState as? GearState.Success)?.richComposition
 
     Column(modifier = Modifier.fillMaxSize().background(Background)) {
         Row(
-            modifier = Modifier.fillMaxWidth().padding(horizontal = 24.dp, vertical = 16.dp),
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 24.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            BackButton { navigator.pop() }
             if (richComposition != null) {
                 richComposition.specs.zip(richComposition.classes).forEach { (spec, wowClass) ->
                     SpecBadge(spec, wowClass)
@@ -67,7 +66,14 @@ fun CompositionHubScreen(
                 val selected = tab == selectedTab
                 Box(
                     modifier = Modifier
-                        .clickable { selectedTab = tab }
+                        .clickable {
+                            selectedTab = tab
+                            // Sync nav destination when switching tabs
+                            when (tab) {
+                                CompositionTab.GEAR     -> onNavigate(Screen.GearView(gameModeId, compositionId))
+                                CompositionTab.MATCHUPS -> onNavigate(Screen.MatchupList(gameModeId, compositionId))
+                            }
+                        }
                         .padding(horizontal = 16.dp, vertical = 10.dp)
                 ) {
                     Text(
@@ -88,7 +94,7 @@ fun CompositionHubScreen(
                     gameModeId = gameModeId,
                     compositionId = compositionId,
                     viewModel = matchupListViewModel,
-                    navigator = navigator
+                    onNavigate = onNavigate
                 )
             }
         }
