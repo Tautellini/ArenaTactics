@@ -35,6 +35,7 @@ sealed class Screen {
                 "tactics" -> {
                     val modeId = segs.getOrNull(2) ?: return GameModeSelection(addonId)
                     val compId = segs.getOrNull(3) ?: return CompositionSelection(addonId, modeId)
+                    // missing or non-"matchups" segment → fall back to composition selection
                     if (segs.getOrNull(4) != "matchups") return CompositionSelection(addonId, modeId)
                     val matchupId = segs.getOrNull(5)
                     if (matchupId != null) MatchupDetail(addonId, modeId, compId, matchupId)
@@ -89,6 +90,6 @@ fun NavBackStackEntry.toScreen(): Screen {
             .let { Screen.SpecGuide(it.addonId, it.classId, it.specId) }
         "AddonHub"             in route -> toRoute<Screen.AddonHub>()
             .let { Screen.AddonHub(it.addonId) }
-        else                            -> Screen.AddonSelection
+        else                            -> Screen.AddonSelection // should not happen; all routes are registered above
     }
 }

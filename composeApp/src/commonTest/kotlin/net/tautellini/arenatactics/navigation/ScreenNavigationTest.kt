@@ -76,6 +76,8 @@ class ScreenNavigationTest {
         val screen = Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2")
         val stack = Screen.buildStack(screen)
         assertEquals(4, stack.size)
+        assertIs<Screen.AddonSelection>(stack[0])
+        assertEquals(Screen.AddonHub("tbc_anniversary"), stack[1])
         assertEquals(Screen.GameModeSelection("tbc_anniversary"), stack[2])
         assertEquals(screen, stack[3])
     }

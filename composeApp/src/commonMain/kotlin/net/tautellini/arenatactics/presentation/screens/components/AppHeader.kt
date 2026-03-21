@@ -58,7 +58,6 @@ fun AppHeader(
         // Breadcrumb chips — skip first (AddonSelection = shield)
         stack.drop(1).forEachIndexed { index, screen ->
             val isCurrent = screen == currentScreen
-            val isAncestor = !isCurrent
 
             // Chevron separator
             Text(
@@ -71,7 +70,7 @@ fun AppHeader(
             BreadcrumbChip(
                 label = screen.breadcrumbLabel(),
                 isCurrent = isCurrent,
-                onClick = if (isAncestor) ({ onNavigate(screen) }) else null
+                onClick = if (!isCurrent) ({ onNavigate(screen) }) else null
             )
         }
     }
