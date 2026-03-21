@@ -32,6 +32,7 @@ import net.tautellini.arenatactics.presentation.theme.*
 
 @Composable
 fun GameModeSelectionScreen(
+    addonId: String = "",
     viewModel: GameModeSelectionViewModel,
     onNavigate: (Screen) -> Unit,
     shieldModifier: Modifier = Modifier
@@ -71,7 +72,7 @@ fun GameModeSelectionScreen(
                         ) {
                             s.modes.forEach { mode ->
                                 GameModeTile(mode) {
-                                    onNavigate(Screen.CompositionSelection("", mode.id))
+                                    onNavigate(Screen.CompositionSelection(addonId, mode.id))
                                 }
                             }
                         }

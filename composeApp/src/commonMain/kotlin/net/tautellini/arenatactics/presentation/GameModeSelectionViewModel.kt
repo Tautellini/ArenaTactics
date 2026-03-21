@@ -16,6 +16,7 @@ sealed class GameModeSelectionState {
 }
 
 class GameModeSelectionViewModel(
+    private val addonId: String,
     private val repository: GameModeRepository
 ) : ViewModel() {
     private val _state = MutableStateFlow<GameModeSelectionState>(GameModeSelectionState.Loading)
@@ -24,7 +25,7 @@ class GameModeSelectionViewModel(
     init {
         viewModelScope.launch {
             _state.value = try {
-                GameModeSelectionState.Success(repository.getAll())
+                GameModeSelectionState.Success(repository.getByAddon(addonId))
             } catch (e: Throwable) {
                 GameModeSelectionState.Error(e.message ?: "Failed to load game modes")
             }
