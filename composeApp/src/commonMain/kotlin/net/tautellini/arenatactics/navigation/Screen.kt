@@ -30,7 +30,6 @@ sealed class Screen {
         fun fromPath(pathname: String): Screen {
             val segs = pathname.trim('/').split('/').filter { it.isNotEmpty() }
             val addonId = segs.getOrNull(0) ?: return AddonSelection
-            if (addonId == "modes") return AddonSelection
             return when (val section = segs.getOrNull(1)) {
                 null      -> AddonHub(addonId)
                 "tactics" -> {
