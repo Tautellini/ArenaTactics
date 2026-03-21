@@ -13,13 +13,22 @@ sealed class Screen {
     @Serializable data class ClassGuideList(val addonId: String) : Screen()
     @Serializable data class SpecGuide(val addonId: String, val classId: String, val specId: String) : Screen()
 
+    /**
+     * Compact browser URL. Internal IDs are unchanged; only the URL is shortened.
+     *
+     * Examples:
+     *   /tbc_anniversary/tactics/2v2
+     *   /tbc_anniversary/tactics/2v2/mage_frost+rogue_subtlety
+     *   /tbc_anniversary/tactics/2v2/mage_frost+rogue_subtlety/vs/druid_restoration+warrior_arms
+     *   /tbc_anniversary/guides/hunter_marksmanship
+     */
     val path: String get() = when (this) {
         is AddonSelection       -> "/"
-        is CompositionSelection -> "/$addonId/tactics/$gameModeId"
-        is MatchupList          -> "/$addonId/tactics/$gameModeId/$compositionId/matchups"
-        is MatchupDetail        -> "/$addonId/tactics/$gameModeId/$compositionId/matchups/$matchupId"
+        is CompositionSelection -> "/$addonId/tactics/${gameModeId.shortBracket(addonId)}"
+        is MatchupList          -> "/$addonId/tactics/${gameModeId.shortBracket(addonId)}/${compositionId.specIdsToPlus()}"
+        is MatchupDetail        -> "/$addonId/tactics/${gameModeId.shortBracket(addonId)}/${compositionId.specIdsToPlus()}/vs/${matchupId.enemyPart()}"
         is ClassGuideList       -> "/$addonId/guides"
-        is SpecGuide            -> "/$addonId/guides/$classId/$specId"
+        is SpecGuide            -> "/$addonId/guides/$specId"
     }
 
     companion object {
@@ -29,17 +38,18 @@ sealed class Screen {
             return when (val section = segs.getOrNull(1)) {
                 null      -> AddonSelection
                 "tactics" -> {
-                    val modeId = segs.getOrNull(2) ?: return AddonSelection
-                    val compId = segs.getOrNull(3) ?: return CompositionSelection(addonId, modeId)
-                    // missing or non-"matchups" segment → fall back to composition selection
-                    if (segs.getOrNull(4) != "matchups") return CompositionSelection(addonId, modeId)
-                    val matchupId = segs.getOrNull(5)
-                    if (matchupId != null) MatchupDetail(addonId, modeId, compId, matchupId)
-                    else MatchupList(addonId, modeId, compId)
+                    val shortBracket = segs.getOrNull(2) ?: return AddonSelection
+                    val modeId = shortBracket.expandBracket(addonId)
+                    val compSlug = segs.getOrNull(3) ?: return CompositionSelection(addonId, modeId)
+                    val compId = compSlug.plusToSpecIds()
+                    if (segs.getOrNull(4) != "vs") return MatchupList(addonId, modeId, compId)
+                    val enemySlug = segs.getOrNull(5) ?: return MatchupList(addonId, modeId, compId)
+                    val matchupId = "${compId}_vs_${enemySlug.plusToSpecIds()}"
+                    MatchupDetail(addonId, modeId, compId, matchupId)
                 }
                 "guides"  -> {
-                    val classId = segs.getOrNull(2) ?: return ClassGuideList(addonId)
-                    val specId  = segs.getOrNull(3) ?: return ClassGuideList(addonId)
+                    val specId = segs.getOrNull(2) ?: return ClassGuideList(addonId)
+                    val classId = specId.substringBefore('_')
                     SpecGuide(addonId, classId, specId)
                 }
                 else      -> AddonSelection
@@ -83,3 +93,38 @@ fun NavBackStackEntry.toScreen(): Screen {
         else                            -> Screen.AddonSelection // should not happen; all routes are registered above
     }
 }
+
+// ─── URL shortening helpers ─────────────────────────────────────────────────
+
+/** "tbc_anniversary_2v2" → "2v2" (strip addonId prefix + underscore). */
+private fun String.shortBracket(addonId: String): String =
+    removePrefix("${addonId}_").ifEmpty { this }
+
+/** "2v2" → "tbc_anniversary_2v2" (restore full game mode ID). */
+private fun String.expandBracket(addonId: String): String =
+    if (startsWith(addonId)) this else "${addonId}_$this"
+
+/** "mage_frost_rogue_subtlety" → "mage_frost+rogue_subtlety" (underscore between specs → plus). */
+private fun String.specIdsToPlus(): String =
+    split('_').chunkedAsSpecIds().joinToString("+")
+
+/** "mage_frost+rogue_subtlety" → "mage_frost_rogue_subtlety" (plus → underscore). */
+private fun String.plusToSpecIds(): String =
+    split('+').joinToString("_")
+
+/**
+ * "mage_frost_rogue_subtlety_vs_druid_restoration_warrior_arms"
+ *  → "druid_restoration+warrior_arms"
+ */
+private fun String.enemyPart(): String {
+    val vsIdx = indexOf("_vs_")
+    if (vsIdx < 0) return this
+    return substring(vsIdx + 4).specIdsToPlus()
+}
+
+/**
+ * Groups a flat list of underscore-split tokens back into "class_spec" pairs.
+ * e.g. ["mage", "frost", "rogue", "subtlety"] → ["mage_frost", "rogue_subtlety"]
+ */
+private fun List<String>.chunkedAsSpecIds(): List<String> =
+    chunked(2) { it.joinToString("_") }

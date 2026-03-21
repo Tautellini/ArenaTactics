@@ -20,19 +20,23 @@ class ScreenNavigationTest {
     @Test fun fromPathCompositionSelection() =
         assertEquals(
             Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2"),
-            Screen.fromPath("/tbc_anniversary/tactics/tbc_anniversary_2v2")
+            Screen.fromPath("/tbc_anniversary/tactics/2v2")
         )
 
     @Test fun fromPathMatchupList() =
         assertEquals(
-            Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue"),
-            Screen.fromPath("/tbc_anniversary/tactics/tbc_anniversary_2v2/mage_rogue/matchups")
+            Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_frost_rogue_subtlety"),
+            Screen.fromPath("/tbc_anniversary/tactics/2v2/mage_frost+rogue_subtlety")
         )
 
     @Test fun fromPathMatchupDetail() =
         assertEquals(
-            Screen.MatchupDetail("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue", "some_matchup"),
-            Screen.fromPath("/tbc_anniversary/tactics/tbc_anniversary_2v2/mage_rogue/matchups/some_matchup")
+            Screen.MatchupDetail(
+                "tbc_anniversary", "tbc_anniversary_2v2",
+                "mage_frost_rogue_subtlety",
+                "mage_frost_rogue_subtlety_vs_druid_restoration_warrior_arms"
+            ),
+            Screen.fromPath("/tbc_anniversary/tactics/2v2/mage_frost+rogue_subtlety/vs/druid_restoration+warrior_arms")
         )
 
     @Test fun fromPathClassGuideList() =
@@ -41,7 +45,7 @@ class ScreenNavigationTest {
     @Test fun fromPathSpecGuide() =
         assertEquals(
             Screen.SpecGuide("tbc_anniversary", "druid", "druid_restoration"),
-            Screen.fromPath("/tbc_anniversary/guides/druid/druid_restoration")
+            Screen.fromPath("/tbc_anniversary/guides/druid_restoration")
         )
 
     @Test fun fromPathUnknownReturnsAddonSelection() =
@@ -64,7 +68,7 @@ class ScreenNavigationTest {
     }
 
     @Test fun buildStackMatchupList() {
-        val screen = Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue")
+        val screen = Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_frost_rogue_subtlety")
         val stack = Screen.buildStack(screen)
         assertEquals(3, stack.size)
         assertIs<Screen.AddonSelection>(stack[0])
@@ -73,12 +77,16 @@ class ScreenNavigationTest {
     }
 
     @Test fun buildStackMatchupDetail() {
-        val screen = Screen.MatchupDetail("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue", "m1")
+        val screen = Screen.MatchupDetail(
+            "tbc_anniversary", "tbc_anniversary_2v2",
+            "mage_frost_rogue_subtlety",
+            "mage_frost_rogue_subtlety_vs_druid_restoration_warrior_arms"
+        )
         val stack = Screen.buildStack(screen)
         assertEquals(4, stack.size)
         assertIs<Screen.AddonSelection>(stack[0])
         assertEquals(Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2"), stack[1])
-        assertEquals(Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue"), stack[2])
+        assertEquals(Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_frost_rogue_subtlety"), stack[2])
         assertEquals(screen, stack[3])
     }
 
@@ -105,13 +113,42 @@ class ScreenNavigationTest {
         val screens = listOf(
             Screen.AddonSelection,
             Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2"),
-            Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue"),
-            Screen.MatchupDetail("tbc_anniversary", "tbc_anniversary_2v2", "mage_rogue", "some_matchup"),
+            Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_frost_rogue_subtlety"),
+            Screen.MatchupDetail(
+                "tbc_anniversary", "tbc_anniversary_2v2",
+                "mage_frost_rogue_subtlety",
+                "mage_frost_rogue_subtlety_vs_druid_restoration_warrior_arms"
+            ),
             Screen.ClassGuideList("tbc_anniversary"),
             Screen.SpecGuide("tbc_anniversary", "druid", "druid_restoration")
         )
         screens.forEach { screen ->
-            assertEquals(screen, Screen.fromPath(screen.path), "round-trip failed for $screen")
+            assertEquals(screen, Screen.fromPath(screen.path), "round-trip failed for $screen (path=${screen.path})")
         }
+    }
+
+    // ─── URL format verification ─────────────────────────────────────────────
+
+    @Test fun urlsAreCompact() {
+        assertEquals(
+            "/tbc_anniversary/tactics/2v2",
+            Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2").path
+        )
+        assertEquals(
+            "/tbc_anniversary/tactics/2v2/mage_frost+rogue_subtlety",
+            Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_frost_rogue_subtlety").path
+        )
+        assertEquals(
+            "/tbc_anniversary/tactics/2v2/mage_frost+rogue_subtlety/vs/druid_restoration+warrior_arms",
+            Screen.MatchupDetail(
+                "tbc_anniversary", "tbc_anniversary_2v2",
+                "mage_frost_rogue_subtlety",
+                "mage_frost_rogue_subtlety_vs_druid_restoration_warrior_arms"
+            ).path
+        )
+        assertEquals(
+            "/tbc_anniversary/guides/druid_restoration",
+            Screen.SpecGuide("tbc_anniversary", "druid", "druid_restoration").path
+        )
     }
 }

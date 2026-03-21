@@ -67,15 +67,17 @@ fun App() {
     // emission without triggering recomposition.
     val skipNextPush = remember { booleanArrayOf(false) }
     LaunchedEffect(navController) {
-        snapshotFlow { navController.currentBackStackEntry }
+        navController.currentBackStackEntryFlow
             .drop(initialSkipCount)
             .collect { entry ->
-                if (skipNextPush[0]) {
-                    skipNextPush[0] = false
-                    return@collect
-                }
-                val path = entry?.toScreen()?.path ?: return@collect
-                try { pushNavigationState(path) } catch (_: Throwable) {}
+                try {
+                    if (skipNextPush[0]) {
+                        skipNextPush[0] = false
+                        return@collect
+                    }
+                    val path = entry.toScreen().path
+                    pushNavigationState(path)
+                } catch (_: Throwable) {}
             }
     }
 

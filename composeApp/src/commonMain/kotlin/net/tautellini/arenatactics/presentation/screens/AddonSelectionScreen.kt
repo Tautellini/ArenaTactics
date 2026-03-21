@@ -6,6 +6,7 @@ import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -26,16 +27,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import coil3.compose.AsyncImage
 import net.tautellini.arenatactics.data.model.Addon
 import net.tautellini.arenatactics.data.model.GameMode
-import net.tautellini.arenatactics.data.model.WowheadIcons
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.presentation.GameModeRowState
 import net.tautellini.arenatactics.presentation.HomeSection
@@ -116,9 +116,8 @@ fun AddonSelectionScreen(
                                 "What are you looking for?",
                                 color = TextSecondary,
                                 fontSize = 13.sp,
-                                letterSpacing = 1.sp
+                                letterSpacing = 2.sp
                             )
-                            Spacer(Modifier.height(8.dp))
                             FlowRow(
                                 horizontalArrangement = Arrangement.spacedBy(16.dp),
                                 verticalArrangement = Arrangement.spacedBy(16.dp)
@@ -173,8 +172,8 @@ fun AddonSelectionScreen(
                             )
                             if (gameModeRow is GameModeRowState.Ready) {
                                 FlowRow(
-                                    horizontalArrangement = Arrangement.spacedBy(24.dp),
-                                    verticalArrangement = Arrangement.spacedBy(24.dp)
+                                    horizontalArrangement = Arrangement.spacedBy(16.dp),
+                                    verticalArrangement = Arrangement.spacedBy(16.dp)
                                 ) {
                                     gameModeRow.modes.forEach { mode ->
                                         GameModeTile(mode) {
@@ -345,20 +344,91 @@ private fun SectionTile(
 
 @Composable
 private fun GameModeTile(mode: GameMode, onClick: () -> Unit) {
-    Column(
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(8.dp),
+    val enabled = mode.hasData
+    val shape = RoundedCornerShape(16.dp)
+    val cardBg = if (enabled) CardColor else GreyedOutBg
+    val dotColor = if (enabled) Primary else GreyedOut
+
+    Surface(
+        color = cardBg,
+        shape = shape,
         modifier = Modifier
-            .alpha(if (mode.hasData) 1f else 0.35f)
-            .then(if (mode.hasData) Modifier.clickable(onClick = onClick) else Modifier)
-            .padding(4.dp)
+            .width(130.dp)
+            .then(if (enabled) Modifier.clickable(onClick = onClick) else Modifier)
     ) {
-        AsyncImage(
-            model = WowheadIcons.large(mode.iconName),
-            contentDescription = mode.name,
-            modifier = Modifier.size(80.dp).clip(RoundedCornerShape(12.dp))
-        )
-        Text(mode.description, color = TextPrimary, fontSize = 13.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
-        Text(mode.name, color = TextSecondary, fontSize = 11.sp, textAlign = TextAlign.Center)
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(10.dp),
+            modifier = Modifier.padding(16.dp)
+        ) {
+            // Formation emblem — dots representing team size
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .size(56.dp)
+                    .border(2.dp, dotColor, CircleShape)
+                    .background(dotColor.copy(alpha = if (enabled) 0.12f else 0.06f), CircleShape)
+            ) {
+                TeamFormation(teamSize = mode.teamSize, color = dotColor)
+            }
+
+            // Bracket label
+            Text(
+                text = "${mode.teamSize}v${mode.teamSize}",
+                color = if (enabled) TextPrimary else GreyedOut,
+                fontSize = 15.sp,
+                fontWeight = FontWeight.Bold,
+                letterSpacing = 2.sp,
+                textAlign = TextAlign.Center
+            )
+        }
+    }
+}
+
+/**
+ * Draws player dots arranged in team formation inside a circle.
+ * Two mirrored groups of [teamSize] dots separated by a "vs" gap.
+ */
+@Composable
+private fun TeamFormation(teamSize: Int, color: Color) {
+    Canvas(modifier = Modifier.size(32.dp)) {
+        val dotRadius = when (teamSize) {
+            2 -> 4.dp.toPx()
+            3 -> 3.5.dp.toPx()
+            else -> 3.dp.toPx()
+        }
+        val cx = size.width / 2f
+        val cy = size.height / 2f
+        val gap = 3.dp.toPx() // half the vs-gap
+
+        // Positions for left team (mirrored for right)
+        val leftOffsets = when (teamSize) {
+            2 -> listOf(
+                Offset(-gap - 7.dp.toPx(), cy - 5.dp.toPx()),
+                Offset(-gap - 7.dp.toPx(), cy + 5.dp.toPx()),
+            )
+            3 -> listOf(
+                Offset(-gap - 6.dp.toPx(), cy - 7.dp.toPx()),
+                Offset(-gap - 10.dp.toPx(), cy),
+                Offset(-gap - 6.dp.toPx(), cy + 7.dp.toPx()),
+            )
+            5 -> listOf(
+                Offset(-gap - 5.dp.toPx(), cy - 9.dp.toPx()),
+                Offset(-gap - 10.dp.toPx(), cy - 4.5f.dp.toPx()),
+                Offset(-gap - 12.dp.toPx(), cy),
+                Offset(-gap - 10.dp.toPx(), cy + 4.5f.dp.toPx()),
+                Offset(-gap - 5.dp.toPx(), cy + 9.dp.toPx()),
+            )
+            else -> emptyList()
+        }
+
+        // Draw left team
+        leftOffsets.forEach { offset ->
+            drawCircle(color, dotRadius, center = Offset(cx + offset.x, offset.y))
+        }
+        // Draw right team (mirrored)
+        leftOffsets.forEach { offset ->
+            drawCircle(color, dotRadius, center = Offset(cx - offset.x, offset.y))
+        }
     }
 }

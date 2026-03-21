@@ -1,22 +1,16 @@
 package net.tautellini.arenatactics.presentation.screens.components
 
-import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
-import androidx.compose.animation.expandVertically
-import androidx.compose.animation.fadeIn
-import androidx.compose.animation.fadeOut
-import androidx.compose.animation.shrinkVertically
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -38,17 +32,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Outline
-import androidx.compose.ui.graphics.Path
-import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.lerp
-import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.Density
-import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import net.tautellini.arenatactics.data.model.Addon
@@ -109,44 +96,9 @@ private fun Screen.isGuidesPath(): Boolean = when (this) {
     else -> false
 }
 
-// ─── Chevron shape ──────────────────────────────────────────────────────────
+// ─── Shared shape ───────────────────────────────────────────────────────────
 
-private val ARROW_SIZE = 12.dp
-
-/**
- * Chevron/ribbon shape. All segments have an arrow point on the right.
- * Segments after the first also have a matching notch on the left so
- * they tile seamlessly in a Row.
- */
-private class ChevronShape(
-    private val arrowPx: Float,
-    private val hasNotch: Boolean
-) : Shape {
-    override fun createOutline(size: Size, layoutDirection: LayoutDirection, density: Density): Outline {
-        val w = size.width
-        val h = size.height
-        val a = arrowPx
-
-        val path = Path().apply {
-            if (hasNotch) {
-                moveTo(0f, 0f)
-                lineTo(w - a, 0f)
-                lineTo(w, h / 2f)
-                lineTo(w - a, h)
-                lineTo(0f, h)
-                lineTo(a, h / 2f)
-            } else {
-                moveTo(0f, 0f)
-                lineTo(w - a, 0f)
-                lineTo(w, h / 2f)
-                lineTo(w - a, h)
-                lineTo(0f, h)
-            }
-            close()
-        }
-        return Outline.Generic(path)
-    }
-}
+private val SegmentShape = RoundedCornerShape(10.dp)
 
 // ─── Segment types ──────────────────────────────────────────────────────────
 
@@ -180,7 +132,7 @@ fun AppHeader(
 
     var expanded by remember { mutableStateOf<SegmentType?>(null) }
 
-    // Close dropdown on screen change
+    // Close expansion on screen change
     LaunchedEffect(currentScreen) { expanded = null }
 
     // Shield shimmer
@@ -191,177 +143,162 @@ fun AppHeader(
         label = "shimmer-x"
     )
 
-    val arrowPx = with(LocalDensity.current) { ARROW_SIZE.toPx() }
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(Surface)
+            .padding(start = 12.dp, end = 16.dp, top = 8.dp, bottom = 8.dp)
+    ) {
+        // Shield — click to go home
+        Box(modifier = Modifier.clickable {
+            expanded = null
+            onNavigate(Screen.AddonSelection)
+        }) {
+            ShieldCanvas(
+                modifier = shieldModifier.size(30.dp, 34.dp),
+                shimmerX = shimmerX
+            )
+        }
 
-    Column(modifier = Modifier.fillMaxWidth().background(Surface)) {
+        Spacer(Modifier.width(12.dp))
 
-        // ─── Chevron bar ────────────────────────────────────────────
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(start = 12.dp, end = 16.dp, top = 8.dp, bottom = 8.dp)
-        ) {
-            // Shield — click to go home
-            Box(modifier = Modifier.clickable {
-                expanded = null
-                onNavigate(Screen.AddonSelection)
-            }) {
-                ShieldCanvas(
-                    modifier = shieldModifier.size(30.dp, 34.dp),
-                    shimmerX = shimmerX
-                )
+        val accentColor = currentAddon?.let { parseHexColor(it.accentColor) } ?: Primary
+
+        // Build the segment list
+        val segments = buildList {
+            add(SegmentType.ADDON)
+            add(SegmentType.SECTION)
+            if (isTactics && gameModeId != null) add(SegmentType.BRACKET)
+        }
+
+        val expandedIndex = if (expanded != null) segments.indexOf(expanded!!) else -1
+
+        // Segments up to and including the expanded one
+        val visibleSegments = if (expandedIndex >= 0) {
+            segments.subList(0, expandedIndex + 1)
+        } else {
+            segments
+        }
+
+        // ─── Navigation segments ────────────────────────────────
+        visibleSegments.forEachIndexed { index, segment ->
+            if (index > 0) Spacer(Modifier.width(6.dp))
+
+            val isExpanded = expanded == segment
+            val borderColor = when {
+                isExpanded -> Primary
+                segment == SegmentType.ADDON -> accentColor.copy(alpha = 0.4f)
+                else -> DividerColor
+            }
+            val bgColor = when {
+                isExpanded -> CardElevated
+                segment == SegmentType.ADDON -> lerp(CardColor, accentColor, 0.10f)
+                else -> CardColor
             }
 
-            Spacer(Modifier.width(16.dp))
-
-            // Determine which segments to show
-            val segments = buildList {
-                add(SegmentType.ADDON)
-                add(SegmentType.SECTION)
-                if (isTactics && gameModeId != null) add(SegmentType.BRACKET)
-            }
-
-            val accentColor = currentAddon?.let { parseHexColor(it.accentColor) } ?: Primary
-
-            segments.forEachIndexed { index, segment ->
-                val isFirst = index == 0
-                val isExpanded = expanded == segment
-
-                val bgColor = when {
-                    isExpanded -> CardElevated
-                    segment == SegmentType.ADDON -> lerp(CardColor, accentColor, 0.12f)
-                    else -> CardColor
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .height(34.dp)
+                    .clip(SegmentShape)
+                    .background(bgColor)
+                    .border(1.dp, borderColor, SegmentShape)
+                    .clickable { expanded = if (isExpanded) null else segment }
+                    .padding(horizontal = 12.dp)
+            ) {
+                when (segment) {
+                    SegmentType.ADDON -> AddonSegmentContent(currentAddon, addonId, accentColor)
+                    SegmentType.SECTION -> SectionSegmentContent(isTactics)
+                    SegmentType.BRACKET -> BracketSegmentContent(currentGameMode, gameModeId)
                 }
+            }
+        }
 
-                val shape = ChevronShape(arrowPx, hasNotch = !isFirst)
+        // ─── Inline alternatives when a segment is expanded ─────
+        if (expanded != null) {
+            Spacer(Modifier.width(6.dp))
 
-                val startPad = if (isFirst) 12.dp else ARROW_SIZE + 6.dp
-                val endPad = ARROW_SIZE + 6.dp
-
-                Box(
-                    contentAlignment = Alignment.Center,
-                    modifier = Modifier
-                        .height(36.dp)
-                        .clip(shape)
-                        .background(bgColor)
-                        .clickable { expanded = if (isExpanded) null else segment }
-                        .padding(start = startPad, end = endPad)
-                ) {
-                    when (segment) {
-                        SegmentType.ADDON -> AddonSegmentContent(currentAddon, addonId, accentColor)
-                        SegmentType.SECTION -> SectionSegmentContent(isTactics)
-                        SegmentType.BRACKET -> BracketSegmentContent(currentGameMode, gameModeId)
+            when (expanded) {
+                SegmentType.ADDON -> {
+                    addons.filter { it.id != addonId }.forEach { addon ->
+                        InlineAddonOption(
+                            addon = addon,
+                            enabled = addon.hasData,
+                            onClick = {
+                                expanded = null
+                                homeViewModel.selectAddon(addon)
+                                if (isTactics) homeViewModel.selectSection(HomeSection.TACTICS)
+                                else if (isGuides) homeViewModel.selectSection(HomeSection.CLASS_GUIDES)
+                                onNavigate(Screen.AddonSelection)
+                            }
+                        )
+                        Spacer(Modifier.width(6.dp))
                     }
                 }
+                SegmentType.SECTION -> {
+                    val alternatives = listOf(
+                        "Tactics" to isTactics,
+                        "Class Guides" to isGuides
+                    )
+                    alternatives.filter { !it.second }.forEach { (label, _) ->
+                        InlineOption(
+                            label = label,
+                            onClick = {
+                                expanded = null
+                                if (addonId != null) {
+                                    if (label == "Tactics") {
+                                        val firstMode = gameModes.firstOrNull { it.hasData }
+                                        if (firstMode != null) {
+                                            onNavigate(Screen.CompositionSelection(addonId, firstMode.id))
+                                        }
+                                    } else {
+                                        onNavigate(Screen.ClassGuideList(addonId))
+                                    }
+                                }
+                            }
+                        )
+                        Spacer(Modifier.width(6.dp))
+                    }
+                }
+                SegmentType.BRACKET -> {
+                    gameModes.filter { it.id != gameModeId }.forEach { mode ->
+                        InlineOption(
+                            label = "${mode.teamSize}v${mode.teamSize}",
+                            enabled = mode.hasData,
+                            onClick = {
+                                expanded = null
+                                if (addonId != null && mode.hasData) {
+                                    onNavigate(Screen.CompositionSelection(addonId, mode.id))
+                                }
+                            }
+                        )
+                        Spacer(Modifier.width(6.dp))
+                    }
+                }
+                else -> {}
             }
+        }
 
-            // ─── Trailing breadcrumbs for deeper screens ────────────
+        // ─── Trailing breadcrumbs (hidden when expanding) ───────
+        if (expanded == null) {
             val trailingCrumbs = buildTrailingBreadcrumbs(currentScreen)
             if (trailingCrumbs.isNotEmpty()) {
-                Spacer(Modifier.width(6.dp))
                 trailingCrumbs.forEach { crumb ->
+                    Spacer(Modifier.width(4.dp))
                     Text(
                         text = "›",
                         color = DividerColor,
                         fontSize = 14.sp,
                         fontWeight = FontWeight.Light,
-                        modifier = Modifier.padding(horizontal = 4.dp)
+                        modifier = Modifier.padding(horizontal = 2.dp)
                     )
+                    Spacer(Modifier.width(4.dp))
                     BreadcrumbChip(
                         label = crumb.label,
                         isCurrent = crumb.isCurrent,
                         onClick = crumb.target?.let { target -> { onNavigate(target) } }
                     )
-                }
-            }
-        }
-
-        // ─── Dropdown panels ────────────────────────────────────────
-
-        // Addon dropdown
-        AnimatedVisibility(
-            visible = expanded == SegmentType.ADDON,
-            enter = expandVertically(tween(200)) + fadeIn(tween(200)),
-            exit = shrinkVertically(tween(150)) + fadeOut(tween(150))
-        ) {
-            DropdownPanel {
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    addons.filter { it.hasData }.forEach { addon ->
-                        val isCurrent = addon.id == addonId
-                        AddonDropdownOption(
-                            addon = addon,
-                            isCurrent = isCurrent,
-                            onClick = {
-                                expanded = null
-                                if (!isCurrent) {
-                                    homeViewModel.selectAddon(addon)
-                                    if (isTactics) homeViewModel.selectSection(HomeSection.TACTICS)
-                                    else if (isGuides) homeViewModel.selectSection(HomeSection.CLASS_GUIDES)
-                                    onNavigate(Screen.AddonSelection)
-                                }
-                            }
-                        )
-                    }
-                }
-            }
-        }
-
-        // Section dropdown
-        AnimatedVisibility(
-            visible = expanded == SegmentType.SECTION,
-            enter = expandVertically(tween(200)) + fadeIn(tween(200)),
-            exit = shrinkVertically(tween(150)) + fadeOut(tween(150))
-        ) {
-            DropdownPanel {
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    SectionDropdownOption(
-                        label = "Tactics",
-                        isCurrent = isTactics,
-                        onClick = {
-                            expanded = null
-                            if (!isTactics && addonId != null) {
-                                val firstMode = gameModes.firstOrNull { it.hasData }
-                                if (firstMode != null) {
-                                    onNavigate(Screen.CompositionSelection(addonId, firstMode.id))
-                                }
-                            }
-                        }
-                    )
-                    SectionDropdownOption(
-                        label = "Class Guides",
-                        isCurrent = isGuides,
-                        onClick = {
-                            expanded = null
-                            if (!isGuides && addonId != null) {
-                                onNavigate(Screen.ClassGuideList(addonId))
-                            }
-                        }
-                    )
-                }
-            }
-        }
-
-        // Bracket dropdown
-        AnimatedVisibility(
-            visible = expanded == SegmentType.BRACKET,
-            enter = expandVertically(tween(200)) + fadeIn(tween(200)),
-            exit = shrinkVertically(tween(150)) + fadeOut(tween(150))
-        ) {
-            DropdownPanel {
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    gameModes.forEach { mode ->
-                        BracketDropdownOption(
-                            mode = mode,
-                            isCurrent = mode.id == gameModeId,
-                            onClick = {
-                                expanded = null
-                                if (mode.id != gameModeId && addonId != null && mode.hasData) {
-                                    onNavigate(Screen.CompositionSelection(addonId, mode.id))
-                                }
-                            }
-                        )
-                    }
                 }
             }
         }
@@ -416,94 +353,61 @@ private fun SectionSegmentContent(isTactics: Boolean) {
 @Composable
 private fun BracketSegmentContent(mode: GameMode?, gameModeId: String?) {
     Text(
-        text = mode?.description ?: gameModeId?.formatId() ?: "",
+        text = mode?.let { "${it.teamSize}v${it.teamSize}" } ?: gameModeId?.formatId() ?: "",
         color = TextPrimary,
         fontSize = 13.sp,
         fontWeight = FontWeight.SemiBold
     )
 }
 
-// ─── Dropdown panel wrapper ─────────────────────────────────────────────────
+// ─── Inline option composables (expand to the right) ────────────────────────
+
+private val GreyedOut = Color(0xFF5A6A6B)
 
 @Composable
-private fun DropdownPanel(content: @Composable () -> Unit) {
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .background(CardColor.copy(alpha = 0.97f))
-            .padding(horizontal = 16.dp, vertical = 10.dp)
-    ) {
-        content()
-    }
-}
-
-// ─── Dropdown option composables ────────────────────────────────────────────
-
-@Composable
-private fun AddonDropdownOption(addon: Addon, isCurrent: Boolean, onClick: () -> Unit) {
-    val accent = parseHexColor(addon.accentColor)
-    val bg = if (isCurrent) CardElevated else Surface
-    val borderColor = if (isCurrent) accent else DividerColor
+private fun InlineAddonOption(addon: Addon, enabled: Boolean = true, onClick: () -> Unit) {
+    val accent = if (enabled) parseHexColor(addon.accentColor) else GreyedOut
     val cinzel = cinzelDecorative()
 
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        horizontalArrangement = Arrangement.spacedBy(6.dp),
         modifier = Modifier
-            .clip(RoundedCornerShape(8.dp))
-            .background(bg)
-            .border(1.dp, borderColor, RoundedCornerShape(8.dp))
-            .clickable(onClick = onClick)
-            .padding(horizontal = 12.dp, vertical = 8.dp)
+            .height(34.dp)
+            .alpha(if (enabled) 1f else 0.5f)
+            .clip(SegmentShape)
+            .background(Surface)
+            .border(1.dp, accent.copy(alpha = 0.4f), SegmentShape)
+            .then(if (enabled) Modifier.clickable(onClick = onClick) else Modifier)
+            .padding(horizontal = 12.dp)
     ) {
         Box(
             contentAlignment = Alignment.Center,
             modifier = Modifier
-                .size(24.dp)
-                .border(1.5.dp, accent, CircleShape)
+                .size(18.dp)
+                .border(1.dp, accent, CircleShape)
                 .background(accent.copy(alpha = 0.15f), CircleShape)
         ) {
-            Text("W", fontFamily = cinzel, fontWeight = FontWeight.Bold, fontSize = 11.sp, color = accent)
+            Text("W", fontFamily = cinzel, fontWeight = FontWeight.Bold, fontSize = 8.sp, color = accent)
         }
-        Text(addon.shortName, color = TextPrimary, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+        Text(addon.shortName, color = if (enabled) TextSecondary else GreyedOut, fontSize = 12.sp, fontWeight = FontWeight.Medium)
     }
 }
 
 @Composable
-private fun SectionDropdownOption(label: String, isCurrent: Boolean, onClick: () -> Unit) {
-    val bg = if (isCurrent) CardElevated else Surface
-    val borderColor = if (isCurrent) Primary else DividerColor
-
+private fun InlineOption(label: String, enabled: Boolean = true, onClick: () -> Unit) {
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .clip(RoundedCornerShape(8.dp))
-            .background(bg)
-            .border(1.dp, borderColor, RoundedCornerShape(8.dp))
-            .clickable(onClick = onClick)
-            .padding(horizontal = 16.dp, vertical = 8.dp)
+            .height(34.dp)
+            .alpha(if (enabled) 1f else 0.35f)
+            .clip(SegmentShape)
+            .background(Surface)
+            .border(1.dp, DividerColor, SegmentShape)
+            .then(if (enabled) Modifier.clickable(onClick = onClick) else Modifier)
+            .padding(horizontal = 12.dp)
     ) {
-        Text(label, color = TextPrimary, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
-    }
-}
-
-@Composable
-private fun BracketDropdownOption(mode: GameMode, isCurrent: Boolean, onClick: () -> Unit) {
-    val bg = if (isCurrent) CardElevated else Surface
-    val borderColor = if (isCurrent) Primary else DividerColor
-    val tileAlpha = if (mode.hasData) 1f else 0.35f
-
-    Box(
-        contentAlignment = Alignment.Center,
-        modifier = Modifier
-            .alpha(tileAlpha)
-            .clip(RoundedCornerShape(8.dp))
-            .background(bg)
-            .border(1.dp, borderColor, RoundedCornerShape(8.dp))
-            .then(if (mode.hasData) Modifier.clickable(onClick = onClick) else Modifier)
-            .padding(horizontal = 16.dp, vertical = 8.dp)
-    ) {
-        Text(mode.description, color = TextPrimary, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+        Text(label, color = TextSecondary, fontSize = 12.sp, fontWeight = FontWeight.Medium)
     }
 }
 
@@ -516,10 +420,23 @@ private data class TrailingCrumb(
 )
 
 private fun buildTrailingBreadcrumbs(screen: Screen): List<TrailingCrumb> = when (screen) {
+    is Screen.CompositionSelection -> listOf(
+        TrailingCrumb("Compositions", isCurrent = true, target = null)
+    )
     is Screen.MatchupList -> listOf(
+        TrailingCrumb(
+            "Compositions",
+            isCurrent = false,
+            target = Screen.CompositionSelection(screen.addonId, screen.gameModeId)
+        ),
         TrailingCrumb("Matchups", isCurrent = true, target = null)
     )
     is Screen.MatchupDetail -> listOf(
+        TrailingCrumb(
+            "Compositions",
+            isCurrent = false,
+            target = Screen.CompositionSelection(screen.addonId, screen.gameModeId)
+        ),
         TrailingCrumb(
             "Matchups",
             isCurrent = false,
@@ -527,7 +444,15 @@ private fun buildTrailingBreadcrumbs(screen: Screen): List<TrailingCrumb> = when
         ),
         TrailingCrumb("Detail", isCurrent = true, target = null)
     )
+    is Screen.ClassGuideList -> listOf(
+        TrailingCrumb("Classes", isCurrent = true, target = null)
+    )
     is Screen.SpecGuide -> listOf(
+        TrailingCrumb(
+            "Classes",
+            isCurrent = false,
+            target = Screen.ClassGuideList(screen.addonId)
+        ),
         TrailingCrumb(screen.specId.formatId(), isCurrent = true, target = null)
     )
     else -> emptyList()
@@ -539,10 +464,11 @@ private fun BreadcrumbChip(
     isCurrent: Boolean,
     onClick: (() -> Unit)?
 ) {
-    val shape = RoundedCornerShape(6.dp)
+    val shape = RoundedCornerShape(8.dp)
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
+            .height(34.dp)
             .clip(shape)
             .background(if (isCurrent) CardColor else Surface)
             .border(
@@ -551,7 +477,7 @@ private fun BreadcrumbChip(
                 shape = shape
             )
             .then(if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier)
-            .padding(horizontal = 10.dp, vertical = 4.dp)
+            .padding(horizontal = 10.dp)
     ) {
         Text(
             text = label,
