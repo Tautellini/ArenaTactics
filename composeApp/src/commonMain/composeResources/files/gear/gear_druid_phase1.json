@@ -1,0 +1,23 @@
+{
+  "phase": 1,
+  "classId": "druid",
+  "items": [
+    { "wowheadId": 31376, "name": "Gladiator's Kodohide Helm",          "slot": "Head",      "icon": "inv_helmet_04",               "enchant": "Glyph of Power",                      "gems": ["Insightful Earthstorm Diamond", "Luminous Noble Topaz"] },
+    { "wowheadId": 28731, "name": "Shining Chain of the Afterworld",    "slot": "Neck",      "icon": "inv_jewelry_necklace_25",     "enchant": null,                                  "gems": [] },
+    { "wowheadId": 28139, "name": "Gladiator's Wyrmhide Spaulders",     "slot": "Shoulders", "icon": "inv_shoulder_23",             "enchant": "Greater Inscription of Faith",        "gems": ["Luminous Noble Topaz"] },
+    { "wowheadId": 28765, "name": "Stainless Cloak of the Pure Hearted","slot": "Back",      "icon": "inv_misc_cape_18",            "enchant": "Enchant Cloak - Spell Penetration",   "gems": [] },
+    { "wowheadId": 31379, "name": "Gladiator's Kodohide Tunic",         "slot": "Chest",     "icon": "inv_chest_leather_04",        "enchant": "Enchant Chest - Major Resilience",    "gems": ["Luminous Noble Topaz", "Luminous Noble Topaz", "Royal Nightseye"] },
+    { "wowheadId": 31598, "name": "General's Kodohide Bracers",         "slot": "Wrists",    "icon": "inv_bracer_07",               "enchant": "Enchant Bracer - Superior Healing",   "gems": [] },
+    { "wowheadId": 28136, "name": "Gladiator's Wyrmhide Gloves",        "slot": "Hands",     "icon": "inv_gauntlets_29",            "enchant": "Enchant Gloves - Major Healing",      "gems": ["Luminous Noble Topaz"] },
+    { "wowheadId": 31594, "name": "General's Kodohide Belt",            "slot": "Waist",     "icon": "inv_belt_08",                 "enchant": null,                                  "gems": ["Luminous Noble Topaz"] },
+    { "wowheadId": 28591, "name": "Earthsoul Leggings",                 "slot": "Legs",      "icon": "inv_pants_leather_09",        "enchant": "Golden Spellthread",                  "gems": ["Luminous Noble Topaz", "Royal Nightseye"] },
+    { "wowheadId": 31595, "name": "General's Kodohide Boots",           "slot": "Feet",      "icon": "inv_boots_08",                "enchant": "Enchant Boots - Boar's Speed",        "gems": ["Luminous Noble Topaz"] },
+    { "wowheadId": 28790, "name": "Naaru Lightwarden's Band",           "slot": "Ring",      "icon": "inv_jewelry_ring_28",         "enchant": "Enchant Ring - Healing Power",        "gems": [] },
+    { "wowheadId": 29290, "name": "Violet Signet of the Grand Restorer","slot": "Ring",      "icon": "inv_jewelry_ring_35",         "enchant": "Enchant Ring - Healing Power",        "gems": [] },
+    { "wowheadId": 28241, "name": "Medallion of the Horde",             "slot": "Trinket",   "icon": "inv_jewelry_necklace_31",     "enchant": null,                                  "gems": [] },
+    { "wowheadId": 28370, "name": "Bangle of Endless Blessings",        "slot": "Trinket",   "icon": "inv_jewelry_trinket_01",      "enchant": null,                                  "gems": [] },
+    { "wowheadId": 28771, "name": "Light's Justice",                    "slot": "Main Hand", "icon": "inv_mace_35",                 "enchant": "Enchant Weapon - Major Healing",      "gems": [] },
+    { "wowheadId": 28525, "name": "Signet of Unshakable Faith",         "slot": "Off Hand",  "icon": "inv_misc_book_01",            "enchant": null,                                  "gems": [] },
+    { "wowheadId": 27886, "name": "Idol of the Emerald Queen",          "slot": "Ranged",    "icon": "inv_relics_idolofrejuvenation","enchant": null,                                  "gems": [] }
+  ]
+}

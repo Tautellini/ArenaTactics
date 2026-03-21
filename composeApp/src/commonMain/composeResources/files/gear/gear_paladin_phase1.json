@@ -1,0 +1,23 @@
+{
+  "phase": 1,
+  "classId": "paladin",
+  "items": [
+    { "wowheadId": 31616, "name": "Gladiator's Ornamented Headcover",   "slot": "Head",      "icon": "inv_helmet_24",               "enchant": "Glyph of Renewal",                    "gems": ["Insightful Earthstorm Diamond", "Luminous Noble Topaz"] },
+    { "wowheadId": 29347, "name": "Talisman of the Breaker",            "slot": "Neck",      "icon": "inv_jewelry_necklace_13",     "enchant": null,                                  "gems": [] },
+    { "wowheadId": 31619, "name": "Gladiator's Ornamented Spaulders",   "slot": "Shoulders", "icon": "inv_shoulder_22",             "enchant": "Greater Inscription of Faith",        "gems": ["Luminous Noble Topaz"] },
+    { "wowheadId": 28765, "name": "Stainless Cloak of the Pure Hearted","slot": "Back",      "icon": "inv_misc_cape_18",            "enchant": "Enchant Cloak - Greater Shadow Resistance", "gems": [] },
+    { "wowheadId": 31613, "name": "Gladiator's Ornamented Chestguard",  "slot": "Chest",     "icon": "inv_chest_plate_06",          "enchant": "Enchant Chest - Major Resilience",    "gems": ["Luminous Noble Topaz", "Luminous Noble Topaz", "Royal Nightseye"] },
+    { "wowheadId": 28512, "name": "Bracers of Justice",                 "slot": "Wrists",    "icon": "inv_bracer_17",               "enchant": "Enchant Bracer - Superior Healing",   "gems": [] },
+    { "wowheadId": 31614, "name": "Gladiator's Ornamented Gloves",      "slot": "Hands",     "icon": "inv_gauntlets_26",            "enchant": "Enchant Gloves - Major Healing",      "gems": ["Luminous Noble Topaz"] },
+    { "wowheadId": 28733, "name": "Girdle of Truth",                    "slot": "Waist",     "icon": "inv_belt_13",                 "enchant": null,                                  "gems": [] },
+    { "wowheadId": 28748, "name": "Legplates of the Innocent",          "slot": "Legs",      "icon": "inv_pants_plate_07",          "enchant": "Golden Spellthread",                  "gems": ["Luminous Noble Topaz", "Royal Nightseye"] },
+    { "wowheadId": 28569, "name": "Boots of Valiance",                  "slot": "Feet",      "icon": "inv_boots_plate_04",          "enchant": "Enchant Boots - Boar's Speed",        "gems": [] },
+    { "wowheadId": 28790, "name": "Naaru Lightwarden's Band",           "slot": "Ring",      "icon": "inv_jewelry_ring_28",         "enchant": "Enchant Ring - Healing Power",        "gems": [] },
+    { "wowheadId": 29373, "name": "Band of Halos",                      "slot": "Ring",      "icon": "inv_jewelry_ring_35",         "enchant": "Enchant Ring - Healing Power",        "gems": [] },
+    { "wowheadId": 28242, "name": "Medallion of the Horde",             "slot": "Trinket",   "icon": "inv_jewelry_necklace_31",     "enchant": null,                                  "gems": [] },
+    { "wowheadId": 29376, "name": "Essence of the Martyr",              "slot": "Trinket",   "icon": "inv_misc_gem_variety_02",     "enchant": null,                                  "gems": [] },
+    { "wowheadId": 28771, "name": "Light's Justice",                    "slot": "Main Hand", "icon": "inv_mace_35",                 "enchant": "Enchant Weapon - Major Healing",      "gems": [] },
+    { "wowheadId": 29458, "name": "Aegis of the Vindicator",            "slot": "Off Hand",  "icon": "inv_shield_07",               "enchant": "Enchant Shield - Intellect",          "gems": [] },
+    { "wowheadId": 25644, "name": "Blessed Book of Nagrand",            "slot": "Ranged",    "icon": "inv_relics_libramofhope",     "enchant": null,                                  "gems": [] }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "phase": 1,
+  "classId": "hunter",
+  "items": [
+    { "wowheadId": 28331, "name": "Gladiator's Chain Helm",          "slot": "Head",      "icon": "inv_helmet_06",               "enchant": "Glyph of Ferocity",                  "gems": ["Enigmatic Skyfire Diamond", "Delicate Living Ruby"] },
+    { "wowheadId": 28244, "name": "Pendant of Triumph",              "slot": "Neck",      "icon": "inv_jewelry_necklace_13",     "enchant": null,                                 "gems": [] },
+    { "wowheadId": 28333, "name": "Gladiator's Chain Spaulders",     "slot": "Shoulders", "icon": "inv_shoulder_25",             "enchant": "Greater Inscription of Vengeance",   "gems": ["Delicate Living Ruby"] },
+    { "wowheadId": 28672, "name": "Drape of the Dark Reapers",       "slot": "Back",      "icon": "inv_misc_cape_11",            "enchant": "Enchant Cloak - Greater Agility",    "gems": [] },
+    { "wowheadId": 28334, "name": "Gladiator's Chain Armor",         "slot": "Chest",     "icon": "inv_chest_chain_09",          "enchant": "Enchant Chest - Major Resilience",   "gems": ["Delicate Living Ruby", "Delicate Living Ruby", "Shifting Nightseye"] },
+    { "wowheadId": 28451, "name": "General's Chain Bracers",         "slot": "Wrists",    "icon": "inv_bracer_16",               "enchant": "Enchant Bracer - Assault",           "gems": [] },
+    { "wowheadId": 28335, "name": "Gladiator's Chain Gauntlets",     "slot": "Hands",     "icon": "inv_gauntlets_25",            "enchant": "Enchant Gloves - Superior Agility",  "gems": ["Delicate Living Ruby"] },
+    { "wowheadId": 28450, "name": "General's Chain Girdle",          "slot": "Waist",     "icon": "inv_belt_15",                 "enchant": null,                                 "gems": ["Delicate Living Ruby"] },
+    { "wowheadId": 28332, "name": "Gladiator's Chain Leggings",      "slot": "Legs",      "icon": "inv_pants_mail_15",           "enchant": "Nethercobra Leg Armor",              "gems": ["Delicate Living Ruby", "Delicate Living Ruby"] },
+    { "wowheadId": 28449, "name": "General's Chain Sabatons",        "slot": "Feet",      "icon": "inv_boots_chain_05",          "enchant": "Enchant Boots - Surefooted",         "gems": ["Delicate Living Ruby"] },
+    { "wowheadId": 28791, "name": "Ring of the Recalcitrant",        "slot": "Ring",      "icon": "inv_jewelry_ring_28",         "enchant": "Enchant Ring - Striking",            "gems": [] },
+    { "wowheadId": 28649, "name": "Garona's Signet Ring",            "slot": "Ring",      "icon": "inv_jewelry_ring_35",         "enchant": "Enchant Ring - Striking",            "gems": [] },
+    { "wowheadId": 28243, "name": "Medallion of the Horde",          "slot": "Trinket",   "icon": "inv_jewelry_necklace_31",     "enchant": null,                                 "gems": [] },
+    { "wowheadId": 29383, "name": "Bloodlust Brooch",                "slot": "Trinket",   "icon": "inv_jewelry_trinket_iron_01", "enchant": null,                                 "gems": [] },
+    { "wowheadId": 28308, "name": "Gladiator's Cleaver",             "slot": "Main Hand", "icon": "inv_axe_09",                  "enchant": "Enchant Weapon - Savagery",          "gems": [] },
+    { "wowheadId": 28572, "name": "Blade of the Unrequited",         "slot": "Off Hand",  "icon": "inv_sword_47",                "enchant": "Enchant Weapon - Greater Agility",   "gems": [] },
+    { "wowheadId": 28772, "name": "Sunfury Bow of the Phoenix",      "slot": "Ranged",    "icon": "inv_weapon_bow_07",           "enchant": "Stabilized Eternium Scope",          "gems": [] }
+  ]
+}

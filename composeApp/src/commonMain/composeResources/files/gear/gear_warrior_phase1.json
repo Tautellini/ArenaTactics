@@ -1,0 +1,22 @@
+{
+  "phase": 1,
+  "classId": "warrior",
+  "items": [
+    { "wowheadId": 29021, "name": "Warbringer Battle-Helm",          "slot": "Head",      "icon": "inv_helmet_24",               "enchant": "Glyph of Ferocity",                  "gems": ["Swift Skyfire Diamond", "Smooth Dawnstone"] },
+    { "wowheadId": 28244, "name": "Pendant of Triumph",              "slot": "Neck",      "icon": "inv_jewelry_necklace_13",     "enchant": null,                                 "gems": [] },
+    { "wowheadId": 24546, "name": "Gladiator's Plate Shoulders",     "slot": "Shoulders", "icon": "inv_shoulder_22",             "enchant": "Greater Inscription of Vengeance",   "gems": ["Bold Living Ruby"] },
+    { "wowheadId": 28377, "name": "Sergeant's Heavy Cloak",          "slot": "Back",      "icon": "inv_misc_cape_18",            "enchant": "Enchant Cloak - Greater Agility",    "gems": [] },
+    { "wowheadId": 24544, "name": "Gladiator's Plate Chestpiece",    "slot": "Chest",     "icon": "inv_chest_plate_06",          "enchant": "Enchant Chest - Major Resilience",   "gems": ["Bold Living Ruby", "Bold Living Ruby", "Shifting Nightseye"] },
+    { "wowheadId": 28996, "name": "Marshal's Plate Bracers",         "slot": "Wrists",    "icon": "inv_bracer_17",               "enchant": "Enchant Bracer - Assault",           "gems": [] },
+    { "wowheadId": 24549, "name": "Gladiator's Plate Gauntlets",     "slot": "Hands",     "icon": "inv_gauntlets_26",            "enchant": "Enchant Gloves - Superior Agility",  "gems": ["Bold Living Ruby"] },
+    { "wowheadId": 28995, "name": "Marshal's Plate Belt",            "slot": "Waist",     "icon": "inv_belt_13",                 "enchant": null,                                 "gems": ["Bold Living Ruby"] },
+    { "wowheadId": 24547, "name": "Gladiator's Plate Legguards",     "slot": "Legs",      "icon": "inv_pants_plate_07",          "enchant": "Nethercobra Leg Armor",              "gems": ["Bold Living Ruby", "Bold Living Ruby"] },
+    { "wowheadId": 28383, "name": "General's Plate Greaves",         "slot": "Feet",      "icon": "inv_boots_plate_04",          "enchant": "Enchant Boots - Surefooted",         "gems": ["Bold Living Ruby"] },
+    { "wowheadId": 28757, "name": "Ring of a Thousand Marks",        "slot": "Ring",      "icon": "inv_jewelry_ring_28",         "enchant": "Enchant Ring - Striking",            "gems": [] },
+    { "wowheadId": 28730, "name": "Mithril Band of the Unscarred",   "slot": "Ring",      "icon": "inv_jewelry_ring_35",         "enchant": "Enchant Ring - Striking",            "gems": [] },
+    { "wowheadId": 30344, "name": "Medallion of the Horde",          "slot": "Trinket",   "icon": "inv_jewelry_necklace_31",     "enchant": null,                                 "gems": [] },
+    { "wowheadId": 29383, "name": "Bloodlust Brooch",                "slot": "Trinket",   "icon": "inv_jewelry_trinket_iron_01", "enchant": null,                                 "gems": [] },
+    { "wowheadId": 28441, "name": "Deep Thunder",                    "slot": "Main Hand", "icon": "inv_mace_38",                 "enchant": "Enchant 2H Weapon - Savagery",       "gems": [] },
+    { "wowheadId": 28319, "name": "Gladiator's War Edge",            "slot": "Ranged",    "icon": "inv_throwingknife_07",        "enchant": null,                                 "gems": [] }
+  ]
+}

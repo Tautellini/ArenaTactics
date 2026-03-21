@@ -19,7 +19,8 @@ data class WowSpec(
     val name: String,     // spec name only e.g. "Subtlety"
     val classId: String,
     val iconName: String, // Wowhead icon slug e.g. "ability_stealth"
-    val role: SpecRole
+    val role: SpecRole,
+    val hasData: Boolean = true
 )
 
 @Serializable

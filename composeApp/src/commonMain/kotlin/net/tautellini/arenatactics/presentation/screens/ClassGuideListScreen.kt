@@ -13,7 +13,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.graphics.ColorMatrix
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -56,7 +59,9 @@ fun ClassGuideListScreen(
                     items(s.specs) { spec ->
                         val wowClass = s.classMap[spec.classId]
                         SpecGuideCard(spec = spec, wowClass = wowClass) {
-                            onNavigate(Screen.SpecGuide(addonId, spec.classId, spec.id))
+                            if (spec.hasData) {
+                                onNavigate(Screen.SpecGuide(addonId, spec.classId, spec.id))
+                            }
                         }
                     }
                 }
@@ -67,10 +72,18 @@ fun ClassGuideListScreen(
 
 @Composable
 private fun SpecGuideCard(spec: WowSpec, wowClass: WowClass?, onClick: () -> Unit) {
+    val enabled = spec.hasData
+    val cardAlpha = if (enabled) 1f else 0.45f
+    val grayscaleFilter = if (enabled) null else ColorFilter.colorMatrix(
+        ColorMatrix().apply { setToSaturation(0f) }
+    )
+
     Surface(
         color = CardColor,
         shape = RoundedCornerShape(12.dp),
-        modifier = Modifier.clickable(onClick = onClick)
+        modifier = Modifier
+            .alpha(cardAlpha)
+            .then(if (enabled) Modifier.clickable(onClick = onClick) else Modifier)
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -80,11 +93,15 @@ private fun SpecGuideCard(spec: WowSpec, wowClass: WowClass?, onClick: () -> Uni
             AsyncImage(
                 model = WowheadIcons.large(spec.iconName),
                 contentDescription = spec.name,
+                colorFilter = grayscaleFilter,
                 modifier = Modifier.size(56.dp).clip(RoundedCornerShape(8.dp))
             )
             Text(spec.name, color = TextPrimary, fontSize = 12.sp, fontWeight = FontWeight.SemiBold)
             if (wowClass != null) {
                 Text(wowClass.name, color = TextSecondary, fontSize = 11.sp)
+            }
+            if (!enabled) {
+                Text("Coming Soon", color = TextSecondary, fontSize = 10.sp)
             }
         }
     }

@@ -1,0 +1,23 @@
+{
+  "phase": 1,
+  "classId": "priest",
+  "items": [
+    { "wowheadId": 29049, "name": "Light-Collar of the Incarnate",      "slot": "Head",      "icon": "inv_helmet_15",               "enchant": "Glyph of Power",                       "gems": ["Insightful Earthstorm Diamond", "Luminous Noble Topaz"] },
+    { "wowheadId": 29347, "name": "Talisman of the Breaker",            "slot": "Neck",      "icon": "inv_jewelry_necklace_13",     "enchant": null,                                   "gems": [] },
+    { "wowheadId": 31412, "name": "Gladiator's Mooncloth Mantle",       "slot": "Shoulders", "icon": "inv_shoulder_02",             "enchant": "Greater Inscription of the Oracle",    "gems": ["Luminous Noble Topaz"] },
+    { "wowheadId": 28765, "name": "Stainless Cloak of the Pure Hearted","slot": "Back",      "icon": "inv_misc_cape_18",            "enchant": "Enchant Cloak - Spell Penetration",    "gems": [] },
+    { "wowheadId": 31413, "name": "Gladiator's Mooncloth Robe",         "slot": "Chest",     "icon": "inv_chest_cloth_04",          "enchant": "Enchant Chest - Major Resilience",     "gems": ["Luminous Noble Topaz", "Luminous Noble Topaz", "Royal Nightseye"] },
+    { "wowheadId": 32977, "name": "Marshal's Mooncloth Cuffs",          "slot": "Wrists",    "icon": "inv_bracer_07",               "enchant": "Enchant Bracer - Superior Healing",    "gems": [] },
+    { "wowheadId": 31409, "name": "Gladiator's Mooncloth Gloves",       "slot": "Hands",     "icon": "inv_gauntlets_15",            "enchant": "Enchant Gloves - Major Healing",       "gems": ["Veiled Noble Topaz"] },
+    { "wowheadId": 32976, "name": "Marshal's Mooncloth Belt",           "slot": "Waist",     "icon": "inv_belt_08",                 "enchant": null,                                   "gems": ["Luminous Noble Topaz"] },
+    { "wowheadId": 31411, "name": "Gladiator's Mooncloth Leggings",     "slot": "Legs",      "icon": "inv_pants_cloth_05",          "enchant": "Golden Spellthread",                   "gems": ["Luminous Noble Topaz", "Royal Nightseye"] },
+    { "wowheadId": 28663, "name": "Boots of the Incorrupt",             "slot": "Feet",      "icon": "inv_boots_cloth_01",          "enchant": "Enchant Boots - Boar's Speed",         "gems": [] },
+    { "wowheadId": 29290, "name": "Violet Signet of the Grand Restorer","slot": "Ring",      "icon": "inv_jewelry_ring_28",         "enchant": "Enchant Ring - Healing Power",         "gems": [] },
+    { "wowheadId": 28790, "name": "Naaru Lightwarden's Band",           "slot": "Ring",      "icon": "inv_jewelry_ring_35",         "enchant": "Enchant Ring - Healing Power",         "gems": [] },
+    { "wowheadId": 30349, "name": "Medallion of the Alliance",          "slot": "Trinket",   "icon": "inv_jewelry_necklace_31",     "enchant": null,                                   "gems": [] },
+    { "wowheadId": 28727, "name": "Pendant of the Violet Eye",          "slot": "Trinket",   "icon": "inv_jewelry_trinket_01",      "enchant": null,                                   "gems": [] },
+    { "wowheadId": 28771, "name": "Light's Justice",                    "slot": "Main Hand", "icon": "inv_mace_35",                 "enchant": "Enchant Weapon - Major Healing",       "gems": [] },
+    { "wowheadId": 28525, "name": "Signet of Unshakable Faith",         "slot": "Off Hand",  "icon": "inv_shield_07",               "enchant": null,                                   "gems": [] },
+    { "wowheadId": 28320, "name": "Gladiator's Touch of Defeat",        "slot": "Wand",      "icon": "inv_wand_14",                 "enchant": null,                                   "gems": [] }
+  ]
+}
