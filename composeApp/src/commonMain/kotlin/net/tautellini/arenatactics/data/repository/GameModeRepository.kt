@@ -6,12 +6,12 @@ import net.tautellini.arenatactics.data.model.GameMode
 internal fun parseGameModes(jsonString: String): List<GameMode> =
     appJson.decodeFromString(jsonString)
 
-class GameModeRepository {
-    suspend fun getAll(): List<GameMode> {
+open class GameModeRepository {
+    open suspend fun getAll(): List<GameMode> {
         val bytes = Res.readBytes("files/game_modes.json")
         return parseGameModes(bytes.decodeToString())
     }
 
-    suspend fun getByAddon(addonId: String): List<GameMode> =
+    open suspend fun getByAddon(addonId: String): List<GameMode> =
         getAll().filter { it.addonId == addonId }
 }
