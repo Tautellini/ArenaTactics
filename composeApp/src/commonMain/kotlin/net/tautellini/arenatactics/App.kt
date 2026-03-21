@@ -26,15 +26,19 @@ import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.navigation.toScreen
 import net.tautellini.arenatactics.presentation.AddonHubViewModel
 import net.tautellini.arenatactics.presentation.AddonSelectionViewModel
+import net.tautellini.arenatactics.presentation.ClassGuideListViewModel
 import net.tautellini.arenatactics.presentation.CompositionSelectionViewModel
 import net.tautellini.arenatactics.presentation.GameModeSelectionViewModel
 import net.tautellini.arenatactics.presentation.MatchupDetailViewModel
 import net.tautellini.arenatactics.presentation.MatchupListViewModel
+import net.tautellini.arenatactics.presentation.SpecGuideViewModel
 import net.tautellini.arenatactics.presentation.screens.AddonHubScreen
 import net.tautellini.arenatactics.presentation.screens.AddonSelectionScreen
+import net.tautellini.arenatactics.presentation.screens.ClassGuideListScreen
 import net.tautellini.arenatactics.presentation.screens.CompositionSelectionScreen
 import net.tautellini.arenatactics.presentation.screens.MatchupDetailScreen
 import net.tautellini.arenatactics.presentation.screens.MatchupListScreen
+import net.tautellini.arenatactics.presentation.screens.SpecGuideScreen
 import net.tautellini.arenatactics.presentation.screens.TacticsGameModeSelectionScreen
 import net.tautellini.arenatactics.presentation.screens.components.AppHeader
 import net.tautellini.arenatactics.presentation.theme.ArenaTacticsTheme
@@ -213,8 +217,23 @@ fun App() {
                         }
                         MatchupDetailScreen(viewModel = vm)
                     }
-                    composable<Screen.ClassGuideList> { /* TODO Task 11 */ }
-                    composable<Screen.SpecGuide> { /* TODO Task 12 */ }
+                    composable<Screen.ClassGuideList> { entry ->
+                        val screen = entry.toRoute<Screen.ClassGuideList>()
+                        val vm = viewModel(key = "guides_${screen.addonId}") {
+                            ClassGuideListViewModel(screen.addonId, addonRepository, compositionRepository)
+                        }
+                        ClassGuideListScreen(addonId = screen.addonId, viewModel = vm, onNavigate = { navController.navigate(it) })
+                    }
+                    composable<Screen.SpecGuide> { entry ->
+                        val screen = entry.toRoute<Screen.SpecGuide>()
+                        val vm = viewModel(key = "spec_${screen.addonId}_${screen.specId}") {
+                            SpecGuideViewModel(
+                                screen.addonId, screen.classId, screen.specId,
+                                addonRepository, specRepository, compositionRepository, gearRepository
+                            )
+                        }
+                        SpecGuideScreen(viewModel = vm)
+                    }
                 }
             }
         }
