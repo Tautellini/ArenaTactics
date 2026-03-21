@@ -55,6 +55,19 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 
 **Dependency versions** are managed via the version catalog at `gradle/libs.versions.toml`. Key versions: Kotlin 2.3.0, Compose Multiplatform 1.10.0, Material3 1.10.0-alpha05, Coroutines 1.10.2.
 
+- use MVVM
+- use Repositories for data layer access
+- use API layers to abstract between Repositories and remote calls
+
+## DESIGN GUIDELINES
+- modern design with glass-like elements
+- **premium feel**
+- modern icon first design
+- Background color: #042326
+- Foreground color: #0A3A40
+- Primary color: #1D7373
+- Secondary color: #0F5959
+
 ## Additional Code Guidance
 -  any exception-generating code on the web path (IO, JS interop) needs catch
    (Throwable) and must never be left uncaught in a LaunchedEffect
@@ -62,6 +75,7 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
    layouts reflow naturally across screen widths. Never hardcode column counts or fixed
    widths for list/grid content. Layouts must look correct and visually appealing at both
    narrow (≈800px) and wide (≈1600px) viewports.
+- do **not** place all Models in a singular file, separate and extract them
 
 ## Multi-Bracket & Multi-Addon Scope
 - The app is designed to support **multiple game modes**: 2v2, 3v3, 5v5, and potentially other addons (e.g., Wrath, Retail).
@@ -73,12 +87,3 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - `specIds` in JSON data files are always **alphabetically sorted** — this is enforced by `Composition.init` and is required for stable IDs and deduplication.
 - `RichComposition.specs` (the display layer) are always reordered **DPS first, HEALER last** in `enrichCompositions()`. Never change this order at the UI layer; fix it at the enrichment layer if it is wrong.
 - When adding new compositions to JSON, keep `specIds` alphabetical. The display order is handled automatically.
-
-## DESIGN GUIDELINES
-- the overall design is a very modern and dark design with glass-like elements
-- premium feel
-- modern icon first (and only) design
-- Background color: #042326
-- Foreground color: #0A3A40
-- Primary color: #1D7373
-- Secondary color: #0F5959
