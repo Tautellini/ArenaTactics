@@ -17,6 +17,7 @@ import androidx.compose.ui.unit.sp
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.presentation.MatchupListState
 import net.tautellini.arenatactics.presentation.MatchupListViewModel
+import net.tautellini.arenatactics.presentation.screens.components.ClassFilterBar
 import net.tautellini.arenatactics.presentation.screens.components.SpecBadge
 import net.tautellini.arenatactics.presentation.theme.*
 
@@ -29,6 +30,7 @@ fun MatchupListScreen(
     onNavigate: (Screen) -> Unit
 ) {
     val state by viewModel.state.collectAsState()
+    var selectedClassId by remember { mutableStateOf<String?>(null) }
 
     when (val s = state) {
         is MatchupListState.Loading -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
@@ -40,35 +42,55 @@ fun MatchupListScreen(
             modifier = Modifier.padding(24.dp)
         )
         is MatchupListState.Success -> {
+            val filteredMatchups = if (selectedClassId != null) {
+                s.matchups.filter { matchup ->
+                    matchup.enemySpecIds.any { specId ->
+                        s.specMap[specId]?.classId == selectedClassId
+                    }
+                }
+            } else s.matchups
+
             Column(
                 modifier = Modifier
                     .fillMaxSize()
                     .background(Background)
-                    .verticalScroll(rememberScrollState())
                     .padding(24.dp)
             ) {
-                FlowRow(
-                    horizontalArrangement = Arrangement.spacedBy(12.dp),
-                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ClassFilterBar(
+                    classes = s.classMap.values.sortedBy { it.name },
+                    selectedClassId = selectedClassId,
+                    onSelect = { selectedClassId = it },
+                    modifier = Modifier.padding(bottom = 16.dp)
+                )
+
+                Column(
+                    modifier = Modifier
+                        .weight(1f)
+                        .verticalScroll(rememberScrollState())
                 ) {
-                    s.matchups.forEach { matchup ->
-                        Surface(
-                            color = CardColor,
-                            shape = RoundedCornerShape(8.dp),
-                            modifier = Modifier.clickable {
-                                onNavigate(Screen.MatchupDetail(addonId, gameModeId, compositionId, matchup.id))
-                            }
-                        ) {
-                            Row(
-                                modifier = Modifier.padding(8.dp),
-                                horizontalArrangement = Arrangement.spacedBy(8.dp),
-                                verticalAlignment = Alignment.CenterVertically
+                    FlowRow(
+                        horizontalArrangement = Arrangement.spacedBy(12.dp),
+                        verticalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        filteredMatchups.forEach { matchup ->
+                            Surface(
+                                color = CardColor,
+                                shape = RoundedCornerShape(8.dp),
+                                modifier = Modifier.clickable {
+                                    onNavigate(Screen.MatchupDetail(addonId, gameModeId, compositionId, matchup.id))
+                                }
                             ) {
-                                Text("vs", color = TextSecondary, fontSize = 12.sp, modifier = Modifier.width(20.dp))
-                                matchup.enemySpecIds.forEach { specId ->
-                                    val spec  = s.specMap[specId]  ?: return@forEach
-                                    val clazz = s.classMap[spec.classId] ?: return@forEach
-                                    SpecBadge(spec, clazz)
+                                Row(
+                                    modifier = Modifier.padding(8.dp),
+                                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    Text("vs", color = TextSecondary, fontSize = 12.sp, modifier = Modifier.width(20.dp))
+                                    matchup.enemySpecIds.forEach { specId ->
+                                        val spec  = s.specMap[specId]  ?: return@forEach
+                                        val clazz = s.classMap[spec.classId] ?: return@forEach
+                                        SpecBadge(spec, clazz)
+                                    }
                                 }
                             }
                         }

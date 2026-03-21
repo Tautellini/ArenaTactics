@@ -20,6 +20,7 @@ import net.tautellini.arenatactics.data.model.CompositionTier
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.presentation.CompositionSelectionState
 import net.tautellini.arenatactics.presentation.CompositionSelectionViewModel
+import net.tautellini.arenatactics.presentation.screens.components.ClassFilterBar
 import net.tautellini.arenatactics.presentation.screens.components.CompositionCard
 import net.tautellini.arenatactics.presentation.theme.*
 
@@ -39,6 +40,7 @@ fun CompositionSelectionScreen(
 ) {
     val state by viewModel.state.collectAsState()
     var othersExpanded by remember { mutableStateOf(false) }
+    var selectedClassId by remember { mutableStateOf<String?>(null) }
 
     Column(
         modifier = Modifier.fillMaxSize().background(Background).padding(24.dp)
@@ -50,12 +52,25 @@ fun CompositionSelectionScreen(
             is CompositionSelectionState.Error ->
                 Text(s.message, color = TextSecondary)
             is CompositionSelectionState.Success -> {
+                ClassFilterBar(
+                    classes = s.classes,
+                    selectedClassId = selectedClassId,
+                    onSelect = { selectedClassId = it },
+                    modifier = Modifier.padding(bottom = 16.dp)
+                )
+
                 LazyColumn(
                     modifier = Modifier.weight(1f),
                     verticalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
                     CompositionTier.entries.forEach { tier ->
-                        val comps = s.grouped[tier] ?: return@forEach
+                        val allComps = s.grouped[tier] ?: return@forEach
+                        val comps = if (selectedClassId != null) {
+                            allComps.filter { rc ->
+                                rc.classes.any { it.id == selectedClassId }
+                            }
+                        } else allComps
+                        if (comps.isEmpty()) return@forEach
                         if (tier == CompositionTier.OTHERS) {
                             item {
                                 TierHeader(

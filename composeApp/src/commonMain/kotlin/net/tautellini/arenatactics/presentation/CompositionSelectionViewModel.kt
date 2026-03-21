@@ -8,6 +8,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import net.tautellini.arenatactics.data.model.CompositionTier
 import net.tautellini.arenatactics.data.model.SpecRole
+import net.tautellini.arenatactics.data.model.WowClass
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
@@ -15,7 +16,10 @@ import net.tautellini.arenatactics.domain.RichComposition
 
 sealed class CompositionSelectionState {
     data object Loading : CompositionSelectionState()
-    data class Success(val grouped: Map<CompositionTier, List<RichComposition>>) : CompositionSelectionState()
+    data class Success(
+        val grouped: Map<CompositionTier, List<RichComposition>>,
+        val classes: List<WowClass>
+    ) : CompositionSelectionState()
     data class Error(val message: String) : CompositionSelectionState()
 }
 
@@ -35,6 +39,7 @@ class CompositionSelectionViewModel(
                 val addon = addonRepository.getById(addonId)
                     ?: throw IllegalArgumentException("Unknown addon: $addonId")
                 val mode = gameModeRepository.getAll().first { it.id == gameModeId }
+                val classes = compositionRepository.getClasses(addon.classPoolId)
                 val rich = compositionRepository.getRichCompositions(
                     specPoolId       = addon.specPoolId,
                     classPoolId      = addon.classPoolId,
@@ -51,7 +56,7 @@ class CompositionSelectionViewModel(
                             )
                     }
                     .filterValues { it.isNotEmpty() }
-                CompositionSelectionState.Success(grouped)
+                CompositionSelectionState.Success(grouped, classes)
             } catch (e: Throwable) {
                 CompositionSelectionState.Error(e.message ?: "Failed to load compositions")
             }
