@@ -34,7 +34,7 @@ fun ItemRow(item: GearItem, modifier: Modifier = Modifier) {
                             horizontalArrangement = Arrangement.spacedBy(4.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-                            Icon(Icons.Rounded.AutoAwesome, contentDescription = null, modifier = Modifier.size(12.dp), tint = Accent)
+                            Icon(Icons.Rounded.AutoAwesome, contentDescription = null, modifier = Modifier.size(12.dp), tint = Primary)
                             Text(item.enchant, fontSize = 12.sp)
                         }
                     }
@@ -54,8 +54,8 @@ fun ItemRow(item: GearItem, modifier: Modifier = Modifier) {
                         horizontalArrangement = Arrangement.spacedBy(4.dp),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Text("View on Wowhead", fontSize = 11.sp, color = Accent)
-                        Icon(Icons.Rounded.OpenInNew, contentDescription = null, modifier = Modifier.size(11.dp), tint = Accent)
+                        Text("View on Wowhead", fontSize = 11.sp, color = Primary)
+                        Icon(Icons.Rounded.OpenInNew, contentDescription = null, modifier = Modifier.size(11.dp), tint = Primary)
                     }
                 }
             }
@@ -80,7 +80,7 @@ fun ItemRow(item: GearItem, modifier: Modifier = Modifier) {
                 )
                 Text(
                     text = item.name,
-                    color = Accent,
+                    color = Primary,
                     fontSize = 13.sp,
                     fontWeight = FontWeight.Medium
                 )
@@ -92,7 +92,7 @@ fun ItemRow(item: GearItem, modifier: Modifier = Modifier) {
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     if (item.enchant != null) {
-                        Icon(Icons.Rounded.AutoAwesome, contentDescription = null, modifier = Modifier.size(11.dp), tint = Accent)
+                        Icon(Icons.Rounded.AutoAwesome, contentDescription = null, modifier = Modifier.size(11.dp), tint = Primary)
                         Text(item.enchant, color = TextSecondary, fontSize = 11.sp)
                     }
                     if (item.gems.isNotEmpty()) {

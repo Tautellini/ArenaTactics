@@ -57,7 +57,7 @@ fun CompositionSelectionScreen(
         Spacer(Modifier.height(24.dp))
         when (val s = state) {
             is CompositionSelectionState.Loading ->
-                CircularProgressIndicator(color = Accent)
+                CircularProgressIndicator(color = Primary)
             is CompositionSelectionState.Error ->
                 Text(s.message, color = TextSecondary)
             is CompositionSelectionState.Success -> {

@@ -18,20 +18,16 @@ import arenatactics.composeapp.generated.resources.NotoSans_SemiBold
 import arenatactics.composeapp.generated.resources.Res
 import org.jetbrains.compose.resources.Font
 
-// Background layers
+val Primary = Color(0xFF1D7373)
+val Secondary = Color(0xFF0F5959)
 val Background   = Color(0xFF042326)
 val Surface      = Color(0xFF0A3A40)
-val CardColor    = Color(0xFF0F4A52)
-val CardElevated = Color(0xFF1D6066)
-
-// Text
 val TextPrimary   = Color(0xFFE8F4F4)
 val TextSecondary = Color(0xFF7AABAA)
 
-// Accent
-val Accent = Color(0xFF1D7373)
+val CardColor    = Color(0xFF0F4A52)
+val CardElevated = Color(0xFF1D6066)
 
-// Divider
 val DividerColor = Color(0xFF0F5959)
 
 // WoW class colors
@@ -49,12 +45,10 @@ val ClassColors = mapOf(
 
 fun classColor(classId: String): Color = ClassColors[classId] ?: TextPrimary
 
-val Secondary = Color(0xFF0F5959)
-
 private val DarkColors = darkColorScheme(
     background = Background,
     surface = Surface,
-    primary = Accent,
+    primary = Primary,
     secondary = Secondary,
     onPrimary = TextPrimary,
     onSecondary = TextPrimary,

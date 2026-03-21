@@ -28,7 +28,7 @@ fun MarkdownText(markdown: String, modifier: Modifier = Modifier) {
                 }
                 line.startsWith("- ") || line.startsWith("* ") -> {
                     Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                        Text("•", color = Accent, fontSize = 13.sp)
+                        Text("•", color = Primary, fontSize = 13.sp)
                         Text(
                             text = parseInline(line.drop(2)),
                             color = TextPrimary,

@@ -31,7 +31,7 @@ fun MatchupListScreen(
 
     when (val s = state) {
         is MatchupListState.Loading -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            CircularProgressIndicator(color = Accent)
+            CircularProgressIndicator(color = Primary)
         }
         is MatchupListState.Error -> Text(
             s.message,

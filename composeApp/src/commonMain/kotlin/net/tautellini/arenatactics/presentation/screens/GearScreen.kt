@@ -72,7 +72,7 @@ fun CompositionHubScreen(
                 ) {
                     Text(
                         text = tab.name.lowercase().replaceFirstChar { it.uppercase() },
-                        color = if (selected) Accent else TextSecondary,
+                        color = if (selected) Primary else TextSecondary,
                         fontSize = 14.sp,
                         fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Normal
                     )
@@ -126,7 +126,7 @@ private fun GearTabContent(viewModel: GearViewModel) {
 
     when (val s = state) {
         is GearState.Loading -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            CircularProgressIndicator(color = Accent)
+            CircularProgressIndicator(color = Primary)
         }
         is GearState.Error -> Text(s.message, color = TextSecondary, modifier = Modifier.padding(24.dp))
         is GearState.Success -> {
@@ -148,7 +148,7 @@ private fun GearTabContent(viewModel: GearViewModel) {
                         ) {
                             Text(
                                 text = "Phase $phase",
-                                color = if (selected) Accent else TextSecondary,
+                                color = if (selected) Primary else TextSecondary,
                                 fontSize = 14.sp,
                                 fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Normal
                             )
@@ -286,7 +286,7 @@ private fun GearSlot(item: GearItem, modifier: Modifier = Modifier) {
         )
         Text(
             text = item.name,
-            color = Accent,
+            color = Primary,
             fontSize = 10.sp,
             maxLines = 2,
             overflow = TextOverflow.Ellipsis,
@@ -294,7 +294,7 @@ private fun GearSlot(item: GearItem, modifier: Modifier = Modifier) {
             lineHeight = 12.sp
         )
         if (item.enchant != null) {
-            Icon(Icons.Rounded.AutoAwesome, contentDescription = null, modifier = Modifier.size(10.dp), tint = Accent)
+            Icon(Icons.Rounded.AutoAwesome, contentDescription = null, modifier = Modifier.size(10.dp), tint = Primary)
         }
     }
 }

@@ -59,7 +59,7 @@ fun GameModeSelectionScreen(
 
             when (val s = state) {
                 is GameModeSelectionState.Loading ->
-                    CircularProgressIndicator(color = Accent)
+                    CircularProgressIndicator(color = Primary)
                 is GameModeSelectionState.Error ->
                     Text(s.message, color = TextSecondary)
                 is GameModeSelectionState.Success -> {
@@ -170,7 +170,7 @@ private fun ShieldLogo() {
             // Border
             drawPath(
                 path,
-                color = Accent,
+                color = Primary,
                 style = Stroke(
                     width = 1.5.dp.toPx(),
                     cap = StrokeCap.Round,
@@ -202,7 +202,7 @@ private fun ShieldLogo() {
             }
             drawPath(
                 innerPath,
-                color = Accent.copy(alpha = 0.25f),
+                color = Primary.copy(alpha = 0.25f),
                 style = Stroke(width = 0.8.dp.toPx())
             )
         }
@@ -224,7 +224,7 @@ private fun ShieldLogo() {
                 "Tactics",
                 fontFamily = cinzel,
                 fontWeight = FontWeight.Normal,
-                color = Accent,
+                color = Primary,
                 fontSize = 16.sp,
                 letterSpacing = 5.sp
             )

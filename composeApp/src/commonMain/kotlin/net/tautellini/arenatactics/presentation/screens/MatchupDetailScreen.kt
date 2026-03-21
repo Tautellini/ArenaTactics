@@ -10,7 +10,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import net.tautellini.arenatactics.navigation.Navigator
@@ -31,7 +30,7 @@ fun MatchupDetailScreen(
     Column(modifier = Modifier.fillMaxSize().background(Background)) {
         when (val s = state) {
             is MatchupDetailState.Loading -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                CircularProgressIndicator(color = Accent)
+                CircularProgressIndicator(color = Primary)
             }
             is MatchupDetailState.Error -> Text(
                 s.message,
