@@ -11,4 +11,7 @@ class GameModeRepository {
         val bytes = Res.readBytes("files/game_modes.json")
         return parseGameModes(bytes.decodeToString())
     }
+
+    suspend fun getByAddon(addonId: String): List<GameMode> =
+        getAll().filter { it.addonId == addonId }
 }

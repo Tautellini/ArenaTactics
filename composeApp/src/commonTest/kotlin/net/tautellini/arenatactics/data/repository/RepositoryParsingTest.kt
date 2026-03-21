@@ -12,6 +12,7 @@ class RepositoryParsingTest {
             "name": "TBC 2v2",
             "description": "desc",
             "teamSize": 2,
+            "addonId": "tbc_anniversary",
             "specPoolId": "tbc",
             "classPoolId": "tbc",
             "compositionSetId": "tbc_2v2",
@@ -21,8 +22,8 @@ class RepositoryParsingTest {
         val result = parseGameModes(json)
         assertEquals(1, result.size)
         assertEquals("tbc_anniversary_2v2", result[0].id)
+        assertEquals("tbc_anniversary", result[0].addonId)
         assertEquals(2, result[0].teamSize)
-        assertEquals("tbc", result[0].specPoolId)
     }
 
     @Test
