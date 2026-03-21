@@ -55,12 +55,12 @@ fun AppHeader(
             ShieldCanvas(modifier = shieldModifier)
         }
 
-        // Breadcrumb chips — skip first (AddonSelection = shield)
-        stack.drop(1).forEachIndexed { index, screen ->
+        // Breadcrumb chips — include AddonSelection ("Home") as first chip
+        stack.forEachIndexed { index, screen ->
             val isCurrent = screen == currentScreen
 
-            // Chevron separator
-            Text(
+            // Chevron separator (skip before first chip)
+            if (index > 0) Text(
                 text = "›",
                 color = DividerColor,
                 fontSize = 14.sp,
