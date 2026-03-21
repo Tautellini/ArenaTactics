@@ -55,9 +55,11 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 
 **Dependency versions** are managed via the version catalog at `gradle/libs.versions.toml`. Key versions: Kotlin 2.3.0, Compose Multiplatform 1.10.0, Material3 1.10.0-alpha05, Coroutines 1.10.2.
 
-- use MVVM
-- use Repositories for data layer access
-- use API layers to abstract between Repositories and remote calls
+- MVVM
+- Repositories for data layer access
+- API layers to abstract between Repositories and remote calls
+- Compose Multiplatform for a shared UI
+- Compose Navigation
 
 ## DESIGN GUIDELINES
 - modern design with glass-like elements
