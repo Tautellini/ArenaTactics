@@ -7,4 +7,6 @@ expect fun pushNavigationState(path: String)
 expect fun registerPopCallback(callback: () -> Unit)
 // Returns the current URL pathname for deep-link support. Returns "/" on JVM.
 expect fun getInitialPath(): String
+// Returns the current URL pathname (called from popstate callback). Returns "/" on JVM.
+expect fun getCurrentPath(): String
 
