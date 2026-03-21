@@ -52,6 +52,23 @@ class RepositoryParsingTest {
     }
 
     @Test
+    fun addonDeserializes() {
+        val json = """[{
+            "id": "tbc_anniversary",
+            "name": "TBC Anniversary",
+            "description": "The Burning Crusade Anniversary",
+            "iconName": "achievement_arena_2v2_7",
+            "specPoolId": "tbc",
+            "classPoolId": "tbc",
+            "hasData": true
+        }]"""
+        val result = parseAddons(json)
+        assertEquals(1, result.size)
+        assertEquals("tbc_anniversary", result[0].id)
+        assertEquals("tbc", result[0].specPoolId)
+    }
+
+    @Test
     fun matchupDeserializes() {
         val json = """[{
             "id": "mage_frost_rogue_subtlety_vs_druid_restoration_warrior_arms",

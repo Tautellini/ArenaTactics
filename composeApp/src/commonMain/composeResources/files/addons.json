@@ -1,0 +1,11 @@
+[
+  {
+    "id": "tbc_anniversary",
+    "name": "TBC Anniversary",
+    "description": "The Burning Crusade Anniversary",
+    "iconName": "achievement_arena_2v2_7",
+    "specPoolId": "tbc",
+    "classPoolId": "tbc",
+    "hasData": true
+  }
+]
