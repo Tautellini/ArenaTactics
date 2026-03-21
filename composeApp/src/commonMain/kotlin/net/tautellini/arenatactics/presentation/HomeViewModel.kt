@@ -2,6 +2,7 @@ package net.tautellini.arenatactics.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -20,6 +21,7 @@ class HomeViewModel(
     val state: StateFlow<HomeState> = _state.asStateFlow()
 
     private var lastLoadedAddonId: String? = null
+    private var loadJob: Job? = null
 
     init {
         viewModelScope.launch {
@@ -41,7 +43,8 @@ class HomeViewModel(
 
         val successState = current as? HomeState.Success ?: return
 
-        viewModelScope.launch {
+        loadJob?.cancel()
+        loadJob = viewModelScope.launch {
             _state.value = successState.copy(gameModeRow = GameModeRowState.Loading)
             try {
                 val modes = gameModeRepository.getByAddon(addonId)

@@ -217,4 +217,32 @@ class HomeViewModelTest {
         assertIs<GameModeRowState.Error>(row)
         assertEquals("Game mode error", row.message)
     }
+
+    // 8. After a failed loadGameModes, same addonId can be retried (lastLoadedAddonId not set on error)
+    @Test
+    fun loadGameModesCanRetryAfterError() = runTest {
+        var callCount = 0
+        val fakeGameModeRepo = object : GameModeRepository() {
+            override suspend fun getByAddon(addonId: String): List<GameMode> {
+                callCount++
+                if (callCount == 1) throw RuntimeException("Transient error")
+                return listOf(GAMEMODE_2V2)
+            }
+        }
+        val vm = HomeViewModel(
+            addonRepository = FakeAddonRepository(Result.success(listOf(ADDON_TBC))),
+            gameModeRepository = fakeGameModeRepo
+        )
+
+        // First call: fails
+        vm.loadGameModes("tbc_anniversary")
+        assertIs<GameModeRowState.Error>((vm.state.value as HomeState.Success).gameModeRow)
+
+        // Second call with same addonId: should succeed because lastLoadedAddonId was not set after error
+        vm.loadGameModes("tbc_anniversary")
+        val state = vm.state.value
+        assertIs<HomeState.Success>(state)
+        assertIs<GameModeRowState.Ready>(state.gameModeRow)
+        assertEquals(listOf(GAMEMODE_2V2), state.gameModeRow.modes)
+    }
 }
