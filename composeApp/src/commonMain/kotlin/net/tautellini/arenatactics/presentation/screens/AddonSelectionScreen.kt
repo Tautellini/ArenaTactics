@@ -87,11 +87,12 @@ fun AddonSelectionScreen(
                         ) {
                             s.addons.forEach { addon ->
                                 val isSelected = selection.addon?.id == addon.id
+                                val hasAnyData = addon.hasData || addon.id in s.addonsWithLadder
                                 AddonTile(
                                     addon = addon,
                                     isSelected = isSelected,
-                                    enabled = addon.hasData,
-                                    onClick = if (!addon.hasData) null else ({
+                                    enabled = hasAnyData,
+                                    onClick = if (!hasAnyData) null else ({
                                         if (isSelected) {
                                             viewModel.deselectAddon()
                                         } else {
@@ -124,14 +125,15 @@ fun AddonSelectionScreen(
                                 verticalArrangement = Arrangement.spacedBy(16.dp)
                             ) {
                                 val tacticsEnabled = isTacticsEnabled(s.gameModeRow)
-                                val tacticsAlpha = if (tacticsEnabled) 1f else 0.35f
+                                val guidesEnabled = selection.addon?.hasData == true
+                                val ladderEnabled = selection.addon?.id in s.addonsWithLadder
 
                                 SectionTile(
                                     icon = Icons.Rounded.AutoAwesome,
                                     title = "Tactics",
                                     subtitle = "Compositions & matchup guides",
                                     isSelected = selection.section == HomeSection.TACTICS,
-                                    alpha = tacticsAlpha,
+                                    alpha = if (tacticsEnabled) 1f else 0.35f,
                                     loadingState = s.gameModeRow,
                                     onClick = if (tacticsEnabled) ({
                                         viewModel.selectSection(HomeSection.TACTICS)
@@ -142,26 +144,26 @@ fun AddonSelectionScreen(
                                     title = "Class Guides",
                                     subtitle = "Best-in-slot gear per spec",
                                     isSelected = selection.section == HomeSection.CLASS_GUIDES,
-                                    alpha = 1f,
+                                    alpha = if (guidesEnabled) 1f else 0.35f,
                                     loadingState = null,
-                                    onClick = {
+                                    onClick = if (guidesEnabled) ({
                                         selection.addon?.let { addon ->
                                             onNavigate(Screen.ClassGuideList(addon.id))
                                         }
-                                    }
+                                    }) else null
                                 )
                                 SectionTile(
                                     icon = Icons.Rounded.Leaderboard,
                                     title = "Ladder",
                                     subtitle = "Rating cutoffs & top players",
                                     isSelected = false,
-                                    alpha = 1f,
+                                    alpha = if (ladderEnabled) 1f else 0.35f,
                                     loadingState = null,
-                                    onClick = {
+                                    onClick = if (ladderEnabled) ({
                                         selection.addon?.let { addon ->
                                             onNavigate(Screen.Ladder(addon.id))
                                         }
-                                    }
+                                    }) else null
                                 )
                             }
                         }

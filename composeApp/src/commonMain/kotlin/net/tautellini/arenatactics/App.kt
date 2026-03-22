@@ -52,7 +52,7 @@ fun App() {
     val matchupRepository = remember { MatchupRepository() }
     val ladderRepository = remember { LadderRepository() }
 
-    val homeViewModel = remember { HomeViewModel(addonRepository, gameModeRepository) }
+    val homeViewModel = remember { HomeViewModel(addonRepository, gameModeRepository, ladderRepository) }
     val navController = rememberNavController()
 
     // How many snapshotFlow emissions to skip at startup:

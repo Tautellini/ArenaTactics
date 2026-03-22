@@ -11,6 +11,7 @@ import net.tautellini.arenatactics.data.model.Addon
 import net.tautellini.arenatactics.data.model.GameMode
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
+import net.tautellini.arenatactics.data.repository.LadderRepository
 
 enum class HomeSection { TACTICS, CLASS_GUIDES }
 
@@ -21,7 +22,8 @@ data class HomeSelection(
 
 class HomeViewModel(
     private val addonRepository: AddonRepository,
-    private val gameModeRepository: GameModeRepository
+    private val gameModeRepository: GameModeRepository,
+    private val ladderRepository: LadderRepository
 ) : ViewModel() {
 
     private val _state = MutableStateFlow<HomeState>(HomeState.Loading)
@@ -37,7 +39,13 @@ class HomeViewModel(
         viewModelScope.launch {
             try {
                 val addons = addonRepository.getAll()
-                _state.value = HomeState.Success(addons)
+                // Probe ladder index for each addon to determine availability
+                val ladderAddons = mutableSetOf<String>()
+                for (addon in addons) {
+                    val index = ladderRepository.getIndex(addon.id)
+                    if (index.isNotEmpty()) ladderAddons.add(addon.id)
+                }
+                _state.value = HomeState.Success(addons, addonsWithLadder = ladderAddons)
             } catch (t: Throwable) {
                 _state.value = HomeState.Error(t.message ?: "Failed to load addons")
             }
@@ -99,7 +107,8 @@ sealed class HomeState {
     data class Error(val message: String) : HomeState()
     data class Success(
         val addons: List<Addon>,
-        val gameModeRow: GameModeRowState = GameModeRowState.Idle
+        val gameModeRow: GameModeRowState = GameModeRowState.Idle,
+        val addonsWithLadder: Set<String> = emptySet()
     ) : HomeState()
 }
 

@@ -10,6 +10,7 @@ import net.tautellini.arenatactics.data.model.Addon
 import net.tautellini.arenatactics.data.model.GameMode
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
+import net.tautellini.arenatactics.data.repository.LadderRepository
 import kotlin.test.AfterTest
 import kotlin.test.BeforeTest
 import kotlin.test.Test
@@ -73,6 +74,7 @@ class HomeViewModelTest {
     @Test
     fun initialStateTransitionsToSuccess() = runTest {
         val vm = HomeViewModel(
+            ladderRepository = LadderRepository(),
             addonRepository = FakeAddonRepository(Result.success(listOf(ADDON_TBC))),
             gameModeRepository = FakeGameModeRepository(Result.success(listOf(GAMEMODE_2V2)))
         )
@@ -87,6 +89,7 @@ class HomeViewModelTest {
     @Test
     fun loadGameModesTransitionsToReady() = runTest {
         val vm = HomeViewModel(
+            ladderRepository = LadderRepository(),
             addonRepository = FakeAddonRepository(Result.success(listOf(ADDON_TBC))),
             gameModeRepository = FakeGameModeRepository(Result.success(listOf(GAMEMODE_2V2)))
         )
@@ -111,6 +114,7 @@ class HomeViewModelTest {
             }
         }
         val vm = HomeViewModel(
+            ladderRepository = LadderRepository(),
             addonRepository = FakeAddonRepository(Result.success(listOf(ADDON_TBC))),
             gameModeRepository = fakeGameModeRepo
         )
@@ -133,6 +137,7 @@ class HomeViewModelTest {
             }
         }
         val vm = HomeViewModel(
+            ladderRepository = LadderRepository(),
             addonRepository = FakeAddonRepository(Result.success(listOf(ADDON_TBC))),
             gameModeRepository = fakeGameModeRepo
         )
@@ -152,6 +157,7 @@ class HomeViewModelTest {
     @Test
     fun resetGameModesSetsIdle() = runTest {
         val vm = HomeViewModel(
+            ladderRepository = LadderRepository(),
             addonRepository = FakeAddonRepository(Result.success(listOf(ADDON_TBC))),
             gameModeRepository = FakeGameModeRepository(Result.success(listOf(GAMEMODE_2V2)))
         )
@@ -177,6 +183,7 @@ class HomeViewModelTest {
             }
         }
         val vm = HomeViewModel(
+            ladderRepository = LadderRepository(),
             addonRepository = FakeAddonRepository(Result.success(listOf(ADDON_TBC))),
             gameModeRepository = fakeGameModeRepo
         )
@@ -193,6 +200,7 @@ class HomeViewModelTest {
     @Test
     fun addonLoadFailureSetsErrorState() = runTest {
         val vm = HomeViewModel(
+            ladderRepository = LadderRepository(),
             addonRepository = FakeAddonRepository(Result.failure(RuntimeException("Network error"))),
             gameModeRepository = FakeGameModeRepository(Result.success(listOf(GAMEMODE_2V2)))
         )
@@ -206,6 +214,7 @@ class HomeViewModelTest {
     @Test
     fun gameModeLoadFailureSetsErrorRow() = runTest {
         val vm = HomeViewModel(
+            ladderRepository = LadderRepository(),
             addonRepository = FakeAddonRepository(Result.success(listOf(ADDON_TBC))),
             gameModeRepository = FakeGameModeRepository(Result.failure(RuntimeException("Game mode error")))
         )
@@ -231,6 +240,7 @@ class HomeViewModelTest {
             }
         }
         val vm = HomeViewModel(
+            ladderRepository = LadderRepository(),
             addonRepository = FakeAddonRepository(Result.success(listOf(ADDON_TBC))),
             gameModeRepository = fakeGameModeRepo
         )
