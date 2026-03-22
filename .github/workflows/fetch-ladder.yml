@@ -21,11 +21,18 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Fetch ladder data from Blizzard API
+      - name: Fetch TBC Anniversary ladder data
         env:
           BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
           BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
-        run: python scripts/fetch_ladder.py
+        run: python scripts/fetch_tbc_anniversary.py
+
+      # Uncomment to enable retail ladder fetch:
+      # - name: Fetch Retail (Midnight) ladder data
+      #   env:
+      #     BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
+      #     BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
+      #   run: python scripts/fetch_midnight.py
 
       - name: Commit updated ladder data
         run: |

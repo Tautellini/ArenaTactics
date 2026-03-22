@@ -100,11 +100,16 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - There are **no history servers for modern expansions yet** (e.g., no "The War Within" server after Midnight launches). This may change in the future, which is why we always preserve data.
 - An addon is **selectable on the home screen** if it has any data at all (tactics, guides, or ladder). Each section tile (Tactics, Class Guides, Ladder) is individually enabled/disabled based on what data exists for that addon.
 ## Ladder Data Pipeline
-- PvP ladder data is fetched via `scripts/fetch_ladder.py` from the Blizzard Game Data API.
-- The script reads credentials from `secrets.properties` (gitignored) or environment variables (`BLIZZARD_CLIENT_ID`, `BLIZZARD_CLIENT_SECRET`).
+- PvP ladder data is fetched from the Blizzard Game Data API. **Each addon has its own fetch script** in `scripts/` (e.g., `fetch_tbc_anniversary.py`, `fetch_midnight.py`). Shared helpers live in `scripts/blizzard_api.py`.
+- Scripts read credentials from `secrets.properties` (gitignored) or environment variables (`BLIZZARD_CLIENT_ID`, `BLIZZARD_CLIENT_SECRET`).
 - Data is organized per-addon: `files/ladder/{addonId}/index.json` + `{region}_{bracket}.json`.
-- A GitHub Actions workflow (`.github/workflows/fetch-ladder.yml`) runs daily to refresh data.
-- Addon-to-API-namespace mapping is defined in the `ADDONS` list inside the script. Key namespaces: `dynamic-classicann-{region}` for TBC Anniversary, `dynamic-{region}` for retail.
+- A GitHub Actions workflow (`.github/workflows/fetch-ladder.yml`) runs daily to refresh data. Addon scripts are enabled/disabled independently in the workflow.
+- **Brutal efficiency is required for fetch scripts.** The Blizzard API has a hard rate limit of 36,000 requests/hour. Every call counts:
+  - **Deduplicate across brackets**: the same player in 2v2, 3v3, and 5v5 is resolved once. Character profile data (gear, talents, race, guild) is identical across brackets.
+  - **Never fetch redundant endpoints**: `pvp-summary` only returns links — skip it and call `pvp-bracket/{bracket}` directly.
+  - **No data available inline on the profile**: equipment, specializations, and pvp-bracket ratings are all separate endpoints. There is no combined endpoint.
+  - **Minimum calls per unique character**: profile (1) + equipment (1) + specializations (1, TBC only — retail has `active_spec` inline) + pvp-bracket per bracket (2–3). That's 5–6 calls per unique character.
+- Key namespaces: `dynamic-classicann-{region}` / `profile-classicann-{region}` for TBC Anniversary, `dynamic-{region}` / `profile-{region}` for retail.
 
 ## Spec Ordering
 - `specIds` in JSON data files are always **alphabetically sorted** — this is enforced by `Composition.init` and is required for stable IDs and deduplication.
