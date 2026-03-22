@@ -15,26 +15,6 @@
     "file": "eu_5v5.json"
   },
   {
-    "region": "items",
-    "bracket": "eu",
-    "file": "items_eu.json"
-  },
-  {
-    "region": "items",
-    "bracket": "us",
-    "file": "items_us.json"
-  },
-  {
-    "region": "players",
-    "bracket": "eu",
-    "file": "players_eu.json"
-  },
-  {
-    "region": "players",
-    "bracket": "us",
-    "file": "players_us.json"
-  },
-  {
     "region": "us",
     "bracket": "2v2",
     "file": "us_2v2.json"

@@ -412,10 +412,11 @@ def resolve_item_icons(items: dict) -> None:
 
 
 def write_index(addon_dir: Path):
-    """Write an index.json listing all snapshot files in the addon directory."""
+    """Write an index.json listing bracket snapshot files (excludes players/items files)."""
+    excluded_prefixes = ("players_", "items_")
     index = []
     for f in sorted(addon_dir.glob("*_*.json")):
-        if f.name == "index.json":
+        if f.name == "index.json" or f.name.startswith(excluded_prefixes):
             continue
         parts = f.stem.split("_", 1)
         if len(parts) == 2:
