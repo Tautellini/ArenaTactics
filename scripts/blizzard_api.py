@@ -346,20 +346,50 @@ def log_progress(i: int, total: int, start_time: float, prefix: str = "    "):
     print(f"{prefix}{i + 1}/{total} ({rate:.1f}/s, ~{eta_min}m{eta_sec:02d}s remaining)")
 
 
+ICON_CACHE_FILE = REPO_ROOT / "scripts" / ".icon_cache.json"
+
+
+def _load_icon_cache() -> dict[str, str]:
+    """Load persistent icon cache from disk."""
+    if ICON_CACHE_FILE.exists():
+        try:
+            return json.loads(ICON_CACHE_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def _save_icon_cache(cache: dict[str, str]) -> None:
+    """Save icon cache to disk."""
+    ICON_CACHE_FILE.write_text(json.dumps(cache, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 def resolve_item_icons(items: dict) -> None:
     """
     Resolve icon names for items using the Wowhead tooltip API.
+    Uses a persistent file cache so previously resolved icons are never re-fetched.
     No auth needed, no Blizzard rate limit impact.
-    Modifies items dict in place (adds 'icon' field, removes '_media_href').
+    Modifies items dict in place.
     """
+    icon_cache = _load_icon_cache()
+
+    # Apply cached icons first
+    cache_hits = 0
+    for item_id_str, item_data in items.items():
+        item_data.pop("_media_href", None)
+        if not item_data.get("icon") and item_id_str in icon_cache:
+            item_data["icon"] = icon_cache[item_id_str]
+            cache_hits += 1
+
     to_resolve = [(k, v) for k, v in items.items() if not v.get("icon")]
+    if cache_hits > 0:
+        print(f"    {cache_hits} icons from cache, {len(to_resolve)} to fetch")
     if not to_resolve:
         return
 
     resolved = 0
     t0 = time.time()
     for i, (item_id_str, item_data) in enumerate(to_resolve):
-        item_data.pop("_media_href", None)
         try:
             url = f"https://nether.wowhead.com/tooltip/item/{item_id_str}"
             req = urllib.request.Request(url)
@@ -368,18 +398,17 @@ def resolve_item_icons(items: dict) -> None:
                 icon = data.get("icon")
                 if icon:
                     item_data["icon"] = icon
+                    icon_cache[item_id_str] = icon
                     resolved += 1
         except Exception:
             pass
         if (i + 1) % 50 == 0:
             log_progress(i, len(to_resolve), t0)
 
-    # Clean up temp fields
-    for v in items.values():
-        v.pop("_media_href", None)
+    _save_icon_cache(icon_cache)
 
     elapsed = time.time() - t0
-    print(f"    Resolved {resolved}/{len(to_resolve)} item icons in {elapsed:.0f}s")
+    print(f"    Resolved {resolved}/{len(to_resolve)} new icons in {elapsed:.0f}s (cache now has {len(icon_cache)} entries)")
 
 
 def write_index(addon_dir: Path):
