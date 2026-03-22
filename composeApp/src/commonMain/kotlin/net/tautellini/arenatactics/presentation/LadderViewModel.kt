@@ -28,7 +28,8 @@ sealed class LadderState {
         val selectedRegion: String = "us",
         val selectedBracket: String = "2v2",
         val selectedClassId: String? = null,
-        val currentPage: Int = 0
+        val currentPage: Int = 0,
+        val selectedPlayerRank: Int? = null
     ) : LadderState() {
         val currentSnapshot: LadderSnapshot?
             get() = snapshots["${selectedRegion}_$selectedBracket"]
@@ -149,6 +150,11 @@ class LadderViewModel(
 
     fun setPage(page: Int) {
         val s = _state.value as? LadderState.Success ?: return
-        _state.value = s.copy(currentPage = page.coerceIn(0, s.totalFilteredPages - 1))
+        _state.value = s.copy(currentPage = page.coerceIn(0, s.totalFilteredPages - 1), selectedPlayerRank = null)
+    }
+
+    fun selectPlayer(rank: Int?) {
+        val s = _state.value as? LadderState.Success ?: return
+        _state.value = s.copy(selectedPlayerRank = if (s.selectedPlayerRank == rank) null else rank)
     }
 }

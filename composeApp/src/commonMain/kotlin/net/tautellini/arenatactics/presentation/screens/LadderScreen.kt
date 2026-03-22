@@ -55,7 +55,8 @@ fun LadderScreen(viewModel: LadderViewModel) {
                 onRegionSelect = viewModel::selectRegion,
                 onBracketSelect = viewModel::selectBracket,
                 onClassSelect = viewModel::selectClass,
-                onPageSelect = viewModel::setPage
+                onPageSelect = viewModel::setPage,
+                onPlayerSelect = viewModel::selectPlayer
             )
         }
     }
@@ -67,7 +68,8 @@ private fun LadderContent(
     onRegionSelect: (String) -> Unit,
     onBracketSelect: (String) -> Unit,
     onClassSelect: (String?) -> Unit,
-    onPageSelect: (Int) -> Unit
+    onPageSelect: (Int) -> Unit,
+    onPlayerSelect: (Int?) -> Unit
 ) {
     LazyColumn(
         verticalArrangement = Arrangement.spacedBy(16.dp),
@@ -164,7 +166,16 @@ private fun LadderContent(
             // Paged entries
             state.pagedEntries.forEachIndexed { index, entry ->
                 item(key = "entry_${state.selectedBracket}_${state.currentPage}_$index") {
-                    TopEntryRow(entry = entry)
+                    Column {
+                        TopEntryRow(
+                            entry = entry,
+                            isSelected = state.selectedPlayerRank == entry.rank,
+                            onClick = { onPlayerSelect(entry.rank) }
+                        )
+                        if (state.selectedPlayerRank == entry.rank) {
+                            PlayerDetailCard(entry)
+                        }
+                    }
                 }
             }
 
@@ -538,7 +549,11 @@ private fun SpecDistributionRow(spec: SpecDistribution, maxCount: Int) {
 // ─── Top Players Table ──────────────────────────────────────────────────────
 
 @Composable
-private fun TopEntryRow(entry: LadderEntry?) {
+private fun TopEntryRow(
+    entry: LadderEntry?,
+    isSelected: Boolean = false,
+    onClick: (() -> Unit)? = null
+) {
     val isHeader = entry == null
     val textColor = if (isHeader) TextSecondary else TextPrimary
     val weight = if (isHeader) FontWeight.Medium else FontWeight.Normal
@@ -546,6 +561,12 @@ private fun TopEntryRow(entry: LadderEntry?) {
     val nameColor = if (isHeader) TextSecondary else {
         entry?.classId?.let { classColor(it) } ?: TextPrimary
     }
+    val rowBg = when {
+        isHeader -> Color.Transparent
+        isSelected -> CardElevated
+        else -> CardColor.copy(alpha = 0.5f)
+    }
+    val borderMod = if (isSelected) Modifier.border(1.dp, Primary, RoundedCornerShape(8.dp)) else Modifier
 
     Row(
         modifier = Modifier
@@ -553,7 +574,9 @@ private fun TopEntryRow(entry: LadderEntry?) {
             .then(
                 if (!isHeader) Modifier
                     .clip(RoundedCornerShape(8.dp))
-                    .background(CardColor.copy(alpha = 0.5f))
+                    .then(borderMod)
+                    .background(rowBg)
+                    .then(if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier)
                     .padding(horizontal = 12.dp, vertical = 8.dp)
                 else Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
             ),
@@ -595,6 +618,110 @@ private fun TopEntryRow(entry: LadderEntry?) {
             color = textColor, fontWeight = weight, fontSize = fontSize,
             modifier = Modifier.width(70.dp), textAlign = TextAlign.End
         )
+    }
+}
+
+@Composable
+private fun PlayerDetailCard(entry: LadderEntry) {
+    val classClr = entry.classId?.let { classColor(it) } ?: TextSecondary
+    val shape = RoundedCornerShape(bottomStart = 12.dp, bottomEnd = 12.dp)
+
+    Surface(
+        color = CardColor,
+        shape = shape,
+        modifier = Modifier
+            .fillMaxWidth()
+            .border(1.dp, Primary.copy(alpha = 0.3f), shape)
+    ) {
+        Column(
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            // Header: spec icon + name + realm
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                // Spec icon
+                val specIcon = entry.specId?.let { SPEC_ICON_NAMES[it] }
+                    ?: entry.classId?.let { CLASS_ICON_NAMES[it] }
+                if (specIcon != null) {
+                    Box(
+                        modifier = Modifier
+                            .size(44.dp)
+                            .clip(RoundedCornerShape(8.dp))
+                            .background(classClr)
+                            .padding(3.dp)
+                    ) {
+                        AsyncImage(
+                            model = WowheadIcons.large(specIcon),
+                            contentDescription = entry.specId ?: entry.classId,
+                            modifier = Modifier.size(38.dp).clip(RoundedCornerShape(6.dp))
+                        )
+                    }
+                }
+
+                Column {
+                    Text(
+                        text = entry.characterName,
+                        color = classClr,
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                    val subtitle = buildList {
+                        entry.specId?.let { add(specDisplayName(it)) }
+                            ?: entry.classId?.let { add(it.replaceFirstChar { c -> c.uppercase() }) }
+                        entry.race?.let { add(it) }
+                        if (entry.realmSlug.isNotEmpty()) add(entry.realmSlug.replace("-", " ").replaceFirstChar { it.uppercase() })
+                    }.joinToString(" · ")
+                    if (subtitle.isNotEmpty()) {
+                        Text(subtitle, color = TextSecondary, fontSize = 12.sp)
+                    }
+                }
+            }
+
+            // Guild
+            if (!entry.guild.isNullOrEmpty()) {
+                Text(
+                    text = "< ${entry.guild} >",
+                    color = TextSecondary.copy(alpha = 0.8f),
+                    fontSize = 13.sp
+                )
+            }
+
+            // Stats row
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                StatChip("Rating", "${entry.rating}", Primary)
+                StatChip("Wins", "${entry.wins}", Color(0xFF22C55E))
+                StatChip("Losses", "${entry.losses}", Color(0xFFEF4444))
+                val total = entry.wins + entry.losses
+                if (total > 0) {
+                    val winRate = (entry.wins * 100.0 / total).let { ((it * 10).toLong() / 10.0) }
+                    StatChip("Win Rate", "$winRate%", TextSecondary)
+                }
+            }
+
+            // Faction
+            if (!entry.faction.isNullOrEmpty()) {
+                val factionColor = if (entry.faction == "ALLIANCE") Color(0xFF3B82F6) else Color(0xFFEF4444)
+                Text(
+                    text = entry.faction!!.lowercase().replaceFirstChar { it.uppercase() },
+                    color = factionColor,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Medium
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun StatChip(label: String, value: String, valueColor: Color) {
+    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Text(value, color = valueColor, fontSize = 16.sp, fontWeight = FontWeight.Bold)
+        Text(label, color = TextSecondary, fontSize = 10.sp)
     }
 }
 
