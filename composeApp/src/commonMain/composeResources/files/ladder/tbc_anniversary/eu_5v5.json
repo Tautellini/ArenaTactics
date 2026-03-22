@@ -5,10 +5,11 @@
   "fetchedAt": "2026-03-22T19:25:21Z",
   "totalEntries": 5021,
   "ratingCutoffs": {
-    "gladiator": 2211,
+    "gladiator": 2051,
     "duelist": 1819,
     "rival": 1614,
-    "challenger": 1475
+    "challenger": 1475,
+    "title_gladiator": 2211
   },
   "specDistribution": [],
   "topEntries": [
