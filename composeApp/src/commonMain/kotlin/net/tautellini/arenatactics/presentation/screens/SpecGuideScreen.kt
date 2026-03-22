@@ -27,6 +27,7 @@ import net.tautellini.arenatactics.data.model.WowClass
 import net.tautellini.arenatactics.data.model.WowSpec
 import net.tautellini.arenatactics.data.model.WowheadIcons
 import net.tautellini.arenatactics.openUrl
+import net.tautellini.arenatactics.presentation.screens.components.WithItemTooltip
 import net.tautellini.arenatactics.domain.EnchantUsage
 import net.tautellini.arenatactics.domain.ItemUsage
 import net.tautellini.arenatactics.domain.SlotBreakdown
@@ -250,64 +251,64 @@ private fun ItemRow(item: ItemUsage, tooltipData: ItemTooltipData? = null) {
     val fraction = (item.percentage / 100.0).coerceIn(0.0, 1.0).toFloat()
     val iconName = tooltipData?.icon ?: "inv_misc_questionmark"
 
-    Row(
-        verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier
-            .fillMaxWidth()
-            .clip(RoundedCornerShape(6.dp))
-            .clickable { if (item.itemId > 0) openUrl("https://www.wowhead.com/tbc/item=${item.itemId}") }
-    ) {
-        // Item icon
-        AsyncImage(
-            model = WowheadIcons.medium(iconName),
-            contentDescription = item.name,
+    WithItemTooltip(tooltipData) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier
-                .size(28.dp)
-                .clip(RoundedCornerShape(4.dp))
-                .border(1.dp, qualityColor.copy(alpha = 0.4f), RoundedCornerShape(4.dp))
-        )
-
-        Spacer(Modifier.width(6.dp))
-
-        // Usage bar with name overlay
-        Box(modifier = Modifier.weight(1f)) {
-            Box(
+                .fillMaxWidth()
+                .clip(RoundedCornerShape(6.dp))
+                .clickable { if (item.itemId > 0) openUrl("https://www.wowhead.com/tbc/item=${item.itemId}") }
+        ) {
+            AsyncImage(
+                model = WowheadIcons.medium(iconName),
+                contentDescription = item.name,
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .height(28.dp)
-                    .clip(RoundedCornerShape(6.dp))
-                    .background(Background)
-            ) {
+                    .size(28.dp)
+                    .clip(RoundedCornerShape(4.dp))
+                    .border(1.dp, qualityColor.copy(alpha = 0.4f), RoundedCornerShape(4.dp))
+            )
+
+            Spacer(Modifier.width(6.dp))
+
+            Box(modifier = Modifier.weight(1f)) {
                 Box(
                     modifier = Modifier
-                        .fillMaxHeight()
-                        .fillMaxWidth(fraction)
+                        .fillMaxWidth()
+                        .height(28.dp)
                         .clip(RoundedCornerShape(6.dp))
-                        .background(qualityColor.copy(alpha = 0.15f))
-                )
+                        .background(Background)
+                ) {
+                    Box(
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .fillMaxWidth(fraction)
+                            .clip(RoundedCornerShape(6.dp))
+                            .background(qualityColor.copy(alpha = 0.15f))
+                    )
+                }
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier.height(28.dp).padding(horizontal = 8.dp)
+                ) {
+                    Text(
+                        item.name,
+                        color = qualityColor,
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Medium,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        modifier = Modifier.weight(1f)
+                    )
+                }
             }
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.height(28.dp).padding(horizontal = 8.dp)
-            ) {
-                Text(
-                    item.name,
-                    color = qualityColor,
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.Medium,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
-                    modifier = Modifier.weight(1f)
-                )
-            }
-        }
 
-        Spacer(Modifier.width(8.dp))
-        Text(
-            "${item.percentage}%",
-            color = TextSecondary,
-            fontSize = 12.sp,
-            modifier = Modifier.width(44.dp)
-        )
+            Spacer(Modifier.width(8.dp))
+            Text(
+                "${item.percentage}%",
+                color = TextSecondary,
+                fontSize = 12.sp,
+                modifier = Modifier.width(44.dp)
+            )
+        }
     }
 }

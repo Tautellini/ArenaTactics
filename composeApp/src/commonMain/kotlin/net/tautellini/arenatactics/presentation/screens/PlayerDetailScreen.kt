@@ -13,9 +13,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -34,7 +32,7 @@ import net.tautellini.arenatactics.data.model.WowheadIcons
 import net.tautellini.arenatactics.openUrl
 import net.tautellini.arenatactics.presentation.PlayerDetailState
 import net.tautellini.arenatactics.presentation.PlayerDetailViewModel
-import net.tautellini.arenatactics.presentation.screens.components.ItemTooltipPopup
+import net.tautellini.arenatactics.presentation.screens.components.WithItemTooltip
 import net.tautellini.arenatactics.presentation.theme.*
 
 // ─── Icon maps (shared with LadderScreen via convention — extract later if needed) ──
@@ -271,18 +269,14 @@ private fun BracketRatingCard(bracket: String, rating: PvpBracketRating) {
 private fun EquipmentItemCard(item: EquippedItem, tooltipData: ItemTooltipData? = null) {
     val qualityColor = QualityColors[item.quality] ?: TextPrimary
     val shape = RoundedCornerShape(10.dp)
-    var showTooltip by remember { mutableStateOf(false) }
 
-    Box {
+    WithItemTooltip(tooltipData, playerEnchant = item.enchant, playerGems = item.gems) {
         Surface(
             color = CardColor,
             shape = shape,
             modifier = Modifier
                 .widthIn(min = 260.dp, max = 400.dp)
-                .clickable {
-                    if (tooltipData != null) showTooltip = !showTooltip
-                    else if (item.itemId > 0) openUrl("https://www.wowhead.com/tbc/item=${item.itemId}")
-                }
+                .clickable { if (item.itemId > 0) openUrl("https://www.wowhead.com/tbc/item=${item.itemId}") }
         ) {
             Row(
                 modifier = Modifier.padding(10.dp),
@@ -316,19 +310,6 @@ private fun EquipmentItemCard(item: EquippedItem, tooltipData: ItemTooltipData? 
                     }
                 }
             }
-        }
-
-        if (showTooltip && tooltipData != null) {
-            ItemTooltipPopup(
-                item = tooltipData,
-                playerEnchant = item.enchant,
-                playerGems = item.gems,
-                onDismiss = { showTooltip = false },
-                onWowheadClick = {
-                    showTooltip = false
-                    openUrl("https://www.wowhead.com/tbc/item=${item.itemId}")
-                }
-            )
         }
     }
 }

@@ -1,16 +1,21 @@
 package net.tautellini.arenatactics.presentation.screens.components
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.border
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.PointerEventType
+import androidx.compose.ui.input.pointer.onPointerEvent
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Popup
@@ -28,18 +33,47 @@ private val GreenText = Color(0xFF1EFF00)
 private val GrayText = Color(0xFF9D9D9D)
 private val YellowText = Color(0xFFFFD100)
 private val TooltipBg = Color(0xFF1A1A2E)
-private val TooltipBorder = Color(0xFF4A4A6A)
 
+/**
+ * Wraps content with a hover-triggered item tooltip.
+ * Shows WoW-style tooltip near the mouse on hover.
+ * The content itself handles click (e.g., navigate to Wowhead).
+ */
+@OptIn(ExperimentalComposeUiApi::class)
 @Composable
-fun ItemTooltipPopup(
-    item: ItemTooltipData,
+fun WithItemTooltip(
+    tooltipData: ItemTooltipData?,
     playerEnchant: String? = null,
     playerGems: List<String> = emptyList(),
-    onDismiss: () -> Unit,
-    onWowheadClick: (() -> Unit)? = null
+    content: @Composable () -> Unit
 ) {
-    Popup(onDismissRequest = onDismiss) {
-        ItemTooltipContent(item, playerEnchant, playerGems, onWowheadClick)
+    if (tooltipData == null) {
+        content()
+        return
+    }
+
+    var isHovered by remember { mutableStateOf(false) }
+    var pointerOffset by remember { mutableStateOf(Offset.Zero) }
+
+    Box(
+        modifier = Modifier
+            .onPointerEvent(PointerEventType.Enter) { isHovered = true }
+            .onPointerEvent(PointerEventType.Exit) { isHovered = false }
+            .onPointerEvent(PointerEventType.Move) {
+                val pos = it.changes.firstOrNull()?.position
+                if (pos != null) pointerOffset = pos
+            }
+    ) {
+        content()
+
+        if (isHovered) {
+            Popup(
+                alignment = Alignment.TopStart,
+                offset = IntOffset(pointerOffset.x.toInt() + 16, pointerOffset.y.toInt() - 8)
+            ) {
+                ItemTooltipContent(tooltipData, playerEnchant, playerGems)
+            }
+        }
     }
 }
 
@@ -47,8 +81,7 @@ fun ItemTooltipPopup(
 fun ItemTooltipContent(
     item: ItemTooltipData,
     playerEnchant: String? = null,
-    playerGems: List<String> = emptyList(),
-    onWowheadClick: (() -> Unit)? = null
+    playerGems: List<String> = emptyList()
 ) {
     val qualityColor = QualityColors[item.quality] ?: Color.White
     val shape = RoundedCornerShape(8.dp)
@@ -60,27 +93,22 @@ fun ItemTooltipContent(
         modifier = Modifier
             .widthIn(min = 240.dp, max = 320.dp)
             .border(1.dp, qualityColor.copy(alpha = 0.5f), shape)
-            .then(if (onWowheadClick != null) Modifier.clickable(onClick = onWowheadClick) else Modifier)
     ) {
         Column(
             modifier = Modifier.padding(12.dp),
             verticalArrangement = Arrangement.spacedBy(2.dp)
         ) {
-            // Item name
             Text(item.name, color = qualityColor, fontSize = 14.sp, fontWeight = FontWeight.Bold)
 
-            // Slot + subclass (e.g. "Head · Cloth")
             val slotLine = listOfNotNull(item.slotName, item.itemSubclass).joinToString(" · ")
             if (slotLine.isNotEmpty()) {
                 Text(slotLine, color = Color.White, fontSize = 11.sp)
             }
 
-            // Binding
             if (!item.binding.isNullOrEmpty()) {
                 Text(item.binding!!, color = Color.White, fontSize = 11.sp)
             }
 
-            // Weapon damage / speed
             if (item.weaponDamage != null) {
                 Row(
                     modifier = Modifier.fillMaxWidth(),
@@ -96,36 +124,30 @@ fun ItemTooltipContent(
                 }
             }
 
-            // Armor
             if (item.armor != null && item.armor > 0) {
                 Text("${item.armor} Armor", color = Color.White, fontSize = 11.sp)
             }
 
-            // Stats
             item.stats.forEach { stat ->
                 val isEquip = stat.startsWith("Equip:")
                 Text(stat, color = if (isEquip) GreenText else Color.White, fontSize = 11.sp)
             }
 
-            // Spells (equip effects)
             item.spells.forEach { spell ->
                 Text(spell, color = GreenText, fontSize = 11.sp)
             }
 
-            // Player enchant
             if (!playerEnchant.isNullOrEmpty()) {
                 Spacer(Modifier.height(2.dp))
                 Text("Enchanted: $playerEnchant", color = GreenText, fontSize = 11.sp)
             }
 
-            // Player gems
             if (playerGems.isNotEmpty()) {
                 playerGems.forEach { gem ->
                     Text(gem, color = GreenText, fontSize = 11.sp)
                 }
             }
 
-            // Set
             if (!item.setName.isNullOrEmpty()) {
                 Spacer(Modifier.height(4.dp))
                 Text(item.setName!!, color = YellowText, fontSize = 11.sp, fontWeight = FontWeight.SemiBold)
@@ -134,19 +156,12 @@ fun ItemTooltipContent(
                 }
             }
 
-            // Requirements
             if (!item.requiredLevel.isNullOrEmpty()) {
                 Spacer(Modifier.height(2.dp))
                 Text(item.requiredLevel!!, color = Color.White, fontSize = 10.sp)
             }
             if (!item.requiredClasses.isNullOrEmpty()) {
                 Text(item.requiredClasses!!, color = Color.White, fontSize = 10.sp)
-            }
-
-            // Wowhead link hint
-            if (onWowheadClick != null) {
-                Spacer(Modifier.height(4.dp))
-                Text("Click for Wowhead →", color = qualityColor.copy(alpha = 0.6f), fontSize = 10.sp)
             }
         }
     }
