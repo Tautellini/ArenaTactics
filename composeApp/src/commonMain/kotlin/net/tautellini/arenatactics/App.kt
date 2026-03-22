@@ -123,18 +123,25 @@ fun App() {
             Column(Modifier.fillMaxSize().background(Background)) {
 
                 // Persistent AppHeader on all non-home screens
+                // Track whether the home screen has been composed at least once.
+                // Shared element transitions only work if both ends have been composed.
+                var hasVisitedHome by remember { mutableStateOf(currentScreen is Screen.AddonSelection) }
+                if (currentScreen is Screen.AddonSelection) hasVisitedHome = true
+
                 AnimatedVisibility(
                     visible = currentScreen !is Screen.AddonSelection,
                     enter = fadeIn(tween(200)) + slideInVertically(tween(200)) { -it },
                     exit = fadeOut(tween(150)) + slideOutVertically(tween(150)) { -it }
                 ) {
                     val animScope = this
-                    val shieldMod = with(sharedScope) {
-                        Modifier.sharedElement(
-                            sharedContentState = rememberSharedContentState(key = "shield"),
-                            animatedVisibilityScope = animScope
-                        )
-                    }
+                    val shieldMod = if (hasVisitedHome) {
+                        with(sharedScope) {
+                            Modifier.sharedElement(
+                                sharedContentState = rememberSharedContentState(key = "shield"),
+                                animatedVisibilityScope = animScope
+                            )
+                        }
+                    } else Modifier
                     AppHeader(
                         currentScreen = currentScreen,
                         homeViewModel = homeViewModel,
