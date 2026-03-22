@@ -2,7 +2,7 @@
   "region": "eu",
   "bracket": "5v5",
   "seasonId": 1,
-  "fetchedAt": "2026-03-22T14:26:43Z",
+  "fetchedAt": "2026-03-22T16:05:13Z",
   "totalEntries": 5013,
   "ratingCutoffs": {
     "gladiator": 2211,
@@ -20,7 +20,10 @@
       "wins": 254,
       "losses": 13,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Sufurki",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 2,
@@ -30,7 +33,10 @@
       "wins": 252,
       "losses": 17,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "The Cabal",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 3,
@@ -40,7 +46,10 @@
       "wins": 292,
       "losses": 15,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "The Cabal",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 4,
@@ -50,7 +59,10 @@
       "wins": 134,
       "losses": 7,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Gnome",
+      "guild": "Sufurki",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 5,
@@ -60,7 +72,10 @@
       "wins": 123,
       "losses": 4,
       "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "warrior_fury",
+      "race": "Dwarf",
+      "guild": "Sufurki",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 6,
@@ -70,7 +85,10 @@
       "wins": 179,
       "losses": 10,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "The Cabal",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 7,
@@ -80,7 +98,10 @@
       "wins": 99,
       "losses": 10,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "The Cabal",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "wins": 119,
       "losses": 8,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Dwarf",
+      "guild": "The Cabal",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 9,
@@ -100,7 +124,10 @@
       "wins": 101,
       "losses": 11,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 10,
@@ -110,7 +137,10 @@
       "wins": 76,
       "losses": 17,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Camel Squad H",
+      "faction": "HORDE"
     },
     {
       "rank": 11,
@@ -120,7 +150,10 @@
       "wins": 64,
       "losses": 12,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 12,
@@ -130,7 +163,10 @@
       "wins": 75,
       "losses": 17,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 13,
@@ -140,7 +176,10 @@
       "wins": 72,
       "losses": 4,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "The Cabal",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 14,
@@ -150,7 +189,10 @@
       "wins": 105,
       "losses": 20,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Troll",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 15,
@@ -160,7 +202,10 @@
       "wins": 80,
       "losses": 8,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Troll",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 15,
@@ -170,7 +215,10 @@
       "wins": 88,
       "losses": 14,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 17,
@@ -180,7 +228,10 @@
       "wins": 96,
       "losses": 11,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 18,
@@ -190,7 +241,10 @@
       "wins": 80,
       "losses": 11,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 19,
@@ -200,7 +254,10 @@
       "wins": 147,
       "losses": 44,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Camel Squad H",
+      "faction": "HORDE"
     },
     {
       "rank": 20,
@@ -210,7 +267,10 @@
       "wins": 72,
       "losses": 22,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "The Cabal",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 21,
@@ -220,7 +280,10 @@
       "wins": 92,
       "losses": 10,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 22,
@@ -230,7 +293,10 @@
       "wins": 107,
       "losses": 21,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_balance",
+      "race": "Tauren",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 22,
@@ -240,7 +306,10 @@
       "wins": 72,
       "losses": 16,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Troll",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 24,
@@ -250,7 +319,10 @@
       "wins": 59,
       "losses": 13,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 25,
@@ -260,7 +332,10 @@
       "wins": 75,
       "losses": 10,
       "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "warlock_destruction",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 26,
@@ -270,17 +345,10 @@
       "wins": 70,
       "losses": 14,
       "classId": "mage",
-      "specId": "mage_frost"
-    },
-    {
-      "rank": 27,
-      "characterName": "Dadax",
-      "realmSlug": "spineshatter",
-      "rating": 2256,
-      "wins": 66,
-      "losses": 14,
-      "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Vision",
+      "faction": "HORDE"
     },
     {
       "rank": 27,
@@ -290,7 +358,23 @@
       "wins": 60,
       "losses": 17,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "The Cabal",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 27,
+      "characterName": "Dadax",
+      "realmSlug": "spineshatter",
+      "rating": 2256,
+      "wins": 66,
+      "losses": 14,
+      "classId": "druid",
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 27,
@@ -300,7 +384,10 @@
       "wins": 103,
       "losses": 60,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "The Fel Cartel",
+      "faction": "HORDE"
     },
     {
       "rank": 30,
@@ -310,7 +397,10 @@
       "wins": 92,
       "losses": 41,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Draenei",
+      "guild": "TURBOTIME",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 31,
@@ -320,7 +410,10 @@
       "wins": 92,
       "losses": 42,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "TURBOTIME",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 32,
@@ -330,17 +423,10 @@
       "wins": 87,
       "losses": 37,
       "classId": "warlock",
-      "specId": "warlock_destruction"
-    },
-    {
-      "rank": 33,
-      "characterName": "Namoos",
-      "realmSlug": "spineshatter",
-      "rating": 2250,
-      "wins": 67,
-      "losses": 20,
-      "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "warlock_destruction",
+      "race": "Human",
+      "guild": "Huddel",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 33,
@@ -350,7 +436,23 @@
       "wins": 79,
       "losses": 34,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Huddel",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 33,
+      "characterName": "Namoos",
+      "realmSlug": "spineshatter",
+      "rating": 2250,
+      "wins": 67,
+      "losses": 20,
+      "classId": "shaman",
+      "specId": "shaman_elemental",
+      "race": "Tauren",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 35,
@@ -360,7 +462,10 @@
       "wins": 59,
       "losses": 9,
       "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "warlock_destruction",
+      "race": "Undead",
+      "guild": "Camel Squad H",
+      "faction": "HORDE"
     },
     {
       "rank": 35,
@@ -370,37 +475,10 @@
       "wins": 59,
       "losses": 9,
       "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 37,
-      "characterName": "Mds",
-      "realmSlug": "spineshatter",
-      "rating": 2244,
-      "wins": 48,
-      "losses": 13,
-      "classId": "shaman",
-      "specId": "shaman_restoration"
-    },
-    {
-      "rank": 37,
-      "characterName": "Ðreschnuu",
-      "realmSlug": "spineshatter",
-      "rating": 2244,
-      "wins": 48,
-      "losses": 13,
-      "classId": "warlock",
-      "specId": "warlock_destruction"
-    },
-    {
-      "rank": 37,
-      "characterName": "Miyukix",
-      "realmSlug": "spineshatter",
-      "rating": 2244,
-      "wins": 48,
-      "losses": 13,
-      "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Progress",
+      "faction": "HORDE"
     },
     {
       "rank": 37,
@@ -410,7 +488,10 @@
       "wins": 48,
       "losses": 13,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Undead",
+      "guild": "uh oh here we go again",
+      "faction": "HORDE"
     },
     {
       "rank": 37,
@@ -420,7 +501,36 @@
       "wins": 48,
       "losses": 13,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "uh oh here we go again",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 37,
+      "characterName": "Ðreschnuu",
+      "realmSlug": "spineshatter",
+      "rating": 2244,
+      "wins": 48,
+      "losses": 13,
+      "classId": "warlock",
+      "specId": "warlock_destruction",
+      "race": "Orc",
+      "guild": null,
+      "faction": "HORDE"
+    },
+    {
+      "rank": 37,
+      "characterName": "Miyukix",
+      "realmSlug": "spineshatter",
+      "rating": 2244,
+      "wins": 48,
+      "losses": 13,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "uh oh here we go again",
+      "faction": "HORDE"
     },
     {
       "rank": 37,
@@ -430,7 +540,23 @@
       "wins": 65,
       "losses": 26,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "TURBOTIME",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 37,
+      "characterName": "Mds",
+      "realmSlug": "spineshatter",
+      "rating": 2244,
+      "wins": 48,
+      "losses": 13,
+      "classId": "shaman",
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "uh oh here we go again",
+      "faction": "HORDE"
     },
     {
       "rank": 43,
@@ -440,7 +566,10 @@
       "wins": 54,
       "losses": 6,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 44,
@@ -450,7 +579,10 @@
       "wins": 72,
       "losses": 16,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": "Hopium",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 45,
@@ -460,7 +592,10 @@
       "wins": 105,
       "losses": 52,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "SCRUBCLUB",
+      "faction": "HORDE"
     },
     {
       "rank": 46,
@@ -470,17 +605,10 @@
       "wins": 56,
       "losses": 7,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
-    },
-    {
-      "rank": 46,
-      "characterName": "Wseed",
-      "realmSlug": "spineshatter",
-      "rating": 2227,
-      "wins": 56,
-      "losses": 7,
-      "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Numen",
+      "faction": "HORDE"
     },
     {
       "rank": 46,
@@ -490,7 +618,23 @@
       "wins": 58,
       "losses": 8,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Troll",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 46,
+      "characterName": "Wseed",
+      "realmSlug": "spineshatter",
+      "rating": 2227,
+      "wins": 56,
+      "losses": 7,
+      "classId": "warlock",
+      "specId": "warlock_demonology",
+      "race": "Undead",
+      "guild": "is a problem",
+      "faction": "HORDE"
     },
     {
       "rank": 49,
@@ -500,7 +644,10 @@
       "wins": 87,
       "losses": 39,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Troll",
+      "guild": "SCRUBCLUB",
+      "faction": "HORDE"
     },
     {
       "rank": 50,
@@ -510,7 +657,10 @@
       "wins": 48,
       "losses": 7,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 51,
@@ -520,7 +670,10 @@
       "wins": 64,
       "losses": 7,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Undead",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 52,
@@ -530,7 +683,10 @@
       "wins": 60,
       "losses": 6,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 52,
@@ -540,7 +696,10 @@
       "wins": 90,
       "losses": 67,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "Noot Noot",
+      "faction": "HORDE"
     },
     {
       "rank": 54,
@@ -550,7 +709,10 @@
       "wins": 53,
       "losses": 7,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 55,
@@ -560,7 +722,10 @@
       "wins": 86,
       "losses": 37,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Dwarf",
+      "guild": "Relic",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 55,
@@ -570,7 +735,10 @@
       "wins": 142,
       "losses": 72,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "nice guys",
+      "faction": "HORDE"
     },
     {
       "rank": 55,
@@ -580,7 +748,10 @@
       "wins": 72,
       "losses": 57,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Noot Noot",
+      "faction": "HORDE"
     },
     {
       "rank": 58,
@@ -590,7 +761,10 @@
       "wins": 73,
       "losses": 20,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "shaman_enhancement",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 59,
@@ -600,7 +774,10 @@
       "wins": 64,
       "losses": 28,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "SCRUBCLUB",
+      "faction": "HORDE"
     },
     {
       "rank": 60,
@@ -610,17 +787,10 @@
       "wins": 109,
       "losses": 80,
       "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 61,
-      "characterName": "Johô",
-      "realmSlug": "spineshatter",
-      "rating": 2207,
-      "wins": 54,
-      "losses": 12,
-      "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Noot Noot",
+      "faction": "HORDE"
     },
     {
       "rank": 61,
@@ -630,7 +800,10 @@
       "wins": 122,
       "losses": 63,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": "alg eins",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 61,
@@ -640,7 +813,10 @@
       "wins": 122,
       "losses": 63,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "alg eins",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 61,
@@ -650,7 +826,23 @@
       "wins": 118,
       "losses": 68,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "alg eins",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 61,
+      "characterName": "Johô",
+      "realmSlug": "spineshatter",
+      "rating": 2207,
+      "wins": 54,
+      "losses": 12,
+      "classId": "warrior",
+      "specId": "warrior_arms",
+      "race": "Tauren",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 65,
@@ -660,7 +852,10 @@
       "wins": 61,
       "losses": 33,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Fishtank",
+      "faction": "HORDE"
     },
     {
       "rank": 66,
@@ -670,7 +865,10 @@
       "wins": 96,
       "losses": 50,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "alg eins",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 67,
@@ -680,7 +878,10 @@
       "wins": 58,
       "losses": 22,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 68,
@@ -690,17 +891,10 @@
       "wins": 83,
       "losses": 46,
       "classId": "paladin",
-      "specId": "paladin_retribution"
-    },
-    {
-      "rank": 69,
-      "characterName": "Korvandawgxz",
-      "realmSlug": "spineshatter",
-      "rating": 2196,
-      "wins": 64,
-      "losses": 37,
-      "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "Professional Casual",
+      "faction": "HORDE"
     },
     {
       "rank": 69,
@@ -710,7 +904,23 @@
       "wins": 64,
       "losses": 37,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_fury",
+      "race": "Orc",
+      "guild": "this is fine",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 69,
+      "characterName": "Korvandawgxz",
+      "realmSlug": "spineshatter",
+      "rating": 2196,
+      "wins": 64,
+      "losses": 37,
+      "classId": "hunter",
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "Cezare PUGS",
+      "faction": "HORDE"
     },
     {
       "rank": 71,
@@ -720,7 +930,10 @@
       "wins": 62,
       "losses": 22,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "SCRUBCLUB",
+      "faction": "HORDE"
     },
     {
       "rank": 71,
@@ -730,17 +943,10 @@
       "wins": 86,
       "losses": 57,
       "classId": "mage",
-      "specId": "mage_frost"
-    },
-    {
-      "rank": 73,
-      "characterName": "Pikkulusti",
-      "realmSlug": "spineshatter",
-      "rating": 2192,
-      "wins": 90,
-      "losses": 43,
-      "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Soil",
+      "faction": "HORDE"
     },
     {
       "rank": 73,
@@ -750,27 +956,23 @@
       "wins": 90,
       "losses": 43,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "TERÄS",
+      "faction": "ALLIANCE"
     },
     {
-      "rank": 75,
-      "characterName": "Prestto",
+      "rank": 73,
+      "characterName": "Pikkulusti",
       "realmSlug": "spineshatter",
-      "rating": 2188,
-      "wins": 59,
-      "losses": 10,
-      "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 75,
-      "characterName": "Qpidq",
-      "realmSlug": "spineshatter",
-      "rating": 2188,
-      "wins": 59,
-      "losses": 13,
-      "classId": "hunter",
-      "specId": "hunter_marksmanship"
+      "rating": 2192,
+      "wins": 90,
+      "losses": 43,
+      "classId": "shaman",
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 75,
@@ -780,7 +982,36 @@
       "wins": 59,
       "losses": 13,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Hopium",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 75,
+      "characterName": "Prestto",
+      "realmSlug": "spineshatter",
+      "rating": 2188,
+      "wins": 59,
+      "losses": 10,
+      "classId": "warrior",
+      "specId": "warrior_arms",
+      "race": "Undead",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 75,
+      "characterName": "Qpidq",
+      "realmSlug": "spineshatter",
+      "rating": 2188,
+      "wins": 59,
+      "losses": 13,
+      "classId": "hunter",
+      "specId": "hunter_marksmanship",
+      "race": "Dwarf",
+      "guild": "Hopium",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 78,
@@ -790,27 +1021,10 @@
       "wins": 118,
       "losses": 61,
       "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 79,
-      "characterName": "Oriüs",
-      "realmSlug": "spineshatter",
-      "rating": 2181,
-      "wins": 55,
-      "losses": 21,
-      "classId": "druid",
-      "specId": "druid_restoration"
-    },
-    {
-      "rank": 79,
-      "characterName": "Liruat",
-      "realmSlug": "spineshatter",
-      "rating": 2181,
-      "wins": 55,
-      "losses": 21,
-      "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "warrior_arms",
+      "race": "Tauren",
+      "guild": "Ach Ja",
+      "faction": "HORDE"
     },
     {
       "rank": 79,
@@ -820,7 +1034,36 @@
       "wins": 55,
       "losses": 21,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "too old for this",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 79,
+      "characterName": "Oriüs",
+      "realmSlug": "spineshatter",
+      "rating": 2181,
+      "wins": 55,
+      "losses": 21,
+      "classId": "druid",
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Mala",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 79,
+      "characterName": "Liruat",
+      "realmSlug": "spineshatter",
+      "rating": 2181,
+      "wins": 55,
+      "losses": 21,
+      "classId": "shaman",
+      "specId": "shaman_enhancement",
+      "race": "Tauren",
+      "guild": "too old for this",
+      "faction": "HORDE"
     },
     {
       "rank": 79,
@@ -830,7 +1073,10 @@
       "wins": 55,
       "losses": 21,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Tauren",
+      "guild": "SinguIarity",
+      "faction": "HORDE"
     },
     {
       "rank": 83,
@@ -840,27 +1086,10 @@
       "wins": 69,
       "losses": 36,
       "classId": "shaman",
-      "specId": "shaman_restoration"
-    },
-    {
-      "rank": 84,
-      "characterName": "Wswswsws",
-      "realmSlug": "spineshatter",
-      "rating": 2178,
-      "wins": 65,
-      "losses": 12,
-      "classId": "shaman",
-      "specId": "shaman_restoration"
-    },
-    {
-      "rank": 84,
-      "characterName": "Shaél",
-      "realmSlug": "spineshatter",
-      "rating": 2178,
-      "wins": 113,
-      "losses": 45,
-      "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 84,
@@ -870,7 +1099,36 @@
       "wins": 113,
       "losses": 45,
       "classId": "druid",
-      "specId": "druid_balance"
+      "specId": "druid_balance",
+      "race": "Night Elf",
+      "guild": "Fusk og Sjusk",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 84,
+      "characterName": "Shaél",
+      "realmSlug": "spineshatter",
+      "rating": 2178,
+      "wins": 113,
+      "losses": 45,
+      "classId": "warrior",
+      "specId": "warrior_fury",
+      "race": "Gnome",
+      "guild": "dent",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 84,
+      "characterName": "Wswswsws",
+      "realmSlug": "spineshatter",
+      "rating": 2178,
+      "wins": 65,
+      "losses": 12,
+      "classId": "shaman",
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 84,
@@ -880,47 +1138,10 @@
       "wins": 112,
       "losses": 60,
       "classId": "shaman",
-      "specId": "shaman_restoration"
-    },
-    {
-      "rank": 88,
-      "characterName": "Radulo",
-      "realmSlug": "spineshatter",
-      "rating": 2177,
-      "wins": 53,
-      "losses": 14,
-      "classId": "warlock",
-      "specId": "warlock_demonology"
-    },
-    {
-      "rank": 88,
-      "characterName": "Ynx",
-      "realmSlug": "spineshatter",
-      "rating": 2177,
-      "wins": 53,
-      "losses": 14,
-      "classId": "druid",
-      "specId": "druid_restoration"
-    },
-    {
-      "rank": 88,
-      "characterName": "Häxntutto",
-      "realmSlug": "spineshatter",
-      "rating": 2177,
-      "wins": 53,
-      "losses": 14,
-      "classId": "warrior",
-      "specId": "warrior_fury"
-    },
-    {
-      "rank": 88,
-      "characterName": "Shourz",
-      "realmSlug": "spineshatter",
-      "rating": 2177,
-      "wins": 53,
-      "losses": 14,
-      "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Asphalt",
+      "faction": "HORDE"
     },
     {
       "rank": 88,
@@ -930,7 +1151,62 @@
       "wins": 53,
       "losses": 14,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Mass Appeal",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 88,
+      "characterName": "Radulo",
+      "realmSlug": "spineshatter",
+      "rating": 2177,
+      "wins": 53,
+      "losses": 14,
+      "classId": "warlock",
+      "specId": "warlock_demonology",
+      "race": "Undead",
+      "guild": "Mass Appeal",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 88,
+      "characterName": "Ynx",
+      "realmSlug": "spineshatter",
+      "rating": 2177,
+      "wins": 53,
+      "losses": 14,
+      "classId": "druid",
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Mass Appeal",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 88,
+      "characterName": "Häxntutto",
+      "realmSlug": "spineshatter",
+      "rating": 2177,
+      "wins": 53,
+      "losses": 14,
+      "classId": "warrior",
+      "specId": "warrior_fury",
+      "race": "Orc",
+      "guild": "Mass Appeal",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 88,
+      "characterName": "Shourz",
+      "realmSlug": "spineshatter",
+      "rating": 2177,
+      "wins": 53,
+      "losses": 14,
+      "classId": "shaman",
+      "specId": "shaman_elemental",
+      "race": "Tauren",
+      "guild": "Mass Appeal",
+      "faction": "HORDE"
     },
     {
       "rank": 88,
@@ -940,7 +1216,10 @@
       "wins": 62,
       "losses": 28,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": "Camel Squad",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 94,
@@ -950,7 +1229,10 @@
       "wins": 89,
       "losses": 31,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_destruction",
+      "race": "Human",
+      "guild": "Turtles",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 95,
@@ -960,7 +1242,10 @@
       "wins": 64,
       "losses": 25,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Spiters A",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 96,
@@ -970,7 +1255,10 @@
       "wins": 65,
       "losses": 29,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "HESOYAM",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 97,
@@ -980,7 +1268,10 @@
       "wins": 67,
       "losses": 21,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Hopium",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 98,
@@ -990,7 +1281,10 @@
       "wins": 59,
       "losses": 6,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 98,
@@ -1000,7 +1294,10 @@
       "wins": 53,
       "losses": 13,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 100,
@@ -1010,7 +1307,10 @@
       "wins": 61,
       "losses": 16,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "MOP waiting room",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 100,
@@ -1020,7 +1320,10 @@
       "wins": 49,
       "losses": 13,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "Hopium",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 102,
@@ -1030,7 +1333,10 @@
       "wins": 88,
       "losses": 46,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "BEYOND PERFEKT",
+      "faction": "HORDE"
     },
     {
       "rank": 103,
@@ -1040,27 +1346,10 @@
       "wins": 102,
       "losses": 54,
       "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 104,
-      "characterName": "Lillija",
-      "realmSlug": "spineshatter",
-      "rating": 2167,
-      "wins": 50,
-      "losses": 24,
-      "classId": "priest",
-      "specId": "priest_holy"
-    },
-    {
-      "rank": 104,
-      "characterName": "Jbe",
-      "realmSlug": "spineshatter",
-      "rating": 2167,
-      "wins": 50,
-      "losses": 24,
-      "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "ceph",
+      "faction": "HORDE"
     },
     {
       "rank": 104,
@@ -1070,7 +1359,10 @@
       "wins": 50,
       "losses": 24,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "brb shower",
+      "faction": "HORDE"
     },
     {
       "rank": 104,
@@ -1080,7 +1372,36 @@
       "wins": 50,
       "losses": 24,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "REDUCE REUSE RECYCLE",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 104,
+      "characterName": "Jbe",
+      "realmSlug": "spineshatter",
+      "rating": 2167,
+      "wins": 50,
+      "losses": 24,
+      "classId": "shaman",
+      "specId": "shaman_enhancement",
+      "race": "Orc",
+      "guild": "brb shower",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 104,
+      "characterName": "Lillija",
+      "realmSlug": "spineshatter",
+      "rating": 2167,
+      "wins": 50,
+      "losses": 24,
+      "classId": "priest",
+      "specId": "priest_holy",
+      "race": "Undead",
+      "guild": "YKZA",
+      "faction": "HORDE"
     },
     {
       "rank": 108,
@@ -1090,17 +1411,10 @@
       "wins": 58,
       "losses": 31,
       "classId": "warlock",
-      "specId": "warlock_demonology"
-    },
-    {
-      "rank": 109,
-      "characterName": "Paalugoat",
-      "realmSlug": "spineshatter",
-      "rating": 2165,
-      "wins": 84,
-      "losses": 35,
-      "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "HESOYAM",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 109,
@@ -1110,17 +1424,23 @@
       "wins": 110,
       "losses": 61,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "shaman_enhancement",
+      "race": "Orc",
+      "guild": "Noot Noot",
+      "faction": "HORDE"
     },
     {
-      "rank": 111,
-      "characterName": "Xzevi",
+      "rank": 109,
+      "characterName": "Paalugoat",
       "realmSlug": "spineshatter",
-      "rating": 2164,
-      "wins": 43,
-      "losses": 9,
-      "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "rating": 2165,
+      "wins": 84,
+      "losses": 35,
+      "classId": "shaman",
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "dent",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 111,
@@ -1130,37 +1450,23 @@
       "wins": 148,
       "losses": 77,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Camel Squad H",
+      "faction": "HORDE"
     },
     {
-      "rank": 113,
-      "characterName": "Baww",
+      "rank": 111,
+      "characterName": "Xzevi",
       "realmSlug": "spineshatter",
-      "rating": 2163,
-      "wins": 75,
-      "losses": 54,
-      "classId": "druid",
-      "specId": "druid_restoration"
-    },
-    {
-      "rank": 113,
-      "characterName": "Wrá",
-      "realmSlug": "spineshatter",
-      "rating": 2163,
-      "wins": 75,
-      "losses": 54,
-      "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 113,
-      "characterName": "Uniko",
-      "realmSlug": "spineshatter",
-      "rating": 2163,
-      "wins": 75,
-      "losses": 54,
-      "classId": null,
-      "specId": null
+      "rating": 2164,
+      "wins": 43,
+      "losses": 9,
+      "classId": "rogue",
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Progress",
+      "faction": "HORDE"
     },
     {
       "rank": 113,
@@ -1170,7 +1476,49 @@
       "wins": 75,
       "losses": 54,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "happywessels",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 113,
+      "characterName": "Baww",
+      "realmSlug": "spineshatter",
+      "rating": 2163,
+      "wins": 75,
+      "losses": 54,
+      "classId": "druid",
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "happywessels",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 113,
+      "characterName": "Wrá",
+      "realmSlug": "spineshatter",
+      "rating": 2163,
+      "wins": 75,
+      "losses": 54,
+      "classId": "warrior",
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Kaamos",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 113,
+      "characterName": "Uniko",
+      "realmSlug": "spineshatter",
+      "rating": 2163,
+      "wins": 75,
+      "losses": 54,
+      "classId": null,
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 113,
@@ -1180,17 +1528,10 @@
       "wins": 75,
       "losses": 54,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
-    },
-    {
-      "rank": 118,
-      "characterName": "Mayxkek",
-      "realmSlug": "spineshatter",
-      "rating": 2162,
-      "wins": 57,
-      "losses": 26,
-      "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "shaman_enhancement",
+      "race": "Orc",
+      "guild": "happywessels",
+      "faction": "HORDE"
     },
     {
       "rank": 118,
@@ -1200,7 +1541,23 @@
       "wins": 71,
       "losses": 37,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 118,
+      "characterName": "Mayxkek",
+      "realmSlug": "spineshatter",
+      "rating": 2162,
+      "wins": 57,
+      "losses": 26,
+      "classId": "hunter",
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "brb shower",
+      "faction": "HORDE"
     },
     {
       "rank": 120,
@@ -1210,7 +1567,10 @@
       "wins": 61,
       "losses": 18,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "MOP waiting room",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 121,
@@ -1220,7 +1580,10 @@
       "wins": 89,
       "losses": 57,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "Asphalt",
+      "faction": "HORDE"
     },
     {
       "rank": 122,
@@ -1230,27 +1593,10 @@
       "wins": 73,
       "losses": 43,
       "classId": "paladin",
-      "specId": "paladin_retribution"
-    },
-    {
-      "rank": 123,
-      "characterName": "Grågås",
-      "realmSlug": "spineshatter",
-      "rating": 2157,
-      "wins": 47,
-      "losses": 17,
-      "classId": "druid",
-      "specId": "druid_restoration"
-    },
-    {
-      "rank": 123,
-      "characterName": "Óo",
-      "realmSlug": "spineshatter",
-      "rating": 2157,
-      "wins": 107,
-      "losses": 71,
-      "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "ceph",
+      "faction": "HORDE"
     },
     {
       "rank": 123,
@@ -1260,17 +1606,10 @@
       "wins": 170,
       "losses": 128,
       "classId": "priest",
-      "specId": "priest_holy"
-    },
-    {
-      "rank": 123,
-      "characterName": "Banezx",
-      "realmSlug": "spineshatter",
-      "rating": 2157,
-      "wins": 109,
-      "losses": 88,
-      "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "priest_holy",
+      "race": "Undead",
+      "guild": "The Fel Cartel",
+      "faction": "HORDE"
     },
     {
       "rank": 123,
@@ -1280,17 +1619,49 @@
       "wins": 108,
       "losses": 94,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "We come repaired",
+      "faction": "HORDE"
     },
     {
-      "rank": 128,
-      "characterName": "Guterfreund",
+      "rank": 123,
+      "characterName": "Grågås",
       "realmSlug": "spineshatter",
-      "rating": 2156,
-      "wins": 62,
-      "losses": 33,
-      "classId": "shaman",
-      "specId": "shaman_elemental"
+      "rating": 2157,
+      "wins": 47,
+      "losses": 17,
+      "classId": "druid",
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 123,
+      "characterName": "Óo",
+      "realmSlug": "spineshatter",
+      "rating": 2157,
+      "wins": 107,
+      "losses": 71,
+      "classId": "mage",
+      "specId": "mage_arcane",
+      "race": "Undead",
+      "guild": "Progress",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 123,
+      "characterName": "Banezx",
+      "realmSlug": "spineshatter",
+      "rating": 2157,
+      "wins": 109,
+      "losses": 88,
+      "classId": "warlock",
+      "specId": "warlock_destruction",
+      "race": "Undead",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 128,
@@ -1300,7 +1671,10 @@
       "wins": 83,
       "losses": 45,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "TOUT DROIT",
+      "faction": "HORDE"
     },
     {
       "rank": 128,
@@ -1310,7 +1684,10 @@
       "wins": 83,
       "losses": 45,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "MANSTR",
+      "faction": "HORDE"
     },
     {
       "rank": 128,
@@ -1320,7 +1697,23 @@
       "wins": 77,
       "losses": 46,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Mandate of Heaven",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 128,
+      "characterName": "Guterfreund",
+      "realmSlug": "spineshatter",
+      "rating": 2156,
+      "wins": 62,
+      "losses": 33,
+      "classId": "shaman",
+      "specId": "shaman_elemental",
+      "race": "Orc",
+      "guild": "Asphalt",
+      "faction": "HORDE"
     },
     {
       "rank": 132,
@@ -1330,27 +1723,10 @@
       "wins": 117,
       "losses": 74,
       "classId": "shaman",
-      "specId": "shaman_restoration"
-    },
-    {
-      "rank": 133,
-      "characterName": "Schmeckoh",
-      "realmSlug": "spineshatter",
-      "rating": 2153,
-      "wins": 61,
-      "losses": 30,
-      "classId": "hunter",
-      "specId": "hunter_beastmastery"
-    },
-    {
-      "rank": 133,
-      "characterName": "Iceclimber",
-      "realmSlug": "spineshatter",
-      "rating": 2153,
-      "wins": 81,
-      "losses": 47,
-      "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Asphalt",
+      "faction": "HORDE"
     },
     {
       "rank": 133,
@@ -1360,7 +1736,36 @@
       "wins": 220,
       "losses": 160,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "drone out",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 133,
+      "characterName": "Iceclimber",
+      "realmSlug": "spineshatter",
+      "rating": 2153,
+      "wins": 81,
+      "losses": 47,
+      "classId": "warrior",
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Mandate of Heaven",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 133,
+      "characterName": "Schmeckoh",
+      "realmSlug": "spineshatter",
+      "rating": 2153,
+      "wins": 61,
+      "losses": 30,
+      "classId": "hunter",
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "Doubt",
+      "faction": "HORDE"
     },
     {
       "rank": 136,
@@ -1370,7 +1775,10 @@
       "wins": 44,
       "losses": 15,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Camel Squad",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 137,
@@ -1380,7 +1788,10 @@
       "wins": 70,
       "losses": 60,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "The Fel Cartel",
+      "faction": "HORDE"
     },
     {
       "rank": 138,
@@ -1390,7 +1801,10 @@
       "wins": 74,
       "losses": 34,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "OnlyLogs",
+      "faction": "HORDE"
     },
     {
       "rank": 139,
@@ -1400,7 +1814,10 @@
       "wins": 63,
       "losses": 22,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "The Fel Cartel",
+      "faction": "HORDE"
     },
     {
       "rank": 139,
@@ -1410,27 +1827,10 @@
       "wins": 63,
       "losses": 22,
       "classId": "shaman",
-      "specId": "shaman_restoration"
-    },
-    {
-      "rank": 141,
-      "characterName": "Kaizenxz",
-      "realmSlug": "spineshatter",
-      "rating": 2144,
-      "wins": 76,
-      "losses": 45,
-      "classId": "mage",
-      "specId": "mage_frost"
-    },
-    {
-      "rank": 141,
-      "characterName": "Justli",
-      "realmSlug": "spineshatter",
-      "rating": 2144,
-      "wins": 135,
-      "losses": 85,
-      "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "one guild",
+      "faction": "HORDE"
     },
     {
       "rank": 141,
@@ -1440,17 +1840,36 @@
       "wins": 74,
       "losses": 48,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "FLYING GOOSE",
+      "faction": "ALLIANCE"
     },
     {
-      "rank": 144,
-      "characterName": "Coolbean",
+      "rank": 141,
+      "characterName": "Kaizenxz",
       "realmSlug": "spineshatter",
-      "rating": 2143,
-      "wins": 69,
-      "losses": 42,
-      "classId": "druid",
-      "specId": "druid_restoration"
+      "rating": 2144,
+      "wins": 76,
+      "losses": 45,
+      "classId": "mage",
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Bleached Bones",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 141,
+      "characterName": "Justli",
+      "realmSlug": "spineshatter",
+      "rating": 2144,
+      "wins": 135,
+      "losses": 85,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Warboss",
+      "faction": "HORDE"
     },
     {
       "rank": 144,
@@ -1460,17 +1879,10 @@
       "wins": 69,
       "losses": 42,
       "classId": "shaman",
-      "specId": "shaman_restoration"
-    },
-    {
-      "rank": 144,
-      "characterName": "Lqv",
-      "realmSlug": "spineshatter",
-      "rating": 2143,
-      "wins": 69,
-      "losses": 42,
-      "classId": "priest",
-      "specId": "priest_shadow"
+      "specId": "shaman_restoration",
+      "race": "Troll",
+      "guild": "ONY BUFF WHEN",
+      "faction": "HORDE"
     },
     {
       "rank": 144,
@@ -1480,7 +1892,36 @@
       "wins": 69,
       "losses": 42,
       "classId": "warlock",
-      "specId": "warlock_affliction"
+      "specId": "warlock_affliction",
+      "race": "Orc",
+      "guild": "ONY BUFF WHEN",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 144,
+      "characterName": "Coolbean",
+      "realmSlug": "spineshatter",
+      "rating": 2143,
+      "wins": 69,
+      "losses": 42,
+      "classId": "druid",
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "ONY BUFF WHEN",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 144,
+      "characterName": "Lqv",
+      "realmSlug": "spineshatter",
+      "rating": 2143,
+      "wins": 69,
+      "losses": 42,
+      "classId": "priest",
+      "specId": "priest_shadow",
+      "race": "Troll",
+      "guild": "ONY BUFF WHEN",
+      "faction": "HORDE"
     },
     {
       "rank": 148,
@@ -1490,7 +1931,10 @@
       "wins": 124,
       "losses": 90,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Warboss",
+      "faction": "HORDE"
     },
     {
       "rank": 149,
@@ -1500,27 +1944,10 @@
       "wins": 65,
       "losses": 26,
       "classId": "mage",
-      "specId": "mage_fire"
-    },
-    {
-      "rank": 150,
-      "characterName": "Mayxlol",
-      "realmSlug": "spineshatter",
-      "rating": 2139,
-      "wins": 48,
-      "losses": 21,
-      "classId": "mage",
-      "specId": "mage_frost"
-    },
-    {
-      "rank": 150,
-      "characterName": "Dikzyzquad",
-      "realmSlug": "spineshatter",
-      "rating": 2139,
-      "wins": 75,
-      "losses": 38,
-      "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "mage_fire",
+      "race": "Undead",
+      "guild": "YÅKUZA",
+      "faction": "HORDE"
     },
     {
       "rank": 150,
@@ -1530,7 +1957,36 @@
       "wins": 369,
       "losses": 229,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "Die Laaste Afdaal",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 150,
+      "characterName": "Dikzyzquad",
+      "realmSlug": "spineshatter",
+      "rating": 2139,
+      "wins": 75,
+      "losses": 38,
+      "classId": "warlock",
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "padinko",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 150,
+      "characterName": "Mayxlol",
+      "realmSlug": "spineshatter",
+      "rating": 2139,
+      "wins": 48,
+      "losses": 21,
+      "classId": "mage",
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Progress",
+      "faction": "HORDE"
     },
     {
       "rank": 153,
@@ -1540,7 +1996,10 @@
       "wins": 69,
       "losses": 39,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "MANSTR",
+      "faction": "HORDE"
     },
     {
       "rank": 154,
@@ -1550,17 +2009,10 @@
       "wins": 96,
       "losses": 36,
       "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 154,
-      "characterName": "Aewwe",
-      "realmSlug": "spineshatter",
-      "rating": 2137,
-      "wins": 117,
-      "losses": 60,
-      "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "warrior_arms",
+      "race": "Tauren",
+      "guild": "Camel Squad H",
+      "faction": "HORDE"
     },
     {
       "rank": 154,
@@ -1570,7 +2022,23 @@
       "wins": 105,
       "losses": 63,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
+    },
+    {
+      "rank": 154,
+      "characterName": "Aewwe",
+      "realmSlug": "spineshatter",
+      "rating": 2137,
+      "wins": 117,
+      "losses": 60,
+      "classId": "shaman",
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "DELETED",
+      "faction": "HORDE"
     },
     {
       "rank": 157,
@@ -1580,7 +2048,10 @@
       "wins": 126,
       "losses": 61,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Remedy Reborn",
+      "faction": "HORDE"
     },
     {
       "rank": 157,
@@ -1590,7 +2061,10 @@
       "wins": 133,
       "losses": 67,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "shaman_enhancement",
+      "race": "Draenei",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 157,
@@ -1600,7 +2074,10 @@
       "wins": 152,
       "losses": 83,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 157,
@@ -1610,7 +2087,10 @@
       "wins": 70,
       "losses": 45,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "EZ TIME",
+      "faction": "HORDE"
     },
     {
       "rank": 157,
@@ -1620,7 +2100,10 @@
       "wins": 68,
       "losses": 45,
       "classId": "paladin",
-      "specId": "paladin_protection"
+      "specId": "paladin_protection",
+      "race": "Blood Elf",
+      "guild": "YÅKUZA",
+      "faction": "HORDE"
     },
     {
       "rank": 157,
@@ -1630,7 +2113,10 @@
       "wins": 68,
       "losses": 45,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "is a problem",
+      "faction": "HORDE"
     },
     {
       "rank": 157,
@@ -1640,7 +2126,10 @@
       "wins": 68,
       "losses": 45,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "YÅKUZA",
+      "faction": "HORDE"
     },
     {
       "rank": 164,
@@ -1650,7 +2139,10 @@
       "wins": 55,
       "losses": 16,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 164,
@@ -1660,7 +2152,10 @@
       "wins": 88,
       "losses": 65,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "drone out",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 166,
@@ -1670,7 +2165,10 @@
       "wins": 115,
       "losses": 48,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "yo",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 166,
@@ -1680,7 +2178,10 @@
       "wins": 83,
       "losses": 42,
       "classId": "priest",
-      "specId": "priest_shadow"
+      "specId": "priest_shadow",
+      "race": "Troll",
+      "guild": "DELETED",
+      "faction": "HORDE"
     },
     {
       "rank": 168,
@@ -1690,7 +2191,10 @@
       "wins": 58,
       "losses": 30,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Maximum Effort",
+      "faction": "HORDE"
     },
     {
       "rank": 168,
@@ -1700,7 +2204,10 @@
       "wins": 52,
       "losses": 30,
       "classId": "druid",
-      "specId": "druid_feralcombat"
+      "specId": "druid_feral",
+      "race": "Tauren",
+      "guild": "Kyrgyzstan MMA",
+      "faction": "HORDE"
     },
     {
       "rank": 168,
@@ -1710,7 +2217,10 @@
       "wins": 54,
       "losses": 32,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Monkey Issues",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 171,
@@ -1720,7 +2230,10 @@
       "wins": 53,
       "losses": 29,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Mist",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 172,
@@ -1730,7 +2243,10 @@
       "wins": 132,
       "losses": 82,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "The Cabal",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 172,
@@ -1740,7 +2256,10 @@
       "wins": 118,
       "losses": 77,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Magnum Opus",
+      "faction": "HORDE"
     },
     {
       "rank": 174,
@@ -1750,7 +2269,10 @@
       "wins": 140,
       "losses": 70,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "HESOYAM",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 175,
@@ -1760,7 +2282,10 @@
       "wins": 88,
       "losses": 46,
       "classId": "hunter",
-      "specId": "hunter_survival"
+      "specId": "hunter_survival",
+      "race": "Dwarf",
+      "guild": "Defias Brotherhood",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 175,
@@ -1770,7 +2295,10 @@
       "wins": 101,
       "losses": 53,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Draenei",
+      "guild": "ACTIVE MEASURES",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 177,
@@ -1780,7 +2308,10 @@
       "wins": 79,
       "losses": 38,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Progress",
+      "faction": "HORDE"
     },
     {
       "rank": 178,
@@ -1790,7 +2321,10 @@
       "wins": 126,
       "losses": 76,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "eXístenZ",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 179,
@@ -1800,17 +2334,10 @@
       "wins": 61,
       "losses": 34,
       "classId": "mage",
-      "specId": "mage_frost"
-    },
-    {
-      "rank": 180,
-      "characterName": "Størmvessèl",
-      "realmSlug": "spineshatter",
-      "rating": 2122,
-      "wins": 75,
-      "losses": 33,
-      "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "SALAD BAKERS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 180,
@@ -1820,27 +2347,23 @@
       "wins": 103,
       "losses": 50,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "BEGRAVNINGSBYRÅN",
+      "faction": "ALLIANCE"
     },
     {
-      "rank": 182,
-      "characterName": "Itsmcy",
+      "rank": 180,
+      "characterName": "Størmvessèl",
       "realmSlug": "spineshatter",
-      "rating": 2119,
-      "wins": 81,
-      "losses": 45,
-      "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 182,
-      "characterName": "Frda",
-      "realmSlug": "spineshatter",
-      "rating": 2119,
-      "wins": 46,
-      "losses": 38,
-      "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "rating": 2122,
+      "wins": 75,
+      "losses": 33,
+      "classId": "shaman",
+      "specId": "shaman_elemental",
+      "race": "Draenei",
+      "guild": "FLYING GOOSE",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 182,
@@ -1850,7 +2373,36 @@
       "wins": 137,
       "losses": 118,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "SALZIG",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 182,
+      "characterName": "Itsmcy",
+      "realmSlug": "spineshatter",
+      "rating": 2119,
+      "wins": 81,
+      "losses": 45,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "too old for this",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 182,
+      "characterName": "Frda",
+      "realmSlug": "spineshatter",
+      "rating": 2119,
+      "wins": 46,
+      "losses": 38,
+      "classId": "rogue",
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "YÅKUZA",
+      "faction": "HORDE"
     },
     {
       "rank": 182,
@@ -1860,7 +2412,10 @@
       "wins": 120,
       "losses": 104,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "SALZIG",
+      "faction": "HORDE"
     },
     {
       "rank": 182,
@@ -1870,7 +2425,10 @@
       "wins": 112,
       "losses": 98,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "SixSeven",
+      "faction": "HORDE"
     },
     {
       "rank": 187,
@@ -1880,7 +2438,10 @@
       "wins": 108,
       "losses": 81,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Nightshift",
+      "faction": "HORDE"
     },
     {
       "rank": 188,
@@ -1890,7 +2451,10 @@
       "wins": 137,
       "losses": 112,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Blood Elf",
+      "guild": "SinguIarity",
+      "faction": "HORDE"
     },
     {
       "rank": 189,
@@ -1900,7 +2464,10 @@
       "wins": 50,
       "losses": 20,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "padinko",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 189,
@@ -1910,7 +2477,10 @@
       "wins": 76,
       "losses": 35,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "Mass Appeal",
+      "faction": "HORDE"
     },
     {
       "rank": 191,
@@ -1920,7 +2490,10 @@
       "wins": 77,
       "losses": 38,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "DELETED",
+      "faction": "HORDE"
     },
     {
       "rank": 192,
@@ -1930,7 +2503,10 @@
       "wins": 49,
       "losses": 13,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 192,
@@ -1940,27 +2516,10 @@
       "wins": 55,
       "losses": 36,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
-    },
-    {
-      "rank": 194,
-      "characterName": "Xaeros",
-      "realmSlug": "spineshatter",
-      "rating": 2112,
-      "wins": 51,
-      "losses": 16,
-      "classId": "rogue",
-      "specId": "rogue_subtlety"
-    },
-    {
-      "rank": 194,
-      "characterName": "Innate",
-      "realmSlug": "spineshatter",
-      "rating": 2112,
-      "wins": 50,
-      "losses": 28,
-      "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "NOT Chatgpt",
+      "faction": "HORDE"
     },
     {
       "rank": 194,
@@ -1970,7 +2529,36 @@
       "wins": 50,
       "losses": 28,
       "classId": "druid",
-      "specId": "druid_balance"
+      "specId": "druid_balance",
+      "race": "Tauren",
+      "guild": "uno mas",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 194,
+      "characterName": "Xaeros",
+      "realmSlug": "spineshatter",
+      "rating": 2112,
+      "wins": 51,
+      "losses": 16,
+      "classId": "rogue",
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 194,
+      "characterName": "Innate",
+      "realmSlug": "spineshatter",
+      "rating": 2112,
+      "wins": 50,
+      "losses": 28,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "uno mas",
+      "faction": "HORDE"
     },
     {
       "rank": 197,
@@ -1980,7 +2568,10 @@
       "wins": 63,
       "losses": 27,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Jonne Gaming",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 197,
@@ -1990,7 +2581,10 @@
       "wins": 49,
       "losses": 29,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Ach Ja",
+      "faction": "HORDE"
     },
     {
       "rank": 199,
@@ -2000,7 +2594,10 @@
       "wins": 47,
       "losses": 24,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "uno mas",
+      "faction": "HORDE"
     },
     {
       "rank": 199,
@@ -2010,7 +2607,10 @@
       "wins": 47,
       "losses": 24,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "shaman_enhancement",
+      "race": "Orc",
+      "guild": "uno mas",
+      "faction": "HORDE"
     },
     {
       "rank": 199,
@@ -2020,7 +2620,10 @@
       "wins": 46,
       "losses": 25,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Undead",
+      "guild": "uno mas",
+      "faction": "HORDE"
     },
     {
       "rank": 199,
@@ -2030,7 +2633,10 @@
       "wins": 69,
       "losses": 41,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Blessed by RNG",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 199,
@@ -2040,7 +2646,10 @@
       "wins": 69,
       "losses": 41,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Dwarf",
+      "guild": "ffs",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 204,
@@ -2050,17 +2659,10 @@
       "wins": 34,
       "losses": 10,
       "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 205,
-      "characterName": "Madix",
-      "realmSlug": "spineshatter",
-      "rating": 2106,
-      "wins": 62,
-      "losses": 23,
-      "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "warrior_arms",
+      "race": "Tauren",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 205,
@@ -2070,7 +2672,23 @@
       "wins": 68,
       "losses": 36,
       "classId": "hunter",
-      "specId": "hunter_marksmanship"
+      "specId": "hunter_marksmanship",
+      "race": "Dwarf",
+      "guild": "Hopium",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 205,
+      "characterName": "Madix",
+      "realmSlug": "spineshatter",
+      "rating": 2106,
+      "wins": 62,
+      "losses": 23,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "one last time",
+      "faction": "HORDE"
     },
     {
       "rank": 205,
@@ -2080,7 +2698,10 @@
       "wins": 93,
       "losses": 66,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "CYBER SLAVYANE",
+      "faction": "HORDE"
     },
     {
       "rank": 208,
@@ -2090,7 +2711,10 @@
       "wins": 70,
       "losses": 37,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Vox Mortis",
+      "faction": "HORDE"
     },
     {
       "rank": 209,
@@ -2100,7 +2724,10 @@
       "wins": 222,
       "losses": 132,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 209,
@@ -2110,7 +2737,10 @@
       "wins": 53,
       "losses": 33,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "WHO",
+      "faction": "HORDE"
     },
     {
       "rank": 209,
@@ -2120,7 +2750,10 @@
       "wins": 53,
       "losses": 33,
       "classId": "paladin",
-      "specId": "paladin_holy"
+      "specId": "paladin_holy",
+      "race": "Blood Elf",
+      "guild": "Deeply Disturbed",
+      "faction": "HORDE"
     },
     {
       "rank": 209,
@@ -2130,7 +2763,10 @@
       "wins": 53,
       "losses": 33,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "shaman_enhancement",
+      "race": "Orc",
+      "guild": "Deeply Disturbed",
+      "faction": "HORDE"
     },
     {
       "rank": 209,
@@ -2140,7 +2776,10 @@
       "wins": 53,
       "losses": 33,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Deeply Disturbed",
+      "faction": "HORDE"
     },
     {
       "rank": 209,
@@ -2150,17 +2789,10 @@
       "wins": 53,
       "losses": 33,
       "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 215,
-      "characterName": "Infirenz",
-      "realmSlug": "spineshatter",
-      "rating": 2102,
-      "wins": 62,
-      "losses": 37,
-      "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Deeply Disturbed",
+      "faction": "HORDE"
     },
     {
       "rank": 215,
@@ -2170,7 +2802,23 @@
       "wins": 113,
       "losses": 81,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "good talk",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 215,
+      "characterName": "Infirenz",
+      "realmSlug": "spineshatter",
+      "rating": 2102,
+      "wins": 62,
+      "losses": 37,
+      "classId": "warlock",
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "whos friend r u",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 217,
@@ -2180,7 +2828,10 @@
       "wins": 68,
       "losses": 34,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_holy",
+      "race": "Undead",
+      "guild": "Mighty",
+      "faction": "HORDE"
     },
     {
       "rank": 218,
@@ -2190,17 +2841,10 @@
       "wins": 76,
       "losses": 34,
       "classId": "druid",
-      "specId": "druid_restoration"
-    },
-    {
-      "rank": 219,
-      "characterName": "Elfunf",
-      "realmSlug": "spineshatter",
-      "rating": 2099,
-      "wins": 43,
-      "losses": 14,
-      "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Ach Ja",
+      "faction": "HORDE"
     },
     {
       "rank": 219,
@@ -2210,7 +2854,23 @@
       "wins": 49,
       "losses": 16,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "HEHE",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 219,
+      "characterName": "Elfunf",
+      "realmSlug": "spineshatter",
+      "rating": 2099,
+      "wins": 43,
+      "losses": 14,
+      "classId": "warrior",
+      "specId": "warrior_fury",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 219,
@@ -2220,7 +2880,10 @@
       "wins": 114,
       "losses": 70,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Last Wings",
+      "faction": "HORDE"
     },
     {
       "rank": 222,
@@ -2230,7 +2893,10 @@
       "wins": 70,
       "losses": 39,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Undead",
+      "guild": "Asphalt",
+      "faction": "HORDE"
     },
     {
       "rank": 223,
@@ -2240,17 +2906,10 @@
       "wins": 56,
       "losses": 19,
       "classId": "warlock",
-      "specId": "warlock_demonology"
-    },
-    {
-      "rank": 223,
-      "characterName": "Evolve",
-      "realmSlug": "spineshatter",
-      "rating": 2094,
-      "wins": 56,
-      "losses": 19,
-      "classId": "priest",
-      "specId": "priest_shadow"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "AVSLUT",
+      "faction": "HORDE"
     },
     {
       "rank": 223,
@@ -2260,7 +2919,23 @@
       "wins": 56,
       "losses": 19,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "AVSLUT",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 223,
+      "characterName": "Evolve",
+      "realmSlug": "spineshatter",
+      "rating": 2094,
+      "wins": 56,
+      "losses": 19,
+      "classId": "priest",
+      "specId": "priest_shadow",
+      "race": "Undead",
+      "guild": "Pentagon",
+      "faction": "HORDE"
     },
     {
       "rank": 223,
@@ -2270,7 +2945,10 @@
       "wins": 44,
       "losses": 17,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Tauren",
+      "guild": "MASSAJ PROSTATI",
+      "faction": "HORDE"
     },
     {
       "rank": 223,
@@ -2280,7 +2958,10 @@
       "wins": 61,
       "losses": 37,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Undead",
+      "guild": "Noot Noot",
+      "faction": "HORDE"
     },
     {
       "rank": 223,
@@ -2290,7 +2971,10 @@
       "wins": 61,
       "losses": 37,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Noot Noot",
+      "faction": "HORDE"
     },
     {
       "rank": 229,
@@ -2300,7 +2984,10 @@
       "wins": 65,
       "losses": 43,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "Exploding Labrats",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 229,
@@ -2310,7 +2997,10 @@
       "wins": 79,
       "losses": 58,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 231,
@@ -2320,7 +3010,10 @@
       "wins": 54,
       "losses": 28,
       "classId": "paladin",
-      "specId": "paladin_holy"
+      "specId": "paladin_holy",
+      "race": "Blood Elf",
+      "guild": "ALIENS EXIST",
+      "faction": "HORDE"
     },
     {
       "rank": 232,
@@ -2330,7 +3023,10 @@
       "wins": 81,
       "losses": 55,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_arcane",
+      "race": "Undead",
+      "guild": "Asphalt",
+      "faction": "HORDE"
     },
     {
       "rank": 232,
@@ -2340,27 +3036,10 @@
       "wins": 77,
       "losses": 56,
       "classId": "shaman",
-      "specId": "shaman_restoration"
-    },
-    {
-      "rank": 234,
-      "characterName": "Creaturé",
-      "realmSlug": "spineshatter",
-      "rating": 2090,
-      "wins": 94,
-      "losses": 56,
-      "classId": "mage",
-      "specId": "mage_frost"
-    },
-    {
-      "rank": 234,
-      "characterName": "Biocom",
-      "realmSlug": "spineshatter",
-      "rating": 2090,
-      "wins": 80,
-      "losses": 48,
-      "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "uh oh here we go again",
+      "faction": "HORDE"
     },
     {
       "rank": 234,
@@ -2370,27 +3049,36 @@
       "wins": 74,
       "losses": 51,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Last Wings",
+      "faction": "HORDE"
     },
     {
-      "rank": 237,
-      "characterName": "Yodua",
+      "rank": 234,
+      "characterName": "Creaturé",
       "realmSlug": "spineshatter",
-      "rating": 2089,
+      "rating": 2090,
+      "wins": 94,
+      "losses": 56,
+      "classId": "mage",
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": null,
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 234,
+      "characterName": "Biocom",
+      "realmSlug": "spineshatter",
+      "rating": 2090,
       "wins": 80,
-      "losses": 51,
-      "classId": "paladin",
-      "specId": "paladin_retribution"
-    },
-    {
-      "rank": 237,
-      "characterName": "Undyed",
-      "realmSlug": "spineshatter",
-      "rating": 2089,
-      "wins": 84,
-      "losses": 58,
+      "losses": 48,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "HI OK",
+      "faction": "HORDE"
     },
     {
       "rank": 237,
@@ -2400,17 +3088,36 @@
       "wins": 141,
       "losses": 99,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "decent",
+      "faction": "ALLIANCE"
     },
     {
-      "rank": 240,
-      "characterName": "Fenttimutka",
-      "realmSlug": "thunderstrike",
-      "rating": 2088,
-      "wins": 55,
-      "losses": 33,
-      "classId": "warrior",
-      "specId": "warrior_arms"
+      "rank": 237,
+      "characterName": "Yodua",
+      "realmSlug": "spineshatter",
+      "rating": 2089,
+      "wins": 80,
+      "losses": 51,
+      "classId": "paladin",
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "one guild",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 237,
+      "characterName": "Undyed",
+      "realmSlug": "spineshatter",
+      "rating": 2089,
+      "wins": 84,
+      "losses": 58,
+      "classId": "shaman",
+      "specId": "shaman_restoration",
+      "race": "Troll",
+      "guild": "not much to look at",
+      "faction": "HORDE"
     },
     {
       "rank": 240,
@@ -2420,7 +3127,23 @@
       "wins": 88,
       "losses": 60,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "good talk",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 240,
+      "characterName": "Fenttimutka",
+      "realmSlug": "thunderstrike",
+      "rating": 2088,
+      "wins": 55,
+      "losses": 33,
+      "classId": "warrior",
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Kotipizza",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 240,
@@ -2430,7 +3153,10 @@
       "wins": 88,
       "losses": 60,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "good talk",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 243,
@@ -2440,7 +3166,10 @@
       "wins": 239,
       "losses": 159,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "yo",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 243,
@@ -2450,17 +3179,10 @@
       "wins": 107,
       "losses": 91,
       "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 245,
-      "characterName": "Havityx",
-      "realmSlug": "spineshatter",
-      "rating": 2085,
-      "wins": 49,
-      "losses": 14,
-      "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Pre Time Skip",
+      "faction": "HORDE"
     },
     {
       "rank": 245,
@@ -2470,7 +3192,23 @@
       "wins": 58,
       "losses": 36,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "good talk",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 245,
+      "characterName": "Havityx",
+      "realmSlug": "spineshatter",
+      "rating": 2085,
+      "wins": 49,
+      "losses": 14,
+      "classId": "rogue",
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "ASSIGNED BENCH",
+      "faction": "HORDE"
     },
     {
       "rank": 247,
@@ -2480,7 +3218,10 @@
       "wins": 54,
       "losses": 29,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "too old for this",
+      "faction": "HORDE"
     },
     {
       "rank": 247,
@@ -2490,7 +3231,10 @@
       "wins": 92,
       "losses": 66,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "shaman_enhancement",
+      "race": "Orc",
+      "guild": "Hoy Xay",
+      "faction": "HORDE"
     },
     {
       "rank": 247,
@@ -2500,7 +3244,10 @@
       "wins": 76,
       "losses": 58,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "D A R K",
+      "faction": "HORDE"
     },
     {
       "rank": 247,
@@ -2510,7 +3257,10 @@
       "wins": 110,
       "losses": 84,
       "classId": "paladin",
-      "specId": "paladin_holy"
+      "specId": "paladin_holy",
+      "race": "Blood Elf",
+      "guild": "D A R K",
+      "faction": "HORDE"
     },
     {
       "rank": 251,
@@ -2520,7 +3270,10 @@
       "wins": 69,
       "losses": 24,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Camel Squad H",
+      "faction": "HORDE"
     },
     {
       "rank": 251,
@@ -2530,7 +3283,10 @@
       "wins": 59,
       "losses": 38,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Good Friends",
+      "faction": "HORDE"
     },
     {
       "rank": 251,
@@ -2540,17 +3296,10 @@
       "wins": 112,
       "losses": 85,
       "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 254,
-      "characterName": "Asapw",
-      "realmSlug": "spineshatter",
-      "rating": 2082,
-      "wins": 58,
-      "losses": 28,
-      "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Rasta Muttan",
+      "faction": "HORDE"
     },
     {
       "rank": 254,
@@ -2560,17 +3309,23 @@
       "wins": 67,
       "losses": 35,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
-      "rank": 256,
-      "characterName": "Naxmenthuz",
+      "rank": 254,
+      "characterName": "Asapw",
       "realmSlug": "spineshatter",
-      "rating": 2080,
-      "wins": 67,
-      "losses": 31,
+      "rating": 2082,
+      "wins": 58,
+      "losses": 28,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Mighty",
+      "faction": "HORDE"
     },
     {
       "rank": 256,
@@ -2580,7 +3335,23 @@
       "wins": 56,
       "losses": 32,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "too old for this",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 256,
+      "characterName": "Naxmenthuz",
+      "realmSlug": "spineshatter",
+      "rating": 2080,
+      "wins": 67,
+      "losses": 31,
+      "classId": "warrior",
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Neverland",
+      "faction": "HORDE"
     },
     {
       "rank": 258,
@@ -2590,27 +3361,10 @@
       "wins": 65,
       "losses": 32,
       "classId": "druid",
-      "specId": "druid_restoration"
-    },
-    {
-      "rank": 259,
-      "characterName": "Kebabae",
-      "realmSlug": "spineshatter",
-      "rating": 2078,
-      "wins": 61,
-      "losses": 30,
-      "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 259,
-      "characterName": "Vildee",
-      "realmSlug": "spineshatter",
-      "rating": 2078,
-      "wins": 57,
-      "losses": 33,
-      "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "snow goose neednt bathe",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 259,
@@ -2620,17 +3374,10 @@
       "wins": 66,
       "losses": 45,
       "classId": "priest",
-      "specId": "priest_shadow"
-    },
-    {
-      "rank": 259,
-      "characterName": "Myrneg",
-      "realmSlug": "spineshatter",
-      "rating": 2078,
-      "wins": 66,
-      "losses": 45,
-      "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "priest_shadow",
+      "race": "Undead",
+      "guild": "Soil",
+      "faction": "HORDE"
     },
     {
       "rank": 259,
@@ -2640,7 +3387,49 @@
       "wins": 66,
       "losses": 45,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Soil",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 259,
+      "characterName": "Kebabae",
+      "realmSlug": "spineshatter",
+      "rating": 2078,
+      "wins": 61,
+      "losses": 30,
+      "classId": "warrior",
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "The Fellowship",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 259,
+      "characterName": "Vildee",
+      "realmSlug": "spineshatter",
+      "rating": 2078,
+      "wins": 57,
+      "losses": 33,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Progress",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 259,
+      "characterName": "Myrneg",
+      "realmSlug": "spineshatter",
+      "rating": 2078,
+      "wins": 66,
+      "losses": 45,
+      "classId": "shaman",
+      "specId": "shaman_elemental",
+      "race": "Tauren",
+      "guild": "Soil",
+      "faction": "HORDE"
     },
     {
       "rank": 259,
@@ -2650,7 +3439,10 @@
       "wins": 74,
       "losses": 61,
       "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "warrior_fury",
+      "race": "Orc",
+      "guild": "this is fine",
+      "faction": "HORDE"
     },
     {
       "rank": 265,
@@ -2660,17 +3452,10 @@
       "wins": 47,
       "losses": 22,
       "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 265,
-      "characterName": "Daiquiry",
-      "realmSlug": "spineshatter",
-      "rating": 2077,
-      "wins": 47,
-      "losses": 22,
-      "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "The Cabal",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 265,
@@ -2680,7 +3465,23 @@
       "wins": 47,
       "losses": 22,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "Execute Hub",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 265,
+      "characterName": "Daiquiry",
+      "realmSlug": "spineshatter",
+      "rating": 2077,
+      "wins": 47,
+      "losses": 22,
+      "classId": "druid",
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Execute Hub",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 265,
@@ -2690,7 +3491,10 @@
       "wins": 47,
       "losses": 22,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Dwarf",
+      "guild": "Dont be upset",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 265,
@@ -2700,17 +3504,10 @@
       "wins": 133,
       "losses": 90,
       "classId": "shaman",
-      "specId": "shaman_restoration"
-    },
-    {
-      "rank": 270,
-      "characterName": "Hsaka",
-      "realmSlug": "spineshatter",
-      "rating": 2076,
-      "wins": 42,
-      "losses": 11,
-      "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "Unlike Humans",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 270,
@@ -2720,7 +3517,10 @@
       "wins": 54,
       "losses": 23,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Out of Nowhere",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 270,
@@ -2730,7 +3530,23 @@
       "wins": 67,
       "losses": 31,
       "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "warlock_destruction",
+      "race": "Orc",
+      "guild": "Camel Squad H",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 270,
+      "characterName": "Hsaka",
+      "realmSlug": "spineshatter",
+      "rating": 2076,
+      "wins": 42,
+      "losses": 11,
+      "classId": "mage",
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "DUr",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 270,
@@ -2740,7 +3556,10 @@
       "wins": 81,
       "losses": 44,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Helvetic Epidemic",
+      "faction": "HORDE"
     },
     {
       "rank": 270,
@@ -2750,17 +3569,10 @@
       "wins": 38,
       "losses": 21,
       "classId": "druid",
-      "specId": "druid_feralcombat"
-    },
-    {
-      "rank": 275,
-      "characterName": "Heptor",
-      "realmSlug": "spineshatter",
-      "rating": 2075,
-      "wins": 86,
-      "losses": 42,
-      "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "druid_feral",
+      "race": "Night Elf",
+      "guild": "Camel Squad",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 275,
@@ -2770,17 +3582,23 @@
       "wins": 59,
       "losses": 33,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Out of Nowhere",
+      "faction": "ALLIANCE"
     },
     {
-      "rank": 277,
-      "characterName": "Soëzi",
+      "rank": 275,
+      "characterName": "Heptor",
       "realmSlug": "spineshatter",
-      "rating": 2074,
-      "wins": 34,
-      "losses": 22,
+      "rating": 2075,
+      "wins": 86,
+      "losses": 42,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_holy",
+      "race": "Undead",
+      "guild": "GUN DONS",
+      "faction": "HORDE"
     },
     {
       "rank": 277,
@@ -2790,7 +3608,23 @@
       "wins": 124,
       "losses": 83,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "drone out",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 277,
+      "characterName": "Soëzi",
+      "realmSlug": "spineshatter",
+      "rating": 2074,
+      "wins": 34,
+      "losses": 22,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Greta Cthunberg",
+      "faction": "HORDE"
     },
     {
       "rank": 279,
@@ -2800,7 +3634,10 @@
       "wins": 85,
       "losses": 43,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "La Cosa Nostra",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 279,
@@ -2810,7 +3647,10 @@
       "wins": 71,
       "losses": 45,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_fury",
+      "race": "Orc",
+      "guild": "XS",
+      "faction": "HORDE"
     },
     {
       "rank": 281,
@@ -2820,7 +3660,10 @@
       "wins": 72,
       "losses": 50,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Progress",
+      "faction": "HORDE"
     },
     {
       "rank": 282,
@@ -2830,7 +3673,10 @@
       "wins": 57,
       "losses": 26,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "Asphalt",
+      "faction": "HORDE"
     },
     {
       "rank": 282,
@@ -2840,7 +3686,10 @@
       "wins": 51,
       "losses": 34,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Soil",
+      "faction": "HORDE"
     },
     {
       "rank": 284,
@@ -2850,7 +3699,10 @@
       "wins": 55,
       "losses": 32,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 284,
@@ -2860,37 +3712,10 @@
       "wins": 287,
       "losses": 200,
       "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 286,
-      "characterName": "Mobywanz",
-      "realmSlug": "spineshatter",
-      "rating": 2068,
-      "wins": 85,
-      "losses": 66,
-      "classId": "paladin",
-      "specId": "paladin_retribution"
-    },
-    {
-      "rank": 286,
-      "characterName": "Jonte",
-      "realmSlug": "spineshatter",
-      "rating": 2068,
-      "wins": 97,
-      "losses": 82,
-      "classId": "hunter",
-      "specId": "hunter_beastmastery"
-    },
-    {
-      "rank": 286,
-      "characterName": "Anigme",
-      "realmSlug": "spineshatter",
-      "rating": 2068,
-      "wins": 88,
-      "losses": 79,
-      "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "MATRËSHKA",
+      "faction": "HORDE"
     },
     {
       "rank": 286,
@@ -2900,27 +3725,49 @@
       "wins": 103,
       "losses": 98,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Iskall",
+      "faction": "ALLIANCE"
     },
     {
-      "rank": 290,
-      "characterName": "Greedyfox",
+      "rank": 286,
+      "characterName": "Mobywanz",
       "realmSlug": "spineshatter",
-      "rating": 2067,
-      "wins": 89,
-      "losses": 42,
-      "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 290,
-      "characterName": "Illumînare",
-      "realmSlug": "spineshatter",
-      "rating": 2067,
-      "wins": 89,
-      "losses": 42,
+      "rating": 2068,
+      "wins": 85,
+      "losses": 66,
       "classId": "paladin",
-      "specId": "paladin_holy"
+      "specId": "paladin_retribution",
+      "race": "Human",
+      "guild": "Blessed by RNG",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 286,
+      "characterName": "Jonte",
+      "realmSlug": "spineshatter",
+      "rating": 2068,
+      "wins": 97,
+      "losses": 82,
+      "classId": "hunter",
+      "specId": "hunter_beastmastery",
+      "race": "Dwarf",
+      "guild": "Iskall",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 286,
+      "characterName": "Anigme",
+      "realmSlug": "spineshatter",
+      "rating": 2068,
+      "wins": 88,
+      "losses": 79,
+      "classId": "shaman",
+      "specId": "shaman_enhancement",
+      "race": "Draenei",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 290,
@@ -2930,7 +3777,10 @@
       "wins": 167,
       "losses": 98,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Undead",
+      "guild": "Warboss",
+      "faction": "HORDE"
     },
     {
       "rank": 290,
@@ -2940,7 +3790,36 @@
       "wins": 56,
       "losses": 39,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Unhinged",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 290,
+      "characterName": "Greedyfox",
+      "realmSlug": "spineshatter",
+      "rating": 2067,
+      "wins": 89,
+      "losses": 42,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Feit men farlig",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 290,
+      "characterName": "Illumînare",
+      "realmSlug": "spineshatter",
+      "rating": 2067,
+      "wins": 89,
+      "losses": 42,
+      "classId": "paladin",
+      "specId": "paladin_holy",
+      "race": "Blood Elf",
+      "guild": "Feit men farlig",
+      "faction": "HORDE"
     },
     {
       "rank": 290,
@@ -2950,7 +3829,10 @@
       "wins": 89,
       "losses": 81,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 295,
@@ -2960,7 +3842,10 @@
       "wins": 61,
       "losses": 38,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Human",
+      "guild": "Exploding Labrats",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 296,
@@ -2970,7 +3855,10 @@
       "wins": 54,
       "losses": 26,
       "classId": "hunter",
-      "specId": "hunter_marksmanship"
+      "specId": "hunter_marksmanship",
+      "race": "Tauren",
+      "guild": "BONOBOS",
+      "faction": "HORDE"
     },
     {
       "rank": 296,
@@ -2980,7 +3868,10 @@
       "wins": 99,
       "losses": 63,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Geneva Checklist",
+      "faction": "HORDE"
     },
     {
       "rank": 298,
@@ -2990,7 +3881,10 @@
       "wins": 36,
       "losses": 13,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "one guild",
+      "faction": "HORDE"
     },
     {
       "rank": 298,
@@ -3000,7 +3894,10 @@
       "wins": 76,
       "losses": 54,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "FIRST DATES",
+      "faction": "HORDE"
     },
     {
       "rank": 298,
@@ -3010,7 +3907,10 @@
       "wins": 81,
       "losses": 59,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "FIRST DATES",
+      "faction": "HORDE"
     },
     {
       "rank": 298,
@@ -3020,17 +3920,10 @@
       "wins": 75,
       "losses": 55,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
-    },
-    {
-      "rank": 302,
-      "characterName": "Mastakillahg",
-      "realmSlug": "spineshatter",
-      "rating": 2062,
-      "wins": 66,
-      "losses": 21,
-      "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "FIRST DATES",
+      "faction": "HORDE"
     },
     {
       "rank": 302,
@@ -3040,7 +3933,23 @@
       "wins": 79,
       "losses": 52,
       "classId": "hunter",
-      "specId": "hunter_survival"
+      "specId": "hunter_survival",
+      "race": "Dwarf",
+      "guild": "Spiters A",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 302,
+      "characterName": "Mastakillahg",
+      "realmSlug": "spineshatter",
+      "rating": 2062,
+      "wins": 66,
+      "losses": 21,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "We come repaired",
+      "faction": "HORDE"
     },
     {
       "rank": 302,
@@ -3050,7 +3959,10 @@
       "wins": 94,
       "losses": 64,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Orc",
+      "guild": "Tax Evasion",
+      "faction": "HORDE"
     },
     {
       "rank": 305,
@@ -3060,7 +3972,10 @@
       "wins": 93,
       "losses": 65,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Los Ratones",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 306,
@@ -3070,7 +3985,10 @@
       "wins": 72,
       "losses": 31,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "LUNACY",
+      "faction": "HORDE"
     },
     {
       "rank": 306,
@@ -3080,7 +3998,10 @@
       "wins": 72,
       "losses": 31,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "shaman_enhancement",
+      "race": "Orc",
+      "guild": "LUNACY",
+      "faction": "HORDE"
     },
     {
       "rank": 306,
@@ -3090,7 +4011,10 @@
       "wins": 72,
       "losses": 31,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "Noot Noot",
+      "faction": "HORDE"
     },
     {
       "rank": 306,
@@ -3100,7 +4024,10 @@
       "wins": 62,
       "losses": 33,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "ceph",
+      "faction": "HORDE"
     },
     {
       "rank": 306,
@@ -3110,7 +4037,10 @@
       "wins": 68,
       "losses": 43,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "Kotipizza",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 311,
@@ -3120,7 +4050,10 @@
       "wins": 122,
       "losses": 54,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Camel Squad H",
+      "faction": "HORDE"
     },
     {
       "rank": 311,
@@ -3130,7 +4063,10 @@
       "wins": 91,
       "losses": 67,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 311,
@@ -3140,7 +4076,10 @@
       "wins": 80,
       "losses": 62,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Draenei",
+      "guild": "hva er et problem",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 314,
@@ -3150,7 +4089,10 @@
       "wins": 90,
       "losses": 60,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Undead",
+      "guild": "FIRST DATES",
+      "faction": "HORDE"
     },
     {
       "rank": 314,
@@ -3160,27 +4102,10 @@
       "wins": 90,
       "losses": 68,
       "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 316,
-      "characterName": "Gigibuffón",
-      "realmSlug": "spineshatter",
-      "rating": 2057,
-      "wins": 40,
-      "losses": 15,
-      "classId": "paladin",
-      "specId": "paladin_holy"
-    },
-    {
-      "rank": 316,
-      "characterName": "Lythia",
-      "realmSlug": "spineshatter",
-      "rating": 2057,
-      "wins": 63,
-      "losses": 47,
-      "classId": "paladin",
-      "specId": "paladin_protection"
+      "specId": "warrior_arms",
+      "race": "Human",
+      "guild": "Special Needs",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 316,
@@ -3190,7 +4115,36 @@
       "wins": 67,
       "losses": 51,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Troll",
+      "guild": "Warboss",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 316,
+      "characterName": "Gigibuffón",
+      "realmSlug": "spineshatter",
+      "rating": 2057,
+      "wins": 40,
+      "losses": 15,
+      "classId": "paladin",
+      "specId": "paladin_holy",
+      "race": "Blood Elf",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 316,
+      "characterName": "Lythia",
+      "realmSlug": "spineshatter",
+      "rating": 2057,
+      "wins": 63,
+      "losses": 47,
+      "classId": "paladin",
+      "specId": "paladin_protection",
+      "race": "Human",
+      "guild": "hva er et problem",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 319,
@@ -3200,7 +4154,10 @@
       "wins": 83,
       "losses": 38,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 319,
@@ -3210,7 +4167,10 @@
       "wins": 51,
       "losses": 26,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "shaman_enhancement",
+      "race": "Draenei",
+      "guild": "good talk",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 319,
@@ -3220,7 +4180,10 @@
       "wins": 108,
       "losses": 57,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Tauren",
+      "guild": "safety always off",
+      "faction": "HORDE"
     },
     {
       "rank": 322,
@@ -3230,7 +4193,10 @@
       "wins": 77,
       "losses": 63,
       "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "warrior_fury",
+      "race": "Gnome",
+      "guild": "Los Ratones",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 323,
@@ -3240,27 +4206,10 @@
       "wins": 52,
       "losses": 30,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
-    },
-    {
-      "rank": 324,
-      "characterName": "Floozy",
-      "realmSlug": "spineshatter",
-      "rating": 2053,
-      "wins": 57,
-      "losses": 37,
-      "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 324,
-      "characterName": "Lefap",
-      "realmSlug": "spineshatter",
-      "rating": 2053,
-      "wins": 52,
-      "losses": 35,
-      "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "shaman_enhancement",
+      "race": "Draenei",
+      "guild": "Exploding Labrats",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 324,
@@ -3270,7 +4219,36 @@
       "wins": 98,
       "losses": 73,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "Longterm Mates",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 324,
+      "characterName": "Floozy",
+      "realmSlug": "spineshatter",
+      "rating": 2053,
+      "wins": 57,
+      "losses": 37,
+      "classId": "warrior",
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Exploding Labrats",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 324,
+      "characterName": "Lefap",
+      "realmSlug": "spineshatter",
+      "rating": 2053,
+      "wins": 52,
+      "losses": 35,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Animals",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 327,
@@ -3280,7 +4258,10 @@
       "wins": 31,
       "losses": 14,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "brat summer",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 327,
@@ -3290,7 +4271,10 @@
       "wins": 57,
       "losses": 28,
       "classId": "paladin",
-      "specId": "paladin_protection"
+      "specId": "paladin_protection",
+      "race": "Blood Elf",
+      "guild": "ceph",
+      "faction": "HORDE"
     },
     {
       "rank": 327,
@@ -3300,27 +4284,10 @@
       "wins": 57,
       "losses": 28,
       "classId": "shaman",
-      "specId": "shaman_restoration"
-    },
-    {
-      "rank": 330,
-      "characterName": "Demonalgy",
-      "realmSlug": "spineshatter",
-      "rating": 2051,
-      "wins": 44,
-      "losses": 25,
-      "classId": "warlock",
-      "specId": "warlock_destruction"
-    },
-    {
-      "rank": 330,
-      "characterName": "Djality",
-      "realmSlug": "spineshatter",
-      "rating": 2051,
-      "wins": 44,
-      "losses": 25,
-      "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "shaman_elemental",
+      "race": "Orc",
+      "guild": "ceph",
+      "faction": "HORDE"
     },
     {
       "rank": 330,
@@ -3330,7 +4297,36 @@
       "wins": 64,
       "losses": 38,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "one guild",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 330,
+      "characterName": "Demonalgy",
+      "realmSlug": "spineshatter",
+      "rating": 2051,
+      "wins": 44,
+      "losses": 25,
+      "classId": "warlock",
+      "specId": "warlock_destruction",
+      "race": "Gnome",
+      "guild": "Animals",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 330,
+      "characterName": "Djality",
+      "realmSlug": "spineshatter",
+      "rating": 2051,
+      "wins": 44,
+      "losses": 25,
+      "classId": "mage",
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Animals",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 330,
@@ -3340,7 +4336,10 @@
       "wins": 105,
       "losses": 71,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "is a problem",
+      "faction": "HORDE"
     },
     {
       "rank": 330,
@@ -3350,7 +4349,10 @@
       "wins": 107,
       "losses": 89,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Pure Adrenaline",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 335,
@@ -3360,7 +4362,10 @@
       "wins": 79,
       "losses": 55,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Angels II",
+      "faction": "HORDE"
     },
     {
       "rank": 335,
@@ -3370,17 +4375,10 @@
       "wins": 84,
       "losses": 59,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
-    },
-    {
-      "rank": 337,
-      "characterName": "Sonyra",
-      "realmSlug": "spineshatter",
-      "rating": 2049,
-      "wins": 67,
-      "losses": 33,
-      "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_enhancement",
+      "race": "Orc",
+      "guild": "Devourers",
+      "faction": "HORDE"
     },
     {
       "rank": 337,
@@ -3390,17 +4388,10 @@
       "wins": 43,
       "losses": 23,
       "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 337,
-      "characterName": "Ysë",
-      "realmSlug": "spineshatter",
-      "rating": 2049,
-      "wins": 67,
-      "losses": 40,
-      "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 337,
@@ -3410,7 +4401,36 @@
       "wins": 65,
       "losses": 40,
       "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "warlock_destruction",
+      "race": "Undead",
+      "guild": "Play for pugs",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 337,
+      "characterName": "Sonyra",
+      "realmSlug": "spineshatter",
+      "rating": 2049,
+      "wins": 67,
+      "losses": 33,
+      "classId": "shaman",
+      "specId": "shaman_elemental",
+      "race": "Tauren",
+      "guild": "Helvetic Epidemic",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 337,
+      "characterName": "Ysë",
+      "realmSlug": "spineshatter",
+      "rating": 2049,
+      "wins": 67,
+      "losses": 40,
+      "classId": "priest",
+      "specId": "priest_holy",
+      "race": "Undead",
+      "guild": "merely a setback",
+      "faction": "HORDE"
     },
     {
       "rank": 337,
@@ -3420,7 +4440,10 @@
       "wins": 107,
       "losses": 68,
       "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "warrior_fury",
+      "race": "Orc",
+      "guild": "Impact",
+      "faction": "HORDE"
     },
     {
       "rank": 342,
@@ -3430,7 +4453,10 @@
       "wins": 61,
       "losses": 27,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "The Burning Business",
+      "faction": "HORDE"
     },
     {
       "rank": 342,
@@ -3440,7 +4466,10 @@
       "wins": 61,
       "losses": 27,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Neverland",
+      "faction": "HORDE"
     },
     {
       "rank": 342,
@@ -3450,7 +4479,10 @@
       "wins": 61,
       "losses": 27,
       "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "We come repaired",
+      "faction": "HORDE"
     },
     {
       "rank": 345,
@@ -3460,7 +4492,10 @@
       "wins": 58,
       "losses": 17,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Undead",
+      "guild": "Camel Squad H",
+      "faction": "HORDE"
     },
     {
       "rank": 345,
@@ -3470,7 +4505,10 @@
       "wins": 59,
       "losses": 32,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "Progress",
+      "faction": "HORDE"
     },
     {
       "rank": 345,
@@ -3480,7 +4518,10 @@
       "wins": 95,
       "losses": 61,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 345,
@@ -3490,7 +4531,10 @@
       "wins": 66,
       "losses": 52,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Actually Prepared",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 349,
@@ -3500,7 +4544,10 @@
       "wins": 85,
       "losses": 64,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 350,
@@ -3510,7 +4557,10 @@
       "wins": 38,
       "losses": 3,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 350,
@@ -3520,7 +4570,10 @@
       "wins": 63,
       "losses": 30,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Undead",
+      "guild": "is a problem",
+      "faction": "HORDE"
     },
     {
       "rank": 350,
@@ -3530,7 +4583,10 @@
       "wins": 47,
       "losses": 26,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Undead",
+      "guild": "ceph",
+      "faction": "HORDE"
     },
     {
       "rank": 350,
@@ -3540,17 +4596,10 @@
       "wins": 89,
       "losses": 52,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
-    },
-    {
-      "rank": 354,
-      "characterName": "Influensseri",
-      "realmSlug": "thunderstrike",
-      "rating": 2044,
-      "wins": 68,
-      "losses": 36,
-      "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "NEXT FRESH WHEN",
+      "faction": "HORDE"
     },
     {
       "rank": 354,
@@ -3560,7 +4609,23 @@
       "wins": 72,
       "losses": 47,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "WOOF",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 354,
+      "characterName": "Influensseri",
+      "realmSlug": "thunderstrike",
+      "rating": 2044,
+      "wins": 68,
+      "losses": 36,
+      "classId": "druid",
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Kotipizza",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 354,
@@ -3570,17 +4635,10 @@
       "wins": 79,
       "losses": 62,
       "classId": "hunter",
-      "specId": "hunter_marksmanship"
-    },
-    {
-      "rank": 357,
-      "characterName": "Djbrunsås",
-      "realmSlug": "spineshatter",
-      "rating": 2043,
-      "wins": 45,
-      "losses": 22,
-      "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "hunter_marksmanship",
+      "race": "Orc",
+      "guild": "Noot Noot",
+      "faction": "HORDE"
     },
     {
       "rank": 357,
@@ -3590,7 +4648,23 @@
       "wins": 57,
       "losses": 38,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Undead",
+      "guild": "Reeferqueefer",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 357,
+      "characterName": "Djbrunsås",
+      "realmSlug": "spineshatter",
+      "rating": 2043,
+      "wins": 45,
+      "losses": 22,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Volatile",
+      "faction": "HORDE"
     },
     {
       "rank": 357,
@@ -3600,7 +4674,10 @@
       "wins": 148,
       "losses": 101,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "DATA",
+      "faction": "HORDE"
     },
     {
       "rank": 357,
@@ -3610,7 +4687,10 @@
       "wins": 105,
       "losses": 73,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Troll",
+      "guild": "The Balkan Crew",
+      "faction": "HORDE"
     },
     {
       "rank": 361,
@@ -3620,7 +4700,10 @@
       "wins": 50,
       "losses": 28,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Noot Noot",
+      "faction": "HORDE"
     },
     {
       "rank": 361,
@@ -3630,7 +4713,10 @@
       "wins": 50,
       "losses": 28,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "Noot Noot",
+      "faction": "HORDE"
     },
     {
       "rank": 361,
@@ -3640,7 +4726,10 @@
       "wins": 54,
       "losses": 33,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "vintage shrek collector",
+      "faction": "HORDE"
     },
     {
       "rank": 364,
@@ -3650,7 +4739,10 @@
       "wins": 53,
       "losses": 23,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 364,
@@ -3660,7 +4752,10 @@
       "wins": 38,
       "losses": 20,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 366,
@@ -3670,7 +4765,10 @@
       "wins": 32,
       "losses": 6,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 366,
@@ -3680,7 +4778,10 @@
       "wins": 65,
       "losses": 36,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 366,
@@ -3690,7 +4791,10 @@
       "wins": 98,
       "losses": 64,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Orc",
+      "guild": "Aeternum",
+      "faction": "HORDE"
     },
     {
       "rank": 366,
@@ -3700,7 +4804,10 @@
       "wins": 72,
       "losses": 49,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "good talk",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 366,
@@ -3710,7 +4817,10 @@
       "wins": 92,
       "losses": 64,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "WIP",
+      "faction": "HORDE"
     },
     {
       "rank": 366,
@@ -3720,7 +4830,10 @@
       "wins": 59,
       "losses": 43,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "shaman_enhancement",
+      "race": "Tauren",
+      "guild": "Veritas",
+      "faction": "HORDE"
     },
     {
       "rank": 366,
@@ -3730,17 +4843,10 @@
       "wins": 76,
       "losses": 57,
       "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 373,
-      "characterName": "Dxb",
-      "realmSlug": "spineshatter",
-      "rating": 2039,
-      "wins": 36,
-      "losses": 5,
-      "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "warrior_arms",
+      "race": "Tauren",
+      "guild": "STOR",
+      "faction": "HORDE"
     },
     {
       "rank": 373,
@@ -3750,7 +4856,10 @@
       "wins": 78,
       "losses": 37,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "snow goose neednt bathe",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 373,
@@ -3760,17 +4869,23 @@
       "wins": 78,
       "losses": 37,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "snow goose neednt bathe",
+      "faction": "ALLIANCE"
     },
     {
-      "rank": 376,
-      "characterName": "Naturalplan",
+      "rank": 373,
+      "characterName": "Dxb",
       "realmSlug": "spineshatter",
-      "rating": 2038,
-      "wins": 44,
-      "losses": 17,
+      "rating": 2039,
+      "wins": 36,
+      "losses": 5,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "Camel Squad",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 376,
@@ -3780,7 +4895,23 @@
       "wins": 115,
       "losses": 56,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "wgeu",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 376,
+      "characterName": "Naturalplan",
+      "realmSlug": "spineshatter",
+      "rating": 2038,
+      "wins": 44,
+      "losses": 17,
+      "classId": "shaman",
+      "specId": "shaman_elemental",
+      "race": "Orc",
+      "guild": "Dictators",
+      "faction": "HORDE"
     },
     {
       "rank": 376,
@@ -3790,7 +4921,10 @@
       "wins": 48,
       "losses": 27,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "snow goose neednt bathe",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 376,
@@ -3800,7 +4934,10 @@
       "wins": 57,
       "losses": 36,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Devourers",
+      "faction": "HORDE"
     },
     {
       "rank": 376,
@@ -3810,7 +4947,10 @@
       "wins": 72,
       "losses": 51,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Devourers",
+      "faction": "HORDE"
     },
     {
       "rank": 376,
@@ -3820,7 +4960,10 @@
       "wins": 53,
       "losses": 39,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "WIP",
+      "faction": "HORDE"
     },
     {
       "rank": 382,
@@ -3830,7 +4973,10 @@
       "wins": 49,
       "losses": 20,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Kotipizza",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 382,
@@ -3840,7 +4986,10 @@
       "wins": 48,
       "losses": 28,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 382,
@@ -3850,7 +4999,10 @@
       "wins": 54,
       "losses": 37,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Tauren",
+      "guild": "Veritas",
+      "faction": "HORDE"
     },
     {
       "rank": 382,
@@ -3860,37 +5012,10 @@
       "wins": 88,
       "losses": 62,
       "classId": "priest",
-      "specId": "priest_holy"
-    },
-    {
-      "rank": 386,
-      "characterName": "Mystikk",
-      "realmSlug": "spineshatter",
-      "rating": 2036,
-      "wins": 93,
-      "losses": 50,
-      "classId": "mage",
-      "specId": "mage_frost"
-    },
-    {
-      "rank": 386,
-      "characterName": "Wunderwear",
-      "realmSlug": "spineshatter",
-      "rating": 2036,
-      "wins": 55,
-      "losses": 35,
-      "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 386,
-      "characterName": "Rinndra",
-      "realmSlug": "spineshatter",
-      "rating": 2036,
-      "wins": 44,
-      "losses": 29,
-      "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "priest_holy",
+      "race": "Dwarf",
+      "guild": "no flame ofc",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 386,
@@ -3900,7 +5025,23 @@
       "wins": 66,
       "losses": 47,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "AVSLUT",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 386,
+      "characterName": "Rinndra",
+      "realmSlug": "spineshatter",
+      "rating": 2036,
+      "wins": 44,
+      "losses": 29,
+      "classId": "rogue",
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Blazing Squad",
+      "faction": "HORDE"
     },
     {
       "rank": 386,
@@ -3910,7 +5051,10 @@
       "wins": 49,
       "losses": 36,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Dwarf",
+      "guild": "HESOYAM",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 386,
@@ -3920,7 +5064,10 @@
       "wins": 49,
       "losses": 36,
       "classId": "paladin",
-      "specId": "paladin_holy"
+      "specId": "paladin_holy",
+      "race": "Dwarf",
+      "guild": "HESOYAM",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 386,
@@ -3930,27 +5077,36 @@
       "wins": 49,
       "losses": 36,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_marksmanship",
+      "race": "Dwarf",
+      "guild": "HESOYAM",
+      "faction": "ALLIANCE"
     },
     {
-      "rank": 393,
-      "characterName": "Drsaggy",
+      "rank": 386,
+      "characterName": "Mystikk",
       "realmSlug": "spineshatter",
-      "rating": 2035,
-      "wins": 70,
-      "losses": 39,
-      "classId": "warrior",
-      "specId": "warrior_arms"
+      "rating": 2036,
+      "wins": 93,
+      "losses": 50,
+      "classId": "mage",
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "French Kiss",
+      "faction": "ALLIANCE"
     },
     {
-      "rank": 393,
-      "characterName": "Facee",
+      "rank": 386,
+      "characterName": "Wunderwear",
       "realmSlug": "spineshatter",
-      "rating": 2035,
-      "wins": 45,
-      "losses": 26,
+      "rating": 2036,
+      "wins": 55,
+      "losses": 35,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "SALAD BAKERS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 393,
@@ -3960,7 +5116,36 @@
       "wins": 52,
       "losses": 33,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "MD Lite",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 393,
+      "characterName": "Facee",
+      "realmSlug": "spineshatter",
+      "rating": 2035,
+      "wins": 45,
+      "losses": 26,
+      "classId": "warrior",
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Simplexity",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 393,
+      "characterName": "Drsaggy",
+      "realmSlug": "spineshatter",
+      "rating": 2035,
+      "wins": 70,
+      "losses": 39,
+      "classId": "warrior",
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "ONY BUFF WHEN",
+      "faction": "HORDE"
     },
     {
       "rank": 396,
@@ -3970,7 +5155,10 @@
       "wins": 46,
       "losses": 17,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "kalavkalash",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 396,
@@ -3980,57 +5168,10 @@
       "wins": 46,
       "losses": 17,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
-    },
-    {
-      "rank": 396,
-      "characterName": "Duerk",
-      "realmSlug": "thunderstrike",
-      "rating": 2034,
-      "wins": 46,
-      "losses": 17,
-      "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 396,
-      "characterName": "Zhilexlol",
-      "realmSlug": "spineshatter",
-      "rating": 2034,
-      "wins": 46,
-      "losses": 23,
-      "classId": "rogue",
-      "specId": "rogue_subtlety"
-    },
-    {
-      "rank": 396,
-      "characterName": "Brucebannerr",
-      "realmSlug": "spineshatter",
-      "rating": 2034,
-      "wins": 58,
-      "losses": 37,
-      "classId": "shaman",
-      "specId": "shaman_enhancement"
-    },
-    {
-      "rank": 396,
-      "characterName": "Bezzypico",
-      "realmSlug": "spineshatter",
-      "rating": 2034,
-      "wins": 77,
-      "losses": 50,
-      "classId": "shaman",
-      "specId": "shaman_elemental"
-    },
-    {
-      "rank": 396,
-      "characterName": "Lillijalol",
-      "realmSlug": "spineshatter",
-      "rating": 2034,
-      "wins": 32,
-      "losses": 21,
-      "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Plague",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 396,
@@ -4040,7 +5181,75 @@
       "wins": 67,
       "losses": 47,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Windfury",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 396,
+      "characterName": "Lillijalol",
+      "realmSlug": "spineshatter",
+      "rating": 2034,
+      "wins": 32,
+      "losses": 21,
+      "classId": "shaman",
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "brb shower",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 396,
+      "characterName": "Duerk",
+      "realmSlug": "thunderstrike",
+      "rating": 2034,
+      "wins": 46,
+      "losses": 17,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "kalavkalash",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 396,
+      "characterName": "Zhilexlol",
+      "realmSlug": "spineshatter",
+      "rating": 2034,
+      "wins": 46,
+      "losses": 23,
+      "classId": "rogue",
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Reeferqueefer",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 396,
+      "characterName": "Brucebannerr",
+      "realmSlug": "spineshatter",
+      "rating": 2034,
+      "wins": 58,
+      "losses": 37,
+      "classId": "shaman",
+      "specId": "shaman_enhancement",
+      "race": "Orc",
+      "guild": "Show me ur CRITTS",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 396,
+      "characterName": "Bezzypico",
+      "realmSlug": "spineshatter",
+      "rating": 2034,
+      "wins": 77,
+      "losses": 50,
+      "classId": "shaman",
+      "specId": "shaman_elemental",
+      "race": "Orc",
+      "guild": "BlackSun",
+      "faction": "HORDE"
     },
     {
       "rank": 396,
@@ -4050,7 +5259,10 @@
       "wins": 89,
       "losses": 65,
       "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "warlock_destruction",
+      "race": "Undead",
+      "guild": "Last Wings",
+      "faction": "HORDE"
     },
     {
       "rank": 396,
@@ -4060,17 +5272,10 @@
       "wins": 81,
       "losses": 62,
       "classId": "druid",
-      "specId": "druid_restoration"
-    },
-    {
-      "rank": 406,
-      "characterName": "Fcbarca",
-      "realmSlug": "spineshatter",
-      "rating": 2033,
-      "wins": 44,
-      "losses": 23,
-      "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Mellon",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 406,
@@ -4080,7 +5285,10 @@
       "wins": 44,
       "losses": 23,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "too old for this",
+      "faction": "HORDE"
     },
     {
       "rank": 406,
@@ -4090,27 +5298,10 @@
       "wins": 44,
       "losses": 23,
       "classId": "warrior",
-      "specId": "warrior_fury"
-    },
-    {
-      "rank": 406,
-      "characterName": "Scylo",
-      "realmSlug": "spineshatter",
-      "rating": 2033,
-      "wins": 66,
-      "losses": 36,
-      "classId": "hunter",
-      "specId": "hunter_beastmastery"
-    },
-    {
-      "rank": 406,
-      "characterName": "Yakk",
-      "realmSlug": "spineshatter",
-      "rating": 2033,
-      "wins": 43,
-      "losses": 25,
-      "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "too old for this",
+      "faction": "HORDE"
     },
     {
       "rank": 406,
@@ -4120,17 +5311,49 @@
       "wins": 43,
       "losses": 26,
       "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "warrior_fury",
+      "race": "Gnome",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
-      "rank": 412,
-      "characterName": "Cleangamer",
+      "rank": 406,
+      "characterName": "Fcbarca",
       "realmSlug": "spineshatter",
-      "rating": 2032,
-      "wins": 82,
-      "losses": 52,
+      "rating": 2033,
+      "wins": 44,
+      "losses": 23,
+      "classId": "druid",
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "WARSONG SAFARY CLUB",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 406,
+      "characterName": "Scylo",
+      "realmSlug": "spineshatter",
+      "rating": 2033,
+      "wins": 66,
+      "losses": 36,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "safety always off",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 406,
+      "characterName": "Yakk",
+      "realmSlug": "spineshatter",
+      "rating": 2033,
+      "wins": 43,
+      "losses": 25,
+      "classId": "shaman",
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Noot Noot",
+      "faction": "HORDE"
     },
     {
       "rank": 412,
@@ -4140,7 +5363,23 @@
       "wins": 59,
       "losses": 45,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Temporary",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 412,
+      "characterName": "Cleangamer",
+      "realmSlug": "spineshatter",
+      "rating": 2032,
+      "wins": 82,
+      "losses": 52,
+      "classId": "hunter",
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "BLACKOUT",
+      "faction": "HORDE"
     },
     {
       "rank": 414,
@@ -4150,7 +5389,10 @@
       "wins": 38,
       "losses": 14,
       "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "priest_holy",
+      "race": "Dwarf",
+      "guild": "Camel Squad",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 414,
@@ -4160,17 +5402,10 @@
       "wins": 86,
       "losses": 48,
       "classId": "druid",
-      "specId": "druid_restoration"
-    },
-    {
-      "rank": 416,
-      "characterName": "Blackfirezx",
-      "realmSlug": "spineshatter",
-      "rating": 2030,
-      "wins": 43,
-      "losses": 22,
-      "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 416,
@@ -4180,7 +5415,23 @@
       "wins": 57,
       "losses": 31,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "NOT Chatgpt",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 416,
+      "characterName": "Blackfirezx",
+      "realmSlug": "spineshatter",
+      "rating": 2030,
+      "wins": 43,
+      "losses": 22,
+      "classId": "mage",
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "ASSIGNED BENCH",
+      "faction": "HORDE"
     },
     {
       "rank": 416,
@@ -4190,7 +5441,10 @@
       "wins": 61,
       "losses": 39,
       "classId": "hunter",
-      "specId": "hunter_survival"
+      "specId": "hunter_survival",
+      "race": "Dwarf",
+      "guild": "FLYING GOOSE",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 416,
@@ -4200,7 +5454,10 @@
       "wins": 220,
       "losses": 151,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "SWP in Three Days",
+      "faction": "HORDE"
     },
     {
       "rank": 420,
@@ -4210,7 +5467,10 @@
       "wins": 32,
       "losses": 14,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 420,
@@ -4220,7 +5480,10 @@
       "wins": 32,
       "losses": 14,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 420,
@@ -4230,7 +5493,10 @@
       "wins": 53,
       "losses": 34,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "one guild",
+      "faction": "HORDE"
     },
     {
       "rank": 420,
@@ -4240,7 +5506,10 @@
       "wins": 109,
       "losses": 74,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "HI OK",
+      "faction": "HORDE"
     },
     {
       "rank": 424,
@@ -4250,27 +5519,10 @@
       "wins": 43,
       "losses": 18,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
-    },
-    {
-      "rank": 424,
-      "characterName": "Feed",
-      "realmSlug": "spineshatter",
-      "rating": 2028,
-      "wins": 50,
-      "losses": 31,
-      "classId": "warlock",
-      "specId": "warlock_demonology"
-    },
-    {
-      "rank": 424,
-      "characterName": "Lillqvist",
-      "realmSlug": "spineshatter",
-      "rating": 2028,
-      "wins": 50,
-      "losses": 31,
-      "classId": "priest",
-      "specId": "priest_shadow"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "MANA",
+      "faction": "HORDE"
     },
     {
       "rank": 424,
@@ -4280,7 +5532,36 @@
       "wins": 41,
       "losses": 26,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Numen",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 424,
+      "characterName": "Feed",
+      "realmSlug": "spineshatter",
+      "rating": 2028,
+      "wins": 50,
+      "losses": 31,
+      "classId": "warlock",
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "ONY BUFF WHEN",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 424,
+      "characterName": "Lillqvist",
+      "realmSlug": "spineshatter",
+      "rating": 2028,
+      "wins": 50,
+      "losses": 31,
+      "classId": "priest",
+      "specId": "priest_shadow",
+      "race": "Undead",
+      "guild": "ONY BUFF WHEN",
+      "faction": "HORDE"
     },
     {
       "rank": 424,
@@ -4290,7 +5571,10 @@
       "wins": 90,
       "losses": 62,
       "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "warlock_destruction",
+      "race": "Undead",
+      "guild": "Greta Cthunberg",
+      "faction": "HORDE"
     },
     {
       "rank": 424,
@@ -4300,37 +5584,10 @@
       "wins": 51,
       "losses": 37,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
-    },
-    {
-      "rank": 430,
-      "characterName": "Jääslamx",
-      "realmSlug": "spineshatter",
-      "rating": 2027,
-      "wins": 56,
-      "losses": 25,
-      "classId": "warrior",
-      "specId": "warrior_arms"
-    },
-    {
-      "rank": 430,
-      "characterName": "Apegodjiji",
-      "realmSlug": "spineshatter",
-      "rating": 2027,
-      "wins": 67,
-      "losses": 39,
-      "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 430,
-      "characterName": "Xerine",
-      "realmSlug": "spineshatter",
-      "rating": 2027,
-      "wins": 44,
-      "losses": 28,
-      "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "not much to look at",
+      "faction": "HORDE"
     },
     {
       "rank": 430,
@@ -4340,7 +5597,49 @@
       "wins": 197,
       "losses": 128,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Last Wings",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 430,
+      "characterName": "Jääslamx",
+      "realmSlug": "spineshatter",
+      "rating": 2027,
+      "wins": 56,
+      "losses": 25,
+      "classId": "warrior",
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Dicentra",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 430,
+      "characterName": "Apegodjiji",
+      "realmSlug": "spineshatter",
+      "rating": 2027,
+      "wins": 67,
+      "losses": 39,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "forensik",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 430,
+      "characterName": "Xerine",
+      "realmSlug": "spineshatter",
+      "rating": 2027,
+      "wins": 44,
+      "losses": 28,
+      "classId": "paladin",
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "pneumonoultramicroscopic",
+      "faction": "HORDE"
     },
     {
       "rank": 430,
@@ -4350,47 +5649,10 @@
       "wins": 192,
       "losses": 160,
       "classId": "mage",
-      "specId": "mage_arcane"
-    },
-    {
-      "rank": 435,
-      "characterName": "Runyoufoolz",
-      "realmSlug": "spineshatter",
-      "rating": 2026,
-      "wins": 49,
-      "losses": 27,
-      "classId": "paladin",
-      "specId": "paladin_retribution"
-    },
-    {
-      "rank": 435,
-      "characterName": "Taakisham",
-      "realmSlug": "spineshatter",
-      "rating": 2026,
-      "wins": 53,
-      "losses": 36,
-      "classId": "shaman",
-      "specId": "shaman_enhancement"
-    },
-    {
-      "rank": 435,
-      "characterName": "Nixilis",
-      "realmSlug": "spineshatter",
-      "rating": 2026,
-      "wins": 53,
-      "losses": 36,
-      "classId": "hunter",
-      "specId": "hunter_beastmastery"
-    },
-    {
-      "rank": 435,
-      "characterName": "Woodski",
-      "realmSlug": "spineshatter",
-      "rating": 2026,
-      "wins": 45,
-      "losses": 31,
-      "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "mage_arcane",
+      "race": "Human",
+      "guild": "Exordium",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 435,
@@ -4400,7 +5662,62 @@
       "wins": 141,
       "losses": 105,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "one guild",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 435,
+      "characterName": "Runyoufoolz",
+      "realmSlug": "spineshatter",
+      "rating": 2026,
+      "wins": 49,
+      "losses": 27,
+      "classId": "paladin",
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "Reeferqueefer",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 435,
+      "characterName": "Taakisham",
+      "realmSlug": "spineshatter",
+      "rating": 2026,
+      "wins": 53,
+      "losses": 36,
+      "classId": "shaman",
+      "specId": "shaman_enhancement",
+      "race": "Orc",
+      "guild": "chris wolcen",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 435,
+      "characterName": "Nixilis",
+      "realmSlug": "spineshatter",
+      "rating": 2026,
+      "wins": 53,
+      "losses": 36,
+      "classId": "hunter",
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "chris wolcen",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 435,
+      "characterName": "Woodski",
+      "realmSlug": "spineshatter",
+      "rating": 2026,
+      "wins": 45,
+      "losses": 31,
+      "classId": "warrior",
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "potential",
+      "faction": "HORDE"
     },
     {
       "rank": 435,
@@ -4410,7 +5727,10 @@
       "wins": 84,
       "losses": 71,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Orc",
+      "guild": "NOT Chatgpt",
+      "faction": "HORDE"
     },
     {
       "rank": 441,
@@ -4420,7 +5740,10 @@
       "wins": 51,
       "losses": 22,
       "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "priest_holy",
+      "race": "Undead",
+      "guild": "Camel Squad H",
+      "faction": "HORDE"
     },
     {
       "rank": 441,
@@ -4430,7 +5753,10 @@
       "wins": 114,
       "losses": 69,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "tbc placeholder",
+      "faction": "HORDE"
     },
     {
       "rank": 441,
@@ -4440,7 +5766,10 @@
       "wins": 35,
       "losses": 23,
       "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "warlock_destruction",
+      "race": "Undead",
+      "guild": "Asphalt",
+      "faction": "HORDE"
     },
     {
       "rank": 441,
@@ -4450,7 +5779,10 @@
       "wins": 57,
       "losses": 38,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "AMAZING BENCH",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 445,
@@ -4460,7 +5792,10 @@
       "wins": 44,
       "losses": 18,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "uno mas",
+      "faction": "HORDE"
     },
     {
       "rank": 445,
@@ -4470,7 +5805,10 @@
       "wins": 48,
       "losses": 22,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "brb shower",
+      "faction": "HORDE"
     },
     {
       "rank": 445,
@@ -4480,7 +5818,10 @@
       "wins": 59,
       "losses": 35,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "The Club",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 445,
@@ -4490,7 +5831,10 @@
       "wins": 79,
       "losses": 47,
       "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Knokploeg",
+      "faction": "HORDE"
     },
     {
       "rank": 445,
@@ -4500,7 +5844,10 @@
       "wins": 67,
       "losses": 44,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "Asphalt",
+      "faction": "HORDE"
     },
     {
       "rank": 445,
@@ -4510,7 +5857,10 @@
       "wins": 90,
       "losses": 61,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Croggers",
+      "faction": "HORDE"
     },
     {
       "rank": 445,
@@ -4520,7 +5870,10 @@
       "wins": 110,
       "losses": 93,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "shaman_enhancement",
+      "race": "Draenei",
+      "guild": "Unhinged",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 445,
@@ -4530,7 +5883,10 @@
       "wins": 90,
       "losses": 77,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "shaman_enhancement",
+      "race": "Tauren",
+      "guild": "Uninspired",
+      "faction": "HORDE"
     },
     {
       "rank": 453,
@@ -4540,7 +5896,10 @@
       "wins": 30,
       "losses": 16,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Mass Appeal",
+      "faction": "HORDE"
     },
     {
       "rank": 453,
@@ -4550,7 +5909,10 @@
       "wins": 76,
       "losses": 44,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Tauren",
+      "guild": "The Balkan Crew",
+      "faction": "HORDE"
     },
     {
       "rank": 453,
@@ -4560,7 +5922,10 @@
       "wins": 60,
       "losses": 35,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "SÜCHTIG",
+      "faction": "HORDE"
     },
     {
       "rank": 453,
@@ -4570,7 +5935,10 @@
       "wins": 36,
       "losses": 25,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "potential",
+      "faction": "HORDE"
     },
     {
       "rank": 457,
@@ -4580,7 +5948,10 @@
       "wins": 52,
       "losses": 32,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "forensik",
+      "faction": "HORDE"
     },
     {
       "rank": 457,
@@ -4590,7 +5961,10 @@
       "wins": 85,
       "losses": 59,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "le zoo",
+      "faction": "HORDE"
     },
     {
       "rank": 457,
@@ -4600,7 +5974,10 @@
       "wins": 67,
       "losses": 49,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Human",
+      "guild": "whos friend r u",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 457,
@@ -4610,7 +5987,10 @@
       "wins": 54,
       "losses": 41,
       "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "priest_holy",
+      "race": "Dwarf",
+      "guild": "HESOYAM",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 457,
@@ -4620,7 +6000,10 @@
       "wins": 108,
       "losses": 84,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Croggers",
+      "faction": "HORDE"
     },
     {
       "rank": 457,
@@ -4630,7 +6013,10 @@
       "wins": 100,
       "losses": 83,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Croggers",
+      "faction": "HORDE"
     },
     {
       "rank": 463,
@@ -4640,7 +6026,10 @@
       "wins": 45,
       "losses": 23,
       "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "warrior_fury",
+      "race": "Gnome",
+      "guild": "Spiters A",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 463,
@@ -4650,57 +6039,10 @@
       "wins": 111,
       "losses": 76,
       "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 465,
-      "characterName": "Kanttu",
-      "realmSlug": "spineshatter",
-      "rating": 2020,
-      "wins": 52,
-      "losses": 22,
-      "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 465,
-      "characterName": "Shadowfox",
-      "realmSlug": "spineshatter",
-      "rating": 2020,
-      "wins": 63,
-      "losses": 30,
-      "classId": "priest",
-      "specId": "priest_shadow"
-    },
-    {
-      "rank": 465,
-      "characterName": "Magiqman",
-      "realmSlug": "spineshatter",
-      "rating": 2020,
-      "wins": 44,
-      "losses": 25,
-      "classId": "mage",
-      "specId": "mage_frost"
-    },
-    {
-      "rank": 465,
-      "characterName": "Luxlisbon",
-      "realmSlug": "spineshatter",
-      "rating": 2020,
-      "wins": 55,
-      "losses": 33,
-      "classId": "mage",
-      "specId": "mage_frost"
-    },
-    {
-      "rank": 465,
-      "characterName": "Chinga",
-      "realmSlug": "spineshatter",
-      "rating": 2020,
-      "wins": 99,
-      "losses": 72,
-      "classId": "druid",
-      "specId": "druid_feralcombat"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Nya Familjen",
+      "faction": "HORDE"
     },
     {
       "rank": 465,
@@ -4710,7 +6052,75 @@
       "wins": 77,
       "losses": 60,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Turtles",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 465,
+      "characterName": "Magiqman",
+      "realmSlug": "spineshatter",
+      "rating": 2020,
+      "wins": 44,
+      "losses": 25,
+      "classId": "mage",
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Out of Nowhere",
+      "faction": "ALLIANCE"
+    },
+    {
+      "rank": 465,
+      "characterName": "Kanttu",
+      "realmSlug": "spineshatter",
+      "rating": 2020,
+      "wins": 52,
+      "losses": 22,
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Rytmiryhmä",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 465,
+      "characterName": "Shadowfox",
+      "realmSlug": "spineshatter",
+      "rating": 2020,
+      "wins": 63,
+      "losses": 30,
+      "classId": "priest",
+      "specId": "priest_shadow",
+      "race": "Undead",
+      "guild": "Ach Ja",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 465,
+      "characterName": "Luxlisbon",
+      "realmSlug": "spineshatter",
+      "rating": 2020,
+      "wins": 55,
+      "losses": 33,
+      "classId": "mage",
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Gamble finito",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 465,
+      "characterName": "Chinga",
+      "realmSlug": "spineshatter",
+      "rating": 2020,
+      "wins": 99,
+      "losses": 72,
+      "classId": "druid",
+      "specId": "druid_feral",
+      "race": "Tauren",
+      "guild": "CHUD",
+      "faction": "HORDE"
     },
     {
       "rank": 465,
@@ -4720,7 +6130,10 @@
       "wins": 90,
       "losses": 77,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 472,
@@ -4730,7 +6143,10 @@
       "wins": 49,
       "losses": 19,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "Camel Squad",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 472,
@@ -4740,7 +6156,10 @@
       "wins": 83,
       "losses": 56,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "AVSLUT",
+      "faction": "HORDE"
     },
     {
       "rank": 472,
@@ -4750,7 +6169,10 @@
       "wins": 197,
       "losses": 154,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "GLI TCH",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 475,
@@ -4760,7 +6182,10 @@
       "wins": 42,
       "losses": 26,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "chris wolcen",
+      "faction": "HORDE"
     },
     {
       "rank": 475,
@@ -4770,7 +6195,10 @@
       "wins": 119,
       "losses": 85,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Gnome",
+      "guild": "Van Cleef",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 475,
@@ -4780,7 +6208,10 @@
       "wins": 105,
       "losses": 79,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Orc",
+      "guild": "Paradôx",
+      "faction": "HORDE"
     },
     {
       "rank": 475,
@@ -4790,7 +6221,10 @@
       "wins": 81,
       "losses": 63,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "Turtles",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 475,
@@ -4800,7 +6234,10 @@
       "wins": 102,
       "losses": 80,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Troll",
+      "guild": "Defeat",
+      "faction": "HORDE"
     },
     {
       "rank": 475,
@@ -4810,7 +6247,10 @@
       "wins": 98,
       "losses": 78,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "pretty wise",
+      "faction": "HORDE"
     },
     {
       "rank": 481,
@@ -4820,7 +6260,10 @@
       "wins": 40,
       "losses": 15,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Camel Squad H",
+      "faction": "HORDE"
     },
     {
       "rank": 481,
@@ -4830,7 +6273,10 @@
       "wins": 54,
       "losses": 26,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Gnome",
+      "guild": "Apes strong together",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 481,
@@ -4840,7 +6286,10 @@
       "wins": 43,
       "losses": 24,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "Out of Nowhere",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 481,
@@ -4850,7 +6299,10 @@
       "wins": 81,
       "losses": 52,
       "classId": "paladin",
-      "specId": "paladin_holy"
+      "specId": "paladin_holy",
+      "race": "Blood Elf",
+      "guild": "Oki Doki Gamba Club",
+      "faction": "HORDE"
     },
     {
       "rank": 481,
@@ -4860,7 +6312,10 @@
       "wins": 126,
       "losses": 93,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Absolute Caffeinated",
+      "faction": "HORDE"
     },
     {
       "rank": 481,
@@ -4870,7 +6325,10 @@
       "wins": 89,
       "losses": 67,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Troll",
+      "guild": "Defeat",
+      "faction": "HORDE"
     },
     {
       "rank": 481,
@@ -4880,7 +6338,10 @@
       "wins": 113,
       "losses": 87,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "Defeat",
+      "faction": "HORDE"
     },
     {
       "rank": 488,
@@ -4890,7 +6351,10 @@
       "wins": 54,
       "losses": 25,
       "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "warlock_destruction",
+      "race": "Human",
+      "guild": "Work in Progress",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 488,
@@ -4900,7 +6364,10 @@
       "wins": 122,
       "losses": 65,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Seven Sins",
+      "faction": "HORDE"
     },
     {
       "rank": 488,
@@ -4910,7 +6377,10 @@
       "wins": 161,
       "losses": 113,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Human",
+      "guild": "HB",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 488,
@@ -4920,7 +6390,10 @@
       "wins": 91,
       "losses": 72,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "I got u",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 488,
@@ -4930,7 +6403,10 @@
       "wins": 112,
       "losses": 96,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "HAHAHAHAHAHAHAHAHAHA",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 493,
@@ -4940,17 +6416,10 @@
       "wins": 53,
       "losses": 31,
       "classId": "priest",
-      "specId": "priest_discipline"
-    },
-    {
-      "rank": 493,
-      "characterName": "Föffel",
-      "realmSlug": "spineshatter",
-      "rating": 2015,
-      "wins": 78,
-      "losses": 46,
-      "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "priest_discipline",
+      "race": "Troll",
+      "guild": "Dawn",
+      "faction": "HORDE"
     },
     {
       "rank": 493,
@@ -4960,7 +6429,23 @@
       "wins": 89,
       "losses": 64,
       "classId": "shaman",
-      "specId": "shaman_enhancement"
+      "specId": "shaman_enhancement",
+      "race": "Orc",
+      "guild": "forensik",
+      "faction": "HORDE"
+    },
+    {
+      "rank": 493,
+      "characterName": "Föffel",
+      "realmSlug": "spineshatter",
+      "rating": 2015,
+      "wins": 78,
+      "losses": 46,
+      "classId": "druid",
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Kreml High",
+      "faction": "HORDE"
     },
     {
       "rank": 493,
@@ -4970,7 +6455,10 @@
       "wins": 115,
       "losses": 89,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "ZIDANE IL A TAPER",
+      "faction": "HORDE"
     },
     {
       "rank": 493,
@@ -4980,7 +6468,10 @@
       "wins": 181,
       "losses": 146,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Human",
+      "guild": "Special Needs",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 493,
@@ -4990,7 +6481,10 @@
       "wins": 170,
       "losses": 141,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Tatta United",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 493,
@@ -5000,7 +6494,10 @@
       "wins": 67,
       "losses": 58,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Undead",
+      "guild": "Hyperion",
+      "faction": "HORDE"
     },
     {
       "rank": 500,
@@ -5010,7 +6507,10 @@
       "wins": 65,
       "losses": 39,
       "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "warrior_fury",
+      "race": "Orc",
+      "guild": "WIP",
+      "faction": "HORDE"
     }
   ]
 }

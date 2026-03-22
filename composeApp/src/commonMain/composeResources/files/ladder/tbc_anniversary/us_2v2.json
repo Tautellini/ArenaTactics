@@ -2,13 +2,13 @@
   "region": "us",
   "bracket": "2v2",
   "seasonId": 1,
-  "fetchedAt": "2026-03-22T14:08:29Z",
+  "fetchedAt": "2026-03-22T15:58:36Z",
   "totalEntries": 5002,
   "ratingCutoffs": {
-    "gladiator": 2398,
-    "duelist": 1862,
+    "gladiator": 2411,
+    "duelist": 1864,
     "rival": 1580,
-    "challenger": 1443
+    "challenger": 1442
   },
   "specDistribution": [],
   "topEntries": [
@@ -20,7 +20,10 @@
       "wins": 256,
       "losses": 142,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Exclusive Guild",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 2,
@@ -30,7 +33,10 @@
       "wins": 329,
       "losses": 212,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "rebrand",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 3,
@@ -40,7 +46,10 @@
       "wins": 349,
       "losses": 167,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "rebrand",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 3,
@@ -50,7 +59,10 @@
       "wins": 400,
       "losses": 194,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "rebrand",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 5,
@@ -60,7 +72,10 @@
       "wins": 131,
       "losses": 51,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "WOMPRATS",
+      "faction": "HORDE"
     },
     {
       "rank": 6,
@@ -70,7 +85,10 @@
       "wins": 88,
       "losses": 13,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "WEEWOO",
+      "faction": "HORDE"
     },
     {
       "rank": 7,
@@ -80,7 +98,10 @@
       "wins": 402,
       "losses": 283,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Nevermind",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 8,
@@ -90,7 +111,10 @@
       "wins": 65,
       "losses": 20,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "WEEWOO",
+      "faction": "HORDE"
     },
     {
       "rank": 9,
@@ -100,7 +124,10 @@
       "wins": 150,
       "losses": 57,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "who",
+      "faction": "HORDE"
     },
     {
       "rank": 10,
@@ -110,7 +137,10 @@
       "wins": 474,
       "losses": 342,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "do my dance",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 11,
@@ -120,7 +150,10 @@
       "wins": 198,
       "losses": 88,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Relapse",
+      "faction": "HORDE"
     },
     {
       "rank": 12,
@@ -130,7 +163,10 @@
       "wins": 192,
       "losses": 124,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Nevermind",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 13,
@@ -140,7 +176,10 @@
       "wins": 385,
       "losses": 283,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 14,
@@ -150,7 +189,10 @@
       "wins": 121,
       "losses": 51,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "SQUAWK",
+      "faction": "HORDE"
     },
     {
       "rank": 15,
@@ -160,7 +202,10 @@
       "wins": 170,
       "losses": 82,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 16,
@@ -170,7 +215,10 @@
       "wins": 181,
       "losses": 75,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "WEEWOO",
+      "faction": "HORDE"
     },
     {
       "rank": 17,
@@ -180,7 +228,10 @@
       "wins": 305,
       "losses": 195,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "do my dance",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 18,
@@ -190,7 +241,10 @@
       "wins": 389,
       "losses": 244,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "WOMPRATS",
+      "faction": "HORDE"
     },
     {
       "rank": 19,
@@ -200,7 +254,10 @@
       "wins": 87,
       "losses": 29,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "RockHard",
+      "faction": "HORDE"
     },
     {
       "rank": 20,
@@ -210,7 +267,10 @@
       "wins": 340,
       "losses": 199,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Apex",
+      "faction": "HORDE"
     },
     {
       "rank": 21,
@@ -220,7 +280,10 @@
       "wins": 116,
       "losses": 63,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "The Losers Club",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 22,
@@ -230,7 +293,10 @@
       "wins": 77,
       "losses": 30,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "who",
+      "faction": "HORDE"
     },
     {
       "rank": 23,
@@ -240,7 +306,10 @@
       "wins": 101,
       "losses": 46,
       "classId": "priest",
-      "specId": "priest_shadow"
+      "specId": "priest_shadow",
+      "race": "Night Elf",
+      "guild": "BRUISERS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 23,
@@ -250,7 +319,10 @@
       "wins": 101,
       "losses": 46,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 25,
@@ -260,7 +332,10 @@
       "wins": 629,
       "losses": 425,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "what the frick",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 26,
@@ -270,7 +345,10 @@
       "wins": 106,
       "losses": 69,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 26,
@@ -280,7 +358,10 @@
       "wins": 106,
       "losses": 69,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "The Rejects",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 28,
@@ -290,7 +371,10 @@
       "wins": 148,
       "losses": 90,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "hey look at us",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 29,
@@ -300,7 +384,10 @@
       "wins": 99,
       "losses": 53,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "The Losers Club",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 30,
@@ -310,7 +397,10 @@
       "wins": 431,
       "losses": 279,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 31,
@@ -320,7 +410,10 @@
       "wins": 71,
       "losses": 27,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "all good",
+      "faction": "HORDE"
     },
     {
       "rank": 31,
@@ -330,7 +423,10 @@
       "wins": 316,
       "losses": 217,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "tank shaming",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 33,
@@ -340,7 +436,10 @@
       "wins": 74,
       "losses": 40,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Relapse",
+      "faction": "HORDE"
     },
     {
       "rank": 34,
@@ -350,7 +449,10 @@
       "wins": 95,
       "losses": 36,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "WEEWOO",
+      "faction": "HORDE"
     },
     {
       "rank": 34,
@@ -360,7 +462,10 @@
       "wins": 90,
       "losses": 42,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "hotdogs",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 34,
@@ -370,7 +475,10 @@
       "wins": 119,
       "losses": 69,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "ty",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 37,
@@ -380,7 +488,10 @@
       "wins": 125,
       "losses": 46,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 38,
@@ -390,7 +501,10 @@
       "wins": 86,
       "losses": 32,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "who",
+      "faction": "HORDE"
     },
     {
       "rank": 38,
@@ -400,7 +514,10 @@
       "wins": 122,
       "losses": 63,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "hotdogs",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 40,
@@ -410,7 +527,10 @@
       "wins": 357,
       "losses": 209,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Valorous",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 40,
@@ -420,7 +540,10 @@
       "wins": 935,
       "losses": 792,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Sardaukar",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 42,
@@ -430,7 +553,10 @@
       "wins": 77,
       "losses": 26,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "who",
+      "faction": "HORDE"
     },
     {
       "rank": 43,
@@ -440,7 +566,10 @@
       "wins": 235,
       "losses": 160,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "Meat Is Murder",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 44,
@@ -450,7 +579,10 @@
       "wins": 583,
       "losses": 432,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Diligence",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 44,
@@ -460,7 +592,10 @@
       "wins": 452,
       "losses": 385,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "RATZ",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 44,
@@ -470,7 +605,10 @@
       "wins": 404,
       "losses": 358,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "RATZ",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 47,
@@ -480,7 +618,10 @@
       "wins": 138,
       "losses": 70,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 48,
@@ -490,7 +631,10 @@
       "wins": 215,
       "losses": 136,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "hotdogs",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 49,
@@ -500,7 +644,10 @@
       "wins": 254,
       "losses": 158,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "FRIENDSHIP IS A MYTH",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 50,
@@ -510,7 +657,10 @@
       "wins": 194,
       "losses": 66,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 50,
@@ -520,7 +670,10 @@
       "wins": 104,
       "losses": 46,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 52,
@@ -530,7 +683,10 @@
       "wins": 114,
       "losses": 64,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Lackluster",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 52,
@@ -540,7 +696,10 @@
       "wins": 163,
       "losses": 138,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Eye for an Eye",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 54,
@@ -550,7 +709,10 @@
       "wins": 233,
       "losses": 161,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "on me",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 55,
@@ -560,7 +722,10 @@
       "wins": 167,
       "losses": 97,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 56,
@@ -570,7 +735,10 @@
       "wins": 156,
       "losses": 114,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "do my dance",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 57,
@@ -580,7 +748,10 @@
       "wins": 270,
       "losses": 108,
       "classId": "hunter",
-      "specId": "hunter_marksmanship"
+      "specId": "hunter_marksmanship",
+      "race": "Dwarf",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 58,
@@ -590,7 +761,10 @@
       "wins": 156,
       "losses": 68,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Midnight",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 58,
@@ -600,7 +774,10 @@
       "wins": 107,
       "losses": 58,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": "have a good night",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 58,
@@ -610,7 +787,10 @@
       "wins": 103,
       "losses": 56,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Stack on Star",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 58,
@@ -620,7 +800,10 @@
       "wins": 169,
       "losses": 122,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "SUNNY D ALRIGHT",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 58,
@@ -630,7 +813,10 @@
       "wins": 169,
       "losses": 122,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "SUNNY D ALRIGHT",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 63,
@@ -640,7 +826,10 @@
       "wins": 97,
       "losses": 34,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 64,
@@ -650,7 +839,10 @@
       "wins": 97,
       "losses": 47,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "who",
+      "faction": "HORDE"
     },
     {
       "rank": 65,
@@ -660,7 +852,10 @@
       "wins": 91,
       "losses": 30,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "SQUAWK",
+      "faction": "HORDE"
     },
     {
       "rank": 65,
@@ -670,7 +865,10 @@
       "wins": 97,
       "losses": 39,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "hotdogs",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 67,
@@ -680,7 +878,10 @@
       "wins": 140,
       "losses": 84,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 68,
@@ -690,7 +891,10 @@
       "wins": 135,
       "losses": 83,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Nevermind",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 68,
@@ -700,7 +904,10 @@
       "wins": 352,
       "losses": 250,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "what the frick",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 70,
@@ -710,7 +917,10 @@
       "wins": 56,
       "losses": 13,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 70,
@@ -720,7 +930,10 @@
       "wins": 202,
       "losses": 153,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Sunset Retirement House",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 72,
@@ -730,7 +943,10 @@
       "wins": 139,
       "losses": 100,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 73,
@@ -740,7 +956,10 @@
       "wins": 86,
       "losses": 39,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "J A C",
+      "faction": "HORDE"
     },
     {
       "rank": 74,
@@ -750,7 +969,10 @@
       "wins": 151,
       "losses": 115,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Sunset Retirement House",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 75,
@@ -760,7 +982,10 @@
       "wins": 175,
       "losses": 118,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "ty",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 76,
@@ -770,7 +995,10 @@
       "wins": 81,
       "losses": 39,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "HUNKS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 76,
@@ -780,7 +1008,10 @@
       "wins": 184,
       "losses": 108,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "SQUAWK",
+      "faction": "HORDE"
     },
     {
       "rank": 78,
@@ -790,7 +1021,10 @@
       "wins": 220,
       "losses": 169,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Gnome",
+      "guild": "what the frick",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 79,
@@ -800,7 +1034,10 @@
       "wins": 137,
       "losses": 99,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Valorous",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 80,
@@ -810,7 +1047,10 @@
       "wins": 126,
       "losses": 78,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "SQUAWK",
+      "faction": "HORDE"
     },
     {
       "rank": 80,
@@ -820,7 +1060,10 @@
       "wins": 260,
       "losses": 206,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "Crusade",
+      "faction": "HORDE"
     },
     {
       "rank": 82,
@@ -830,7 +1073,10 @@
       "wins": 111,
       "losses": 77,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 83,
@@ -840,7 +1086,10 @@
       "wins": 169,
       "losses": 125,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 83,
@@ -850,7 +1099,10 @@
       "wins": 138,
       "losses": 106,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 85,
@@ -860,7 +1112,10 @@
       "wins": 202,
       "losses": 136,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 86,
@@ -870,7 +1125,10 @@
       "wins": 90,
       "losses": 46,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Lackluster",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 86,
@@ -880,7 +1138,10 @@
       "wins": 90,
       "losses": 46,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "blurry",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 86,
@@ -890,7 +1151,10 @@
       "wins": 128,
       "losses": 107,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 86,
@@ -900,7 +1164,10 @@
       "wins": 243,
       "losses": 210,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Stranglehorde Vale",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 90,
@@ -910,7 +1177,10 @@
       "wins": 117,
       "losses": 83,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "HighGround",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 91,
@@ -920,7 +1190,10 @@
       "wins": 333,
       "losses": 260,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "done for cheap",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 91,
@@ -930,7 +1203,10 @@
       "wins": 204,
       "losses": 170,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "cartel",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 93,
@@ -940,7 +1216,10 @@
       "wins": 249,
       "losses": 173,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 93,
@@ -950,7 +1229,10 @@
       "wins": 174,
       "losses": 135,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "APES TOGETHER STRONG",
+      "faction": "HORDE"
     },
     {
       "rank": 95,
@@ -960,7 +1242,10 @@
       "wins": 93,
       "losses": 65,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "QQ Bearz",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 96,
@@ -970,7 +1255,10 @@
       "wins": 92,
       "losses": 52,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Merciless",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 96,
@@ -980,7 +1268,10 @@
       "wins": 74,
       "losses": 51,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Gnome",
+      "guild": "Awakening",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 96,
@@ -990,7 +1281,10 @@
       "wins": 74,
       "losses": 51,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Awakening",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 99,
@@ -1000,7 +1294,10 @@
       "wins": 117,
       "losses": 68,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Merciless",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 100,
@@ -1010,7 +1307,10 @@
       "wins": 168,
       "losses": 114,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Team Meme",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 100,
@@ -1020,7 +1320,10 @@
       "wins": 95,
       "losses": 69,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "Easy Company",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 100,
@@ -1030,7 +1333,10 @@
       "wins": 95,
       "losses": 69,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Post Nerf Clarity",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 100,
@@ -1040,7 +1346,10 @@
       "wins": 154,
       "losses": 114,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Nevermind",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 104,
@@ -1050,7 +1359,10 @@
       "wins": 152,
       "losses": 86,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "SQUAWK",
+      "faction": "HORDE"
     },
     {
       "rank": 105,
@@ -1060,7 +1372,10 @@
       "wins": 199,
       "losses": 132,
       "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "warlock_destruction",
+      "race": "Human",
+      "guild": "on me",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 106,
@@ -1070,7 +1385,10 @@
       "wins": 218,
       "losses": 157,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "One Last Time",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 107,
@@ -1080,7 +1398,10 @@
       "wins": 210,
       "losses": 157,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 108,
@@ -1090,7 +1411,10 @@
       "wins": 429,
       "losses": 313,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 109,
@@ -1100,7 +1424,10 @@
       "wins": 465,
       "losses": 377,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "good comms",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 109,
@@ -1110,7 +1437,10 @@
       "wins": 238,
       "losses": 193,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "good comms",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 111,
@@ -1120,7 +1450,10 @@
       "wins": 256,
       "losses": 211,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Embers of Eternity",
+      "faction": "HORDE"
     },
     {
       "rank": 111,
@@ -1130,7 +1463,10 @@
       "wins": 256,
       "losses": 211,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "phase seven",
+      "faction": "HORDE"
     },
     {
       "rank": 113,
@@ -1140,7 +1476,10 @@
       "wins": 236,
       "losses": 184,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Gnome",
+      "guild": "what the frick",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 114,
@@ -1150,7 +1489,10 @@
       "wins": 148,
       "losses": 104,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "MOTHERS MILK",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 115,
@@ -1160,7 +1502,10 @@
       "wins": 274,
       "losses": 235,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "RALLY",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 115,
@@ -1170,7 +1515,10 @@
       "wins": 274,
       "losses": 235,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "RALLY",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 117,
@@ -1180,7 +1528,10 @@
       "wins": 83,
       "losses": 50,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Daybreak",
+      "faction": "HORDE"
     },
     {
       "rank": 118,
@@ -1190,7 +1541,10 @@
       "wins": 90,
       "losses": 39,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Refined",
+      "faction": "HORDE"
     },
     {
       "rank": 118,
@@ -1200,7 +1554,10 @@
       "wins": 225,
       "losses": 192,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 120,
@@ -1210,7 +1567,10 @@
       "wins": 412,
       "losses": 332,
       "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "priest_holy",
+      "race": "Dwarf",
+      "guild": "Sunset Retirement House",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 120,
@@ -1220,7 +1580,10 @@
       "wins": 346,
       "losses": 282,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "Sunset Retirement House",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 122,
@@ -1230,7 +1593,10 @@
       "wins": 110,
       "losses": 77,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "clash mid",
+      "faction": "HORDE"
     },
     {
       "rank": 122,
@@ -1240,7 +1606,10 @@
       "wins": 112,
       "losses": 84,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "clash mid",
+      "faction": "HORDE"
     },
     {
       "rank": 122,
@@ -1250,7 +1619,10 @@
       "wins": 172,
       "losses": 133,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "Crusade",
+      "faction": "HORDE"
     },
     {
       "rank": 122,
@@ -1260,7 +1632,10 @@
       "wins": 130,
       "losses": 111,
       "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "warrior_fury",
+      "race": "Orc",
+      "guild": "SQUAWK",
+      "faction": "HORDE"
     },
     {
       "rank": 122,
@@ -1270,7 +1645,10 @@
       "wins": 426,
       "losses": 374,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Skip The Gamez",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 127,
@@ -1280,7 +1658,10 @@
       "wins": 214,
       "losses": 156,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "CRACKEM",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 128,
@@ -1290,7 +1671,10 @@
       "wins": 70,
       "losses": 27,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Hopscotch",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 128,
@@ -1300,7 +1684,10 @@
       "wins": 328,
       "losses": 235,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Valorous",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 128,
@@ -1310,7 +1697,10 @@
       "wins": 192,
       "losses": 153,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Dragon Snacks",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 131,
@@ -1320,7 +1710,10 @@
       "wins": 63,
       "losses": 20,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Midnight",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 131,
@@ -1330,7 +1723,10 @@
       "wins": 65,
       "losses": 30,
       "classId": "druid",
-      "specId": "druid_feralcombat"
+      "specId": "druid_feral",
+      "race": "Tauren",
+      "guild": "Just enjoy your playing",
+      "faction": "HORDE"
     },
     {
       "rank": 131,
@@ -1340,7 +1736,10 @@
       "wins": 202,
       "losses": 125,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "WASD",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 131,
@@ -1350,7 +1749,10 @@
       "wins": 139,
       "losses": 90,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 131,
@@ -1360,7 +1762,10 @@
       "wins": 152,
       "losses": 100,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Se Beber Não Raide",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 131,
@@ -1370,7 +1775,10 @@
       "wins": 194,
       "losses": 160,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Meat Is Murder",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 137,
@@ -1380,7 +1788,10 @@
       "wins": 117,
       "losses": 96,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Denver Nuggets",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 138,
@@ -1390,7 +1801,10 @@
       "wins": 81,
       "losses": 57,
       "classId": "hunter",
-      "specId": "hunter_survival"
+      "specId": "hunter_survival",
+      "race": "Dwarf",
+      "guild": "QQ Bearz",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 139,
@@ -1400,7 +1814,10 @@
       "wins": 199,
       "losses": 150,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Troll",
+      "guild": "R E I G N",
+      "faction": "HORDE"
     },
     {
       "rank": 140,
@@ -1410,7 +1827,10 @@
       "wins": 81,
       "losses": 58,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "QQ Bearz",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 140,
@@ -1420,7 +1840,10 @@
       "wins": 212,
       "losses": 159,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Se Beber Não Raide",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 142,
@@ -1430,7 +1853,10 @@
       "wins": 50,
       "losses": 17,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Midnight",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 142,
@@ -1440,7 +1866,10 @@
       "wins": 87,
       "losses": 54,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Risen",
+      "faction": "HORDE"
     },
     {
       "rank": 142,
@@ -1450,7 +1879,10 @@
       "wins": 96,
       "losses": 72,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "FRIENDSHIP IS A MYTH",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 142,
@@ -1460,7 +1892,10 @@
       "wins": 210,
       "losses": 160,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 146,
@@ -1470,7 +1905,10 @@
       "wins": 79,
       "losses": 48,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Risen",
+      "faction": "HORDE"
     },
     {
       "rank": 146,
@@ -1480,7 +1918,10 @@
       "wins": 172,
       "losses": 132,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 146,
@@ -1490,7 +1931,10 @@
       "wins": 190,
       "losses": 169,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Gnome",
+      "guild": "the way she goes",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 149,
@@ -1500,7 +1944,10 @@
       "wins": 202,
       "losses": 179,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "the way she goes",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 150,
@@ -1510,7 +1957,10 @@
       "wins": 85,
       "losses": 53,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 151,
@@ -1520,7 +1970,10 @@
       "wins": 119,
       "losses": 67,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 151,
@@ -1530,7 +1983,10 @@
       "wins": 147,
       "losses": 126,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "The Guard",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 153,
@@ -1540,7 +1996,10 @@
       "wins": 120,
       "losses": 80,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Lifted",
+      "faction": "HORDE"
     },
     {
       "rank": 154,
@@ -1550,7 +2009,10 @@
       "wins": 91,
       "losses": 53,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Stack on Star",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 154,
@@ -1560,7 +2022,10 @@
       "wins": 148,
       "losses": 88,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Boostie Boys",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 154,
@@ -1570,7 +2035,10 @@
       "wins": 237,
       "losses": 173,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "twenty five big guys",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 154,
@@ -1580,7 +2048,10 @@
       "wins": 160,
       "losses": 129,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "bipolar",
+      "faction": "HORDE"
     },
     {
       "rank": 154,
@@ -1590,7 +2061,10 @@
       "wins": 148,
       "losses": 120,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Apex",
+      "faction": "HORDE"
     },
     {
       "rank": 154,
@@ -1600,7 +2074,10 @@
       "wins": 153,
       "losses": 125,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "dtci",
+      "faction": "HORDE"
     },
     {
       "rank": 160,
@@ -1610,7 +2087,10 @@
       "wins": 85,
       "losses": 52,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Lifted",
+      "faction": "HORDE"
     },
     {
       "rank": 161,
@@ -1620,7 +2100,10 @@
       "wins": 209,
       "losses": 157,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Valorous",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 162,
@@ -1630,7 +2113,10 @@
       "wins": 95,
       "losses": 70,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "BigRichardClub",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 163,
@@ -1640,7 +2126,10 @@
       "wins": 108,
       "losses": 52,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "grey sweatpants",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 163,
@@ -1650,7 +2139,10 @@
       "wins": 128,
       "losses": 63,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "grey sweatpants",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 163,
@@ -1660,7 +2152,10 @@
       "wins": 283,
       "losses": 224,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "FREN",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 166,
@@ -1670,7 +2165,10 @@
       "wins": 112,
       "losses": 71,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "grief",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 167,
@@ -1680,7 +2178,10 @@
       "wins": 93,
       "losses": 61,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "Regicide",
+      "faction": "HORDE"
     },
     {
       "rank": 168,
@@ -1690,7 +2191,10 @@
       "wins": 208,
       "losses": 172,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Merciless",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 168,
@@ -1700,7 +2204,10 @@
       "wins": 215,
       "losses": 178,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Merciless",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 170,
@@ -1710,7 +2217,10 @@
       "wins": 139,
       "losses": 90,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Easy Company",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 171,
@@ -1720,7 +2230,10 @@
       "wins": 49,
       "losses": 12,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "hotdogs",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 171,
@@ -1730,7 +2243,10 @@
       "wins": 362,
       "losses": 227,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Valorous",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 171,
@@ -1740,7 +2256,10 @@
       "wins": 113,
       "losses": 88,
       "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "warlock_destruction",
+      "race": "Orc",
+      "guild": "Uggwy Kwoosade",
+      "faction": "HORDE"
     },
     {
       "rank": 171,
@@ -1750,7 +2269,10 @@
       "wins": 108,
       "losses": 88,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Troll",
+      "guild": "Uggwy Kwoosade",
+      "faction": "HORDE"
     },
     {
       "rank": 175,
@@ -1760,7 +2282,10 @@
       "wins": 71,
       "losses": 36,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "stay in your lane",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 175,
@@ -1770,7 +2295,10 @@
       "wins": 123,
       "losses": 84,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Relentless",
+      "faction": "HORDE"
     },
     {
       "rank": 177,
@@ -1780,7 +2308,10 @@
       "wins": 277,
       "losses": 222,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "MASSIVUS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 178,
@@ -1790,7 +2321,10 @@
       "wins": 422,
       "losses": 361,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Exclusive Guild",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 179,
@@ -1800,7 +2334,10 @@
       "wins": 354,
       "losses": 334,
       "classId": "hunter",
-      "specId": "hunter_survival"
+      "specId": "hunter_survival",
+      "race": "Dwarf",
+      "guild": "ty",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 180,
@@ -1810,7 +2347,10 @@
       "wins": 131,
       "losses": 82,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "R E I G N",
+      "faction": "HORDE"
     },
     {
       "rank": 181,
@@ -1820,7 +2360,10 @@
       "wins": 109,
       "losses": 68,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Merciless",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 181,
@@ -1830,7 +2373,10 @@
       "wins": 58,
       "losses": 37,
       "classId": "hunter",
-      "specId": "hunter_marksmanship"
+      "specId": "hunter_marksmanship",
+      "race": "Dwarf",
+      "guild": "sup fresh",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 181,
@@ -1840,7 +2386,10 @@
       "wins": 235,
       "losses": 156,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "GOLDENBOYS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 184,
@@ -1850,7 +2399,10 @@
       "wins": 277,
       "losses": 185,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Troll",
+      "guild": "Refined",
+      "faction": "HORDE"
     },
     {
       "rank": 184,
@@ -1860,7 +2412,10 @@
       "wins": 96,
       "losses": 73,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Nasty Casuals",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 186,
@@ -1870,7 +2425,10 @@
       "wins": 165,
       "losses": 94,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 186,
@@ -1880,7 +2438,10 @@
       "wins": 220,
       "losses": 169,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Nevermind",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 188,
@@ -1890,7 +2451,10 @@
       "wins": 104,
       "losses": 72,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "SQUAWK",
+      "faction": "HORDE"
     },
     {
       "rank": 189,
@@ -1900,7 +2464,10 @@
       "wins": 73,
       "losses": 55,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 189,
@@ -1910,7 +2477,10 @@
       "wins": 73,
       "losses": 55,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Quake",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 191,
@@ -1920,7 +2490,10 @@
       "wins": 105,
       "losses": 66,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": "Seventeenth Shard",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 191,
@@ -1930,7 +2503,10 @@
       "wins": 271,
       "losses": 209,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "ARDENT",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 191,
@@ -1940,7 +2516,10 @@
       "wins": 242,
       "losses": 204,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Lionheart",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 194,
@@ -1950,7 +2529,10 @@
       "wins": 190,
       "losses": 100,
       "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "priest_holy",
+      "race": "Dwarf",
+      "guild": "rebrand",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 194,
@@ -1960,7 +2542,10 @@
       "wins": 199,
       "losses": 169,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Copers",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 194,
@@ -1970,7 +2555,10 @@
       "wins": 197,
       "losses": 171,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Copers",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 197,
@@ -1980,7 +2568,10 @@
       "wins": 55,
       "losses": 44,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "have a good night",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 198,
@@ -1990,7 +2581,10 @@
       "wins": 87,
       "losses": 60,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Undead",
+      "guild": "muppets OCE",
+      "faction": "HORDE"
     },
     {
       "rank": 198,
@@ -2000,7 +2594,10 @@
       "wins": 86,
       "losses": 61,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Undead",
+      "guild": "muppets OCE",
+      "faction": "HORDE"
     },
     {
       "rank": 200,
@@ -2010,7 +2607,10 @@
       "wins": 263,
       "losses": 219,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "resist again",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 200,
@@ -2020,7 +2620,10 @@
       "wins": 1020,
       "losses": 877,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "smug",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 202,
@@ -2030,7 +2633,10 @@
       "wins": 133,
       "losses": 94,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 202,
@@ -2040,7 +2646,10 @@
       "wins": 439,
       "losses": 382,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "FREN",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 204,
@@ -2050,7 +2659,10 @@
       "wins": 123,
       "losses": 94,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 204,
@@ -2060,7 +2672,10 @@
       "wins": 168,
       "losses": 138,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Primordial",
+      "faction": "HORDE"
     },
     {
       "rank": 206,
@@ -2070,7 +2685,10 @@
       "wins": 129,
       "losses": 102,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 206,
@@ -2080,7 +2698,10 @@
       "wins": 309,
       "losses": 270,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "Reviled",
+      "faction": "HORDE"
     },
     {
       "rank": 208,
@@ -2090,7 +2711,10 @@
       "wins": 151,
       "losses": 97,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "yo",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 208,
@@ -2100,7 +2724,10 @@
       "wins": 182,
       "losses": 127,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "yo",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 208,
@@ -2110,7 +2737,10 @@
       "wins": 176,
       "losses": 126,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Vision",
+      "faction": "HORDE"
     },
     {
       "rank": 211,
@@ -2120,7 +2750,10 @@
       "wins": 419,
       "losses": 290,
       "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "WASD",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 211,
@@ -2130,7 +2763,10 @@
       "wins": 245,
       "losses": 177,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 213,
@@ -2140,7 +2776,10 @@
       "wins": 309,
       "losses": 214,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "blurry",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 213,
@@ -2150,7 +2789,10 @@
       "wins": 99,
       "losses": 69,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "have a good night",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 215,
@@ -2160,7 +2802,10 @@
       "wins": 111,
       "losses": 81,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Mutiny",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 215,
@@ -2170,7 +2815,10 @@
       "wins": 97,
       "losses": 73,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Merciless",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 215,
@@ -2180,7 +2828,10 @@
       "wins": 248,
       "losses": 187,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Elysium",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 218,
@@ -2190,7 +2841,10 @@
       "wins": 103,
       "losses": 55,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Dense",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 218,
@@ -2200,7 +2854,10 @@
       "wins": 439,
       "losses": 309,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Elysium",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 218,
@@ -2210,7 +2867,10 @@
       "wins": 139,
       "losses": 98,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Troll",
+      "guild": "Just enjoy your playing",
+      "faction": "HORDE"
     },
     {
       "rank": 218,
@@ -2220,7 +2880,10 @@
       "wins": 147,
       "losses": 105,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 218,
@@ -2230,7 +2893,10 @@
       "wins": 410,
       "losses": 293,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "FRIENDSHIP IS A MYTH",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 218,
@@ -2240,7 +2906,10 @@
       "wins": 361,
       "losses": 296,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "racist enchants",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 224,
@@ -2250,7 +2919,10 @@
       "wins": 132,
       "losses": 111,
       "classId": "druid",
-      "specId": "druid_feralcombat"
+      "specId": "druid_feral",
+      "race": "Tauren",
+      "guild": "GOOP",
+      "faction": "HORDE"
     },
     {
       "rank": 225,
@@ -2260,7 +2932,10 @@
       "wins": 220,
       "losses": 170,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Mochi Fan Club",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 225,
@@ -2270,7 +2945,10 @@
       "wins": 250,
       "losses": 200,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "grief",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 227,
@@ -2280,7 +2958,10 @@
       "wins": 116,
       "losses": 81,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Dwarf",
+      "guild": "Valorous",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 227,
@@ -2290,7 +2971,10 @@
       "wins": 298,
       "losses": 245,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "B l G P P V P",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 229,
@@ -2300,7 +2984,10 @@
       "wins": 215,
       "losses": 176,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Dwarf",
+      "guild": "HUNKS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 229,
@@ -2310,7 +2997,10 @@
       "wins": 143,
       "losses": 119,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Dwarf",
+      "guild": "dampened",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 231,
@@ -2320,7 +3010,10 @@
       "wins": 109,
       "losses": 71,
       "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "priest_holy",
+      "race": "Dwarf",
+      "guild": "resist again",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 231,
@@ -2330,7 +3023,10 @@
       "wins": 150,
       "losses": 115,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 231,
@@ -2340,7 +3036,10 @@
       "wins": 139,
       "losses": 115,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 231,
@@ -2350,7 +3049,10 @@
       "wins": 172,
       "losses": 145,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "whatever",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 235,
@@ -2360,7 +3062,10 @@
       "wins": 93,
       "losses": 49,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "ICE Trigger Discipline",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 236,
@@ -2370,7 +3075,10 @@
       "wins": 66,
       "losses": 49,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 236,
@@ -2380,7 +3088,10 @@
       "wins": 549,
       "losses": 500,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 238,
@@ -2390,7 +3101,10 @@
       "wins": 290,
       "losses": 214,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "Death Row",
+      "faction": "HORDE"
     },
     {
       "rank": 238,
@@ -2400,7 +3114,10 @@
       "wins": 582,
       "losses": 481,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 238,
@@ -2410,7 +3127,10 @@
       "wins": 162,
       "losses": 141,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "parallel",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 238,
@@ -2420,7 +3140,10 @@
       "wins": 201,
       "losses": 181,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "SQUAWK",
+      "faction": "HORDE"
     },
     {
       "rank": 242,
@@ -2430,7 +3153,10 @@
       "wins": 38,
       "losses": 15,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "who",
+      "faction": "HORDE"
     },
     {
       "rank": 242,
@@ -2440,7 +3166,10 @@
       "wins": 167,
       "losses": 130,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Coffee",
+      "faction": "HORDE"
     },
     {
       "rank": 242,
@@ -2450,7 +3179,10 @@
       "wins": 154,
       "losses": 128,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": "my mouth is dry",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 245,
@@ -2460,7 +3192,10 @@
       "wins": 69,
       "losses": 45,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "FRIENDSHIP IS A MYTH",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 245,
@@ -2470,7 +3205,10 @@
       "wins": 233,
       "losses": 203,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Soulstone Survivors",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 245,
@@ -2480,7 +3218,10 @@
       "wins": 233,
       "losses": 203,
       "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "priest_holy",
+      "race": "Dwarf",
+      "guild": "Peace",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 248,
@@ -2490,7 +3231,10 @@
       "wins": 115,
       "losses": 59,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Gnome",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 248,
@@ -2500,7 +3244,10 @@
       "wins": 231,
       "losses": 190,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 250,
@@ -2510,7 +3257,10 @@
       "wins": 114,
       "losses": 67,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "The Red Empire",
+      "faction": "HORDE"
     },
     {
       "rank": 251,
@@ -2520,7 +3270,10 @@
       "wins": 493,
       "losses": 361,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Dragon Snacks",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 251,
@@ -2530,7 +3283,10 @@
       "wins": 277,
       "losses": 248,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Ruin",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 253,
@@ -2540,7 +3296,10 @@
       "wins": 168,
       "losses": 134,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "The Apotheosis",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 254,
@@ -2550,7 +3309,10 @@
       "wins": 107,
       "losses": 61,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 254,
@@ -2560,7 +3322,10 @@
       "wins": 175,
       "losses": 144,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_fury",
+      "race": "Tauren",
+      "guild": "CRASHOUT",
+      "faction": "HORDE"
     },
     {
       "rank": 256,
@@ -2570,7 +3335,10 @@
       "wins": 319,
       "losses": 268,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "CRASHOUT",
+      "faction": "HORDE"
     },
     {
       "rank": 257,
@@ -2580,7 +3348,10 @@
       "wins": 117,
       "losses": 68,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "do my dance",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 257,
@@ -2590,7 +3361,10 @@
       "wins": 560,
       "losses": 478,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Respawn",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 259,
@@ -2600,7 +3374,10 @@
       "wins": 178,
       "losses": 136,
       "classId": "paladin",
-      "specId": "paladin_holy"
+      "specId": "paladin_holy",
+      "race": "Dwarf",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 260,
@@ -2610,7 +3387,10 @@
       "wins": 204,
       "losses": 186,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 260,
@@ -2620,7 +3400,10 @@
       "wins": 204,
       "losses": 186,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 262,
@@ -2630,7 +3413,10 @@
       "wins": 74,
       "losses": 45,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Moist",
+      "faction": "HORDE"
     },
     {
       "rank": 263,
@@ -2640,7 +3426,10 @@
       "wins": 75,
       "losses": 53,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 264,
@@ -2650,7 +3439,10 @@
       "wins": 64,
       "losses": 30,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Merciless",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 265,
@@ -2660,7 +3452,10 @@
       "wins": 66,
       "losses": 39,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 265,
@@ -2670,7 +3465,10 @@
       "wins": 285,
       "losses": 279,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 267,
@@ -2680,7 +3478,10 @@
       "wins": 346,
       "losses": 276,
       "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "priest_holy",
+      "race": "Dwarf",
+      "guild": "GRIND TIME",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 268,
@@ -2690,7 +3491,10 @@
       "wins": 178,
       "losses": 142,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Dwarf",
+      "guild": "GRIND TIME",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 269,
@@ -2700,7 +3504,10 @@
       "wins": 108,
       "losses": 70,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "TBC Relapse",
+      "faction": "HORDE"
     },
     {
       "rank": 270,
@@ -2710,7 +3517,10 @@
       "wins": 50,
       "losses": 15,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Easy Company",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 270,
@@ -2720,7 +3530,10 @@
       "wins": 67,
       "losses": 48,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Relentless",
+      "faction": "HORDE"
     },
     {
       "rank": 270,
@@ -2730,7 +3543,10 @@
       "wins": 98,
       "losses": 71,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": "C O P I U M",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 270,
@@ -2740,7 +3556,10 @@
       "wins": 118,
       "losses": 90,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "good enough",
+      "faction": "HORDE"
     },
     {
       "rank": 270,
@@ -2750,7 +3569,10 @@
       "wins": 118,
       "losses": 90,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "good enough",
+      "faction": "HORDE"
     },
     {
       "rank": 270,
@@ -2760,7 +3582,10 @@
       "wins": 238,
       "losses": 210,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Pie Crust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 276,
@@ -2770,7 +3595,10 @@
       "wins": 46,
       "losses": 12,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "who",
+      "faction": "HORDE"
     },
     {
       "rank": 276,
@@ -2780,7 +3608,10 @@
       "wins": 119,
       "losses": 90,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Malediction",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 276,
@@ -2790,7 +3621,10 @@
       "wins": 135,
       "losses": 103,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "Vision",
+      "faction": "HORDE"
     },
     {
       "rank": 276,
@@ -2800,7 +3634,10 @@
       "wins": 209,
       "losses": 161,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Salt",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 276,
@@ -2810,7 +3647,10 @@
       "wins": 101,
       "losses": 78,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 276,
@@ -2820,7 +3660,10 @@
       "wins": 107,
       "losses": 83,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 276,
@@ -2830,7 +3673,10 @@
       "wins": 107,
       "losses": 83,
       "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "warrior_fury",
+      "race": "Gnome",
+      "guild": "no",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 276,
@@ -2840,7 +3686,10 @@
       "wins": 106,
       "losses": 83,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Troll",
+      "guild": "Vision",
+      "faction": "HORDE"
     },
     {
       "rank": 276,
@@ -2850,7 +3699,10 @@
       "wins": 233,
       "losses": 189,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "nerf",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 276,
@@ -2860,7 +3712,10 @@
       "wins": 112,
       "losses": 92,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 276,
@@ -2870,7 +3725,10 @@
       "wins": 362,
       "losses": 337,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "rebrand",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 287,
@@ -2880,7 +3738,10 @@
       "wins": 146,
       "losses": 104,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Vicious Intent",
+      "faction": "HORDE"
     },
     {
       "rank": 287,
@@ -2890,7 +3751,10 @@
       "wins": 76,
       "losses": 55,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Beastmode",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 289,
@@ -2900,7 +3764,10 @@
       "wins": 36,
       "losses": 10,
       "classId": "warrior",
-      "specId": "warrior_fury"
+      "specId": "warrior_fury",
+      "race": "Gnome",
+      "guild": "Midnight",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 289,
@@ -2910,7 +3777,10 @@
       "wins": 75,
       "losses": 49,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "cartel",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 289,
@@ -2920,7 +3790,10 @@
       "wins": 356,
       "losses": 319,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "ofc",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 292,
@@ -2930,7 +3803,10 @@
       "wins": 107,
       "losses": 82,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Blood Elf",
+      "guild": "pedigree",
+      "faction": "HORDE"
     },
     {
       "rank": 293,
@@ -2940,7 +3816,10 @@
       "wins": 321,
       "losses": 294,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Enjoy",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 294,
@@ -2950,7 +3829,10 @@
       "wins": 46,
       "losses": 15,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Easy Company",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 294,
@@ -2960,7 +3842,10 @@
       "wins": 168,
       "losses": 125,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 294,
@@ -2970,7 +3855,10 @@
       "wins": 1015,
       "losses": 1016,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Gnome",
+      "guild": "Stand Still",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 294,
@@ -2980,7 +3868,10 @@
       "wins": 1015,
       "losses": 1016,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Stand Still",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 298,
@@ -2990,7 +3881,10 @@
       "wins": 149,
       "losses": 102,
       "classId": "paladin",
-      "specId": "paladin_holy"
+      "specId": "paladin_holy",
+      "race": "Dwarf",
+      "guild": "dampened",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 298,
@@ -3000,7 +3894,10 @@
       "wins": 257,
       "losses": 205,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Human",
+      "guild": "Dense",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 298,
@@ -3010,7 +3907,10 @@
       "wins": 350,
       "losses": 304,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 298,
@@ -3020,7 +3920,10 @@
       "wins": 272,
       "losses": 251,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 302,
@@ -3030,7 +3933,10 @@
       "wins": 81,
       "losses": 65,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "blurry",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 303,
@@ -3040,7 +3946,10 @@
       "wins": 362,
       "losses": 333,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "ty",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 304,
@@ -3050,7 +3959,10 @@
       "wins": 408,
       "losses": 329,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "SUNNY D ALRIGHT",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 305,
@@ -3060,7 +3972,10 @@
       "wins": 436,
       "losses": 356,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "my mouth is dry",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 305,
@@ -3070,7 +3985,10 @@
       "wins": 679,
       "losses": 585,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 307,
@@ -3080,7 +3998,10 @@
       "wins": 67,
       "losses": 42,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "TBC Relapse",
+      "faction": "HORDE"
     },
     {
       "rank": 307,
@@ -3090,7 +4011,10 @@
       "wins": 45,
       "losses": 29,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "HUNKS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 309,
@@ -3100,7 +4024,10 @@
       "wins": 88,
       "losses": 68,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "good comms",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 310,
@@ -3110,7 +4037,10 @@
       "wins": 48,
       "losses": 31,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "Relentless",
+      "faction": "HORDE"
     },
     {
       "rank": 310,
@@ -3120,7 +4050,10 @@
       "wins": 120,
       "losses": 93,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "on me",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 310,
@@ -3130,7 +4063,10 @@
       "wins": 235,
       "losses": 190,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Gnome",
+      "guild": "do my dance",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 313,
@@ -3140,7 +4076,10 @@
       "wins": 69,
       "losses": 38,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "tldr",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 314,
@@ -3150,7 +4089,10 @@
       "wins": 159,
       "losses": 130,
       "classId": "paladin",
-      "specId": "paladin_holy"
+      "specId": "paladin_holy",
+      "race": "Dwarf",
+      "guild": "dampened",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 315,
@@ -3160,7 +4102,10 @@
       "wins": 111,
       "losses": 75,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 315,
@@ -3170,7 +4115,10 @@
       "wins": 165,
       "losses": 126,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "pedigree",
+      "faction": "HORDE"
     },
     {
       "rank": 315,
@@ -3180,7 +4128,10 @@
       "wins": 327,
       "losses": 311,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "GOLDENBOYS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 318,
@@ -3190,7 +4141,10 @@
       "wins": 77,
       "losses": 39,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Antiquity",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 318,
@@ -3200,7 +4154,10 @@
       "wins": 106,
       "losses": 70,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "nerf",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 318,
@@ -3210,7 +4167,10 @@
       "wins": 191,
       "losses": 160,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "HUNKS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 321,
@@ -3220,7 +4180,10 @@
       "wins": 111,
       "losses": 90,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "éz",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 321,
@@ -3230,7 +4193,10 @@
       "wins": 111,
       "losses": 90,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "éz",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 321,
@@ -3240,7 +4206,10 @@
       "wins": 414,
       "losses": 351,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Valorous",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 324,
@@ -3250,7 +4219,10 @@
       "wins": 226,
       "losses": 181,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "Dense",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 325,
@@ -3260,7 +4232,10 @@
       "wins": 71,
       "losses": 48,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "XTREME MOGTATION ELATION",
+      "faction": "HORDE"
     },
     {
       "rank": 325,
@@ -3270,7 +4245,10 @@
       "wins": 150,
       "losses": 112,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "WCYD",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 327,
@@ -3280,7 +4258,10 @@
       "wins": 62,
       "losses": 37,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "tldr",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 327,
@@ -3290,7 +4271,10 @@
       "wins": 224,
       "losses": 175,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "BlackRock",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 327,
@@ -3300,7 +4284,10 @@
       "wins": 488,
       "losses": 457,
       "classId": "druid",
-      "specId": "druid_feralcombat"
+      "specId": "druid_feral",
+      "race": "Night Elf",
+      "guild": "GRIND TIME",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 330,
@@ -3310,7 +4297,10 @@
       "wins": 169,
       "losses": 146,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 331,
@@ -3320,7 +4310,10 @@
       "wins": 81,
       "losses": 54,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "tf",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 331,
@@ -3330,7 +4323,10 @@
       "wins": 127,
       "losses": 104,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "LlFTED",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 331,
@@ -3340,7 +4336,10 @@
       "wins": 248,
       "losses": 232,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Willertons and beers",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 334,
@@ -3350,7 +4349,10 @@
       "wins": 172,
       "losses": 127,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Antiquity",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 335,
@@ -3360,7 +4362,10 @@
       "wins": 628,
       "losses": 591,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 335,
@@ -3370,7 +4375,10 @@
       "wins": 618,
       "losses": 584,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 337,
@@ -3380,7 +4388,10 @@
       "wins": 59,
       "losses": 25,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "have a good night",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 338,
@@ -3390,7 +4401,10 @@
       "wins": 47,
       "losses": 17,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Merciless",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 338,
@@ -3400,7 +4414,10 @@
       "wins": 166,
       "losses": 133,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Dwarf",
+      "guild": "twenty five big guys",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 338,
@@ -3410,7 +4427,10 @@
       "wins": 155,
       "losses": 129,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Troll",
+      "guild": "all good",
+      "faction": "HORDE"
     },
     {
       "rank": 341,
@@ -3420,7 +4440,10 @@
       "wins": 81,
       "losses": 59,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "WASD",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 341,
@@ -3430,7 +4453,10 @@
       "wins": 81,
       "losses": 59,
       "classId": "druid",
-      "specId": "druid_feralcombat"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "WASD",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 343,
@@ -3440,7 +4466,10 @@
       "wins": 216,
       "losses": 172,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Orc",
+      "guild": "all good",
+      "faction": "HORDE"
     },
     {
       "rank": 343,
@@ -3450,7 +4479,10 @@
       "wins": 294,
       "losses": 257,
       "classId": "warlock",
-      "specId": "warlock_affliction"
+      "specId": "warlock_affliction",
+      "race": "Gnome",
+      "guild": "come in my rv",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 345,
@@ -3460,7 +4492,10 @@
       "wins": 171,
       "losses": 140,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "Holy War",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 346,
@@ -3470,7 +4505,10 @@
       "wins": 80,
       "losses": 50,
       "classId": "warrior",
-      "specId": "warrior_protection"
+      "specId": "warrior_protection",
+      "race": "Dwarf",
+      "guild": "what the frick",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 346,
@@ -3480,7 +4518,10 @@
       "wins": 80,
       "losses": 50,
       "classId": "paladin",
-      "specId": "paladin_protection"
+      "specId": "paladin_protection",
+      "race": "Dwarf",
+      "guild": "what the frick",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 346,
@@ -3490,7 +4531,10 @@
       "wins": 198,
       "losses": 145,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Lunch",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 346,
@@ -3500,7 +4544,10 @@
       "wins": 134,
       "losses": 110,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "LlFTED",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 350,
@@ -3510,7 +4557,10 @@
       "wins": 121,
       "losses": 90,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Tauren",
+      "guild": "RockHard",
+      "faction": "HORDE"
     },
     {
       "rank": 350,
@@ -3520,7 +4570,10 @@
       "wins": 472,
       "losses": 359,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "car with flames",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 352,
@@ -3530,7 +4583,10 @@
       "wins": 135,
       "losses": 90,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Undead",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 352,
@@ -3540,7 +4596,10 @@
       "wins": 85,
       "losses": 57,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Dwarf",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 352,
@@ -3550,7 +4609,10 @@
       "wins": 110,
       "losses": 87,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Merciless",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 352,
@@ -3560,7 +4622,10 @@
       "wins": 252,
       "losses": 205,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_holy",
+      "race": "Dwarf",
+      "guild": "GOLDENBOYS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 356,
@@ -3570,7 +4635,10 @@
       "wins": 60,
       "losses": 44,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": "The Rejects",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 356,
@@ -3580,7 +4648,10 @@
       "wins": 619,
       "losses": 522,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Orc",
+      "guild": "APES TOGETHER STRONG",
+      "faction": "HORDE"
     },
     {
       "rank": 358,
@@ -3590,7 +4661,10 @@
       "wins": 304,
       "losses": 186,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "MUTANTS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 358,
@@ -3600,7 +4674,10 @@
       "wins": 421,
       "losses": 302,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Girth Wind And Fire",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 358,
@@ -3610,7 +4687,10 @@
       "wins": 200,
       "losses": 151,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Dwarf",
+      "guild": "Monkey BISness",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 358,
@@ -3620,7 +4700,10 @@
       "wins": 125,
       "losses": 103,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Full Circle",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 362,
@@ -3630,7 +4713,10 @@
       "wins": 51,
       "losses": 30,
       "classId": "hunter",
-      "specId": "hunter_marksmanship"
+      "specId": "hunter_marksmanship",
+      "race": "Dwarf",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 362,
@@ -3640,7 +4726,10 @@
       "wins": 136,
       "losses": 87,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "CUTIES ONLY",
+      "faction": "HORDE"
     },
     {
       "rank": 362,
@@ -3650,7 +4739,10 @@
       "wins": 141,
       "losses": 111,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 365,
@@ -3660,7 +4752,10 @@
       "wins": 120,
       "losses": 86,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Dense",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 365,
@@ -3670,7 +4765,10 @@
       "wins": 109,
       "losses": 82,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Dwarf",
+      "guild": "Dense",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 367,
@@ -3680,7 +4778,10 @@
       "wins": 41,
       "losses": 23,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 367,
@@ -3690,7 +4791,10 @@
       "wins": 41,
       "losses": 23,
       "classId": "hunter",
-      "specId": "hunter_survival"
+      "specId": "hunter_survival",
+      "race": "Dwarf",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 367,
@@ -3700,7 +4804,10 @@
       "wins": 593,
       "losses": 420,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Friends You Cant Trust",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 367,
@@ -3710,7 +4817,10 @@
       "wins": 85,
       "losses": 63,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Dwarf",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 367,
@@ -3720,7 +4830,10 @@
       "wins": 515,
       "losses": 422,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 367,
@@ -3730,7 +4843,10 @@
       "wins": 254,
       "losses": 231,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Preloaded",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 373,
@@ -3740,7 +4856,10 @@
       "wins": 105,
       "losses": 81,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 374,
@@ -3750,7 +4869,10 @@
       "wins": 55,
       "losses": 32,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": "hi lighty",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 374,
@@ -3760,7 +4882,10 @@
       "wins": 55,
       "losses": 32,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "hi lighty",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 374,
@@ -3770,7 +4895,10 @@
       "wins": 86,
       "losses": 64,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 374,
@@ -3780,7 +4908,10 @@
       "wins": 217,
       "losses": 182,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 378,
@@ -3790,7 +4921,10 @@
       "wins": 132,
       "losses": 72,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "Refined",
+      "faction": "HORDE"
     },
     {
       "rank": 378,
@@ -3800,7 +4934,10 @@
       "wins": 165,
       "losses": 141,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "SB",
+      "faction": "HORDE"
     },
     {
       "rank": 380,
@@ -3810,7 +4947,10 @@
       "wins": 58,
       "losses": 36,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Dense",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 380,
@@ -3820,7 +4960,10 @@
       "wins": 58,
       "losses": 36,
       "classId": "druid",
-      "specId": "druid_balance"
+      "specId": "druid_balance",
+      "race": "Night Elf",
+      "guild": "Dense",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 380,
@@ -3830,7 +4973,10 @@
       "wins": 114,
       "losses": 81,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Human",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 380,
@@ -3840,7 +4986,10 @@
       "wins": 108,
       "losses": 79,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Doombots",
+      "faction": "HORDE"
     },
     {
       "rank": 380,
@@ -3850,7 +4999,10 @@
       "wins": 143,
       "losses": 105,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Post Nerf Clarity",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 380,
@@ -3860,7 +5012,10 @@
       "wins": 249,
       "losses": 214,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Doombots",
+      "faction": "HORDE"
     },
     {
       "rank": 386,
@@ -3870,7 +5025,10 @@
       "wins": 143,
       "losses": 86,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Undead",
+      "guild": "CRASHOUT",
+      "faction": "HORDE"
     },
     {
       "rank": 386,
@@ -3880,7 +5038,10 @@
       "wins": 96,
       "losses": 62,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "No Notes",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 386,
@@ -3890,7 +5051,10 @@
       "wins": 48,
       "losses": 34,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Malediction",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 386,
@@ -3900,7 +5064,10 @@
       "wins": 96,
       "losses": 75,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "adhd",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 390,
@@ -3910,7 +5077,10 @@
       "wins": 400,
       "losses": 249,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Full Circle",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 390,
@@ -3920,7 +5090,10 @@
       "wins": 74,
       "losses": 52,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Dwarf",
+      "guild": "Fluid",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 390,
@@ -3930,7 +5103,10 @@
       "wins": 165,
       "losses": 124,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "DREAM",
+      "faction": "HORDE"
     },
     {
       "rank": 390,
@@ -3940,7 +5116,10 @@
       "wins": 309,
       "losses": 268,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "After Dark",
+      "faction": "HORDE"
     },
     {
       "rank": 394,
@@ -3950,7 +5129,10 @@
       "wins": 257,
       "losses": 191,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "WASD",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 394,
@@ -3960,7 +5142,10 @@
       "wins": 161,
       "losses": 128,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Salt",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 396,
@@ -3970,7 +5155,10 @@
       "wins": 80,
       "losses": 57,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 396,
@@ -3980,7 +5168,10 @@
       "wins": 141,
       "losses": 101,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Undead",
+      "guild": "Daybreak",
+      "faction": "HORDE"
     },
     {
       "rank": 396,
@@ -3990,7 +5181,10 @@
       "wins": 123,
       "losses": 96,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "Daybreak",
+      "faction": "HORDE"
     },
     {
       "rank": 396,
@@ -4000,7 +5194,10 @@
       "wins": 367,
       "losses": 314,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Undead",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 400,
@@ -4010,7 +5207,10 @@
       "wins": 140,
       "losses": 89,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "SUNNY D ALRIGHT",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 400,
@@ -4020,7 +5220,10 @@
       "wins": 174,
       "losses": 154,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Orc",
+      "guild": "WOMPRATS",
+      "faction": "HORDE"
     },
     {
       "rank": 402,
@@ -4030,7 +5233,10 @@
       "wins": 276,
       "losses": 248,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "livid",
+      "faction": "HORDE"
     },
     {
       "rank": 403,
@@ -4040,7 +5246,10 @@
       "wins": 299,
       "losses": 226,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Merciless",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 403,
@@ -4050,7 +5259,10 @@
       "wins": 155,
       "losses": 124,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 403,
@@ -4060,7 +5272,10 @@
       "wins": 221,
       "losses": 181,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "XTREME MOGTATION ELATION",
+      "faction": "HORDE"
     },
     {
       "rank": 403,
@@ -4070,7 +5285,10 @@
       "wins": 277,
       "losses": 280,
       "classId": "paladin",
-      "specId": "paladin_protection"
+      "specId": "paladin_protection",
+      "race": "Dwarf",
+      "guild": "Happened",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 407,
@@ -4080,7 +5298,10 @@
       "wins": 80,
       "losses": 40,
       "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "priest_holy",
+      "race": "Dwarf",
+      "guild": "kiss me i roleplay",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 407,
@@ -4090,7 +5311,10 @@
       "wins": 148,
       "losses": 122,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Orc",
+      "guild": "Gaming Dads",
+      "faction": "HORDE"
     },
     {
       "rank": 407,
@@ -4100,7 +5324,10 @@
       "wins": 148,
       "losses": 122,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Undead",
+      "guild": "Fusion",
+      "faction": "HORDE"
     },
     {
       "rank": 407,
@@ -4110,7 +5337,10 @@
       "wins": 388,
       "losses": 333,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": "grief",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 407,
@@ -4120,7 +5350,10 @@
       "wins": 315,
       "losses": 285,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Elysium",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 412,
@@ -4130,7 +5363,10 @@
       "wins": 61,
       "losses": 43,
       "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "priest_holy",
+      "race": "Troll",
+      "guild": "all good",
+      "faction": "HORDE"
     },
     {
       "rank": 412,
@@ -4140,7 +5376,10 @@
       "wins": 281,
       "losses": 207,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "WASD",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 414,
@@ -4150,7 +5389,10 @@
       "wins": 73,
       "losses": 44,
       "classId": "druid",
-      "specId": "druid_feralcombat"
+      "specId": "druid_feral",
+      "race": "Night Elf",
+      "guild": "Lionheart",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 414,
@@ -4160,7 +5402,10 @@
       "wins": 90,
       "losses": 73,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 414,
@@ -4170,7 +5415,10 @@
       "wins": 246,
       "losses": 213,
       "classId": "priest",
-      "specId": "priest_shadow"
+      "specId": "priest_shadow",
+      "race": "Undead",
+      "guild": null,
+      "faction": "HORDE"
     },
     {
       "rank": 417,
@@ -4180,7 +5428,10 @@
       "wins": 271,
       "losses": 175,
       "classId": "priest",
-      "specId": "priest_shadow"
+      "specId": "priest_shadow",
+      "race": "Dwarf",
+      "guild": "Valorous",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 417,
@@ -4190,7 +5441,10 @@
       "wins": 88,
       "losses": 66,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Council of Darkness",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 417,
@@ -4200,7 +5454,10 @@
       "wins": 165,
       "losses": 126,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "the last push",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 420,
@@ -4210,7 +5467,10 @@
       "wins": 217,
       "losses": 187,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Octagon",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 420,
@@ -4220,7 +5480,10 @@
       "wins": 217,
       "losses": 187,
       "classId": "priest",
-      "specId": "priest_holy"
+      "specId": "priest_holy",
+      "race": "Dwarf",
+      "guild": "Dragon Snacks",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 420,
@@ -4230,7 +5493,10 @@
       "wins": 248,
       "losses": 216,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Eternal",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 423,
@@ -4240,7 +5506,10 @@
       "wins": 299,
       "losses": 276,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Undead",
+      "guild": "XEPA",
+      "faction": "HORDE"
     },
     {
       "rank": 424,
@@ -4250,7 +5519,10 @@
       "wins": 359,
       "losses": 314,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Peace",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 425,
@@ -4260,7 +5532,10 @@
       "wins": 277,
       "losses": 220,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Gnome",
+      "guild": "Full Circle",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 425,
@@ -4270,7 +5545,10 @@
       "wins": 158,
       "losses": 126,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 427,
@@ -4280,7 +5558,10 @@
       "wins": 175,
       "losses": 131,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "malice at the palace",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 428,
@@ -4290,7 +5571,10 @@
       "wins": 65,
       "losses": 37,
       "classId": "hunter",
-      "specId": "hunter_marksmanship"
+      "specId": "hunter_marksmanship",
+      "race": "Night Elf",
+      "guild": "Dense",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 428,
@@ -4300,7 +5584,10 @@
       "wins": 152,
       "losses": 114,
       "classId": "druid",
-      "specId": "druid_feralcombat"
+      "specId": "druid_feral",
+      "race": "Tauren",
+      "guild": "me hungry",
+      "faction": "HORDE"
     },
     {
       "rank": 428,
@@ -4310,7 +5597,10 @@
       "wins": 120,
       "losses": 99,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Orc",
+      "guild": "me hungry",
+      "faction": "HORDE"
     },
     {
       "rank": 431,
@@ -4320,7 +5610,10 @@
       "wins": 225,
       "losses": 168,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "Phase One Energy",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 431,
@@ -4330,7 +5623,10 @@
       "wins": 155,
       "losses": 119,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Nevermind",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 431,
@@ -4340,7 +5636,10 @@
       "wins": 149,
       "losses": 121,
       "classId": "mage",
-      "specId": "mage_arcane"
+      "specId": "mage_arcane",
+      "race": "Undead",
+      "guild": "good times rollin",
+      "faction": "HORDE"
     },
     {
       "rank": 431,
@@ -4350,7 +5649,10 @@
       "wins": 129,
       "losses": 115,
       "classId": "shaman",
-      "specId": "shaman_elemental"
+      "specId": "shaman_elemental",
+      "race": "Tauren",
+      "guild": "THREATCAPPED",
+      "faction": "HORDE"
     },
     {
       "rank": 431,
@@ -4360,7 +5662,10 @@
       "wins": 411,
       "losses": 396,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 436,
@@ -4370,7 +5675,10 @@
       "wins": 85,
       "losses": 55,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 436,
@@ -4380,7 +5688,10 @@
       "wins": 91,
       "losses": 63,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "Buds",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 436,
@@ -4390,7 +5701,10 @@
       "wins": 86,
       "losses": 63,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Dwarf",
+      "guild": "Buds",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 436,
@@ -4400,7 +5714,10 @@
       "wins": 251,
       "losses": 219,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Phase One Energy",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 440,
@@ -4410,7 +5727,10 @@
       "wins": 50,
       "losses": 33,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Lionheart",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 440,
@@ -4420,7 +5740,10 @@
       "wins": 105,
       "losses": 83,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": "ejecto seato",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 442,
@@ -4430,7 +5753,10 @@
       "wins": 160,
       "losses": 125,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "MUTANTS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 443,
@@ -4440,7 +5766,10 @@
       "wins": 194,
       "losses": 155,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 444,
@@ -4450,7 +5779,10 @@
       "wins": 128,
       "losses": 96,
       "classId": "warrior",
-      "specId": "warrior_protection"
+      "specId": "warrior_protection",
+      "race": "Gnome",
+      "guild": "Gravèyard Shift",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 444,
@@ -4460,7 +5792,10 @@
       "wins": 223,
       "losses": 208,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Hard Reset",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 444,
@@ -4470,7 +5805,10 @@
       "wins": 557,
       "losses": 523,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "One Last Time",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 447,
@@ -4480,7 +5818,10 @@
       "wins": 44,
       "losses": 19,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Climax",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 447,
@@ -4490,7 +5831,10 @@
       "wins": 147,
       "losses": 91,
       "classId": "druid",
-      "specId": "druid_feralcombat"
+      "specId": "druid_feral",
+      "race": "Night Elf",
+      "guild": "GOLDENBOYS",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 447,
@@ -4500,7 +5844,10 @@
       "wins": 160,
       "losses": 140,
       "classId": "warlock",
-      "specId": "warlock_destruction"
+      "specId": "warlock_destruction",
+      "race": "Human",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 450,
@@ -4510,7 +5857,10 @@
       "wins": 45,
       "losses": 25,
       "classId": "paladin",
-      "specId": "paladin_retribution"
+      "specId": "paladin_retribution",
+      "race": "Dwarf",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 450,
@@ -4520,7 +5870,10 @@
       "wins": 45,
       "losses": 25,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Draenei",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 452,
@@ -4530,7 +5883,10 @@
       "wins": 98,
       "losses": 65,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 453,
@@ -4540,7 +5896,10 @@
       "wins": 127,
       "losses": 93,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "Rampage",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 453,
@@ -4550,7 +5909,10 @@
       "wins": 182,
       "losses": 160,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "CK",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 455,
@@ -4560,7 +5922,10 @@
       "wins": 144,
       "losses": 76,
       "classId": "hunter",
-      "specId": "hunter_marksmanship"
+      "specId": "hunter_marksmanship",
+      "race": "Orc",
+      "guild": "TL",
+      "faction": "HORDE"
     },
     {
       "rank": 455,
@@ -4570,7 +5935,10 @@
       "wins": 204,
       "losses": 122,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Malediction",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 455,
@@ -4580,7 +5948,10 @@
       "wins": 249,
       "losses": 211,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "grief",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 458,
@@ -4590,7 +5961,10 @@
       "wins": 46,
       "losses": 23,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Undead",
+      "guild": "TBC Relapse",
+      "faction": "HORDE"
     },
     {
       "rank": 458,
@@ -4600,7 +5974,10 @@
       "wins": 53,
       "losses": 29,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 458,
@@ -4610,7 +5987,10 @@
       "wins": 159,
       "losses": 152,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Dwarf",
+      "guild": "cba",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 458,
@@ -4620,7 +6000,10 @@
       "wins": 531,
       "losses": 509,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "War Boys",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 462,
@@ -4630,7 +6013,10 @@
       "wins": 185,
       "losses": 136,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Submerge",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 463,
@@ -4640,7 +6026,10 @@
       "wins": 184,
       "losses": 138,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Troll",
+      "guild": "WOMPRATS",
+      "faction": "HORDE"
     },
     {
       "rank": 463,
@@ -4650,7 +6039,10 @@
       "wins": 95,
       "losses": 73,
       "classId": "hunter",
-      "specId": "hunter_marksmanship"
+      "specId": "hunter_marksmanship",
+      "race": "Dwarf",
+      "guild": "Bane",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 463,
@@ -4660,7 +6052,10 @@
       "wins": 215,
       "losses": 200,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Dwarf",
+      "guild": "Valorous",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 466,
@@ -4670,7 +6065,10 @@
       "wins": 78,
       "losses": 65,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Karazhan Bookclub",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 466,
@@ -4680,7 +6078,10 @@
       "wins": 230,
       "losses": 198,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Under Oath",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 466,
@@ -4690,7 +6091,10 @@
       "wins": 511,
       "losses": 455,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Easy Company",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 466,
@@ -4700,7 +6104,10 @@
       "wins": 102,
       "losses": 103,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "tank shaming",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 470,
@@ -4710,7 +6117,10 @@
       "wins": 60,
       "losses": 44,
       "classId": "warlock",
-      "specId": "warlock_affliction"
+      "specId": "warlock_affliction",
+      "race": "Human",
+      "guild": "leave me alone",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 470,
@@ -4720,7 +6130,10 @@
       "wins": 60,
       "losses": 44,
       "classId": null,
-      "specId": null
+      "specId": null,
+      "race": null,
+      "guild": null,
+      "faction": null
     },
     {
       "rank": 470,
@@ -4730,7 +6143,10 @@
       "wins": 70,
       "losses": 59,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "Nevermind",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 473,
@@ -4740,7 +6156,10 @@
       "wins": 121,
       "losses": 81,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Voices",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 473,
@@ -4750,7 +6169,10 @@
       "wins": 49,
       "losses": 35,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Peace",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 473,
@@ -4760,7 +6182,10 @@
       "wins": 311,
       "losses": 248,
       "classId": "hunter",
-      "specId": "hunter_beastmastery"
+      "specId": "hunter_beastmastery",
+      "race": "Dwarf",
+      "guild": "Primitive",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 473,
@@ -4770,7 +6195,10 @@
       "wins": 312,
       "losses": 278,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Orc",
+      "guild": "DREAM",
+      "faction": "HORDE"
     },
     {
       "rank": 477,
@@ -4780,7 +6208,10 @@
       "wins": 77,
       "losses": 53,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 477,
@@ -4790,7 +6221,10 @@
       "wins": 309,
       "losses": 297,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Not a slur",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 479,
@@ -4800,7 +6234,10 @@
       "wins": 37,
       "losses": 19,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Dwarf",
+      "guild": "Ca Pousse",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 480,
@@ -4810,7 +6247,10 @@
       "wins": 223,
       "losses": 133,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Tauren",
+      "guild": "SQUAWK",
+      "faction": "HORDE"
     },
     {
       "rank": 480,
@@ -4820,7 +6260,10 @@
       "wins": 149,
       "losses": 101,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "rebrand",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 482,
@@ -4830,7 +6273,10 @@
       "wins": 152,
       "losses": 117,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "WASD",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 482,
@@ -4840,7 +6286,10 @@
       "wins": 237,
       "losses": 197,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Resolve",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 484,
@@ -4850,7 +6299,10 @@
       "wins": 263,
       "losses": 198,
       "classId": "warrior",
-      "specId": "warrior_arms"
+      "specId": "warrior_arms",
+      "race": "Gnome",
+      "guild": "Merciless",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 485,
@@ -4860,7 +6312,10 @@
       "wins": 49,
       "losses": 35,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "Boys Night",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 485,
@@ -4870,7 +6325,10 @@
       "wins": 110,
       "losses": 95,
       "classId": "rogue",
-      "specId": "rogue_subtlety"
+      "specId": "rogue_subtlety",
+      "race": "Human",
+      "guild": "Climax",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 487,
@@ -4880,7 +6338,10 @@
       "wins": 172,
       "losses": 129,
       "classId": "shaman",
-      "specId": "shaman_restoration"
+      "specId": "shaman_restoration",
+      "race": "Tauren",
+      "guild": "SQUAWK",
+      "faction": "HORDE"
     },
     {
       "rank": 487,
@@ -4890,7 +6351,10 @@
       "wins": 346,
       "losses": 281,
       "classId": "rogue",
-      "specId": "rogue_combat"
+      "specId": "rogue_combat",
+      "race": "Human",
+      "guild": "Infinity",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 487,
@@ -4900,7 +6364,10 @@
       "wins": 176,
       "losses": 150,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "Mutiny",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 490,
@@ -4910,7 +6377,10 @@
       "wins": 174,
       "losses": 96,
       "classId": "druid",
-      "specId": "druid_restoration"
+      "specId": "druid_restoration",
+      "race": "Night Elf",
+      "guild": "FRIENDSHIP IS A MYTH",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 490,
@@ -4920,7 +6390,10 @@
       "wins": 52,
       "losses": 34,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "rebrand",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 490,
@@ -4930,7 +6403,10 @@
       "wins": 282,
       "losses": 224,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "WASD",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 493,
@@ -4940,7 +6416,10 @@
       "wins": 275,
       "losses": 233,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": null,
+      "faction": "ALLIANCE"
     },
     {
       "rank": 494,
@@ -4950,7 +6429,10 @@
       "wins": 62,
       "losses": 28,
       "classId": "priest",
-      "specId": "priest_discipline"
+      "specId": "priest_discipline",
+      "race": "Undead",
+      "guild": "BMW over TOYOTA",
+      "faction": "HORDE"
     },
     {
       "rank": 494,
@@ -4960,7 +6442,10 @@
       "wins": 150,
       "losses": 103,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Beastmode",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 494,
@@ -4970,7 +6455,10 @@
       "wins": 60,
       "losses": 44,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "rebrand",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 494,
@@ -4980,7 +6468,10 @@
       "wins": 155,
       "losses": 129,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Resolve",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 494,
@@ -4990,7 +6481,10 @@
       "wins": 175,
       "losses": 147,
       "classId": "mage",
-      "specId": "mage_frost"
+      "specId": "mage_frost",
+      "race": "Gnome",
+      "guild": "Righteous",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 494,
@@ -5000,7 +6494,10 @@
       "wins": 202,
       "losses": 170,
       "classId": "warlock",
-      "specId": "warlock_demonology"
+      "specId": "warlock_demonology",
+      "race": "Human",
+      "guild": "rebrand",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 494,
@@ -5010,7 +6507,10 @@
       "wins": 240,
       "losses": 224,
       "classId": "druid",
-      "specId": "druid_feralcombat"
+      "specId": "druid_feral",
+      "race": "Night Elf",
+      "guild": "grief",
+      "faction": "ALLIANCE"
     }
   ]
 }
