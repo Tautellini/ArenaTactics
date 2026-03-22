@@ -2,8 +2,8 @@
   "region": "eu",
   "bracket": "3v3",
   "seasonId": 1,
-  "fetchedAt": "2026-03-22T10:44:26Z",
-  "totalEntries": 5012,
+  "fetchedAt": "2026-03-22T11:58:52Z",
+  "totalEntries": 5018,
   "ratingCutoffs": {
     "gladiator": 2332,
     "duelist": 1880,
@@ -19,7 +19,7 @@
       "rating": 2551,
       "wins": 160,
       "losses": 22,
-      "specId": null
+      "classId": "druid"
     },
     {
       "rank": 2,
@@ -28,7 +28,7 @@
       "rating": 2547,
       "wins": 130,
       "losses": 20,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 3,
@@ -37,7 +37,7 @@
       "rating": 2546,
       "wins": 125,
       "losses": 16,
-      "specId": null
+      "classId": "warlock"
     },
     {
       "rank": 4,
@@ -46,16 +46,7 @@
       "rating": 2504,
       "wins": 143,
       "losses": 8,
-      "specId": null
-    },
-    {
-      "rank": 4,
-      "characterName": "Àzx",
-      "realmSlug": "spineshatter",
-      "rating": 2504,
-      "wins": 143,
-      "losses": 8,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 4,
@@ -64,7 +55,16 @@
       "rating": 2504,
       "wins": 143,
       "losses": 8,
-      "specId": null
+      "classId": "priest"
+    },
+    {
+      "rank": 4,
+      "characterName": "Àzx",
+      "realmSlug": "spineshatter",
+      "rating": 2504,
+      "wins": 143,
+      "losses": 8,
+      "classId": "mage"
     },
     {
       "rank": 7,
@@ -73,7 +73,7 @@
       "rating": 2480,
       "wins": 100,
       "losses": 16,
-      "specId": null
+      "classId": "mage"
     },
     {
       "rank": 8,
@@ -82,7 +82,7 @@
       "rating": 2475,
       "wins": 99,
       "losses": 26,
-      "specId": null
+      "classId": "druid"
     },
     {
       "rank": 9,
@@ -91,16 +91,7 @@
       "rating": 2464,
       "wins": 106,
       "losses": 10,
-      "specId": null
-    },
-    {
-      "rank": 9,
-      "characterName": "Jixoo",
-      "realmSlug": "spineshatter",
-      "rating": 2464,
-      "wins": 106,
-      "losses": 10,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 9,
@@ -109,7 +100,16 @@
       "rating": 2464,
       "wins": 106,
       "losses": 10,
-      "specId": null
+      "classId": "priest"
+    },
+    {
+      "rank": 9,
+      "characterName": "Jixoo",
+      "realmSlug": "spineshatter",
+      "rating": 2464,
+      "wins": 106,
+      "losses": 10,
+      "classId": "mage"
     },
     {
       "rank": 9,
@@ -118,7 +118,7 @@
       "rating": 2464,
       "wins": 114,
       "losses": 30,
-      "specId": null
+      "classId": "warlock"
     },
     {
       "rank": 13,
@@ -127,7 +127,7 @@
       "rating": 2461,
       "wins": 117,
       "losses": 39,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 13,
@@ -136,7 +136,7 @@
       "rating": 2461,
       "wins": 112,
       "losses": 39,
-      "specId": null
+      "classId": "mage"
     },
     {
       "rank": 15,
@@ -145,7 +145,7 @@
       "rating": 2459,
       "wins": 108,
       "losses": 39,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 16,
@@ -154,7 +154,7 @@
       "rating": 2457,
       "wins": 111,
       "losses": 38,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 16,
@@ -163,7 +163,7 @@
       "rating": 2457,
       "wins": 108,
       "losses": 37,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 18,
@@ -172,7 +172,7 @@
       "rating": 2451,
       "wins": 125,
       "losses": 38,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 19,
@@ -181,7 +181,7 @@
       "rating": 2448,
       "wins": 79,
       "losses": 11,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 20,
@@ -190,7 +190,7 @@
       "rating": 2431,
       "wins": 156,
       "losses": 70,
-      "specId": null
+      "classId": "mage"
     },
     {
       "rank": 21,
@@ -199,7 +199,7 @@
       "rating": 2425,
       "wins": 106,
       "losses": 41,
-      "specId": null
+      "classId": "shaman"
     },
     {
       "rank": 22,
@@ -208,7 +208,7 @@
       "rating": 2411,
       "wins": 128,
       "losses": 54,
-      "specId": null
+      "classId": "warlock"
     },
     {
       "rank": 23,
@@ -217,7 +217,7 @@
       "rating": 2409,
       "wins": 129,
       "losses": 64,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 23,
@@ -226,7 +226,7 @@
       "rating": 2409,
       "wins": 155,
       "losses": 83,
-      "specId": null
+      "classId": "mage"
     },
     {
       "rank": 25,
@@ -235,16 +235,7 @@
       "rating": 2389,
       "wins": 58,
       "losses": 17,
-      "specId": null
-    },
-    {
-      "rank": 26,
-      "characterName": "Jiixo",
-      "realmSlug": "spineshatter",
-      "rating": 2378,
-      "wins": 150,
-      "losses": 61,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 26,
@@ -253,7 +244,16 @@
       "rating": 2378,
       "wins": 150,
       "losses": 61,
-      "specId": null
+      "classId": "rogue"
+    },
+    {
+      "rank": 26,
+      "characterName": "Jiixo",
+      "realmSlug": "spineshatter",
+      "rating": 2378,
+      "wins": 150,
+      "losses": 61,
+      "classId": "mage"
     },
     {
       "rank": 28,
@@ -262,7 +262,7 @@
       "rating": 2376,
       "wins": 67,
       "losses": 29,
-      "specId": null
+      "classId": "mage"
     },
     {
       "rank": 29,
@@ -271,7 +271,7 @@
       "rating": 2372,
       "wins": 94,
       "losses": 51,
-      "specId": null
+      "classId": "shaman"
     },
     {
       "rank": 30,
@@ -280,7 +280,7 @@
       "rating": 2346,
       "wins": 64,
       "losses": 21,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 30,
@@ -289,7 +289,7 @@
       "rating": 2346,
       "wins": 137,
       "losses": 79,
-      "specId": null
+      "classId": "shaman"
     },
     {
       "rank": 32,
@@ -298,7 +298,7 @@
       "rating": 2345,
       "wins": 134,
       "losses": 93,
-      "specId": null
+      "classId": "paladin"
     },
     {
       "rank": 33,
@@ -307,7 +307,7 @@
       "rating": 2344,
       "wins": 152,
       "losses": 99,
-      "specId": null
+      "classId": "warrior"
     },
     {
       "rank": 34,
@@ -316,7 +316,7 @@
       "rating": 2341,
       "wins": 69,
       "losses": 24,
-      "specId": null
+      "classId": null
     },
     {
       "rank": 35,
@@ -325,16 +325,7 @@
       "rating": 2334,
       "wins": 142,
       "losses": 66,
-      "specId": null
-    },
-    {
-      "rank": 36,
-      "characterName": "Aarbeitslos",
-      "realmSlug": "spineshatter",
-      "rating": 2333,
-      "wins": 97,
-      "losses": 44,
-      "specId": null
+      "classId": "shaman"
     },
     {
       "rank": 36,
@@ -343,7 +334,16 @@
       "rating": 2333,
       "wins": 97,
       "losses": 44,
-      "specId": null
+      "classId": "priest"
+    },
+    {
+      "rank": 36,
+      "characterName": "Aarbeitslos",
+      "realmSlug": "spineshatter",
+      "rating": 2333,
+      "wins": 97,
+      "losses": 44,
+      "classId": "shaman"
     },
     {
       "rank": 38,
@@ -352,7 +352,7 @@
       "rating": 2332,
       "wins": 88,
       "losses": 41,
-      "specId": null
+      "classId": "mage"
     },
     {
       "rank": 39,
@@ -361,7 +361,7 @@
       "rating": 2329,
       "wins": 163,
       "losses": 86,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 40,
@@ -370,7 +370,7 @@
       "rating": 2328,
       "wins": 89,
       "losses": 33,
-      "specId": null
+      "classId": "warrior"
     },
     {
       "rank": 41,
@@ -379,7 +379,7 @@
       "rating": 2325,
       "wins": 114,
       "losses": 58,
-      "specId": null
+      "classId": "warrior"
     },
     {
       "rank": 42,
@@ -388,7 +388,7 @@
       "rating": 2321,
       "wins": 69,
       "losses": 35,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 43,
@@ -397,7 +397,7 @@
       "rating": 2319,
       "wins": 158,
       "losses": 108,
-      "specId": null
+      "classId": "druid"
     },
     {
       "rank": 44,
@@ -406,7 +406,7 @@
       "rating": 2310,
       "wins": 98,
       "losses": 69,
-      "specId": null
+      "classId": "druid"
     },
     {
       "rank": 44,
@@ -415,16 +415,7 @@
       "rating": 2310,
       "wins": 98,
       "losses": 69,
-      "specId": null
-    },
-    {
-      "rank": 46,
-      "characterName": "Luuxíå",
-      "realmSlug": "spineshatter",
-      "rating": 2300,
-      "wins": 114,
-      "losses": 53,
-      "specId": null
+      "classId": "warlock"
     },
     {
       "rank": 46,
@@ -433,7 +424,16 @@
       "rating": 2300,
       "wins": 114,
       "losses": 53,
-      "specId": null
+      "classId": "rogue"
+    },
+    {
+      "rank": 46,
+      "characterName": "Luuxíå",
+      "realmSlug": "spineshatter",
+      "rating": 2300,
+      "wins": 114,
+      "losses": 53,
+      "classId": "druid"
     },
     {
       "rank": 48,
@@ -442,7 +442,7 @@
       "rating": 2294,
       "wins": 90,
       "losses": 40,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 49,
@@ -451,7 +451,7 @@
       "rating": 2292,
       "wins": 72,
       "losses": 31,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 49,
@@ -460,7 +460,7 @@
       "rating": 2292,
       "wins": 68,
       "losses": 49,
-      "specId": null
+      "classId": "warrior"
     },
     {
       "rank": 51,
@@ -469,7 +469,7 @@
       "rating": 2290,
       "wins": 58,
       "losses": 30,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 52,
@@ -478,7 +478,7 @@
       "rating": 2288,
       "wins": 47,
       "losses": 11,
-      "specId": null
+      "classId": "warlock"
     },
     {
       "rank": 52,
@@ -487,7 +487,7 @@
       "rating": 2288,
       "wins": 47,
       "losses": 11,
-      "specId": null
+      "classId": "warrior"
     },
     {
       "rank": 54,
@@ -496,7 +496,7 @@
       "rating": 2287,
       "wins": 76,
       "losses": 26,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 54,
@@ -505,7 +505,7 @@
       "rating": 2287,
       "wins": 66,
       "losses": 30,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 56,
@@ -514,7 +514,7 @@
       "rating": 2286,
       "wins": 90,
       "losses": 25,
-      "specId": null
+      "classId": "mage"
     },
     {
       "rank": 56,
@@ -523,16 +523,7 @@
       "rating": 2286,
       "wins": 107,
       "losses": 64,
-      "specId": null
-    },
-    {
-      "rank": 58,
-      "characterName": "Harawx",
-      "realmSlug": "spineshatter",
-      "rating": 2284,
-      "wins": 106,
-      "losses": 61,
-      "specId": null
+      "classId": "hunter"
     },
     {
       "rank": 58,
@@ -541,7 +532,16 @@
       "rating": 2284,
       "wins": 106,
       "losses": 61,
-      "specId": null
+      "classId": "shaman"
+    },
+    {
+      "rank": 58,
+      "characterName": "Harawx",
+      "realmSlug": "spineshatter",
+      "rating": 2284,
+      "wins": 106,
+      "losses": 61,
+      "classId": "warrior"
     },
     {
       "rank": 60,
@@ -550,7 +550,7 @@
       "rating": 2280,
       "wins": 54,
       "losses": 24,
-      "specId": null
+      "classId": "druid"
     },
     {
       "rank": 60,
@@ -559,7 +559,7 @@
       "rating": 2280,
       "wins": 61,
       "losses": 32,
-      "specId": null
+      "classId": "shaman"
     },
     {
       "rank": 60,
@@ -568,7 +568,7 @@
       "rating": 2280,
       "wins": 138,
       "losses": 98,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 60,
@@ -577,7 +577,7 @@
       "rating": 2280,
       "wins": 138,
       "losses": 104,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 64,
@@ -586,7 +586,7 @@
       "rating": 2277,
       "wins": 67,
       "losses": 31,
-      "specId": null
+      "classId": "druid"
     },
     {
       "rank": 65,
@@ -595,7 +595,7 @@
       "rating": 2276,
       "wins": 79,
       "losses": 42,
-      "specId": null
+      "classId": "warrior"
     },
     {
       "rank": 65,
@@ -604,7 +604,7 @@
       "rating": 2276,
       "wins": 74,
       "losses": 42,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 67,
@@ -613,7 +613,7 @@
       "rating": 2275,
       "wins": 51,
       "losses": 23,
-      "specId": null
+      "classId": "warrior"
     },
     {
       "rank": 67,
@@ -622,7 +622,7 @@
       "rating": 2275,
       "wins": 92,
       "losses": 67,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 69,
@@ -631,7 +631,7 @@
       "rating": 2272,
       "wins": 48,
       "losses": 27,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 70,
@@ -640,7 +640,7 @@
       "rating": 2270,
       "wins": 95,
       "losses": 44,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 70,
@@ -649,7 +649,7 @@
       "rating": 2270,
       "wins": 61,
       "losses": 29,
-      "specId": null
+      "classId": "warlock"
     },
     {
       "rank": 72,
@@ -658,7 +658,7 @@
       "rating": 2269,
       "wins": 252,
       "losses": 191,
-      "specId": null
+      "classId": "mage"
     },
     {
       "rank": 73,
@@ -667,16 +667,7 @@
       "rating": 2267,
       "wins": 55,
       "losses": 23,
-      "specId": null
-    },
-    {
-      "rank": 74,
-      "characterName": "Shîner",
-      "realmSlug": "thunderstrike",
-      "rating": 2264,
-      "wins": 96,
-      "losses": 52,
-      "specId": null
+      "classId": "hunter"
     },
     {
       "rank": 74,
@@ -685,7 +676,16 @@
       "rating": 2264,
       "wins": 96,
       "losses": 52,
-      "specId": null
+      "classId": "warlock"
+    },
+    {
+      "rank": 74,
+      "characterName": "Shîner",
+      "realmSlug": "thunderstrike",
+      "rating": 2264,
+      "wins": 96,
+      "losses": 52,
+      "classId": "priest"
     },
     {
       "rank": 74,
@@ -694,7 +694,7 @@
       "rating": 2264,
       "wins": 87,
       "losses": 51,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 77,
@@ -703,7 +703,7 @@
       "rating": 2263,
       "wins": 76,
       "losses": 20,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 78,
@@ -712,7 +712,7 @@
       "rating": 2262,
       "wins": 87,
       "losses": 37,
-      "specId": null
+      "classId": "shaman"
     },
     {
       "rank": 79,
@@ -721,7 +721,7 @@
       "rating": 2261,
       "wins": 52,
       "losses": 23,
-      "specId": null
+      "classId": "druid"
     },
     {
       "rank": 80,
@@ -730,7 +730,7 @@
       "rating": 2257,
       "wins": 223,
       "losses": 101,
-      "specId": null
+      "classId": "mage"
     },
     {
       "rank": 81,
@@ -739,7 +739,7 @@
       "rating": 2256,
       "wins": 143,
       "losses": 56,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 82,
@@ -748,7 +748,7 @@
       "rating": 2255,
       "wins": 53,
       "losses": 30,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 82,
@@ -757,7 +757,7 @@
       "rating": 2255,
       "wins": 415,
       "losses": 266,
-      "specId": null
+      "classId": "paladin"
     },
     {
       "rank": 84,
@@ -766,7 +766,7 @@
       "rating": 2254,
       "wins": 69,
       "losses": 22,
-      "specId": null
+      "classId": "warlock"
     },
     {
       "rank": 85,
@@ -775,7 +775,7 @@
       "rating": 2253,
       "wins": 116,
       "losses": 79,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 86,
@@ -784,7 +784,7 @@
       "rating": 2252,
       "wins": 146,
       "losses": 92,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 86,
@@ -793,7 +793,7 @@
       "rating": 2252,
       "wins": 239,
       "losses": 172,
-      "specId": null
+      "classId": "shaman"
     },
     {
       "rank": 88,
@@ -802,7 +802,7 @@
       "rating": 2249,
       "wins": 210,
       "losses": 154,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 89,
@@ -811,7 +811,7 @@
       "rating": 2248,
       "wins": 132,
       "losses": 82,
-      "specId": null
+      "classId": "rogue"
     },
     {
       "rank": 89,
@@ -820,7 +820,7 @@
       "rating": 2248,
       "wins": 225,
       "losses": 154,
-      "specId": null
+      "classId": null
     },
     {
       "rank": 91,
@@ -829,7 +829,7 @@
       "rating": 2246,
       "wins": 110,
       "losses": 65,
-      "specId": null
+      "classId": "druid"
     },
     {
       "rank": 92,
@@ -838,7 +838,7 @@
       "rating": 2245,
       "wins": 60,
       "losses": 17,
-      "specId": null
+      "classId": "mage"
     },
     {
       "rank": 92,
@@ -847,7 +847,7 @@
       "rating": 2245,
       "wins": 90,
       "losses": 60,
-      "specId": null
+      "classId": "druid"
     },
     {
       "rank": 94,
@@ -856,7 +856,7 @@
       "rating": 2243,
       "wins": 160,
       "losses": 109,
-      "specId": null
+      "classId": "warrior"
     },
     {
       "rank": 95,
@@ -865,7 +865,7 @@
       "rating": 2242,
       "wins": 70,
       "losses": 38,
-      "specId": null
+      "classId": "shaman"
     },
     {
       "rank": 95,
@@ -874,7 +874,7 @@
       "rating": 2242,
       "wins": 60,
       "losses": 34,
-      "specId": null
+      "classId": "warlock"
     },
     {
       "rank": 97,
@@ -883,7 +883,7 @@
       "rating": 2241,
       "wins": 133,
       "losses": 80,
-      "specId": null
+      "classId": "mage"
     },
     {
       "rank": 97,
@@ -892,7 +892,7 @@
       "rating": 2241,
       "wins": 61,
       "losses": 38,
-      "specId": null
+      "classId": "mage"
     },
     {
       "rank": 99,
@@ -901,7 +901,7 @@
       "rating": 2240,
       "wins": 53,
       "losses": 19,
-      "specId": null
+      "classId": "priest"
     },
     {
       "rank": 99,
@@ -910,7 +910,3607 @@
       "rating": 2240,
       "wins": 123,
       "losses": 70,
-      "specId": null
+      "classId": "warlock"
+    },
+    {
+      "rank": 99,
+      "characterName": "Skillmasterx",
+      "realmSlug": "spineshatter",
+      "rating": 2240,
+      "wins": 115,
+      "losses": 72,
+      "classId": "priest"
+    },
+    {
+      "rank": 99,
+      "characterName": "Xerez",
+      "realmSlug": "spineshatter",
+      "rating": 2240,
+      "wins": 145,
+      "losses": 94,
+      "classId": "shaman"
+    },
+    {
+      "rank": 103,
+      "characterName": "Bannedonmain",
+      "realmSlug": "spineshatter",
+      "rating": 2238,
+      "wins": 62,
+      "losses": 18,
+      "classId": "druid"
+    },
+    {
+      "rank": 103,
+      "characterName": "Nýarla",
+      "realmSlug": "spineshatter",
+      "rating": 2238,
+      "wins": 111,
+      "losses": 72,
+      "classId": "hunter"
+    },
+    {
+      "rank": 105,
+      "characterName": "Foxesap",
+      "realmSlug": "spineshatter",
+      "rating": 2236,
+      "wins": 97,
+      "losses": 63,
+      "classId": "rogue"
+    },
+    {
+      "rank": 106,
+      "characterName": "Sorryimbest",
+      "realmSlug": "spineshatter",
+      "rating": 2234,
+      "wins": 48,
+      "losses": 13,
+      "classId": "druid"
+    },
+    {
+      "rank": 107,
+      "characterName": "Grb",
+      "realmSlug": "spineshatter",
+      "rating": 2233,
+      "wins": 68,
+      "losses": 19,
+      "classId": "shaman"
+    },
+    {
+      "rank": 107,
+      "characterName": "Chiri",
+      "realmSlug": "spineshatter",
+      "rating": 2233,
+      "wins": 71,
+      "losses": 50,
+      "classId": "rogue"
+    },
+    {
+      "rank": 107,
+      "characterName": "Niq",
+      "realmSlug": "spineshatter",
+      "rating": 2233,
+      "wins": 71,
+      "losses": 50,
+      "classId": "priest"
+    },
+    {
+      "rank": 107,
+      "characterName": "Neyin",
+      "realmSlug": "spineshatter",
+      "rating": 2233,
+      "wins": 71,
+      "losses": 50,
+      "classId": "mage"
+    },
+    {
+      "rank": 111,
+      "characterName": "Icba",
+      "realmSlug": "spineshatter",
+      "rating": 2231,
+      "wins": 90,
+      "losses": 60,
+      "classId": "priest"
+    },
+    {
+      "rank": 111,
+      "characterName": "Böpis",
+      "realmSlug": "spineshatter",
+      "rating": 2231,
+      "wins": 90,
+      "losses": 60,
+      "classId": "warrior"
+    },
+    {
+      "rank": 113,
+      "characterName": "Aldajjal",
+      "realmSlug": "spineshatter",
+      "rating": 2230,
+      "wins": 58,
+      "losses": 31,
+      "classId": "warrior"
+    },
+    {
+      "rank": 114,
+      "characterName": "Zulpí",
+      "realmSlug": "spineshatter",
+      "rating": 2229,
+      "wins": 66,
+      "losses": 45,
+      "classId": "rogue"
+    },
+    {
+      "rank": 114,
+      "characterName": "Infirenz",
+      "realmSlug": "spineshatter",
+      "rating": 2229,
+      "wins": 66,
+      "losses": 45,
+      "classId": "warlock"
+    },
+    {
+      "rank": 114,
+      "characterName": "Tilte",
+      "realmSlug": "spineshatter",
+      "rating": 2229,
+      "wins": 120,
+      "losses": 98,
+      "classId": "priest"
+    },
+    {
+      "rank": 117,
+      "characterName": "Thiccsý",
+      "realmSlug": "spineshatter",
+      "rating": 2228,
+      "wins": 85,
+      "losses": 23,
+      "classId": "warlock"
+    },
+    {
+      "rank": 118,
+      "characterName": "Baldylóx",
+      "realmSlug": "spineshatter",
+      "rating": 2227,
+      "wins": 65,
+      "losses": 27,
+      "classId": "mage"
+    },
+    {
+      "rank": 118,
+      "characterName": "Mindg",
+      "realmSlug": "spineshatter",
+      "rating": 2227,
+      "wins": 68,
+      "losses": 45,
+      "classId": "warlock"
+    },
+    {
+      "rank": 120,
+      "characterName": "Sippieyy",
+      "realmSlug": "spineshatter",
+      "rating": 2225,
+      "wins": 52,
+      "losses": 18,
+      "classId": "warrior"
+    },
+    {
+      "rank": 120,
+      "characterName": "Magiqman",
+      "realmSlug": "spineshatter",
+      "rating": 2225,
+      "wins": 76,
+      "losses": 46,
+      "classId": "mage"
+    },
+    {
+      "rank": 122,
+      "characterName": "Kházadum",
+      "realmSlug": "spineshatter",
+      "rating": 2223,
+      "wins": 82,
+      "losses": 55,
+      "classId": "warrior"
+    },
+    {
+      "rank": 123,
+      "characterName": "Luckyxs",
+      "realmSlug": "spineshatter",
+      "rating": 2222,
+      "wins": 84,
+      "losses": 32,
+      "classId": "rogue"
+    },
+    {
+      "rank": 124,
+      "characterName": "Olaketal",
+      "realmSlug": "spineshatter",
+      "rating": 2220,
+      "wins": 123,
+      "losses": 77,
+      "classId": "mage"
+    },
+    {
+      "rank": 125,
+      "characterName": "Automate",
+      "realmSlug": "spineshatter",
+      "rating": 2219,
+      "wins": 237,
+      "losses": 195,
+      "classId": "druid"
+    },
+    {
+      "rank": 126,
+      "characterName": "Tånnerfrømhs",
+      "realmSlug": "spineshatter",
+      "rating": 2218,
+      "wins": 51,
+      "losses": 20,
+      "classId": "hunter"
+    },
+    {
+      "rank": 126,
+      "characterName": "Minpoggers",
+      "realmSlug": "spineshatter",
+      "rating": 2218,
+      "wins": 51,
+      "losses": 20,
+      "classId": "druid"
+    },
+    {
+      "rank": 126,
+      "characterName": "Størmvessèl",
+      "realmSlug": "spineshatter",
+      "rating": 2218,
+      "wins": 51,
+      "losses": 20,
+      "classId": "shaman"
+    },
+    {
+      "rank": 129,
+      "characterName": "Itsrng",
+      "realmSlug": "spineshatter",
+      "rating": 2217,
+      "wins": 118,
+      "losses": 67,
+      "classId": "rogue"
+    },
+    {
+      "rank": 129,
+      "characterName": "Gssöü",
+      "realmSlug": "spineshatter",
+      "rating": 2217,
+      "wins": 74,
+      "losses": 52,
+      "classId": "priest"
+    },
+    {
+      "rank": 129,
+      "characterName": "Reminded",
+      "realmSlug": "spineshatter",
+      "rating": 2217,
+      "wins": 74,
+      "losses": 52,
+      "classId": "rogue"
+    },
+    {
+      "rank": 129,
+      "characterName": "Rutgerhauer",
+      "realmSlug": "spineshatter",
+      "rating": 2217,
+      "wins": 74,
+      "losses": 52,
+      "classId": "warlock"
+    },
+    {
+      "rank": 133,
+      "characterName": "Jikzyo",
+      "realmSlug": "spineshatter",
+      "rating": 2216,
+      "wins": 43,
+      "losses": 19,
+      "classId": "priest"
+    },
+    {
+      "rank": 134,
+      "characterName": "Hydè",
+      "realmSlug": "spineshatter",
+      "rating": 2215,
+      "wins": 123,
+      "losses": 56,
+      "classId": "warrior"
+    },
+    {
+      "rank": 134,
+      "characterName": "Grumpyguy",
+      "realmSlug": "spineshatter",
+      "rating": 2215,
+      "wins": 71,
+      "losses": 37,
+      "classId": "priest"
+    },
+    {
+      "rank": 136,
+      "characterName": "Grúng",
+      "realmSlug": "spineshatter",
+      "rating": 2212,
+      "wins": 68,
+      "losses": 23,
+      "classId": "warrior"
+    },
+    {
+      "rank": 136,
+      "characterName": "Fiftysven",
+      "realmSlug": "spineshatter",
+      "rating": 2212,
+      "wins": 76,
+      "losses": 50,
+      "classId": "druid"
+    },
+    {
+      "rank": 138,
+      "characterName": "Idkwhatotype",
+      "realmSlug": "spineshatter",
+      "rating": 2211,
+      "wins": 68,
+      "losses": 22,
+      "classId": "priest"
+    },
+    {
+      "rank": 138,
+      "characterName": "Brufi",
+      "realmSlug": "spineshatter",
+      "rating": 2211,
+      "wins": 247,
+      "losses": 180,
+      "classId": "druid"
+    },
+    {
+      "rank": 140,
+      "characterName": "Jinzy",
+      "realmSlug": "spineshatter",
+      "rating": 2209,
+      "wins": 149,
+      "losses": 74,
+      "classId": "priest"
+    },
+    {
+      "rank": 141,
+      "characterName": "Fumist",
+      "realmSlug": "spineshatter",
+      "rating": 2208,
+      "wins": 126,
+      "losses": 82,
+      "classId": "rogue"
+    },
+    {
+      "rank": 141,
+      "characterName": "Kindhearted",
+      "realmSlug": "spineshatter",
+      "rating": 2208,
+      "wins": 126,
+      "losses": 82,
+      "classId": "priest"
+    },
+    {
+      "rank": 141,
+      "characterName": "Widmore",
+      "realmSlug": "spineshatter",
+      "rating": 2208,
+      "wins": 78,
+      "losses": 52,
+      "classId": "warrior"
+    },
+    {
+      "rank": 141,
+      "characterName": "Zhilexlol",
+      "realmSlug": "spineshatter",
+      "rating": 2208,
+      "wins": 107,
+      "losses": 79,
+      "classId": "rogue"
+    },
+    {
+      "rank": 141,
+      "characterName": "Chikanaxd",
+      "realmSlug": "spineshatter",
+      "rating": 2208,
+      "wins": 87,
+      "losses": 69,
+      "classId": "druid"
+    },
+    {
+      "rank": 146,
+      "characterName": "Enem",
+      "realmSlug": "spineshatter",
+      "rating": 2206,
+      "wins": 87,
+      "losses": 63,
+      "classId": "hunter"
+    },
+    {
+      "rank": 147,
+      "characterName": "Muguu",
+      "realmSlug": "spineshatter",
+      "rating": 2205,
+      "wins": 119,
+      "losses": 91,
+      "classId": "mage"
+    },
+    {
+      "rank": 148,
+      "characterName": "Dogpatrol",
+      "realmSlug": "spineshatter",
+      "rating": 2204,
+      "wins": 56,
+      "losses": 11,
+      "classId": "warlock"
+    },
+    {
+      "rank": 148,
+      "characterName": "Nárien",
+      "realmSlug": "spineshatter",
+      "rating": 2204,
+      "wins": 76,
+      "losses": 47,
+      "classId": "priest"
+    },
+    {
+      "rank": 148,
+      "characterName": "Mønø",
+      "realmSlug": "spineshatter",
+      "rating": 2204,
+      "wins": 208,
+      "losses": 133,
+      "classId": "rogue"
+    },
+    {
+      "rank": 151,
+      "characterName": "Xher",
+      "realmSlug": "thunderstrike",
+      "rating": 2203,
+      "wins": 71,
+      "losses": 42,
+      "classId": "warrior"
+    },
+    {
+      "rank": 151,
+      "characterName": "Raxoran",
+      "realmSlug": "thunderstrike",
+      "rating": 2203,
+      "wins": 80,
+      "losses": 49,
+      "classId": "paladin"
+    },
+    {
+      "rank": 153,
+      "characterName": "Kinjara",
+      "realmSlug": "spineshatter",
+      "rating": 2201,
+      "wins": 85,
+      "losses": 42,
+      "classId": "rogue"
+    },
+    {
+      "rank": 153,
+      "characterName": "Hugebull",
+      "realmSlug": "spineshatter",
+      "rating": 2201,
+      "wins": 68,
+      "losses": 36,
+      "classId": "warrior"
+    },
+    {
+      "rank": 153,
+      "characterName": "Oriüs",
+      "realmSlug": "spineshatter",
+      "rating": 2201,
+      "wins": 99,
+      "losses": 63,
+      "classId": "druid"
+    },
+    {
+      "rank": 156,
+      "characterName": "Dymo",
+      "realmSlug": "spineshatter",
+      "rating": 2200,
+      "wins": 54,
+      "losses": 18,
+      "classId": null
+    },
+    {
+      "rank": 157,
+      "characterName": "Heyitsdaddy",
+      "realmSlug": "spineshatter",
+      "rating": 2199,
+      "wins": 49,
+      "losses": 17,
+      "classId": "mage"
+    },
+    {
+      "rank": 157,
+      "characterName": "Creaturé",
+      "realmSlug": "spineshatter",
+      "rating": 2199,
+      "wins": 60,
+      "losses": 32,
+      "classId": "mage"
+    },
+    {
+      "rank": 157,
+      "characterName": "Tharkumx",
+      "realmSlug": "spineshatter",
+      "rating": 2199,
+      "wins": 163,
+      "losses": 113,
+      "classId": "priest"
+    },
+    {
+      "rank": 157,
+      "characterName": "Crepa",
+      "realmSlug": "spineshatter",
+      "rating": 2199,
+      "wins": 446,
+      "losses": 353,
+      "classId": "warrior"
+    },
+    {
+      "rank": 161,
+      "characterName": "Liruat",
+      "realmSlug": "spineshatter",
+      "rating": 2197,
+      "wins": 83,
+      "losses": 58,
+      "classId": "shaman"
+    },
+    {
+      "rank": 162,
+      "characterName": "Gshockxd",
+      "realmSlug": "spineshatter",
+      "rating": 2196,
+      "wins": 91,
+      "losses": 61,
+      "classId": "shaman"
+    },
+    {
+      "rank": 162,
+      "characterName": "Waaghbeastx",
+      "realmSlug": "spineshatter",
+      "rating": 2196,
+      "wins": 91,
+      "losses": 61,
+      "classId": "warrior"
+    },
+    {
+      "rank": 162,
+      "characterName": "Vüra",
+      "realmSlug": "spineshatter",
+      "rating": 2196,
+      "wins": 91,
+      "losses": 61,
+      "classId": "paladin"
+    },
+    {
+      "rank": 165,
+      "characterName": "Wswswsws",
+      "realmSlug": "spineshatter",
+      "rating": 2195,
+      "wins": 124,
+      "losses": 62,
+      "classId": "shaman"
+    },
+    {
+      "rank": 165,
+      "characterName": "Aledram",
+      "realmSlug": "spineshatter",
+      "rating": 2195,
+      "wins": 129,
+      "losses": 102,
+      "classId": "mage"
+    },
+    {
+      "rank": 167,
+      "characterName": "Rovr",
+      "realmSlug": "spineshatter",
+      "rating": 2194,
+      "wins": 62,
+      "losses": 33,
+      "classId": "rogue"
+    },
+    {
+      "rank": 167,
+      "characterName": "Shý",
+      "realmSlug": "spineshatter",
+      "rating": 2194,
+      "wins": 96,
+      "losses": 79,
+      "classId": "shaman"
+    },
+    {
+      "rank": 167,
+      "characterName": "Flýy",
+      "realmSlug": "spineshatter",
+      "rating": 2194,
+      "wins": 96,
+      "losses": 79,
+      "classId": "priest"
+    },
+    {
+      "rank": 170,
+      "characterName": "Alfà",
+      "realmSlug": "spineshatter",
+      "rating": 2193,
+      "wins": 52,
+      "losses": 29,
+      "classId": "warrior"
+    },
+    {
+      "rank": 170,
+      "characterName": "Grendobööge",
+      "realmSlug": "spineshatter",
+      "rating": 2193,
+      "wins": 101,
+      "losses": 66,
+      "classId": "priest"
+    },
+    {
+      "rank": 172,
+      "characterName": "Chiliesauce",
+      "realmSlug": "spineshatter",
+      "rating": 2192,
+      "wins": 46,
+      "losses": 15,
+      "classId": "rogue"
+    },
+    {
+      "rank": 172,
+      "characterName": "Postarinké",
+      "realmSlug": "spineshatter",
+      "rating": 2192,
+      "wins": 136,
+      "losses": 91,
+      "classId": "warlock"
+    },
+    {
+      "rank": 174,
+      "characterName": "Kuwmonster",
+      "realmSlug": "spineshatter",
+      "rating": 2190,
+      "wins": 71,
+      "losses": 42,
+      "classId": "rogue"
+    },
+    {
+      "rank": 174,
+      "characterName": "Daiquiry",
+      "realmSlug": "spineshatter",
+      "rating": 2190,
+      "wins": 152,
+      "losses": 109,
+      "classId": "druid"
+    },
+    {
+      "rank": 176,
+      "characterName": "Onlyuseburn",
+      "realmSlug": "spineshatter",
+      "rating": 2189,
+      "wins": 136,
+      "losses": 100,
+      "classId": "priest"
+    },
+    {
+      "rank": 176,
+      "characterName": "Azhley",
+      "realmSlug": "spineshatter",
+      "rating": 2189,
+      "wins": 133,
+      "losses": 102,
+      "classId": "rogue"
+    },
+    {
+      "rank": 178,
+      "characterName": "Qeq",
+      "realmSlug": "spineshatter",
+      "rating": 2187,
+      "wins": 138,
+      "losses": 78,
+      "classId": "priest"
+    },
+    {
+      "rank": 178,
+      "characterName": "Afrøløck",
+      "realmSlug": "spineshatter",
+      "rating": 2187,
+      "wins": 233,
+      "losses": 193,
+      "classId": "warlock"
+    },
+    {
+      "rank": 178,
+      "characterName": "Tbckev",
+      "realmSlug": "spineshatter",
+      "rating": 2187,
+      "wins": 210,
+      "losses": 183,
+      "classId": "rogue"
+    },
+    {
+      "rank": 178,
+      "characterName": "Karakov",
+      "realmSlug": "spineshatter",
+      "rating": 2187,
+      "wins": 161,
+      "losses": 146,
+      "classId": "druid"
+    },
+    {
+      "rank": 182,
+      "characterName": "Wórldless",
+      "realmSlug": "spineshatter",
+      "rating": 2186,
+      "wins": 99,
+      "losses": 68,
+      "classId": "priest"
+    },
+    {
+      "rank": 183,
+      "characterName": "Foxyo",
+      "realmSlug": "spineshatter",
+      "rating": 2185,
+      "wins": 145,
+      "losses": 68,
+      "classId": "rogue"
+    },
+    {
+      "rank": 183,
+      "characterName": "Yosindrax",
+      "realmSlug": "spineshatter",
+      "rating": 2185,
+      "wins": 66,
+      "losses": 37,
+      "classId": "rogue"
+    },
+    {
+      "rank": 183,
+      "characterName": "Phicon",
+      "realmSlug": "spineshatter",
+      "rating": 2185,
+      "wins": 100,
+      "losses": 68,
+      "classId": "warlock"
+    },
+    {
+      "rank": 186,
+      "characterName": "Xanthic",
+      "realmSlug": "spineshatter",
+      "rating": 2184,
+      "wins": 68,
+      "losses": 43,
+      "classId": "warrior"
+    },
+    {
+      "rank": 186,
+      "characterName": "Søumi",
+      "realmSlug": "spineshatter",
+      "rating": 2184,
+      "wins": 203,
+      "losses": 160,
+      "classId": "priest"
+    },
+    {
+      "rank": 188,
+      "characterName": "Dverik",
+      "realmSlug": "spineshatter",
+      "rating": 2183,
+      "wins": 119,
+      "losses": 76,
+      "classId": "druid"
+    },
+    {
+      "rank": 188,
+      "characterName": "Torstenmage",
+      "realmSlug": "spineshatter",
+      "rating": 2183,
+      "wins": 193,
+      "losses": 157,
+      "classId": "mage"
+    },
+    {
+      "rank": 190,
+      "characterName": "Eltupi",
+      "realmSlug": "spineshatter",
+      "rating": 2181,
+      "wins": 54,
+      "losses": 20,
+      "classId": "mage"
+    },
+    {
+      "rank": 190,
+      "characterName": "Lillijalol",
+      "realmSlug": "spineshatter",
+      "rating": 2181,
+      "wins": 51,
+      "losses": 31,
+      "classId": "shaman"
+    },
+    {
+      "rank": 190,
+      "characterName": "Jebsen",
+      "realmSlug": "spineshatter",
+      "rating": 2181,
+      "wins": 51,
+      "losses": 31,
+      "classId": "priest"
+    },
+    {
+      "rank": 190,
+      "characterName": "Mayxlol",
+      "realmSlug": "spineshatter",
+      "rating": 2181,
+      "wins": 51,
+      "losses": 31,
+      "classId": "mage"
+    },
+    {
+      "rank": 190,
+      "characterName": "Retayzy",
+      "realmSlug": "spineshatter",
+      "rating": 2181,
+      "wins": 96,
+      "losses": 61,
+      "classId": "paladin"
+    },
+    {
+      "rank": 195,
+      "characterName": "Grapeda",
+      "realmSlug": "spineshatter",
+      "rating": 2180,
+      "wins": 168,
+      "losses": 124,
+      "classId": "warlock"
+    },
+    {
+      "rank": 195,
+      "characterName": "Antapb",
+      "realmSlug": "thunderstrike",
+      "rating": 2180,
+      "wins": 161,
+      "losses": 130,
+      "classId": null
+    },
+    {
+      "rank": 197,
+      "characterName": "Iñsråñjë",
+      "realmSlug": "spineshatter",
+      "rating": 2178,
+      "wins": 74,
+      "losses": 42,
+      "classId": "warlock"
+    },
+    {
+      "rank": 197,
+      "characterName": "Drefan",
+      "realmSlug": "spineshatter",
+      "rating": 2178,
+      "wins": 149,
+      "losses": 97,
+      "classId": "warrior"
+    },
+    {
+      "rank": 197,
+      "characterName": "Melonmon",
+      "realmSlug": "spineshatter",
+      "rating": 2178,
+      "wins": 121,
+      "losses": 84,
+      "classId": "shaman"
+    },
+    {
+      "rank": 200,
+      "characterName": "Balkan",
+      "realmSlug": "spineshatter",
+      "rating": 2176,
+      "wins": 73,
+      "losses": 40,
+      "classId": "druid"
+    },
+    {
+      "rank": 200,
+      "characterName": "Reilee",
+      "realmSlug": "spineshatter",
+      "rating": 2176,
+      "wins": 84,
+      "losses": 62,
+      "classId": "rogue"
+    },
+    {
+      "rank": 202,
+      "characterName": "Prevera",
+      "realmSlug": "spineshatter",
+      "rating": 2175,
+      "wins": 44,
+      "losses": 15,
+      "classId": "paladin"
+    },
+    {
+      "rank": 202,
+      "characterName": "Jackerz",
+      "realmSlug": "spineshatter",
+      "rating": 2175,
+      "wins": 59,
+      "losses": 31,
+      "classId": "warrior"
+    },
+    {
+      "rank": 204,
+      "characterName": "Ðreschnuu",
+      "realmSlug": "spineshatter",
+      "rating": 2174,
+      "wins": 309,
+      "losses": 223,
+      "classId": "warlock"
+    },
+    {
+      "rank": 205,
+      "characterName": "Oldoldman",
+      "realmSlug": "spineshatter",
+      "rating": 2173,
+      "wins": 48,
+      "losses": 23,
+      "classId": "warrior"
+    },
+    {
+      "rank": 206,
+      "characterName": "Brallas",
+      "realmSlug": "spineshatter",
+      "rating": 2172,
+      "wins": 42,
+      "losses": 23,
+      "classId": "shaman"
+    },
+    {
+      "rank": 206,
+      "characterName": "Mamontgame",
+      "realmSlug": "spineshatter",
+      "rating": 2172,
+      "wins": 366,
+      "losses": 278,
+      "classId": "shaman"
+    },
+    {
+      "rank": 206,
+      "characterName": "Cowskiy",
+      "realmSlug": "spineshatter",
+      "rating": 2172,
+      "wins": 68,
+      "losses": 60,
+      "classId": "warrior"
+    },
+    {
+      "rank": 206,
+      "characterName": "Fatigué",
+      "realmSlug": "spineshatter",
+      "rating": 2172,
+      "wins": 78,
+      "losses": 71,
+      "classId": "priest"
+    },
+    {
+      "rank": 210,
+      "characterName": "Havityx",
+      "realmSlug": "spineshatter",
+      "rating": 2171,
+      "wins": 215,
+      "losses": 118,
+      "classId": "rogue"
+    },
+    {
+      "rank": 210,
+      "characterName": "Blíts",
+      "realmSlug": "spineshatter",
+      "rating": 2171,
+      "wins": 177,
+      "losses": 139,
+      "classId": "rogue"
+    },
+    {
+      "rank": 212,
+      "characterName": "Skéøz",
+      "realmSlug": "spineshatter",
+      "rating": 2170,
+      "wins": 121,
+      "losses": 71,
+      "classId": "priest"
+    },
+    {
+      "rank": 213,
+      "characterName": "Wintrader",
+      "realmSlug": "spineshatter",
+      "rating": 2169,
+      "wins": 119,
+      "losses": 70,
+      "classId": "priest"
+    },
+    {
+      "rank": 214,
+      "characterName": "Harryhoudini",
+      "realmSlug": "spineshatter",
+      "rating": 2168,
+      "wins": 102,
+      "losses": 64,
+      "classId": "warrior"
+    },
+    {
+      "rank": 215,
+      "characterName": "Monarkie",
+      "realmSlug": "spineshatter",
+      "rating": 2166,
+      "wins": 235,
+      "losses": 156,
+      "classId": "priest"
+    },
+    {
+      "rank": 215,
+      "characterName": "Deedoobzdgih",
+      "realmSlug": "spineshatter",
+      "rating": 2166,
+      "wins": 79,
+      "losses": 54,
+      "classId": "warrior"
+    },
+    {
+      "rank": 215,
+      "characterName": "Juganda",
+      "realmSlug": "spineshatter",
+      "rating": 2166,
+      "wins": 125,
+      "losses": 90,
+      "classId": "mage"
+    },
+    {
+      "rank": 215,
+      "characterName": "Swagmønsterx",
+      "realmSlug": "spineshatter",
+      "rating": 2166,
+      "wins": 131,
+      "losses": 101,
+      "classId": "rogue"
+    },
+    {
+      "rank": 219,
+      "characterName": "Iceclimber",
+      "realmSlug": "spineshatter",
+      "rating": 2165,
+      "wins": 92,
+      "losses": 75,
+      "classId": "warrior"
+    },
+    {
+      "rank": 219,
+      "characterName": "Keevus",
+      "realmSlug": "spineshatter",
+      "rating": 2165,
+      "wins": 92,
+      "losses": 75,
+      "classId": "druid"
+    },
+    {
+      "rank": 219,
+      "characterName": "Madti",
+      "realmSlug": "spineshatter",
+      "rating": 2165,
+      "wins": 92,
+      "losses": 75,
+      "classId": "shaman"
+    },
+    {
+      "rank": 222,
+      "characterName": "Líthon",
+      "realmSlug": "spineshatter",
+      "rating": 2164,
+      "wins": 64,
+      "losses": 39,
+      "classId": "rogue"
+    },
+    {
+      "rank": 222,
+      "characterName": "Shinsplitter",
+      "realmSlug": "spineshatter",
+      "rating": 2164,
+      "wins": 64,
+      "losses": 39,
+      "classId": "warrior"
+    },
+    {
+      "rank": 222,
+      "characterName": "Málte",
+      "realmSlug": "spineshatter",
+      "rating": 2164,
+      "wins": 311,
+      "losses": 190,
+      "classId": "priest"
+    },
+    {
+      "rank": 222,
+      "characterName": "Crabzx",
+      "realmSlug": "spineshatter",
+      "rating": 2164,
+      "wins": 226,
+      "losses": 143,
+      "classId": "rogue"
+    },
+    {
+      "rank": 226,
+      "characterName": "Dikzysquad",
+      "realmSlug": "spineshatter",
+      "rating": 2163,
+      "wins": 48,
+      "losses": 16,
+      "classId": "warlock"
+    },
+    {
+      "rank": 226,
+      "characterName": "Aerixy",
+      "realmSlug": "spineshatter",
+      "rating": 2163,
+      "wins": 118,
+      "losses": 60,
+      "classId": "druid"
+    },
+    {
+      "rank": 226,
+      "characterName": "Nanuker",
+      "realmSlug": "spineshatter",
+      "rating": 2163,
+      "wins": 152,
+      "losses": 114,
+      "classId": "warlock"
+    },
+    {
+      "rank": 229,
+      "characterName": "Místerpwns",
+      "realmSlug": "spineshatter",
+      "rating": 2162,
+      "wins": 46,
+      "losses": 16,
+      "classId": "shaman"
+    },
+    {
+      "rank": 229,
+      "characterName": "Brotallus",
+      "realmSlug": "spineshatter",
+      "rating": 2162,
+      "wins": 44,
+      "losses": 32,
+      "classId": "mage"
+    },
+    {
+      "rank": 229,
+      "characterName": "Gosuguzzen",
+      "realmSlug": "spineshatter",
+      "rating": 2162,
+      "wins": 84,
+      "losses": 62,
+      "classId": "priest"
+    },
+    {
+      "rank": 229,
+      "characterName": "Byfåne",
+      "realmSlug": "spineshatter",
+      "rating": 2162,
+      "wins": 84,
+      "losses": 62,
+      "classId": "mage"
+    },
+    {
+      "rank": 229,
+      "characterName": "Svennelover",
+      "realmSlug": "spineshatter",
+      "rating": 2162,
+      "wins": 84,
+      "losses": 62,
+      "classId": "rogue"
+    },
+    {
+      "rank": 229,
+      "characterName": "Lazux",
+      "realmSlug": "spineshatter",
+      "rating": 2162,
+      "wins": 148,
+      "losses": 110,
+      "classId": "warlock"
+    },
+    {
+      "rank": 229,
+      "characterName": "Karle",
+      "realmSlug": "spineshatter",
+      "rating": 2162,
+      "wins": 103,
+      "losses": 82,
+      "classId": "rogue"
+    },
+    {
+      "rank": 229,
+      "characterName": "Pompaule",
+      "realmSlug": "spineshatter",
+      "rating": 2162,
+      "wins": 103,
+      "losses": 82,
+      "classId": "priest"
+    },
+    {
+      "rank": 237,
+      "characterName": "Prido",
+      "realmSlug": "spineshatter",
+      "rating": 2160,
+      "wins": 50,
+      "losses": 24,
+      "classId": "rogue"
+    },
+    {
+      "rank": 238,
+      "characterName": "Mindfiend",
+      "realmSlug": "spineshatter",
+      "rating": 2159,
+      "wins": 93,
+      "losses": 62,
+      "classId": "priest"
+    },
+    {
+      "rank": 238,
+      "characterName": "Aëgis",
+      "realmSlug": "spineshatter",
+      "rating": 2159,
+      "wins": 203,
+      "losses": 164,
+      "classId": "priest"
+    },
+    {
+      "rank": 240,
+      "characterName": "Paymentbae",
+      "realmSlug": "spineshatter",
+      "rating": 2158,
+      "wins": 139,
+      "losses": 114,
+      "classId": "priest"
+    },
+    {
+      "rank": 241,
+      "characterName": "Schmeckoh",
+      "realmSlug": "spineshatter",
+      "rating": 2157,
+      "wins": 68,
+      "losses": 43,
+      "classId": "hunter"
+    },
+    {
+      "rank": 241,
+      "characterName": "Nickez",
+      "realmSlug": "spineshatter",
+      "rating": 2157,
+      "wins": 61,
+      "losses": 40,
+      "classId": "druid"
+    },
+    {
+      "rank": 241,
+      "characterName": "Vic",
+      "realmSlug": "spineshatter",
+      "rating": 2157,
+      "wins": 61,
+      "losses": 40,
+      "classId": "shaman"
+    },
+    {
+      "rank": 244,
+      "characterName": "Dakataxd",
+      "realmSlug": "spineshatter",
+      "rating": 2156,
+      "wins": 78,
+      "losses": 44,
+      "classId": "priest"
+    },
+    {
+      "rank": 244,
+      "characterName": "Ariezs",
+      "realmSlug": "spineshatter",
+      "rating": 2156,
+      "wins": 137,
+      "losses": 112,
+      "classId": "warrior"
+    },
+    {
+      "rank": 246,
+      "characterName": "Hellceco",
+      "realmSlug": "spineshatter",
+      "rating": 2155,
+      "wins": 66,
+      "losses": 42,
+      "classId": "mage"
+    },
+    {
+      "rank": 246,
+      "characterName": "Oropøpzz",
+      "realmSlug": "spineshatter",
+      "rating": 2155,
+      "wins": 114,
+      "losses": 76,
+      "classId": "hunter"
+    },
+    {
+      "rank": 246,
+      "characterName": "Sparkxs",
+      "realmSlug": "spineshatter",
+      "rating": 2155,
+      "wins": 114,
+      "losses": 76,
+      "classId": "priest"
+    },
+    {
+      "rank": 246,
+      "characterName": "Worldstarxtv",
+      "realmSlug": "spineshatter",
+      "rating": 2155,
+      "wins": 77,
+      "losses": 56,
+      "classId": "shaman"
+    },
+    {
+      "rank": 250,
+      "characterName": "Rokhsan",
+      "realmSlug": "spineshatter",
+      "rating": 2154,
+      "wins": 62,
+      "losses": 19,
+      "classId": "priest"
+    },
+    {
+      "rank": 250,
+      "characterName": "Aka",
+      "realmSlug": "spineshatter",
+      "rating": 2154,
+      "wins": 97,
+      "losses": 70,
+      "classId": "rogue"
+    },
+    {
+      "rank": 250,
+      "characterName": "Deathwong",
+      "realmSlug": "spineshatter",
+      "rating": 2154,
+      "wins": 74,
+      "losses": 58,
+      "classId": "warlock"
+    },
+    {
+      "rank": 253,
+      "characterName": "Oøs",
+      "realmSlug": "spineshatter",
+      "rating": 2153,
+      "wins": 58,
+      "losses": 35,
+      "classId": "rogue"
+    },
+    {
+      "rank": 253,
+      "characterName": "Danawhíte",
+      "realmSlug": "spineshatter",
+      "rating": 2153,
+      "wins": 268,
+      "losses": 266,
+      "classId": "mage"
+    },
+    {
+      "rank": 253,
+      "characterName": "Iz",
+      "realmSlug": "spineshatter",
+      "rating": 2153,
+      "wins": 262,
+      "losses": 262,
+      "classId": "rogue"
+    },
+    {
+      "rank": 253,
+      "characterName": "Hlnx",
+      "realmSlug": "spineshatter",
+      "rating": 2153,
+      "wins": 262,
+      "losses": 262,
+      "classId": "priest"
+    },
+    {
+      "rank": 257,
+      "characterName": "Pepguardiolá",
+      "realmSlug": "spineshatter",
+      "rating": 2152,
+      "wins": 48,
+      "losses": 21,
+      "classId": "priest"
+    },
+    {
+      "rank": 258,
+      "characterName": "Hardfight",
+      "realmSlug": "spineshatter",
+      "rating": 2151,
+      "wins": 110,
+      "losses": 44,
+      "classId": "hunter"
+    },
+    {
+      "rank": 258,
+      "characterName": "Retti",
+      "realmSlug": "spineshatter",
+      "rating": 2151,
+      "wins": 51,
+      "losses": 36,
+      "classId": "paladin"
+    },
+    {
+      "rank": 258,
+      "characterName": "Pandectae",
+      "realmSlug": "spineshatter",
+      "rating": 2151,
+      "wins": 51,
+      "losses": 36,
+      "classId": "shaman"
+    },
+    {
+      "rank": 258,
+      "characterName": "Teddysxdd",
+      "realmSlug": "spineshatter",
+      "rating": 2151,
+      "wins": 51,
+      "losses": 36,
+      "classId": "warrior"
+    },
+    {
+      "rank": 258,
+      "characterName": "Disept",
+      "realmSlug": "spineshatter",
+      "rating": 2151,
+      "wins": 190,
+      "losses": 158,
+      "classId": "warrior"
+    },
+    {
+      "rank": 263,
+      "characterName": "Dandana",
+      "realmSlug": "spineshatter",
+      "rating": 2150,
+      "wins": 70,
+      "losses": 32,
+      "classId": "shaman"
+    },
+    {
+      "rank": 263,
+      "characterName": "Carrado",
+      "realmSlug": "spineshatter",
+      "rating": 2150,
+      "wins": 148,
+      "losses": 107,
+      "classId": "shaman"
+    },
+    {
+      "rank": 263,
+      "characterName": "Zattladoft",
+      "realmSlug": "spineshatter",
+      "rating": 2150,
+      "wins": 121,
+      "losses": 96,
+      "classId": "warrior"
+    },
+    {
+      "rank": 263,
+      "characterName": "Yunkies",
+      "realmSlug": "spineshatter",
+      "rating": 2150,
+      "wins": 122,
+      "losses": 97,
+      "classId": "shaman"
+    },
+    {
+      "rank": 267,
+      "characterName": "Klaazje",
+      "realmSlug": "spineshatter",
+      "rating": 2149,
+      "wins": 84,
+      "losses": 40,
+      "classId": "priest"
+    },
+    {
+      "rank": 267,
+      "characterName": "Azrakel",
+      "realmSlug": "spineshatter",
+      "rating": 2149,
+      "wins": 56,
+      "losses": 29,
+      "classId": "mage"
+    },
+    {
+      "rank": 267,
+      "characterName": "Fluide",
+      "realmSlug": "spineshatter",
+      "rating": 2149,
+      "wins": 63,
+      "losses": 34,
+      "classId": "mage"
+    },
+    {
+      "rank": 267,
+      "characterName": "Cavitonne",
+      "realmSlug": "spineshatter",
+      "rating": 2149,
+      "wins": 304,
+      "losses": 190,
+      "classId": "warlock"
+    },
+    {
+      "rank": 271,
+      "characterName": "Arhabi",
+      "realmSlug": "spineshatter",
+      "rating": 2147,
+      "wins": 90,
+      "losses": 45,
+      "classId": "warrior"
+    },
+    {
+      "rank": 271,
+      "characterName": "Crömer",
+      "realmSlug": "spineshatter",
+      "rating": 2147,
+      "wins": 202,
+      "losses": 138,
+      "classId": "paladin"
+    },
+    {
+      "rank": 271,
+      "characterName": "Sråñjë",
+      "realmSlug": "spineshatter",
+      "rating": 2147,
+      "wins": 166,
+      "losses": 125,
+      "classId": "warlock"
+    },
+    {
+      "rank": 271,
+      "characterName": "Schnutz",
+      "realmSlug": "spineshatter",
+      "rating": 2147,
+      "wins": 159,
+      "losses": 131,
+      "classId": "paladin"
+    },
+    {
+      "rank": 271,
+      "characterName": "Karakova",
+      "realmSlug": "spineshatter",
+      "rating": 2147,
+      "wins": 130,
+      "losses": 109,
+      "classId": "shaman"
+    },
+    {
+      "rank": 276,
+      "characterName": "Yuroo",
+      "realmSlug": "spineshatter",
+      "rating": 2146,
+      "wins": 90,
+      "losses": 53,
+      "classId": "rogue"
+    },
+    {
+      "rank": 276,
+      "characterName": "Ðæn",
+      "realmSlug": "spineshatter",
+      "rating": 2146,
+      "wins": 102,
+      "losses": 63,
+      "classId": null
+    },
+    {
+      "rank": 278,
+      "characterName": "Niseko",
+      "realmSlug": "spineshatter",
+      "rating": 2144,
+      "wins": 44,
+      "losses": 12,
+      "classId": "priest"
+    },
+    {
+      "rank": 278,
+      "characterName": "Hydridrood",
+      "realmSlug": "spineshatter",
+      "rating": 2144,
+      "wins": 78,
+      "losses": 52,
+      "classId": "druid"
+    },
+    {
+      "rank": 280,
+      "characterName": "Extrmways",
+      "realmSlug": "spineshatter",
+      "rating": 2142,
+      "wins": 36,
+      "losses": 13,
+      "classId": "rogue"
+    },
+    {
+      "rank": 280,
+      "characterName": "Nåcktschneck",
+      "realmSlug": "spineshatter",
+      "rating": 2142,
+      "wins": 36,
+      "losses": 13,
+      "classId": "mage"
+    },
+    {
+      "rank": 280,
+      "characterName": "Lexal",
+      "realmSlug": "spineshatter",
+      "rating": 2142,
+      "wins": 93,
+      "losses": 73,
+      "classId": "warrior"
+    },
+    {
+      "rank": 280,
+      "characterName": "Krpencilije",
+      "realmSlug": "spineshatter",
+      "rating": 2142,
+      "wins": 93,
+      "losses": 93,
+      "classId": "warrior"
+    },
+    {
+      "rank": 284,
+      "characterName": "Jääslamx",
+      "realmSlug": "spineshatter",
+      "rating": 2141,
+      "wins": 87,
+      "losses": 63,
+      "classId": "warrior"
+    },
+    {
+      "rank": 285,
+      "characterName": "Kalimbo",
+      "realmSlug": "spineshatter",
+      "rating": 2140,
+      "wins": 117,
+      "losses": 72,
+      "classId": "mage"
+    },
+    {
+      "rank": 285,
+      "characterName": "Aduna",
+      "realmSlug": "spineshatter",
+      "rating": 2140,
+      "wins": 97,
+      "losses": 73,
+      "classId": "paladin"
+    },
+    {
+      "rank": 285,
+      "characterName": "Erøthius",
+      "realmSlug": "spineshatter",
+      "rating": 2140,
+      "wins": 101,
+      "losses": 84,
+      "classId": "priest"
+    },
+    {
+      "rank": 285,
+      "characterName": "Quzy",
+      "realmSlug": "spineshatter",
+      "rating": 2140,
+      "wins": 101,
+      "losses": 84,
+      "classId": "rogue"
+    },
+    {
+      "rank": 289,
+      "characterName": "Brucebannerr",
+      "realmSlug": "spineshatter",
+      "rating": 2138,
+      "wins": 187,
+      "losses": 161,
+      "classId": "shaman"
+    },
+    {
+      "rank": 290,
+      "characterName": "Tseirpretép",
+      "realmSlug": "spineshatter",
+      "rating": 2137,
+      "wins": 93,
+      "losses": 50,
+      "classId": "priest"
+    },
+    {
+      "rank": 290,
+      "characterName": "Zilina",
+      "realmSlug": "spineshatter",
+      "rating": 2137,
+      "wins": 230,
+      "losses": 178,
+      "classId": "warrior"
+    },
+    {
+      "rank": 292,
+      "characterName": "Psychotonka",
+      "realmSlug": "spineshatter",
+      "rating": 2136,
+      "wins": 91,
+      "losses": 75,
+      "classId": "warrior"
+    },
+    {
+      "rank": 293,
+      "characterName": "Daydreamer",
+      "realmSlug": "spineshatter",
+      "rating": 2135,
+      "wins": 78,
+      "losses": 48,
+      "classId": "warrior"
+    },
+    {
+      "rank": 293,
+      "characterName": "Sickmate",
+      "realmSlug": "spineshatter",
+      "rating": 2135,
+      "wins": 156,
+      "losses": 107,
+      "classId": "priest"
+    },
+    {
+      "rank": 293,
+      "characterName": "Aziok",
+      "realmSlug": "spineshatter",
+      "rating": 2135,
+      "wins": 69,
+      "losses": 53,
+      "classId": "druid"
+    },
+    {
+      "rank": 293,
+      "characterName": "Arenatwo",
+      "realmSlug": "spineshatter",
+      "rating": 2135,
+      "wins": 69,
+      "losses": 53,
+      "classId": "rogue"
+    },
+    {
+      "rank": 293,
+      "characterName": "Àrenaone",
+      "realmSlug": "spineshatter",
+      "rating": 2135,
+      "wins": 68,
+      "losses": 53,
+      "classId": "rogue"
+    },
+    {
+      "rank": 298,
+      "characterName": "Vanty",
+      "realmSlug": "spineshatter",
+      "rating": 2134,
+      "wins": 65,
+      "losses": 29,
+      "classId": "priest"
+    },
+    {
+      "rank": 298,
+      "characterName": "Trazyoviç",
+      "realmSlug": "spineshatter",
+      "rating": 2134,
+      "wins": 90,
+      "losses": 58,
+      "classId": "priest"
+    },
+    {
+      "rank": 300,
+      "characterName": "Mahalin",
+      "realmSlug": "spineshatter",
+      "rating": 2133,
+      "wins": 43,
+      "losses": 19,
+      "classId": "druid"
+    },
+    {
+      "rank": 300,
+      "characterName": "Zèús",
+      "realmSlug": "spineshatter",
+      "rating": 2133,
+      "wins": 58,
+      "losses": 32,
+      "classId": "shaman"
+    },
+    {
+      "rank": 302,
+      "characterName": "Valantain",
+      "realmSlug": "spineshatter",
+      "rating": 2132,
+      "wins": 37,
+      "losses": 8,
+      "classId": "rogue"
+    },
+    {
+      "rank": 303,
+      "characterName": "Baller",
+      "realmSlug": "spineshatter",
+      "rating": 2131,
+      "wins": 152,
+      "losses": 115,
+      "classId": "warrior"
+    },
+    {
+      "rank": 303,
+      "characterName": "Nahly",
+      "realmSlug": "spineshatter",
+      "rating": 2131,
+      "wins": 44,
+      "losses": 35,
+      "classId": "mage"
+    },
+    {
+      "rank": 305,
+      "characterName": "Niezé",
+      "realmSlug": "spineshatter",
+      "rating": 2130,
+      "wins": 36,
+      "losses": 7,
+      "classId": "priest"
+    },
+    {
+      "rank": 306,
+      "characterName": "Brooxz",
+      "realmSlug": "spineshatter",
+      "rating": 2129,
+      "wins": 120,
+      "losses": 84,
+      "classId": "warrior"
+    },
+    {
+      "rank": 307,
+      "characterName": "Lidocaín",
+      "realmSlug": "spineshatter",
+      "rating": 2128,
+      "wins": 224,
+      "losses": 180,
+      "classId": "priest"
+    },
+    {
+      "rank": 307,
+      "characterName": "Wotiw",
+      "realmSlug": "spineshatter",
+      "rating": 2128,
+      "wins": 192,
+      "losses": 162,
+      "classId": "warrior"
+    },
+    {
+      "rank": 307,
+      "characterName": "Execraft",
+      "realmSlug": "spineshatter",
+      "rating": 2128,
+      "wins": 53,
+      "losses": 48,
+      "classId": "warrior"
+    },
+    {
+      "rank": 310,
+      "characterName": "Korleonex",
+      "realmSlug": "spineshatter",
+      "rating": 2127,
+      "wins": 98,
+      "losses": 75,
+      "classId": "warlock"
+    },
+    {
+      "rank": 310,
+      "characterName": "Ceran",
+      "realmSlug": "spineshatter",
+      "rating": 2127,
+      "wins": 159,
+      "losses": 136,
+      "classId": "hunter"
+    },
+    {
+      "rank": 310,
+      "characterName": "Nadiaoffbach",
+      "realmSlug": "spineshatter",
+      "rating": 2127,
+      "wins": 159,
+      "losses": 136,
+      "classId": "priest"
+    },
+    {
+      "rank": 313,
+      "characterName": "Namoos",
+      "realmSlug": "spineshatter",
+      "rating": 2125,
+      "wins": 47,
+      "losses": 27,
+      "classId": "shaman"
+    },
+    {
+      "rank": 314,
+      "characterName": "Shaél",
+      "realmSlug": "spineshatter",
+      "rating": 2123,
+      "wins": 67,
+      "losses": 39,
+      "classId": "warrior"
+    },
+    {
+      "rank": 315,
+      "characterName": "Goosepants",
+      "realmSlug": "spineshatter",
+      "rating": 2122,
+      "wins": 107,
+      "losses": 73,
+      "classId": "rogue"
+    },
+    {
+      "rank": 315,
+      "characterName": "Dolodruid",
+      "realmSlug": "spineshatter",
+      "rating": 2122,
+      "wins": 112,
+      "losses": 87,
+      "classId": "druid"
+    },
+    {
+      "rank": 317,
+      "characterName": "Lowcostmage",
+      "realmSlug": "spineshatter",
+      "rating": 2121,
+      "wins": 58,
+      "losses": 30,
+      "classId": "mage"
+    },
+    {
+      "rank": 317,
+      "characterName": "Exehn",
+      "realmSlug": "spineshatter",
+      "rating": 2121,
+      "wins": 73,
+      "losses": 41,
+      "classId": "priest"
+    },
+    {
+      "rank": 317,
+      "characterName": "Shara",
+      "realmSlug": "spineshatter",
+      "rating": 2121,
+      "wins": 116,
+      "losses": 90,
+      "classId": "rogue"
+    },
+    {
+      "rank": 320,
+      "characterName": "Trahi",
+      "realmSlug": "spineshatter",
+      "rating": 2119,
+      "wins": 66,
+      "losses": 43,
+      "classId": "rogue"
+    },
+    {
+      "rank": 320,
+      "characterName": "Lørieen",
+      "realmSlug": "spineshatter",
+      "rating": 2119,
+      "wins": 97,
+      "losses": 65,
+      "classId": "mage"
+    },
+    {
+      "rank": 322,
+      "characterName": "Theyoungriv",
+      "realmSlug": "spineshatter",
+      "rating": 2118,
+      "wins": 122,
+      "losses": 64,
+      "classId": "mage"
+    },
+    {
+      "rank": 323,
+      "characterName": "Shadylove",
+      "realmSlug": "spineshatter",
+      "rating": 2116,
+      "wins": 48,
+      "losses": 27,
+      "classId": "priest"
+    },
+    {
+      "rank": 323,
+      "characterName": "Aphane",
+      "realmSlug": "spineshatter",
+      "rating": 2116,
+      "wins": 53,
+      "losses": 30,
+      "classId": "rogue"
+    },
+    {
+      "rank": 323,
+      "characterName": "Lillbrampa",
+      "realmSlug": "spineshatter",
+      "rating": 2116,
+      "wins": 42,
+      "losses": 26,
+      "classId": "priest"
+    },
+    {
+      "rank": 323,
+      "characterName": "Kikkihiirì",
+      "realmSlug": "spineshatter",
+      "rating": 2116,
+      "wins": 127,
+      "losses": 94,
+      "classId": "priest"
+    },
+    {
+      "rank": 323,
+      "characterName": "Altshiftx",
+      "realmSlug": "spineshatter",
+      "rating": 2116,
+      "wins": 167,
+      "losses": 146,
+      "classId": "druid"
+    },
+    {
+      "rank": 328,
+      "characterName": "Miyukix",
+      "realmSlug": "spineshatter",
+      "rating": 2115,
+      "wins": 70,
+      "losses": 42,
+      "classId": "priest"
+    },
+    {
+      "rank": 328,
+      "characterName": "Azurma",
+      "realmSlug": "spineshatter",
+      "rating": 2115,
+      "wins": 240,
+      "losses": 188,
+      "classId": "warlock"
+    },
+    {
+      "rank": 330,
+      "characterName": "Whytrabit",
+      "realmSlug": "spineshatter",
+      "rating": 2113,
+      "wins": 40,
+      "losses": 24,
+      "classId": "rogue"
+    },
+    {
+      "rank": 331,
+      "characterName": "Nsr",
+      "realmSlug": "spineshatter",
+      "rating": 2111,
+      "wins": 36,
+      "losses": 7,
+      "classId": "rogue"
+    },
+    {
+      "rank": 331,
+      "characterName": "Transgingêr",
+      "realmSlug": "spineshatter",
+      "rating": 2111,
+      "wins": 103,
+      "losses": 87,
+      "classId": "priest"
+    },
+    {
+      "rank": 333,
+      "characterName": "Neymar",
+      "realmSlug": "spineshatter",
+      "rating": 2110,
+      "wins": 227,
+      "losses": 170,
+      "classId": "mage"
+    },
+    {
+      "rank": 333,
+      "characterName": "Gizmourn",
+      "realmSlug": "spineshatter",
+      "rating": 2110,
+      "wins": 167,
+      "losses": 128,
+      "classId": "priest"
+    },
+    {
+      "rank": 333,
+      "characterName": "Smuga",
+      "realmSlug": "spineshatter",
+      "rating": 2110,
+      "wins": 446,
+      "losses": 353,
+      "classId": "priest"
+    },
+    {
+      "rank": 333,
+      "characterName": "Paalugoat",
+      "realmSlug": "spineshatter",
+      "rating": 2110,
+      "wins": 212,
+      "losses": 177,
+      "classId": "shaman"
+    },
+    {
+      "rank": 333,
+      "characterName": "Abyzctrl",
+      "realmSlug": "spineshatter",
+      "rating": 2110,
+      "wins": 158,
+      "losses": 135,
+      "classId": "rogue"
+    },
+    {
+      "rank": 338,
+      "characterName": "Søund",
+      "realmSlug": "spineshatter",
+      "rating": 2109,
+      "wins": 55,
+      "losses": 35,
+      "classId": "rogue"
+    },
+    {
+      "rank": 338,
+      "characterName": "Perramalvada",
+      "realmSlug": "spineshatter",
+      "rating": 2109,
+      "wins": 150,
+      "losses": 133,
+      "classId": "shaman"
+    },
+    {
+      "rank": 340,
+      "characterName": "Postarinke",
+      "realmSlug": "spineshatter",
+      "rating": 2108,
+      "wins": 42,
+      "losses": 20,
+      "classId": "warlock"
+    },
+    {
+      "rank": 340,
+      "characterName": "Rizzy",
+      "realmSlug": "spineshatter",
+      "rating": 2108,
+      "wins": 143,
+      "losses": 101,
+      "classId": "rogue"
+    },
+    {
+      "rank": 340,
+      "characterName": "Nâzrins",
+      "realmSlug": "spineshatter",
+      "rating": 2108,
+      "wins": 60,
+      "losses": 43,
+      "classId": "warlock"
+    },
+    {
+      "rank": 340,
+      "characterName": "Chaals",
+      "realmSlug": "spineshatter",
+      "rating": 2108,
+      "wins": 60,
+      "losses": 43,
+      "classId": "druid"
+    },
+    {
+      "rank": 344,
+      "characterName": "Jurbik",
+      "realmSlug": "spineshatter",
+      "rating": 2106,
+      "wins": 70,
+      "losses": 40,
+      "classId": "rogue"
+    },
+    {
+      "rank": 345,
+      "characterName": "Suavement",
+      "realmSlug": "spineshatter",
+      "rating": 2105,
+      "wins": 89,
+      "losses": 72,
+      "classId": "priest"
+    },
+    {
+      "rank": 345,
+      "characterName": "Soëzi",
+      "realmSlug": "spineshatter",
+      "rating": 2105,
+      "wins": 163,
+      "losses": 137,
+      "classId": "priest"
+    },
+    {
+      "rank": 345,
+      "characterName": "Lilshyne",
+      "realmSlug": "spineshatter",
+      "rating": 2105,
+      "wins": 112,
+      "losses": 96,
+      "classId": "rogue"
+    },
+    {
+      "rank": 348,
+      "characterName": "Jwsh",
+      "realmSlug": "spineshatter",
+      "rating": 2104,
+      "wins": 44,
+      "losses": 27,
+      "classId": "mage"
+    },
+    {
+      "rank": 348,
+      "characterName": "Djevz",
+      "realmSlug": "spineshatter",
+      "rating": 2104,
+      "wins": 115,
+      "losses": 74,
+      "classId": "rogue"
+    },
+    {
+      "rank": 350,
+      "characterName": "Culantrox",
+      "realmSlug": "spineshatter",
+      "rating": 2103,
+      "wins": 41,
+      "losses": 26,
+      "classId": "priest"
+    },
+    {
+      "rank": 350,
+      "characterName": "Khalidaxe",
+      "realmSlug": "spineshatter",
+      "rating": 2103,
+      "wins": 137,
+      "losses": 121,
+      "classId": "druid"
+    },
+    {
+      "rank": 352,
+      "characterName": "Saadiyat",
+      "realmSlug": "spineshatter",
+      "rating": 2102,
+      "wins": 56,
+      "losses": 27,
+      "classId": "warlock"
+    },
+    {
+      "rank": 352,
+      "characterName": "Jtaihagar",
+      "realmSlug": "spineshatter",
+      "rating": 2102,
+      "wins": 83,
+      "losses": 48,
+      "classId": null
+    },
+    {
+      "rank": 352,
+      "characterName": "Darkjacob",
+      "realmSlug": "spineshatter",
+      "rating": 2102,
+      "wins": 86,
+      "losses": 55,
+      "classId": "priest"
+    },
+    {
+      "rank": 352,
+      "characterName": "Zarø",
+      "realmSlug": "spineshatter",
+      "rating": 2102,
+      "wins": 158,
+      "losses": 135,
+      "classId": "paladin"
+    },
+    {
+      "rank": 356,
+      "characterName": "Badmfka",
+      "realmSlug": "spineshatter",
+      "rating": 2101,
+      "wins": 70,
+      "losses": 44,
+      "classId": "shaman"
+    },
+    {
+      "rank": 356,
+      "characterName": "Dreamerx",
+      "realmSlug": "spineshatter",
+      "rating": 2101,
+      "wins": 76,
+      "losses": 50,
+      "classId": "warrior"
+    },
+    {
+      "rank": 356,
+      "characterName": "Híbibi",
+      "realmSlug": "spineshatter",
+      "rating": 2101,
+      "wins": 114,
+      "losses": 77,
+      "classId": "druid"
+    },
+    {
+      "rank": 359,
+      "characterName": "Méchän",
+      "realmSlug": "spineshatter",
+      "rating": 2100,
+      "wins": 75,
+      "losses": 28,
+      "classId": "rogue"
+    },
+    {
+      "rank": 359,
+      "characterName": "Shejl",
+      "realmSlug": "spineshatter",
+      "rating": 2100,
+      "wins": 97,
+      "losses": 75,
+      "classId": "warrior"
+    },
+    {
+      "rank": 361,
+      "characterName": "Kaizenxz",
+      "realmSlug": "spineshatter",
+      "rating": 2099,
+      "wins": 678,
+      "losses": 448,
+      "classId": "mage"
+    },
+    {
+      "rank": 361,
+      "characterName": "Xirea",
+      "realmSlug": "spineshatter",
+      "rating": 2099,
+      "wins": 67,
+      "losses": 51,
+      "classId": "rogue"
+    },
+    {
+      "rank": 363,
+      "characterName": "Scryception",
+      "realmSlug": "spineshatter",
+      "rating": 2098,
+      "wins": 148,
+      "losses": 72,
+      "classId": "warlock"
+    },
+    {
+      "rank": 364,
+      "characterName": "Ghingis",
+      "realmSlug": "spineshatter",
+      "rating": 2097,
+      "wins": 55,
+      "losses": 19,
+      "classId": "warlock"
+    },
+    {
+      "rank": 364,
+      "characterName": "Dairyleadunk",
+      "realmSlug": "spineshatter",
+      "rating": 2097,
+      "wins": 140,
+      "losses": 79,
+      "classId": "warrior"
+    },
+    {
+      "rank": 366,
+      "characterName": "Lillija",
+      "realmSlug": "spineshatter",
+      "rating": 2096,
+      "wins": 51,
+      "losses": 29,
+      "classId": "priest"
+    },
+    {
+      "rank": 366,
+      "characterName": "Fcdallas",
+      "realmSlug": "spineshatter",
+      "rating": 2096,
+      "wins": 56,
+      "losses": 40,
+      "classId": "rogue"
+    },
+    {
+      "rank": 368,
+      "characterName": "Shàrkyxd",
+      "realmSlug": "spineshatter",
+      "rating": 2095,
+      "wins": 225,
+      "losses": 180,
+      "classId": "rogue"
+    },
+    {
+      "rank": 369,
+      "characterName": "Phyto",
+      "realmSlug": "spineshatter",
+      "rating": 2094,
+      "wins": 61,
+      "losses": 46,
+      "classId": "shaman"
+    },
+    {
+      "rank": 370,
+      "characterName": "Tbcisdogsht",
+      "realmSlug": "spineshatter",
+      "rating": 2092,
+      "wins": 118,
+      "losses": 60,
+      "classId": "druid"
+    },
+    {
+      "rank": 371,
+      "characterName": "Nickezý",
+      "realmSlug": "spineshatter",
+      "rating": 2091,
+      "wins": 93,
+      "losses": 45,
+      "classId": "druid"
+    },
+    {
+      "rank": 371,
+      "characterName": "Insomniax",
+      "realmSlug": "spineshatter",
+      "rating": 2091,
+      "wins": 63,
+      "losses": 34,
+      "classId": "mage"
+    },
+    {
+      "rank": 371,
+      "characterName": "Hermandinho",
+      "realmSlug": "spineshatter",
+      "rating": 2091,
+      "wins": 87,
+      "losses": 49,
+      "classId": "warlock"
+    },
+    {
+      "rank": 371,
+      "characterName": "Nehemin",
+      "realmSlug": "spineshatter",
+      "rating": 2091,
+      "wins": 127,
+      "losses": 79,
+      "classId": "mage"
+    },
+    {
+      "rank": 371,
+      "characterName": "Floozy",
+      "realmSlug": "spineshatter",
+      "rating": 2091,
+      "wins": 128,
+      "losses": 81,
+      "classId": "warrior"
+    },
+    {
+      "rank": 371,
+      "characterName": "Biocom",
+      "realmSlug": "spineshatter",
+      "rating": 2091,
+      "wins": 138,
+      "losses": 93,
+      "classId": "shaman"
+    },
+    {
+      "rank": 371,
+      "characterName": "Dàiquiry",
+      "realmSlug": "spineshatter",
+      "rating": 2091,
+      "wins": 79,
+      "losses": 55,
+      "classId": "druid"
+    },
+    {
+      "rank": 371,
+      "characterName": "Hetar",
+      "realmSlug": "spineshatter",
+      "rating": 2091,
+      "wins": 104,
+      "losses": 78,
+      "classId": "priest"
+    },
+    {
+      "rank": 379,
+      "characterName": "Gatteka",
+      "realmSlug": "spineshatter",
+      "rating": 2090,
+      "wins": 58,
+      "losses": 31,
+      "classId": "rogue"
+    },
+    {
+      "rank": 380,
+      "characterName": "Moufasa",
+      "realmSlug": "spineshatter",
+      "rating": 2089,
+      "wins": 124,
+      "losses": 111,
+      "classId": "druid"
+    },
+    {
+      "rank": 381,
+      "characterName": "Zdxd",
+      "realmSlug": "spineshatter",
+      "rating": 2086,
+      "wins": 75,
+      "losses": 42,
+      "classId": "rogue"
+    },
+    {
+      "rank": 381,
+      "characterName": "Mõrgoth",
+      "realmSlug": "spineshatter",
+      "rating": 2086,
+      "wins": 146,
+      "losses": 98,
+      "classId": "priest"
+    },
+    {
+      "rank": 381,
+      "characterName": "Greedius",
+      "realmSlug": "spineshatter",
+      "rating": 2086,
+      "wins": 112,
+      "losses": 76,
+      "classId": "priest"
+    },
+    {
+      "rank": 381,
+      "characterName": "Dizzyld",
+      "realmSlug": "spineshatter",
+      "rating": 2086,
+      "wins": 88,
+      "losses": 70,
+      "classId": "druid"
+    },
+    {
+      "rank": 385,
+      "characterName": "Arzôx",
+      "realmSlug": "spineshatter",
+      "rating": 2085,
+      "wins": 94,
+      "losses": 71,
+      "classId": "mage"
+    },
+    {
+      "rank": 386,
+      "characterName": "Ckn",
+      "realmSlug": "spineshatter",
+      "rating": 2084,
+      "wins": 58,
+      "losses": 27,
+      "classId": "warrior"
+    },
+    {
+      "rank": 387,
+      "characterName": "Certifiedgoy",
+      "realmSlug": "spineshatter",
+      "rating": 2083,
+      "wins": 124,
+      "losses": 69,
+      "classId": "druid"
+    },
+    {
+      "rank": 388,
+      "characterName": "Flinganx",
+      "realmSlug": "spineshatter",
+      "rating": 2082,
+      "wins": 224,
+      "losses": 149,
+      "classId": "mage"
+    },
+    {
+      "rank": 389,
+      "characterName": "Chévchélîøøs",
+      "realmSlug": "spineshatter",
+      "rating": 2081,
+      "wins": 56,
+      "losses": 27,
+      "classId": "rogue"
+    },
+    {
+      "rank": 389,
+      "characterName": "Blackfirezx",
+      "realmSlug": "spineshatter",
+      "rating": 2081,
+      "wins": 554,
+      "losses": 315,
+      "classId": "mage"
+    },
+    {
+      "rank": 391,
+      "characterName": "Arabeuropean",
+      "realmSlug": "spineshatter",
+      "rating": 2080,
+      "wins": 94,
+      "losses": 59,
+      "classId": "warlock"
+    },
+    {
+      "rank": 391,
+      "characterName": "Wickman",
+      "realmSlug": "spineshatter",
+      "rating": 2080,
+      "wins": 185,
+      "losses": 130,
+      "classId": "warlock"
+    },
+    {
+      "rank": 393,
+      "characterName": "Hxtr",
+      "realmSlug": "spineshatter",
+      "rating": 2079,
+      "wins": 111,
+      "losses": 95,
+      "classId": "priest"
+    },
+    {
+      "rank": 394,
+      "characterName": "Aezys",
+      "realmSlug": "spineshatter",
+      "rating": 2077,
+      "wins": 35,
+      "losses": 18,
+      "classId": "priest"
+    },
+    {
+      "rank": 394,
+      "characterName": "Benwade",
+      "realmSlug": "spineshatter",
+      "rating": 2077,
+      "wins": 35,
+      "losses": 18,
+      "classId": "rogue"
+    },
+    {
+      "rank": 394,
+      "characterName": "Kadyrof",
+      "realmSlug": "spineshatter",
+      "rating": 2077,
+      "wins": 116,
+      "losses": 69,
+      "classId": "mage"
+    },
+    {
+      "rank": 394,
+      "characterName": "Daashaa",
+      "realmSlug": "spineshatter",
+      "rating": 2077,
+      "wins": 185,
+      "losses": 134,
+      "classId": "priest"
+    },
+    {
+      "rank": 398,
+      "characterName": "Jonjónes",
+      "realmSlug": "spineshatter",
+      "rating": 2076,
+      "wins": 36,
+      "losses": 12,
+      "classId": "mage"
+    },
+    {
+      "rank": 398,
+      "characterName": "Follordo",
+      "realmSlug": "spineshatter",
+      "rating": 2076,
+      "wins": 44,
+      "losses": 27,
+      "classId": "rogue"
+    },
+    {
+      "rank": 400,
+      "characterName": "Beefenjoyer",
+      "realmSlug": "spineshatter",
+      "rating": 2075,
+      "wins": 57,
+      "losses": 40,
+      "classId": "rogue"
+    },
+    {
+      "rank": 400,
+      "characterName": "Benchwarmer",
+      "realmSlug": "spineshatter",
+      "rating": 2075,
+      "wins": 66,
+      "losses": 48,
+      "classId": "hunter"
+    },
+    {
+      "rank": 402,
+      "characterName": "Girionych",
+      "realmSlug": "spineshatter",
+      "rating": 2074,
+      "wins": 72,
+      "losses": 49,
+      "classId": "warrior"
+    },
+    {
+      "rank": 402,
+      "characterName": "Earlzmoade",
+      "realmSlug": "spineshatter",
+      "rating": 2074,
+      "wins": 69,
+      "losses": 56,
+      "classId": "warrior"
+    },
+    {
+      "rank": 402,
+      "characterName": "Danmark",
+      "realmSlug": "spineshatter",
+      "rating": 2074,
+      "wins": 63,
+      "losses": 53,
+      "classId": "hunter"
+    },
+    {
+      "rank": 405,
+      "characterName": "Magiavende",
+      "realmSlug": "spineshatter",
+      "rating": 2073,
+      "wins": 160,
+      "losses": 118,
+      "classId": "mage"
+    },
+    {
+      "rank": 405,
+      "characterName": "Hyprx",
+      "realmSlug": "spineshatter",
+      "rating": 2073,
+      "wins": 139,
+      "losses": 104,
+      "classId": "warrior"
+    },
+    {
+      "rank": 405,
+      "characterName": "Mvpløl",
+      "realmSlug": "spineshatter",
+      "rating": 2073,
+      "wins": 157,
+      "losses": 146,
+      "classId": "druid"
+    },
+    {
+      "rank": 408,
+      "characterName": "Mymatedave",
+      "realmSlug": "spineshatter",
+      "rating": 2072,
+      "wins": 48,
+      "losses": 30,
+      "classId": "warrior"
+    },
+    {
+      "rank": 408,
+      "characterName": "Avail",
+      "realmSlug": "spineshatter",
+      "rating": 2072,
+      "wins": 108,
+      "losses": 74,
+      "classId": "priest"
+    },
+    {
+      "rank": 408,
+      "characterName": "Rajänh",
+      "realmSlug": "spineshatter",
+      "rating": 2072,
+      "wins": 134,
+      "losses": 95,
+      "classId": "warrior"
+    },
+    {
+      "rank": 408,
+      "characterName": "Zrog",
+      "realmSlug": "spineshatter",
+      "rating": 2072,
+      "wins": 128,
+      "losses": 104,
+      "classId": "rogue"
+    },
+    {
+      "rank": 412,
+      "characterName": "Mertzgodx",
+      "realmSlug": "spineshatter",
+      "rating": 2071,
+      "wins": 189,
+      "losses": 136,
+      "classId": "priest"
+    },
+    {
+      "rank": 412,
+      "characterName": "Hotsome",
+      "realmSlug": "spineshatter",
+      "rating": 2071,
+      "wins": 107,
+      "losses": 105,
+      "classId": "druid"
+    },
+    {
+      "rank": 414,
+      "characterName": "Sealbound",
+      "realmSlug": "spineshatter",
+      "rating": 2070,
+      "wins": 129,
+      "losses": 108,
+      "classId": "priest"
+    },
+    {
+      "rank": 414,
+      "characterName": "Tihiz",
+      "realmSlug": "spineshatter",
+      "rating": 2070,
+      "wins": 97,
+      "losses": 87,
+      "classId": "rogue"
+    },
+    {
+      "rank": 416,
+      "characterName": "Mindtv",
+      "realmSlug": "spineshatter",
+      "rating": 2069,
+      "wins": 42,
+      "losses": 38,
+      "classId": "priest"
+    },
+    {
+      "rank": 417,
+      "characterName": "Paox",
+      "realmSlug": "spineshatter",
+      "rating": 2068,
+      "wins": 50,
+      "losses": 19,
+      "classId": "druid"
+    },
+    {
+      "rank": 417,
+      "characterName": "Killonz",
+      "realmSlug": "spineshatter",
+      "rating": 2068,
+      "wins": 92,
+      "losses": 71,
+      "classId": "mage"
+    },
+    {
+      "rank": 419,
+      "characterName": "Insømniá",
+      "realmSlug": "spineshatter",
+      "rating": 2067,
+      "wins": 62,
+      "losses": 34,
+      "classId": "shaman"
+    },
+    {
+      "rank": 419,
+      "characterName": "Raashaa",
+      "realmSlug": "spineshatter",
+      "rating": 2067,
+      "wins": 43,
+      "losses": 27,
+      "classId": "warrior"
+    },
+    {
+      "rank": 419,
+      "characterName": "Bqqmkin",
+      "realmSlug": "spineshatter",
+      "rating": 2067,
+      "wins": 46,
+      "losses": 30,
+      "classId": "druid"
+    },
+    {
+      "rank": 419,
+      "characterName": "Mammagodx",
+      "realmSlug": "spineshatter",
+      "rating": 2067,
+      "wins": 162,
+      "losses": 107,
+      "classId": "priest"
+    },
+    {
+      "rank": 423,
+      "characterName": "Mythicalz",
+      "realmSlug": "spineshatter",
+      "rating": 2066,
+      "wins": 49,
+      "losses": 20,
+      "classId": "rogue"
+    },
+    {
+      "rank": 423,
+      "characterName": "Bigbengan",
+      "realmSlug": "spineshatter",
+      "rating": 2066,
+      "wins": 71,
+      "losses": 49,
+      "classId": "warrior"
+    },
+    {
+      "rank": 423,
+      "characterName": "Chryseo",
+      "realmSlug": "spineshatter",
+      "rating": 2066,
+      "wins": 71,
+      "losses": 49,
+      "classId": "druid"
+    },
+    {
+      "rank": 426,
+      "characterName": "Rodal",
+      "realmSlug": "spineshatter",
+      "rating": 2065,
+      "wins": 66,
+      "losses": 32,
+      "classId": "shaman"
+    },
+    {
+      "rank": 426,
+      "characterName": "Andurn",
+      "realmSlug": "spineshatter",
+      "rating": 2065,
+      "wins": 102,
+      "losses": 68,
+      "classId": "priest"
+    },
+    {
+      "rank": 428,
+      "characterName": "Crevvan",
+      "realmSlug": "spineshatter",
+      "rating": 2064,
+      "wins": 53,
+      "losses": 38,
+      "classId": "rogue"
+    },
+    {
+      "rank": 429,
+      "characterName": "Barrmanalol",
+      "realmSlug": "spineshatter",
+      "rating": 2063,
+      "wins": 100,
+      "losses": 66,
+      "classId": "warlock"
+    },
+    {
+      "rank": 429,
+      "characterName": "Eluu",
+      "realmSlug": "spineshatter",
+      "rating": 2063,
+      "wins": 85,
+      "losses": 58,
+      "classId": "rogue"
+    },
+    {
+      "rank": 429,
+      "characterName": "Hopsí",
+      "realmSlug": "spineshatter",
+      "rating": 2063,
+      "wins": 51,
+      "losses": 36,
+      "classId": "priest"
+    },
+    {
+      "rank": 429,
+      "characterName": "Seatingbull",
+      "realmSlug": "spineshatter",
+      "rating": 2063,
+      "wins": 142,
+      "losses": 113,
+      "classId": "druid"
+    },
+    {
+      "rank": 433,
+      "characterName": "Uncleshade",
+      "realmSlug": "spineshatter",
+      "rating": 2061,
+      "wins": 40,
+      "losses": 22,
+      "classId": "druid"
+    },
+    {
+      "rank": 433,
+      "characterName": "Victalis",
+      "realmSlug": "spineshatter",
+      "rating": 2061,
+      "wins": 38,
+      "losses": 25,
+      "classId": "shaman"
+    },
+    {
+      "rank": 433,
+      "characterName": "Stèálth",
+      "realmSlug": "spineshatter",
+      "rating": 2061,
+      "wins": 129,
+      "losses": 92,
+      "classId": "priest"
+    },
+    {
+      "rank": 433,
+      "characterName": "Goatbeast",
+      "realmSlug": "spineshatter",
+      "rating": 2061,
+      "wins": 119,
+      "losses": 89,
+      "classId": "mage"
+    },
+    {
+      "rank": 437,
+      "characterName": "Mikelartetá",
+      "realmSlug": "spineshatter",
+      "rating": 2060,
+      "wins": 40,
+      "losses": 5,
+      "classId": "priest"
+    },
+    {
+      "rank": 437,
+      "characterName": "Breakingbald",
+      "realmSlug": "spineshatter",
+      "rating": 2060,
+      "wins": 51,
+      "losses": 25,
+      "classId": "shaman"
+    },
+    {
+      "rank": 437,
+      "characterName": "Mìdz",
+      "realmSlug": "spineshatter",
+      "rating": 2060,
+      "wins": 52,
+      "losses": 29,
+      "classId": "priest"
+    },
+    {
+      "rank": 437,
+      "characterName": "Starygnom",
+      "realmSlug": "spineshatter",
+      "rating": 2060,
+      "wins": 68,
+      "losses": 53,
+      "classId": "warlock"
+    },
+    {
+      "rank": 437,
+      "characterName": "Wøzza",
+      "realmSlug": "spineshatter",
+      "rating": 2060,
+      "wins": 204,
+      "losses": 176,
+      "classId": "mage"
+    },
+    {
+      "rank": 437,
+      "characterName": "Sewerperson",
+      "realmSlug": "spineshatter",
+      "rating": 2060,
+      "wins": 207,
+      "losses": 180,
+      "classId": "rogue"
+    },
+    {
+      "rank": 437,
+      "characterName": "Phsk",
+      "realmSlug": "spineshatter",
+      "rating": 2060,
+      "wins": 207,
+      "losses": 180,
+      "classId": "priest"
+    },
+    {
+      "rank": 444,
+      "characterName": "Endoapro",
+      "realmSlug": "spineshatter",
+      "rating": 2059,
+      "wins": 85,
+      "losses": 53,
+      "classId": "shaman"
+    },
+    {
+      "rank": 444,
+      "characterName": "Humanfion",
+      "realmSlug": "spineshatter",
+      "rating": 2059,
+      "wins": 91,
+      "losses": 63,
+      "classId": "priest"
+    },
+    {
+      "rank": 444,
+      "characterName": "Sadsong",
+      "realmSlug": "spineshatter",
+      "rating": 2059,
+      "wins": 104,
+      "losses": 88,
+      "classId": "mage"
+    },
+    {
+      "rank": 447,
+      "characterName": "Fcbarca",
+      "realmSlug": "spineshatter",
+      "rating": 2057,
+      "wins": 72,
+      "losses": 47,
+      "classId": "druid"
+    },
+    {
+      "rank": 448,
+      "characterName": "Dødgez",
+      "realmSlug": "spineshatter",
+      "rating": 2056,
+      "wins": 97,
+      "losses": 47,
+      "classId": "rogue"
+    },
+    {
+      "rank": 448,
+      "characterName": "Milkweaver",
+      "realmSlug": "spineshatter",
+      "rating": 2056,
+      "wins": 224,
+      "losses": 169,
+      "classId": "warlock"
+    },
+    {
+      "rank": 448,
+      "characterName": "Nayressa",
+      "realmSlug": "spineshatter",
+      "rating": 2056,
+      "wins": 86,
+      "losses": 66,
+      "classId": "hunter"
+    },
+    {
+      "rank": 448,
+      "characterName": "Littlefat",
+      "realmSlug": "spineshatter",
+      "rating": 2056,
+      "wins": 88,
+      "losses": 74,
+      "classId": "rogue"
+    },
+    {
+      "rank": 452,
+      "characterName": "Facee",
+      "realmSlug": "spineshatter",
+      "rating": 2055,
+      "wins": 55,
+      "losses": 34,
+      "classId": "warrior"
+    },
+    {
+      "rank": 452,
+      "characterName": "Evilshadow",
+      "realmSlug": "spineshatter",
+      "rating": 2055,
+      "wins": 62,
+      "losses": 46,
+      "classId": "rogue"
+    },
+    {
+      "rank": 452,
+      "characterName": "Smytheful",
+      "realmSlug": "spineshatter",
+      "rating": 2055,
+      "wins": 161,
+      "losses": 135,
+      "classId": "priest"
+    },
+    {
+      "rank": 452,
+      "characterName": "Choosemé",
+      "realmSlug": "spineshatter",
+      "rating": 2055,
+      "wins": 131,
+      "losses": 119,
+      "classId": "mage"
+    },
+    {
+      "rank": 456,
+      "characterName": "Neepzwl",
+      "realmSlug": "spineshatter",
+      "rating": 2054,
+      "wins": 71,
+      "losses": 61,
+      "classId": "warlock"
+    },
+    {
+      "rank": 456,
+      "characterName": "Patzw",
+      "realmSlug": "spineshatter",
+      "rating": 2054,
+      "wins": 154,
+      "losses": 135,
+      "classId": "warrior"
+    },
+    {
+      "rank": 458,
+      "characterName": "Chåosreaper",
+      "realmSlug": "spineshatter",
+      "rating": 2053,
+      "wins": 169,
+      "losses": 101,
+      "classId": "rogue"
+    },
+    {
+      "rank": 458,
+      "characterName": "Mongrel",
+      "realmSlug": "spineshatter",
+      "rating": 2053,
+      "wins": 109,
+      "losses": 68,
+      "classId": "warlock"
+    },
+    {
+      "rank": 458,
+      "characterName": "Sixfootthree",
+      "realmSlug": "spineshatter",
+      "rating": 2053,
+      "wins": 92,
+      "losses": 86,
+      "classId": "warrior"
+    },
+    {
+      "rank": 461,
+      "characterName": "Rise",
+      "realmSlug": "spineshatter",
+      "rating": 2052,
+      "wins": 87,
+      "losses": 57,
+      "classId": "rogue"
+    },
+    {
+      "rank": 461,
+      "characterName": "Femmaviis",
+      "realmSlug": "spineshatter",
+      "rating": 2052,
+      "wins": 79,
+      "losses": 54,
+      "classId": "priest"
+    },
+    {
+      "rank": 461,
+      "characterName": "Ronaldoyo",
+      "realmSlug": "spineshatter",
+      "rating": 2052,
+      "wins": 201,
+      "losses": 139,
+      "classId": "priest"
+    },
+    {
+      "rank": 461,
+      "characterName": "Ctoones",
+      "realmSlug": "spineshatter",
+      "rating": 2052,
+      "wins": 92,
+      "losses": 64,
+      "classId": "shaman"
+    },
+    {
+      "rank": 461,
+      "characterName": "Manofmystery",
+      "realmSlug": "spineshatter",
+      "rating": 2052,
+      "wins": 111,
+      "losses": 83,
+      "classId": "hunter"
+    },
+    {
+      "rank": 461,
+      "characterName": "Yllnoth",
+      "realmSlug": "spineshatter",
+      "rating": 2052,
+      "wins": 71,
+      "losses": 55,
+      "classId": "rogue"
+    },
+    {
+      "rank": 461,
+      "characterName": "Cruuo",
+      "realmSlug": "spineshatter",
+      "rating": 2052,
+      "wins": 71,
+      "losses": 55,
+      "classId": "warlock"
+    },
+    {
+      "rank": 461,
+      "characterName": "Kaynox",
+      "realmSlug": "spineshatter",
+      "rating": 2052,
+      "wins": 71,
+      "losses": 55,
+      "classId": "priest"
+    },
+    {
+      "rank": 461,
+      "characterName": "Virix",
+      "realmSlug": "spineshatter",
+      "rating": 2052,
+      "wins": 60,
+      "losses": 47,
+      "classId": "mage"
+    },
+    {
+      "rank": 470,
+      "characterName": "Postarinkeqt",
+      "realmSlug": "spineshatter",
+      "rating": 2051,
+      "wins": 33,
+      "losses": 19,
+      "classId": "priest"
+    },
+    {
+      "rank": 470,
+      "characterName": "Recedingmana",
+      "realmSlug": "spineshatter",
+      "rating": 2051,
+      "wins": 72,
+      "losses": 43,
+      "classId": "mage"
+    },
+    {
+      "rank": 470,
+      "characterName": "Hampuscarrys",
+      "realmSlug": "spineshatter",
+      "rating": 2051,
+      "wins": 35,
+      "losses": 26,
+      "classId": "priest"
+    },
+    {
+      "rank": 470,
+      "characterName": "Deadback",
+      "realmSlug": "spineshatter",
+      "rating": 2051,
+      "wins": 50,
+      "losses": 39,
+      "classId": "priest"
+    },
+    {
+      "rank": 474,
+      "characterName": "Playmate",
+      "realmSlug": "spineshatter",
+      "rating": 2050,
+      "wins": 100,
+      "losses": 64,
+      "classId": "rogue"
+    },
+    {
+      "rank": 474,
+      "characterName": "Dreamstáte",
+      "realmSlug": "spineshatter",
+      "rating": 2050,
+      "wins": 61,
+      "losses": 40,
+      "classId": "druid"
+    },
+    {
+      "rank": 476,
+      "characterName": "Ulfjarlwins",
+      "realmSlug": "spineshatter",
+      "rating": 2049,
+      "wins": 30,
+      "losses": 13,
+      "classId": "warrior"
+    },
+    {
+      "rank": 476,
+      "characterName": "Rabbitpwnz",
+      "realmSlug": "spineshatter",
+      "rating": 2049,
+      "wins": 182,
+      "losses": 93,
+      "classId": "priest"
+    },
+    {
+      "rank": 476,
+      "characterName": "Requièm",
+      "realmSlug": "spineshatter",
+      "rating": 2049,
+      "wins": 71,
+      "losses": 43,
+      "classId": "rogue"
+    },
+    {
+      "rank": 476,
+      "characterName": "Kctr",
+      "realmSlug": "spineshatter",
+      "rating": 2049,
+      "wins": 132,
+      "losses": 85,
+      "classId": "priest"
+    },
+    {
+      "rank": 476,
+      "characterName": "Flippera",
+      "realmSlug": "spineshatter",
+      "rating": 2049,
+      "wins": 55,
+      "losses": 43,
+      "classId": "priest"
+    },
+    {
+      "rank": 481,
+      "characterName": "Zaiua",
+      "realmSlug": "spineshatter",
+      "rating": 2048,
+      "wins": 38,
+      "losses": 12,
+      "classId": "priest"
+    },
+    {
+      "rank": 481,
+      "characterName": "Hyperbeam",
+      "realmSlug": "spineshatter",
+      "rating": 2048,
+      "wins": 56,
+      "losses": 35,
+      "classId": "mage"
+    },
+    {
+      "rank": 481,
+      "characterName": "Mxrphy",
+      "realmSlug": "spineshatter",
+      "rating": 2048,
+      "wins": 56,
+      "losses": 35,
+      "classId": "rogue"
+    },
+    {
+      "rank": 481,
+      "characterName": "Marhz",
+      "realmSlug": "spineshatter",
+      "rating": 2048,
+      "wins": 56,
+      "losses": 35,
+      "classId": "priest"
+    },
+    {
+      "rank": 481,
+      "characterName": "Otterkotze",
+      "realmSlug": "spineshatter",
+      "rating": 2048,
+      "wins": 202,
+      "losses": 153,
+      "classId": "shaman"
+    },
+    {
+      "rank": 481,
+      "characterName": "Pesskgbx",
+      "realmSlug": "spineshatter",
+      "rating": 2048,
+      "wins": 102,
+      "losses": 85,
+      "classId": "hunter"
+    },
+    {
+      "rank": 487,
+      "characterName": "Scrynah",
+      "realmSlug": "spineshatter",
+      "rating": 2047,
+      "wins": 198,
+      "losses": 117,
+      "classId": "warlock"
+    },
+    {
+      "rank": 487,
+      "characterName": "Gøthmømmyx",
+      "realmSlug": "spineshatter",
+      "rating": 2047,
+      "wins": 35,
+      "losses": 21,
+      "classId": "priest"
+    },
+    {
+      "rank": 487,
+      "characterName": "Revinder",
+      "realmSlug": "spineshatter",
+      "rating": 2047,
+      "wins": 74,
+      "losses": 50,
+      "classId": "priest"
+    },
+    {
+      "rank": 490,
+      "characterName": "Smaugsi",
+      "realmSlug": "spineshatter",
+      "rating": 2046,
+      "wins": 36,
+      "losses": 20,
+      "classId": "rogue"
+    },
+    {
+      "rank": 490,
+      "characterName": "Powermustx",
+      "realmSlug": "spineshatter",
+      "rating": 2046,
+      "wins": 125,
+      "losses": 76,
+      "classId": "rogue"
+    },
+    {
+      "rank": 490,
+      "characterName": "Udrii",
+      "realmSlug": "spineshatter",
+      "rating": 2046,
+      "wins": 89,
+      "losses": 56,
+      "classId": "druid"
+    },
+    {
+      "rank": 490,
+      "characterName": "Givemeup",
+      "realmSlug": "spineshatter",
+      "rating": 2046,
+      "wins": 94,
+      "losses": 63,
+      "classId": "priest"
+    },
+    {
+      "rank": 490,
+      "characterName": "Rothy",
+      "realmSlug": "spineshatter",
+      "rating": 2046,
+      "wins": 115,
+      "losses": 82,
+      "classId": "warrior"
+    },
+    {
+      "rank": 495,
+      "characterName": "Ghostgeo",
+      "realmSlug": "spineshatter",
+      "rating": 2045,
+      "wins": 55,
+      "losses": 36,
+      "classId": "rogue"
+    },
+    {
+      "rank": 495,
+      "characterName": "Jckstein",
+      "realmSlug": "spineshatter",
+      "rating": 2045,
+      "wins": 55,
+      "losses": 36,
+      "classId": "priest"
+    },
+    {
+      "rank": 495,
+      "characterName": "Desii",
+      "realmSlug": "spineshatter",
+      "rating": 2045,
+      "wins": 160,
+      "losses": 120,
+      "classId": "druid"
+    },
+    {
+      "rank": 495,
+      "characterName": "Srbiin",
+      "realmSlug": "spineshatter",
+      "rating": 2045,
+      "wins": 159,
+      "losses": 121,
+      "classId": "warrior"
+    },
+    {
+      "rank": 495,
+      "characterName": "Aicow",
+      "realmSlug": "spineshatter",
+      "rating": 2045,
+      "wins": 148,
+      "losses": 121,
+      "classId": "druid"
+    },
+    {
+      "rank": 500,
+      "characterName": "Mmaguru",
+      "realmSlug": "spineshatter",
+      "rating": 2044,
+      "wins": 144,
+      "losses": 85,
+      "classId": "shaman"
     }
   ]
 }

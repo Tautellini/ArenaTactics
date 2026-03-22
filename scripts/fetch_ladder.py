@@ -31,6 +31,9 @@ SECRETS_FILE = REPO_ROOT / "secrets.properties"
 
 OAUTH_HOST = "https://oauth.battle.net"
 
+# How many top entries to store per bracket (with class data resolved)
+TOP_ENTRIES_LIMIT = 500
+
 # Blizzard API base URLs per region
 API_HOSTS = {
     "us": "https://us.api.blizzard.com",
@@ -40,25 +43,33 @@ API_HOSTS = {
 }
 
 # ── Addon definitions ────────────────────────────────────────────────────────
-# Each addon maps to the Blizzard API namespace prefix and the brackets to fetch.
-# The namespace is "{prefix}-{region}" (e.g. "dynamic-classic-us").
 
 ADDONS = [
     {
         "id": "tbc_anniversary",
         "namespace_prefix": "dynamic-classicann",
+        "profile_namespace_prefix": "profile-classicann",
         "regions": ["us", "eu"],
         "brackets": ["2v2", "3v3", "5v5"],
-        "has_per_spec_shuffle": False,  # TBC Anniversary has no per-spec shuffle brackets
+        "has_per_spec_shuffle": False,
     },
     {
         "id": "midnight",
         "namespace_prefix": "dynamic",
+        "profile_namespace_prefix": "profile",
         "regions": ["us", "eu"],
         "brackets": ["2v2", "3v3"],
-        "has_per_spec_shuffle": True,   # Retail has shuffle-{class}-{spec} brackets
+        "has_per_spec_shuffle": True,
     },
 ]
+
+# Blizzard class ID → our class ID slug
+BLIZZARD_CLASS_MAP = {
+    1: "warrior", 2: "paladin", 3: "hunter", 4: "rogue",
+    5: "priest", 6: "deathknight", 7: "shaman", 8: "mage",
+    9: "warlock", 10: "monk", 11: "druid", 12: "demonhunter",
+    13: "evoker",
+}
 
 # Blizzard shuffle bracket name → our spec ID mapping (retail only)
 SHUFFLE_SPEC_MAP = {
@@ -154,20 +165,13 @@ def get_pvp_rewards(api_host: str, namespace: str, season_id: int, bracket_filte
     except Exception:
         return {}
 
-    # Map bracket filter to Blizzard bracket type
-    bracket_type_map = {
-        "2v2": "ARENA_2v2",
-        "3v3": "ARENA_3v3",
-        "5v5": "ARENA_5v5",
-    }
+    bracket_type_map = {"2v2": "ARENA_2v2", "3v3": "ARENA_3v3", "5v5": "ARENA_5v5"}
     target_type = bracket_type_map.get(bracket_filter, "")
 
     cutoffs = {}
     for reward in data.get("rewards", []):
         bracket_info = reward.get("bracket", {})
         reward_bracket_type = bracket_info.get("type", "")
-
-        # Only include cutoffs for the requested bracket
         if target_type and reward_bracket_type != target_type:
             continue
 
@@ -202,6 +206,23 @@ def get_leaderboard_index(api_host: str, namespace: str, season_id: int, token: 
     )
     data = http_get_json(url, token=token)
     return [lb.get("name", "") for lb in data.get("leaderboards", [])]
+
+
+def get_character_class(api_host: str, profile_namespace: str, realm_slug: str, char_name: str, token: str) -> str | None:
+    """Fetch a character's class from the profile API. Returns our class ID slug or None."""
+    name_lower = char_name.lower()
+    url = (
+        f"{api_host}/profile/wow/character/{realm_slug}/{urllib.parse.quote(name_lower)}"
+        f"?namespace={profile_namespace}&locale=en_US"
+    )
+    try:
+        data = http_get_json(url, token=token)
+        class_id = data.get("character_class", {}).get("id")
+        if class_id and class_id in BLIZZARD_CLASS_MAP:
+            return BLIZZARD_CLASS_MAP[class_id]
+    except Exception:
+        pass
+    return None
 
 
 def fetch_spec_distribution(api_host: str, namespace: str, season_id: int, token: str) -> list:
@@ -243,37 +264,67 @@ def fetch_spec_distribution(api_host: str, namespace: str, season_id: int, token
     return distribution
 
 
-def build_snapshot(
-    region: str, bracket: str, season_id: int, entries: list,
-    cutoffs: dict, spec_distribution: list | None = None
-) -> dict:
-    """Build a ladder snapshot dict from raw leaderboard entries."""
-    top_entries = []
+def resolve_classes_for_entries(
+    entries: list,
+    api_host: str,
+    profile_namespace: str,
+    token: str,
+    class_cache: dict,
+    limit: int = TOP_ENTRIES_LIMIT,
+) -> list:
+    """
+    Resolve character classes for the top N leaderboard entries.
+    Uses class_cache (keyed by character ID) for deduplication across brackets.
+    Returns enriched entry dicts with classId set.
+    """
+    result = []
+    lookups = 0
+    cache_hits = 0
 
-    for entry in entries:
+    for entry in entries[:limit]:
         character = entry.get("character", {})
         realm = entry.get("realm") or character.get("realm", {})
         stats = entry.get("season_match_statistics", {})
+        char_id = character.get("id")
+        char_name = character.get("name", "Unknown")
+        realm_slug = realm.get("slug", "")
 
-        top_entries.append({
+        class_id = None
+        if char_id and char_id in class_cache:
+            class_id = class_cache[char_id]
+            cache_hits += 1
+        elif char_id and realm_slug and char_name != "Unknown":
+            class_id = get_character_class(api_host, profile_namespace, realm_slug, char_name, token)
+            if class_id:
+                class_cache[char_id] = class_id
+            lookups += 1
+
+        result.append({
             "rank": entry.get("rank", 0),
-            "characterName": character.get("name", "Unknown"),
-            "realmSlug": realm.get("slug", ""),
+            "characterName": char_name,
+            "realmSlug": realm_slug,
             "rating": entry.get("rating", 0),
             "wins": stats.get("won", 0),
             "losses": stats.get("lost", 0),
-            "specId": None,
+            "classId": class_id,
         })
 
-    # Only keep top 100 entries in the static JSON to keep file size reasonable
-    top_entries = sorted(top_entries, key=lambda e: e["rank"])[:100]
+    print(f"    Resolved {lookups} profiles ({cache_hits} cache hits)")
+    return result
 
+
+def build_snapshot(
+    region: str, bracket: str, season_id: int,
+    total_entries: int, top_entries: list,
+    cutoffs: dict, spec_distribution: list | None = None
+) -> dict:
+    """Build a ladder snapshot dict."""
     return {
         "region": region,
         "bracket": bracket,
         "seasonId": season_id,
         "fetchedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "totalEntries": len(entries),
+        "totalEntries": total_entries,
         "ratingCutoffs": cutoffs,
         "specDistribution": spec_distribution or [],
         "topEntries": top_entries,
@@ -292,7 +343,6 @@ def main():
         print("ERROR: BLIZZARD_CLIENT_ID and BLIZZARD_CLIENT_SECRET must be set.", file=sys.stderr)
         sys.exit(1)
 
-    # Authenticate
     print("Authenticating with Battle.net...")
     token = get_access_token(client_id, client_secret)
     print("Authenticated successfully.\n")
@@ -300,6 +350,7 @@ def main():
     for addon in ADDONS:
         addon_id = addon["id"]
         ns_prefix = addon["namespace_prefix"]
+        profile_ns_prefix = addon["profile_namespace_prefix"]
         regions = addon["regions"]
         brackets = addon["brackets"]
         has_shuffle = addon["has_per_spec_shuffle"]
@@ -317,6 +368,11 @@ def main():
 
             api_host = API_HOSTS[region]
             namespace = f"{ns_prefix}-{region}"
+            profile_namespace = f"{profile_ns_prefix}-{region}"
+
+            # Class cache shared across brackets within this region
+            # Key: character ID (int), Value: class slug (str)
+            class_cache: dict[int, str] = {}
 
             # Determine season
             print(f"  [{region}] Detecting current season...")
@@ -328,19 +384,10 @@ def main():
 
             print(f"  [{region}] Season ID: {season_id}")
 
-            # Fetch all reward cutoffs for this season (we'll filter per bracket)
+            # Fetch reward cutoffs
             print(f"  [{region}] Fetching PvP reward cutoffs...")
-            all_rewards_raw = {}
-            try:
-                url = (
-                    f"{api_host}/data/wow/pvp-season/{season_id}/pvp-reward/index"
-                    f"?namespace={namespace}&locale=en_US"
-                )
-                all_rewards_raw = http_get_json(url, token=token)
-            except Exception as e:
-                print(f"  [{region}] WARNING: Failed to fetch rewards: {e}")
 
-            # Fetch spec distribution from shuffle leaderboards (once per region, retail only)
+            # Fetch spec distribution (retail only)
             spec_distribution = []
             if has_shuffle:
                 print(f"  [{region}] Fetching spec distribution from shuffle leaderboards...")
@@ -353,26 +400,34 @@ def main():
             for bracket in brackets:
                 bracket = bracket.strip()
 
-                # Get bracket-specific cutoffs
                 cutoffs = get_pvp_rewards(api_host, namespace, season_id, bracket, token)
                 print(f"  [{region}] {bracket} cutoffs: {cutoffs}")
 
                 print(f"  [{region}] Fetching {bracket} leaderboard...")
                 try:
-                    entries = get_leaderboard(api_host, namespace, season_id, bracket, token)
+                    raw_entries = get_leaderboard(api_host, namespace, season_id, bracket, token)
                 except Exception as e:
                     print(f"  [{region}] ERROR fetching {bracket}: {e}")
                     continue
 
-                print(f"  [{region}] {bracket}: {len(entries)} entries")
+                total = len(raw_entries)
+                print(f"  [{region}] {bracket}: {total} entries, resolving top {TOP_ENTRIES_LIMIT} classes...")
 
-                snapshot = build_snapshot(region, bracket, season_id, entries, cutoffs, spec_distribution)
+                top_entries = resolve_classes_for_entries(
+                    raw_entries, api_host, profile_namespace, token, class_cache
+                )
+
+                snapshot = build_snapshot(
+                    region, bracket, season_id, total, top_entries, cutoffs, spec_distribution
+                )
 
                 out_file = addon_dir / f"{region}_{bracket}.json"
                 with open(out_file, "w", encoding="utf-8") as f:
                     json.dump(snapshot, f, indent=2, ensure_ascii=False)
 
                 print(f"  [{region}] Wrote {out_file.name}")
+
+            print(f"  [{region}] Class cache: {len(class_cache)} unique characters resolved")
 
         # Write index for this addon
         index = []

@@ -36,5 +36,5 @@ data class LadderEntry(
     val rating: Int,
     val wins: Int = 0,
     val losses: Int = 0,
-    val specId: String? = null
+    val classId: String? = null
 )

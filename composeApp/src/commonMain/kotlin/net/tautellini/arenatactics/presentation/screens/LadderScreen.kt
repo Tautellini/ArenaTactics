@@ -5,7 +5,6 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
@@ -14,6 +13,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -132,31 +134,7 @@ private fun LadderContent(
         // Top players
         if (snapshot.topEntries.isNotEmpty()) {
             item {
-                Text(
-                    "Top Players",
-                    color = TextPrimary,
-                    fontSize = 18.sp,
-                    fontWeight = FontWeight.SemiBold
-                )
-            }
-            // Header row
-            item {
-                TopEntryRow(
-                    rank = "#",
-                    name = "Player",
-                    rating = "Rating",
-                    record = "W / L",
-                    isHeader = true
-                )
-            }
-            itemsIndexed(snapshot.topEntries) { _, entry ->
-                TopEntryRow(
-                    rank = "${entry.rank}",
-                    name = entry.characterName,
-                    rating = "${entry.rating}",
-                    record = "${entry.wins} / ${entry.losses}",
-                    isHeader = false
-                )
+                TopPlayersSection(snapshot.topEntries)
             }
         }
     }
@@ -413,17 +391,87 @@ private fun SpecDistributionBar(spec: SpecDistribution, maxCount: Int) {
     }
 }
 
+private const val PAGE_SIZE = 100
+
 @Composable
-private fun TopEntryRow(
-    rank: String,
-    name: String,
-    rating: String,
-    record: String,
-    isHeader: Boolean
-) {
+private fun TopPlayersSection(entries: List<LadderEntry>) {
+    var currentPage by remember { mutableIntStateOf(0) }
+    val totalPages = (entries.size + PAGE_SIZE - 1) / PAGE_SIZE
+    val pageEntries = entries.drop(currentPage * PAGE_SIZE).take(PAGE_SIZE)
+
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text(
+            "Top Players",
+            color = TextPrimary,
+            fontSize = 18.sp,
+            fontWeight = FontWeight.SemiBold
+        )
+
+        // Header
+        TopEntryRow(entry = null)
+
+        pageEntries.forEach { entry ->
+            TopEntryRow(entry = entry)
+        }
+
+        // Pagination
+        if (totalPages > 1) {
+            Row(
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.fillMaxWidth().padding(top = 8.dp)
+            ) {
+                (0 until totalPages).forEach { page ->
+                    val isSelected = page == currentPage
+                    val from = page * PAGE_SIZE + 1
+                    val to = minOf((page + 1) * PAGE_SIZE, entries.size)
+                    Box(
+                        contentAlignment = Alignment.Center,
+                        modifier = Modifier
+                            .clip(RoundedCornerShape(8.dp))
+                            .background(if (isSelected) Primary else CardColor)
+                            .clickable { currentPage = page }
+                            .padding(horizontal = 12.dp, vertical = 8.dp)
+                    ) {
+                        Text(
+                            text = "$from–$to",
+                            color = if (isSelected) Background else TextSecondary,
+                            fontSize = 12.sp,
+                            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
+                        )
+                    }
+                    if (page < totalPages - 1) Spacer(Modifier.width(6.dp))
+                }
+            }
+        }
+    }
+}
+
+private val CLASS_ICON_NAMES = mapOf(
+    "warrior" to "classicon_warrior",
+    "paladin" to "classicon_paladin",
+    "hunter" to "classicon_hunter",
+    "rogue" to "classicon_rogue",
+    "priest" to "classicon_priest",
+    "deathknight" to "classicon_deathknight",
+    "shaman" to "classicon_shaman",
+    "mage" to "classicon_mage",
+    "warlock" to "classicon_warlock",
+    "monk" to "classicon_monk",
+    "druid" to "classicon_druid",
+    "demonhunter" to "classicon_demonhunter",
+    "evoker" to "classicon_evoker",
+)
+
+@Composable
+private fun TopEntryRow(entry: LadderEntry?) {
+    val isHeader = entry == null
     val textColor = if (isHeader) TextSecondary else TextPrimary
     val weight = if (isHeader) FontWeight.Medium else FontWeight.Normal
     val fontSize = if (isHeader) 11.sp else 13.sp
+    val nameColor = if (isHeader) TextSecondary else {
+        entry?.classId?.let { classColor(it) } ?: TextPrimary
+    }
 
     Row(
         modifier = Modifier
@@ -437,10 +485,44 @@ private fun TopEntryRow(
             ),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Text(rank, color = textColor, fontWeight = weight, fontSize = fontSize, modifier = Modifier.width(40.dp))
-        Text(name, color = textColor, fontWeight = weight, fontSize = fontSize, modifier = Modifier.weight(1f), maxLines = 1, overflow = TextOverflow.Ellipsis)
-        Text(rating, color = if (isHeader) textColor else Primary, fontWeight = if (isHeader) weight else FontWeight.Bold, fontSize = fontSize, modifier = Modifier.width(60.dp), textAlign = TextAlign.End)
+        Text(
+            text = if (isHeader) "#" else "${entry!!.rank}",
+            color = textColor, fontWeight = weight, fontSize = fontSize,
+            modifier = Modifier.width(40.dp)
+        )
+
+        // Class icon
+        if (!isHeader && entry!!.classId != null) {
+            val iconName = CLASS_ICON_NAMES[entry.classId]
+            if (iconName != null) {
+                AsyncImage(
+                    model = WowheadIcons.medium(iconName),
+                    contentDescription = entry.classId,
+                    modifier = Modifier
+                        .size(20.dp)
+                        .clip(RoundedCornerShape(4.dp))
+                )
+                Spacer(Modifier.width(6.dp))
+            }
+        }
+
+        Text(
+            text = if (isHeader) "Player" else entry!!.characterName,
+            color = nameColor, fontWeight = weight, fontSize = fontSize,
+            modifier = Modifier.weight(1f), maxLines = 1, overflow = TextOverflow.Ellipsis
+        )
+        Text(
+            text = if (isHeader) "Rating" else "${entry!!.rating}",
+            color = if (isHeader) textColor else Primary,
+            fontWeight = if (isHeader) weight else FontWeight.Bold,
+            fontSize = fontSize,
+            modifier = Modifier.width(60.dp), textAlign = TextAlign.End
+        )
         Spacer(Modifier.width(12.dp))
-        Text(record, color = textColor, fontWeight = weight, fontSize = fontSize, modifier = Modifier.width(70.dp), textAlign = TextAlign.End)
+        Text(
+            text = if (isHeader) "W / L" else "${entry!!.wins} / ${entry.losses}",
+            color = textColor, fontWeight = weight, fontSize = fontSize,
+            modifier = Modifier.width(70.dp), textAlign = TextAlign.End
+        )
     }
 }
