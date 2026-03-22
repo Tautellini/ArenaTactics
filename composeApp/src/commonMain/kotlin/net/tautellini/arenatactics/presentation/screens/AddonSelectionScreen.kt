@@ -75,36 +75,25 @@ fun AddonSelectionScreen(
                 is HomeState.Error -> Text(s.message, color = TextSecondary)
                 is HomeState.Success -> {
                     // Row 1: Addon selection — always visible
-                    Column(
-                        horizontalAlignment = Alignment.CenterHorizontally,
+                    FlowRow(
+                        horizontalArrangement = Arrangement.spacedBy(16.dp),
                         verticalArrangement = Arrangement.spacedBy(16.dp)
                     ) {
-                        Text(
-                            "Select your game",
-                            color = TextSecondary,
-                            fontSize = 13.sp,
-                            letterSpacing = 2.sp
-                        )
-                        FlowRow(
-                            horizontalArrangement = Arrangement.spacedBy(16.dp),
-                            verticalArrangement = Arrangement.spacedBy(16.dp)
-                        ) {
-                            s.addons.forEach { addon ->
-                                val isSelected = selection.addon?.id == addon.id
-                                val hasAnyData = addon.hasData || addon.id in s.addonsWithLadder
-                                AddonTile(
-                                    addon = addon,
-                                    isSelected = isSelected,
-                                    enabled = hasAnyData,
-                                    onClick = if (!hasAnyData) null else ({
-                                        if (isSelected) {
-                                            viewModel.deselectAddon()
-                                        } else {
-                                            viewModel.selectAddon(addon)
-                                        }
-                                    })
-                                )
-                            }
+                        s.addons.forEach { addon ->
+                            val isSelected = selection.addon?.id == addon.id
+                            val hasAnyData = addon.hasData || addon.id in s.addonsWithLadder
+                            AddonTile(
+                                addon = addon,
+                                isSelected = isSelected,
+                                enabled = hasAnyData,
+                                onClick = if (!hasAnyData) null else ({
+                                    if (isSelected) {
+                                        viewModel.deselectAddon()
+                                    } else {
+                                        viewModel.selectAddon(addon)
+                                    }
+                                })
+                            )
                         }
                     }
 
@@ -289,40 +278,18 @@ private fun AddonTile(
         color = cardBg,
         shape = shape,
         modifier = Modifier
-            .width(130.dp)
             .hoverable(interactionSource)
             .border(if (isSelected) 2.dp else 1.dp, borderColor, shape)
             .then(if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier)
     ) {
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(10.dp),
-            modifier = Modifier.padding(16.dp)
+        Box(
+            contentAlignment = Alignment.Center,
+            modifier = Modifier.padding(horizontal = 24.dp, vertical = 14.dp)
         ) {
-            // Rounded "W" emblem
-            Box(
-                contentAlignment = Alignment.Center,
-                modifier = Modifier
-                    .size(56.dp)
-                    .border(2.dp, accent, CircleShape)
-                    .background(accent.copy(alpha = if (enabled) 0.15f else 0.06f), CircleShape)
-            ) {
-                val cinzel = cinzelDecorative()
-                Text(
-                    text = "W",
-                    fontFamily = cinzel,
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 26.sp,
-                    color = accent,
-                    textAlign = TextAlign.Center
-                )
-            }
-
-            // Short name label
             Text(
                 text = addon.shortName,
-                color = if (enabled) TextPrimary else GreyedOut,
-                fontSize = 15.sp,
+                color = if (enabled) accent else GreyedOut,
+                fontSize = 16.sp,
                 fontWeight = FontWeight.Bold,
                 letterSpacing = 2.sp,
                 textAlign = TextAlign.Center

@@ -331,35 +331,13 @@ fun AppHeader(
 
 @Composable
 private fun AddonSegmentContent(addon: Addon?, addonId: String?, accent: Color) {
-    val cinzel = cinzelDecorative()
-    Row(
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(8.dp)
-    ) {
-        Box(
-            contentAlignment = Alignment.Center,
-            modifier = Modifier
-                .size(22.dp)
-                .border(1.5.dp, accent, CircleShape)
-                .background(accent.copy(alpha = 0.15f), CircleShape)
-        ) {
-            Text(
-                "W",
-                fontFamily = cinzel,
-                fontWeight = FontWeight.Bold,
-                fontSize = 11.sp,
-                color = accent,
-                textAlign = TextAlign.Center
-            )
-        }
-        Text(
-            text = addon?.shortName ?: addonId?.formatId() ?: "",
-            color = TextPrimary,
-            fontSize = 13.sp,
-            fontWeight = FontWeight.SemiBold,
-            letterSpacing = 1.sp
-        )
-    }
+    Text(
+        text = addon?.shortName ?: addonId?.formatId() ?: "",
+        color = accent,
+        fontSize = 13.sp,
+        fontWeight = FontWeight.Bold,
+        letterSpacing = 1.sp
+    )
 }
 
 @Composable
@@ -393,11 +371,9 @@ private val GreyedOut = Color(0xFF555555)
 @Composable
 private fun InlineAddonOption(addon: Addon, enabled: Boolean = true, onClick: () -> Unit) {
     val accent = if (enabled) parseHexColor(addon.accentColor) else GreyedOut
-    val cinzel = cinzelDecorative()
 
-    Row(
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(6.dp),
+    Box(
+        contentAlignment = Alignment.Center,
         modifier = Modifier
             .height(34.dp)
             .alpha(if (enabled) 1f else 0.5f)
@@ -407,16 +383,7 @@ private fun InlineAddonOption(addon: Addon, enabled: Boolean = true, onClick: ()
             .then(if (enabled) Modifier.clickable(onClick = onClick) else Modifier)
             .padding(horizontal = 12.dp)
     ) {
-        Box(
-            contentAlignment = Alignment.Center,
-            modifier = Modifier
-                .size(18.dp)
-                .border(1.dp, accent, CircleShape)
-                .background(accent.copy(alpha = 0.15f), CircleShape)
-        ) {
-            Text("W", fontFamily = cinzel, fontWeight = FontWeight.Bold, fontSize = 8.sp, color = accent)
-        }
-        Text(addon.shortName, color = if (enabled) TextSecondary else GreyedOut, fontSize = 12.sp, fontWeight = FontWeight.Medium)
+        Text(addon.shortName, color = if (enabled) accent else GreyedOut, fontSize = 12.sp, fontWeight = FontWeight.Bold)
     }
 }
 
