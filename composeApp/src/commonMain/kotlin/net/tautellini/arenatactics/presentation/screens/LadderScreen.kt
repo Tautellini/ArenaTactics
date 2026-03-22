@@ -162,8 +162,8 @@ private fun LadderContent(
             item { TopEntryRow(entry = null) }
 
             // Paged entries
-            state.pagedEntries.forEach { entry ->
-                item(key = "${snapshot.bracket}_${entry.rank}") {
+            state.pagedEntries.forEachIndexed { index, entry ->
+                item(key = "entry_${state.selectedBracket}_${state.currentPage}_$index") {
                     TopEntryRow(entry = entry)
                 }
             }
