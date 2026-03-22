@@ -70,6 +70,10 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - Card color: #1A1214 (dark with red undertone)
 - Primary color: #CC3333 (deep red)
 - Secondary color: #8B1A1A (dark crimson)
+- **Always use theme color tokens** (`Primary`, `TextPrimary`, `TextSecondary`, `CardColor`,
+  `Background`, etc.) from `Theme.kt`. Never hardcode `Color.White`, `Color.Black`, or hex
+  literals for UI elements that should follow the theme. The only exceptions are WoW-standard
+  colors (class colors, item quality colors, faction colors) which are universal constants.
 
 ## Wowhead / Zamimg Icons
 - Icons for specs, classes, items, and game modes are loaded from `wow.zamimg.com/images/wow/icons/{size}/{iconName}.jpg` via the `WowheadIcons` helper.

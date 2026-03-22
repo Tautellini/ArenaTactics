@@ -227,7 +227,7 @@ private fun SegmentedSelector(
             ) {
                 Text(
                     text = label(option),
-                    color = if (isSelected) Color.White else TextSecondary,
+                    color = if (isSelected) TextPrimary else TextSecondary,
                     fontSize = 13.sp,
                     fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
                     letterSpacing = 1.sp
@@ -680,7 +680,7 @@ private fun PaginationBar(
             ) {
                 Text(
                     text = "$from–$to",
-                    color = if (isSelected) Color.White else TextSecondary,
+                    color = if (isSelected) TextPrimary else TextSecondary,
                     fontSize = 12.sp,
                     fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
                 )
