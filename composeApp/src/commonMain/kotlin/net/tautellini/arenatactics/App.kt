@@ -1,7 +1,6 @@
 package net.tautellini.arenatactics
 
 import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.SharedTransitionLayout
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -117,47 +116,29 @@ fun App() {
     val currentScreen = currentBackStackEntry?.toScreen() ?: Screen.AddonSelection
 
     ArenaTacticsTheme {
-        SharedTransitionLayout {
-            val sharedScope = this
+        Column(Modifier.fillMaxSize().background(Background)) {
 
-            Column(Modifier.fillMaxSize().background(Background)) {
-
-                // Persistent AppHeader on all non-home screens
-                // Track whether the home screen has been composed at least once.
-                // Shared element transitions only work if both ends have been composed.
-                var hasVisitedHome by remember { mutableStateOf(currentScreen is Screen.AddonSelection) }
-                if (currentScreen is Screen.AddonSelection) hasVisitedHome = true
-
-                AnimatedVisibility(
-                    visible = currentScreen !is Screen.AddonSelection,
-                    enter = fadeIn(tween(200)) + slideInVertically(tween(200)) { -it },
-                    exit = fadeOut(tween(150)) + slideOutVertically(tween(150)) { -it }
-                ) {
-                    val animScope = this
-                    val shieldMod = if (hasVisitedHome) {
-                        with(sharedScope) {
-                            Modifier.sharedElement(
-                                sharedContentState = rememberSharedContentState(key = "shield"),
-                                animatedVisibilityScope = animScope
-                            )
-                        }
-                    } else Modifier
-                    AppHeader(
-                        currentScreen = currentScreen,
-                        homeViewModel = homeViewModel,
-                        onNavigate = { target ->
-                            if (target is Screen.AddonSelection) {
-                                navController.popBackStack<Screen.AddonSelection>(inclusive = false)
-                            } else {
-                                navController.navigate(target) {
-                                    popUpTo<Screen.AddonSelection>()
-                                    launchSingleTop = true
-                                }
+            // Persistent AppHeader on all non-home screens
+            AnimatedVisibility(
+                visible = currentScreen !is Screen.AddonSelection,
+                enter = fadeIn(tween(200)) + slideInVertically(tween(200)) { -it },
+                exit = fadeOut(tween(150)) + slideOutVertically(tween(150)) { -it }
+            ) {
+                AppHeader(
+                    currentScreen = currentScreen,
+                    homeViewModel = homeViewModel,
+                    onNavigate = { target ->
+                        if (target is Screen.AddonSelection) {
+                            navController.popBackStack<Screen.AddonSelection>(inclusive = false)
+                        } else {
+                            navController.navigate(target) {
+                                popUpTo<Screen.AddonSelection>()
+                                launchSingleTop = true
                             }
-                        },
-                        shieldModifier = shieldMod
-                    )
-                }
+                        }
+                    }
+                )
+            }
 
                 NavHost(
                     navController = navController,
@@ -169,13 +150,7 @@ fun App() {
                     popExitTransition  = { fadeOut(tween(180)) + scaleOut(tween(180), targetScale = 0.95f) }
                 ) {
                     composable<Screen.AddonSelection> {
-                        val shieldMod = with(sharedScope) {
-                            Modifier.sharedElement(
-                                sharedContentState = rememberSharedContentState(key = "shield"),
-                                animatedVisibilityScope = this@composable
-                            )
-                        }
-                        AddonSelectionScreen(viewModel = homeViewModel, onNavigate = { navController.navigate(it) }, shieldModifier = shieldMod)
+                        AddonSelectionScreen(viewModel = homeViewModel, onNavigate = { navController.navigate(it) })
                     }
                     composable<Screen.CompositionSelection> { entry ->
                         val screen = entry.toRoute<Screen.CompositionSelection>()
@@ -253,4 +228,4 @@ fun App() {
             }
         }
     }
-}
+

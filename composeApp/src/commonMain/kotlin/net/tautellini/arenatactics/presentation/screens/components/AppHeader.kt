@@ -113,7 +113,7 @@ fun AppHeader(
     currentScreen: Screen,
     homeViewModel: HomeViewModel,
     onNavigate: (Screen) -> Unit,
-    shieldModifier: Modifier = Modifier
+    shieldModifier: Modifier = Modifier  // kept for API compat
 ) {
     val homeState by homeViewModel.state.collectAsState()
     val addonId = currentScreen.extractAddonId()
