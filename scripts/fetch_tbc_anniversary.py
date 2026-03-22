@@ -138,9 +138,9 @@ def main():
             for item_id, item_data in items.items():
                 all_items.setdefault(int(item_id), item_data)
 
-        # ── Resolve item icons ──
+        # ── Resolve item icons via Wowhead (no auth needed, saves Blizzard rate limit) ──
         print(f"  [{region}] Resolving item icons for {len(all_items)} unique items...")
-        resolve_item_icons(all_items, token)
+        resolve_item_icons(all_items)
 
         # ── Write players_{region}.json ──
         players_file = addon_dir / f"players_{region}.json"
