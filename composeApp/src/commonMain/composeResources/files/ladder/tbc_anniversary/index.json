@@ -15,6 +15,16 @@
     "file": "eu_5v5.json"
   },
   {
+    "region": "players",
+    "bracket": "eu",
+    "file": "players_eu.json"
+  },
+  {
+    "region": "players",
+    "bracket": "us",
+    "file": "players_us.json"
+  },
+  {
     "region": "us",
     "bracket": "2v2",
     "file": "us_2v2.json"
