@@ -22,6 +22,8 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
 import net.tautellini.arenatactics.data.repository.*
+import net.tautellini.arenatactics.presentation.LadderViewModel
+import net.tautellini.arenatactics.presentation.screens.LadderScreen
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.navigation.toScreen
 import net.tautellini.arenatactics.presentation.HomeViewModel
@@ -48,6 +50,7 @@ fun App() {
     val compositionRepository = remember { CompositionRepository(specRepository) }
     val gearRepository = remember { GearRepository() }
     val matchupRepository = remember { MatchupRepository() }
+    val ladderRepository = remember { LadderRepository() }
 
     val homeViewModel = remember { HomeViewModel(addonRepository, gameModeRepository) }
     val navController = rememberNavController()
@@ -222,6 +225,13 @@ fun App() {
                             )
                         }
                         SpecGuideScreen(viewModel = vm)
+                    }
+                    composable<Screen.Ladder> { entry ->
+                        val screen = entry.toRoute<Screen.Ladder>()
+                        val vm = viewModel(key = "ladder_${screen.addonId}") {
+                            LadderViewModel(screen.addonId, ladderRepository)
+                        }
+                        LadderScreen(viewModel = vm)
                     }
                 }
             }

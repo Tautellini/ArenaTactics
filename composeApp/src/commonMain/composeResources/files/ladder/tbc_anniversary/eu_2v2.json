@@ -1,0 +1,916 @@
+{
+  "region": "eu",
+  "bracket": "2v2",
+  "seasonId": 1,
+  "fetchedAt": "2026-03-22T10:44:26Z",
+  "totalEntries": 5032,
+  "ratingCutoffs": {
+    "gladiator": 2473,
+    "duelist": 1909,
+    "rival": 1596,
+    "challenger": 1429
+  },
+  "specDistribution": [],
+  "topEntries": [
+    {
+      "rank": 1,
+      "characterName": "Mirlòl",
+      "realmSlug": "spineshatter",
+      "rating": 2816,
+      "wins": 415,
+      "losses": 104,
+      "specId": null
+    },
+    {
+      "rank": 2,
+      "characterName": "Mirok",
+      "realmSlug": "spineshatter",
+      "rating": 2719,
+      "wins": 121,
+      "losses": 22,
+      "specId": null
+    },
+    {
+      "rank": 3,
+      "characterName": "Kinjara",
+      "realmSlug": "spineshatter",
+      "rating": 2709,
+      "wins": 207,
+      "losses": 74,
+      "specId": null
+    },
+    {
+      "rank": 3,
+      "characterName": "Grùmpy",
+      "realmSlug": "spineshatter",
+      "rating": 2709,
+      "wins": 182,
+      "losses": 83,
+      "specId": null
+    },
+    {
+      "rank": 5,
+      "characterName": "Localgypsy",
+      "realmSlug": "spineshatter",
+      "rating": 2679,
+      "wins": 186,
+      "losses": 61,
+      "specId": null
+    },
+    {
+      "rank": 6,
+      "characterName": "Seteslusk",
+      "realmSlug": "spineshatter",
+      "rating": 2672,
+      "wins": 600,
+      "losses": 280,
+      "specId": null
+    },
+    {
+      "rank": 7,
+      "characterName": "Mirlôl",
+      "realmSlug": "spineshatter",
+      "rating": 2668,
+      "wins": 277,
+      "losses": 76,
+      "specId": null
+    },
+    {
+      "rank": 8,
+      "characterName": "Tazàr",
+      "realmSlug": "spineshatter",
+      "rating": 2620,
+      "wins": 88,
+      "losses": 12,
+      "specId": null
+    },
+    {
+      "rank": 9,
+      "characterName": "Painé",
+      "realmSlug": "spineshatter",
+      "rating": 2619,
+      "wins": 84,
+      "losses": 13,
+      "specId": null
+    },
+    {
+      "rank": 10,
+      "characterName": "Sorryimbest",
+      "realmSlug": "spineshatter",
+      "rating": 2605,
+      "wins": 134,
+      "losses": 79,
+      "specId": null
+    },
+    {
+      "rank": 11,
+      "characterName": "Hashiramà",
+      "realmSlug": "spineshatter",
+      "rating": 2602,
+      "wins": 170,
+      "losses": 85,
+      "specId": null
+    },
+    {
+      "rank": 11,
+      "characterName": "Lynewebaro",
+      "realmSlug": "spineshatter",
+      "rating": 2602,
+      "wins": 152,
+      "losses": 79,
+      "specId": null
+    },
+    {
+      "rank": 13,
+      "characterName": "Bannedonmain",
+      "realmSlug": "spineshatter",
+      "rating": 2600,
+      "wins": 121,
+      "losses": 42,
+      "specId": null
+    },
+    {
+      "rank": 14,
+      "characterName": "Rivah",
+      "realmSlug": "spineshatter",
+      "rating": 2563,
+      "wins": 209,
+      "losses": 89,
+      "specId": null
+    },
+    {
+      "rank": 14,
+      "characterName": "Ttsxx",
+      "realmSlug": "spineshatter",
+      "rating": 2563,
+      "wins": 252,
+      "losses": 179,
+      "specId": null
+    },
+    {
+      "rank": 14,
+      "characterName": "Qzenvolk",
+      "realmSlug": "spineshatter",
+      "rating": 2563,
+      "wins": 231,
+      "losses": 165,
+      "specId": null
+    },
+    {
+      "rank": 17,
+      "characterName": "Ssefs",
+      "realmSlug": "spineshatter",
+      "rating": 2557,
+      "wins": 627,
+      "losses": 462,
+      "specId": null
+    },
+    {
+      "rank": 18,
+      "characterName": "Gshockxd",
+      "realmSlug": "spineshatter",
+      "rating": 2556,
+      "wins": 192,
+      "losses": 125,
+      "specId": null
+    },
+    {
+      "rank": 19,
+      "characterName": "Vüra",
+      "realmSlug": "spineshatter",
+      "rating": 2555,
+      "wins": 81,
+      "losses": 42,
+      "specId": null
+    },
+    {
+      "rank": 20,
+      "characterName": "Narcîs",
+      "realmSlug": "thunderstrike",
+      "rating": 2549,
+      "wins": 129,
+      "losses": 66,
+      "specId": null
+    },
+    {
+      "rank": 21,
+      "characterName": "Fliyin",
+      "realmSlug": "spineshatter",
+      "rating": 2548,
+      "wins": 84,
+      "losses": 35,
+      "specId": null
+    },
+    {
+      "rank": 22,
+      "characterName": "Ghingis",
+      "realmSlug": "spineshatter",
+      "rating": 2541,
+      "wins": 99,
+      "losses": 38,
+      "specId": null
+    },
+    {
+      "rank": 23,
+      "characterName": "Icba",
+      "realmSlug": "spineshatter",
+      "rating": 2538,
+      "wins": 108,
+      "losses": 47,
+      "specId": null
+    },
+    {
+      "rank": 24,
+      "characterName": "Malte",
+      "realmSlug": "spineshatter",
+      "rating": 2537,
+      "wins": 109,
+      "losses": 38,
+      "specId": null
+    },
+    {
+      "rank": 25,
+      "characterName": "Himeyo",
+      "realmSlug": "spineshatter",
+      "rating": 2536,
+      "wins": 167,
+      "losses": 88,
+      "specId": null
+    },
+    {
+      "rank": 25,
+      "characterName": "Grumpyboy",
+      "realmSlug": "thunderstrike",
+      "rating": 2536,
+      "wins": 138,
+      "losses": 75,
+      "specId": null
+    },
+    {
+      "rank": 27,
+      "characterName": "Crapita",
+      "realmSlug": "spineshatter",
+      "rating": 2530,
+      "wins": 67,
+      "losses": 29,
+      "specId": null
+    },
+    {
+      "rank": 28,
+      "characterName": "Sladewilson",
+      "realmSlug": "thunderstrike",
+      "rating": 2527,
+      "wins": 76,
+      "losses": 22,
+      "specId": null
+    },
+    {
+      "rank": 29,
+      "characterName": "Säntoryu",
+      "realmSlug": "spineshatter",
+      "rating": 2525,
+      "wins": 202,
+      "losses": 133,
+      "specId": null
+    },
+    {
+      "rank": 29,
+      "characterName": "Mortløck",
+      "realmSlug": "spineshatter",
+      "rating": 2525,
+      "wins": 306,
+      "losses": 209,
+      "specId": null
+    },
+    {
+      "rank": 31,
+      "characterName": "Beeby",
+      "realmSlug": "spineshatter",
+      "rating": 2510,
+      "wins": 117,
+      "losses": 85,
+      "specId": null
+    },
+    {
+      "rank": 31,
+      "characterName": "Luuxíå",
+      "realmSlug": "spineshatter",
+      "rating": 2510,
+      "wins": 117,
+      "losses": 85,
+      "specId": null
+    },
+    {
+      "rank": 33,
+      "characterName": "Aphanelol",
+      "realmSlug": "spineshatter",
+      "rating": 2509,
+      "wins": 85,
+      "losses": 22,
+      "specId": null
+    },
+    {
+      "rank": 34,
+      "characterName": "Deivwl",
+      "realmSlug": "spineshatter",
+      "rating": 2507,
+      "wins": 234,
+      "losses": 152,
+      "specId": null
+    },
+    {
+      "rank": 35,
+      "characterName": "Gekkù",
+      "realmSlug": "spineshatter",
+      "rating": 2506,
+      "wins": 86,
+      "losses": 11,
+      "specId": null
+    },
+    {
+      "rank": 35,
+      "characterName": "Àzx",
+      "realmSlug": "spineshatter",
+      "rating": 2506,
+      "wins": 86,
+      "losses": 11,
+      "specId": null
+    },
+    {
+      "rank": 35,
+      "characterName": "Jixoo",
+      "realmSlug": "spineshatter",
+      "rating": 2506,
+      "wins": 84,
+      "losses": 23,
+      "specId": null
+    },
+    {
+      "rank": 38,
+      "characterName": "Scryception",
+      "realmSlug": "spineshatter",
+      "rating": 2505,
+      "wins": 98,
+      "losses": 37,
+      "specId": null
+    },
+    {
+      "rank": 38,
+      "characterName": "Bambäm",
+      "realmSlug": "spineshatter",
+      "rating": 2505,
+      "wins": 87,
+      "losses": 46,
+      "specId": null
+    },
+    {
+      "rank": 38,
+      "characterName": "Símplybest",
+      "realmSlug": "spineshatter",
+      "rating": 2505,
+      "wins": 362,
+      "losses": 264,
+      "specId": null
+    },
+    {
+      "rank": 41,
+      "characterName": "Aziegodx",
+      "realmSlug": "spineshatter",
+      "rating": 2502,
+      "wins": 84,
+      "losses": 55,
+      "specId": null
+    },
+    {
+      "rank": 42,
+      "characterName": "Nëmêsis",
+      "realmSlug": "spineshatter",
+      "rating": 2501,
+      "wins": 231,
+      "losses": 131,
+      "specId": null
+    },
+    {
+      "rank": 43,
+      "characterName": "Uwuxd",
+      "realmSlug": "thunderstrike",
+      "rating": 2497,
+      "wins": 54,
+      "losses": 18,
+      "specId": null
+    },
+    {
+      "rank": 44,
+      "characterName": "Cuddlér",
+      "realmSlug": "spineshatter",
+      "rating": 2496,
+      "wins": 181,
+      "losses": 132,
+      "specId": null
+    },
+    {
+      "rank": 45,
+      "characterName": "Zdxd",
+      "realmSlug": "spineshatter",
+      "rating": 2495,
+      "wins": 147,
+      "losses": 93,
+      "specId": null
+    },
+    {
+      "rank": 46,
+      "characterName": "Albraïk",
+      "realmSlug": "spineshatter",
+      "rating": 2494,
+      "wins": 166,
+      "losses": 64,
+      "specId": null
+    },
+    {
+      "rank": 46,
+      "characterName": "Nostalgjia",
+      "realmSlug": "spineshatter",
+      "rating": 2494,
+      "wins": 120,
+      "losses": 67,
+      "specId": null
+    },
+    {
+      "rank": 46,
+      "characterName": "Poloxgodx",
+      "realmSlug": "spineshatter",
+      "rating": 2494,
+      "wins": 120,
+      "losses": 67,
+      "specId": null
+    },
+    {
+      "rank": 46,
+      "characterName": "Certifiedgoy",
+      "realmSlug": "spineshatter",
+      "rating": 2494,
+      "wins": 571,
+      "losses": 437,
+      "specId": null
+    },
+    {
+      "rank": 50,
+      "characterName": "Venthyr",
+      "realmSlug": "spineshatter",
+      "rating": 2490,
+      "wins": 299,
+      "losses": 252,
+      "specId": null
+    },
+    {
+      "rank": 51,
+      "characterName": "Fullonmoron",
+      "realmSlug": "spineshatter",
+      "rating": 2488,
+      "wins": 446,
+      "losses": 240,
+      "specId": null
+    },
+    {
+      "rank": 52,
+      "characterName": "Postarinké",
+      "realmSlug": "spineshatter",
+      "rating": 2487,
+      "wins": 69,
+      "losses": 27,
+      "specId": null
+    },
+    {
+      "rank": 53,
+      "characterName": "Ratherlie",
+      "realmSlug": "spineshatter",
+      "rating": 2485,
+      "wins": 194,
+      "losses": 157,
+      "specId": null
+    },
+    {
+      "rank": 54,
+      "characterName": "Derguez",
+      "realmSlug": "spineshatter",
+      "rating": 2484,
+      "wins": 251,
+      "losses": 161,
+      "specId": null
+    },
+    {
+      "rank": 55,
+      "characterName": "Baressojr",
+      "realmSlug": "spineshatter",
+      "rating": 2482,
+      "wins": 163,
+      "losses": 96,
+      "specId": null
+    },
+    {
+      "rank": 56,
+      "characterName": "Chiliesauce",
+      "realmSlug": "spineshatter",
+      "rating": 2480,
+      "wins": 63,
+      "losses": 20,
+      "specId": null
+    },
+    {
+      "rank": 57,
+      "characterName": "Atiy",
+      "realmSlug": "spineshatter",
+      "rating": 2474,
+      "wins": 309,
+      "losses": 212,
+      "specId": null
+    },
+    {
+      "rank": 58,
+      "characterName": "Neytijo",
+      "realmSlug": "spineshatter",
+      "rating": 2473,
+      "wins": 240,
+      "losses": 184,
+      "specId": null
+    },
+    {
+      "rank": 58,
+      "characterName": "Skarpne",
+      "realmSlug": "spineshatter",
+      "rating": 2473,
+      "wins": 198,
+      "losses": 157,
+      "specId": null
+    },
+    {
+      "rank": 60,
+      "characterName": "Fluide",
+      "realmSlug": "spineshatter",
+      "rating": 2472,
+      "wins": 295,
+      "losses": 158,
+      "specId": null
+    },
+    {
+      "rank": 61,
+      "characterName": "Foxesap",
+      "realmSlug": "spineshatter",
+      "rating": 2471,
+      "wins": 310,
+      "losses": 200,
+      "specId": null
+    },
+    {
+      "rank": 61,
+      "characterName": "Viktorprorok",
+      "realmSlug": "spineshatter",
+      "rating": 2471,
+      "wins": 113,
+      "losses": 79,
+      "specId": null
+    },
+    {
+      "rank": 63,
+      "characterName": "Mhugoku",
+      "realmSlug": "spineshatter",
+      "rating": 2470,
+      "wins": 212,
+      "losses": 134,
+      "specId": null
+    },
+    {
+      "rank": 63,
+      "characterName": "Ronaldoyo",
+      "realmSlug": "spineshatter",
+      "rating": 2470,
+      "wins": 334,
+      "losses": 213,
+      "specId": null
+    },
+    {
+      "rank": 65,
+      "characterName": "Shaper",
+      "realmSlug": "spineshatter",
+      "rating": 2469,
+      "wins": 606,
+      "losses": 516,
+      "specId": null
+    },
+    {
+      "rank": 65,
+      "characterName": "Pillarhug",
+      "realmSlug": "spineshatter",
+      "rating": 2469,
+      "wins": 525,
+      "losses": 453,
+      "specId": null
+    },
+    {
+      "rank": 67,
+      "characterName": "Saadiyat",
+      "realmSlug": "spineshatter",
+      "rating": 2468,
+      "wins": 60,
+      "losses": 11,
+      "specId": null
+    },
+    {
+      "rank": 67,
+      "characterName": "Jînz",
+      "realmSlug": "spineshatter",
+      "rating": 2468,
+      "wins": 64,
+      "losses": 30,
+      "specId": null
+    },
+    {
+      "rank": 67,
+      "characterName": "Rokhsan",
+      "realmSlug": "spineshatter",
+      "rating": 2468,
+      "wins": 110,
+      "losses": 64,
+      "specId": null
+    },
+    {
+      "rank": 70,
+      "characterName": "Imx",
+      "realmSlug": "spineshatter",
+      "rating": 2466,
+      "wins": 836,
+      "losses": 658,
+      "specId": null
+    },
+    {
+      "rank": 71,
+      "characterName": "Qòxéq",
+      "realmSlug": "spineshatter",
+      "rating": 2465,
+      "wins": 432,
+      "losses": 373,
+      "specId": null
+    },
+    {
+      "rank": 72,
+      "characterName": "Valdix",
+      "realmSlug": "spineshatter",
+      "rating": 2462,
+      "wins": 96,
+      "losses": 56,
+      "specId": null
+    },
+    {
+      "rank": 73,
+      "characterName": "Eròth",
+      "realmSlug": "spineshatter",
+      "rating": 2460,
+      "wins": 100,
+      "losses": 67,
+      "specId": null
+    },
+    {
+      "rank": 74,
+      "characterName": "Nàrcis",
+      "realmSlug": "spineshatter",
+      "rating": 2459,
+      "wins": 78,
+      "losses": 42,
+      "specId": null
+    },
+    {
+      "rank": 75,
+      "characterName": "Draindlahype",
+      "realmSlug": "spineshatter",
+      "rating": 2458,
+      "wins": 159,
+      "losses": 94,
+      "specId": null
+    },
+    {
+      "rank": 76,
+      "characterName": "Groblin",
+      "realmSlug": "spineshatter",
+      "rating": 2457,
+      "wins": 301,
+      "losses": 210,
+      "specId": null
+    },
+    {
+      "rank": 77,
+      "characterName": "Monarkie",
+      "realmSlug": "spineshatter",
+      "rating": 2455,
+      "wins": 129,
+      "losses": 81,
+      "specId": null
+    },
+    {
+      "rank": 77,
+      "characterName": "Nanuker",
+      "realmSlug": "spineshatter",
+      "rating": 2455,
+      "wins": 97,
+      "losses": 65,
+      "specId": null
+    },
+    {
+      "rank": 79,
+      "characterName": "Dikzyzquad",
+      "realmSlug": "spineshatter",
+      "rating": 2454,
+      "wins": 154,
+      "losses": 95,
+      "specId": null
+    },
+    {
+      "rank": 79,
+      "characterName": "Hanac",
+      "realmSlug": "spineshatter",
+      "rating": 2454,
+      "wins": 218,
+      "losses": 177,
+      "specId": null
+    },
+    {
+      "rank": 79,
+      "characterName": "Azulorg",
+      "realmSlug": "spineshatter",
+      "rating": 2454,
+      "wins": 219,
+      "losses": 179,
+      "specId": null
+    },
+    {
+      "rank": 82,
+      "characterName": "Azooldán",
+      "realmSlug": "spineshatter",
+      "rating": 2443,
+      "wins": 324,
+      "losses": 270,
+      "specId": null
+    },
+    {
+      "rank": 82,
+      "characterName": "Arturos",
+      "realmSlug": "spineshatter",
+      "rating": 2443,
+      "wins": 324,
+      "losses": 270,
+      "specId": null
+    },
+    {
+      "rank": 84,
+      "characterName": "Brooxz",
+      "realmSlug": "spineshatter",
+      "rating": 2442,
+      "wins": 194,
+      "losses": 121,
+      "specId": null
+    },
+    {
+      "rank": 85,
+      "characterName": "Pablobozzix",
+      "realmSlug": "spineshatter",
+      "rating": 2441,
+      "wins": 197,
+      "losses": 140,
+      "specId": null
+    },
+    {
+      "rank": 86,
+      "characterName": "Minpoggers",
+      "realmSlug": "spineshatter",
+      "rating": 2437,
+      "wins": 332,
+      "losses": 136,
+      "specId": null
+    },
+    {
+      "rank": 86,
+      "characterName": "Zizzap",
+      "realmSlug": "spineshatter",
+      "rating": 2437,
+      "wins": 63,
+      "losses": 43,
+      "specId": null
+    },
+    {
+      "rank": 88,
+      "characterName": "Zeeplol",
+      "realmSlug": "spineshatter",
+      "rating": 2436,
+      "wins": 125,
+      "losses": 69,
+      "specId": null
+    },
+    {
+      "rank": 88,
+      "characterName": "Quantz",
+      "realmSlug": "spineshatter",
+      "rating": 2436,
+      "wins": 198,
+      "losses": 155,
+      "specId": null
+    },
+    {
+      "rank": 90,
+      "characterName": "Rhz",
+      "realmSlug": "spineshatter",
+      "rating": 2435,
+      "wins": 186,
+      "losses": 142,
+      "specId": null
+    },
+    {
+      "rank": 91,
+      "characterName": "Dosenbîer",
+      "realmSlug": "spineshatter",
+      "rating": 2433,
+      "wins": 91,
+      "losses": 57,
+      "specId": null
+    },
+    {
+      "rank": 91,
+      "characterName": "Lazux",
+      "realmSlug": "spineshatter",
+      "rating": 2433,
+      "wins": 90,
+      "losses": 58,
+      "specId": null
+    },
+    {
+      "rank": 93,
+      "characterName": "Tånnerfrømhs",
+      "realmSlug": "spineshatter",
+      "rating": 2431,
+      "wins": 114,
+      "losses": 48,
+      "specId": null
+    },
+    {
+      "rank": 93,
+      "characterName": "Streyf",
+      "realmSlug": "spineshatter",
+      "rating": 2431,
+      "wins": 296,
+      "losses": 241,
+      "specId": null
+    },
+    {
+      "rank": 95,
+      "characterName": "Happysouls",
+      "realmSlug": "spineshatter",
+      "rating": 2430,
+      "wins": 198,
+      "losses": 148,
+      "specId": null
+    },
+    {
+      "rank": 96,
+      "characterName": "Zqix",
+      "realmSlug": "spineshatter",
+      "rating": 2427,
+      "wins": 105,
+      "losses": 60,
+      "specId": null
+    },
+    {
+      "rank": 97,
+      "characterName": "Holyrob",
+      "realmSlug": "spineshatter",
+      "rating": 2426,
+      "wins": 76,
+      "losses": 39,
+      "specId": null
+    },
+    {
+      "rank": 97,
+      "characterName": "Neepzenwl",
+      "realmSlug": "spineshatter",
+      "rating": 2426,
+      "wins": 161,
+      "losses": 104,
+      "specId": null
+    },
+    {
+      "rank": 97,
+      "characterName": "Nonàme",
+      "realmSlug": "spineshatter",
+      "rating": 2426,
+      "wins": 134,
+      "losses": 96,
+      "specId": null
+    },
+    {
+      "rank": 97,
+      "characterName": "Krln",
+      "realmSlug": "spineshatter",
+      "rating": 2426,
+      "wins": 136,
+      "losses": 99,
+      "specId": null
+    }
+  ]
+}

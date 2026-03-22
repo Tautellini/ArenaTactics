@@ -1,0 +1,40 @@
+name: Fetch PvP Ladder Data
+
+on:
+  schedule:
+    # Run daily at 06:00 UTC (after daily reset for most regions)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-ladder:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch ladder data from Blizzard API
+        env:
+          BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
+          BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
+        run: python scripts/fetch_ladder.py
+
+      - name: Commit updated ladder data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add composeApp/src/commonMain/composeResources/files/ladder/
+          if git diff --cached --quiet; then
+            echo "No ladder data changes to commit."
+          else
+            git commit -m "chore: update PvP ladder data $(date -u +%Y-%m-%d)"
+            git push
+          fi

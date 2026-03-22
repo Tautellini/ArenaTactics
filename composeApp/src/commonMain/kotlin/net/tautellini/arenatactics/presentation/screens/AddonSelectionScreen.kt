@@ -17,6 +17,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.AutoAwesome
+import androidx.compose.material.icons.rounded.Leaderboard
 import androidx.compose.material.icons.rounded.MenuBook
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
@@ -146,6 +147,19 @@ fun AddonSelectionScreen(
                                     onClick = {
                                         selection.addon?.let { addon ->
                                             onNavigate(Screen.ClassGuideList(addon.id))
+                                        }
+                                    }
+                                )
+                                SectionTile(
+                                    icon = Icons.Rounded.Leaderboard,
+                                    title = "Ladder",
+                                    subtitle = "Rating cutoffs & top players",
+                                    isSelected = false,
+                                    alpha = 1f,
+                                    loadingState = null,
+                                    onClick = {
+                                        selection.addon?.let { addon ->
+                                            onNavigate(Screen.Ladder(addon.id))
                                         }
                                     }
                                 )

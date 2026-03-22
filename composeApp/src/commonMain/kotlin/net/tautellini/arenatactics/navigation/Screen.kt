@@ -12,6 +12,7 @@ sealed class Screen {
     @Serializable data class MatchupDetail(val addonId: String, val gameModeId: String, val compositionId: String, val matchupId: String) : Screen()
     @Serializable data class ClassGuideList(val addonId: String) : Screen()
     @Serializable data class SpecGuide(val addonId: String, val classId: String, val specId: String) : Screen()
+    @Serializable data class Ladder(val addonId: String) : Screen()
 
     /**
      * Compact browser URL. Internal IDs are unchanged; only the URL is shortened.
@@ -29,6 +30,7 @@ sealed class Screen {
         is MatchupDetail        -> "/$addonId/tactics/${gameModeId.shortBracket(addonId)}/${compositionId.specIdsToPlus()}/vs/${matchupId.enemyPart()}"
         is ClassGuideList       -> "/$addonId/guides"
         is SpecGuide            -> "/$addonId/guides/$specId"
+        is Ladder               -> "/$addonId/ladder"
     }
 
     companion object {
@@ -52,6 +54,7 @@ sealed class Screen {
                     val classId = specId.substringBefore('_')
                     SpecGuide(addonId, classId, specId)
                 }
+                "ladder"  -> Ladder(addonId)
                 else      -> AddonSelection
             }
         }
@@ -63,6 +66,8 @@ sealed class Screen {
             is MatchupDetail        -> listOf(AddonSelection, CompositionSelection(screen.addonId, screen.gameModeId), MatchupList(screen.addonId, screen.gameModeId, screen.compositionId), screen)
             is ClassGuideList       -> listOf(AddonSelection, screen)
             is SpecGuide            -> listOf(AddonSelection, ClassGuideList(screen.addonId), screen)
+            is Ladder               -> listOf(AddonSelection, screen)
+
         }
     }
 }
@@ -90,6 +95,8 @@ fun NavBackStackEntry.toScreen(): Screen {
             .let { Screen.ClassGuideList(it.addonId) }
         "SpecGuide"            in route -> toRoute<Screen.SpecGuide>()
             .let { Screen.SpecGuide(it.addonId, it.classId, it.specId) }
+        "Ladder"               in route -> toRoute<Screen.Ladder>()
+            .let { Screen.Ladder(it.addonId) }
         else                            -> Screen.AddonSelection // should not happen; all routes are registered above
     }
 }

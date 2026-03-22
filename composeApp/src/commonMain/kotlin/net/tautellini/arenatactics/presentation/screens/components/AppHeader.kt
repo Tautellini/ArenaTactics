@@ -77,6 +77,7 @@ private fun Screen.extractAddonId(): String? = when (this) {
     is Screen.MatchupDetail -> addonId
     is Screen.ClassGuideList -> addonId
     is Screen.SpecGuide -> addonId
+    is Screen.Ladder -> addonId
 }
 
 private fun Screen.extractGameModeId(): String? = when (this) {
@@ -118,6 +119,7 @@ fun AppHeader(
     val gameModeId = currentScreen.extractGameModeId()
     val isTactics = currentScreen.isTacticsPath()
     val isGuides = currentScreen.isGuidesPath()
+    val isLadder = currentScreen is Screen.Ladder
 
     // Ensure game modes are loaded for the current addon
     LaunchedEffect(addonId) {
@@ -209,7 +211,7 @@ fun AppHeader(
             ) {
                 when (segment) {
                     SegmentType.ADDON -> AddonSegmentContent(currentAddon, addonId, accentColor)
-                    SegmentType.SECTION -> SectionSegmentContent(isTactics)
+                    SegmentType.SECTION -> SectionSegmentContent(isTactics, isLadder)
                     SegmentType.BRACKET -> BracketSegmentContent(currentGameMode, gameModeId)
                 }
             }
@@ -239,7 +241,8 @@ fun AppHeader(
                 SegmentType.SECTION -> {
                     val alternatives = listOf(
                         "Tactics" to isTactics,
-                        "Class Guides" to isGuides
+                        "Class Guides" to isGuides,
+                        "Ladder" to isLadder
                     )
                     alternatives.filter { !it.second }.forEach { (label, _) ->
                         InlineOption(
@@ -247,13 +250,15 @@ fun AppHeader(
                             onClick = {
                                 expanded = null
                                 if (addonId != null) {
-                                    if (label == "Tactics") {
-                                        val firstMode = gameModes.firstOrNull { it.hasData }
-                                        if (firstMode != null) {
-                                            onNavigate(Screen.CompositionSelection(addonId, firstMode.id))
+                                    when (label) {
+                                        "Tactics" -> {
+                                            val firstMode = gameModes.firstOrNull { it.hasData }
+                                            if (firstMode != null) {
+                                                onNavigate(Screen.CompositionSelection(addonId, firstMode.id))
+                                            }
                                         }
-                                    } else {
-                                        onNavigate(Screen.ClassGuideList(addonId))
+                                        "Ladder" -> onNavigate(Screen.Ladder(addonId))
+                                        else -> onNavigate(Screen.ClassGuideList(addonId))
                                     }
                                 }
                             }
@@ -341,9 +346,13 @@ private fun AddonSegmentContent(addon: Addon?, addonId: String?, accent: Color) 
 }
 
 @Composable
-private fun SectionSegmentContent(isTactics: Boolean) {
+private fun SectionSegmentContent(isTactics: Boolean, isLadder: Boolean = false) {
     Text(
-        text = if (isTactics) "Tactics" else "Guides",
+        text = when {
+            isTactics -> "Tactics"
+            isLadder  -> "Ladder"
+            else      -> "Guides"
+        },
         color = TextPrimary,
         fontSize = 13.sp,
         fontWeight = FontWeight.SemiBold
@@ -454,6 +463,9 @@ private fun buildTrailingBreadcrumbs(screen: Screen): List<TrailingCrumb> = when
             target = Screen.ClassGuideList(screen.addonId)
         ),
         TrailingCrumb(screen.specId.formatId(), isCurrent = true, target = null)
+    )
+    is Screen.Ladder -> listOf(
+        TrailingCrumb("Ladder", isCurrent = true, target = null)
     )
     else -> emptyList()
 }

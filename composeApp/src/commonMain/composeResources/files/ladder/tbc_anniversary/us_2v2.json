@@ -1,0 +1,916 @@
+{
+  "region": "us",
+  "bracket": "2v2",
+  "seasonId": 1,
+  "fetchedAt": "2026-03-22T10:44:21Z",
+  "totalEntries": 5003,
+  "ratingCutoffs": {
+    "gladiator": 2398,
+    "duelist": 1862,
+    "rival": 1580,
+    "challenger": 1443
+  },
+  "specDistribution": [],
+  "topEntries": [
+    {
+      "rank": 1,
+      "characterName": "Xz",
+      "realmSlug": "nightslayer",
+      "rating": 2548,
+      "wins": 256,
+      "losses": 142,
+      "specId": null
+    },
+    {
+      "rank": 2,
+      "characterName": "Horsemeet",
+      "realmSlug": "nightslayer",
+      "rating": 2514,
+      "wins": 329,
+      "losses": 212,
+      "specId": null
+    },
+    {
+      "rank": 3,
+      "characterName": "Bluespy",
+      "realmSlug": "nightslayer",
+      "rating": 2510,
+      "wins": 349,
+      "losses": 167,
+      "specId": null
+    },
+    {
+      "rank": 3,
+      "characterName": "Roguedude",
+      "realmSlug": "nightslayer",
+      "rating": 2510,
+      "wins": 400,
+      "losses": 194,
+      "specId": null
+    },
+    {
+      "rank": 5,
+      "characterName": "Trackpad",
+      "realmSlug": "nightslayer",
+      "rating": 2508,
+      "wins": 131,
+      "losses": 51,
+      "specId": null
+    },
+    {
+      "rank": 6,
+      "characterName": "Famedemon",
+      "realmSlug": "nightslayer",
+      "rating": 2504,
+      "wins": 88,
+      "losses": 13,
+      "specId": null
+    },
+    {
+      "rank": 7,
+      "characterName": "Seth",
+      "realmSlug": "nightslayer",
+      "rating": 2497,
+      "wins": 402,
+      "losses": 283,
+      "specId": null
+    },
+    {
+      "rank": 8,
+      "characterName": "Gothicgooner",
+      "realmSlug": "nightslayer",
+      "rating": 2496,
+      "wins": 65,
+      "losses": 20,
+      "specId": null
+    },
+    {
+      "rank": 9,
+      "characterName": "Arlofox",
+      "realmSlug": "nightslayer",
+      "rating": 2493,
+      "wins": 150,
+      "losses": 57,
+      "specId": null
+    },
+    {
+      "rank": 10,
+      "characterName": "Shunning",
+      "realmSlug": "nightslayer",
+      "rating": 2488,
+      "wins": 474,
+      "losses": 342,
+      "specId": null
+    },
+    {
+      "rank": 11,
+      "characterName": "Flaberz",
+      "realmSlug": "nightslayer",
+      "rating": 2483,
+      "wins": 198,
+      "losses": 88,
+      "specId": null
+    },
+    {
+      "rank": 12,
+      "characterName": "Boris",
+      "realmSlug": "nightslayer",
+      "rating": 2482,
+      "wins": 192,
+      "losses": 124,
+      "specId": null
+    },
+    {
+      "rank": 13,
+      "characterName": "Tomcruisetbc",
+      "realmSlug": "nightslayer",
+      "rating": 2477,
+      "wins": 385,
+      "losses": 283,
+      "specId": null
+    },
+    {
+      "rank": 14,
+      "characterName": "Malices",
+      "realmSlug": "nightslayer",
+      "rating": 2476,
+      "wins": 121,
+      "losses": 51,
+      "specId": null
+    },
+    {
+      "rank": 15,
+      "characterName": "Inquislolxd",
+      "realmSlug": "nightslayer",
+      "rating": 2475,
+      "wins": 170,
+      "losses": 82,
+      "specId": null
+    },
+    {
+      "rank": 16,
+      "characterName": "Sbur",
+      "realmSlug": "nightslayer",
+      "rating": 2473,
+      "wins": 181,
+      "losses": 75,
+      "specId": null
+    },
+    {
+      "rank": 17,
+      "characterName": "Resistagane",
+      "realmSlug": "nightslayer",
+      "rating": 2472,
+      "wins": 305,
+      "losses": 195,
+      "specId": null
+    },
+    {
+      "rank": 18,
+      "characterName": "Mosquietos",
+      "realmSlug": "nightslayer",
+      "rating": 2470,
+      "wins": 389,
+      "losses": 244,
+      "specId": null
+    },
+    {
+      "rank": 19,
+      "characterName": "Dirtydebrah",
+      "realmSlug": "nightslayer",
+      "rating": 2467,
+      "wins": 87,
+      "losses": 29,
+      "specId": null
+    },
+    {
+      "rank": 20,
+      "characterName": "Mindbugger",
+      "realmSlug": "nightslayer",
+      "rating": 2455,
+      "wins": 340,
+      "losses": 199,
+      "specId": null
+    },
+    {
+      "rank": 21,
+      "characterName": "Pinkrangerz",
+      "realmSlug": "nightslayer",
+      "rating": 2449,
+      "wins": 116,
+      "losses": 63,
+      "specId": null
+    },
+    {
+      "rank": 22,
+      "characterName": "Btñ",
+      "realmSlug": "nightslayer",
+      "rating": 2445,
+      "wins": 77,
+      "losses": 30,
+      "specId": null
+    },
+    {
+      "rank": 23,
+      "characterName": "Vaehryn",
+      "realmSlug": "nightslayer",
+      "rating": 2443,
+      "wins": 101,
+      "losses": 46,
+      "specId": null
+    },
+    {
+      "rank": 23,
+      "characterName": "Eshkoshka",
+      "realmSlug": "nightslayer",
+      "rating": 2443,
+      "wins": 101,
+      "losses": 46,
+      "specId": null
+    },
+    {
+      "rank": 25,
+      "characterName": "Popeshow",
+      "realmSlug": "nightslayer",
+      "rating": 2441,
+      "wins": 629,
+      "losses": 425,
+      "specId": null
+    },
+    {
+      "rank": 26,
+      "characterName": "Cealeon",
+      "realmSlug": "nightslayer",
+      "rating": 2440,
+      "wins": 106,
+      "losses": 69,
+      "specId": null
+    },
+    {
+      "rank": 26,
+      "characterName": "Churp",
+      "realmSlug": "nightslayer",
+      "rating": 2440,
+      "wins": 106,
+      "losses": 69,
+      "specId": null
+    },
+    {
+      "rank": 28,
+      "characterName": "Nevve",
+      "realmSlug": "nightslayer",
+      "rating": 2435,
+      "wins": 148,
+      "losses": 90,
+      "specId": null
+    },
+    {
+      "rank": 29,
+      "characterName": "Relyzw",
+      "realmSlug": "nightslayer",
+      "rating": 2433,
+      "wins": 99,
+      "losses": 53,
+      "specId": null
+    },
+    {
+      "rank": 30,
+      "characterName": "Laynerzx",
+      "realmSlug": "nightslayer",
+      "rating": 2431,
+      "wins": 431,
+      "losses": 279,
+      "specId": null
+    },
+    {
+      "rank": 31,
+      "characterName": "Saucý",
+      "realmSlug": "nightslayer",
+      "rating": 2430,
+      "wins": 71,
+      "losses": 27,
+      "specId": null
+    },
+    {
+      "rank": 31,
+      "characterName": "Nierko",
+      "realmSlug": "nightslayer",
+      "rating": 2430,
+      "wins": 316,
+      "losses": 217,
+      "specId": null
+    },
+    {
+      "rank": 33,
+      "characterName": "Ibala",
+      "realmSlug": "nightslayer",
+      "rating": 2428,
+      "wins": 74,
+      "losses": 40,
+      "specId": null
+    },
+    {
+      "rank": 34,
+      "characterName": "Nesaj",
+      "realmSlug": "nightslayer",
+      "rating": 2427,
+      "wins": 95,
+      "losses": 36,
+      "specId": null
+    },
+    {
+      "rank": 34,
+      "characterName": "Cootz",
+      "realmSlug": "nightslayer",
+      "rating": 2427,
+      "wins": 90,
+      "losses": 42,
+      "specId": null
+    },
+    {
+      "rank": 34,
+      "characterName": "Unnamedlol",
+      "realmSlug": "nightslayer",
+      "rating": 2427,
+      "wins": 119,
+      "losses": 69,
+      "specId": null
+    },
+    {
+      "rank": 37,
+      "characterName": "Fonz",
+      "realmSlug": "nightslayer",
+      "rating": 2424,
+      "wins": 125,
+      "losses": 46,
+      "specId": null
+    },
+    {
+      "rank": 38,
+      "characterName": "Jetski",
+      "realmSlug": "nightslayer",
+      "rating": 2423,
+      "wins": 86,
+      "losses": 32,
+      "specId": null
+    },
+    {
+      "rank": 38,
+      "characterName": "Bigslappy",
+      "realmSlug": "nightslayer",
+      "rating": 2423,
+      "wins": 122,
+      "losses": 63,
+      "specId": null
+    },
+    {
+      "rank": 40,
+      "characterName": "Swåcked",
+      "realmSlug": "nightslayer",
+      "rating": 2418,
+      "wins": 357,
+      "losses": 209,
+      "specId": null
+    },
+    {
+      "rank": 40,
+      "characterName": "Nakanoflame",
+      "realmSlug": "nightslayer",
+      "rating": 2418,
+      "wins": 935,
+      "losses": 792,
+      "specId": null
+    },
+    {
+      "rank": 42,
+      "characterName": "Blakeatron",
+      "realmSlug": "nightslayer",
+      "rating": 2416,
+      "wins": 77,
+      "losses": 26,
+      "specId": null
+    },
+    {
+      "rank": 43,
+      "characterName": "Bolipop",
+      "realmSlug": "nightslayer",
+      "rating": 2411,
+      "wins": 235,
+      "losses": 160,
+      "specId": null
+    },
+    {
+      "rank": 44,
+      "characterName": "Cripton",
+      "realmSlug": "nightslayer",
+      "rating": 2410,
+      "wins": 583,
+      "losses": 432,
+      "specId": null
+    },
+    {
+      "rank": 44,
+      "characterName": "Ggrogue",
+      "realmSlug": "nightslayer",
+      "rating": 2410,
+      "wins": 452,
+      "losses": 385,
+      "specId": null
+    },
+    {
+      "rank": 44,
+      "characterName": "Klitch",
+      "realmSlug": "nightslayer",
+      "rating": 2410,
+      "wins": 404,
+      "losses": 358,
+      "specId": null
+    },
+    {
+      "rank": 47,
+      "characterName": "Yukozo",
+      "realmSlug": "nightslayer",
+      "rating": 2409,
+      "wins": 138,
+      "losses": 70,
+      "specId": null
+    },
+    {
+      "rank": 48,
+      "characterName": "Wholesumngey",
+      "realmSlug": "nightslayer",
+      "rating": 2408,
+      "wins": 215,
+      "losses": 136,
+      "specId": null
+    },
+    {
+      "rank": 49,
+      "characterName": "Earlsweats",
+      "realmSlug": "nightslayer",
+      "rating": 2406,
+      "wins": 254,
+      "losses": 158,
+      "specId": null
+    },
+    {
+      "rank": 50,
+      "characterName": "Nondon",
+      "realmSlug": "nightslayer",
+      "rating": 2405,
+      "wins": 194,
+      "losses": 66,
+      "specId": null
+    },
+    {
+      "rank": 50,
+      "characterName": "Pagess",
+      "realmSlug": "nightslayer",
+      "rating": 2405,
+      "wins": 104,
+      "losses": 46,
+      "specId": null
+    },
+    {
+      "rank": 52,
+      "characterName": "Thelle",
+      "realmSlug": "nightslayer",
+      "rating": 2402,
+      "wins": 114,
+      "losses": 64,
+      "specId": null
+    },
+    {
+      "rank": 52,
+      "characterName": "Beauchodex",
+      "realmSlug": "nightslayer",
+      "rating": 2402,
+      "wins": 163,
+      "losses": 138,
+      "specId": null
+    },
+    {
+      "rank": 54,
+      "characterName": "Pongkix",
+      "realmSlug": "nightslayer",
+      "rating": 2400,
+      "wins": 233,
+      "losses": 161,
+      "specId": null
+    },
+    {
+      "rank": 55,
+      "characterName": "Kayotics",
+      "realmSlug": "nightslayer",
+      "rating": 2398,
+      "wins": 167,
+      "losses": 97,
+      "specId": null
+    },
+    {
+      "rank": 56,
+      "characterName": "Glmfourseven",
+      "realmSlug": "nightslayer",
+      "rating": 2395,
+      "wins": 156,
+      "losses": 114,
+      "specId": null
+    },
+    {
+      "rank": 57,
+      "characterName": "Tusk",
+      "realmSlug": "nightslayer",
+      "rating": 2389,
+      "wins": 270,
+      "losses": 108,
+      "specId": null
+    },
+    {
+      "rank": 58,
+      "characterName": "Explicitlol",
+      "realmSlug": "nightslayer",
+      "rating": 2386,
+      "wins": 156,
+      "losses": 68,
+      "specId": null
+    },
+    {
+      "rank": 58,
+      "characterName": "Alors",
+      "realmSlug": "nightslayer",
+      "rating": 2386,
+      "wins": 107,
+      "losses": 58,
+      "specId": null
+    },
+    {
+      "rank": 58,
+      "characterName": "Goonergary",
+      "realmSlug": "nightslayer",
+      "rating": 2386,
+      "wins": 103,
+      "losses": 56,
+      "specId": null
+    },
+    {
+      "rank": 58,
+      "characterName": "Grapesøda",
+      "realmSlug": "nightslayer",
+      "rating": 2386,
+      "wins": 169,
+      "losses": 122,
+      "specId": null
+    },
+    {
+      "rank": 58,
+      "characterName": "Brainholes",
+      "realmSlug": "nightslayer",
+      "rating": 2386,
+      "wins": 169,
+      "losses": 122,
+      "specId": null
+    },
+    {
+      "rank": 63,
+      "characterName": "Zeedogg",
+      "realmSlug": "nightslayer",
+      "rating": 2383,
+      "wins": 97,
+      "losses": 34,
+      "specId": null
+    },
+    {
+      "rank": 64,
+      "characterName": "Evilmagicman",
+      "realmSlug": "nightslayer",
+      "rating": 2380,
+      "wins": 97,
+      "losses": 47,
+      "specId": null
+    },
+    {
+      "rank": 65,
+      "characterName": "Jetpackjack",
+      "realmSlug": "nightslayer",
+      "rating": 2378,
+      "wins": 91,
+      "losses": 30,
+      "specId": null
+    },
+    {
+      "rank": 65,
+      "characterName": "Dumptruckdan",
+      "realmSlug": "nightslayer",
+      "rating": 2378,
+      "wins": 97,
+      "losses": 39,
+      "specId": null
+    },
+    {
+      "rank": 67,
+      "characterName": "Blakecallow",
+      "realmSlug": "nightslayer",
+      "rating": 2377,
+      "wins": 140,
+      "losses": 84,
+      "specId": null
+    },
+    {
+      "rank": 68,
+      "characterName": "Ln",
+      "realmSlug": "nightslayer",
+      "rating": 2375,
+      "wins": 135,
+      "losses": 83,
+      "specId": null
+    },
+    {
+      "rank": 68,
+      "characterName": "Sinxd",
+      "realmSlug": "nightslayer",
+      "rating": 2375,
+      "wins": 352,
+      "losses": 250,
+      "specId": null
+    },
+    {
+      "rank": 70,
+      "characterName": "Fathrmcfeely",
+      "realmSlug": "nightslayer",
+      "rating": 2374,
+      "wins": 56,
+      "losses": 13,
+      "specId": null
+    },
+    {
+      "rank": 70,
+      "characterName": "Tbt",
+      "realmSlug": "nightslayer",
+      "rating": 2374,
+      "wins": 202,
+      "losses": 153,
+      "specId": null
+    },
+    {
+      "rank": 72,
+      "characterName": "Sloanzr",
+      "realmSlug": "nightslayer",
+      "rating": 2373,
+      "wins": 139,
+      "losses": 100,
+      "specId": null
+    },
+    {
+      "rank": 73,
+      "characterName": "Monsî",
+      "realmSlug": "nightslayer",
+      "rating": 2372,
+      "wins": 86,
+      "losses": 39,
+      "specId": null
+    },
+    {
+      "rank": 74,
+      "characterName": "Dvb",
+      "realmSlug": "nightslayer",
+      "rating": 2371,
+      "wins": 151,
+      "losses": 115,
+      "specId": null
+    },
+    {
+      "rank": 75,
+      "characterName": "Kyerson",
+      "realmSlug": "nightslayer",
+      "rating": 2370,
+      "wins": 175,
+      "losses": 118,
+      "specId": null
+    },
+    {
+      "rank": 76,
+      "characterName": "Dmags",
+      "realmSlug": "nightslayer",
+      "rating": 2369,
+      "wins": 81,
+      "losses": 39,
+      "specId": null
+    },
+    {
+      "rank": 76,
+      "characterName": "Wp",
+      "realmSlug": "nightslayer",
+      "rating": 2369,
+      "wins": 184,
+      "losses": 108,
+      "specId": null
+    },
+    {
+      "rank": 78,
+      "characterName": "Fzxy",
+      "realmSlug": "nightslayer",
+      "rating": 2368,
+      "wins": 220,
+      "losses": 169,
+      "specId": null
+    },
+    {
+      "rank": 79,
+      "characterName": "Csl",
+      "realmSlug": "nightslayer",
+      "rating": 2366,
+      "wins": 137,
+      "losses": 99,
+      "specId": null
+    },
+    {
+      "rank": 80,
+      "characterName": "Robertoross",
+      "realmSlug": "nightslayer",
+      "rating": 2365,
+      "wins": 126,
+      "losses": 78,
+      "specId": null
+    },
+    {
+      "rank": 80,
+      "characterName": "Esfandina",
+      "realmSlug": "nightslayer",
+      "rating": 2365,
+      "wins": 260,
+      "losses": 206,
+      "specId": null
+    },
+    {
+      "rank": 82,
+      "characterName": "Krsmatic",
+      "realmSlug": "nightslayer",
+      "rating": 2364,
+      "wins": 111,
+      "losses": 77,
+      "specId": null
+    },
+    {
+      "rank": 83,
+      "characterName": "Pfdx",
+      "realmSlug": "nightslayer",
+      "rating": 2362,
+      "wins": 169,
+      "losses": 125,
+      "specId": null
+    },
+    {
+      "rank": 83,
+      "characterName": "Weax",
+      "realmSlug": "nightslayer",
+      "rating": 2362,
+      "wins": 138,
+      "losses": 106,
+      "specId": null
+    },
+    {
+      "rank": 85,
+      "characterName": "Zoinksx",
+      "realmSlug": "nightslayer",
+      "rating": 2361,
+      "wins": 202,
+      "losses": 136,
+      "specId": null
+    },
+    {
+      "rank": 86,
+      "characterName": "Eggnogin",
+      "realmSlug": "nightslayer",
+      "rating": 2358,
+      "wins": 90,
+      "losses": 46,
+      "specId": null
+    },
+    {
+      "rank": 86,
+      "characterName": "Claudiax",
+      "realmSlug": "nightslayer",
+      "rating": 2358,
+      "wins": 90,
+      "losses": 46,
+      "specId": null
+    },
+    {
+      "rank": 86,
+      "characterName": "Jennifear",
+      "realmSlug": "nightslayer",
+      "rating": 2358,
+      "wins": 128,
+      "losses": 107,
+      "specId": null
+    },
+    {
+      "rank": 86,
+      "characterName": "Tabzy",
+      "realmSlug": "nightslayer",
+      "rating": 2358,
+      "wins": 243,
+      "losses": 210,
+      "specId": null
+    },
+    {
+      "rank": 90,
+      "characterName": "Xery",
+      "realmSlug": "nightslayer",
+      "rating": 2356,
+      "wins": 117,
+      "losses": 83,
+      "specId": null
+    },
+    {
+      "rank": 91,
+      "characterName": "Ambitiousx",
+      "realmSlug": "nightslayer",
+      "rating": 2355,
+      "wins": 333,
+      "losses": 260,
+      "specId": null
+    },
+    {
+      "rank": 91,
+      "characterName": "Alwaysresist",
+      "realmSlug": "nightslayer",
+      "rating": 2355,
+      "wins": 204,
+      "losses": 170,
+      "specId": null
+    },
+    {
+      "rank": 93,
+      "characterName": "Tween",
+      "realmSlug": "nightslayer",
+      "rating": 2347,
+      "wins": 249,
+      "losses": 173,
+      "specId": null
+    },
+    {
+      "rank": 93,
+      "characterName": "Vrtigo",
+      "realmSlug": "nightslayer",
+      "rating": 2347,
+      "wins": 174,
+      "losses": 135,
+      "specId": null
+    },
+    {
+      "rank": 95,
+      "characterName": "Vibecodr",
+      "realmSlug": "nightslayer",
+      "rating": 2346,
+      "wins": 93,
+      "losses": 65,
+      "specId": null
+    },
+    {
+      "rank": 96,
+      "characterName": "Sannas",
+      "realmSlug": "nightslayer",
+      "rating": 2345,
+      "wins": 92,
+      "losses": 52,
+      "specId": null
+    },
+    {
+      "rank": 96,
+      "characterName": "Katiecarry",
+      "realmSlug": "nightslayer",
+      "rating": 2345,
+      "wins": 74,
+      "losses": 51,
+      "specId": null
+    },
+    {
+      "rank": 96,
+      "characterName": "Dpsbot",
+      "realmSlug": "nightslayer",
+      "rating": 2345,
+      "wins": 74,
+      "losses": 51,
+      "specId": null
+    },
+    {
+      "rank": 99,
+      "characterName": "Inva",
+      "realmSlug": "nightslayer",
+      "rating": 2343,
+      "wins": 117,
+      "losses": 68,
+      "specId": null
+    },
+    {
+      "rank": 100,
+      "characterName": "Dizrupt",
+      "realmSlug": "nightslayer",
+      "rating": 2342,
+      "wins": 168,
+      "losses": 114,
+      "specId": null
+    }
+  ]
+}

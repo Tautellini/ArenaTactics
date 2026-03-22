@@ -1,0 +1,1107 @@
+{
+  "region": "us",
+  "bracket": "2v2",
+  "seasonId": 41,
+  "fetchedAt": "2026-03-22T10:45:10Z",
+  "totalEntries": 5021,
+  "ratingCutoffs": {},
+  "specDistribution": [
+    {
+      "specId": "paladin_retribution",
+      "count": 4016,
+      "percentage": 8.76
+    },
+    {
+      "specId": "priest_discipline",
+      "count": 3186,
+      "percentage": 6.95
+    },
+    {
+      "specId": "paladin_holy",
+      "count": 2896,
+      "percentage": 6.32
+    },
+    {
+      "specId": "deathknight_unholy",
+      "count": 2757,
+      "percentage": 6.01
+    },
+    {
+      "specId": "monk_mistweaver",
+      "count": 2737,
+      "percentage": 5.97
+    },
+    {
+      "specId": "rogue_subtlety",
+      "count": 2478,
+      "percentage": 5.4
+    },
+    {
+      "specId": "demonhunter_havoc",
+      "count": 2332,
+      "percentage": 5.09
+    },
+    {
+      "specId": "mage_frost",
+      "count": 2008,
+      "percentage": 4.38
+    },
+    {
+      "specId": "hunter_marksmanship",
+      "count": 1803,
+      "percentage": 3.93
+    },
+    {
+      "specId": "druid_restoration",
+      "count": 1799,
+      "percentage": 3.92
+    },
+    {
+      "specId": "warrior_fury",
+      "count": 1769,
+      "percentage": 3.86
+    },
+    {
+      "specId": "monk_windwalker",
+      "count": 1497,
+      "percentage": 3.26
+    },
+    {
+      "specId": "priest_holy",
+      "count": 1486,
+      "percentage": 3.24
+    },
+    {
+      "specId": "warlock_destruction",
+      "count": 1312,
+      "percentage": 2.86
+    },
+    {
+      "specId": "shaman_restoration",
+      "count": 1185,
+      "percentage": 2.58
+    },
+    {
+      "specId": "warlock_demonology",
+      "count": 1170,
+      "percentage": 2.55
+    },
+    {
+      "specId": "druid_balance",
+      "count": 1092,
+      "percentage": 2.38
+    },
+    {
+      "specId": "priest_shadow",
+      "count": 1049,
+      "percentage": 2.29
+    },
+    {
+      "specId": "druid_feral",
+      "count": 923,
+      "percentage": 2.01
+    },
+    {
+      "specId": "hunter_beastmastery",
+      "count": 923,
+      "percentage": 2.01
+    },
+    {
+      "specId": "warrior_arms",
+      "count": 923,
+      "percentage": 2.01
+    },
+    {
+      "specId": "shaman_enhancement",
+      "count": 911,
+      "percentage": 1.99
+    },
+    {
+      "specId": "mage_fire",
+      "count": 854,
+      "percentage": 1.86
+    },
+    {
+      "specId": "evoker_preservation",
+      "count": 798,
+      "percentage": 1.74
+    },
+    {
+      "specId": "evoker_devastation",
+      "count": 683,
+      "percentage": 1.49
+    },
+    {
+      "specId": "hunter_survival",
+      "count": 634,
+      "percentage": 1.38
+    },
+    {
+      "specId": "shaman_elemental",
+      "count": 535,
+      "percentage": 1.17
+    },
+    {
+      "specId": "deathknight_frost",
+      "count": 456,
+      "percentage": 0.99
+    },
+    {
+      "specId": "warlock_affliction",
+      "count": 440,
+      "percentage": 0.96
+    },
+    {
+      "specId": "rogue_assassination",
+      "count": 280,
+      "percentage": 0.61
+    },
+    {
+      "specId": "mage_arcane",
+      "count": 239,
+      "percentage": 0.52
+    },
+    {
+      "specId": "druid_guardian",
+      "count": 183,
+      "percentage": 0.4
+    },
+    {
+      "specId": "paladin_protection",
+      "count": 155,
+      "percentage": 0.34
+    },
+    {
+      "specId": "rogue_outlaw",
+      "count": 128,
+      "percentage": 0.28
+    },
+    {
+      "specId": "monk_brewmaster",
+      "count": 59,
+      "percentage": 0.13
+    },
+    {
+      "specId": "warrior_protection",
+      "count": 50,
+      "percentage": 0.11
+    },
+    {
+      "specId": "evoker_augmentation",
+      "count": 48,
+      "percentage": 0.1
+    },
+    {
+      "specId": "deathknight_blood",
+      "count": 46,
+      "percentage": 0.1
+    },
+    {
+      "specId": "demonhunter_vengeance",
+      "count": 16,
+      "percentage": 0.03
+    }
+  ],
+  "topEntries": [
+    {
+      "rank": 1,
+      "characterName": "Nïkkï",
+      "realmSlug": "sargeras",
+      "rating": 2144,
+      "wins": 79,
+      "losses": 25,
+      "specId": null
+    },
+    {
+      "rank": 2,
+      "characterName": "Trpblitzer",
+      "realmSlug": "stormrage",
+      "rating": 2126,
+      "wins": 57,
+      "losses": 15,
+      "specId": null
+    },
+    {
+      "rank": 3,
+      "characterName": "Slicingwinds",
+      "realmSlug": "area-52",
+      "rating": 2113,
+      "wins": 67,
+      "losses": 28,
+      "specId": null
+    },
+    {
+      "rank": 4,
+      "characterName": "Bigvuqoffdam",
+      "realmSlug": "area-52",
+      "rating": 2110,
+      "wins": 64,
+      "losses": 17,
+      "specId": null
+    },
+    {
+      "rank": 5,
+      "characterName": "Zizx",
+      "realmSlug": "tichondrius",
+      "rating": 2101,
+      "wins": 54,
+      "losses": 7,
+      "specId": null
+    },
+    {
+      "rank": 6,
+      "characterName": "Kenolol",
+      "realmSlug": "sargeras",
+      "rating": 2087,
+      "wins": 68,
+      "losses": 33,
+      "specId": null
+    },
+    {
+      "rank": 7,
+      "characterName": "Dracob",
+      "realmSlug": "sargeras",
+      "rating": 2081,
+      "wins": 57,
+      "losses": 29,
+      "specId": null
+    },
+    {
+      "rank": 8,
+      "characterName": "Cedpally",
+      "realmSlug": "akama",
+      "rating": 2072,
+      "wins": 50,
+      "losses": 12,
+      "specId": null
+    },
+    {
+      "rank": 9,
+      "characterName": "Kokushibo",
+      "realmSlug": "durotan",
+      "rating": 2042,
+      "wins": 63,
+      "losses": 32,
+      "specId": null
+    },
+    {
+      "rank": 10,
+      "characterName": "Iildevo",
+      "realmSlug": "tichondrius",
+      "rating": 2041,
+      "wins": 49,
+      "losses": 21,
+      "specId": null
+    },
+    {
+      "rank": 11,
+      "characterName": "Intervention",
+      "realmSlug": "black-dragonflight",
+      "rating": 2039,
+      "wins": 69,
+      "losses": 40,
+      "specId": null
+    },
+    {
+      "rank": 12,
+      "characterName": "Hogx",
+      "realmSlug": "sargeras",
+      "rating": 2018,
+      "wins": 49,
+      "losses": 31,
+      "specId": null
+    },
+    {
+      "rank": 13,
+      "characterName": "Iilgayrylenz",
+      "realmSlug": "moon-guard",
+      "rating": 2016,
+      "wins": 50,
+      "losses": 22,
+      "specId": null
+    },
+    {
+      "rank": 14,
+      "characterName": "Preblur",
+      "realmSlug": "sargeras",
+      "rating": 2014,
+      "wins": 60,
+      "losses": 16,
+      "specId": null
+    },
+    {
+      "rank": 15,
+      "characterName": "Abstractr",
+      "realmSlug": "sargeras",
+      "rating": 2012,
+      "wins": 44,
+      "losses": 21,
+      "specId": null
+    },
+    {
+      "rank": 16,
+      "characterName": "Awesomecow",
+      "realmSlug": "runetotem",
+      "rating": 2007,
+      "wins": 74,
+      "losses": 33,
+      "specId": null
+    },
+    {
+      "rank": 17,
+      "characterName": "Phystursista",
+      "realmSlug": "tichondrius",
+      "rating": 2002,
+      "wins": 48,
+      "losses": 12,
+      "specId": null
+    },
+    {
+      "rank": 17,
+      "characterName": "Envenumb",
+      "realmSlug": "stormrage",
+      "rating": 2002,
+      "wins": 48,
+      "losses": 24,
+      "specId": null
+    },
+    {
+      "rank": 19,
+      "characterName": "Xiuni",
+      "realmSlug": "shadowmoon",
+      "rating": 2000,
+      "wins": 75,
+      "losses": 47,
+      "specId": null
+    },
+    {
+      "rank": 20,
+      "characterName": "Jarome",
+      "realmSlug": "area-52",
+      "rating": 1999,
+      "wins": 85,
+      "losses": 51,
+      "specId": null
+    },
+    {
+      "rank": 21,
+      "characterName": "Yeonguo",
+      "realmSlug": "drakthul",
+      "rating": 1986,
+      "wins": 61,
+      "losses": 42,
+      "specId": null
+    },
+    {
+      "rank": 22,
+      "characterName": "Pelletbrain",
+      "realmSlug": "tichondrius",
+      "rating": 1985,
+      "wins": 57,
+      "losses": 23,
+      "specId": null
+    },
+    {
+      "rank": 23,
+      "characterName": "Sandorc",
+      "realmSlug": "sargeras",
+      "rating": 1980,
+      "wins": 48,
+      "losses": 20,
+      "specId": null
+    },
+    {
+      "rank": 24,
+      "characterName": "Inyxa",
+      "realmSlug": "bleeding-hollow",
+      "rating": 1977,
+      "wins": 43,
+      "losses": 5,
+      "specId": null
+    },
+    {
+      "rank": 25,
+      "characterName": "Stupidmode",
+      "realmSlug": "kelthuzad",
+      "rating": 1966,
+      "wins": 42,
+      "losses": 8,
+      "specId": null
+    },
+    {
+      "rank": 26,
+      "characterName": "Briån",
+      "realmSlug": "bleeding-hollow",
+      "rating": 1965,
+      "wins": 65,
+      "losses": 15,
+      "specId": null
+    },
+    {
+      "rank": 26,
+      "characterName": "Nahj",
+      "realmSlug": "tichondrius",
+      "rating": 1965,
+      "wins": 39,
+      "losses": 17,
+      "specId": null
+    },
+    {
+      "rank": 28,
+      "characterName": "Drenz",
+      "realmSlug": "scilla",
+      "rating": 1964,
+      "wins": 41,
+      "losses": 11,
+      "specId": null
+    },
+    {
+      "rank": 28,
+      "characterName": "Tækwondõ",
+      "realmSlug": "area-52",
+      "rating": 1964,
+      "wins": 46,
+      "losses": 28,
+      "specId": null
+    },
+    {
+      "rank": 30,
+      "characterName": "Zurcllur",
+      "realmSlug": "zuljin",
+      "rating": 1963,
+      "wins": 46,
+      "losses": 22,
+      "specId": null
+    },
+    {
+      "rank": 30,
+      "characterName": "Boa",
+      "realmSlug": "moon-guard",
+      "rating": 1963,
+      "wins": 44,
+      "losses": 26,
+      "specId": null
+    },
+    {
+      "rank": 32,
+      "characterName": "Mlac",
+      "realmSlug": "illidan",
+      "rating": 1962,
+      "wins": 49,
+      "losses": 9,
+      "specId": null
+    },
+    {
+      "rank": 33,
+      "characterName": "Drexia",
+      "realmSlug": "tichondrius",
+      "rating": 1961,
+      "wins": 50,
+      "losses": 23,
+      "specId": null
+    },
+    {
+      "rank": 34,
+      "characterName": "Projectalice",
+      "realmSlug": "malganis",
+      "rating": 1958,
+      "wins": 55,
+      "losses": 39,
+      "specId": null
+    },
+    {
+      "rank": 35,
+      "characterName": "Loverimjobs",
+      "realmSlug": "sargeras",
+      "rating": 1956,
+      "wins": 68,
+      "losses": 32,
+      "specId": null
+    },
+    {
+      "rank": 36,
+      "characterName": "Dayx",
+      "realmSlug": "malganis",
+      "rating": 1952,
+      "wins": 53,
+      "losses": 38,
+      "specId": null
+    },
+    {
+      "rank": 37,
+      "characterName": "Momseducer",
+      "realmSlug": "tichondrius",
+      "rating": 1950,
+      "wins": 46,
+      "losses": 19,
+      "specId": null
+    },
+    {
+      "rank": 37,
+      "characterName": "Treesmalls",
+      "realmSlug": "tichondrius",
+      "rating": 1950,
+      "wins": 46,
+      "losses": 19,
+      "specId": null
+    },
+    {
+      "rank": 39,
+      "characterName": "Mejibray",
+      "realmSlug": "sargeras",
+      "rating": 1948,
+      "wins": 55,
+      "losses": 6,
+      "specId": null
+    },
+    {
+      "rank": 40,
+      "characterName": "Cd",
+      "realmSlug": "blackwing-lair",
+      "rating": 1947,
+      "wins": 87,
+      "losses": 33,
+      "specId": null
+    },
+    {
+      "rank": 41,
+      "characterName": "Paradox",
+      "realmSlug": "kul-tiras",
+      "rating": 1945,
+      "wins": 51,
+      "losses": 12,
+      "specId": null
+    },
+    {
+      "rank": 42,
+      "characterName": "Addison",
+      "realmSlug": "ravencrest",
+      "rating": 1943,
+      "wins": 56,
+      "losses": 33,
+      "specId": null
+    },
+    {
+      "rank": 43,
+      "characterName": "Fairyfloral",
+      "realmSlug": "wyrmrest-accord",
+      "rating": 1937,
+      "wins": 72,
+      "losses": 44,
+      "specId": null
+    },
+    {
+      "rank": 44,
+      "characterName": "Mutations",
+      "realmSlug": "sargeras",
+      "rating": 1932,
+      "wins": 46,
+      "losses": 22,
+      "specId": null
+    },
+    {
+      "rank": 45,
+      "characterName": "Tsúnadé",
+      "realmSlug": "tichondrius",
+      "rating": 1930,
+      "wins": 53,
+      "losses": 27,
+      "specId": null
+    },
+    {
+      "rank": 46,
+      "characterName": "Cåpeesh",
+      "realmSlug": "tichondrius",
+      "rating": 1929,
+      "wins": 44,
+      "losses": 30,
+      "specId": null
+    },
+    {
+      "rank": 47,
+      "characterName": "Jax",
+      "realmSlug": "tichondrius",
+      "rating": 1927,
+      "wins": 53,
+      "losses": 22,
+      "specId": null
+    },
+    {
+      "rank": 47,
+      "characterName": "Emrys",
+      "realmSlug": "frostmourne",
+      "rating": 1927,
+      "wins": 71,
+      "losses": 45,
+      "specId": null
+    },
+    {
+      "rank": 49,
+      "characterName": "Bingbingbing",
+      "realmSlug": "kelthuzad",
+      "rating": 1925,
+      "wins": 39,
+      "losses": 13,
+      "specId": null
+    },
+    {
+      "rank": 49,
+      "characterName": "Redrumx",
+      "realmSlug": "emerald-dream",
+      "rating": 1925,
+      "wins": 40,
+      "losses": 19,
+      "specId": null
+    },
+    {
+      "rank": 51,
+      "characterName": "Cêtámorto",
+      "realmSlug": "azralon",
+      "rating": 1924,
+      "wins": 49,
+      "losses": 23,
+      "specId": null
+    },
+    {
+      "rank": 52,
+      "characterName": "Innerverse",
+      "realmSlug": "tichondrius",
+      "rating": 1923,
+      "wins": 42,
+      "losses": 24,
+      "specId": null
+    },
+    {
+      "rank": 52,
+      "characterName": "Lovelike",
+      "realmSlug": "tichondrius",
+      "rating": 1923,
+      "wins": 42,
+      "losses": 24,
+      "specId": null
+    },
+    {
+      "rank": 54,
+      "characterName": "Rakndal",
+      "realmSlug": "stormrage",
+      "rating": 1921,
+      "wins": 52,
+      "losses": 22,
+      "specId": null
+    },
+    {
+      "rank": 55,
+      "characterName": "Hog",
+      "realmSlug": "darkspear",
+      "rating": 1920,
+      "wins": 38,
+      "losses": 16,
+      "specId": null
+    },
+    {
+      "rank": 56,
+      "characterName": "Gobbysmalls",
+      "realmSlug": "frostmourne",
+      "rating": 1919,
+      "wins": 41,
+      "losses": 23,
+      "specId": null
+    },
+    {
+      "rank": 56,
+      "characterName": "Valerie",
+      "realmSlug": "dreadmaul",
+      "rating": 1919,
+      "wins": 41,
+      "losses": 23,
+      "specId": null
+    },
+    {
+      "rank": 58,
+      "characterName": "Eli",
+      "realmSlug": "scarlet-crusade",
+      "rating": 1914,
+      "wins": 51,
+      "losses": 11,
+      "specId": null
+    },
+    {
+      "rank": 59,
+      "characterName": "Deathnull",
+      "realmSlug": "cenarius",
+      "rating": 1912,
+      "wins": 37,
+      "losses": 15,
+      "specId": null
+    },
+    {
+      "rank": 59,
+      "characterName": "Nobi",
+      "realmSlug": "malganis",
+      "rating": 1912,
+      "wins": 100,
+      "losses": 77,
+      "specId": null
+    },
+    {
+      "rank": 61,
+      "characterName": "Dråak",
+      "realmSlug": "tichondrius",
+      "rating": 1911,
+      "wins": 75,
+      "losses": 33,
+      "specId": null
+    },
+    {
+      "rank": 61,
+      "characterName": "Espeon",
+      "realmSlug": "greymane",
+      "rating": 1911,
+      "wins": 49,
+      "losses": 25,
+      "specId": null
+    },
+    {
+      "rank": 63,
+      "characterName": "Epícburn",
+      "realmSlug": "illidan",
+      "rating": 1907,
+      "wins": 65,
+      "losses": 35,
+      "specId": null
+    },
+    {
+      "rank": 63,
+      "characterName": "Twojayzee",
+      "realmSlug": "tichondrius",
+      "rating": 1907,
+      "wins": 60,
+      "losses": 46,
+      "specId": null
+    },
+    {
+      "rank": 65,
+      "characterName": "Gloxx",
+      "realmSlug": "darkspear",
+      "rating": 1905,
+      "wins": 66,
+      "losses": 46,
+      "specId": null
+    },
+    {
+      "rank": 66,
+      "characterName": "Däzëd",
+      "realmSlug": "stormrage",
+      "rating": 1904,
+      "wins": 38,
+      "losses": 9,
+      "specId": null
+    },
+    {
+      "rank": 66,
+      "characterName": "Lxchi",
+      "realmSlug": "tichondrius",
+      "rating": 1904,
+      "wins": 53,
+      "losses": 33,
+      "specId": null
+    },
+    {
+      "rank": 68,
+      "characterName": "Iloveblitz",
+      "realmSlug": "shuhalo",
+      "rating": 1903,
+      "wins": 44,
+      "losses": 21,
+      "specId": null
+    },
+    {
+      "rank": 69,
+      "characterName": "Aegzy",
+      "realmSlug": "stormrage",
+      "rating": 1902,
+      "wins": 35,
+      "losses": 19,
+      "specId": null
+    },
+    {
+      "rank": 70,
+      "characterName": "Snortedgfuel",
+      "realmSlug": "drenden",
+      "rating": 1901,
+      "wins": 52,
+      "losses": 31,
+      "specId": null
+    },
+    {
+      "rank": 70,
+      "characterName": "Freeshippin",
+      "realmSlug": "tichondrius",
+      "rating": 1901,
+      "wins": 49,
+      "losses": 40,
+      "specId": null
+    },
+    {
+      "rank": 72,
+      "characterName": "Jräco",
+      "realmSlug": "thrall",
+      "rating": 1900,
+      "wins": 38,
+      "losses": 22,
+      "specId": null
+    },
+    {
+      "rank": 72,
+      "characterName": "Fro",
+      "realmSlug": "terenas",
+      "rating": 1900,
+      "wins": 38,
+      "losses": 22,
+      "specId": null
+    },
+    {
+      "rank": 72,
+      "characterName": "Glocamole",
+      "realmSlug": "malganis",
+      "rating": 1900,
+      "wins": 52,
+      "losses": 42,
+      "specId": null
+    },
+    {
+      "rank": 75,
+      "characterName": "Freè",
+      "realmSlug": "illidan",
+      "rating": 1898,
+      "wins": 95,
+      "losses": 42,
+      "specId": null
+    },
+    {
+      "rank": 76,
+      "characterName": "Snowgigarat",
+      "realmSlug": "stormrage",
+      "rating": 1897,
+      "wins": 63,
+      "losses": 44,
+      "specId": null
+    },
+    {
+      "rank": 76,
+      "characterName": "Bingusguppy",
+      "realmSlug": "area-52",
+      "rating": 1897,
+      "wins": 62,
+      "losses": 47,
+      "specId": null
+    },
+    {
+      "rank": 78,
+      "characterName": "Xbabayagax",
+      "realmSlug": "illidan",
+      "rating": 1896,
+      "wins": 58,
+      "losses": 28,
+      "specId": null
+    },
+    {
+      "rank": 78,
+      "characterName": "Rykelinz",
+      "realmSlug": "illidan",
+      "rating": 1896,
+      "wins": 38,
+      "losses": 20,
+      "specId": null
+    },
+    {
+      "rank": 80,
+      "characterName": "Disconnect",
+      "realmSlug": "ysondre",
+      "rating": 1894,
+      "wins": 76,
+      "losses": 35,
+      "specId": null
+    },
+    {
+      "rank": 81,
+      "characterName": "Hatedtoon",
+      "realmSlug": "malganis",
+      "rating": 1893,
+      "wins": 58,
+      "losses": 24,
+      "specId": null
+    },
+    {
+      "rank": 81,
+      "characterName": "Måñýfåçègód",
+      "realmSlug": "stormrage",
+      "rating": 1893,
+      "wins": 52,
+      "losses": 23,
+      "specId": null
+    },
+    {
+      "rank": 83,
+      "characterName": "Spelleater",
+      "realmSlug": "sargeras",
+      "rating": 1891,
+      "wins": 61,
+      "losses": 30,
+      "specId": null
+    },
+    {
+      "rank": 83,
+      "characterName": "Jomica",
+      "realmSlug": "tichondrius",
+      "rating": 1891,
+      "wins": 81,
+      "losses": 42,
+      "specId": null
+    },
+    {
+      "rank": 85,
+      "characterName": "Toddmolovski",
+      "realmSlug": "frostmourne",
+      "rating": 1890,
+      "wins": 51,
+      "losses": 30,
+      "specId": null
+    },
+    {
+      "rank": 86,
+      "characterName": "Padrik",
+      "realmSlug": "azuremyst",
+      "rating": 1889,
+      "wins": 48,
+      "losses": 20,
+      "specId": null
+    },
+    {
+      "rank": 87,
+      "characterName": "Unlucký",
+      "realmSlug": "sargeras",
+      "rating": 1888,
+      "wins": 81,
+      "losses": 42,
+      "specId": null
+    },
+    {
+      "rank": 88,
+      "characterName": "Neighbors",
+      "realmSlug": "sargeras",
+      "rating": 1886,
+      "wins": 33,
+      "losses": 4,
+      "specId": null
+    },
+    {
+      "rank": 89,
+      "characterName": "Mistyhands",
+      "realmSlug": "illidan",
+      "rating": 1885,
+      "wins": 73,
+      "losses": 27,
+      "specId": null
+    },
+    {
+      "rank": 89,
+      "characterName": "Shufbrainrot",
+      "realmSlug": "tichondrius",
+      "rating": 1885,
+      "wins": 38,
+      "losses": 17,
+      "specId": null
+    },
+    {
+      "rank": 89,
+      "characterName": "Bestworld",
+      "realmSlug": "moon-guard",
+      "rating": 1885,
+      "wins": 38,
+      "losses": 26,
+      "specId": null
+    },
+    {
+      "rank": 89,
+      "characterName": "Spwiffa",
+      "realmSlug": "moon-guard",
+      "rating": 1885,
+      "wins": 38,
+      "losses": 28,
+      "specId": null
+    },
+    {
+      "rank": 93,
+      "characterName": "Helcránk",
+      "realmSlug": "stormrage",
+      "rating": 1884,
+      "wins": 75,
+      "losses": 45,
+      "specId": null
+    },
+    {
+      "rank": 93,
+      "characterName": "Fairyfaith",
+      "realmSlug": "wyrmrest-accord",
+      "rating": 1884,
+      "wins": 68,
+      "losses": 54,
+      "specId": null
+    },
+    {
+      "rank": 95,
+      "characterName": "Køzy",
+      "realmSlug": "area-52",
+      "rating": 1881,
+      "wins": 34,
+      "losses": 16,
+      "specId": null
+    },
+    {
+      "rank": 96,
+      "characterName": "Kinanprooxx",
+      "realmSlug": "garrosh",
+      "rating": 1880,
+      "wins": 34,
+      "losses": 9,
+      "specId": null
+    },
+    {
+      "rank": 97,
+      "characterName": "Zikkyzapps",
+      "realmSlug": "nazjatar",
+      "rating": 1879,
+      "wins": 40,
+      "losses": 28,
+      "specId": null
+    },
+    {
+      "rank": 98,
+      "characterName": "Bajheera",
+      "realmSlug": "sargeras",
+      "rating": 1877,
+      "wins": 34,
+      "losses": 5,
+      "specId": null
+    },
+    {
+      "rank": 99,
+      "characterName": "Romancer",
+      "realmSlug": "llane",
+      "rating": 1875,
+      "wins": 72,
+      "losses": 27,
+      "specId": null
+    },
+    {
+      "rank": 99,
+      "characterName": "Dzdm",
+      "realmSlug": "stormrage",
+      "rating": 1875,
+      "wins": 34,
+      "losses": 14,
+      "specId": null
+    }
+  ]
+}

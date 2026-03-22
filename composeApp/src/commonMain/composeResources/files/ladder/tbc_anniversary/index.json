@@ -1,0 +1,32 @@
+[
+  {
+    "region": "eu",
+    "bracket": "2v2",
+    "file": "eu_2v2.json"
+  },
+  {
+    "region": "eu",
+    "bracket": "3v3",
+    "file": "eu_3v3.json"
+  },
+  {
+    "region": "eu",
+    "bracket": "5v5",
+    "file": "eu_5v5.json"
+  },
+  {
+    "region": "us",
+    "bracket": "2v2",
+    "file": "us_2v2.json"
+  },
+  {
+    "region": "us",
+    "bracket": "3v3",
+    "file": "us_3v3.json"
+  },
+  {
+    "region": "us",
+    "bracket": "5v5",
+    "file": "us_5v5.json"
+  }
+]
