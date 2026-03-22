@@ -6,6 +6,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import net.tautellini.arenatactics.data.model.ItemTooltipData
 import net.tautellini.arenatactics.data.model.WowClass
 import net.tautellini.arenatactics.data.model.WowSpec
 import net.tautellini.arenatactics.data.repository.AddonRepository
@@ -20,7 +21,8 @@ sealed class SpecGuideState {
     data class Success(
         val spec: WowSpec,
         val wowClass: WowClass,
-        val meta: SpecMeta
+        val meta: SpecMeta,
+        val items: Map<String, ItemTooltipData> = emptyMap()
     ) : SpecGuideState()
     data class Error(val message: String) : SpecGuideState()
 }
@@ -55,8 +57,14 @@ class SpecGuideViewModel(
                     } catch (_: Throwable) { emptyList() }
                 }
 
+                // Load item tooltip data from all regions
+                val allItems = mutableMapOf<String, ItemTooltipData>()
+                for (region in listOf("us", "eu")) {
+                    try { allItems.putAll(ladderRepository.getItems(addonId, region)) } catch (_: Throwable) {}
+                }
+
                 val meta = computeSpecMeta(specId, allPlayers)
-                SpecGuideState.Success(spec, wowClass, meta)
+                SpecGuideState.Success(spec, wowClass, meta, allItems)
             } catch (e: Throwable) {
                 SpecGuideState.Error(e.message ?: "Failed to load spec guide")
             }

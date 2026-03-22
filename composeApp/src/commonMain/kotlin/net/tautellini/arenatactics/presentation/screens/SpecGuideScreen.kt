@@ -1,6 +1,8 @@
 package net.tautellini.arenatactics.presentation.screens
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -20,9 +22,11 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
+import net.tautellini.arenatactics.data.model.ItemTooltipData
 import net.tautellini.arenatactics.data.model.WowClass
 import net.tautellini.arenatactics.data.model.WowSpec
 import net.tautellini.arenatactics.data.model.WowheadIcons
+import net.tautellini.arenatactics.openUrl
 import net.tautellini.arenatactics.domain.EnchantUsage
 import net.tautellini.arenatactics.domain.ItemUsage
 import net.tautellini.arenatactics.domain.SlotBreakdown
@@ -79,12 +83,12 @@ fun SpecGuideScreen(viewModel: SpecGuideViewModel) {
         is SpecGuideState.Error -> Box(Modifier.fillMaxSize().background(Background).padding(24.dp)) {
             Text(s.message, color = TextSecondary)
         }
-        is SpecGuideState.Success -> SpecGuideContent(s.spec, s.wowClass, s.meta)
+        is SpecGuideState.Success -> SpecGuideContent(s.spec, s.wowClass, s.meta, s.items)
     }
 }
 
 @Composable
-private fun SpecGuideContent(spec: WowSpec, wowClass: WowClass, meta: SpecMeta) {
+private fun SpecGuideContent(spec: WowSpec, wowClass: WowClass, meta: SpecMeta, items: Map<String, ItemTooltipData>) {
     val classClr = classColor(wowClass.id)
 
     Column(
@@ -151,7 +155,7 @@ private fun SpecGuideContent(spec: WowSpec, wowClass: WowClass, meta: SpecMeta) 
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
                 meta.slotBreakdowns.forEach { slot ->
-                    SlotCard(slot)
+                    SlotCard(slot, items)
                 }
             }
         }
@@ -209,7 +213,7 @@ private fun TalentBuildRow(build: TalentBuildEntry, total: Int) {
 }
 
 @Composable
-private fun SlotCard(slot: SlotBreakdown) {
+private fun SlotCard(slot: SlotBreakdown, allItems: Map<String, ItemTooltipData>) {
     val shape = RoundedCornerShape(12.dp)
     Surface(color = CardColor, shape = shape, modifier = Modifier.widthIn(min = 280.dp, max = 420.dp)) {
         Column(modifier = Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -220,7 +224,7 @@ private fun SlotCard(slot: SlotBreakdown) {
 
             // Items
             slot.items.forEach { item ->
-                ItemRow(item)
+                ItemRow(item, allItems[item.itemId.toString()])
             }
 
             // Enchants
@@ -241,17 +245,32 @@ private fun SlotCard(slot: SlotBreakdown) {
 }
 
 @Composable
-private fun ItemRow(item: ItemUsage) {
+private fun ItemRow(item: ItemUsage, tooltipData: ItemTooltipData? = null) {
     val qualityColor = QualityColors[item.quality] ?: TextPrimary
     val fraction = (item.percentage / 100.0).coerceIn(0.0, 1.0).toFloat()
+    val iconName = tooltipData?.icon ?: "inv_misc_questionmark"
 
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(6.dp))
+            .clickable { if (item.itemId > 0) openUrl("https://www.wowhead.com/tbc/item=${item.itemId}") }
     ) {
-        // Usage bar (background)
+        // Item icon
+        AsyncImage(
+            model = WowheadIcons.medium(iconName),
+            contentDescription = item.name,
+            modifier = Modifier
+                .size(28.dp)
+                .clip(RoundedCornerShape(4.dp))
+                .border(1.dp, qualityColor.copy(alpha = 0.4f), RoundedCornerShape(4.dp))
+        )
+
+        Spacer(Modifier.width(6.dp))
+
+        // Usage bar with name overlay
         Box(modifier = Modifier.weight(1f)) {
-            // Bar background
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -267,7 +286,6 @@ private fun ItemRow(item: ItemUsage) {
                         .background(qualityColor.copy(alpha = 0.15f))
                 )
             }
-            // Item name overlay
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.height(28.dp).padding(horizontal = 8.dp)
