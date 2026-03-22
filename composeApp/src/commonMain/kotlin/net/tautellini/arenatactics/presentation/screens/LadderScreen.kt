@@ -124,9 +124,6 @@ private fun LadderContent(
                 if (snapshot.ratingCutoffs.isNotEmpty()) {
                     CutoffsCard(snapshot)
                 }
-                if (state.classDistribution.isNotEmpty()) {
-                    ClassDistributionCard(state.classDistribution)
-                }
                 // Spec distribution: prefer top-entry derived data, fallback to shuffle-based
                 val specDist = state.topSpecDistribution.ifEmpty { snapshot.specDistribution }
                 if (specDist.isNotEmpty()) {
