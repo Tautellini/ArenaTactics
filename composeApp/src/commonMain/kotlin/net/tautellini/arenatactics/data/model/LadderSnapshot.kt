@@ -36,7 +36,8 @@ data class LadderEntry(
     val rating: Int,
     val wins: Int = 0,
     val losses: Int = 0,
-    val classId: String? = null
+    val classId: String? = null,
+    val specId: String? = null
 )
 
 /** Runtime-only — computed from top entries, not serialized. */

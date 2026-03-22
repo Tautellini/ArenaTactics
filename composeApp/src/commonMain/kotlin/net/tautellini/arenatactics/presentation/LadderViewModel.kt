@@ -10,6 +10,7 @@ import net.tautellini.arenatactics.data.model.ClassDistributionEntry
 import net.tautellini.arenatactics.data.model.LadderEntry
 import net.tautellini.arenatactics.data.model.LadderIndex
 import net.tautellini.arenatactics.data.model.LadderSnapshot
+import net.tautellini.arenatactics.data.model.SpecDistribution
 import net.tautellini.arenatactics.data.model.WowClass
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.CompositionRepository
@@ -49,6 +50,21 @@ sealed class LadderState {
                     .sortedByDescending { it.value }
                     .map { (classId, count) ->
                         ClassDistributionEntry(classId, count, ((count * 1000.0 / total).toLong() / 10.0))
+                    }
+            }
+
+        /** Spec distribution derived from top entries' specId (from profile lookups). */
+        val topSpecDistribution: List<SpecDistribution>
+            get() {
+                val entries = currentSnapshot?.topEntries ?: return emptyList()
+                val counts = entries.mapNotNull { it.specId }
+                    .groupingBy { it }.eachCount()
+                if (counts.isEmpty()) return emptyList()
+                val total = counts.values.sum()
+                return counts.entries
+                    .sortedByDescending { it.value }
+                    .map { (specId, count) ->
+                        SpecDistribution(specId, count, ((count * 1000.0 / total).toLong() / 10.0))
                     }
             }
 

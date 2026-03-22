@@ -208,8 +208,10 @@ def get_leaderboard_index(api_host: str, namespace: str, season_id: int, token: 
     return [lb.get("name", "") for lb in data.get("leaderboards", [])]
 
 
-def get_character_class(api_host: str, profile_namespace: str, realm_slug: str, char_name: str, token: str) -> str | None:
-    """Fetch a character's class from the profile API. Returns our class ID slug or None."""
+def get_character_class_and_spec(
+    api_host: str, profile_namespace: str, realm_slug: str, char_name: str, token: str
+) -> tuple[str | None, str | None]:
+    """Fetch a character's class and spec. Returns (classId slug, specId slug) or (None, None)."""
     name_lower = char_name.lower()
     url = (
         f"{api_host}/profile/wow/character/{realm_slug}/{urllib.parse.quote(name_lower)}"
@@ -217,12 +219,47 @@ def get_character_class(api_host: str, profile_namespace: str, realm_slug: str, 
     )
     try:
         data = http_get_json(url, token=token)
-        class_id = data.get("character_class", {}).get("id")
-        if class_id and class_id in BLIZZARD_CLASS_MAP:
-            return BLIZZARD_CLASS_MAP[class_id]
+        class_id_num = data.get("character_class", {}).get("id")
+        class_slug = BLIZZARD_CLASS_MAP.get(class_id_num) if class_id_num else None
+        if not class_slug:
+            return None, None
+
+        spec_slug = None
+
+        # Retail: active_spec field directly on the profile
+        active_spec = data.get("active_spec")
+        if active_spec:
+            spec_name = active_spec.get("name", "").lower().replace(" ", "")
+            spec_slug = f"{class_slug}_{spec_name}"
+        else:
+            # Classic/TBC: fetch specializations endpoint, find active group,
+            # pick the tree with the most spent_points
+            try:
+                spec_url = (
+                    f"{api_host}/profile/wow/character/{realm_slug}/{urllib.parse.quote(name_lower)}"
+                    f"/specializations?namespace={profile_namespace}&locale=en_US"
+                )
+                spec_data = http_get_json(spec_url, token=token)
+                for group in spec_data.get("specialization_groups", []):
+                    if group.get("is_active"):
+                        best_spec = None
+                        best_points = -1
+                        for spec in group.get("specializations", []):
+                            pts = spec.get("spent_points", 0)
+                            if pts > best_points:
+                                best_points = pts
+                                name = spec.get("specialization_name", "").lower().replace(" ", "")
+                                if name:
+                                    best_spec = name
+                        if best_spec:
+                            spec_slug = f"{class_slug}_{best_spec}"
+                        break
+            except Exception:
+                pass
+
+        return class_slug, spec_slug
     except Exception:
-        pass
-    return None
+        return None, None
 
 
 def fetch_spec_distribution(api_host: str, namespace: str, season_id: int, token: str) -> list:
@@ -264,18 +301,19 @@ def fetch_spec_distribution(api_host: str, namespace: str, season_id: int, token
     return distribution
 
 
-def resolve_classes_for_entries(
+def resolve_profiles_for_entries(
     entries: list,
     api_host: str,
     profile_namespace: str,
     token: str,
-    class_cache: dict,
+    profile_cache: dict,
     limit: int = TOP_ENTRIES_LIMIT,
 ) -> list:
     """
-    Resolve character classes for the top N leaderboard entries.
-    Uses class_cache (keyed by character ID) for deduplication across brackets.
-    Returns enriched entry dicts with classId set.
+    Resolve character class and spec for the top N leaderboard entries.
+    Uses profile_cache (keyed by character ID) for deduplication across brackets.
+    Cache value is (classId, specId) tuple.
+    Returns enriched entry dicts with classId and specId set.
     """
     result = []
     lookups = 0
@@ -290,13 +328,15 @@ def resolve_classes_for_entries(
         realm_slug = realm.get("slug", "")
 
         class_id = None
-        if char_id and char_id in class_cache:
-            class_id = class_cache[char_id]
+        spec_id = None
+        if char_id and char_id in profile_cache:
+            class_id, spec_id = profile_cache[char_id]
             cache_hits += 1
         elif char_id and realm_slug and char_name != "Unknown":
-            class_id = get_character_class(api_host, profile_namespace, realm_slug, char_name, token)
-            if class_id:
-                class_cache[char_id] = class_id
+            class_id, spec_id = get_character_class_and_spec(
+                api_host, profile_namespace, realm_slug, char_name, token
+            )
+            profile_cache[char_id] = (class_id, spec_id)
             lookups += 1
 
         result.append({
@@ -307,6 +347,7 @@ def resolve_classes_for_entries(
             "wins": stats.get("won", 0),
             "losses": stats.get("lost", 0),
             "classId": class_id,
+            "specId": spec_id,
         })
 
     print(f"    Resolved {lookups} profiles ({cache_hits} cache hits)")
@@ -370,9 +411,9 @@ def main():
             namespace = f"{ns_prefix}-{region}"
             profile_namespace = f"{profile_ns_prefix}-{region}"
 
-            # Class cache shared across brackets within this region
-            # Key: character ID (int), Value: class slug (str)
-            class_cache: dict[int, str] = {}
+            # Profile cache shared across brackets within this region
+            # Key: character ID (int), Value: (class_slug, spec_slug) tuple
+            profile_cache: dict[int, tuple] = {}
 
             # Determine season
             print(f"  [{region}] Detecting current season...")
@@ -413,8 +454,8 @@ def main():
                 total = len(raw_entries)
                 print(f"  [{region}] {bracket}: {total} entries, resolving top {TOP_ENTRIES_LIMIT} classes...")
 
-                top_entries = resolve_classes_for_entries(
-                    raw_entries, api_host, profile_namespace, token, class_cache
+                top_entries = resolve_profiles_for_entries(
+                    raw_entries, api_host, profile_namespace, token, profile_cache
                 )
 
                 snapshot = build_snapshot(
@@ -427,7 +468,7 @@ def main():
 
                 print(f"  [{region}] Wrote {out_file.name}")
 
-            print(f"  [{region}] Class cache: {len(class_cache)} unique characters resolved")
+            print(f"  [{region}] Profile cache: {len(profile_cache)} unique characters resolved")
 
         # Write index for this addon
         index = []

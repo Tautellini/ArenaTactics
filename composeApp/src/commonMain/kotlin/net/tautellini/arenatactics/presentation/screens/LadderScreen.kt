@@ -127,8 +127,10 @@ private fun LadderContent(
                 if (state.classDistribution.isNotEmpty()) {
                     ClassDistributionCard(state.classDistribution)
                 }
-                if (snapshot.specDistribution.isNotEmpty()) {
-                    SpecDistributionCard(snapshot.specDistribution)
+                // Spec distribution: prefer top-entry derived data, fallback to shuffle-based
+                val specDist = state.topSpecDistribution.ifEmpty { snapshot.specDistribution }
+                if (specDist.isNotEmpty()) {
+                    SpecDistributionCard(specDist)
                 }
             }
         }
@@ -548,7 +550,7 @@ private fun TopEntryRow(entry: LadderEntry?) {
 
     Row(
         modifier = Modifier
-            .widthIn(max = 700.dp)
+            .fillMaxWidth()
             .then(
                 if (!isHeader) Modifier
                     .clip(RoundedCornerShape(8.dp))
