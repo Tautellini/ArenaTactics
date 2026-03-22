@@ -430,6 +430,7 @@ private val SPEC_ICON_NAMES = mapOf(
     "priest_holy" to "spell_holy_guardianspirit",
     "priest_shadow" to "spell_shadow_shadowwordpain",
     "rogue_assassination" to "ability_rogue_deadlybrew",
+    "rogue_combat" to "ability_backstab",
     "rogue_outlaw" to "ability_rogue_waylay",
     "rogue_subtlety" to "ability_stealth",
     "shaman_elemental" to "spell_nature_lightning",

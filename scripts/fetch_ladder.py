@@ -257,9 +257,19 @@ def get_character_class_and_spec(
             except Exception:
                 pass
 
+        # Normalize legacy talent tree names to modern spec IDs
+        if spec_slug:
+            spec_slug = SPEC_NAME_ALIASES.get(spec_slug, spec_slug)
+
         return class_slug, spec_slug
     except Exception:
         return None, None
+
+
+# Legacy talent tree names → normalized spec ID slugs
+SPEC_NAME_ALIASES = {
+    "druid_feralcombat": "druid_feral",
+}
 
 
 def fetch_spec_distribution(api_host: str, namespace: str, season_id: int, token: str) -> list:
