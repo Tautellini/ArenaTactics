@@ -93,6 +93,20 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - All core models (`Composition`, `Matchup`) must use **`List<String>` for spec slots**, never hardcoded `spec1Id`/`spec2Id` pairs. This is what allows the same model to represent a 2-spec comp and a 5-spec comp without changes.
 - `GameMode` should carry a `teamSize: Int` so repositories and UI can validate and render compositions correctly for any bracket.
 
+## Addon Lifecycle & "Retail"
+- **Retail** is always the currently active expansion on WoW's live servers. Right now that is "The War Within — Midnight" (addon ID `midnight`). It is displayed as "RETAIL" in the UI, not by its expansion name.
+- When the next retail expansion launches, the `midnight` addon entry should be updated to reflect the new expansion (new description, potentially new spec/class pools). There is no need to keep the old retail entry — it becomes obsolete.
+- **Anniversary servers** (e.g., TBC Anniversary) are separate Classic-era servers running older expansion states. Blizzard rotates these forward over time — TBC Anniversary will eventually become WotLK Anniversary, etc. When that happens, a new addon entry replaces the old one (or the existing entry is updated).
+- There are **no history servers for modern expansions** (e.g., no "The War Within" server after Midnight launches). This may never change. Only Classic-era rotations exist.
+- An addon is **selectable on the home screen** if it has any data at all (tactics, guides, or ladder). Each section tile (Tactics, Class Guides, Ladder) is individually enabled/disabled based on what data exists for that addon.
+
+## Ladder Data Pipeline
+- PvP ladder data is fetched via `scripts/fetch_ladder.py` from the Blizzard Game Data API.
+- The script reads credentials from `secrets.properties` (gitignored) or environment variables (`BLIZZARD_CLIENT_ID`, `BLIZZARD_CLIENT_SECRET`).
+- Data is organized per-addon: `files/ladder/{addonId}/index.json` + `{region}_{bracket}.json`.
+- A GitHub Actions workflow (`.github/workflows/fetch-ladder.yml`) runs daily to refresh data.
+- Addon-to-API-namespace mapping is defined in the `ADDONS` list inside the script. Key namespaces: `dynamic-classicann-{region}` for TBC Anniversary, `dynamic-{region}` for retail.
+
 ## Spec Ordering
 - `specIds` in JSON data files are always **alphabetically sorted** — this is enforced by `Composition.init` and is required for stable IDs and deduplication.
 - `RichComposition.specs` (the display layer) are always reordered **DPS first, HEALER last** in `enrichCompositions()`. Never change this order at the UI layer; fix it at the enrichment layer if it is wrong.

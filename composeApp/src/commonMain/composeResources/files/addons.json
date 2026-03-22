@@ -41,8 +41,8 @@
   },
   {
     "id": "midnight",
-    "name": "Midnight",
-    "shortName": "MID",
+    "name": "Retail",
+    "shortName": "RETAIL",
     "description": "The War Within — Midnight",
     "accentColor": "#B070E0",
     "specPoolId": "midnight",
