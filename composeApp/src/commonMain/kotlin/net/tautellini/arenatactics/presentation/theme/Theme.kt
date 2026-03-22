@@ -20,13 +20,13 @@ import org.jetbrains.compose.resources.Font
 
 val Primary = Color(0xFFE84444)
 val Secondary = Color(0xFF8B1A1A)
-val Background   = Color(0xFF0A0A0A)
-val Surface      = Color(0xFF141214)
+val Background   = Color(0xFF0C0A0A)
+val Surface      = Color(0xFF181416)
 val TextPrimary   = Color(0xFFE8E0DC)
 val TextSecondary = Color(0xFF9A8E88)
 
-val CardColor    = Color(0xFF1A1214)
-val CardElevated = Color(0xFF2A1A1E)
+val CardColor    = Color(0xFF221A1E)
+val CardElevated = Color(0xFF332428)
 
 val DividerColor = Color(0xFF3A2228)
 
