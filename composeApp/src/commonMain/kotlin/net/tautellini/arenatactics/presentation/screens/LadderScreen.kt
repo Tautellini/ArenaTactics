@@ -13,6 +13,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -465,10 +468,15 @@ private fun specDisplayName(specId: String): String {
     return "$specName $className"
 }
 
+private const val SPEC_DIST_COLLAPSED_COUNT = 4
+
 @Composable
 private fun SpecDistributionCard(distribution: List<SpecDistribution>) {
     val maxCount = distribution.maxOfOrNull { it.count } ?: 1
     val shape = RoundedCornerShape(16.dp)
+    var expanded by remember { mutableStateOf(false) }
+    val visibleSpecs = if (expanded) distribution else distribution.take(SPEC_DIST_COLLAPSED_COUNT)
+    val canExpand = distribution.size > SPEC_DIST_COLLAPSED_COUNT
 
     Surface(
         color = CardColor,
@@ -486,8 +494,26 @@ private fun SpecDistributionCard(distribution: List<SpecDistribution>) {
                 fontWeight = FontWeight.SemiBold,
                 modifier = Modifier.padding(bottom = 8.dp)
             )
-            distribution.forEach { spec ->
+            visibleSpecs.forEach { spec ->
                 SpecDistributionRow(spec, maxCount)
+            }
+            if (canExpand) {
+                Spacer(Modifier.height(4.dp))
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(8.dp))
+                        .clickable { expanded = !expanded }
+                        .padding(vertical = 6.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = if (expanded) "Show less" else "Show all ${distribution.size} specs",
+                        color = Primary,
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Medium
+                    )
+                }
             }
         }
     }
