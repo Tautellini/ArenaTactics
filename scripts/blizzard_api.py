@@ -12,6 +12,8 @@ import urllib.parse
 import base64
 from pathlib import Path
 
+import time
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_BASE = REPO_ROOT / "composeApp" / "src" / "commonMain" / "composeResources" / "files" / "ladder"
 SECRETS_FILE = REPO_ROOT / "secrets.properties"
@@ -334,6 +336,16 @@ def fetch_full_player_profile(
     return result
 
 
+def log_progress(i: int, total: int, start_time: float, prefix: str = "    "):
+    """Print progress with ETA."""
+    elapsed = time.time() - start_time
+    rate = (i + 1) / elapsed if elapsed > 0 else 0
+    remaining = (total - i - 1) / rate if rate > 0 else 0
+    eta_min = int(remaining // 60)
+    eta_sec = int(remaining % 60)
+    print(f"{prefix}{i + 1}/{total} ({rate:.1f}/s, ~{eta_min}m{eta_sec:02d}s remaining)")
+
+
 def resolve_item_icons(items: dict) -> None:
     """
     Resolve icon names for items using the Wowhead tooltip API.
@@ -345,6 +357,7 @@ def resolve_item_icons(items: dict) -> None:
         return
 
     resolved = 0
+    t0 = time.time()
     for i, (item_id_str, item_data) in enumerate(to_resolve):
         item_data.pop("_media_href", None)
         try:
@@ -358,14 +371,15 @@ def resolve_item_icons(items: dict) -> None:
                     resolved += 1
         except Exception:
             pass
-        if (i + 1) % 100 == 0:
-            print(f"    ... {i + 1}/{len(to_resolve)} icons resolved")
+        if (i + 1) % 50 == 0:
+            log_progress(i, len(to_resolve), t0)
 
     # Clean up temp fields
     for v in items.values():
         v.pop("_media_href", None)
 
-    print(f"    Resolved {resolved}/{len(to_resolve)} item icons")
+    elapsed = time.time() - t0
+    print(f"    Resolved {resolved}/{len(to_resolve)} item icons in {elapsed:.0f}s")
 
 
 def write_index(addon_dir: Path):

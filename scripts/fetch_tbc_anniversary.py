@@ -10,10 +10,11 @@ Output: composeApp/src/commonMain/composeResources/files/ladder/tbc_anniversary/
 """
 
 import json
+import time
 from datetime import datetime, timezone
 
 from blizzard_api import (
-    API_HOSTS, OUTPUT_BASE,
+    API_HOSTS, OUTPUT_BASE, log_progress,
     get_access_token, get_current_season_id, get_pvp_rewards,
     get_leaderboard, fetch_full_player_profile, resolve_item_icons, write_index,
 )
@@ -101,20 +102,20 @@ def main():
         # ── Fetch profiles for unique characters (profile + equipment + specializations) ──
         # PvP bracket ratings are derived from the leaderboard data we already have.
         unique_ids = list(char_info.keys())
-        print(f"  [{region}] Fetching profiles for {len(unique_ids)} unique characters (3 calls each)...")
+        print(f"  [{region}] Fetching profiles for {len(unique_ids)} unique characters (3 API calls each)...")
 
-        player_profiles: dict[str, dict] = {}  # keyed by str(char_id)
+        player_profiles: dict[str, dict] = {}
+        t0 = time.time()
         for i, char_id in enumerate(unique_ids):
             name, realm_slug = char_info[char_id]
             if name == "Unknown" or not realm_slug:
                 continue
 
             profile = fetch_full_player_profile(
-                api_host, profile_ns, realm_slug, name, token, brackets=[]  # skip pvp-bracket calls
+                api_host, profile_ns, realm_slug, name, token, brackets=[]
             )
             if profile:
                 profile["characterId"] = char_id
-                # Map PvP bracket ratings from leaderboard data we already collected
                 pvp = {}
                 for app in char_brackets.get(char_id, []):
                     pvp[app["bracket"]] = {
@@ -127,9 +128,10 @@ def main():
                 player_profiles[str(char_id)] = profile
 
             if (i + 1) % 50 == 0:
-                print(f"    ... {i + 1}/{len(unique_ids)} fetched")
+                log_progress(i, len(unique_ids), t0, f"  [{region}] Profiles: ")
 
-        print(f"  [{region}] Fetched {len(player_profiles)}/{len(unique_ids)} profiles")
+        elapsed = time.time() - t0
+        print(f"  [{region}] Fetched {len(player_profiles)}/{len(unique_ids)} profiles in {elapsed:.0f}s")
 
         # ── Collect unique items from all profiles and strip _items from player data ──
         all_items: dict[int, dict] = {}
