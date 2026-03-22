@@ -99,7 +99,6 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - **Anniversary servers** (e.g., TBC Anniversary) are separate Classic-era servers running older expansion states. Blizzard rotates these forward over time — TBC Anniversary will eventually become WotLK Anniversary, etc. When that happens, the old addon entry is deactivated (`hasData: false`) and a new one is created. **Never delete curated data** for a rotated-out addon — it may return as a history server.
 - There are **no history servers for modern expansions yet** (e.g., no "The War Within" server after Midnight launches). This may change in the future, which is why we always preserve data.
 - An addon is **selectable on the home screen** if it has any data at all (tactics, guides, or ladder). Each section tile (Tactics, Class Guides, Ladder) is individually enabled/disabled based on what data exists for that addon.
-
 ## Ladder Data Pipeline
 - PvP ladder data is fetched via `scripts/fetch_ladder.py` from the Blizzard Game Data API.
 - The script reads credentials from `secrets.properties` (gitignored) or environment variables (`BLIZZARD_CLIENT_ID`, `BLIZZARD_CLIENT_SECRET`).

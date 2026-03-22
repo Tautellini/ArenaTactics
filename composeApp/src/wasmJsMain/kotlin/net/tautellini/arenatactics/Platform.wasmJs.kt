@@ -48,5 +48,10 @@ actual fun registerPopCallback(callback: (isBack: Boolean) -> Unit) {
     }
 }
 
-actual fun getInitialPath(): String = window.location.pathname
-actual fun getCurrentPath(): String = window.location.pathname
+actual fun getInitialPath(): String = window.location.pathname.removeAppBase()
+actual fun getCurrentPath(): String = window.location.pathname.removeAppBase()
+
+private fun String.removeAppBase(): String {
+    val base = getAppBase()
+    return if (base.isNotEmpty()) removePrefix(base) else this
+}
