@@ -65,13 +65,14 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - dark, powerful design with glass-like elements
 - **premium feel** — black to red palette, imposing and bold
 - modern icon first design
-- Background color: #0A0A0A (near-black)
-- Surface color: #151515 (dark gray)
-- Card color: #1A1214 (dark with red undertone)
-- Primary color: #CC3333 (deep red)
+- Background color: #080808 (near-black)
+- Surface color: #111111 (dark gray)
+- Card color: #141414 (neutral dark)
+- Card border: #252525 (subtle edge for glass-panel definition)
+- Primary color: #E53935 (vivid red)
 - Secondary color: #8B1A1A (dark crimson)
 - **Always use theme color tokens** (`Primary`, `TextPrimary`, `TextSecondary`, `CardColor`,
-  `Background`, etc.) from `Theme.kt`. Never hardcode `Color.White`, `Color.Black`, or hex
+  `CardBorder`, `Background`, etc.) from `Theme.kt`. Never hardcode `Color.White`, `Color.Black`, or hex
   literals for UI elements that should follow the theme. The only exceptions are WoW-standard
   colors (class colors, item quality colors, faction colors) which are universal constants.
 

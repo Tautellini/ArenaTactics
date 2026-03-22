@@ -6,9 +6,13 @@ import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
+import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.hoverable
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.interaction.collectIsHoveredAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -189,22 +193,34 @@ fun AppHeader(
             if (index > 0) Spacer(Modifier.width(6.dp))
 
             val isExpanded = expanded == segment
-            val borderColor = when {
-                isExpanded -> Primary
-                segment == SegmentType.ADDON -> accentColor.copy(alpha = 0.4f)
-                else -> DividerColor
-            }
-            val bgColor = when {
-                isExpanded -> CardElevated
-                segment == SegmentType.ADDON -> lerp(CardColor, accentColor, 0.10f)
-                else -> CardColor
-            }
+            val segInteraction = remember { MutableInteractionSource() }
+            val segHovered by segInteraction.collectIsHoveredAsState()
+
+            val borderColor by animateColorAsState(
+                when {
+                    isExpanded -> Primary
+                    segHovered -> Primary.copy(alpha = 0.3f)
+                    segment == SegmentType.ADDON -> accentColor.copy(alpha = 0.4f)
+                    else -> DividerColor
+                },
+                animationSpec = tween(200)
+            )
+            val bgColor by animateColorAsState(
+                when {
+                    isExpanded -> CardElevated
+                    segHovered -> CardElevated
+                    segment == SegmentType.ADDON -> lerp(CardColor, accentColor, 0.10f)
+                    else -> CardColor
+                },
+                animationSpec = tween(200)
+            )
 
             Box(
                 contentAlignment = Alignment.Center,
                 modifier = Modifier
                     .height(34.dp)
                     .clip(SegmentShape)
+                    .hoverable(segInteraction)
                     .background(bgColor)
                     .border(1.dp, borderColor, SegmentShape)
                     .clickable { expanded = if (isExpanded) null else segment }
@@ -372,7 +388,7 @@ private fun BracketSegmentContent(mode: GameMode?, gameModeId: String?) {
 
 // ─── Inline option composables (expand to the right) ────────────────────────
 
-private val GreyedOut = Color(0xFF5A5255)
+private val GreyedOut = Color(0xFF555555)
 
 @Composable
 private fun InlineAddonOption(addon: Addon, enabled: Boolean = true, onClick: () -> Unit) {

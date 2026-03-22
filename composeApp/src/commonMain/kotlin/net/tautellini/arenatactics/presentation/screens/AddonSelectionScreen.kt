@@ -1,6 +1,7 @@
 package net.tautellini.arenatactics.presentation.screens
 
 import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.*
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -10,6 +11,9 @@ import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.hoverable
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.interaction.collectIsHoveredAsState
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
@@ -247,8 +251,8 @@ private fun parseHexColor(hex: String): Color {
     return Color(argb.toInt())
 }
 
-private val GreyedOut = Color(0xFF5A5255)
-private val GreyedOutBg = Color(0xFF161214)
+private val GreyedOut = Color(0xFF555555)
+private val GreyedOutBg = Color(0xFF101010)
 
 @Composable
 private fun AddonTile(
@@ -259,22 +263,35 @@ private fun AddonTile(
 ) {
     val accent = if (enabled) parseHexColor(addon.accentColor) else GreyedOut
     val shape = RoundedCornerShape(16.dp)
-    val cardBg = when {
-        isSelected -> CardElevated
-        enabled -> CardColor
-        else -> GreyedOutBg
-    }
-    val borderMod = when {
-        isSelected -> Modifier.border(2.dp, accent, shape)
-        else -> Modifier
-    }
+
+    val interactionSource = remember { MutableInteractionSource() }
+    val isHovered by interactionSource.collectIsHoveredAsState()
+
+    val borderColor by animateColorAsState(
+        when {
+            isSelected -> accent
+            isHovered && enabled -> accent.copy(alpha = 0.35f)
+            else -> CardBorder
+        },
+        animationSpec = tween(200)
+    )
+    val cardBg by animateColorAsState(
+        when {
+            isSelected -> CardElevated
+            isHovered && enabled -> CardElevated
+            enabled -> CardColor
+            else -> GreyedOutBg
+        },
+        animationSpec = tween(200)
+    )
 
     Surface(
         color = cardBg,
         shape = shape,
         modifier = Modifier
             .width(130.dp)
-            .then(borderMod)
+            .hoverable(interactionSource)
+            .border(if (isSelected) 2.dp else 1.dp, borderColor, shape)
             .then(if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier)
     ) {
         Column(
@@ -325,13 +342,35 @@ private fun SectionTile(
     onClick: (() -> Unit)?
 ) {
     val shape = RoundedCornerShape(16.dp)
-    val borderMod = if (isSelected) Modifier.border(2.dp, Primary, shape) else Modifier
+    val isEnabled = alpha > 0.5f
+
+    val interactionSource = remember { MutableInteractionSource() }
+    val isHovered by interactionSource.collectIsHoveredAsState()
+
+    val borderColor by animateColorAsState(
+        when {
+            isSelected -> Primary
+            isHovered && isEnabled -> Primary.copy(alpha = 0.3f)
+            else -> CardBorder
+        },
+        animationSpec = tween(200)
+    )
+    val bgColor by animateColorAsState(
+        when {
+            isSelected -> CardElevated
+            isHovered && isEnabled -> CardElevated
+            else -> CardColor
+        },
+        animationSpec = tween(200)
+    )
+
     Surface(
-        color = if (isSelected) CardElevated else CardColor,
+        color = bgColor,
         shape = shape,
         modifier = Modifier
             .widthIn(min = 160.dp, max = 280.dp)
-            .then(borderMod)
+            .hoverable(interactionSource)
+            .border(if (isSelected) 2.dp else 1.dp, borderColor, shape)
             .then(if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier)
             .alpha(alpha)
     ) {
@@ -362,14 +401,34 @@ private fun SectionTile(
 private fun GameModeTile(mode: GameMode, onClick: () -> Unit) {
     val enabled = mode.hasData
     val shape = RoundedCornerShape(16.dp)
-    val cardBg = if (enabled) CardColor else GreyedOutBg
     val dotColor = if (enabled) Primary else GreyedOut
+
+    val interactionSource = remember { MutableInteractionSource() }
+    val isHovered by interactionSource.collectIsHoveredAsState()
+
+    val borderColor by animateColorAsState(
+        when {
+            isHovered && enabled -> Primary.copy(alpha = 0.35f)
+            else -> CardBorder
+        },
+        animationSpec = tween(200)
+    )
+    val cardBg by animateColorAsState(
+        when {
+            isHovered && enabled -> CardElevated
+            enabled -> CardColor
+            else -> GreyedOutBg
+        },
+        animationSpec = tween(200)
+    )
 
     Surface(
         color = cardBg,
         shape = shape,
         modifier = Modifier
             .width(130.dp)
+            .hoverable(interactionSource)
+            .border(1.dp, borderColor, shape)
             .then(if (enabled) Modifier.clickable(onClick = onClick) else Modifier)
     ) {
         Column(

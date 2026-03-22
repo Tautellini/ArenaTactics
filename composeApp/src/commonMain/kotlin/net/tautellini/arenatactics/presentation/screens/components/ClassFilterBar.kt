@@ -1,8 +1,13 @@
 package net.tautellini.arenatactics.presentation.screens.components
 
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.hoverable
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.interaction.collectIsHoveredAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.FlowRow
@@ -12,6 +17,8 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
@@ -22,9 +29,9 @@ import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
 import net.tautellini.arenatactics.data.model.WowClass
 import net.tautellini.arenatactics.data.model.WowheadIcons
+import net.tautellini.arenatactics.presentation.theme.CardBorder
 import net.tautellini.arenatactics.presentation.theme.CardColor
 import net.tautellini.arenatactics.presentation.theme.CardElevated
-import net.tautellini.arenatactics.presentation.theme.DividerColor
 import net.tautellini.arenatactics.presentation.theme.TextSecondary
 import net.tautellini.arenatactics.presentation.theme.classColor
 
@@ -59,18 +66,42 @@ private fun ClassChip(
 ) {
     val color = classColor(wowClass.id)
     val shape = RoundedCornerShape(10.dp)
-    val bg = if (isSelected) CardElevated else CardColor
-    val borderColor = if (isSelected) color else DividerColor
+
+    val interactionSource = remember { MutableInteractionSource() }
+    val isHovered by interactionSource.collectIsHoveredAsState()
+
+    val bg by animateColorAsState(
+        when {
+            isSelected -> CardElevated
+            isHovered -> CardElevated
+            else -> CardColor
+        },
+        animationSpec = tween(200)
+    )
+    val borderColor by animateColorAsState(
+        when {
+            isSelected -> color
+            isHovered -> color.copy(alpha = 0.4f)
+            else -> CardBorder
+        },
+        animationSpec = tween(200)
+    )
+    val chipAlpha = when {
+        isSelected -> 1f
+        isHovered -> 0.85f
+        else -> 0.6f
+    }
 
     Row(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(6.dp),
         modifier = Modifier
             .clip(shape)
+            .hoverable(interactionSource)
             .background(bg)
             .border(1.dp, borderColor, shape)
             .clickable(onClick = onClick)
-            .alpha(if (isSelected) 1f else 0.6f)
+            .alpha(chipAlpha)
             .padding(horizontal = 8.dp, vertical = 6.dp)
     ) {
         Box(
@@ -88,7 +119,7 @@ private fun ClassChip(
         }
         Text(
             text = wowClass.name,
-            color = if (isSelected) color else TextSecondary,
+            color = if (isSelected || isHovered) color else TextSecondary,
             fontSize = 12.sp,
             fontWeight = if (isSelected) FontWeight.SemiBold else FontWeight.Normal
         )

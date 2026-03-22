@@ -1,8 +1,13 @@
 package net.tautellini.arenatactics.presentation.screens
 
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.hoverable
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.interaction.collectIsHoveredAsState
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.lazy.LazyColumn
@@ -217,17 +222,29 @@ private fun SegmentedSelector(
     ) {
         options.forEach { option ->
             val isSelected = option == selected
+            val optInteraction = remember { MutableInteractionSource() }
+            val optHovered by optInteraction.collectIsHoveredAsState()
+            val optBg by animateColorAsState(
+                when {
+                    isSelected -> Primary
+                    optHovered -> CardElevated
+                    else -> Color.Transparent
+                },
+                animationSpec = tween(150)
+            )
+
             Box(
                 contentAlignment = Alignment.Center,
                 modifier = Modifier
                     .clip(RoundedCornerShape(12.dp))
-                    .background(if (isSelected) Primary else Color.Transparent)
+                    .hoverable(optInteraction)
+                    .background(optBg)
                     .clickable { onSelect(option) }
                     .padding(horizontal = 16.dp, vertical = 10.dp)
             ) {
                 Text(
                     text = label(option),
-                    color = if (isSelected) TextPrimary else TextSecondary,
+                    color = if (isSelected || optHovered) TextPrimary else TextSecondary,
                     fontSize = 13.sp,
                     fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
                     letterSpacing = 1.sp
@@ -602,13 +619,25 @@ private fun TopEntryRow(
         entry?.classId?.let { classColor(it) } ?: TextPrimary
     }
 
+    val interactionSource = remember { MutableInteractionSource() }
+    val isHovered by interactionSource.collectIsHoveredAsState()
+    val rowBg by animateColorAsState(
+        when {
+            isHeader -> Color.Transparent
+            isHovered -> CardElevated
+            else -> CardColor.copy(alpha = 0.5f)
+        },
+        animationSpec = tween(150)
+    )
+
     Row(
         modifier = Modifier
             .fillMaxWidth()
             .then(
                 if (!isHeader) Modifier
                     .clip(RoundedCornerShape(8.dp))
-                    .background(CardColor.copy(alpha = 0.5f))
+                    .hoverable(interactionSource)
+                    .background(rowBg)
                     .then(if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier)
                     .padding(horizontal = 12.dp, vertical = 8.dp)
                 else Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
@@ -670,17 +699,29 @@ private fun PaginationBar(
             val isSelected = page == currentPage
             val from = page * 100 + 1
             val to = minOf((page + 1) * 100, entries.size)
+            val pageInteraction = remember { MutableInteractionSource() }
+            val pageHovered by pageInteraction.collectIsHoveredAsState()
+            val pageBg by animateColorAsState(
+                when {
+                    isSelected -> Primary
+                    pageHovered -> CardElevated
+                    else -> CardColor
+                },
+                animationSpec = tween(150)
+            )
+
             Box(
                 contentAlignment = Alignment.Center,
                 modifier = Modifier
                     .clip(RoundedCornerShape(8.dp))
-                    .background(if (isSelected) Primary else CardColor)
+                    .hoverable(pageInteraction)
+                    .background(pageBg)
                     .clickable { onPageSelect(page) }
                     .padding(horizontal = 12.dp, vertical = 8.dp)
             ) {
                 Text(
                     text = "$from–$to",
-                    color = if (isSelected) TextPrimary else TextSecondary,
+                    color = if (isSelected || pageHovered) TextPrimary else TextSecondary,
                     fontSize = 12.sp,
                     fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
                 )
