@@ -22,3 +22,4 @@ node_modules/
 # Git worktrees
 .worktrees/
 /.superpowers/
+/secrets.properties
