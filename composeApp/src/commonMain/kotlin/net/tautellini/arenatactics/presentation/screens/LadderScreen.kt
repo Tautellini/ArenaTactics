@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
@@ -254,7 +255,7 @@ private fun CutoffsCard(snapshot: LadderSnapshot) {
     Surface(
         color = CardColor,
         shape = shape,
-        modifier = Modifier.widthIn(min = 240.dp)
+        modifier = Modifier.width(IntrinsicSize.Min).widthIn(min = 200.dp)
     ) {
         Column(
             modifier = Modifier.padding(16.dp),
@@ -284,14 +285,14 @@ private fun CutoffRow(title: String, rating: Int) {
     val color = CutoffColors[title] ?: TextSecondary
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.SpaceBetween,
-        modifier = Modifier.fillMaxWidth()
+        horizontalArrangement = Arrangement.spacedBy(24.dp)
     ) {
         Text(
             text = title.replaceFirstChar { it.uppercase() },
             color = color,
             fontSize = 12.sp,
-            fontWeight = FontWeight.Medium
+            fontWeight = FontWeight.Medium,
+            modifier = Modifier.widthIn(min = 80.dp)
         )
         Text(
             text = "$rating",
