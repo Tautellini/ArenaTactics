@@ -260,11 +260,21 @@ private fun SeasonBadge(seasonId: Int) {
 // ─── Rating Cutoffs ─────────────────────────────────────────────────────────
 
 private val CutoffColors = mapOf(
+    "title_gladiator" to Color(0xFFFF4500),
     "gladiator" to Color(0xFFFFD700),
     "duelist" to Color(0xFFA855F7),
     "rival" to Color(0xFF3B82F6),
     "challenger" to Color(0xFF22C55E),
     "combatant" to Color(0xFF94A3B8)
+)
+
+private val CutoffDisplayNames = mapOf(
+    "title_gladiator" to "Title Gladiator",
+    "gladiator" to "Gladiator",
+    "duelist" to "Duelist",
+    "rival" to "Rival",
+    "challenger" to "Challenger",
+    "combatant" to "Combatant"
 )
 
 @Composable
@@ -286,7 +296,7 @@ private fun CutoffsCard(snapshot: LadderSnapshot) {
                 fontWeight = FontWeight.SemiBold
             )
 
-            val orderedTitles = listOf("gladiator", "duelist", "rival", "challenger", "combatant")
+            val orderedTitles = listOf("title_gladiator", "gladiator", "duelist", "rival", "challenger", "combatant")
             val cutoffs = orderedTitles.mapNotNull { title ->
                 snapshot.ratingCutoffs[title]?.let { title to it }
             }
@@ -301,16 +311,17 @@ private fun CutoffsCard(snapshot: LadderSnapshot) {
 @Composable
 private fun CutoffRow(title: String, rating: Int) {
     val color = CutoffColors[title] ?: TextSecondary
+    val displayName = CutoffDisplayNames[title] ?: title.replaceFirstChar { it.uppercase() }
     Row(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(24.dp)
     ) {
         Text(
-            text = title.replaceFirstChar { it.uppercase() },
+            text = displayName,
             color = color,
             fontSize = 12.sp,
             fontWeight = FontWeight.Medium,
-            modifier = Modifier.widthIn(min = 80.dp)
+            modifier = Modifier.widthIn(min = 100.dp)
         )
         Text(
             text = "$rating",
@@ -488,7 +499,7 @@ private fun SpecDistributionCard(distribution: List<SpecDistribution>) {
             verticalArrangement = Arrangement.spacedBy(4.dp)
         ) {
             Text(
-                "Spec Distribution",
+                "Top 500 Spec Distribution",
                 color = TextPrimary,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.SemiBold,

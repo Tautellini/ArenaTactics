@@ -103,6 +103,14 @@ def get_pvp_rewards(api_host: str, namespace: str, season_id: int, bracket_filte
             continue
         rating_cutoff = reward.get("rating_cutoff", 0)
         name = reward.get("achievement", {}).get("name", "").lower()
+
+        # Permanent title gladiator (e.g., "Infernal Gladiator") has "gladiator" but no colon
+        # Regular gladiator (e.g., "Gladiator: Season 1") has "gladiator:"
+        if "gladiator" in name and "gladiator:" not in name and ":" not in name:
+            if "title_gladiator" not in cutoffs or rating_cutoff > cutoffs["title_gladiator"]:
+                cutoffs["title_gladiator"] = rating_cutoff
+            continue
+
         for title in ["gladiator", "duelist", "rival", "challenger", "combatant"]:
             if title in name:
                 if title not in cutoffs or rating_cutoff > cutoffs[title]:
