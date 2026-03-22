@@ -62,13 +62,14 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - Compose Navigation
 
 ## DESIGN GUIDELINES
-- modern design with glass-like elements
-- **premium feel**
+- dark, powerful design with glass-like elements
+- **premium feel** — black to red palette, imposing and bold
 - modern icon first design
-- Background color: #042326
-- Foreground color: #0A3A40
-- Primary color: #1D7373
-- Secondary color: #0F5959
+- Background color: #0A0A0A (near-black)
+- Surface color: #151515 (dark gray)
+- Card color: #1A1214 (dark with red undertone)
+- Primary color: #CC3333 (deep red)
+- Secondary color: #8B1A1A (dark crimson)
 
 ## Wowhead / Zamimg Icons
 - Icons for specs, classes, items, and game modes are loaded from `wow.zamimg.com/images/wow/icons/{size}/{iconName}.jpg` via the `WowheadIcons` helper.
