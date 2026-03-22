@@ -229,7 +229,7 @@ fun App() {
                     composable<Screen.Ladder> { entry ->
                         val screen = entry.toRoute<Screen.Ladder>()
                         val vm = viewModel(key = "ladder_${screen.addonId}") {
-                            LadderViewModel(screen.addonId, ladderRepository)
+                            LadderViewModel(screen.addonId, ladderRepository, addonRepository, compositionRepository)
                         }
                         LadderScreen(viewModel = vm)
                     }

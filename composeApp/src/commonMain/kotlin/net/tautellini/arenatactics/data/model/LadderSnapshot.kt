@@ -38,3 +38,10 @@ data class LadderEntry(
     val losses: Int = 0,
     val classId: String? = null
 )
+
+/** Runtime-only — computed from top entries, not serialized. */
+data class ClassDistributionEntry(
+    val classId: String,
+    val count: Int,
+    val percentage: Double
+)

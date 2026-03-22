@@ -5,7 +5,6 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Surface
@@ -13,9 +12,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -26,12 +22,14 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
+import net.tautellini.arenatactics.data.model.ClassDistributionEntry
 import net.tautellini.arenatactics.data.model.LadderEntry
 import net.tautellini.arenatactics.data.model.LadderSnapshot
 import net.tautellini.arenatactics.data.model.SpecDistribution
 import net.tautellini.arenatactics.data.model.WowheadIcons
 import net.tautellini.arenatactics.presentation.LadderState
 import net.tautellini.arenatactics.presentation.LadderViewModel
+import net.tautellini.arenatactics.presentation.screens.components.ClassFilterBar
 import net.tautellini.arenatactics.presentation.theme.*
 
 @Composable
@@ -54,7 +52,9 @@ fun LadderScreen(viewModel: LadderViewModel) {
             is LadderState.Success -> LadderContent(
                 state = s,
                 onRegionSelect = viewModel::selectRegion,
-                onBracketSelect = viewModel::selectBracket
+                onBracketSelect = viewModel::selectBracket,
+                onClassSelect = viewModel::selectClass,
+                onPageSelect = viewModel::setPage
             )
         }
     }
@@ -64,13 +64,15 @@ fun LadderScreen(viewModel: LadderViewModel) {
 private fun LadderContent(
     state: LadderState.Success,
     onRegionSelect: (String) -> Unit,
-    onBracketSelect: (String) -> Unit
+    onBracketSelect: (String) -> Unit,
+    onClassSelect: (String?) -> Unit,
+    onPageSelect: (Int) -> Unit
 ) {
     LazyColumn(
         verticalArrangement = Arrangement.spacedBy(16.dp),
         modifier = Modifier.fillMaxSize()
     ) {
-        // Region & Bracket selectors
+        // Selectors row: Region | Bracket
         item {
             Row(
                 horizontalArrangement = Arrangement.spacedBy(12.dp),
@@ -94,51 +96,94 @@ private fun LadderContent(
 
         val snapshot = state.currentSnapshot
         if (snapshot == null) {
-            item {
-                Text("No data available for this region/bracket.", color = TextSecondary)
-            }
+            item { Text("No data available for this selection.", color = TextSecondary) }
             return@LazyColumn
         }
 
-        // Fetch date
+        // Season + fetch date
         item {
-            Text(
-                "Last updated: ${snapshot.fetchedAt.take(10)}",
-                color = TextSecondary,
-                fontSize = 12.sp
-            )
-        }
-
-        // Rating cutoffs
-        if (snapshot.ratingCutoffs.isNotEmpty()) {
-            item {
-                CutoffsCard(snapshot)
-            }
-        }
-
-        // Spec distribution
-        if (snapshot.specDistribution.isNotEmpty()) {
-            item {
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                SeasonBadge(snapshot.seasonId)
                 Text(
-                    "Spec Popularity",
-                    color = TextPrimary,
-                    fontSize = 18.sp,
-                    fontWeight = FontWeight.SemiBold
+                    "Updated ${snapshot.fetchedAt.take(10)}",
+                    color = TextSecondary.copy(alpha = 0.6f),
+                    fontSize = 11.sp
                 )
             }
+        }
+
+        // Compact widgets in FlowRow
+        item {
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(16.dp),
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                if (snapshot.ratingCutoffs.isNotEmpty()) {
+                    CutoffsCard(snapshot)
+                }
+                if (state.classDistribution.isNotEmpty()) {
+                    ClassDistributionCard(state.classDistribution)
+                }
+                if (snapshot.specDistribution.isNotEmpty()) {
+                    SpecDistributionCard(snapshot.specDistribution)
+                }
+            }
+        }
+
+        // Class filter
+        if (state.classes.isNotEmpty()) {
             item {
-                SpecDistributionSection(snapshot.specDistribution)
+                ClassFilterBar(
+                    classes = state.classes,
+                    selectedClassId = state.selectedClassId,
+                    onSelect = onClassSelect
+                )
             }
         }
 
         // Top players
-        if (snapshot.topEntries.isNotEmpty()) {
+        if (state.filteredEntries.isNotEmpty()) {
             item {
-                TopPlayersSection(snapshot.topEntries)
+                Text(
+                    if (state.selectedClassId != null)
+                        "${state.filteredEntries.size} players"
+                    else
+                        "Top ${snapshot.topEntries.size} Players",
+                    color = TextPrimary,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.SemiBold
+                )
+            }
+
+            // Header
+            item { TopEntryRow(entry = null) }
+
+            // Paged entries
+            state.pagedEntries.forEach { entry ->
+                item(key = "${snapshot.bracket}_${entry.rank}") {
+                    TopEntryRow(entry = entry)
+                }
+            }
+
+            // Pagination
+            if (state.totalFilteredPages > 1) {
+                item {
+                    PaginationBar(
+                        entries = state.filteredEntries,
+                        currentPage = state.currentPage,
+                        totalPages = state.totalFilteredPages,
+                        onPageSelect = onPageSelect
+                    )
+                }
             }
         }
     }
 }
+
+// ─── Selectors ──────────────────────────────────────────────────────────────
 
 @Composable
 private fun SegmentedSelector(
@@ -147,10 +192,9 @@ private fun SegmentedSelector(
     label: (String) -> String,
     onSelect: (String) -> Unit
 ) {
-    val shape = RoundedCornerShape(12.dp)
     Row(
         modifier = Modifier
-            .clip(shape)
+            .clip(RoundedCornerShape(12.dp))
             .background(CardColor)
     ) {
         options.forEach { option ->
@@ -175,6 +219,28 @@ private fun SegmentedSelector(
     }
 }
 
+@Composable
+private fun SeasonBadge(seasonId: Int) {
+    val shape = RoundedCornerShape(8.dp)
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = Modifier
+            .clip(shape)
+            .background(CardColor)
+            .border(1.dp, DividerColor, shape)
+            .padding(horizontal = 10.dp, vertical = 6.dp)
+    ) {
+        Text(
+            "Season $seasonId",
+            color = TextPrimary,
+            fontSize = 12.sp,
+            fontWeight = FontWeight.SemiBold
+        )
+    }
+}
+
+// ─── Rating Cutoffs ─────────────────────────────────────────────────────────
+
 private val CutoffColors = mapOf(
     "gladiator" to Color(0xFFFFD700),
     "duelist" to Color(0xFFA855F7),
@@ -189,22 +255,17 @@ private fun CutoffsCard(snapshot: LadderSnapshot) {
     Surface(
         color = CardColor,
         shape = shape,
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier.widthIn(min = 240.dp)
     ) {
         Column(
-            modifier = Modifier.padding(20.dp),
-            verticalArrangement = Arrangement.spacedBy(16.dp)
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             Text(
                 "Rating Cutoffs",
                 color = TextPrimary,
-                fontSize = 18.sp,
+                fontSize = 14.sp,
                 fontWeight = FontWeight.SemiBold
-            )
-            Text(
-                "Season ${snapshot.seasonId} \u2022 ${snapshot.region.uppercase()} ${snapshot.bracket}",
-                color = TextSecondary,
-                fontSize = 12.sp
             )
 
             val orderedTitles = listOf("gladiator", "duelist", "rival", "challenger", "combatant")
@@ -212,51 +273,132 @@ private fun CutoffsCard(snapshot: LadderSnapshot) {
                 snapshot.ratingCutoffs[title]?.let { title to it }
             }
 
-            FlowRow(
-                horizontalArrangement = Arrangement.spacedBy(12.dp),
-                verticalArrangement = Arrangement.spacedBy(12.dp)
-            ) {
-                cutoffs.forEach { (title, rating) ->
-                    CutoffChip(title, rating)
-                }
+            cutoffs.forEach { (title, rating) ->
+                CutoffRow(title, rating)
             }
         }
     }
 }
 
 @Composable
-private fun CutoffChip(title: String, rating: Int) {
+private fun CutoffRow(title: String, rating: Int) {
     val color = CutoffColors[title] ?: TextSecondary
-    val shape = RoundedCornerShape(12.dp)
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.SpaceBetween,
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Text(
+            text = title.replaceFirstChar { it.uppercase() },
+            color = color,
+            fontSize = 12.sp,
+            fontWeight = FontWeight.Medium
+        )
+        Text(
+            text = "$rating",
+            color = TextPrimary,
+            fontSize = 14.sp,
+            fontWeight = FontWeight.Bold
+        )
+    }
+}
+
+// ─── Class Distribution ─────────────────────────────────────────────────────
+
+private val CLASS_ICON_NAMES = mapOf(
+    "warrior" to "classicon_warrior",
+    "paladin" to "classicon_paladin",
+    "hunter" to "classicon_hunter",
+    "rogue" to "classicon_rogue",
+    "priest" to "classicon_priest",
+    "deathknight" to "classicon_deathknight",
+    "shaman" to "classicon_shaman",
+    "mage" to "classicon_mage",
+    "warlock" to "classicon_warlock",
+    "monk" to "classicon_monk",
+    "druid" to "classicon_druid",
+    "demonhunter" to "classicon_demonhunter",
+    "evoker" to "classicon_evoker",
+)
+
+@Composable
+private fun ClassDistributionCard(distribution: List<ClassDistributionEntry>) {
+    val maxCount = distribution.maxOfOrNull { it.count } ?: 1
+    val shape = RoundedCornerShape(16.dp)
+
     Surface(
-        color = color.copy(alpha = 0.12f),
+        color = CardColor,
         shape = shape,
-        modifier = Modifier.border(1.dp, color.copy(alpha = 0.3f), shape)
+        modifier = Modifier.widthIn(min = 260.dp, max = 400.dp)
     ) {
         Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
-            modifier = Modifier.padding(horizontal = 20.dp, vertical = 12.dp)
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp)
         ) {
             Text(
-                text = title.replaceFirstChar { it.uppercase() },
-                color = color,
-                fontSize = 12.sp,
-                fontWeight = FontWeight.SemiBold,
-                letterSpacing = 1.sp
-            )
-            Spacer(Modifier.height(4.dp))
-            Text(
-                text = "$rating+",
+                "Class Distribution",
                 color = TextPrimary,
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold
+                fontSize = 14.sp,
+                fontWeight = FontWeight.SemiBold,
+                modifier = Modifier.padding(bottom = 8.dp)
             )
+            distribution.forEach { entry ->
+                ClassDistributionRow(entry, maxCount)
+            }
         }
     }
 }
 
-// Spec icon name lookup — maps our specId slugs to Wowhead icon names.
-// Only needed for specs that appear in ladder data (primarily retail).
+@Composable
+private fun ClassDistributionRow(entry: ClassDistributionEntry, maxCount: Int) {
+    val fraction = entry.count.toFloat() / maxCount.coerceAtLeast(1)
+    val barColor = classColor(entry.classId)
+    val iconName = CLASS_ICON_NAMES[entry.classId]
+
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier.fillMaxWidth().height(26.dp)
+    ) {
+        if (iconName != null) {
+            AsyncImage(
+                model = WowheadIcons.medium(iconName),
+                contentDescription = entry.classId,
+                modifier = Modifier.size(20.dp).clip(RoundedCornerShape(4.dp))
+            )
+            Spacer(Modifier.width(6.dp))
+        }
+
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .height(14.dp)
+                .clip(RoundedCornerShape(7.dp))
+                .background(Background)
+        ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .fillMaxWidth(fraction)
+                    .clip(RoundedCornerShape(7.dp))
+                    .background(barColor.copy(alpha = 0.7f))
+            )
+        }
+
+        Spacer(Modifier.width(8.dp))
+
+        Text(
+            text = "${entry.percentage}%",
+            color = TextSecondary,
+            fontSize = 11.sp,
+            modifier = Modifier.width(40.dp),
+            textAlign = TextAlign.End
+        )
+    }
+}
+
+// ─── Spec Distribution ──────────────────────────────────────────────────────
+
+// Spec icon name lookup
 private val SPEC_ICON_NAMES = mapOf(
     "deathknight_blood" to "spell_deathknight_bloodpresence",
     "deathknight_frost" to "spell_deathknight_frostpresence",
@@ -308,28 +450,35 @@ private fun specDisplayName(specId: String): String {
 }
 
 @Composable
-private fun SpecDistributionSection(distribution: List<SpecDistribution>) {
+private fun SpecDistributionCard(distribution: List<SpecDistribution>) {
     val maxCount = distribution.maxOfOrNull { it.count } ?: 1
     val shape = RoundedCornerShape(16.dp)
 
     Surface(
         color = CardColor,
         shape = shape,
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier.widthIn(min = 280.dp, max = 420.dp)
     ) {
         Column(
             modifier = Modifier.padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(6.dp)
+            verticalArrangement = Arrangement.spacedBy(4.dp)
         ) {
+            Text(
+                "Spec Distribution",
+                color = TextPrimary,
+                fontSize = 14.sp,
+                fontWeight = FontWeight.SemiBold,
+                modifier = Modifier.padding(bottom = 8.dp)
+            )
             distribution.forEach { spec ->
-                SpecDistributionBar(spec, maxCount)
+                SpecDistributionRow(spec, maxCount)
             }
         }
     }
 }
 
 @Composable
-private fun SpecDistributionBar(spec: SpecDistribution, maxCount: Int) {
+private fun SpecDistributionRow(spec: SpecDistribution, maxCount: Int) {
     val fraction = spec.count.toFloat() / maxCount.coerceAtLeast(1)
     val classId = spec.specId.substringBefore("_")
     val barColor = classColor(classId)
@@ -337,131 +486,55 @@ private fun SpecDistributionBar(spec: SpecDistribution, maxCount: Int) {
 
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier.fillMaxWidth().height(32.dp)
+        modifier = Modifier.fillMaxWidth().height(26.dp)
     ) {
-        // Spec icon
         if (iconName != null) {
             AsyncImage(
                 model = WowheadIcons.medium(iconName),
                 contentDescription = spec.specId,
-                modifier = Modifier
-                    .size(24.dp)
-                    .clip(RoundedCornerShape(4.dp))
+                modifier = Modifier.size(20.dp).clip(RoundedCornerShape(4.dp))
             )
-            Spacer(Modifier.width(8.dp))
+            Spacer(Modifier.width(6.dp))
         }
 
-        // Spec name
         Text(
             text = specDisplayName(spec.specId),
             color = TextPrimary,
-            fontSize = 12.sp,
+            fontSize = 11.sp,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
-            modifier = Modifier.width(140.dp)
+            modifier = Modifier.width(120.dp)
         )
 
-        // Bar
         Box(
             modifier = Modifier
                 .weight(1f)
-                .height(16.dp)
-                .clip(RoundedCornerShape(8.dp))
+                .height(14.dp)
+                .clip(RoundedCornerShape(7.dp))
                 .background(Background)
         ) {
             Box(
                 modifier = Modifier
                     .fillMaxHeight()
                     .fillMaxWidth(fraction)
-                    .clip(RoundedCornerShape(8.dp))
+                    .clip(RoundedCornerShape(7.dp))
                     .background(barColor.copy(alpha = 0.7f))
             )
         }
 
         Spacer(Modifier.width(8.dp))
 
-        // Percentage
         Text(
             text = "${spec.percentage}%",
             color = TextSecondary,
-            fontSize = 12.sp,
-            modifier = Modifier.width(48.dp),
+            fontSize = 11.sp,
+            modifier = Modifier.width(40.dp),
             textAlign = TextAlign.End
         )
     }
 }
 
-private const val PAGE_SIZE = 100
-
-@Composable
-private fun TopPlayersSection(entries: List<LadderEntry>) {
-    var currentPage by remember { mutableIntStateOf(0) }
-    val totalPages = (entries.size + PAGE_SIZE - 1) / PAGE_SIZE
-    val pageEntries = entries.drop(currentPage * PAGE_SIZE).take(PAGE_SIZE)
-
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Text(
-            "Top Players",
-            color = TextPrimary,
-            fontSize = 18.sp,
-            fontWeight = FontWeight.SemiBold
-        )
-
-        // Header
-        TopEntryRow(entry = null)
-
-        pageEntries.forEach { entry ->
-            TopEntryRow(entry = entry)
-        }
-
-        // Pagination
-        if (totalPages > 1) {
-            Row(
-                horizontalArrangement = Arrangement.Center,
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.fillMaxWidth().padding(top = 8.dp)
-            ) {
-                (0 until totalPages).forEach { page ->
-                    val isSelected = page == currentPage
-                    val from = page * PAGE_SIZE + 1
-                    val to = minOf((page + 1) * PAGE_SIZE, entries.size)
-                    Box(
-                        contentAlignment = Alignment.Center,
-                        modifier = Modifier
-                            .clip(RoundedCornerShape(8.dp))
-                            .background(if (isSelected) Primary else CardColor)
-                            .clickable { currentPage = page }
-                            .padding(horizontal = 12.dp, vertical = 8.dp)
-                    ) {
-                        Text(
-                            text = "$from–$to",
-                            color = if (isSelected) Background else TextSecondary,
-                            fontSize = 12.sp,
-                            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
-                        )
-                    }
-                    if (page < totalPages - 1) Spacer(Modifier.width(6.dp))
-                }
-            }
-        }
-    }
-}
-
-private val CLASS_ICON_NAMES = mapOf(
-    "warrior" to "classicon_warrior",
-    "paladin" to "classicon_paladin",
-    "hunter" to "classicon_hunter",
-    "rogue" to "classicon_rogue",
-    "priest" to "classicon_priest",
-    "deathknight" to "classicon_deathknight",
-    "shaman" to "classicon_shaman",
-    "mage" to "classicon_mage",
-    "warlock" to "classicon_warlock",
-    "monk" to "classicon_monk",
-    "druid" to "classicon_druid",
-    "demonhunter" to "classicon_demonhunter",
-    "evoker" to "classicon_evoker",
-)
+// ─── Top Players Table ──────────────────────────────────────────────────────
 
 @Composable
 private fun TopEntryRow(entry: LadderEntry?) {
@@ -475,7 +548,7 @@ private fun TopEntryRow(entry: LadderEntry?) {
 
     Row(
         modifier = Modifier
-            .fillMaxWidth()
+            .widthIn(max = 700.dp)
             .then(
                 if (!isHeader) Modifier
                     .clip(RoundedCornerShape(8.dp))
@@ -491,16 +564,13 @@ private fun TopEntryRow(entry: LadderEntry?) {
             modifier = Modifier.width(40.dp)
         )
 
-        // Class icon
         if (!isHeader && entry!!.classId != null) {
             val iconName = CLASS_ICON_NAMES[entry.classId]
             if (iconName != null) {
                 AsyncImage(
                     model = WowheadIcons.medium(iconName),
                     contentDescription = entry.classId,
-                    modifier = Modifier
-                        .size(20.dp)
-                        .clip(RoundedCornerShape(4.dp))
+                    modifier = Modifier.size(20.dp).clip(RoundedCornerShape(4.dp))
                 )
                 Spacer(Modifier.width(6.dp))
             }
@@ -524,5 +594,41 @@ private fun TopEntryRow(entry: LadderEntry?) {
             color = textColor, fontWeight = weight, fontSize = fontSize,
             modifier = Modifier.width(70.dp), textAlign = TextAlign.End
         )
+    }
+}
+
+@Composable
+private fun PaginationBar(
+    entries: List<LadderEntry>,
+    currentPage: Int,
+    totalPages: Int,
+    onPageSelect: (Int) -> Unit
+) {
+    Row(
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier.fillMaxWidth().padding(top = 4.dp)
+    ) {
+        (0 until totalPages).forEach { page ->
+            val isSelected = page == currentPage
+            val from = page * 100 + 1
+            val to = minOf((page + 1) * 100, entries.size)
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .clip(RoundedCornerShape(8.dp))
+                    .background(if (isSelected) Primary else CardColor)
+                    .clickable { onPageSelect(page) }
+                    .padding(horizontal = 12.dp, vertical = 8.dp)
+            ) {
+                Text(
+                    text = "$from–$to",
+                    color = if (isSelected) Background else TextSecondary,
+                    fontSize = 12.sp,
+                    fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
+                )
+            }
+            if (page < totalPages - 1) Spacer(Modifier.width(6.dp))
+        }
     }
 }
