@@ -85,6 +85,11 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
    layouts reflow naturally across screen widths. Never hardcode column counts or fixed
    widths for list/grid content. Layouts must look correct and visually appealing at both
    narrow (≈800px) and wide (≈1600px) viewports.
+-  **Cards and widgets must never default to full width** unless they are genuinely
+   full-width content (e.g., player tables). Use `widthIn(min, max)`, `IntrinsicSize`,
+   or `FlowRow` to let cards size to their content and wrap side-by-side on wide screens.
+   A 200px card stretching to 1600px is wasted space. Always ask: "does this card need
+   all this width, or would a compact layout be more useful?"
 - do **not** place all Models in a singular file, separate and extract them
 
 ## Multi-Bracket & Multi-Addon Scope

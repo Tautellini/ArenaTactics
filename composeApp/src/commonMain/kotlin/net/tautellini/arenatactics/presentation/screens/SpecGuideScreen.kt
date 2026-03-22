@@ -133,16 +133,26 @@ private fun SpecGuideContent(spec: WowSpec, wowClass: WowClass, meta: SpecMeta) 
         // Talent builds
         if (meta.popularTalentBuilds.isNotEmpty()) {
             SectionTitle("Popular Talent Builds")
-            meta.popularTalentBuilds.forEach { build ->
-                TalentBuildRow(build, meta.sampleSize)
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                meta.popularTalentBuilds.forEach { build ->
+                    TalentBuildRow(build, meta.sampleSize)
+                }
             }
         }
 
         // Equipment per slot
         if (meta.slotBreakdowns.isNotEmpty()) {
             SectionTitle("Equipment by Slot")
-            meta.slotBreakdowns.forEach { slot ->
-                SlotCard(slot)
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                meta.slotBreakdowns.forEach { slot ->
+                    SlotCard(slot)
+                }
             }
         }
 
@@ -158,7 +168,7 @@ private fun SectionTitle(text: String) {
 @Composable
 private fun TalentBuildRow(build: TalentBuildEntry, total: Int) {
     val shape = RoundedCornerShape(12.dp)
-    Surface(color = CardColor, shape = shape, modifier = Modifier.fillMaxWidth()) {
+    Surface(color = CardColor, shape = shape, modifier = Modifier.widthIn(min = 240.dp, max = 360.dp)) {
         Column(modifier = Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -201,7 +211,7 @@ private fun TalentBuildRow(build: TalentBuildEntry, total: Int) {
 @Composable
 private fun SlotCard(slot: SlotBreakdown) {
     val shape = RoundedCornerShape(12.dp)
-    Surface(color = CardColor, shape = shape, modifier = Modifier.fillMaxWidth()) {
+    Surface(color = CardColor, shape = shape, modifier = Modifier.widthIn(min = 280.dp, max = 420.dp)) {
         Column(modifier = Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Text(
                 slotDisplayName(slot.slot),
