@@ -2,7 +2,7 @@
   "region": "us",
   "bracket": "2v2",
   "seasonId": 1,
-  "fetchedAt": "2026-03-22T17:45:31Z",
+  "fetchedAt": "2026-03-22T19:12:31Z",
   "totalEntries": 5005,
   "ratingCutoffs": {
     "gladiator": 2411,
@@ -539,7 +539,7 @@
       "wins": 86,
       "losses": 32,
       "classId": "rogue",
-      "specId": "rogue_subtlety",
+      "specId": "rogue_assassination",
       "race": "Undead",
       "guild": "who",
       "faction": "HORDE"
@@ -2121,7 +2121,7 @@
       "wins": 119,
       "losses": 67,
       "classId": "druid",
-      "specId": "druid_balance",
+      "specId": "druid_restoration",
       "race": "Night Elf",
       "guild": "Ca Pousse",
       "faction": "ALLIANCE"
@@ -3843,7 +3843,7 @@
       "wins": 118,
       "losses": 90,
       "classId": "priest",
-      "specId": "priest_discipline",
+      "specId": "priest_holy",
       "race": "Undead",
       "guild": "good enough",
       "faction": "HORDE"
@@ -4921,7 +4921,7 @@
       "wins": 135,
       "losses": 90,
       "classId": "rogue",
-      "specId": "rogue_combat",
+      "specId": "rogue_subtlety",
       "race": "Undead",
       "guild": null,
       "faction": "HORDE"
@@ -4963,7 +4963,7 @@
       "wins": 252,
       "losses": 205,
       "classId": "priest",
-      "specId": "priest_holy",
+      "specId": "priest_discipline",
       "race": "Dwarf",
       "guild": "GOLDENBOYS",
       "faction": "ALLIANCE"
@@ -5648,11 +5648,11 @@
       "rating": 2153,
       "wins": 155,
       "losses": 124,
-      "classId": null,
-      "specId": null,
-      "race": null,
-      "guild": null,
-      "faction": null
+      "classId": "priest",
+      "specId": "priest_discipline",
+      "race": "Dwarf",
+      "guild": "and he say me i noob LOL",
+      "faction": "ALLIANCE"
     },
     {
       "rank": 402,

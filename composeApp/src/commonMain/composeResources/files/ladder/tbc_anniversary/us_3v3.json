@@ -2,7 +2,7 @@
   "region": "us",
   "bracket": "3v3",
   "seasonId": 1,
-  "fetchedAt": "2026-03-22T17:45:32Z",
+  "fetchedAt": "2026-03-22T19:12:32Z",
   "totalEntries": 5003,
   "ratingCutoffs": {
     "gladiator": 2314,
@@ -875,7 +875,7 @@
       "wins": 120,
       "losses": 87,
       "classId": "warrior",
-      "specId": "warrior_fury",
+      "specId": "warrior_arms",
       "race": "Orc",
       "guild": "WOMPRATS",
       "faction": "HORDE"
@@ -3773,7 +3773,7 @@
       "wins": 113,
       "losses": 61,
       "classId": "hunter",
-      "specId": "hunter_marksmanship",
+      "specId": "hunter_beastmastery",
       "race": "Dwarf",
       "guild": "Council of Darkness",
       "faction": "ALLIANCE"
@@ -3983,7 +3983,7 @@
       "wins": 91,
       "losses": 66,
       "classId": "druid",
-      "specId": "druid_balance",
+      "specId": "druid_restoration",
       "race": "Night Elf",
       "guild": "Ca Pousse",
       "faction": "ALLIANCE"

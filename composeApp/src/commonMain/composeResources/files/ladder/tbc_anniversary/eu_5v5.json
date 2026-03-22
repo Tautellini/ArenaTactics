@@ -2,7 +2,7 @@
   "region": "eu",
   "bracket": "5v5",
   "seasonId": 1,
-  "fetchedAt": "2026-03-22T17:56:23Z",
+  "fetchedAt": "2026-03-22T19:25:21Z",
   "totalEntries": 5021,
   "ratingCutoffs": {
     "gladiator": 2211,
@@ -581,7 +581,7 @@
       "wins": 65,
       "losses": 26,
       "classId": "warrior",
-      "specId": "warrior_arms",
+      "specId": "warrior_fury",
       "race": "Gnome",
       "guild": "TURBOTIME",
       "faction": "ALLIANCE"
@@ -1827,7 +1827,7 @@
       "wins": 77,
       "losses": 46,
       "classId": "druid",
-      "specId": "druid_feral",
+      "specId": "druid_restoration",
       "race": "Tauren",
       "guild": "Mandate of Heaven",
       "faction": "HORDE"
@@ -2023,7 +2023,7 @@
       "wins": 69,
       "losses": 42,
       "classId": "shaman",
-      "specId": "shaman_elemental",
+      "specId": "shaman_restoration",
       "race": "Troll",
       "guild": "ONY BUFF WHEN",
       "faction": "HORDE"
@@ -2079,7 +2079,7 @@
       "wins": 65,
       "losses": 26,
       "classId": "mage",
-      "specId": "mage_fire",
+      "specId": "mage_frost",
       "race": "Undead",
       "guild": "YÅKUZA",
       "faction": "HORDE"
@@ -2709,7 +2709,7 @@
       "wins": 50,
       "losses": 28,
       "classId": "priest",
-      "specId": "priest_discipline",
+      "specId": "priest_holy",
       "race": "Undead",
       "guild": "uno mas",
       "faction": "HORDE"
@@ -3143,7 +3143,7 @@
       "wins": 56,
       "losses": 19,
       "classId": "warlock",
-      "specId": "warlock_affliction",
+      "specId": "warlock_destruction",
       "race": "Orc",
       "guild": "AVSLUT",
       "faction": "HORDE"
@@ -3675,7 +3675,7 @@
       "wins": 66,
       "losses": 45,
       "classId": "priest",
-      "specId": "priest_discipline",
+      "specId": "priest_shadow",
       "race": "Undead",
       "guild": "Soil",
       "faction": "HORDE"
@@ -3885,7 +3885,7 @@
       "wins": 59,
       "losses": 33,
       "classId": "rogue",
-      "specId": "rogue_combat",
+      "specId": "rogue_subtlety",
       "race": "Human",
       "guild": "Out of Nowhere",
       "faction": "ALLIANCE"
@@ -4417,7 +4417,7 @@
       "wins": 68,
       "losses": 43,
       "classId": "shaman",
-      "specId": "shaman_restoration",
+      "specId": "shaman_enhancement",
       "race": "Draenei",
       "guild": "Kotipizza",
       "faction": "ALLIANCE"
@@ -5047,7 +5047,7 @@
       "wins": 68,
       "losses": 36,
       "classId": "druid",
-      "specId": "druid_balance",
+      "specId": "druid_restoration",
       "race": "Night Elf",
       "guild": "Kotipizza",
       "faction": "ALLIANCE"
@@ -5411,7 +5411,7 @@
       "wins": 57,
       "losses": 36,
       "classId": "druid",
-      "specId": "druid_restoration",
+      "specId": "druid_feral",
       "race": "Tauren",
       "guild": "Devourers",
       "faction": "HORDE"
@@ -6027,7 +6027,7 @@
       "wins": 32,
       "losses": 14,
       "classId": "mage",
-      "specId": "mage_frost",
+      "specId": "mage_fire",
       "race": "Undead",
       "guild": "pneumonoultramicroscopic",
       "faction": "HORDE"

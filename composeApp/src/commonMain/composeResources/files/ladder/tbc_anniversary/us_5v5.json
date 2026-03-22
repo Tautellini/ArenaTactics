@@ -2,7 +2,7 @@
   "region": "us",
   "bracket": "5v5",
   "seasonId": 1,
-  "fetchedAt": "2026-03-22T17:45:32Z",
+  "fetchedAt": "2026-03-22T19:12:32Z",
   "totalEntries": 5017,
   "ratingCutoffs": {
     "gladiator": 2182,
@@ -1071,7 +1071,7 @@
       "wins": 89,
       "losses": 48,
       "classId": "warlock",
-      "specId": "warlock_demonology",
+      "specId": "warlock_destruction",
       "race": "Undead",
       "guild": "crayons taste purple",
       "faction": "HORDE"
@@ -1085,7 +1085,7 @@
       "wins": 65,
       "losses": 31,
       "classId": "warrior",
-      "specId": "warrior_fury",
+      "specId": "warrior_arms",
       "race": "Orc",
       "guild": "WOMPRATS",
       "faction": "HORDE"
@@ -1925,7 +1925,7 @@
       "wins": 62,
       "losses": 16,
       "classId": "druid",
-      "specId": "druid_restoration",
+      "specId": "druid_feral",
       "race": "Night Elf",
       "guild": "MASSIVUS",
       "faction": "ALLIANCE"
@@ -2877,7 +2877,7 @@
       "wins": 39,
       "losses": 11,
       "classId": "rogue",
-      "specId": "rogue_subtlety",
+      "specId": "rogue_assassination",
       "race": "Undead",
       "guild": "who",
       "faction": "HORDE"
@@ -3605,7 +3605,7 @@
       "wins": 117,
       "losses": 73,
       "classId": "druid",
-      "specId": "druid_balance",
+      "specId": "druid_restoration",
       "race": "Night Elf",
       "guild": "Ca Pousse",
       "faction": "ALLIANCE"
@@ -6195,7 +6195,7 @@
       "wins": 87,
       "losses": 60,
       "classId": "priest",
-      "specId": "priest_shadow",
+      "specId": "priest_discipline",
       "race": "Dwarf",
       "guild": "Lackluster",
       "faction": "ALLIANCE"
@@ -6699,7 +6699,7 @@
       "wins": 57,
       "losses": 29,
       "classId": "priest",
-      "specId": "priest_holy",
+      "specId": "priest_discipline",
       "race": "Dwarf",
       "guild": "GOLDENBOYS",
       "faction": "ALLIANCE"

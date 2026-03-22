@@ -2,7 +2,7 @@
   "region": "eu",
   "bracket": "3v3",
   "seasonId": 1,
-  "fetchedAt": "2026-03-22T17:56:23Z",
+  "fetchedAt": "2026-03-22T19:25:21Z",
   "totalEntries": 5010,
   "ratingCutoffs": {
     "gladiator": 2332,
@@ -651,7 +651,7 @@
       "wins": 98,
       "losses": 69,
       "classId": "warlock",
-      "specId": "warlock_affliction",
+      "specId": "warlock_destruction",
       "race": "Orc",
       "guild": "AVSLUT",
       "faction": "HORDE"
@@ -917,7 +917,7 @@
       "wins": 138,
       "losses": 104,
       "classId": "rogue",
-      "specId": "rogue_combat",
+      "specId": "rogue_subtlety",
       "race": "Human",
       "guild": null,
       "faction": "ALLIANCE"
@@ -1309,7 +1309,7 @@
       "wins": 132,
       "losses": 82,
       "classId": "rogue",
-      "specId": "rogue_combat",
+      "specId": "rogue_subtlety",
       "race": "Human",
       "guild": "Out of Nowhere",
       "faction": "ALLIANCE"
@@ -1463,7 +1463,7 @@
       "wins": 115,
       "losses": 72,
       "classId": "priest",
-      "specId": "priest_discipline",
+      "specId": "priest_shadow",
       "race": "Undead",
       "guild": "Soil",
       "faction": "HORDE"
@@ -2163,7 +2163,7 @@
       "wins": 76,
       "losses": 47,
       "classId": "priest",
-      "specId": "priest_discipline",
+      "specId": "priest_holy",
       "race": "Dwarf",
       "guild": "NO COMMENTS",
       "faction": "ALLIANCE"
@@ -2205,7 +2205,7 @@
       "wins": 74,
       "losses": 52,
       "classId": "druid",
-      "specId": "druid_feral",
+      "specId": "druid_restoration",
       "race": "Tauren",
       "guild": "Camel Squad H",
       "faction": "HORDE"
@@ -3493,7 +3493,7 @@
       "wins": 61,
       "losses": 40,
       "classId": "druid",
-      "specId": "druid_feral",
+      "specId": "druid_restoration",
       "race": "Tauren",
       "guild": "Mandate of Heaven",
       "faction": "HORDE"
@@ -3941,7 +3941,7 @@
       "wins": 273,
       "losses": 275,
       "classId": "priest",
-      "specId": "priest_discipline",
+      "specId": "priest_holy",
       "race": "Dwarf",
       "guild": "floorpov",
       "faction": "ALLIANCE"
@@ -4375,7 +4375,7 @@
       "wins": 98,
       "losses": 75,
       "classId": "warlock",
-      "specId": "warlock_demonology",
+      "specId": "warlock_affliction",
       "race": "Undead",
       "guild": "pneumonoultramicroscopic",
       "faction": "HORDE"
@@ -4459,7 +4459,7 @@
       "wins": 107,
       "losses": 73,
       "classId": "rogue",
-      "specId": "rogue_combat",
+      "specId": "rogue_subtlety",
       "race": "Undead",
       "guild": "Asphalt",
       "faction": "HORDE"
@@ -4725,7 +4725,7 @@
       "wins": 103,
       "losses": 87,
       "classId": "priest",
-      "specId": "priest_holy",
+      "specId": "priest_discipline",
       "race": "Undead",
       "guild": "Resist",
       "faction": "HORDE"
@@ -4921,7 +4921,7 @@
       "wins": 55,
       "losses": 29,
       "classId": "shaman",
-      "specId": "shaman_elemental",
+      "specId": "shaman_restoration",
       "race": "Troll",
       "guild": "ONY BUFF WHEN",
       "faction": "HORDE"
@@ -5061,7 +5061,7 @@
       "wins": 76,
       "losses": 50,
       "classId": "warrior",
-      "specId": "warrior_arms",
+      "specId": "warrior_fury",
       "race": "Gnome",
       "guild": "TURBOTIME",
       "faction": "ALLIANCE"
@@ -5453,7 +5453,7 @@
       "wins": 166,
       "losses": 153,
       "classId": "druid",
-      "specId": "druid_feral",
+      "specId": "druid_balance",
       "race": "Tauren",
       "guild": "ICE ZONE",
       "faction": "HORDE"
@@ -5973,7 +5973,7 @@
       "classId": "priest",
       "specId": "priest_discipline",
       "race": "Dwarf",
-      "guild": "OVERTHREAT",
+      "guild": "HESOYAM",
       "faction": "ALLIANCE"
     },
     {
@@ -6167,7 +6167,7 @@
       "wins": 71,
       "losses": 49,
       "classId": "warrior",
-      "specId": "warrior_fury",
+      "specId": "warrior_arms",
       "race": "Gnome",
       "guild": "unced",
       "faction": "ALLIANCE"
@@ -7007,7 +7007,7 @@
       "wins": 56,
       "losses": 35,
       "classId": "mage",
-      "specId": "mage_frost",
+      "specId": "mage_arcane",
       "race": "Human",
       "guild": "MEEP MEEP",
       "faction": "ALLIANCE"
