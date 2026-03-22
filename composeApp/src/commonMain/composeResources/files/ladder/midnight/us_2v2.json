@@ -2,183 +2,183 @@
   "region": "us",
   "bracket": "2v2",
   "seasonId": 41,
-  "fetchedAt": "2026-03-22T12:05:59Z",
-  "totalEntries": 5021,
+  "fetchedAt": "2026-03-22T14:33:07Z",
+  "totalEntries": 5024,
   "ratingCutoffs": {},
   "specDistribution": [
     {
       "specId": "paladin_retribution",
-      "count": 4016,
-      "percentage": 8.76
+      "count": 4077,
+      "percentage": 8.77
     },
     {
       "specId": "priest_discipline",
-      "count": 3186,
-      "percentage": 6.95
+      "count": 3221,
+      "percentage": 6.93
     },
     {
       "specId": "paladin_holy",
-      "count": 2896,
+      "count": 2937,
       "percentage": 6.32
     },
     {
       "specId": "deathknight_unholy",
-      "count": 2757,
-      "percentage": 6.01
+      "count": 2792,
+      "percentage": 6.0
     },
     {
       "specId": "monk_mistweaver",
-      "count": 2737,
-      "percentage": 5.97
+      "count": 2761,
+      "percentage": 5.94
     },
     {
       "specId": "rogue_subtlety",
-      "count": 2478,
-      "percentage": 5.4
+      "count": 2507,
+      "percentage": 5.39
     },
     {
       "specId": "demonhunter_havoc",
-      "count": 2332,
+      "count": 2365,
       "percentage": 5.09
     },
     {
       "specId": "mage_frost",
-      "count": 2008,
-      "percentage": 4.38
+      "count": 2034,
+      "percentage": 4.37
     },
     {
       "specId": "hunter_marksmanship",
-      "count": 1803,
-      "percentage": 3.93
+      "count": 1833,
+      "percentage": 3.94
     },
     {
       "specId": "druid_restoration",
-      "count": 1799,
-      "percentage": 3.92
+      "count": 1828,
+      "percentage": 3.93
     },
     {
       "specId": "warrior_fury",
-      "count": 1769,
+      "count": 1796,
       "percentage": 3.86
     },
     {
       "specId": "monk_windwalker",
-      "count": 1497,
-      "percentage": 3.26
+      "count": 1525,
+      "percentage": 3.28
     },
     {
       "specId": "priest_holy",
-      "count": 1486,
-      "percentage": 3.24
+      "count": 1511,
+      "percentage": 3.25
     },
     {
       "specId": "warlock_destruction",
-      "count": 1312,
+      "count": 1328,
       "percentage": 2.86
     },
     {
       "specId": "shaman_restoration",
-      "count": 1185,
+      "count": 1202,
       "percentage": 2.58
     },
     {
       "specId": "warlock_demonology",
-      "count": 1170,
-      "percentage": 2.55
+      "count": 1180,
+      "percentage": 2.54
     },
     {
       "specId": "druid_balance",
-      "count": 1092,
+      "count": 1106,
       "percentage": 2.38
     },
     {
       "specId": "priest_shadow",
-      "count": 1049,
+      "count": 1067,
       "percentage": 2.29
     },
     {
       "specId": "druid_feral",
-      "count": 923,
-      "percentage": 2.01
+      "count": 940,
+      "percentage": 2.02
     },
     {
       "specId": "hunter_beastmastery",
-      "count": 923,
-      "percentage": 2.01
+      "count": 939,
+      "percentage": 2.02
     },
     {
       "specId": "warrior_arms",
-      "count": 923,
-      "percentage": 2.01
+      "count": 937,
+      "percentage": 2.02
     },
     {
       "specId": "shaman_enhancement",
-      "count": 911,
-      "percentage": 1.99
+      "count": 923,
+      "percentage": 1.98
     },
     {
       "specId": "mage_fire",
-      "count": 854,
-      "percentage": 1.86
+      "count": 869,
+      "percentage": 1.87
     },
     {
       "specId": "evoker_preservation",
-      "count": 798,
-      "percentage": 1.74
+      "count": 813,
+      "percentage": 1.75
     },
     {
       "specId": "evoker_devastation",
-      "count": 683,
+      "count": 693,
       "percentage": 1.49
     },
     {
       "specId": "hunter_survival",
-      "count": 634,
+      "count": 641,
       "percentage": 1.38
     },
     {
       "specId": "shaman_elemental",
-      "count": 535,
-      "percentage": 1.17
+      "count": 539,
+      "percentage": 1.16
     },
     {
       "specId": "deathknight_frost",
-      "count": 456,
-      "percentage": 0.99
+      "count": 465,
+      "percentage": 1.0
     },
     {
       "specId": "warlock_affliction",
-      "count": 440,
+      "count": 448,
       "percentage": 0.96
     },
     {
       "specId": "rogue_assassination",
-      "count": 280,
+      "count": 285,
       "percentage": 0.61
     },
     {
       "specId": "mage_arcane",
-      "count": 239,
+      "count": 242,
       "percentage": 0.52
     },
     {
       "specId": "druid_guardian",
-      "count": 183,
+      "count": 185,
       "percentage": 0.4
     },
     {
       "specId": "paladin_protection",
-      "count": 155,
-      "percentage": 0.34
+      "count": 161,
+      "percentage": 0.35
     },
     {
       "specId": "rogue_outlaw",
-      "count": 128,
+      "count": 129,
       "percentage": 0.28
     },
     {
       "specId": "monk_brewmaster",
-      "count": 59,
+      "count": 60,
       "percentage": 0.13
     },
     {
@@ -193,7 +193,7 @@
     },
     {
       "specId": "deathknight_blood",
-      "count": 46,
+      "count": 47,
       "percentage": 0.1
     },
     {
@@ -210,7 +210,8 @@
       "rating": 2144,
       "wins": 79,
       "losses": 25,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 2,
@@ -219,7 +220,8 @@
       "rating": 2126,
       "wins": 57,
       "losses": 15,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 3,
@@ -228,7 +230,8 @@
       "rating": 2113,
       "wins": 67,
       "losses": 28,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 4,
@@ -237,7 +240,8 @@
       "rating": 2110,
       "wins": 64,
       "losses": 17,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 5,
@@ -246,7 +250,8 @@
       "rating": 2101,
       "wins": 54,
       "losses": 7,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 6,
@@ -255,7 +260,8 @@
       "rating": 2087,
       "wins": 68,
       "losses": 33,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 7,
@@ -264,7 +270,8 @@
       "rating": 2081,
       "wins": 57,
       "losses": 29,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 8,
@@ -273,7 +280,8 @@
       "rating": 2072,
       "wins": 50,
       "losses": 12,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 9,
@@ -282,7 +290,8 @@
       "rating": 2042,
       "wins": 63,
       "losses": 32,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
       "rank": 10,
@@ -291,7 +300,8 @@
       "rating": 2041,
       "wins": 49,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 11,
@@ -300,7 +310,18 @@
       "rating": 2039,
       "wins": 69,
       "losses": 40,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
+    },
+    {
+      "rank": 12,
+      "characterName": "Xiuni",
+      "realmSlug": "shadowmoon",
+      "rating": 2018,
+      "wins": 78,
+      "losses": 48,
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 12,
@@ -309,79 +330,78 @@
       "rating": 2018,
       "wins": 49,
       "losses": 31,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "characterName": "Iilgayrylenz",
       "realmSlug": "moon-guard",
       "rating": 2016,
       "wins": 50,
       "losses": 22,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "characterName": "Preblur",
       "realmSlug": "sargeras",
       "rating": 2014,
       "wins": 60,
       "losses": 16,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "characterName": "Abstractr",
       "realmSlug": "sargeras",
       "rating": 2012,
       "wins": 44,
       "losses": 21,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "characterName": "Awesomecow",
       "realmSlug": "runetotem",
       "rating": 2007,
       "wins": 74,
       "losses": 33,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "characterName": "Phystursista",
       "realmSlug": "tichondrius",
       "rating": 2002,
       "wins": 48,
       "losses": 12,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "characterName": "Envenumb",
       "realmSlug": "stormrage",
       "rating": 2002,
       "wins": 48,
       "losses": 24,
-      "classId": "rogue"
-    },
-    {
-      "rank": 19,
-      "characterName": "Xiuni",
-      "realmSlug": "shadowmoon",
-      "rating": 2000,
-      "wins": 75,
-      "losses": 47,
-      "classId": "priest"
+      "classId": "rogue",
+      "specId": "rogue_assassination"
     },
     {
       "rank": 20,
       "characterName": "Jarome",
       "realmSlug": "area-52",
-      "rating": 1999,
-      "wins": 85,
-      "losses": 51,
-      "classId": "rogue"
+      "rating": 2001,
+      "wins": 86,
+      "losses": 52,
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 21,
@@ -390,7 +410,8 @@
       "rating": 1986,
       "wins": 61,
       "losses": 42,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 22,
@@ -399,7 +420,8 @@
       "rating": 1985,
       "wins": 57,
       "losses": 23,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 23,
@@ -408,61 +430,68 @@
       "rating": 1980,
       "wins": 48,
       "losses": 20,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 24,
+      "characterName": "Tækwondõ",
+      "realmSlug": "area-52",
+      "rating": 1978,
+      "wins": 58,
+      "losses": 34,
+      "classId": "monk",
+      "specId": "monk_mistweaver"
+    },
+    {
+      "rank": 25,
       "characterName": "Inyxa",
       "realmSlug": "bleeding-hollow",
       "rating": 1977,
       "wins": 43,
       "losses": 5,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 25,
+      "rank": 26,
       "characterName": "Stupidmode",
       "realmSlug": "kelthuzad",
       "rating": 1966,
       "wins": 42,
       "losses": 8,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 26,
+      "rank": 27,
       "characterName": "Briån",
       "realmSlug": "bleeding-hollow",
       "rating": 1965,
       "wins": 65,
       "losses": 15,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 26,
+      "rank": 27,
       "characterName": "Nahj",
       "realmSlug": "tichondrius",
       "rating": 1965,
       "wins": 39,
       "losses": 17,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 28,
+      "rank": 29,
       "characterName": "Drenz",
       "realmSlug": "scilla",
       "rating": 1964,
       "wins": 41,
       "losses": 11,
-      "classId": "shaman"
-    },
-    {
-      "rank": 28,
-      "characterName": "Tækwondõ",
-      "realmSlug": "area-52",
-      "rating": 1964,
-      "wins": 46,
-      "losses": 28,
-      "classId": "monk"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 30,
@@ -471,7 +500,8 @@
       "rating": 1963,
       "wins": 46,
       "losses": 22,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 30,
@@ -480,7 +510,8 @@
       "rating": 1963,
       "wins": 44,
       "losses": 26,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 32,
@@ -489,7 +520,8 @@
       "rating": 1962,
       "wins": 49,
       "losses": 9,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 33,
@@ -498,7 +530,8 @@
       "rating": 1961,
       "wins": 50,
       "losses": 23,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_destruction"
     },
     {
       "rank": 34,
@@ -507,7 +540,8 @@
       "rating": 1958,
       "wins": 55,
       "losses": 39,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
       "rank": 35,
@@ -516,7 +550,8 @@
       "rating": 1956,
       "wins": 68,
       "losses": 32,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 36,
@@ -525,16 +560,8 @@
       "rating": 1952,
       "wins": 53,
       "losses": 38,
-      "classId": "priest"
-    },
-    {
-      "rank": 37,
-      "characterName": "Momseducer",
-      "realmSlug": "tichondrius",
-      "rating": 1950,
-      "wins": 46,
-      "losses": 19,
-      "classId": "monk"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 37,
@@ -543,7 +570,18 @@
       "rating": 1950,
       "wins": 46,
       "losses": 19,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_protection"
+    },
+    {
+      "rank": 37,
+      "characterName": "Momseducer",
+      "realmSlug": "tichondrius",
+      "rating": 1950,
+      "wins": 46,
+      "losses": 19,
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 39,
@@ -552,7 +590,8 @@
       "rating": 1948,
       "wins": 55,
       "losses": 6,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 40,
@@ -561,7 +600,8 @@
       "rating": 1947,
       "wins": 87,
       "losses": 33,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 41,
@@ -570,7 +610,8 @@
       "rating": 1945,
       "wins": 51,
       "losses": 12,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 42,
@@ -579,61 +620,68 @@
       "rating": 1943,
       "wins": 56,
       "losses": 33,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 43,
+      "characterName": "Redrumx",
+      "realmSlug": "emerald-dream",
+      "rating": 1939,
+      "wins": 47,
+      "losses": 23,
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
+    },
+    {
+      "rank": 44,
       "characterName": "Fairyfloral",
       "realmSlug": "wyrmrest-accord",
       "rating": 1937,
       "wins": 72,
       "losses": 44,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 44,
+      "rank": 45,
       "characterName": "Mutations",
       "realmSlug": "sargeras",
       "rating": 1932,
       "wins": 46,
       "losses": 22,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 45,
+      "rank": 46,
       "characterName": "Tsúnadé",
       "realmSlug": "tichondrius",
       "rating": 1930,
       "wins": 53,
       "losses": 27,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 46,
+      "rank": 47,
       "characterName": "Cåpeesh",
       "realmSlug": "tichondrius",
       "rating": 1929,
       "wins": 44,
       "losses": 30,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 47,
+      "rank": 48,
       "characterName": "Jax",
       "realmSlug": "tichondrius",
       "rating": 1927,
       "wins": 53,
       "losses": 22,
-      "classId": "rogue"
-    },
-    {
-      "rank": 47,
-      "characterName": "Emrys",
-      "realmSlug": "frostmourne",
-      "rating": 1927,
-      "wins": 71,
-      "losses": 45,
-      "classId": "paladin"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 49,
@@ -642,79 +690,88 @@
       "rating": 1925,
       "wins": 39,
       "losses": 13,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 49,
-      "characterName": "Redrumx",
-      "realmSlug": "emerald-dream",
-      "rating": 1925,
-      "wins": 40,
-      "losses": 19,
-      "classId": "rogue"
-    },
-    {
-      "rank": 51,
+      "rank": 50,
       "characterName": "Cêtámorto",
       "realmSlug": "azralon",
       "rating": 1924,
       "wins": 49,
       "losses": 23,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 52,
-      "characterName": "Innerverse",
-      "realmSlug": "tichondrius",
-      "rating": 1923,
-      "wins": 42,
-      "losses": 24,
-      "classId": "monk"
-    },
-    {
-      "rank": 52,
+      "rank": 51,
       "characterName": "Lovelike",
       "realmSlug": "tichondrius",
       "rating": 1923,
       "wins": 42,
       "losses": 24,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 54,
+      "rank": 51,
+      "characterName": "Innerverse",
+      "realmSlug": "tichondrius",
+      "rating": 1923,
+      "wins": 42,
+      "losses": 24,
+      "classId": "monk",
+      "specId": "monk_windwalker"
+    },
+    {
+      "rank": 53,
       "characterName": "Rakndal",
       "realmSlug": "stormrage",
       "rating": 1921,
       "wins": 52,
       "losses": 22,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 55,
+      "rank": 54,
       "characterName": "Hog",
       "realmSlug": "darkspear",
       "rating": 1920,
       "wins": 38,
       "losses": 16,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 56,
-      "characterName": "Gobbysmalls",
-      "realmSlug": "frostmourne",
-      "rating": 1919,
-      "wins": 41,
-      "losses": 23,
-      "classId": "priest"
-    },
-    {
-      "rank": 56,
+      "rank": 55,
       "characterName": "Valerie",
       "realmSlug": "dreadmaul",
       "rating": 1919,
       "wins": 41,
       "losses": 23,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
+    },
+    {
+      "rank": 55,
+      "characterName": "Gobbysmalls",
+      "realmSlug": "frostmourne",
+      "rating": 1919,
+      "wins": 41,
+      "losses": 23,
+      "classId": "priest",
+      "specId": "priest_discipline"
+    },
+    {
+      "rank": 55,
+      "characterName": "Twojayzee",
+      "realmSlug": "tichondrius",
+      "rating": 1919,
+      "wins": 61,
+      "losses": 46,
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 58,
@@ -723,124 +780,138 @@
       "rating": 1914,
       "wins": 51,
       "losses": 11,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 59,
+      "characterName": "Freeshippin",
+      "realmSlug": "tichondrius",
+      "rating": 1913,
+      "wins": 50,
+      "losses": 40,
+      "classId": "paladin",
+      "specId": "paladin_holy"
+    },
+    {
+      "rank": 60,
       "characterName": "Deathnull",
       "realmSlug": "cenarius",
       "rating": 1912,
       "wins": 37,
       "losses": 15,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 59,
+      "rank": 60,
+      "characterName": "Emrys",
+      "realmSlug": "frostmourne",
+      "rating": 1912,
+      "wins": 71,
+      "losses": 46,
+      "classId": "paladin",
+      "specId": "paladin_holy"
+    },
+    {
+      "rank": 60,
       "characterName": "Nobi",
       "realmSlug": "malganis",
       "rating": 1912,
       "wins": 100,
       "losses": 77,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
-      "rank": 61,
+      "rank": 63,
       "characterName": "Dråak",
       "realmSlug": "tichondrius",
       "rating": 1911,
       "wins": 75,
       "losses": 33,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
-      "rank": 61,
+      "rank": 63,
       "characterName": "Espeon",
       "realmSlug": "greymane",
       "rating": 1911,
       "wins": 49,
       "losses": 25,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 63,
+      "rank": 65,
       "characterName": "Epícburn",
       "realmSlug": "illidan",
       "rating": 1907,
       "wins": 65,
       "losses": 35,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
-      "rank": 63,
-      "characterName": "Twojayzee",
-      "realmSlug": "tichondrius",
-      "rating": 1907,
-      "wins": 60,
-      "losses": 46,
-      "classId": "warrior"
-    },
-    {
-      "rank": 65,
+      "rank": 66,
       "characterName": "Gloxx",
       "realmSlug": "darkspear",
       "rating": 1905,
       "wins": 66,
       "losses": 46,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 66,
+      "rank": 67,
       "characterName": "Däzëd",
       "realmSlug": "stormrage",
       "rating": 1904,
       "wins": 38,
       "losses": 9,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 66,
+      "rank": 67,
       "characterName": "Lxchi",
       "realmSlug": "tichondrius",
       "rating": 1904,
       "wins": 53,
       "losses": 33,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 68,
+      "rank": 69,
       "characterName": "Iloveblitz",
       "realmSlug": "shuhalo",
       "rating": 1903,
       "wins": 44,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 69,
+      "rank": 70,
       "characterName": "Aegzy",
       "realmSlug": "stormrage",
       "rating": 1902,
       "wins": 35,
       "losses": 19,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
-      "rank": 70,
+      "rank": 71,
       "characterName": "Snortedgfuel",
       "realmSlug": "drenden",
       "rating": 1901,
       "wins": 52,
       "losses": 31,
-      "classId": "rogue"
-    },
-    {
-      "rank": 70,
-      "characterName": "Freeshippin",
-      "realmSlug": "tichondrius",
-      "rating": 1901,
-      "wins": 49,
-      "losses": 40,
-      "classId": "paladin"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 72,
@@ -849,7 +920,8 @@
       "rating": 1900,
       "wins": 38,
       "losses": 22,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 72,
@@ -858,7 +930,8 @@
       "rating": 1900,
       "wins": 38,
       "losses": 22,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 72,
@@ -867,7 +940,8 @@
       "rating": 1900,
       "wins": 52,
       "losses": 42,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_devourer"
     },
     {
       "rank": 75,
@@ -876,7 +950,8 @@
       "rating": 1898,
       "wins": 95,
       "losses": 42,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 76,
@@ -885,7 +960,8 @@
       "rating": 1897,
       "wins": 63,
       "losses": 44,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 76,
@@ -894,7 +970,8 @@
       "rating": 1897,
       "wins": 62,
       "losses": 47,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 78,
@@ -903,7 +980,8 @@
       "rating": 1896,
       "wins": 58,
       "losses": 28,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 78,
@@ -912,7 +990,8 @@
       "rating": 1896,
       "wins": 38,
       "losses": 20,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_destruction"
     },
     {
       "rank": 80,
@@ -921,7 +1000,8 @@
       "rating": 1894,
       "wins": 76,
       "losses": 35,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 81,
@@ -930,7 +1010,8 @@
       "rating": 1893,
       "wins": 58,
       "losses": 24,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 81,
@@ -939,7 +1020,8 @@
       "rating": 1893,
       "wins": 52,
       "losses": 23,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 83,
@@ -948,7 +1030,8 @@
       "rating": 1891,
       "wins": 61,
       "losses": 30,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 83,
@@ -957,16 +1040,18 @@
       "rating": 1891,
       "wins": 81,
       "losses": 42,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 85,
       "characterName": "Toddmolovski",
       "realmSlug": "frostmourne",
       "rating": 1890,
-      "wins": 51,
-      "losses": 30,
-      "classId": "hunter"
+      "wins": 53,
+      "losses": 31,
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
       "rank": 86,
@@ -975,7 +1060,8 @@
       "rating": 1889,
       "wins": 48,
       "losses": 20,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 87,
@@ -984,7 +1070,8 @@
       "rating": 1888,
       "wins": 81,
       "losses": 42,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 88,
@@ -993,7 +1080,8 @@
       "rating": 1886,
       "wins": 33,
       "losses": 4,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 89,
@@ -1002,7 +1090,8 @@
       "rating": 1885,
       "wins": 73,
       "losses": 27,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 89,
@@ -1011,16 +1100,8 @@
       "rating": 1885,
       "wins": 38,
       "losses": 17,
-      "classId": "paladin"
-    },
-    {
-      "rank": 89,
-      "characterName": "Bestworld",
-      "realmSlug": "moon-guard",
-      "rating": 1885,
-      "wins": 38,
-      "losses": 26,
-      "classId": "priest"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 89,
@@ -1029,412 +1110,468 @@
       "rating": 1885,
       "wins": 38,
       "losses": 28,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 93,
+      "rank": 92,
       "characterName": "Helcránk",
       "realmSlug": "stormrage",
       "rating": 1884,
       "wins": 75,
       "losses": 45,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
       "rank": 93,
-      "characterName": "Fairyfaith",
-      "realmSlug": "wyrmrest-accord",
-      "rating": 1884,
-      "wins": 68,
-      "losses": 54,
-      "classId": "monk"
-    },
-    {
-      "rank": 95,
       "characterName": "Køzy",
       "realmSlug": "area-52",
       "rating": 1881,
       "wins": 34,
       "losses": 16,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 96,
+      "rank": 94,
       "characterName": "Kinanprooxx",
       "realmSlug": "garrosh",
       "rating": 1880,
       "wins": 34,
       "losses": 9,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 97,
+      "rank": 94,
+      "characterName": "Reasøns",
+      "realmSlug": "sargeras",
+      "rating": 1880,
+      "wins": 46,
+      "losses": 24,
+      "classId": "priest",
+      "specId": "priest_discipline"
+    },
+    {
+      "rank": 96,
       "characterName": "Zikkyzapps",
       "realmSlug": "nazjatar",
       "rating": 1879,
       "wins": 40,
       "losses": 28,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 98,
+      "rank": 97,
       "characterName": "Bajheera",
       "realmSlug": "sargeras",
       "rating": 1877,
       "wins": 34,
       "losses": 5,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 99,
+      "rank": 98,
       "characterName": "Romancer",
       "realmSlug": "llane",
       "rating": 1875,
       "wins": 72,
       "losses": 27,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_devastation"
     },
     {
-      "rank": 99,
+      "rank": 98,
       "characterName": "Dzdm",
       "realmSlug": "stormrage",
       "rating": 1875,
       "wins": 34,
       "losses": 14,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 99,
+      "rank": 98,
       "characterName": "Nêxtlvlpãl",
       "realmSlug": "sargeras",
       "rating": 1875,
       "wins": 36,
       "losses": 15,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 99,
+      "rank": 98,
       "characterName": "Teleiosx",
       "realmSlug": "moon-guard",
       "rating": 1875,
       "wins": 200,
       "losses": 96,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 103,
+      "rank": 102,
       "characterName": "Hòtfemboy",
       "realmSlug": "tichondrius",
       "rating": 1874,
       "wins": 108,
       "losses": 33,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 103,
+      "rank": 102,
       "characterName": "Kallitas",
       "realmSlug": "sargeras",
       "rating": 1874,
       "wins": 72,
       "losses": 40,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_assassination"
     },
     {
-      "rank": 105,
+      "rank": 104,
       "characterName": "Zurza",
       "realmSlug": "tichondrius",
       "rating": 1873,
       "wins": 34,
       "losses": 17,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 105,
+      "rank": 104,
       "characterName": "Itstkmonk",
       "realmSlug": "area-52",
       "rating": 1873,
       "wins": 53,
       "losses": 31,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 107,
+      "rank": 106,
       "characterName": "Magnusz",
       "realmSlug": "zuljin",
       "rating": 1872,
       "wins": 36,
       "losses": 3,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 107,
+      "rank": 106,
       "characterName": "Voídblast",
       "realmSlug": "sargeras",
       "rating": 1872,
       "wins": 68,
       "losses": 32,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 107,
+      "rank": 106,
       "characterName": "Xabilicious",
       "realmSlug": "tichondrius",
       "rating": 1872,
       "wins": 51,
       "losses": 27,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 107,
+      "rank": 106,
       "characterName": "Tuggershock",
       "realmSlug": "malganis",
       "rating": 1872,
       "wins": 52,
       "losses": 29,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 111,
+      "rank": 110,
       "characterName": "Immune",
       "realmSlug": "sargeras",
       "rating": 1871,
       "wins": 37,
       "losses": 22,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 111,
+      "rank": 110,
       "characterName": "Retpar",
       "realmSlug": "demon-soul",
       "rating": 1871,
       "wins": 57,
       "losses": 46,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_fire"
     },
     {
-      "rank": 113,
+      "rank": 112,
       "characterName": "Necrothsz",
       "realmSlug": "azralon",
       "rating": 1870,
       "wins": 35,
       "losses": 23,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 113,
+      "rank": 112,
       "characterName": "Rats",
       "realmSlug": "ghostlands",
       "rating": 1870,
       "wins": 69,
       "losses": 57,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 115,
+      "rank": 114,
       "characterName": "Vî",
       "realmSlug": "firetree",
       "rating": 1869,
       "wins": 59,
       "losses": 40,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 116,
+      "rank": 115,
       "characterName": "Shodai",
       "realmSlug": "executus",
       "rating": 1865,
       "wins": 66,
       "losses": 49,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 116,
+      "rank": 115,
       "characterName": "Bittyboo",
       "realmSlug": "thrall",
       "rating": 1865,
       "wins": 52,
       "losses": 40,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 118,
+      "rank": 117,
       "characterName": "Tumuertabb",
       "realmSlug": "drakkari",
       "rating": 1864,
       "wins": 75,
       "losses": 29,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 119,
+      "rank": 118,
       "characterName": "Turkbrew",
       "realmSlug": "andorhal",
       "rating": 1861,
       "wins": 36,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 120,
+      "rank": 119,
       "characterName": "Reverbzmist",
       "realmSlug": "malganis",
       "rating": 1859,
       "wins": 37,
       "losses": 7,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 121,
+      "rank": 120,
       "characterName": "Shaymie",
       "realmSlug": "moon-guard",
       "rating": 1858,
       "wins": 63,
       "losses": 35,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 121,
+      "rank": 120,
       "characterName": "Lhobot",
       "realmSlug": "farstriders",
       "rating": 1858,
       "wins": 93,
       "losses": 83,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 121,
+      "rank": 120,
       "characterName": "Vengarl",
       "realmSlug": "aegwynn",
       "rating": 1858,
       "wins": 93,
       "losses": 83,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
-      "rank": 124,
+      "rank": 123,
       "characterName": "Nautìk",
       "realmSlug": "kelthuzad",
       "rating": 1857,
       "wins": 54,
       "losses": 31,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 125,
+      "rank": 124,
       "characterName": "Highlands",
       "realmSlug": "frostmourne",
       "rating": 1855,
       "wins": 85,
       "losses": 38,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 126,
+      "rank": 125,
       "characterName": "Smexual",
       "realmSlug": "tichondrius",
       "rating": 1854,
       "wins": 47,
       "losses": 26,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 126,
+      "rank": 125,
       "characterName": "Seapig",
       "realmSlug": "andorhal",
       "rating": 1854,
       "wins": 46,
       "losses": 30,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
-      "rank": 128,
+      "rank": 127,
       "characterName": "Bejaymw",
       "realmSlug": "tichondrius",
       "rating": 1853,
       "wins": 39,
       "losses": 12,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 128,
+      "rank": 127,
       "characterName": "Intunelol",
       "realmSlug": "dalaran",
       "rating": 1853,
       "wins": 45,
       "losses": 22,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 128,
+      "rank": 127,
       "characterName": "Yiyekun",
       "realmSlug": "ragnaros",
       "rating": 1853,
       "wins": 81,
       "losses": 52,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 131,
-      "characterName": "Abeldra",
-      "realmSlug": "moon-guard",
-      "rating": 1852,
-      "wins": 45,
-      "losses": 31,
-      "classId": "monk"
-    },
-    {
-      "rank": 131,
+      "rank": 130,
       "characterName": "Bloodstone",
       "realmSlug": "norgannon",
       "rating": 1852,
       "wins": 45,
       "losses": 31,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
-      "rank": 133,
+      "rank": 130,
+      "characterName": "Abeldra",
+      "realmSlug": "moon-guard",
+      "rating": 1852,
+      "wins": 45,
+      "losses": 31,
+      "classId": "monk",
+      "specId": "monk_windwalker"
+    },
+    {
+      "rank": 132,
       "characterName": "Tyrrweaver",
       "realmSlug": "skywall",
       "rating": 1851,
       "wins": 54,
       "losses": 24,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 134,
+      "rank": 133,
       "characterName": "Darkxd",
       "realmSlug": "bleeding-hollow",
       "rating": 1850,
       "wins": 40,
       "losses": 11,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 134,
+      "rank": 133,
       "characterName": "Briggsx",
       "realmSlug": "sargeras",
       "rating": 1850,
       "wins": 65,
       "losses": 25,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
-      "rank": 134,
+      "rank": 133,
       "characterName": "Nakanoflame",
       "realmSlug": "illidan",
       "rating": 1850,
       "wins": 52,
       "losses": 35,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 137,
+      "rank": 136,
       "characterName": "Tzyhpal",
       "realmSlug": "illidan",
       "rating": 1849,
       "wins": 47,
       "losses": 16,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
+    },
+    {
+      "rank": 137,
+      "characterName": "Fairyfaith",
+      "realmSlug": "wyrmrest-accord",
+      "rating": 1848,
+      "wins": 70,
+      "losses": 57,
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 138,
@@ -1443,7 +1580,8 @@
       "rating": 1847,
       "wins": 63,
       "losses": 43,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 139,
@@ -1452,7 +1590,8 @@
       "rating": 1846,
       "wins": 42,
       "losses": 3,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 140,
@@ -1461,16 +1600,8 @@
       "rating": 1845,
       "wins": 48,
       "losses": 16,
-      "classId": "monk"
-    },
-    {
-      "rank": 140,
-      "characterName": "Girthgate",
-      "realmSlug": "tichondrius",
-      "rating": 1845,
-      "wins": 42,
-      "losses": 14,
-      "classId": "warlock"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 140,
@@ -1479,7 +1610,8 @@
       "rating": 1845,
       "wins": 51,
       "losses": 18,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 140,
@@ -1488,169 +1620,198 @@
       "rating": 1845,
       "wins": 31,
       "losses": 15,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
-      "rank": 144,
+      "rank": 143,
       "characterName": "Bobybigplays",
       "realmSlug": "frostmourne",
       "rating": 1843,
       "wins": 56,
       "losses": 31,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_devourer"
     },
     {
-      "rank": 145,
+      "rank": 144,
       "characterName": "Laliberte",
       "realmSlug": "tichondrius",
       "rating": 1842,
       "wins": 44,
       "losses": 9,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 145,
+      "rank": 144,
       "characterName": "Cooci",
       "realmSlug": "tichondrius",
       "rating": 1842,
       "wins": 71,
       "losses": 47,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
-      "rank": 147,
+      "rank": 146,
       "characterName": "Plasmonic",
       "realmSlug": "muradin",
       "rating": 1841,
       "wins": 60,
       "losses": 23,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
-      "rank": 147,
+      "rank": 146,
       "characterName": "Justdeadman",
       "realmSlug": "tichondrius",
       "rating": 1841,
       "wins": 71,
       "losses": 33,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
-      "rank": 147,
+      "rank": 146,
       "characterName": "Bluetiger",
       "realmSlug": "kargath",
       "rating": 1841,
       "wins": 34,
       "losses": 17,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 147,
+      "rank": 146,
       "characterName": "Beeganpma",
       "realmSlug": "lightbringer",
       "rating": 1841,
       "wins": 74,
       "losses": 41,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 151,
+      "rank": 150,
       "characterName": "Jdculley",
       "realmSlug": "sargeras",
       "rating": 1839,
       "wins": 34,
       "losses": 20,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 151,
+      "rank": 150,
       "characterName": "Kïckybobby",
       "realmSlug": "illidan",
       "rating": 1839,
       "wins": 48,
       "losses": 38,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 153,
+      "rank": 152,
       "characterName": "Gotheelsg",
       "realmSlug": "illidan",
       "rating": 1838,
       "wins": 42,
       "losses": 15,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
-      "rank": 153,
-      "characterName": "Reasøns",
-      "realmSlug": "sargeras",
-      "rating": 1838,
-      "wins": 39,
-      "losses": 20,
-      "classId": "priest"
-    },
-    {
-      "rank": 153,
-      "characterName": "Milkykungfu",
-      "realmSlug": "malganis",
-      "rating": 1838,
-      "wins": 63,
-      "losses": 53,
-      "classId": "monk"
-    },
-    {
-      "rank": 153,
+      "rank": 152,
       "characterName": "Sumbullshot",
       "realmSlug": "malganis",
       "rating": 1838,
       "wins": 63,
       "losses": 53,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 157,
+      "rank": 152,
+      "characterName": "Milkykungfu",
+      "realmSlug": "malganis",
+      "rating": 1838,
+      "wins": 63,
+      "losses": 53,
+      "classId": "monk",
+      "specId": "monk_mistweaver"
+    },
+    {
+      "rank": 155,
       "characterName": "Youuknoww",
       "realmSlug": "moon-guard",
       "rating": 1837,
       "wins": 49,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 158,
+      "rank": 155,
+      "characterName": "Bestworld",
+      "realmSlug": "moon-guard",
+      "rating": 1837,
+      "wins": 45,
+      "losses": 32,
+      "classId": "priest",
+      "specId": "priest_discipline"
+    },
+    {
+      "rank": 157,
       "characterName": "Cih",
       "realmSlug": "frostmourne",
       "rating": 1836,
       "wins": 37,
       "losses": 11,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 158,
+      "rank": 157,
       "characterName": "Markers",
       "realmSlug": "gorefiend",
       "rating": 1836,
       "wins": 57,
       "losses": 18,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
-      "rank": 158,
+      "rank": 157,
+      "characterName": "Girthgate",
+      "realmSlug": "tichondrius",
+      "rating": 1836,
+      "wins": 43,
+      "losses": 17,
+      "classId": "warlock",
+      "specId": "warlock_demonology"
+    },
+    {
+      "rank": 157,
       "characterName": "Sinzxö",
       "realmSlug": "tichondrius",
       "rating": 1836,
       "wins": 52,
       "losses": 29,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 158,
+      "rank": 157,
       "characterName": "Adrían",
       "realmSlug": "kul-tiras",
       "rating": 1836,
       "wins": 65,
       "losses": 37,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 162,
@@ -1659,7 +1820,8 @@
       "rating": 1835,
       "wins": 77,
       "losses": 48,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 163,
@@ -1668,7 +1830,8 @@
       "rating": 1834,
       "wins": 31,
       "losses": 20,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_outlaw"
     },
     {
       "rank": 164,
@@ -1677,7 +1840,8 @@
       "rating": 1833,
       "wins": 43,
       "losses": 13,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 164,
@@ -1686,16 +1850,8 @@
       "rating": 1833,
       "wins": 39,
       "losses": 14,
-      "classId": "monk"
-    },
-    {
-      "rank": 164,
-      "characterName": "Sugarfist",
-      "realmSlug": "area-52",
-      "rating": 1833,
-      "wins": 57,
-      "losses": 25,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 164,
@@ -1704,187 +1860,218 @@
       "rating": 1833,
       "wins": 33,
       "losses": 16,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 168,
-      "characterName": "Shouri",
-      "realmSlug": "kelthuzad",
-      "rating": 1832,
-      "wins": 48,
-      "losses": 24,
-      "classId": "monk"
-    },
-    {
-      "rank": 168,
+      "rank": 167,
       "characterName": "Wedontlikeu",
       "realmSlug": "tichondrius",
       "rating": 1832,
       "wins": 36,
       "losses": 19,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 168,
+      "rank": 167,
       "characterName": "Potspoon",
       "realmSlug": "tichondrius",
       "rating": 1832,
       "wins": 63,
       "losses": 49,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
-      "rank": 171,
+      "rank": 169,
       "characterName": "Lightsmith",
       "realmSlug": "demon-soul",
       "rating": 1831,
       "wins": 38,
       "losses": 15,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 171,
+      "rank": 169,
       "characterName": "Swagrific",
       "realmSlug": "stormreaver",
       "rating": 1831,
       "wins": 61,
       "losses": 46,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 171,
+      "rank": 169,
       "characterName": "Shapesx",
       "realmSlug": "illidan",
       "rating": 1831,
       "wins": 61,
       "losses": 46,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
-      "rank": 174,
+      "rank": 172,
       "characterName": "ßmz",
       "realmSlug": "bleeding-hollow",
       "rating": 1829,
       "wins": 49,
       "losses": 27,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 175,
+      "rank": 173,
       "characterName": "Deadhomies",
       "realmSlug": "tichondrius",
       "rating": 1828,
       "wins": 46,
       "losses": 12,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 175,
+      "rank": 173,
+      "characterName": "Mythpallyzx",
+      "realmSlug": "caelestrasz",
+      "rating": 1828,
+      "wins": 52,
+      "losses": 20,
+      "classId": "paladin",
+      "specId": "paladin_holy"
+    },
+    {
+      "rank": 173,
       "characterName": "Isperia",
       "realmSlug": "area-52",
       "rating": 1828,
       "wins": 58,
       "losses": 28,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_devastation"
     },
     {
-      "rank": 175,
+      "rank": 173,
       "characterName": "Metakillër",
       "realmSlug": "ragnaros",
       "rating": 1828,
       "wins": 29,
       "losses": 14,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 175,
+      "rank": 173,
       "characterName": "Notdoix",
       "realmSlug": "tichondrius",
       "rating": 1828,
       "wins": 92,
       "losses": 72,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 179,
+      "rank": 178,
       "characterName": "Peggygou",
       "realmSlug": "ragnaros",
       "rating": 1827,
       "wins": 43,
       "losses": 15,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 179,
+      "rank": 178,
       "characterName": "Nenamiqt",
       "realmSlug": "kelthuzad",
       "rating": 1827,
       "wins": 36,
       "losses": 18,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
-      "rank": 181,
+      "rank": 180,
       "characterName": "Poppyp",
       "realmSlug": "stormrage",
       "rating": 1826,
       "wins": 37,
       "losses": 17,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 181,
+      "rank": 180,
       "characterName": "Lashelin",
       "realmSlug": "sargeras",
       "rating": 1826,
       "wins": 44,
       "losses": 27,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 183,
+      "rank": 182,
       "characterName": "Rakalaka",
       "realmSlug": "sargeras",
       "rating": 1825,
       "wins": 36,
       "losses": 13,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 183,
+      "rank": 182,
       "characterName": "Dankrosineer",
       "realmSlug": "malganis",
       "rating": 1825,
       "wins": 48,
       "losses": 33,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 183,
+      "rank": 182,
       "characterName": "Exalz",
       "realmSlug": "area-52",
       "rating": 1825,
       "wins": 46,
       "losses": 33,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
-      "rank": 186,
+      "rank": 185,
       "characterName": "Barradagodx",
       "realmSlug": "goldrinn",
       "rating": 1824,
       "wins": 58,
       "losses": 35,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 187,
+      "rank": 186,
       "characterName": "Timchi",
       "realmSlug": "area-52",
       "rating": 1823,
       "wins": 37,
       "losses": 18,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
+    },
+    {
+      "rank": 186,
+      "characterName": "Shouri",
+      "realmSlug": "kelthuzad",
+      "rating": 1823,
+      "wins": 49,
+      "losses": 27,
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 188,
@@ -1893,7 +2080,8 @@
       "rating": 1821,
       "wins": 38,
       "losses": 22,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 188,
@@ -1902,25 +2090,18 @@
       "rating": 1821,
       "wins": 65,
       "losses": 51,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 190,
-      "characterName": "Lékinhø",
-      "realmSlug": "azralon",
+      "characterName": "Sugarfist",
+      "realmSlug": "area-52",
       "rating": 1820,
-      "wins": 44,
-      "losses": 23,
-      "classId": "monk"
-    },
-    {
-      "rank": 190,
-      "characterName": "Sofkinghard",
-      "realmSlug": "tichondrius",
-      "rating": 1820,
-      "wins": 33,
-      "losses": 19,
-      "classId": "paladin"
+      "wins": 58,
+      "losses": 27,
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 190,
@@ -1929,7 +2110,18 @@
       "rating": 1820,
       "wins": 33,
       "losses": 19,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
+    },
+    {
+      "rank": 190,
+      "characterName": "Sofkinghard",
+      "realmSlug": "tichondrius",
+      "rating": 1820,
+      "wins": 33,
+      "losses": 19,
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 190,
@@ -1938,16 +2130,8 @@
       "rating": 1820,
       "wins": 43,
       "losses": 26,
-      "classId": "rogue"
-    },
-    {
-      "rank": 190,
-      "characterName": "Preront",
-      "realmSlug": "thunderhorn",
-      "rating": 1820,
-      "wins": 60,
-      "losses": 47,
-      "classId": "shaman"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 190,
@@ -1956,2752 +2140,3068 @@
       "rating": 1820,
       "wins": 60,
       "losses": 47,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
+    },
+    {
+      "rank": 190,
+      "characterName": "Preront",
+      "realmSlug": "thunderhorn",
+      "rating": 1820,
+      "wins": 60,
+      "losses": 47,
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 196,
+      "characterName": "Deathmachïne",
+      "realmSlug": "tichondrius",
+      "rating": 1819,
+      "wins": 67,
+      "losses": 52,
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
+    },
+    {
+      "rank": 197,
       "characterName": "Remorseful",
       "realmSlug": "illidan",
       "rating": 1818,
       "wins": 50,
       "losses": 32,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 196,
+      "rank": 197,
       "characterName": "Laykov",
       "realmSlug": "bleeding-hollow",
       "rating": 1818,
       "wins": 42,
       "losses": 29,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 196,
+      "rank": 197,
       "characterName": "Hotlattes",
       "realmSlug": "moon-guard",
       "rating": 1818,
       "wins": 50,
       "losses": 35,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 196,
+      "rank": 197,
       "characterName": "Hotflows",
       "realmSlug": "bleeding-hollow",
       "rating": 1818,
       "wins": 79,
       "losses": 57,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
-      "rank": 196,
+      "rank": 197,
       "characterName": "Senpiakush",
       "realmSlug": "tichondrius",
       "rating": 1818,
       "wins": 83,
       "losses": 70,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 201,
+      "rank": 202,
       "characterName": "Lorlenekillr",
       "realmSlug": "barthilas",
       "rating": 1817,
       "wins": 44,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 201,
+      "rank": 202,
       "characterName": "Weebwalker",
       "realmSlug": "area-52",
       "rating": 1817,
       "wins": 43,
       "losses": 28,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 201,
+      "rank": 202,
       "characterName": "Mexcellente",
       "realmSlug": "sargeras",
       "rating": 1817,
       "wins": 63,
       "losses": 49,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
-      "rank": 201,
+      "rank": 202,
       "characterName": "Kraziiclawzz",
       "realmSlug": "emerald-dream",
       "rating": 1817,
       "wins": 91,
       "losses": 77,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_feral"
     },
     {
-      "rank": 205,
+      "rank": 206,
       "characterName": "Mmarkers",
       "realmSlug": "gorefiend",
       "rating": 1816,
       "wins": 51,
       "losses": 11,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 205,
+      "rank": 206,
       "characterName": "Guapfather",
       "realmSlug": "sargeras",
       "rating": 1816,
       "wins": 46,
       "losses": 14,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 205,
+      "rank": 206,
+      "characterName": "Mesidan",
+      "realmSlug": "illidan",
+      "rating": 1816,
+      "wins": 49,
+      "losses": 26,
+      "classId": "demonhunter",
+      "specId": "demonhunter_devourer"
+    },
+    {
+      "rank": 206,
       "characterName": "Firemaw",
       "realmSlug": "area-52",
       "rating": 1816,
       "wins": 50,
       "losses": 39,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 208,
+      "rank": 210,
       "characterName": "Fonyhealer",
       "realmSlug": "kelthuzad",
       "rating": 1815,
       "wins": 35,
       "losses": 8,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 208,
+      "rank": 210,
       "characterName": "Earthbreak",
       "realmSlug": "tichondrius",
       "rating": 1815,
       "wins": 41,
       "losses": 13,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 208,
+      "rank": 210,
       "characterName": "Brat",
       "realmSlug": "korgath",
       "rating": 1815,
       "wins": 31,
       "losses": 16,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 208,
+      "rank": 210,
       "characterName": "Porkroll",
       "realmSlug": "ghostlands",
       "rating": 1815,
       "wins": 33,
       "losses": 20,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_brewmaster"
     },
     {
-      "rank": 208,
+      "rank": 210,
       "characterName": "Milkduzyugud",
       "realmSlug": "kelthuzad",
       "rating": 1815,
       "wins": 68,
       "losses": 43,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 208,
+      "rank": 210,
       "characterName": "Deelong",
       "realmSlug": "tichondrius",
       "rating": 1815,
       "wins": 67,
       "losses": 53,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
-      "rank": 214,
+      "rank": 216,
       "characterName": "Reon",
       "realmSlug": "icecrown",
       "rating": 1814,
       "wins": 31,
       "losses": 12,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 214,
+      "rank": 216,
       "characterName": "Walmartceo",
       "realmSlug": "alleria",
       "rating": 1814,
       "wins": 31,
       "losses": 12,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 214,
+      "rank": 216,
       "characterName": "Madkiing",
       "realmSlug": "azralon",
       "rating": 1814,
       "wins": 31,
       "losses": 20,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_devastation"
     },
     {
-      "rank": 214,
-      "characterName": "Propose",
-      "realmSlug": "area-52",
-      "rating": 1814,
-      "wins": 54,
-      "losses": 35,
-      "classId": "paladin"
-    },
-    {
-      "rank": 214,
+      "rank": 216,
       "characterName": "Chaossprite",
       "realmSlug": "area-52",
       "rating": 1814,
       "wins": 54,
       "losses": 35,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 219,
+      "rank": 216,
+      "characterName": "Propose",
+      "realmSlug": "area-52",
+      "rating": 1814,
+      "wins": 54,
+      "losses": 35,
+      "classId": "paladin",
+      "specId": "paladin_holy"
+    },
+    {
+      "rank": 221,
       "characterName": "Nagafendk",
       "realmSlug": "illidan",
       "rating": 1813,
       "wins": 32,
       "losses": 11,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_blood"
     },
     {
-      "rank": 219,
+      "rank": 221,
       "characterName": "Rigsm",
       "realmSlug": "kelthuzad",
       "rating": 1813,
       "wins": 31,
       "losses": 15,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 219,
+      "rank": 221,
       "characterName": "Sizzxr",
       "realmSlug": "stormreaver",
       "rating": 1813,
       "wins": 31,
       "losses": 15,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 219,
+      "rank": 221,
       "characterName": "Çrðw",
       "realmSlug": "sargeras",
       "rating": 1813,
       "wins": 72,
       "losses": 61,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 219,
+      "rank": 221,
       "characterName": "Iintha",
       "realmSlug": "gurubashi",
       "rating": 1813,
       "wins": 131,
       "losses": 111,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 224,
+      "rank": 226,
       "characterName": "Saclord",
       "realmSlug": "proudmoore",
       "rating": 1812,
       "wins": 30,
       "losses": 6,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 224,
+      "rank": 226,
       "characterName": "Infernosa",
       "realmSlug": "ragnaros",
       "rating": 1812,
       "wins": 64,
       "losses": 24,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
-      "rank": 224,
+      "rank": 226,
       "characterName": "Boosiefade",
       "realmSlug": "moon-guard",
       "rating": 1812,
       "wins": 34,
       "losses": 16,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
-      "rank": 224,
+      "rank": 226,
       "characterName": "Ysdkt",
       "realmSlug": "tichondrius",
       "rating": 1812,
       "wins": 42,
       "losses": 24,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 224,
+      "rank": 226,
       "characterName": "Nuzzholy",
       "realmSlug": "stormrage",
       "rating": 1812,
       "wins": 48,
       "losses": 28,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 224,
+      "rank": 226,
       "characterName": "Gagadaga",
       "realmSlug": "anubarak",
       "rating": 1812,
       "wins": 41,
       "losses": 28,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 224,
-      "characterName": "Kitta",
-      "realmSlug": "kelthuzad",
-      "rating": 1812,
-      "wins": 43,
-      "losses": 32,
-      "classId": "paladin"
-    },
-    {
-      "rank": 224,
+      "rank": 226,
       "characterName": "Tokyoghoul",
       "realmSlug": "azgalor",
       "rating": 1812,
       "wins": 43,
       "losses": 32,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 224,
+      "rank": 226,
+      "characterName": "Kitta",
+      "realmSlug": "kelthuzad",
+      "rating": 1812,
+      "wins": 43,
+      "losses": 32,
+      "classId": "paladin",
+      "specId": "paladin_holy"
+    },
+    {
+      "rank": 226,
       "characterName": "Waifu",
       "realmSlug": "area-52",
       "rating": 1812,
       "wins": 38,
       "losses": 29,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 233,
+      "rank": 235,
       "characterName": "Planename",
       "realmSlug": "emerald-dream",
       "rating": 1811,
       "wins": 36,
       "losses": 17,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
-      "rank": 233,
+      "rank": 235,
       "characterName": "Pijbins",
       "realmSlug": "moon-guard",
       "rating": 1811,
       "wins": 51,
       "losses": 27,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 233,
+      "rank": 235,
+      "characterName": "Lékinhø",
+      "realmSlug": "azralon",
+      "rating": 1811,
+      "wins": 45,
+      "losses": 25,
+      "classId": "monk",
+      "specId": "monk_windwalker"
+    },
+    {
+      "rank": 235,
       "characterName": "Insomniaqq",
       "realmSlug": "demon-soul",
       "rating": 1811,
       "wins": 36,
       "losses": 20,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 233,
+      "rank": 235,
       "characterName": "Kurvoker",
       "realmSlug": "sargeras",
       "rating": 1811,
       "wins": 44,
       "losses": 25,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
-      "rank": 233,
+      "rank": 235,
       "characterName": "Linares",
       "realmSlug": "ragnaros",
       "rating": 1811,
       "wins": 48,
       "losses": 30,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 238,
+      "rank": 235,
+      "characterName": "Knekita",
+      "realmSlug": "quelthalas",
+      "rating": 1811,
+      "wins": 71,
+      "losses": 58,
+      "classId": "paladin",
+      "specId": "paladin_holy"
+    },
+    {
+      "rank": 242,
       "characterName": "Krankenwagen",
       "realmSlug": "stormrage",
       "rating": 1810,
       "wins": 33,
       "losses": 9,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
-      "rank": 238,
+      "rank": 242,
       "characterName": "Tayak",
       "realmSlug": "area-52",
       "rating": 1810,
       "wins": 38,
       "losses": 11,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 238,
+      "rank": 242,
       "characterName": "Mvc",
       "realmSlug": "sargeras",
       "rating": 1810,
       "wins": 38,
       "losses": 13,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 238,
+      "rank": 242,
+      "characterName": "Longslowdamp",
+      "realmSlug": "illidan",
+      "rating": 1810,
+      "wins": 38,
+      "losses": 16,
+      "classId": null,
+      "specId": null
+    },
+    {
+      "rank": 242,
       "characterName": "Msr",
       "realmSlug": "bleeding-hollow",
       "rating": 1810,
       "wins": 34,
       "losses": 15,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
-      "rank": 238,
+      "rank": 242,
       "characterName": "Jaydin",
       "realmSlug": "baelgun",
       "rating": 1810,
       "wins": 31,
       "losses": 14,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 238,
+      "rank": 242,
       "characterName": "Çsl",
       "realmSlug": "tichondrius",
       "rating": 1810,
       "wins": 31,
       "losses": 15,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 238,
+      "rank": 242,
       "characterName": "Saga",
       "realmSlug": "antonidas",
       "rating": 1810,
       "wins": 31,
       "losses": 16,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 238,
+      "rank": 242,
       "characterName": "Genkyp",
       "realmSlug": "tichondrius",
       "rating": 1810,
       "wins": 29,
       "losses": 18,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 238,
+      "rank": 242,
       "characterName": "Palmex",
       "realmSlug": "magtheridon",
       "rating": 1810,
       "wins": 39,
       "losses": 26,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 247,
+      "rank": 242,
+      "characterName": "Fröstyboy",
+      "realmSlug": "sargeras",
+      "rating": 1810,
+      "wins": 55,
+      "losses": 37,
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
+    },
+    {
+      "rank": 253,
+      "characterName": "Hotpockèt",
+      "realmSlug": "area-52",
+      "rating": 1809,
+      "wins": 33,
+      "losses": 12,
+      "classId": "warrior",
+      "specId": "warrior_fury"
+    },
+    {
+      "rank": 253,
       "characterName": "Ýéti",
       "realmSlug": "illidan",
       "rating": 1809,
       "wins": 31,
       "losses": 17,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_brewmaster"
     },
     {
-      "rank": 247,
+      "rank": 253,
       "characterName": "Glitt",
       "realmSlug": "moon-guard",
       "rating": 1809,
       "wins": 40,
-      "losses": 22,
-      "classId": "hunter"
+      "losses": 23,
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
-      "rank": 247,
+      "rank": 253,
       "characterName": "Bignveiny",
       "realmSlug": "illidan",
       "rating": 1809,
       "wins": 45,
       "losses": 27,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 247,
+      "rank": 253,
       "characterName": "Damage",
       "realmSlug": "malganis",
       "rating": 1809,
       "wins": 41,
       "losses": 25,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 247,
+      "rank": 253,
       "characterName": "Tailuñg",
       "realmSlug": "illidan",
       "rating": 1809,
       "wins": 39,
       "losses": 25,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
-      "rank": 247,
-      "characterName": "Inquisition",
-      "realmSlug": "aerie-peak",
-      "rating": 1809,
-      "wins": 57,
-      "losses": 45,
-      "classId": "deathknight"
-    },
-    {
-      "rank": 247,
+      "rank": 253,
       "characterName": "Bubblez",
       "realmSlug": "khaz-modan",
       "rating": 1809,
       "wins": 57,
       "losses": 45,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 247,
+      "rank": 253,
+      "characterName": "Inquisition",
+      "realmSlug": "aerie-peak",
+      "rating": 1809,
+      "wins": 57,
+      "losses": 45,
+      "classId": "deathknight",
+      "specId": "deathknight_frost"
+    },
+    {
+      "rank": 253,
       "characterName": "Ntrslayer",
       "realmSlug": "sargeras",
       "rating": 1809,
       "wins": 65,
       "losses": 55,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 255,
+      "rank": 262,
       "characterName": "Lín",
       "realmSlug": "thaurissan",
       "rating": 1808,
       "wins": 31,
       "losses": 11,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_arcane"
     },
     {
-      "rank": 255,
+      "rank": 262,
       "characterName": "Walrus",
       "realmSlug": "moon-guard",
       "rating": 1808,
       "wins": 34,
       "losses": 14,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 255,
+      "rank": 262,
       "characterName": "Chronicler",
       "realmSlug": "arygos",
       "rating": 1808,
       "wins": 33,
       "losses": 20,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_brewmaster"
     },
     {
-      "rank": 255,
+      "rank": 262,
       "characterName": "Zakkaa",
       "realmSlug": "korgath",
       "rating": 1808,
       "wins": 37,
       "losses": 25,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 255,
+      "rank": 262,
       "characterName": "Awshucks",
       "realmSlug": "sargeras",
       "rating": 1808,
       "wins": 31,
       "losses": 23,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
-      "rank": 260,
+      "rank": 267,
       "characterName": "Securìty",
       "realmSlug": "emerald-dream",
       "rating": 1807,
       "wins": 30,
       "losses": 10,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 260,
+      "rank": 267,
       "characterName": "Adxm",
       "realmSlug": "illidan",
       "rating": 1807,
       "wins": 40,
       "losses": 19,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 260,
+      "rank": 267,
       "characterName": "Tazriak",
       "realmSlug": "deathwing",
       "rating": 1807,
       "wins": 35,
       "losses": 19,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_devastation"
     },
     {
-      "rank": 260,
+      "rank": 267,
       "characterName": "Tricombs",
       "realmSlug": "bonechewer",
       "rating": 1807,
       "wins": 50,
       "losses": 31,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
-      "rank": 260,
-      "characterName": "Hpríëstgòð",
-      "realmSlug": "area-52",
-      "rating": 1807,
-      "wins": 33,
-      "losses": 24,
-      "classId": "priest"
-    },
-    {
-      "rank": 260,
+      "rank": 267,
       "characterName": "Mclovn",
       "realmSlug": "sargeras",
       "rating": 1807,
       "wins": 33,
       "losses": 24,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_destruction"
     },
     {
-      "rank": 266,
+      "rank": 267,
+      "characterName": "Hpríëstgòð",
+      "realmSlug": "area-52",
+      "rating": 1807,
+      "wins": 33,
+      "losses": 24,
+      "classId": "priest",
+      "specId": "priest_holy"
+    },
+    {
+      "rank": 273,
       "characterName": "Nitropally",
       "realmSlug": "malfurion",
       "rating": 1806,
       "wins": 35,
       "losses": 15,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 266,
+      "rank": 273,
       "characterName": "Dxlöl",
       "realmSlug": "quelthalas",
       "rating": 1806,
       "wins": 43,
       "losses": 20,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
-      "rank": 266,
+      "rank": 273,
       "characterName": "Nixxie",
       "realmSlug": "proudmoore",
       "rating": 1806,
       "wins": 30,
       "losses": 14,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 266,
+      "rank": 273,
       "characterName": "Driedupworm",
       "realmSlug": "sargeras",
       "rating": 1806,
       "wins": 30,
       "losses": 14,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 266,
+      "rank": 273,
+      "characterName": "Zanx",
+      "realmSlug": "barthilas",
+      "rating": 1806,
+      "wins": 47,
+      "losses": 24,
+      "classId": "monk",
+      "specId": "monk_mistweaver"
+    },
+    {
+      "rank": 273,
       "characterName": "Illicitheals",
       "realmSlug": "area-52",
       "rating": 1806,
       "wins": 41,
       "losses": 29,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 266,
+      "rank": 273,
       "characterName": "Nenja",
       "realmSlug": "tichondrius",
       "rating": 1806,
       "wins": 42,
       "losses": 41,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 272,
+      "rank": 280,
       "characterName": "Teslafw",
       "realmSlug": "illidan",
       "rating": 1805,
       "wins": 157,
       "losses": 93,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 272,
+      "rank": 280,
       "characterName": "Dllfspice",
       "realmSlug": "tichondrius",
       "rating": 1805,
       "wins": 31,
       "losses": 19,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_devastation"
     },
     {
-      "rank": 272,
+      "rank": 280,
       "characterName": "Relude",
       "realmSlug": "frostmourne",
       "rating": 1805,
       "wins": 55,
       "losses": 41,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 272,
-      "characterName": "Samuel",
-      "realmSlug": "vashj",
-      "rating": 1805,
-      "wins": 59,
-      "losses": 44,
-      "classId": "hunter"
-    },
-    {
-      "rank": 272,
+      "rank": 280,
       "characterName": "Grimfate",
       "realmSlug": "boulderfist",
       "rating": 1805,
       "wins": 33,
       "losses": 27,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 272,
+      "rank": 280,
       "characterName": "Drerrdaytv",
       "realmSlug": "kelthuzad",
       "rating": 1805,
       "wins": 111,
       "losses": 106,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 278,
+      "rank": 285,
       "characterName": "Nümbers",
       "realmSlug": "area-52",
       "rating": 1804,
       "wins": 45,
       "losses": 19,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
-      "rank": 278,
+      "rank": 285,
       "characterName": "Hòwl",
       "realmSlug": "ragnaros",
       "rating": 1804,
       "wins": 37,
       "losses": 17,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
-      "rank": 278,
+      "rank": 285,
       "characterName": "Rmpiss",
       "realmSlug": "tichondrius",
       "rating": 1804,
       "wins": 45,
       "losses": 26,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 278,
+      "rank": 285,
       "characterName": "Thegalant",
       "realmSlug": "moon-guard",
       "rating": 1804,
       "wins": 49,
       "losses": 29,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 278,
+      "rank": 285,
       "characterName": "Xaeyn",
       "realmSlug": "moon-guard",
       "rating": 1804,
       "wins": 33,
       "losses": 20,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_augmentation"
     },
     {
-      "rank": 278,
+      "rank": 285,
       "characterName": "Chunxli",
       "realmSlug": "magtheridon",
       "rating": 1804,
       "wins": 37,
       "losses": 24,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 278,
+      "rank": 285,
       "characterName": "Britnëyspear",
       "realmSlug": "stormrage",
       "rating": 1804,
       "wins": 54,
       "losses": 43,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
-      "rank": 278,
+      "rank": 285,
       "characterName": "Sleboz",
       "realmSlug": "moon-guard",
       "rating": 1804,
       "wins": 47,
       "losses": 40,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_outlaw"
     },
     {
-      "rank": 286,
+      "rank": 293,
       "characterName": "Azath",
       "realmSlug": "korgath",
       "rating": 1803,
       "wins": 42,
       "losses": 25,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_devastation"
     },
     {
-      "rank": 286,
+      "rank": 293,
       "characterName": "Fearfulx",
       "realmSlug": "kelthuzad",
       "rating": 1803,
       "wins": 42,
       "losses": 26,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
-      "rank": 286,
+      "rank": 293,
       "characterName": "Sighzy",
       "realmSlug": "sargeras",
       "rating": 1803,
       "wins": 30,
       "losses": 20,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 286,
+      "rank": 293,
       "characterName": "Castoria",
       "realmSlug": "bleeding-hollow",
       "rating": 1803,
       "wins": 37,
       "losses": 27,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
-      "rank": 286,
+      "rank": 293,
       "characterName": "Mightduy",
       "realmSlug": "black-dragonflight",
       "rating": 1803,
       "wins": 37,
       "losses": 27,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Lhm",
       "realmSlug": "moon-guard",
       "rating": 1802,
       "wins": 32,
       "losses": 9,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Degradation",
       "realmSlug": "dalaran",
       "rating": 1802,
       "wins": 29,
       "losses": 10,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Nõõgie",
       "realmSlug": "tichondrius",
       "rating": 1802,
       "wins": 36,
       "losses": 17,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Nihilismp",
       "realmSlug": "illidan",
       "rating": 1802,
       "wins": 34,
       "losses": 19,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Karenmcchad",
       "realmSlug": "skullcrusher",
       "rating": 1802,
       "wins": 38,
       "losses": 23,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Pytrus",
       "realmSlug": "tichondrius",
       "rating": 1802,
       "wins": 38,
       "losses": 23,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Sunim",
       "realmSlug": "bleeding-hollow",
       "rating": 1802,
       "wins": 34,
       "losses": 22,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Mimsyoon",
       "realmSlug": "tichondrius",
       "rating": 1802,
       "wins": 35,
       "losses": 23,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 291,
-      "characterName": "Goobrawlin",
-      "realmSlug": "malganis",
-      "rating": 1802,
-      "wins": 43,
-      "losses": 29,
-      "classId": "monk"
-    },
-    {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Lavitez",
       "realmSlug": "malganis",
       "rating": 1802,
       "wins": 43,
       "losses": 29,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
-      "rank": 291,
+      "rank": 298,
+      "characterName": "Goobrawlin",
+      "realmSlug": "malganis",
+      "rating": 1802,
+      "wins": 43,
+      "losses": 29,
+      "classId": "monk",
+      "specId": "monk_windwalker"
+    },
+    {
+      "rank": 298,
       "characterName": "Baxzz",
       "realmSlug": "tichondrius",
       "rating": 1802,
       "wins": 48,
       "losses": 33,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Frozenbyte",
       "realmSlug": "sargeras",
       "rating": 1802,
       "wins": 44,
       "losses": 32,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Smallsuper",
       "realmSlug": "azralon",
       "rating": 1802,
       "wins": 48,
       "losses": 36,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Rxmpagee",
       "realmSlug": "ragnaros",
       "rating": 1802,
       "wins": 41,
       "losses": 34,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Bloodz",
       "realmSlug": "thunderlord",
       "rating": 1802,
       "wins": 41,
       "losses": 34,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
-      "rank": 291,
-      "characterName": "Aovilox",
-      "realmSlug": "proudmoore",
-      "rating": 1802,
-      "wins": 35,
-      "losses": 31,
-      "classId": "demonhunter"
-    },
-    {
-      "rank": 291,
+      "rank": 298,
       "characterName": "Oldzu",
       "realmSlug": "tichondrius",
       "rating": 1802,
       "wins": 35,
       "losses": 31,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 308,
+      "rank": 298,
+      "characterName": "Aovilox",
+      "realmSlug": "proudmoore",
+      "rating": 1802,
+      "wins": 35,
+      "losses": 31,
+      "classId": "demonhunter",
+      "specId": "demonhunter_devourer"
+    },
+    {
+      "rank": 315,
+      "characterName": "Stealz",
+      "realmSlug": "korgath",
+      "rating": 1801,
+      "wins": 33,
+      "losses": 9,
+      "classId": "monk",
+      "specId": "monk_mistweaver"
+    },
+    {
+      "rank": 315,
       "characterName": "Swigmonkman",
       "realmSlug": "stormrage",
       "rating": 1801,
       "wins": 40,
       "losses": 25,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 308,
+      "rank": 315,
       "characterName": "Sweet",
       "realmSlug": "jubeithos",
       "rating": 1801,
       "wins": 39,
       "losses": 29,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 308,
+      "rank": 315,
+      "characterName": "Samuel",
+      "realmSlug": "vashj",
+      "rating": 1801,
+      "wins": 73,
+      "losses": 56,
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
+    },
+    {
+      "rank": 315,
       "characterName": "Dartolina",
       "realmSlug": "azralon",
       "rating": 1801,
       "wins": 41,
       "losses": 33,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 308,
+      "rank": 315,
       "characterName": "Sìñfülðrågøñ",
       "realmSlug": "illidan",
       "rating": 1801,
       "wins": 41,
       "losses": 33,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 308,
+      "rank": 315,
       "characterName": "Archandre",
       "realmSlug": "thrall",
       "rating": 1801,
       "wins": 55,
       "losses": 50,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
-      "rank": 308,
+      "rank": 315,
       "characterName": "Imaginedk",
       "realmSlug": "sargeras",
       "rating": 1801,
       "wins": 76,
       "losses": 72,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_frost"
     },
     {
-      "rank": 314,
+      "rank": 323,
       "characterName": "Tmpikaboo",
       "realmSlug": "tichondrius",
       "rating": 1800,
       "wins": 43,
       "losses": 18,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 314,
-      "characterName": "Gotthejuice",
-      "realmSlug": "frostmourne",
-      "rating": 1800,
-      "wins": 51,
-      "losses": 24,
-      "classId": "rogue"
-    },
-    {
-      "rank": 314,
+      "rank": 323,
       "characterName": "Drusap",
       "realmSlug": "tichondrius",
       "rating": 1800,
       "wins": 39,
       "losses": 20,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 314,
+      "rank": 323,
       "characterName": "Makefistory",
       "realmSlug": "area-52",
       "rating": 1800,
       "wins": 31,
       "losses": 17,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 314,
+      "rank": 323,
       "characterName": "Wooha",
       "realmSlug": "illidan",
       "rating": 1800,
       "wins": 32,
       "losses": 19,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 314,
+      "rank": 323,
       "characterName": "Keyton",
       "realmSlug": "tichondrius",
       "rating": 1800,
       "wins": 36,
       "losses": 22,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 314,
+      "rank": 323,
       "characterName": "Gothjuggluvr",
       "realmSlug": "area-52",
       "rating": 1800,
       "wins": 83,
       "losses": 61,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 314,
+      "rank": 323,
       "characterName": "Tille",
       "realmSlug": "wyrmrest-accord",
       "rating": 1800,
       "wins": 79,
       "losses": 69,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 322,
+      "rank": 330,
       "characterName": "Dubel",
       "realmSlug": "dalaran",
       "rating": 1799,
       "wins": 34,
       "losses": 20,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
-      "rank": 323,
+      "rank": 331,
       "characterName": "Berrybull",
       "realmSlug": "moon-guard",
       "rating": 1798,
       "wins": 30,
       "losses": 17,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_frost"
     },
     {
-      "rank": 324,
+      "rank": 332,
       "characterName": "Domeemommy",
       "realmSlug": "moon-guard",
       "rating": 1797,
       "wins": 35,
       "losses": 23,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
-      "rank": 325,
-      "characterName": "Mythpallyzx",
-      "realmSlug": "caelestrasz",
+      "rank": 333,
+      "characterName": "Gotthejuice",
+      "realmSlug": "frostmourne",
       "rating": 1796,
-      "wins": 47,
-      "losses": 16,
-      "classId": "paladin"
+      "wins": 52,
+      "losses": 26,
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 325,
+      "rank": 333,
       "characterName": "Handibanned",
       "realmSlug": "tichondrius",
       "rating": 1796,
       "wins": 94,
       "losses": 66,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 327,
-      "characterName": "Stealz",
-      "realmSlug": "korgath",
-      "rating": 1795,
-      "wins": 32,
-      "losses": 6,
-      "classId": "monk"
+      "rank": 333,
+      "characterName": "Voidgauntlet",
+      "realmSlug": "proudmoore",
+      "rating": 1796,
+      "wins": 52,
+      "losses": 40,
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 327,
+      "rank": 336,
       "characterName": "Nikdruidne",
       "realmSlug": "tichondrius",
       "rating": 1795,
       "wins": 50,
       "losses": 22,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
-      "rank": 327,
+      "rank": 336,
       "characterName": "Captearthy",
       "realmSlug": "sargeras",
       "rating": 1795,
       "wins": 52,
       "losses": 24,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 327,
+      "rank": 336,
       "characterName": "Azwinn",
       "realmSlug": "tichondrius",
       "rating": 1795,
       "wins": 39,
       "losses": 21,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
-      "rank": 331,
+      "rank": 339,
       "characterName": "Pitter",
       "realmSlug": "thorium-brotherhood",
       "rating": 1794,
       "wins": 34,
       "losses": 11,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 331,
+      "rank": 339,
       "characterName": "Pinkteddyp",
       "realmSlug": "zuljin",
       "rating": 1794,
       "wins": 41,
       "losses": 30,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 331,
+      "rank": 339,
       "characterName": "Kimbon",
       "realmSlug": "area-52",
       "rating": 1794,
       "wins": 100,
       "losses": 75,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 331,
+      "rank": 339,
       "characterName": "Harthchi",
       "realmSlug": "wyrmrest-accord",
       "rating": 1794,
       "wins": 91,
       "losses": 79,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 335,
+      "rank": 343,
       "characterName": "Yelzuwu",
       "realmSlug": "area-52",
       "rating": 1793,
       "wins": 40,
       "losses": 20,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 335,
-      "characterName": "Deathmachïne",
-      "realmSlug": "tichondrius",
-      "rating": 1793,
-      "wins": 65,
-      "losses": 52,
-      "classId": "deathknight"
-    },
-    {
-      "rank": 337,
-      "characterName": "Jackeylove",
-      "realmSlug": "thrall",
-      "rating": 1792,
-      "wins": 39,
-      "losses": 32,
-      "classId": "monk"
-    },
-    {
-      "rank": 337,
+      "rank": 344,
       "characterName": "Steelhardt",
       "realmSlug": "wyrmrest-accord",
       "rating": 1792,
       "wins": 39,
       "losses": 32,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 339,
+      "rank": 344,
+      "characterName": "Jackeylove",
+      "realmSlug": "thrall",
+      "rating": 1792,
+      "wins": 39,
+      "losses": 32,
+      "classId": "monk",
+      "specId": "monk_windwalker"
+    },
+    {
+      "rank": 346,
+      "characterName": "Supergator",
+      "realmSlug": "sargeras",
+      "rating": 1791,
+      "wins": 29,
+      "losses": 3,
+      "classId": "monk",
+      "specId": "monk_mistweaver"
+    },
+    {
+      "rank": 346,
       "characterName": "Chenzio",
       "realmSlug": "garona",
       "rating": 1791,
       "wins": 69,
       "losses": 49,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 339,
+      "rank": 346,
       "characterName": "Redempt",
       "realmSlug": "emerald-dream",
       "rating": 1791,
       "wins": 61,
       "losses": 55,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 341,
+      "rank": 349,
       "characterName": "Ðêåðøfwïñtêr",
       "realmSlug": "bleeding-hollow",
       "rating": 1790,
       "wins": 30,
       "losses": 4,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 341,
+      "rank": 349,
       "characterName": "Kidseeghost",
       "realmSlug": "tichondrius",
       "rating": 1790,
       "wins": 34,
       "losses": 12,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 341,
+      "rank": 349,
       "characterName": "Solushun",
       "realmSlug": "sargeras",
       "rating": 1790,
       "wins": 45,
       "losses": 27,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
-      "rank": 344,
+      "rank": 352,
       "characterName": "Albyt",
       "realmSlug": "stormrage",
       "rating": 1789,
       "wins": 32,
       "losses": 16,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 344,
+      "rank": 352,
       "characterName": "Mikeynascar",
       "realmSlug": "area-52",
       "rating": 1789,
       "wins": 62,
       "losses": 37,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 346,
+      "rank": 354,
       "characterName": "Ilyx",
       "realmSlug": "tichondrius",
       "rating": 1788,
       "wins": 32,
       "losses": 13,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 346,
-      "characterName": "Longslowdamp",
-      "realmSlug": "illidan",
-      "rating": 1788,
-      "wins": 35,
-      "losses": 15,
-      "classId": null
-    },
-    {
-      "rank": 346,
+      "rank": 354,
       "characterName": "Sovice",
       "realmSlug": "illidan",
       "rating": 1788,
       "wins": 29,
       "losses": 15,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 349,
+      "rank": 356,
       "characterName": "Jaw",
       "realmSlug": "illidan",
       "rating": 1787,
       "wins": 32,
       "losses": 12,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 349,
+      "rank": 356,
       "characterName": "Ilovejoanna",
       "realmSlug": "sargeras",
       "rating": 1787,
       "wins": 28,
       "losses": 11,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 349,
+      "rank": 356,
       "characterName": "Jaeger",
       "realmSlug": "azuremyst",
       "rating": 1787,
       "wins": 43,
       "losses": 34,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 352,
+      "rank": 359,
       "characterName": "Hodduck",
       "realmSlug": "tichondrius",
       "rating": 1785,
       "wins": 31,
       "losses": 13,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 353,
+      "rank": 360,
       "characterName": "Zeyondz",
       "realmSlug": "demon-soul",
       "rating": 1784,
       "wins": 34,
       "losses": 23,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 353,
+      "rank": 360,
       "characterName": "Ðåvïd",
       "realmSlug": "sargeras",
       "rating": 1784,
       "wins": 31,
       "losses": 21,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
-      "rank": 355,
+      "rank": 362,
       "characterName": "Jäbs",
       "realmSlug": "stormrage",
       "rating": 1783,
       "wins": 137,
       "losses": 126,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 356,
+      "rank": 363,
       "characterName": "Mozý",
       "realmSlug": "tichondrius",
       "rating": 1782,
       "wins": 32,
       "losses": 8,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 356,
+      "rank": 363,
       "characterName": "Itheternal",
       "realmSlug": "dalaran",
       "rating": 1782,
       "wins": 28,
       "losses": 10,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 356,
+      "rank": 363,
       "characterName": "Drix",
       "realmSlug": "wyrmrest-accord",
       "rating": 1782,
       "wins": 59,
       "losses": 36,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
-      "rank": 359,
+      "rank": 366,
       "characterName": "Fookmoi",
       "realmSlug": "stormrage",
       "rating": 1781,
       "wins": 30,
       "losses": 15,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
-      "rank": 359,
+      "rank": 366,
       "characterName": "Nyxelïa",
       "realmSlug": "tichondrius",
       "rating": 1781,
       "wins": 56,
       "losses": 52,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 361,
+      "rank": 368,
       "characterName": "Challengerz",
       "realmSlug": "suramar",
       "rating": 1780,
       "wins": 34,
       "losses": 5,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 361,
+      "rank": 368,
+      "characterName": "Zhangbeihaiz",
+      "realmSlug": "tichondrius",
+      "rating": 1780,
+      "wins": 46,
+      "losses": 14,
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
+    },
+    {
+      "rank": 368,
       "characterName": "Yulilover",
       "realmSlug": "tichondrius",
       "rating": 1780,
       "wins": 54,
       "losses": 33,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 361,
+      "rank": 368,
       "characterName": "Isamu",
       "realmSlug": "tichondrius",
       "rating": 1780,
       "wins": 78,
       "losses": 55,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 361,
+      "rank": 368,
       "characterName": "Commodore",
       "realmSlug": "dalaran",
       "rating": 1780,
       "wins": 97,
       "losses": 91,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 365,
+      "rank": 373,
       "characterName": "Burkeet",
       "realmSlug": "sargeras",
       "rating": 1779,
       "wins": 34,
       "losses": 8,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 365,
+      "rank": 373,
       "characterName": "Vincevice",
       "realmSlug": "tichondrius",
       "rating": 1779,
       "wins": 41,
       "losses": 20,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 367,
+      "rank": 375,
       "characterName": "Leonardmccoy",
       "realmSlug": "blades-edge",
       "rating": 1778,
       "wins": 29,
       "losses": 2,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 367,
+      "rank": 375,
       "characterName": "Awakenx",
       "realmSlug": "stormrage",
       "rating": 1778,
       "wins": 30,
       "losses": 5,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 367,
+      "rank": 375,
       "characterName": "Austinder",
       "realmSlug": "illidan",
       "rating": 1778,
       "wins": 32,
       "losses": 20,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
-      "rank": 370,
+      "rank": 378,
       "characterName": "Mharcoz",
       "realmSlug": "stormrage",
       "rating": 1777,
       "wins": 29,
       "losses": 14,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 370,
+      "rank": 378,
       "characterName": "Bestdkmode",
       "realmSlug": "ragnaros",
       "rating": 1777,
       "wins": 31,
       "losses": 21,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 370,
+      "rank": 378,
       "characterName": "Trapzlt",
       "realmSlug": "wyrmrest-accord",
       "rating": 1777,
       "wins": 38,
       "losses": 26,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
-      "rank": 370,
+      "rank": 378,
       "characterName": "Arc",
       "realmSlug": "darkspear",
       "rating": 1777,
       "wins": 51,
       "losses": 55,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 374,
+      "rank": 382,
       "characterName": "Anaqti",
       "realmSlug": "illidan",
       "rating": 1776,
       "wins": 64,
       "losses": 35,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 375,
+      "rank": 383,
       "characterName": "Kosakî",
       "realmSlug": "proudmoore",
       "rating": 1775,
       "wins": 31,
       "losses": 2,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 375,
+      "rank": 383,
       "characterName": "Pisaki",
       "realmSlug": "anvilmar",
       "rating": 1775,
       "wins": 43,
       "losses": 21,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 375,
-      "characterName": "Opion",
-      "realmSlug": "blood-furnace",
-      "rating": 1775,
-      "wins": 114,
-      "losses": 67,
-      "classId": "paladin"
-    },
-    {
-      "rank": 378,
+      "rank": 385,
       "characterName": "Slunks",
       "realmSlug": "tichondrius",
       "rating": 1774,
       "wins": 30,
       "losses": 0,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 378,
-      "characterName": "Koii",
-      "realmSlug": "sargeras",
-      "rating": 1774,
-      "wins": 42,
-      "losses": 40,
-      "classId": "hunter"
-    },
-    {
-      "rank": 378,
+      "rank": 385,
       "characterName": "Caoh",
       "realmSlug": "sargeras",
       "rating": 1774,
       "wins": 42,
       "losses": 40,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 381,
-      "characterName": "Mesidan",
-      "realmSlug": "illidan",
-      "rating": 1773,
-      "wins": 31,
-      "losses": 14,
-      "classId": "demonhunter"
+      "rank": 385,
+      "characterName": "Koii",
+      "realmSlug": "sargeras",
+      "rating": 1774,
+      "wins": 42,
+      "losses": 40,
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
-      "rank": 382,
+      "rank": 388,
       "characterName": "Zezimaz",
       "realmSlug": "tichondrius",
       "rating": 1772,
       "wins": 37,
       "losses": 12,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 382,
+      "rank": 388,
       "characterName": "Myranice",
       "realmSlug": "shattered-hand",
       "rating": 1772,
       "wins": 29,
       "losses": 19,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 384,
+      "rank": 390,
       "characterName": "Ilimont",
       "realmSlug": "sargeras",
       "rating": 1771,
       "wins": 36,
       "losses": 19,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 384,
+      "rank": 390,
       "characterName": "Melíodas",
       "realmSlug": "ragnaros",
       "rating": 1771,
       "wins": 37,
       "losses": 24,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 384,
+      "rank": 390,
       "characterName": "Bró",
       "realmSlug": "dalaran",
       "rating": 1771,
       "wins": 33,
       "losses": 23,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
-      "rank": 384,
+      "rank": 390,
       "characterName": "Atengie",
       "realmSlug": "stormrage",
       "rating": 1771,
       "wins": 33,
       "losses": 23,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 384,
-      "characterName": "Knekita",
-      "realmSlug": "quelthalas",
-      "rating": 1771,
-      "wins": 67,
-      "losses": 57,
-      "classId": "paladin"
+      "rank": 394,
+      "characterName": "Poisonpond",
+      "realmSlug": "kelthuzad",
+      "rating": 1770,
+      "wins": 28,
+      "losses": 6,
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
-      "rank": 389,
+      "rank": 394,
       "characterName": "Onioutlawttv",
       "realmSlug": "sargeras",
       "rating": 1770,
       "wins": 227,
       "losses": 137,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 389,
+      "rank": 394,
       "characterName": "Keihaku",
       "realmSlug": "moon-guard",
       "rating": 1770,
       "wins": 39,
       "losses": 26,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 389,
+      "rank": 394,
       "characterName": "Windfuryjiji",
       "realmSlug": "bronzebeard",
       "rating": 1770,
       "wins": 37,
       "losses": 32,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
-      "rank": 392,
+      "rank": 398,
       "characterName": "Lacpal",
       "realmSlug": "malganis",
       "rating": 1769,
       "wins": 44,
       "losses": 21,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 392,
+      "rank": 398,
       "characterName": "Peasiente",
       "realmSlug": "dalaran",
       "rating": 1769,
       "wins": 52,
       "losses": 28,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 392,
-      "characterName": "Fröstyboy",
-      "realmSlug": "sargeras",
-      "rating": 1769,
-      "wins": 51,
-      "losses": 36,
-      "classId": "rogue"
-    },
-    {
-      "rank": 392,
+      "rank": 398,
       "characterName": "Cmf",
       "realmSlug": "tichondrius",
       "rating": 1769,
       "wins": 38,
       "losses": 27,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 392,
+      "rank": 398,
       "characterName": "Procz",
       "realmSlug": "kirin-tor",
       "rating": 1769,
       "wins": 65,
       "losses": 52,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 392,
+      "rank": 398,
       "characterName": "Deathknoobs",
       "realmSlug": "illidan",
       "rating": 1769,
       "wins": 76,
       "losses": 73,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 398,
+      "rank": 403,
       "characterName": "Trust",
       "realmSlug": "trollbane",
       "rating": 1768,
       "wins": 36,
       "losses": 19,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_assassination"
     },
     {
-      "rank": 398,
+      "rank": 403,
       "characterName": "Nerd",
       "realmSlug": "wyrmrest-accord",
       "rating": 1768,
       "wins": 47,
       "losses": 28,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 398,
+      "rank": 403,
       "characterName": "Fivepieceh",
       "realmSlug": "bleeding-hollow",
       "rating": 1768,
       "wins": 29,
       "losses": 19,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 398,
-      "characterName": "Voidgauntlet",
-      "realmSlug": "proudmoore",
-      "rating": 1768,
-      "wins": 49,
-      "losses": 38,
-      "classId": "priest"
-    },
-    {
-      "rank": 402,
+      "rank": 406,
       "characterName": "Alcoric",
       "realmSlug": "illidan",
       "rating": 1767,
       "wins": 38,
       "losses": 19,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 403,
+      "rank": 407,
       "characterName": "Manongauz",
       "realmSlug": "demon-soul",
       "rating": 1766,
       "wins": 27,
       "losses": 3,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 403,
+      "rank": 407,
       "characterName": "Kistorm",
       "realmSlug": "tichondrius",
       "rating": 1766,
       "wins": 36,
       "losses": 13,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 403,
+      "rank": 407,
       "characterName": "Beerbubble",
       "realmSlug": "area-52",
       "rating": 1766,
       "wins": 28,
       "losses": 13,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
-      "rank": 403,
+      "rank": 407,
+      "characterName": "Desirefx",
+      "realmSlug": "tichondrius",
+      "rating": 1766,
+      "wins": 30,
+      "losses": 16,
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
+    },
+    {
+      "rank": 407,
+      "characterName": "Ethsin",
+      "realmSlug": "tichondrius",
+      "rating": 1766,
+      "wins": 30,
+      "losses": 16,
+      "classId": "monk",
+      "specId": "monk_mistweaver"
+    },
+    {
+      "rank": 407,
       "characterName": "Forhirex",
       "realmSlug": "dalaran",
       "rating": 1766,
       "wins": 59,
       "losses": 34,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 403,
+      "rank": 407,
       "characterName": "Shmeatstick",
       "realmSlug": "bleeding-hollow",
       "rating": 1766,
       "wins": 47,
       "losses": 34,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_devastation"
     },
     {
-      "rank": 403,
+      "rank": 407,
       "characterName": "Dorisseline",
       "realmSlug": "bleeding-hollow",
       "rating": 1766,
       "wins": 42,
       "losses": 31,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
-      "rank": 409,
+      "rank": 415,
       "characterName": "Bhoredom",
       "realmSlug": "kiljaeden",
       "rating": 1764,
       "wins": 28,
       "losses": 3,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 409,
+      "rank": 415,
       "characterName": "Caulichad",
       "realmSlug": "tichondrius",
       "rating": 1764,
       "wins": 32,
       "losses": 7,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 409,
+      "rank": 415,
       "characterName": "Jerseymikes",
       "realmSlug": "sargeras",
       "rating": 1764,
       "wins": 30,
       "losses": 11,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 409,
+      "rank": 415,
       "characterName": "Grimmey",
       "realmSlug": "azjolnerub",
       "rating": 1764,
       "wins": 43,
       "losses": 19,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 413,
+      "rank": 419,
       "characterName": "Qutip",
       "realmSlug": "malganis",
       "rating": 1763,
       "wins": 39,
       "losses": 13,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 413,
+      "rank": 419,
       "characterName": "Grimjøi",
       "realmSlug": "illidan",
       "rating": 1763,
       "wins": 38,
       "losses": 13,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
-      "rank": 413,
+      "rank": 419,
       "characterName": "Rainbetnick",
       "realmSlug": "kelthuzad",
       "rating": 1763,
       "wins": 27,
       "losses": 10,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 413,
+      "rank": 419,
       "characterName": "Iooloolooloo",
       "realmSlug": "zuljin",
       "rating": 1763,
       "wins": 35,
       "losses": 32,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
-      "rank": 417,
+      "rank": 423,
       "characterName": "Bicx",
       "realmSlug": "emerald-dream",
       "rating": 1762,
       "wins": 30,
       "losses": 12,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 417,
+      "rank": 423,
       "characterName": "Swegg",
       "realmSlug": "sargeras",
       "rating": 1762,
       "wins": 59,
       "losses": 34,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 417,
+      "rank": 423,
       "characterName": "Simivoke",
       "realmSlug": "kiljaeden",
       "rating": 1762,
       "wins": 50,
       "losses": 30,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_devastation"
     },
     {
-      "rank": 420,
+      "rank": 426,
       "characterName": "Minus",
       "realmSlug": "alleria",
       "rating": 1761,
       "wins": 32,
       "losses": 17,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 420,
+      "rank": 426,
       "characterName": "Shawcker",
       "realmSlug": "burning-blade",
       "rating": 1761,
       "wins": 60,
       "losses": 48,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 422,
+      "rank": 428,
       "characterName": "Dumpinloads",
       "realmSlug": "zuljin",
       "rating": 1760,
       "wins": 42,
       "losses": 25,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 423,
+      "rank": 428,
+      "characterName": "Máximus",
+      "realmSlug": "sargeras",
+      "rating": 1760,
+      "wins": 38,
+      "losses": 28,
+      "classId": "priest",
+      "specId": "priest_holy"
+    },
+    {
+      "rank": 430,
       "characterName": "Misscleandk",
       "realmSlug": "illidan",
       "rating": 1759,
       "wins": 51,
       "losses": 26,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 423,
+      "rank": 430,
       "characterName": "Tainx",
       "realmSlug": "frostmourne",
       "rating": 1759,
       "wins": 54,
       "losses": 40,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
-      "rank": 423,
+      "rank": 430,
       "characterName": "Sujoh",
       "realmSlug": "area-52",
       "rating": 1759,
       "wins": 55,
       "losses": 47,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 426,
+      "rank": 433,
       "characterName": "Sanity",
       "realmSlug": "stormreaver",
       "rating": 1758,
       "wins": 39,
       "losses": 10,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
-      "rank": 426,
+      "rank": 433,
       "characterName": "Dizzyshine",
       "realmSlug": "tichondrius",
       "rating": 1758,
       "wins": 58,
       "losses": 51,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
-      "rank": 428,
+      "rank": 435,
       "characterName": "Fwr",
       "realmSlug": "tichondrius",
       "rating": 1757,
       "wins": 32,
       "losses": 5,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
-      "rank": 428,
+      "rank": 435,
       "characterName": "Malzeno",
       "realmSlug": "tichondrius",
       "rating": 1757,
       "wins": 28,
       "losses": 14,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 430,
-      "characterName": "Supergator",
-      "realmSlug": "sargeras",
-      "rating": 1756,
-      "wins": 27,
-      "losses": 3,
-      "classId": "monk"
-    },
-    {
-      "rank": 430,
+      "rank": 437,
       "characterName": "Fearless",
       "realmSlug": "moon-guard",
       "rating": 1756,
       "wins": 37,
       "losses": 12,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_devourer"
     },
     {
-      "rank": 430,
+      "rank": 437,
       "characterName": "Kelarienna",
       "realmSlug": "sargeras",
       "rating": 1756,
       "wins": 35,
       "losses": 19,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 430,
+      "rank": 437,
       "characterName": "Hdg",
       "realmSlug": "moon-guard",
       "rating": 1756,
       "wins": 28,
       "losses": 17,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 430,
+      "rank": 437,
       "characterName": "Makehersqurt",
       "realmSlug": "area-52",
       "rating": 1756,
       "wins": 36,
       "losses": 25,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
-      "rank": 430,
+      "rank": 437,
       "characterName": "Saekki",
       "realmSlug": "area-52",
       "rating": 1756,
       "wins": 47,
       "losses": 35,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 430,
+      "rank": 437,
       "characterName": "Dvn",
       "realmSlug": "stormrage",
       "rating": 1756,
       "wins": 36,
       "losses": 30,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 437,
+      "rank": 443,
       "characterName": "Jadestørmz",
       "realmSlug": "illidan",
       "rating": 1755,
       "wins": 38,
       "losses": 10,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 437,
+      "rank": 443,
       "characterName": "Päc",
       "realmSlug": "stormrage",
       "rating": 1755,
       "wins": 35,
       "losses": 14,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 437,
+      "rank": 443,
       "characterName": "Fullyhollow",
       "realmSlug": "proudmoore",
       "rating": 1755,
       "wins": 33,
       "losses": 15,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 437,
+      "rank": 443,
       "characterName": "Joshcanztv",
       "realmSlug": "moon-guard",
       "rating": 1755,
       "wins": 31,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 437,
+      "rank": 443,
+      "characterName": "Punchamia",
+      "realmSlug": "nerzhul",
+      "rating": 1755,
+      "wins": 60,
+      "losses": 42,
+      "classId": "monk",
+      "specId": "monk_mistweaver"
+    },
+    {
+      "rank": 443,
       "characterName": "Chillpills",
       "realmSlug": "stormrage",
       "rating": 1755,
       "wins": 46,
       "losses": 33,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 437,
-      "characterName": "Máximus",
-      "realmSlug": "sargeras",
-      "rating": 1755,
-      "wins": 36,
-      "losses": 26,
-      "classId": "priest"
-    },
-    {
-      "rank": 443,
+      "rank": 449,
       "characterName": "Caed",
       "realmSlug": "stormrage",
       "rating": 1753,
       "wins": 31,
       "losses": 7,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 443,
+      "rank": 449,
       "characterName": "Ronpauladina",
       "realmSlug": "stormrage",
       "rating": 1753,
       "wins": 26,
       "losses": 11,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 443,
+      "rank": 449,
       "characterName": "Jasey",
       "realmSlug": "area-52",
       "rating": 1753,
       "wins": 26,
       "losses": 11,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 443,
+      "rank": 449,
       "characterName": "Miseryave",
       "realmSlug": "emerald-dream",
       "rating": 1753,
       "wins": 31,
       "losses": 16,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
-      "rank": 443,
+      "rank": 449,
       "characterName": "Remedio",
       "realmSlug": "malganis",
       "rating": 1753,
       "wins": 64,
       "losses": 49,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 443,
-      "characterName": "Bílmuri",
-      "realmSlug": "tichondrius",
-      "rating": 1753,
-      "wins": 55,
-      "losses": 51,
-      "classId": "monk"
-    },
-    {
-      "rank": 443,
+      "rank": 449,
       "characterName": "Ftjeers",
       "realmSlug": "tichondrius",
       "rating": 1753,
       "wins": 55,
       "losses": 51,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
-      "rank": 450,
+      "rank": 449,
+      "characterName": "Bílmuri",
+      "realmSlug": "tichondrius",
+      "rating": 1753,
+      "wins": 55,
+      "losses": 51,
+      "classId": "monk",
+      "specId": "monk_windwalker"
+    },
+    {
+      "rank": 456,
       "characterName": "Lengthymf",
       "realmSlug": "illidan",
       "rating": 1752,
       "wins": 29,
       "losses": 8,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 450,
+      "rank": 456,
       "characterName": "Mumsydragon",
       "realmSlug": "illidan",
       "rating": 1752,
       "wins": 32,
       "losses": 11,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
-      "rank": 450,
+      "rank": 456,
       "characterName": "Tizzyb",
       "realmSlug": "bleeding-hollow",
       "rating": 1752,
       "wins": 47,
       "losses": 33,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 450,
+      "rank": 456,
       "characterName": "Sticky",
       "realmSlug": "scilla",
       "rating": 1752,
       "wins": 58,
       "losses": 53,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 450,
+      "rank": 456,
       "characterName": "Nevni",
       "realmSlug": "tichondrius",
       "rating": 1752,
       "wins": 51,
       "losses": 49,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 455,
+      "rank": 461,
       "characterName": "Thanatu",
       "realmSlug": "area-52",
       "rating": 1751,
       "wins": 29,
       "losses": 13,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
-      "rank": 455,
+      "rank": 461,
       "characterName": "Vexum",
       "realmSlug": "kiljaeden",
       "rating": 1751,
       "wins": 38,
       "losses": 25,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 455,
+      "rank": 461,
       "characterName": "Rillina",
       "realmSlug": "korialstrasz",
       "rating": 1751,
       "wins": 42,
       "losses": 31,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 458,
+      "rank": 464,
       "characterName": "Fitschi",
       "realmSlug": "zuljin",
       "rating": 1750,
       "wins": 35,
       "losses": 10,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 458,
+      "rank": 464,
       "characterName": "Cokeheals",
       "realmSlug": "tichondrius",
       "rating": 1750,
       "wins": 35,
       "losses": 16,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 458,
-      "characterName": "Fatboyjay",
-      "realmSlug": "moon-guard",
-      "rating": 1750,
-      "wins": 33,
-      "losses": 21,
-      "classId": "priest"
-    },
-    {
-      "rank": 458,
+      "rank": 464,
       "characterName": "Beamski",
       "realmSlug": "moon-guard",
       "rating": 1750,
       "wins": 33,
       "losses": 21,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
-      "rank": 458,
+      "rank": 464,
+      "characterName": "Fatboyjay",
+      "realmSlug": "moon-guard",
+      "rating": 1750,
+      "wins": 33,
+      "losses": 21,
+      "classId": "priest",
+      "specId": "priest_discipline"
+    },
+    {
+      "rank": 464,
       "characterName": "Bhen",
       "realmSlug": "tichondrius",
       "rating": 1750,
       "wins": 46,
       "losses": 30,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_feral"
     },
     {
-      "rank": 458,
+      "rank": 464,
       "characterName": "Gamer",
       "realmSlug": "uldum",
       "rating": 1750,
       "wins": 31,
       "losses": 21,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
-      "rank": 464,
+      "rank": 470,
       "characterName": "Psyche",
       "realmSlug": "kelthuzad",
       "rating": 1749,
       "wins": 35,
       "losses": 18,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 464,
+      "rank": 470,
       "characterName": "Threegods",
       "realmSlug": "area-52",
       "rating": 1749,
       "wins": 42,
       "losses": 22,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
-      "rank": 464,
+      "rank": 470,
       "characterName": "Gooping",
       "realmSlug": "malganis",
       "rating": 1749,
       "wins": 49,
       "losses": 33,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 467,
+      "rank": 473,
       "characterName": "Jhonta",
       "realmSlug": "ragnaros",
       "rating": 1748,
       "wins": 29,
       "losses": 9,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 467,
+      "rank": 473,
       "characterName": "Izgimmer",
       "realmSlug": "destromath",
       "rating": 1748,
       "wins": 30,
       "losses": 13,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 467,
+      "rank": 473,
+      "characterName": "Hozzaarr",
+      "realmSlug": "tichondrius",
+      "rating": 1748,
+      "wins": 68,
+      "losses": 47,
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
+    },
+    {
+      "rank": 473,
       "characterName": "Sæbastian",
       "realmSlug": "zuljin",
       "rating": 1748,
       "wins": 35,
       "losses": 33,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 470,
+      "rank": 473,
+      "characterName": "Meemos",
+      "realmSlug": "malganis",
+      "rating": 1748,
+      "wins": 60,
+      "losses": 57,
+      "classId": "paladin",
+      "specId": "paladin_holy"
+    },
+    {
+      "rank": 473,
+      "characterName": "Ozranar",
+      "realmSlug": "malganis",
+      "rating": 1748,
+      "wins": 60,
+      "losses": 57,
+      "classId": "warlock",
+      "specId": "warlock_demonology"
+    },
+    {
+      "rank": 479,
       "characterName": "Wukangz",
       "realmSlug": "emerald-dream",
       "rating": 1747,
       "wins": 27,
       "losses": 10,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 470,
+      "rank": 479,
       "characterName": "Ryanighty",
       "realmSlug": "illidan",
       "rating": 1747,
       "wins": 31,
       "losses": 12,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
-      "rank": 470,
-      "characterName": "Rentahealer",
-      "realmSlug": "frostmourne",
-      "rating": 1747,
-      "wins": 41,
-      "losses": 25,
-      "classId": "paladin"
-    },
-    {
-      "rank": 470,
+      "rank": 479,
       "characterName": "Acceptance",
       "realmSlug": "khadgar",
       "rating": 1747,
       "wins": 65,
       "losses": 51,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 474,
+      "rank": 482,
       "characterName": "ßladesong",
       "realmSlug": "moon-guard",
       "rating": 1746,
       "wins": 27,
       "losses": 11,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
-      "rank": 474,
+      "rank": 482,
       "characterName": "Baemayfield",
       "realmSlug": "mannoroth",
       "rating": 1746,
       "wins": 38,
       "losses": 29,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 474,
+      "rank": 482,
       "characterName": "Claudemaster",
       "realmSlug": "tichondrius",
       "rating": 1746,
       "wins": 56,
       "losses": 43,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
-      "rank": 474,
+      "rank": 482,
       "characterName": "Îlladelph",
       "realmSlug": "moon-guard",
       "rating": 1746,
       "wins": 57,
       "losses": 49,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
-      "rank": 478,
+      "rank": 486,
       "characterName": "Hundrednine",
       "realmSlug": "tichondrius",
       "rating": 1745,
       "wins": 29,
       "losses": 8,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_destruction"
     },
     {
-      "rank": 478,
+      "rank": 486,
       "characterName": "ßrokenspec",
       "realmSlug": "area-52",
       "rating": 1745,
       "wins": 29,
       "losses": 12,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
-      "rank": 478,
+      "rank": 486,
       "characterName": "Níretzka",
       "realmSlug": "skullcrusher",
       "rating": 1745,
       "wins": 46,
       "losses": 25,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
-      "rank": 478,
+      "rank": 486,
       "characterName": "Dannyfromarg",
       "realmSlug": "ragnaros",
       "rating": 1745,
       "wins": 58,
       "losses": 44,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
-      "rank": 478,
+      "rank": 486,
       "characterName": "Cowfistmoo",
       "realmSlug": "tichondrius",
       "rating": 1745,
       "wins": 46,
       "losses": 36,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
-      "rank": 478,
+      "rank": 486,
       "characterName": "Büdä",
       "realmSlug": "illidan",
       "rating": 1745,
       "wins": 39,
       "losses": 34,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
-      "rank": 484,
+      "rank": 492,
       "characterName": "Voidxx",
       "realmSlug": "tichondrius",
       "rating": 1744,
       "wins": 32,
       "losses": 15,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
-      "rank": 484,
+      "rank": 492,
       "characterName": "Kobaishome",
       "realmSlug": "tichondrius",
       "rating": 1744,
       "wins": 27,
       "losses": 14,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
-      "rank": 484,
+      "rank": 492,
       "characterName": "Shkyp",
       "realmSlug": "proudmoore",
       "rating": 1744,
       "wins": 42,
       "losses": 23,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
-      "rank": 484,
+      "rank": 492,
       "characterName": "Sinogran",
       "realmSlug": "proudmoore",
       "rating": 1744,
       "wins": 49,
       "losses": 27,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 484,
+      "rank": 492,
       "characterName": "Ferthin",
       "realmSlug": "emerald-dream",
       "rating": 1744,
       "wins": 62,
       "losses": 43,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
-      "rank": 484,
-      "characterName": "Nerfwar",
-      "realmSlug": "tichondrius",
-      "rating": 1744,
-      "wins": 46,
-      "losses": 35,
-      "classId": "priest"
-    },
-    {
-      "rank": 484,
-      "characterName": "Ialalalalal",
-      "realmSlug": "tichondrius",
-      "rating": 1744,
-      "wins": 46,
-      "losses": 35,
-      "classId": "deathknight"
-    },
-    {
-      "rank": 484,
+      "rank": 492,
       "characterName": "Clue",
       "realmSlug": "frostmourne",
       "rating": 1744,
       "wins": 43,
       "losses": 41,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
-      "rank": 492,
+      "rank": 498,
       "characterName": "Vanqlight",
       "realmSlug": "area-52",
       "rating": 1743,
       "wins": 27,
       "losses": 6,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
-      "rank": 492,
-      "characterName": "Kenshunter",
-      "realmSlug": "barthilas",
-      "rating": 1743,
-      "wins": 38,
-      "losses": 9,
-      "classId": "hunter"
-    },
-    {
-      "rank": 492,
+      "rank": 498,
       "characterName": "Socialyzt",
       "realmSlug": "area-52",
       "rating": 1743,
       "wins": 34,
       "losses": 16,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
-      "rank": 492,
-      "characterName": "Zanx",
-      "realmSlug": "barthilas",
-      "rating": 1743,
-      "wins": 40,
-      "losses": 20,
-      "classId": "monk"
-    },
-    {
-      "rank": 492,
+      "rank": 498,
       "characterName": "Sophiadruid",
       "realmSlug": "moon-guard",
       "rating": 1743,
       "wins": 42,
       "losses": 27,
-      "classId": "druid"
-    },
-    {
-      "rank": 492,
-      "characterName": "Smothermary",
-      "realmSlug": "bleeding-hollow",
-      "rating": 1743,
-      "wins": 79,
-      "losses": 76,
-      "classId": "priest"
-    },
-    {
-      "rank": 498,
-      "characterName": "Addyfiend",
-      "realmSlug": "tichondrius",
-      "rating": 1742,
-      "wins": 45,
-      "losses": 26,
-      "classId": "paladin"
-    },
-    {
-      "rank": 498,
-      "characterName": "Cutedead",
-      "realmSlug": "tichondrius",
-      "rating": 1742,
-      "wins": 55,
-      "losses": 32,
-      "classId": "priest"
-    },
-    {
-      "rank": 498,
-      "characterName": "June",
-      "realmSlug": "magtheridon",
-      "rating": 1742,
-      "wins": 27,
-      "losses": 16,
-      "classId": "hunter"
+      "classId": "druid",
+      "specId": "druid_restoration"
     }
   ]
 }

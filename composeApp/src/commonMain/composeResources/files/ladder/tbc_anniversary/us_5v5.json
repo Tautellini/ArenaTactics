@@ -2,8 +2,8 @@
   "region": "us",
   "bracket": "5v5",
   "seasonId": 1,
-  "fetchedAt": "2026-03-22T11:56:47Z",
-  "totalEntries": 5005,
+  "fetchedAt": "2026-03-22T14:20:06Z",
+  "totalEntries": 5008,
   "ratingCutoffs": {
     "gladiator": 2176,
     "duelist": 1808,
@@ -19,7 +19,8 @@
       "rating": 2400,
       "wins": 118,
       "losses": 39,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 2,
@@ -28,7 +29,8 @@
       "rating": 2357,
       "wins": 120,
       "losses": 48,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 3,
@@ -37,7 +39,8 @@
       "rating": 2349,
       "wins": 90,
       "losses": 22,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 3,
@@ -46,16 +49,8 @@
       "rating": 2349,
       "wins": 90,
       "losses": 22,
-      "classId": "priest"
-    },
-    {
-      "rank": 3,
-      "characterName": "Wp",
-      "realmSlug": "nightslayer",
-      "rating": 2349,
-      "wins": 90,
-      "losses": 22,
-      "classId": "warrior"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 3,
@@ -64,7 +59,18 @@
       "rating": 2349,
       "wins": 90,
       "losses": 22,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
+    },
+    {
+      "rank": 3,
+      "characterName": "Wp",
+      "realmSlug": "nightslayer",
+      "rating": 2349,
+      "wins": 90,
+      "losses": 22,
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 7,
@@ -73,7 +79,8 @@
       "rating": 2345,
       "wins": 89,
       "losses": 32,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 8,
@@ -82,7 +89,8 @@
       "rating": 2342,
       "wins": 148,
       "losses": 49,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 9,
@@ -91,7 +99,8 @@
       "rating": 2329,
       "wins": 147,
       "losses": 25,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 10,
@@ -100,43 +109,8 @@
       "rating": 2327,
       "wins": 70,
       "losses": 11,
-      "classId": "druid"
-    },
-    {
-      "rank": 11,
-      "characterName": "Cheertbc",
-      "realmSlug": "nightslayer",
-      "rating": 2317,
-      "wins": 81,
-      "losses": 18,
-      "classId": "warlock"
-    },
-    {
-      "rank": 11,
-      "characterName": "Totalanimal",
-      "realmSlug": "nightslayer",
-      "rating": 2317,
-      "wins": 81,
-      "losses": 18,
-      "classId": "mage"
-    },
-    {
-      "rank": 11,
-      "characterName": "Emclreal",
-      "realmSlug": "nightslayer",
-      "rating": 2317,
-      "wins": 81,
-      "losses": 18,
-      "classId": "shaman"
-    },
-    {
-      "rank": 11,
-      "characterName": "Salinelol",
-      "realmSlug": "nightslayer",
-      "rating": 2317,
-      "wins": 81,
-      "losses": 18,
-      "classId": "priest"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 11,
@@ -145,7 +119,48 @@
       "rating": 2317,
       "wins": 81,
       "losses": 18,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
+    },
+    {
+      "rank": 11,
+      "characterName": "Emclreal",
+      "realmSlug": "nightslayer",
+      "rating": 2317,
+      "wins": 81,
+      "losses": 18,
+      "classId": "shaman",
+      "specId": "shaman_elemental"
+    },
+    {
+      "rank": 11,
+      "characterName": "Salinelol",
+      "realmSlug": "nightslayer",
+      "rating": 2317,
+      "wins": 81,
+      "losses": 18,
+      "classId": "priest",
+      "specId": "priest_shadow"
+    },
+    {
+      "rank": 11,
+      "characterName": "Totalanimal",
+      "realmSlug": "nightslayer",
+      "rating": 2317,
+      "wins": 81,
+      "losses": 18,
+      "classId": "mage",
+      "specId": "mage_frost"
+    },
+    {
+      "rank": 11,
+      "characterName": "Cheertbc",
+      "realmSlug": "nightslayer",
+      "rating": 2317,
+      "wins": 81,
+      "losses": 18,
+      "classId": "warlock",
+      "specId": "warlock_destruction"
     },
     {
       "rank": 16,
@@ -154,7 +169,8 @@
       "rating": 2285,
       "wins": 143,
       "losses": 38,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 16,
@@ -163,7 +179,8 @@
       "rating": 2285,
       "wins": 138,
       "losses": 43,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 18,
@@ -172,7 +189,8 @@
       "rating": 2284,
       "wins": 136,
       "losses": 46,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 19,
@@ -181,7 +199,8 @@
       "rating": 2283,
       "wins": 119,
       "losses": 36,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 20,
@@ -190,7 +209,8 @@
       "rating": 2282,
       "wins": 133,
       "losses": 14,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 21,
@@ -199,7 +219,8 @@
       "rating": 2278,
       "wins": 127,
       "losses": 21,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 22,
@@ -208,7 +229,8 @@
       "rating": 2269,
       "wins": 180,
       "losses": 50,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 23,
@@ -217,7 +239,8 @@
       "rating": 2248,
       "wins": 126,
       "losses": 33,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 24,
@@ -226,7 +249,8 @@
       "rating": 2234,
       "wins": 85,
       "losses": 9,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 25,
@@ -235,7 +259,8 @@
       "rating": 2231,
       "wins": 145,
       "losses": 49,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 26,
@@ -244,7 +269,8 @@
       "rating": 2230,
       "wins": 120,
       "losses": 35,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 27,
@@ -253,7 +279,8 @@
       "rating": 2220,
       "wins": 104,
       "losses": 50,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 28,
@@ -262,7 +289,8 @@
       "rating": 2204,
       "wins": 93,
       "losses": 24,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 28,
@@ -271,7 +299,8 @@
       "rating": 2204,
       "wins": 73,
       "losses": 35,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 30,
@@ -280,7 +309,8 @@
       "rating": 2203,
       "wins": 104,
       "losses": 38,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_destruction"
     },
     {
       "rank": 31,
@@ -289,7 +319,8 @@
       "rating": 2201,
       "wins": 99,
       "losses": 50,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 31,
@@ -298,7 +329,8 @@
       "rating": 2201,
       "wins": 97,
       "losses": 50,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 33,
@@ -307,7 +339,8 @@
       "rating": 2200,
       "wins": 83,
       "losses": 16,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 34,
@@ -316,7 +349,8 @@
       "rating": 2193,
       "wins": 314,
       "losses": 67,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 35,
@@ -325,7 +359,8 @@
       "rating": 2192,
       "wins": 116,
       "losses": 48,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 36,
@@ -334,7 +369,8 @@
       "rating": 2191,
       "wins": 105,
       "losses": 48,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 37,
@@ -343,7 +379,8 @@
       "rating": 2189,
       "wins": 97,
       "losses": 33,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 38,
@@ -352,7 +389,8 @@
       "rating": 2188,
       "wins": 71,
       "losses": 16,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 39,
@@ -361,7 +399,8 @@
       "rating": 2187,
       "wins": 62,
       "losses": 9,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 39,
@@ -370,7 +409,8 @@
       "rating": 2187,
       "wins": 81,
       "losses": 33,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_arcane"
     },
     {
       "rank": 41,
@@ -379,7 +419,8 @@
       "rating": 2186,
       "wins": 90,
       "losses": 18,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 42,
@@ -388,7 +429,8 @@
       "rating": 2184,
       "wins": 150,
       "losses": 56,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 42,
@@ -397,7 +439,8 @@
       "rating": 2184,
       "wins": 91,
       "losses": 43,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 44,
@@ -406,7 +449,8 @@
       "rating": 2182,
       "wins": 110,
       "losses": 44,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 44,
@@ -415,7 +459,8 @@
       "rating": 2182,
       "wins": 76,
       "losses": 36,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 46,
@@ -424,7 +469,8 @@
       "rating": 2181,
       "wins": 53,
       "losses": 20,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 47,
@@ -433,7 +479,8 @@
       "rating": 2180,
       "wins": 60,
       "losses": 13,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 48,
@@ -442,7 +489,8 @@
       "rating": 2177,
       "wins": 80,
       "losses": 33,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 49,
@@ -451,7 +499,8 @@
       "rating": 2176,
       "wins": 79,
       "losses": 31,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 50,
@@ -460,7 +509,8 @@
       "rating": 2172,
       "wins": 99,
       "losses": 16,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 50,
@@ -469,7 +519,8 @@
       "rating": 2172,
       "wins": 64,
       "losses": 18,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 52,
@@ -478,7 +529,8 @@
       "rating": 2171,
       "wins": 87,
       "losses": 36,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 53,
@@ -487,16 +539,8 @@
       "rating": 2169,
       "wins": 88,
       "losses": 28,
-      "classId": "mage"
-    },
-    {
-      "rank": 53,
-      "characterName": "Willertonk",
-      "realmSlug": "nightslayer",
-      "rating": 2169,
-      "wins": 79,
-      "losses": 29,
-      "classId": "shaman"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 53,
@@ -505,7 +549,18 @@
       "rating": 2169,
       "wins": 79,
       "losses": 29,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
+    },
+    {
+      "rank": 53,
+      "characterName": "Willertonk",
+      "realmSlug": "nightslayer",
+      "rating": 2169,
+      "wins": 79,
+      "losses": 29,
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 56,
@@ -514,7 +569,8 @@
       "rating": 2168,
       "wins": 75,
       "losses": 52,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 57,
@@ -523,7 +579,8 @@
       "rating": 2167,
       "wins": 56,
       "losses": 4,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 58,
@@ -532,7 +589,8 @@
       "rating": 2164,
       "wins": 91,
       "losses": 35,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 59,
@@ -541,7 +599,8 @@
       "rating": 2163,
       "wins": 103,
       "losses": 21,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 59,
@@ -550,7 +609,8 @@
       "rating": 2163,
       "wins": 90,
       "losses": 33,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 61,
@@ -559,7 +619,8 @@
       "rating": 2162,
       "wins": 59,
       "losses": 30,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 62,
@@ -568,7 +629,8 @@
       "rating": 2161,
       "wins": 130,
       "losses": 47,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 63,
@@ -577,7 +639,8 @@
       "rating": 2160,
       "wins": 92,
       "losses": 14,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 63,
@@ -586,7 +649,8 @@
       "rating": 2160,
       "wins": 120,
       "losses": 24,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 63,
@@ -595,7 +659,8 @@
       "rating": 2160,
       "wins": 105,
       "losses": 23,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_feralcombat"
     },
     {
       "rank": 63,
@@ -604,7 +669,8 @@
       "rating": 2160,
       "wins": 79,
       "losses": 19,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 63,
@@ -613,7 +679,8 @@
       "rating": 2160,
       "wins": 74,
       "losses": 33,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 68,
@@ -622,7 +689,8 @@
       "rating": 2158,
       "wins": 60,
       "losses": 18,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 68,
@@ -631,7 +699,8 @@
       "rating": 2158,
       "wins": 67,
       "losses": 32,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 70,
@@ -640,7 +709,8 @@
       "rating": 2157,
       "wins": 136,
       "losses": 68,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 71,
@@ -649,7 +719,8 @@
       "rating": 2154,
       "wins": 56,
       "losses": 13,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 71,
@@ -658,7 +729,8 @@
       "rating": 2154,
       "wins": 72,
       "losses": 38,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 73,
@@ -667,7 +739,8 @@
       "rating": 2152,
       "wins": 101,
       "losses": 43,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 74,
@@ -676,7 +749,8 @@
       "rating": 2149,
       "wins": 83,
       "losses": 9,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_destruction"
     },
     {
       "rank": 74,
@@ -685,7 +759,8 @@
       "rating": 2149,
       "wins": 81,
       "losses": 40,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 74,
@@ -694,7 +769,8 @@
       "rating": 2149,
       "wins": 89,
       "losses": 48,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 77,
@@ -703,7 +779,8 @@
       "rating": 2148,
       "wins": 65,
       "losses": 31,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 78,
@@ -712,7 +789,8 @@
       "rating": 2147,
       "wins": 88,
       "losses": 46,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 79,
@@ -721,16 +799,8 @@
       "rating": 2146,
       "wins": 85,
       "losses": 27,
-      "classId": "mage"
-    },
-    {
-      "rank": 79,
-      "characterName": "Shx",
-      "realmSlug": "nightslayer",
-      "rating": 2146,
-      "wins": 79,
-      "losses": 30,
-      "classId": "priest"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 79,
@@ -739,7 +809,18 @@
       "rating": 2146,
       "wins": 79,
       "losses": 30,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
+    },
+    {
+      "rank": 79,
+      "characterName": "Shx",
+      "realmSlug": "nightslayer",
+      "rating": 2146,
+      "wins": 79,
+      "losses": 30,
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 82,
@@ -748,7 +829,8 @@
       "rating": 2141,
       "wins": 55,
       "losses": 17,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_balance"
     },
     {
       "rank": 82,
@@ -757,7 +839,8 @@
       "rating": 2141,
       "wins": 45,
       "losses": 14,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 82,
@@ -766,16 +849,8 @@
       "rating": 2141,
       "wins": 66,
       "losses": 25,
-      "classId": "druid"
-    },
-    {
-      "rank": 82,
-      "characterName": "Matree",
-      "realmSlug": "nightslayer",
-      "rating": 2141,
-      "wins": 62,
-      "losses": 27,
-      "classId": "warrior"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 82,
@@ -784,16 +859,8 @@
       "rating": 2141,
       "wins": 62,
       "losses": 27,
-      "classId": "shaman"
-    },
-    {
-      "rank": 82,
-      "characterName": "Vagon",
-      "realmSlug": "nightslayer",
-      "rating": 2141,
-      "wins": 62,
-      "losses": 27,
-      "classId": "druid"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 82,
@@ -802,7 +869,28 @@
       "rating": 2141,
       "wins": 62,
       "losses": 27,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
+    },
+    {
+      "rank": 82,
+      "characterName": "Matree",
+      "realmSlug": "nightslayer",
+      "rating": 2141,
+      "wins": 62,
+      "losses": 27,
+      "classId": "warrior",
+      "specId": "warrior_arms"
+    },
+    {
+      "rank": 82,
+      "characterName": "Vagon",
+      "realmSlug": "nightslayer",
+      "rating": 2141,
+      "wins": 62,
+      "losses": 27,
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 82,
@@ -811,7 +899,8 @@
       "rating": 2141,
       "wins": 72,
       "losses": 39,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_balance"
     },
     {
       "rank": 90,
@@ -820,7 +909,8 @@
       "rating": 2140,
       "wins": 64,
       "losses": 26,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 91,
@@ -829,7 +919,8 @@
       "rating": 2137,
       "wins": 69,
       "losses": 25,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 92,
@@ -838,7 +929,8 @@
       "rating": 2136,
       "wins": 73,
       "losses": 21,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 92,
@@ -847,7 +939,8 @@
       "rating": 2136,
       "wins": 61,
       "losses": 22,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 92,
@@ -856,7 +949,8 @@
       "rating": 2136,
       "wins": 92,
       "losses": 46,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
       "rank": 95,
@@ -865,16 +959,8 @@
       "rating": 2135,
       "wins": 109,
       "losses": 60,
-      "classId": "shaman"
-    },
-    {
-      "rank": 96,
-      "characterName": "Pinkrangerz",
-      "realmSlug": "nightslayer",
-      "rating": 2133,
-      "wins": 67,
-      "losses": 24,
-      "classId": "druid"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 96,
@@ -883,7 +969,18 @@
       "rating": 2133,
       "wins": 67,
       "losses": 24,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
+    },
+    {
+      "rank": 96,
+      "characterName": "Pinkrangerz",
+      "realmSlug": "nightslayer",
+      "rating": 2133,
+      "wins": 67,
+      "losses": 24,
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 96,
@@ -892,7 +989,8 @@
       "rating": 2133,
       "wins": 63,
       "losses": 23,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 99,
@@ -901,16 +999,8 @@
       "rating": 2129,
       "wins": 46,
       "losses": 19,
-      "classId": "warrior"
-    },
-    {
-      "rank": 99,
-      "characterName": "Justwoo",
-      "realmSlug": "nightslayer",
-      "rating": 2129,
-      "wins": 46,
-      "losses": 19,
-      "classId": "rogue"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 99,
@@ -919,7 +1009,18 @@
       "rating": 2129,
       "wins": 46,
       "losses": 19,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
+    },
+    {
+      "rank": 99,
+      "characterName": "Justwoo",
+      "realmSlug": "nightslayer",
+      "rating": 2129,
+      "wins": 46,
+      "losses": 19,
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 102,
@@ -928,7 +1029,8 @@
       "rating": 2128,
       "wins": 70,
       "losses": 36,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 103,
@@ -937,7 +1039,8 @@
       "rating": 2126,
       "wins": 95,
       "losses": 50,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 104,
@@ -946,7 +1049,8 @@
       "rating": 2125,
       "wins": 56,
       "losses": 27,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 104,
@@ -955,7 +1059,8 @@
       "rating": 2125,
       "wins": 56,
       "losses": 27,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 104,
@@ -964,7 +1069,8 @@
       "rating": 2125,
       "wins": 56,
       "losses": 27,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 107,
@@ -973,7 +1079,8 @@
       "rating": 2124,
       "wins": 72,
       "losses": 31,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 107,
@@ -982,7 +1089,8 @@
       "rating": 2124,
       "wins": 84,
       "losses": 42,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 109,
@@ -991,7 +1099,8 @@
       "rating": 2123,
       "wins": 88,
       "losses": 51,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 110,
@@ -1000,7 +1109,8 @@
       "rating": 2120,
       "wins": 73,
       "losses": 26,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 110,
@@ -1009,7 +1119,8 @@
       "rating": 2120,
       "wins": 117,
       "losses": 57,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
       "rank": 110,
@@ -1018,7 +1129,8 @@
       "rating": 2120,
       "wins": 95,
       "losses": 60,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 113,
@@ -1027,7 +1139,8 @@
       "rating": 2118,
       "wins": 126,
       "losses": 51,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
       "rank": 113,
@@ -1036,7 +1149,8 @@
       "rating": 2118,
       "wins": 140,
       "losses": 58,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 115,
@@ -1045,7 +1159,8 @@
       "rating": 2117,
       "wins": 60,
       "losses": 23,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 116,
@@ -1054,7 +1169,8 @@
       "rating": 2116,
       "wins": 49,
       "losses": 16,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 116,
@@ -1063,7 +1179,8 @@
       "rating": 2116,
       "wins": 59,
       "losses": 23,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 116,
@@ -1072,16 +1189,8 @@
       "rating": 2116,
       "wins": 69,
       "losses": 37,
-      "classId": "priest"
-    },
-    {
-      "rank": 119,
-      "characterName": "Yzap",
-      "realmSlug": "nightslayer",
-      "rating": 2113,
-      "wins": 43,
-      "losses": 12,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 119,
@@ -1090,16 +1199,8 @@
       "rating": 2113,
       "wins": 43,
       "losses": 12,
-      "classId": "warrior"
-    },
-    {
-      "rank": 119,
-      "characterName": "Richardpig",
-      "realmSlug": "nightslayer",
-      "rating": 2113,
-      "wins": 43,
-      "losses": 12,
-      "classId": "shaman"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 119,
@@ -1108,7 +1209,28 @@
       "rating": 2113,
       "wins": 43,
       "losses": 12,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
+    },
+    {
+      "rank": 119,
+      "characterName": "Richardpig",
+      "realmSlug": "nightslayer",
+      "rating": 2113,
+      "wins": 43,
+      "losses": 12,
+      "classId": "shaman",
+      "specId": "shaman_restoration"
+    },
+    {
+      "rank": 119,
+      "characterName": "Yzap",
+      "realmSlug": "nightslayer",
+      "rating": 2113,
+      "wins": 43,
+      "losses": 12,
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 119,
@@ -1117,7 +1239,8 @@
       "rating": 2113,
       "wins": 74,
       "losses": 31,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 119,
@@ -1126,7 +1249,8 @@
       "rating": 2113,
       "wins": 171,
       "losses": 103,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 119,
@@ -1135,7 +1259,8 @@
       "rating": 2113,
       "wins": 102,
       "losses": 64,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 126,
@@ -1144,7 +1269,8 @@
       "rating": 2112,
       "wins": 99,
       "losses": 44,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 126,
@@ -1153,7 +1279,8 @@
       "rating": 2112,
       "wins": 88,
       "losses": 41,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 126,
@@ -1162,7 +1289,8 @@
       "rating": 2112,
       "wins": 177,
       "losses": 105,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 126,
@@ -1171,7 +1299,8 @@
       "rating": 2112,
       "wins": 67,
       "losses": 41,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 130,
@@ -1180,7 +1309,8 @@
       "rating": 2111,
       "wins": 57,
       "losses": 19,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 130,
@@ -1189,7 +1319,8 @@
       "rating": 2111,
       "wins": 80,
       "losses": 38,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 130,
@@ -1198,16 +1329,8 @@
       "rating": 2111,
       "wins": 118,
       "losses": 62,
-      "classId": "shaman"
-    },
-    {
-      "rank": 133,
-      "characterName": "Bzmode",
-      "realmSlug": "nightslayer",
-      "rating": 2110,
-      "wins": 62,
-      "losses": 16,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 133,
@@ -1216,7 +1339,18 @@
       "rating": 2110,
       "wins": 62,
       "losses": 16,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_fire"
+    },
+    {
+      "rank": 133,
+      "characterName": "Bzmode",
+      "realmSlug": "nightslayer",
+      "rating": 2110,
+      "wins": 62,
+      "losses": 16,
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 133,
@@ -1225,7 +1359,8 @@
       "rating": 2110,
       "wins": 62,
       "losses": 16,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 133,
@@ -1234,7 +1369,8 @@
       "rating": 2110,
       "wins": 68,
       "losses": 29,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 133,
@@ -1243,7 +1379,8 @@
       "rating": 2110,
       "wins": 66,
       "losses": 30,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 133,
@@ -1252,7 +1389,8 @@
       "rating": 2110,
       "wins": 66,
       "losses": 30,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 139,
@@ -1261,7 +1399,8 @@
       "rating": 2108,
       "wins": 89,
       "losses": 47,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 140,
@@ -1270,7 +1409,8 @@
       "rating": 2106,
       "wins": 72,
       "losses": 33,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 141,
@@ -1279,7 +1419,8 @@
       "rating": 2104,
       "wins": 54,
       "losses": 19,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 141,
@@ -1288,7 +1429,8 @@
       "rating": 2104,
       "wins": 65,
       "losses": 30,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 143,
@@ -1297,7 +1439,8 @@
       "rating": 2103,
       "wins": 49,
       "losses": 7,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 143,
@@ -1306,16 +1449,8 @@
       "rating": 2103,
       "wins": 120,
       "losses": 53,
-      "classId": "shaman"
-    },
-    {
-      "rank": 143,
-      "characterName": "Drossx",
-      "realmSlug": "nightslayer",
-      "rating": 2103,
-      "wins": 59,
-      "losses": 31,
-      "classId": "mage"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 143,
@@ -1324,7 +1459,18 @@
       "rating": 2103,
       "wins": 59,
       "losses": 31,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
+    },
+    {
+      "rank": 143,
+      "characterName": "Drossx",
+      "realmSlug": "nightslayer",
+      "rating": 2103,
+      "wins": 59,
+      "losses": 31,
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 143,
@@ -1333,7 +1479,8 @@
       "rating": 2103,
       "wins": 59,
       "losses": 31,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 148,
@@ -1342,7 +1489,8 @@
       "rating": 2102,
       "wins": 55,
       "losses": 22,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 149,
@@ -1351,7 +1499,8 @@
       "rating": 2101,
       "wins": 102,
       "losses": 56,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 150,
@@ -1360,7 +1509,8 @@
       "rating": 2100,
       "wins": 103,
       "losses": 46,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 151,
@@ -1369,7 +1519,8 @@
       "rating": 2098,
       "wins": 43,
       "losses": 7,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 151,
@@ -1378,7 +1529,8 @@
       "rating": 2098,
       "wins": 85,
       "losses": 50,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 153,
@@ -1387,7 +1539,8 @@
       "rating": 2097,
       "wins": 73,
       "losses": 22,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 154,
@@ -1396,7 +1549,8 @@
       "rating": 2096,
       "wins": 67,
       "losses": 35,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 155,
@@ -1405,7 +1559,8 @@
       "rating": 2095,
       "wins": 53,
       "losses": 4,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 155,
@@ -1414,7 +1569,8 @@
       "rating": 2095,
       "wins": 106,
       "losses": 47,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 157,
@@ -1423,7 +1579,8 @@
       "rating": 2093,
       "wins": 57,
       "losses": 26,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 158,
@@ -1432,7 +1589,8 @@
       "rating": 2092,
       "wins": 62,
       "losses": 41,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 159,
@@ -1441,7 +1599,8 @@
       "rating": 2089,
       "wins": 187,
       "losses": 80,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 159,
@@ -1450,7 +1609,8 @@
       "rating": 2089,
       "wins": 52,
       "losses": 24,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 159,
@@ -1459,7 +1619,8 @@
       "rating": 2089,
       "wins": 63,
       "losses": 32,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 159,
@@ -1468,7 +1629,8 @@
       "rating": 2089,
       "wins": 63,
       "losses": 32,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 163,
@@ -1477,7 +1639,8 @@
       "rating": 2088,
       "wins": 96,
       "losses": 38,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 163,
@@ -1486,7 +1649,8 @@
       "rating": 2088,
       "wins": 40,
       "losses": 18,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 165,
@@ -1495,7 +1659,8 @@
       "rating": 2087,
       "wins": 105,
       "losses": 52,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 166,
@@ -1504,7 +1669,8 @@
       "rating": 2086,
       "wins": 116,
       "losses": 43,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 166,
@@ -1513,7 +1679,8 @@
       "rating": 2086,
       "wins": 62,
       "losses": 32,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 168,
@@ -1522,7 +1689,8 @@
       "rating": 2083,
       "wins": 138,
       "losses": 66,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 168,
@@ -1531,7 +1699,8 @@
       "rating": 2083,
       "wins": 50,
       "losses": 27,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 168,
@@ -1540,7 +1709,8 @@
       "rating": 2083,
       "wins": 56,
       "losses": 34,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_protection"
     },
     {
       "rank": 171,
@@ -1549,7 +1719,8 @@
       "rating": 2082,
       "wins": 76,
       "losses": 22,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 172,
@@ -1558,7 +1729,8 @@
       "rating": 2081,
       "wins": 53,
       "losses": 13,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 172,
@@ -1567,7 +1739,8 @@
       "rating": 2081,
       "wins": 80,
       "losses": 42,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 174,
@@ -1576,7 +1749,8 @@
       "rating": 2080,
       "wins": 89,
       "losses": 39,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 175,
@@ -1585,7 +1759,8 @@
       "rating": 2078,
       "wins": 51,
       "losses": 19,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_arcane"
     },
     {
       "rank": 175,
@@ -1594,7 +1769,8 @@
       "rating": 2078,
       "wins": 76,
       "losses": 37,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 177,
@@ -1603,7 +1779,8 @@
       "rating": 2077,
       "wins": 41,
       "losses": 20,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 177,
@@ -1612,7 +1789,8 @@
       "rating": 2077,
       "wins": 41,
       "losses": 20,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 177,
@@ -1621,16 +1799,8 @@
       "rating": 2077,
       "wins": 54,
       "losses": 28,
-      "classId": "warrior"
-    },
-    {
-      "rank": 177,
-      "characterName": "Scard",
-      "realmSlug": "nightslayer",
-      "rating": 2077,
-      "wins": 48,
-      "losses": 25,
-      "classId": "shaman"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 177,
@@ -1639,7 +1809,18 @@
       "rating": 2077,
       "wins": 48,
       "losses": 25,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_destruction"
+    },
+    {
+      "rank": 177,
+      "characterName": "Scard",
+      "realmSlug": "nightslayer",
+      "rating": 2077,
+      "wins": 48,
+      "losses": 25,
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 182,
@@ -1648,7 +1829,8 @@
       "rating": 2076,
       "wins": 135,
       "losses": 71,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 183,
@@ -1657,7 +1839,8 @@
       "rating": 2075,
       "wins": 54,
       "losses": 14,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 183,
@@ -1666,7 +1849,8 @@
       "rating": 2075,
       "wins": 127,
       "losses": 57,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 183,
@@ -1675,7 +1859,8 @@
       "rating": 2075,
       "wins": 67,
       "losses": 32,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 183,
@@ -1684,7 +1869,8 @@
       "rating": 2075,
       "wins": 173,
       "losses": 90,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 187,
@@ -1693,7 +1879,8 @@
       "rating": 2074,
       "wins": 53,
       "losses": 17,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 187,
@@ -1702,7 +1889,8 @@
       "rating": 2074,
       "wins": 80,
       "losses": 35,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 189,
@@ -1711,7 +1899,8 @@
       "rating": 2073,
       "wins": 53,
       "losses": 14,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 189,
@@ -1720,7 +1909,8 @@
       "rating": 2073,
       "wins": 130,
       "losses": 70,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 189,
@@ -1729,7 +1919,8 @@
       "rating": 2073,
       "wins": 158,
       "losses": 100,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 189,
@@ -1738,7 +1929,8 @@
       "rating": 2073,
       "wins": 198,
       "losses": 127,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 193,
@@ -1747,7 +1939,8 @@
       "rating": 2072,
       "wins": 68,
       "losses": 32,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 193,
@@ -1756,7 +1949,8 @@
       "rating": 2072,
       "wins": 81,
       "losses": 44,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 195,
@@ -1765,7 +1959,8 @@
       "rating": 2071,
       "wins": 216,
       "losses": 109,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 196,
@@ -1774,7 +1969,8 @@
       "rating": 2070,
       "wins": 96,
       "losses": 40,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 196,
@@ -1783,7 +1979,8 @@
       "rating": 2070,
       "wins": 73,
       "losses": 31,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 196,
@@ -1792,7 +1989,8 @@
       "rating": 2070,
       "wins": 71,
       "losses": 33,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 199,
@@ -1801,7 +1999,8 @@
       "rating": 2068,
       "wins": 72,
       "losses": 31,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 199,
@@ -1810,7 +2009,8 @@
       "rating": 2068,
       "wins": 67,
       "losses": 29,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_combat"
     },
     {
       "rank": 199,
@@ -1819,7 +2019,8 @@
       "rating": 2068,
       "wins": 56,
       "losses": 31,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 199,
@@ -1828,7 +2029,8 @@
       "rating": 2068,
       "wins": 76,
       "losses": 57,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 203,
@@ -1837,7 +2039,8 @@
       "rating": 2067,
       "wins": 92,
       "losses": 59,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 204,
@@ -1846,7 +2049,8 @@
       "rating": 2066,
       "wins": 56,
       "losses": 35,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 205,
@@ -1855,7 +2059,8 @@
       "rating": 2065,
       "wins": 39,
       "losses": 11,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 205,
@@ -1864,7 +2069,8 @@
       "rating": 2065,
       "wins": 118,
       "losses": 75,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 207,
@@ -1873,7 +2079,8 @@
       "rating": 2064,
       "wins": 47,
       "losses": 10,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 207,
@@ -1882,7 +2089,8 @@
       "rating": 2064,
       "wins": 67,
       "losses": 34,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_feralcombat"
     },
     {
       "rank": 209,
@@ -1891,7 +2099,8 @@
       "rating": 2063,
       "wins": 37,
       "losses": 13,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 209,
@@ -1900,7 +2109,8 @@
       "rating": 2063,
       "wins": 72,
       "losses": 28,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 209,
@@ -1909,7 +2119,8 @@
       "rating": 2063,
       "wins": 86,
       "losses": 56,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 212,
@@ -1918,7 +2129,8 @@
       "rating": 2062,
       "wins": 47,
       "losses": 16,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 212,
@@ -1927,7 +2139,8 @@
       "rating": 2062,
       "wins": 97,
       "losses": 51,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 212,
@@ -1936,7 +2149,8 @@
       "rating": 2062,
       "wins": 67,
       "losses": 49,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 215,
@@ -1945,7 +2159,8 @@
       "rating": 2061,
       "wins": 41,
       "losses": 12,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 216,
@@ -1954,7 +2169,8 @@
       "rating": 2060,
       "wins": 39,
       "losses": 6,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 216,
@@ -1963,7 +2179,8 @@
       "rating": 2060,
       "wins": 47,
       "losses": 21,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 216,
@@ -1972,7 +2189,8 @@
       "rating": 2060,
       "wins": 55,
       "losses": 25,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 219,
@@ -1981,7 +2199,8 @@
       "rating": 2058,
       "wins": 65,
       "losses": 27,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 219,
@@ -1990,7 +2209,8 @@
       "rating": 2058,
       "wins": 69,
       "losses": 31,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 219,
@@ -1999,7 +2219,8 @@
       "rating": 2058,
       "wins": 55,
       "losses": 29,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 222,
@@ -2008,7 +2229,8 @@
       "rating": 2056,
       "wins": 51,
       "losses": 29,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 222,
@@ -2017,7 +2239,8 @@
       "rating": 2056,
       "wins": 75,
       "losses": 56,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 224,
@@ -2026,7 +2249,8 @@
       "rating": 2055,
       "wins": 85,
       "losses": 44,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 224,
@@ -2035,7 +2259,8 @@
       "rating": 2055,
       "wins": 55,
       "losses": 32,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 224,
@@ -2044,7 +2269,8 @@
       "rating": 2055,
       "wins": 47,
       "losses": 34,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 227,
@@ -2053,7 +2279,8 @@
       "rating": 2053,
       "wins": 136,
       "losses": 68,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 227,
@@ -2062,7 +2289,8 @@
       "rating": 2053,
       "wins": 65,
       "losses": 36,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 229,
@@ -2071,7 +2299,8 @@
       "rating": 2052,
       "wins": 44,
       "losses": 25,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 229,
@@ -2080,7 +2309,8 @@
       "rating": 2052,
       "wins": 98,
       "losses": 64,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 231,
@@ -2089,7 +2319,8 @@
       "rating": 2051,
       "wins": 59,
       "losses": 35,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 232,
@@ -2098,7 +2329,8 @@
       "rating": 2050,
       "wins": 64,
       "losses": 42,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 232,
@@ -2107,7 +2339,8 @@
       "rating": 2050,
       "wins": 57,
       "losses": 40,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 234,
@@ -2116,7 +2349,8 @@
       "rating": 2048,
       "wins": 48,
       "losses": 20,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 234,
@@ -2125,7 +2359,8 @@
       "rating": 2048,
       "wins": 68,
       "losses": 34,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 236,
@@ -2134,7 +2369,8 @@
       "rating": 2047,
       "wins": 54,
       "losses": 31,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 236,
@@ -2143,7 +2379,8 @@
       "rating": 2047,
       "wins": 114,
       "losses": 73,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 238,
@@ -2152,7 +2389,8 @@
       "rating": 2044,
       "wins": 63,
       "losses": 23,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 238,
@@ -2161,7 +2399,8 @@
       "rating": 2044,
       "wins": 49,
       "losses": 28,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 238,
@@ -2170,7 +2409,8 @@
       "rating": 2044,
       "wins": 60,
       "losses": 35,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 241,
@@ -2179,7 +2419,8 @@
       "rating": 2043,
       "wins": 94,
       "losses": 31,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 241,
@@ -2188,7 +2429,8 @@
       "rating": 2043,
       "wins": 57,
       "losses": 19,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 241,
@@ -2197,7 +2439,8 @@
       "rating": 2043,
       "wins": 140,
       "losses": 97,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 244,
@@ -2206,7 +2449,8 @@
       "rating": 2042,
       "wins": 51,
       "losses": 22,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 244,
@@ -2215,7 +2459,8 @@
       "rating": 2042,
       "wins": 51,
       "losses": 22,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 244,
@@ -2224,7 +2469,8 @@
       "rating": 2042,
       "wins": 107,
       "losses": 75,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 247,
@@ -2233,7 +2479,8 @@
       "rating": 2041,
       "wins": 44,
       "losses": 3,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 247,
@@ -2242,7 +2489,8 @@
       "rating": 2041,
       "wins": 40,
       "losses": 18,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 247,
@@ -2251,7 +2499,8 @@
       "rating": 2041,
       "wins": 39,
       "losses": 20,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_affliction"
     },
     {
       "rank": 247,
@@ -2260,7 +2509,8 @@
       "rating": 2041,
       "wins": 39,
       "losses": 20,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 247,
@@ -2269,7 +2519,8 @@
       "rating": 2041,
       "wins": 44,
       "losses": 24,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 247,
@@ -2278,7 +2529,8 @@
       "rating": 2041,
       "wins": 51,
       "losses": 35,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 247,
@@ -2287,7 +2539,8 @@
       "rating": 2041,
       "wins": 84,
       "losses": 65,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 254,
@@ -2296,7 +2549,8 @@
       "rating": 2040,
       "wins": 53,
       "losses": 29,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 254,
@@ -2305,7 +2559,8 @@
       "rating": 2040,
       "wins": 56,
       "losses": 40,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 254,
@@ -2314,7 +2569,8 @@
       "rating": 2040,
       "wins": 56,
       "losses": 40,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_balance"
     },
     {
       "rank": 257,
@@ -2323,7 +2579,8 @@
       "rating": 2039,
       "wins": 117,
       "losses": 73,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 258,
@@ -2332,7 +2589,8 @@
       "rating": 2038,
       "wins": 51,
       "losses": 20,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 258,
@@ -2341,7 +2599,8 @@
       "rating": 2038,
       "wins": 69,
       "losses": 50,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 260,
@@ -2350,7 +2609,8 @@
       "rating": 2037,
       "wins": 121,
       "losses": 63,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 260,
@@ -2359,7 +2619,8 @@
       "rating": 2037,
       "wins": 88,
       "losses": 52,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 260,
@@ -2368,7 +2629,8 @@
       "rating": 2037,
       "wins": 88,
       "losses": 67,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 263,
@@ -2377,25 +2639,8 @@
       "rating": 2036,
       "wins": 76,
       "losses": 38,
-      "classId": "mage"
-    },
-    {
-      "rank": 263,
-      "characterName": "Slzj",
-      "realmSlug": "nightslayer",
-      "rating": 2036,
-      "wins": 79,
-      "losses": 51,
-      "classId": "priest"
-    },
-    {
-      "rank": 263,
-      "characterName": "Pongkix",
-      "realmSlug": "nightslayer",
-      "rating": 2036,
-      "wins": 79,
-      "losses": 51,
-      "classId": "druid"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 263,
@@ -2404,7 +2649,28 @@
       "rating": 2036,
       "wins": 79,
       "losses": 51,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
+    },
+    {
+      "rank": 263,
+      "characterName": "Pongkix",
+      "realmSlug": "nightslayer",
+      "rating": 2036,
+      "wins": 79,
+      "losses": 51,
+      "classId": "druid",
+      "specId": "druid_restoration"
+    },
+    {
+      "rank": 263,
+      "characterName": "Slzj",
+      "realmSlug": "nightslayer",
+      "rating": 2036,
+      "wins": 79,
+      "losses": 51,
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 267,
@@ -2413,7 +2679,8 @@
       "rating": 2035,
       "wins": 113,
       "losses": 70,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 267,
@@ -2422,7 +2689,8 @@
       "rating": 2035,
       "wins": 69,
       "losses": 45,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 269,
@@ -2431,16 +2699,8 @@
       "rating": 2034,
       "wins": 96,
       "losses": 59,
-      "classId": "warlock"
-    },
-    {
-      "rank": 269,
-      "characterName": "Treepeat",
-      "realmSlug": "nightslayer",
-      "rating": 2034,
-      "wins": 42,
-      "losses": 34,
-      "classId": "druid"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 269,
@@ -2449,7 +2709,18 @@
       "rating": 2034,
       "wins": 42,
       "losses": 34,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
+    },
+    {
+      "rank": 269,
+      "characterName": "Treepeat",
+      "realmSlug": "nightslayer",
+      "rating": 2034,
+      "wins": 42,
+      "losses": 34,
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 269,
@@ -2458,7 +2729,8 @@
       "rating": 2034,
       "wins": 42,
       "losses": 34,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 273,
@@ -2467,7 +2739,8 @@
       "rating": 2032,
       "wins": 40,
       "losses": 9,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 273,
@@ -2476,7 +2749,8 @@
       "rating": 2032,
       "wins": 74,
       "losses": 42,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 275,
@@ -2485,7 +2759,8 @@
       "rating": 2031,
       "wins": 55,
       "losses": 24,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 275,
@@ -2494,7 +2769,8 @@
       "rating": 2031,
       "wins": 59,
       "losses": 48,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 277,
@@ -2503,7 +2779,8 @@
       "rating": 2030,
       "wins": 52,
       "losses": 27,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 277,
@@ -2512,7 +2789,8 @@
       "rating": 2030,
       "wins": 71,
       "losses": 42,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 277,
@@ -2521,7 +2799,8 @@
       "rating": 2030,
       "wins": 96,
       "losses": 57,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_arcane"
     },
     {
       "rank": 277,
@@ -2530,7 +2809,8 @@
       "rating": 2030,
       "wins": 60,
       "losses": 36,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 277,
@@ -2539,7 +2819,8 @@
       "rating": 2030,
       "wins": 73,
       "losses": 58,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 282,
@@ -2548,7 +2829,8 @@
       "rating": 2029,
       "wins": 81,
       "losses": 60,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 282,
@@ -2557,7 +2839,8 @@
       "rating": 2029,
       "wins": 74,
       "losses": 60,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 284,
@@ -2566,7 +2849,8 @@
       "rating": 2028,
       "wins": 74,
       "losses": 50,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 284,
@@ -2575,7 +2859,8 @@
       "rating": 2028,
       "wins": 71,
       "losses": 55,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 286,
@@ -2584,7 +2869,8 @@
       "rating": 2026,
       "wins": 97,
       "losses": 44,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 286,
@@ -2593,7 +2879,8 @@
       "rating": 2026,
       "wins": 84,
       "losses": 41,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 286,
@@ -2602,7 +2889,8 @@
       "rating": 2026,
       "wins": 115,
       "losses": 85,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 286,
@@ -2611,7 +2899,8 @@
       "rating": 2026,
       "wins": 47,
       "losses": 35,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 286,
@@ -2620,16 +2909,8 @@
       "rating": 2026,
       "wins": 59,
       "losses": 49,
-      "classId": "shaman"
-    },
-    {
-      "rank": 291,
-      "characterName": "Purpr",
-      "realmSlug": "nightslayer",
-      "rating": 2025,
-      "wins": 82,
-      "losses": 33,
-      "classId": "rogue"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 291,
@@ -2638,7 +2919,18 @@
       "rating": 2025,
       "wins": 82,
       "losses": 33,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
+    },
+    {
+      "rank": 291,
+      "characterName": "Purpr",
+      "realmSlug": "nightslayer",
+      "rating": 2025,
+      "wins": 82,
+      "losses": 33,
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 291,
@@ -2647,7 +2939,8 @@
       "rating": 2025,
       "wins": 82,
       "losses": 33,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 291,
@@ -2656,7 +2949,8 @@
       "rating": 2025,
       "wins": 51,
       "losses": 21,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 291,
@@ -2665,7 +2959,8 @@
       "rating": 2025,
       "wins": 90,
       "losses": 54,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 291,
@@ -2674,7 +2969,8 @@
       "rating": 2025,
       "wins": 63,
       "losses": 39,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 291,
@@ -2683,7 +2979,8 @@
       "rating": 2025,
       "wins": 60,
       "losses": 42,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 291,
@@ -2692,7 +2989,8 @@
       "rating": 2025,
       "wins": 105,
       "losses": 82,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 291,
@@ -2701,7 +2999,8 @@
       "rating": 2025,
       "wins": 105,
       "losses": 82,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 300,
@@ -2710,16 +3009,8 @@
       "rating": 2024,
       "wins": 90,
       "losses": 39,
-      "classId": "warlock"
-    },
-    {
-      "rank": 300,
-      "characterName": "Fires",
-      "realmSlug": "nightslayer",
-      "rating": 2024,
-      "wins": 87,
-      "losses": 65,
-      "classId": "shaman"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 300,
@@ -2728,7 +3019,8 @@
       "rating": 2024,
       "wins": 87,
       "losses": 65,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 300,
@@ -2737,7 +3029,18 @@
       "rating": 2024,
       "wins": 87,
       "losses": 65,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
+    },
+    {
+      "rank": 300,
+      "characterName": "Fires",
+      "realmSlug": "nightslayer",
+      "rating": 2024,
+      "wins": 87,
+      "losses": 65,
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 300,
@@ -2746,7 +3049,8 @@
       "rating": 2024,
       "wins": 86,
       "losses": 66,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_protection"
     },
     {
       "rank": 300,
@@ -2755,7 +3059,8 @@
       "rating": 2024,
       "wins": 138,
       "losses": 109,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 300,
@@ -2764,7 +3069,8 @@
       "rating": 2024,
       "wins": 72,
       "losses": 61,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 307,
@@ -2773,7 +3079,8 @@
       "rating": 2023,
       "wins": 40,
       "losses": 13,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_combat"
     },
     {
       "rank": 307,
@@ -2782,7 +3089,8 @@
       "rating": 2023,
       "wins": 84,
       "losses": 50,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_arcane"
     },
     {
       "rank": 307,
@@ -2791,7 +3099,8 @@
       "rating": 2023,
       "wins": 79,
       "losses": 55,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 307,
@@ -2800,7 +3109,8 @@
       "rating": 2023,
       "wins": 158,
       "losses": 120,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 307,
@@ -2809,7 +3119,8 @@
       "rating": 2023,
       "wins": 69,
       "losses": 56,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_arcane"
     },
     {
       "rank": 312,
@@ -2818,7 +3129,8 @@
       "rating": 2022,
       "wins": 46,
       "losses": 11,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 312,
@@ -2827,7 +3139,8 @@
       "rating": 2022,
       "wins": 49,
       "losses": 14,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 312,
@@ -2836,7 +3149,8 @@
       "rating": 2022,
       "wins": 53,
       "losses": 20,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 312,
@@ -2845,7 +3159,8 @@
       "rating": 2022,
       "wins": 56,
       "losses": 37,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 316,
@@ -2854,7 +3169,8 @@
       "rating": 2021,
       "wins": 39,
       "losses": 10,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 316,
@@ -2863,7 +3179,8 @@
       "rating": 2021,
       "wins": 33,
       "losses": 14,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 316,
@@ -2872,7 +3189,8 @@
       "rating": 2021,
       "wins": 33,
       "losses": 14,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 316,
@@ -2881,7 +3199,8 @@
       "rating": 2021,
       "wins": 86,
       "losses": 40,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 316,
@@ -2890,7 +3209,8 @@
       "rating": 2021,
       "wins": 101,
       "losses": 74,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 316,
@@ -2899,7 +3219,8 @@
       "rating": 2021,
       "wins": 102,
       "losses": 82,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 322,
@@ -2908,7 +3229,8 @@
       "rating": 2020,
       "wins": 142,
       "losses": 64,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 322,
@@ -2917,7 +3239,8 @@
       "rating": 2020,
       "wins": 77,
       "losses": 60,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 324,
@@ -2926,7 +3249,8 @@
       "rating": 2019,
       "wins": 45,
       "losses": 23,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 324,
@@ -2935,7 +3259,8 @@
       "rating": 2019,
       "wins": 32,
       "losses": 19,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 324,
@@ -2944,7 +3269,8 @@
       "rating": 2019,
       "wins": 51,
       "losses": 47,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 327,
@@ -2953,7 +3279,8 @@
       "rating": 2018,
       "wins": 71,
       "losses": 33,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 327,
@@ -2962,7 +3289,8 @@
       "rating": 2018,
       "wins": 56,
       "losses": 34,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 327,
@@ -2971,7 +3299,8 @@
       "rating": 2018,
       "wins": 69,
       "losses": 46,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 327,
@@ -2980,25 +3309,8 @@
       "rating": 2018,
       "wins": 74,
       "losses": 62,
-      "classId": "shaman"
-    },
-    {
-      "rank": 331,
-      "characterName": "Geneparmesan",
-      "realmSlug": "nightslayer",
-      "rating": 2017,
-      "wins": 34,
-      "losses": 14,
-      "classId": "priest"
-    },
-    {
-      "rank": 331,
-      "characterName": "Bobatea",
-      "realmSlug": "nightslayer",
-      "rating": 2017,
-      "wins": 34,
-      "losses": 14,
-      "classId": "druid"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 331,
@@ -3007,7 +3319,28 @@
       "rating": 2017,
       "wins": 34,
       "losses": 14,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
+    },
+    {
+      "rank": 331,
+      "characterName": "Geneparmesan",
+      "realmSlug": "nightslayer",
+      "rating": 2017,
+      "wins": 34,
+      "losses": 14,
+      "classId": "priest",
+      "specId": "priest_discipline"
+    },
+    {
+      "rank": 331,
+      "characterName": "Bobatea",
+      "realmSlug": "nightslayer",
+      "rating": 2017,
+      "wins": 34,
+      "losses": 14,
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 331,
@@ -3016,7 +3349,8 @@
       "rating": 2017,
       "wins": 63,
       "losses": 55,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 331,
@@ -3025,7 +3359,8 @@
       "rating": 2017,
       "wins": 63,
       "losses": 55,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 336,
@@ -3034,7 +3369,8 @@
       "rating": 2016,
       "wins": 33,
       "losses": 25,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 336,
@@ -3043,7 +3379,8 @@
       "rating": 2016,
       "wins": 69,
       "losses": 54,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 338,
@@ -3052,7 +3389,8 @@
       "rating": 2015,
       "wins": 44,
       "losses": 18,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 338,
@@ -3061,7 +3399,8 @@
       "rating": 2015,
       "wins": 44,
       "losses": 23,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 338,
@@ -3070,7 +3409,8 @@
       "rating": 2015,
       "wins": 62,
       "losses": 36,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 338,
@@ -3079,7 +3419,8 @@
       "rating": 2015,
       "wins": 49,
       "losses": 29,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 338,
@@ -3088,7 +3429,8 @@
       "rating": 2015,
       "wins": 161,
       "losses": 124,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 338,
@@ -3097,7 +3439,8 @@
       "rating": 2015,
       "wins": 74,
       "losses": 63,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 344,
@@ -3106,7 +3449,8 @@
       "rating": 2014,
       "wins": 39,
       "losses": 15,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 344,
@@ -3115,7 +3459,8 @@
       "rating": 2014,
       "wins": 60,
       "losses": 26,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 344,
@@ -3124,7 +3469,8 @@
       "rating": 2014,
       "wins": 35,
       "losses": 16,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 344,
@@ -3133,7 +3479,8 @@
       "rating": 2014,
       "wins": 40,
       "losses": 25,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 344,
@@ -3142,7 +3489,8 @@
       "rating": 2014,
       "wins": 43,
       "losses": 29,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 344,
@@ -3151,7 +3499,8 @@
       "rating": 2014,
       "wins": 57,
       "losses": 45,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 350,
@@ -3160,7 +3509,8 @@
       "rating": 2013,
       "wins": 52,
       "losses": 18,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 350,
@@ -3169,7 +3519,8 @@
       "rating": 2013,
       "wins": 133,
       "losses": 98,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 350,
@@ -3178,7 +3529,8 @@
       "rating": 2013,
       "wins": 80,
       "losses": 59,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 350,
@@ -3187,7 +3539,8 @@
       "rating": 2013,
       "wins": 80,
       "losses": 59,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 350,
@@ -3196,7 +3549,8 @@
       "rating": 2013,
       "wins": 93,
       "losses": 72,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 355,
@@ -3205,7 +3559,8 @@
       "rating": 2012,
       "wins": 69,
       "losses": 40,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 355,
@@ -3214,7 +3569,8 @@
       "rating": 2012,
       "wins": 83,
       "losses": 60,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 355,
@@ -3223,7 +3579,8 @@
       "rating": 2012,
       "wins": 96,
       "losses": 96,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 358,
@@ -3232,7 +3589,8 @@
       "rating": 2011,
       "wins": 54,
       "losses": 27,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_affliction"
     },
     {
       "rank": 358,
@@ -3241,7 +3599,8 @@
       "rating": 2011,
       "wins": 30,
       "losses": 16,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 358,
@@ -3250,7 +3609,8 @@
       "rating": 2011,
       "wins": 67,
       "losses": 40,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 358,
@@ -3259,7 +3619,8 @@
       "rating": 2011,
       "wins": 57,
       "losses": 41,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 358,
@@ -3268,7 +3629,8 @@
       "rating": 2011,
       "wins": 88,
       "losses": 66,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 358,
@@ -3277,7 +3639,8 @@
       "rating": 2011,
       "wins": 85,
       "losses": 64,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 364,
@@ -3286,7 +3649,8 @@
       "rating": 2010,
       "wins": 36,
       "losses": 13,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 364,
@@ -3295,7 +3659,8 @@
       "rating": 2010,
       "wins": 67,
       "losses": 47,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 364,
@@ -3304,7 +3669,8 @@
       "rating": 2010,
       "wins": 154,
       "losses": 118,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 364,
@@ -3313,7 +3679,8 @@
       "rating": 2010,
       "wins": 157,
       "losses": 158,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 368,
@@ -3322,7 +3689,8 @@
       "rating": 2009,
       "wins": 58,
       "losses": 37,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 368,
@@ -3331,7 +3699,8 @@
       "rating": 2009,
       "wins": 56,
       "losses": 37,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_protection"
     },
     {
       "rank": 368,
@@ -3340,7 +3709,8 @@
       "rating": 2009,
       "wins": 133,
       "losses": 107,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 368,
@@ -3349,7 +3719,8 @@
       "rating": 2009,
       "wins": 57,
       "losses": 48,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 368,
@@ -3358,7 +3729,8 @@
       "rating": 2009,
       "wins": 84,
       "losses": 76,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 373,
@@ -3367,7 +3739,8 @@
       "rating": 2008,
       "wins": 36,
       "losses": 17,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 373,
@@ -3376,7 +3749,8 @@
       "rating": 2008,
       "wins": 107,
       "losses": 54,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 373,
@@ -3385,7 +3759,8 @@
       "rating": 2008,
       "wins": 49,
       "losses": 29,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 373,
@@ -3394,7 +3769,8 @@
       "rating": 2008,
       "wins": 86,
       "losses": 55,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 373,
@@ -3403,7 +3779,8 @@
       "rating": 2008,
       "wins": 74,
       "losses": 51,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 373,
@@ -3412,7 +3789,8 @@
       "rating": 2008,
       "wins": 89,
       "losses": 62,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 379,
@@ -3421,7 +3799,8 @@
       "rating": 2007,
       "wins": 53,
       "losses": 24,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 379,
@@ -3430,7 +3809,8 @@
       "rating": 2007,
       "wins": 39,
       "losses": 20,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 381,
@@ -3439,7 +3819,8 @@
       "rating": 2006,
       "wins": 83,
       "losses": 47,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 382,
@@ -3448,7 +3829,8 @@
       "rating": 2005,
       "wins": 36,
       "losses": 16,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 382,
@@ -3457,7 +3839,8 @@
       "rating": 2005,
       "wins": 38,
       "losses": 25,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 382,
@@ -3466,7 +3849,8 @@
       "rating": 2005,
       "wins": 70,
       "losses": 53,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 385,
@@ -3475,7 +3859,8 @@
       "rating": 2004,
       "wins": 84,
       "losses": 52,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 385,
@@ -3484,7 +3869,8 @@
       "rating": 2004,
       "wins": 50,
       "losses": 31,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 385,
@@ -3493,7 +3879,8 @@
       "rating": 2004,
       "wins": 148,
       "losses": 114,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 388,
@@ -3502,7 +3889,8 @@
       "rating": 2003,
       "wins": 43,
       "losses": 19,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 388,
@@ -3511,7 +3899,8 @@
       "rating": 2003,
       "wins": 70,
       "losses": 36,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 388,
@@ -3520,7 +3909,8 @@
       "rating": 2003,
       "wins": 65,
       "losses": 44,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 388,
@@ -3529,7 +3919,8 @@
       "rating": 2003,
       "wins": 71,
       "losses": 55,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 392,
@@ -3538,7 +3929,8 @@
       "rating": 2002,
       "wins": 65,
       "losses": 44,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 392,
@@ -3547,7 +3939,8 @@
       "rating": 2002,
       "wins": 69,
       "losses": 50,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 392,
@@ -3556,7 +3949,8 @@
       "rating": 2002,
       "wins": 75,
       "losses": 58,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 395,
@@ -3565,7 +3959,8 @@
       "rating": 2001,
       "wins": 43,
       "losses": 6,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 396,
@@ -3574,7 +3969,8 @@
       "rating": 2000,
       "wins": 49,
       "losses": 5,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 396,
@@ -3583,7 +3979,8 @@
       "rating": 2000,
       "wins": 65,
       "losses": 37,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 398,
@@ -3592,7 +3989,8 @@
       "rating": 1999,
       "wins": 33,
       "losses": 8,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 398,
@@ -3601,7 +3999,8 @@
       "rating": 1999,
       "wins": 36,
       "losses": 15,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 398,
@@ -3610,7 +4009,8 @@
       "rating": 1999,
       "wins": 43,
       "losses": 18,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 398,
@@ -3619,7 +4019,8 @@
       "rating": 1999,
       "wins": 72,
       "losses": 41,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 402,
@@ -3628,7 +4029,8 @@
       "rating": 1998,
       "wins": 44,
       "losses": 19,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 402,
@@ -3637,7 +4039,8 @@
       "rating": 1998,
       "wins": 75,
       "losses": 39,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 402,
@@ -3646,7 +4049,8 @@
       "rating": 1998,
       "wins": 321,
       "losses": 252,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 405,
@@ -3655,7 +4059,8 @@
       "rating": 1997,
       "wins": 50,
       "losses": 15,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 405,
@@ -3664,7 +4069,8 @@
       "rating": 1997,
       "wins": 45,
       "losses": 20,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 405,
@@ -3673,7 +4079,8 @@
       "rating": 1997,
       "wins": 59,
       "losses": 31,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
       "rank": 408,
@@ -3682,7 +4089,8 @@
       "rating": 1996,
       "wins": 54,
       "losses": 38,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 409,
@@ -3691,7 +4099,8 @@
       "rating": 1995,
       "wins": 84,
       "losses": 43,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 409,
@@ -3700,7 +4109,8 @@
       "rating": 1995,
       "wins": 73,
       "losses": 39,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 409,
@@ -3709,7 +4119,8 @@
       "rating": 1995,
       "wins": 127,
       "losses": 93,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 409,
@@ -3718,7 +4129,8 @@
       "rating": 1995,
       "wins": 125,
       "losses": 92,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 413,
@@ -3727,7 +4139,8 @@
       "rating": 1994,
       "wins": 55,
       "losses": 26,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 413,
@@ -3736,7 +4149,8 @@
       "rating": 1994,
       "wins": 64,
       "losses": 32,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 413,
@@ -3745,7 +4159,8 @@
       "rating": 1994,
       "wins": 59,
       "losses": 36,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 416,
@@ -3754,7 +4169,8 @@
       "rating": 1993,
       "wins": 95,
       "losses": 44,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 416,
@@ -3763,7 +4179,8 @@
       "rating": 1993,
       "wins": 74,
       "losses": 40,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 416,
@@ -3772,7 +4189,8 @@
       "rating": 1993,
       "wins": 44,
       "losses": 24,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 416,
@@ -3781,7 +4199,8 @@
       "rating": 1993,
       "wins": 62,
       "losses": 38,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 416,
@@ -3790,7 +4209,8 @@
       "rating": 1993,
       "wins": 96,
       "losses": 67,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 421,
@@ -3799,7 +4219,8 @@
       "rating": 1991,
       "wins": 51,
       "losses": 17,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 421,
@@ -3808,7 +4229,8 @@
       "rating": 1991,
       "wins": 33,
       "losses": 19,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 421,
@@ -3817,7 +4239,8 @@
       "rating": 1991,
       "wins": 93,
       "losses": 63,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 424,
@@ -3826,7 +4249,8 @@
       "rating": 1990,
       "wins": 93,
       "losses": 69,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 425,
@@ -3835,7 +4259,8 @@
       "rating": 1989,
       "wins": 41,
       "losses": 18,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_arcane"
     },
     {
       "rank": 426,
@@ -3844,7 +4269,8 @@
       "rating": 1987,
       "wins": 60,
       "losses": 35,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 426,
@@ -3853,7 +4279,8 @@
       "rating": 1987,
       "wins": 51,
       "losses": 31,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 426,
@@ -3862,7 +4289,8 @@
       "rating": 1987,
       "wins": 51,
       "losses": 31,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 426,
@@ -3871,7 +4299,8 @@
       "rating": 1987,
       "wins": 49,
       "losses": 33,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 426,
@@ -3880,7 +4309,8 @@
       "rating": 1987,
       "wins": 97,
       "losses": 73,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 426,
@@ -3889,7 +4319,8 @@
       "rating": 1987,
       "wins": 62,
       "losses": 58,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 432,
@@ -3898,7 +4329,8 @@
       "rating": 1986,
       "wins": 46,
       "losses": 26,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_combat"
     },
     {
       "rank": 433,
@@ -3907,7 +4339,8 @@
       "rating": 1984,
       "wins": 35,
       "losses": 12,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 433,
@@ -3916,16 +4349,8 @@
       "rating": 1984,
       "wins": 33,
       "losses": 12,
-      "classId": "druid"
-    },
-    {
-      "rank": 435,
-      "characterName": "Indoorcow",
-      "realmSlug": "nightslayer",
-      "rating": 1982,
-      "wins": 54,
-      "losses": 38,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 435,
@@ -3934,16 +4359,8 @@
       "rating": 1982,
       "wins": 54,
       "losses": 38,
-      "classId": "paladin"
-    },
-    {
-      "rank": 435,
-      "characterName": "Caravan",
-      "realmSlug": "nightslayer",
-      "rating": 1982,
-      "wins": 54,
-      "losses": 38,
-      "classId": "warrior"
+      "classId": "paladin",
+      "specId": "paladin_protection"
     },
     {
       "rank": 435,
@@ -3952,7 +4369,28 @@
       "rating": 1982,
       "wins": 54,
       "losses": 38,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
+    },
+    {
+      "rank": 435,
+      "characterName": "Indoorcow",
+      "realmSlug": "nightslayer",
+      "rating": 1982,
+      "wins": 54,
+      "losses": 38,
+      "classId": "druid",
+      "specId": "druid_feralcombat"
+    },
+    {
+      "rank": 435,
+      "characterName": "Caravan",
+      "realmSlug": "nightslayer",
+      "rating": 1982,
+      "wins": 54,
+      "losses": 38,
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 435,
@@ -3961,7 +4399,8 @@
       "rating": 1982,
       "wins": 65,
       "losses": 50,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 435,
@@ -3970,7 +4409,8 @@
       "rating": 1982,
       "wins": 98,
       "losses": 84,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 441,
@@ -3979,7 +4419,8 @@
       "rating": 1981,
       "wins": 58,
       "losses": 33,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 442,
@@ -3988,7 +4429,8 @@
       "rating": 1980,
       "wins": 87,
       "losses": 60,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 443,
@@ -3997,25 +4439,8 @@
       "rating": 1979,
       "wins": 43,
       "losses": 16,
-      "classId": "druid"
-    },
-    {
-      "rank": 443,
-      "characterName": "Pinchx",
-      "realmSlug": "dreamscythe",
-      "rating": 1979,
-      "wins": 91,
-      "losses": 83,
-      "classId": "shaman"
-    },
-    {
-      "rank": 443,
-      "characterName": "Lamissa",
-      "realmSlug": "dreamscythe",
-      "rating": 1979,
-      "wins": 91,
-      "losses": 83,
-      "classId": "priest"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 443,
@@ -4024,7 +4449,28 @@
       "rating": 1979,
       "wins": 91,
       "losses": 83,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
+    },
+    {
+      "rank": 443,
+      "characterName": "Pinchx",
+      "realmSlug": "dreamscythe",
+      "rating": 1979,
+      "wins": 91,
+      "losses": 83,
+      "classId": "shaman",
+      "specId": "shaman_elemental"
+    },
+    {
+      "rank": 443,
+      "characterName": "Lamissa",
+      "realmSlug": "dreamscythe",
+      "rating": 1979,
+      "wins": 91,
+      "losses": 83,
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 447,
@@ -4033,7 +4479,8 @@
       "rating": 1978,
       "wins": 41,
       "losses": 9,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_arcane"
     },
     {
       "rank": 447,
@@ -4042,7 +4489,8 @@
       "rating": 1978,
       "wins": 43,
       "losses": 20,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_protection"
     },
     {
       "rank": 447,
@@ -4051,7 +4499,8 @@
       "rating": 1978,
       "wins": 98,
       "losses": 71,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 450,
@@ -4060,7 +4509,8 @@
       "rating": 1977,
       "wins": 52,
       "losses": 23,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 450,
@@ -4069,7 +4519,8 @@
       "rating": 1977,
       "wins": 42,
       "losses": 22,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 450,
@@ -4078,7 +4529,8 @@
       "rating": 1977,
       "wins": 73,
       "losses": 69,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 453,
@@ -4087,7 +4539,8 @@
       "rating": 1976,
       "wins": 32,
       "losses": 14,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 453,
@@ -4096,7 +4549,8 @@
       "rating": 1976,
       "wins": 87,
       "losses": 56,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 453,
@@ -4105,7 +4559,8 @@
       "rating": 1976,
       "wins": 60,
       "losses": 49,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_elemental"
     },
     {
       "rank": 456,
@@ -4114,7 +4569,8 @@
       "rating": 1975,
       "wins": 32,
       "losses": 12,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 456,
@@ -4123,7 +4579,8 @@
       "rating": 1975,
       "wins": 36,
       "losses": 16,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 456,
@@ -4132,7 +4589,8 @@
       "rating": 1975,
       "wins": 108,
       "losses": 59,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_arcane"
     },
     {
       "rank": 456,
@@ -4141,25 +4599,8 @@
       "rating": 1975,
       "wins": 62,
       "losses": 46,
-      "classId": "warrior"
-    },
-    {
-      "rank": 456,
-      "characterName": "Conorlol",
-      "realmSlug": "dreamscythe",
-      "rating": 1975,
-      "wins": 162,
-      "losses": 134,
-      "classId": "mage"
-    },
-    {
-      "rank": 456,
-      "characterName": "Beanbun",
-      "realmSlug": "dreamscythe",
-      "rating": 1975,
-      "wins": 162,
-      "losses": 134,
-      "classId": "priest"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 456,
@@ -4168,7 +4609,28 @@
       "rating": 1975,
       "wins": 162,
       "losses": 134,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
+    },
+    {
+      "rank": 456,
+      "characterName": "Conorlol",
+      "realmSlug": "dreamscythe",
+      "rating": 1975,
+      "wins": 162,
+      "losses": 134,
+      "classId": "mage",
+      "specId": "mage_frost"
+    },
+    {
+      "rank": 456,
+      "characterName": "Beanbun",
+      "realmSlug": "dreamscythe",
+      "rating": 1975,
+      "wins": 162,
+      "losses": 134,
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 456,
@@ -4177,7 +4639,8 @@
       "rating": 1975,
       "wins": 74,
       "losses": 68,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 464,
@@ -4186,7 +4649,8 @@
       "rating": 1974,
       "wins": 46,
       "losses": 21,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 464,
@@ -4195,7 +4659,8 @@
       "rating": 1974,
       "wins": 89,
       "losses": 53,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 464,
@@ -4204,25 +4669,8 @@
       "rating": 1974,
       "wins": 100,
       "losses": 65,
-      "classId": "shaman"
-    },
-    {
-      "rank": 464,
-      "characterName": "Lax",
-      "realmSlug": "nightslayer",
-      "rating": 1974,
-      "wins": 54,
-      "losses": 42,
-      "classId": "druid"
-    },
-    {
-      "rank": 464,
-      "characterName": "Plzme",
-      "realmSlug": "nightslayer",
-      "rating": 1974,
-      "wins": 54,
-      "losses": 42,
-      "classId": "warlock"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 464,
@@ -4231,7 +4679,8 @@
       "rating": 1974,
       "wins": 54,
       "losses": 42,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 464,
@@ -4240,7 +4689,28 @@
       "rating": 1974,
       "wins": 54,
       "losses": 42,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
+    },
+    {
+      "rank": 464,
+      "characterName": "Lax",
+      "realmSlug": "nightslayer",
+      "rating": 1974,
+      "wins": 54,
+      "losses": 42,
+      "classId": "druid",
+      "specId": "druid_restoration"
+    },
+    {
+      "rank": 464,
+      "characterName": "Plzme",
+      "realmSlug": "nightslayer",
+      "rating": 1974,
+      "wins": 54,
+      "losses": 42,
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 471,
@@ -4249,7 +4719,8 @@
       "rating": 1973,
       "wins": 58,
       "losses": 19,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 471,
@@ -4258,7 +4729,8 @@
       "rating": 1973,
       "wins": 59,
       "losses": 25,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 471,
@@ -4267,7 +4739,8 @@
       "rating": 1973,
       "wins": 57,
       "losses": 34,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 474,
@@ -4276,7 +4749,8 @@
       "rating": 1972,
       "wins": 124,
       "losses": 104,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_protection"
     },
     {
       "rank": 474,
@@ -4285,7 +4759,8 @@
       "rating": 1972,
       "wins": 184,
       "losses": 155,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 474,
@@ -4294,7 +4769,8 @@
       "rating": 1972,
       "wins": 129,
       "losses": 112,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_protection"
     },
     {
       "rank": 477,
@@ -4303,7 +4779,8 @@
       "rating": 1971,
       "wins": 49,
       "losses": 19,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 477,
@@ -4312,7 +4789,8 @@
       "rating": 1971,
       "wins": 57,
       "losses": 29,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 477,
@@ -4321,7 +4799,8 @@
       "rating": 1971,
       "wins": 26,
       "losses": 14,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 477,
@@ -4330,16 +4809,8 @@
       "rating": 1971,
       "wins": 104,
       "losses": 62,
-      "classId": "warrior"
-    },
-    {
-      "rank": 477,
-      "characterName": "Vitaelol",
-      "realmSlug": "nightslayer",
-      "rating": 1971,
-      "wins": 35,
-      "losses": 21,
-      "classId": "priest"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 477,
@@ -4348,7 +4819,18 @@
       "rating": 1971,
       "wins": 35,
       "losses": 21,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
+    },
+    {
+      "rank": 477,
+      "characterName": "Vitaelol",
+      "realmSlug": "nightslayer",
+      "rating": 1971,
+      "wins": 35,
+      "losses": 21,
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 477,
@@ -4357,7 +4839,8 @@
       "rating": 1971,
       "wins": 165,
       "losses": 131,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 484,
@@ -4366,7 +4849,8 @@
       "rating": 1970,
       "wins": 34,
       "losses": 11,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 484,
@@ -4375,7 +4859,8 @@
       "rating": 1970,
       "wins": 58,
       "losses": 30,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 484,
@@ -4384,7 +4869,8 @@
       "rating": 1970,
       "wins": 67,
       "losses": 36,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 484,
@@ -4393,7 +4879,8 @@
       "rating": 1970,
       "wins": 50,
       "losses": 27,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 484,
@@ -4402,7 +4889,8 @@
       "rating": 1970,
       "wins": 58,
       "losses": 54,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_affliction"
     },
     {
       "rank": 484,
@@ -4411,7 +4899,8 @@
       "rating": 1970,
       "wins": 120,
       "losses": 113,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 490,
@@ -4420,7 +4909,8 @@
       "rating": 1969,
       "wins": 87,
       "losses": 70,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 490,
@@ -4429,16 +4919,8 @@
       "rating": 1969,
       "wins": 88,
       "losses": 76,
-      "classId": "shaman"
-    },
-    {
-      "rank": 492,
-      "characterName": "Anjozs",
-      "realmSlug": "nightslayer",
-      "rating": 1968,
-      "wins": 77,
-      "losses": 36,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 492,
@@ -4447,16 +4929,8 @@
       "rating": 1968,
       "wins": 77,
       "losses": 36,
-      "classId": "mage"
-    },
-    {
-      "rank": 492,
-      "characterName": "Zraka",
-      "realmSlug": "nightslayer",
-      "rating": 1968,
-      "wins": 77,
-      "losses": 36,
-      "classId": "warrior"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 492,
@@ -4465,7 +4939,28 @@
       "rating": 1968,
       "wins": 77,
       "losses": 36,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
+    },
+    {
+      "rank": 492,
+      "characterName": "Anjozs",
+      "realmSlug": "nightslayer",
+      "rating": 1968,
+      "wins": 77,
+      "losses": 36,
+      "classId": "shaman",
+      "specId": "shaman_restoration"
+    },
+    {
+      "rank": 492,
+      "characterName": "Zraka",
+      "realmSlug": "nightslayer",
+      "rating": 1968,
+      "wins": 77,
+      "losses": 36,
+      "classId": "warrior",
+      "specId": "warrior_arms"
     },
     {
       "rank": 492,
@@ -4474,7 +4969,8 @@
       "rating": 1968,
       "wins": 83,
       "losses": 47,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 492,
@@ -4483,7 +4979,8 @@
       "rating": 1968,
       "wins": 33,
       "losses": 21,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_arcane"
     },
     {
       "rank": 492,
@@ -4492,7 +4989,8 @@
       "rating": 1968,
       "wins": 48,
       "losses": 32,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 492,
@@ -4501,7 +4999,8 @@
       "rating": 1968,
       "wins": 79,
       "losses": 68,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
       "rank": 500,
@@ -4510,7 +5009,8 @@
       "rating": 1967,
       "wins": 72,
       "losses": 32,
-      "classId": null
+      "classId": null,
+      "specId": null
     }
   ]
 }

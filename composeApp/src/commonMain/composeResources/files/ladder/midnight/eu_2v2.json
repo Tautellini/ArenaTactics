@@ -2,199 +2,194 @@
   "region": "eu",
   "bracket": "2v2",
   "seasonId": 41,
-  "fetchedAt": "2026-03-22T12:12:24Z",
+  "fetchedAt": "2026-03-22T14:44:23Z",
   "totalEntries": 5010,
   "ratingCutoffs": {},
   "specDistribution": [
     {
       "specId": "paladin_retribution",
       "count": 4273,
-      "percentage": 8.58
+      "percentage": 9.32
     },
     {
       "specId": "priest_discipline",
       "count": 3757,
-      "percentage": 7.55
+      "percentage": 8.19
     },
     {
       "specId": "rogue_subtlety",
       "count": 3041,
-      "percentage": 6.11
+      "percentage": 6.63
     },
     {
       "specId": "paladin_holy",
       "count": 2987,
-      "percentage": 6.0
-    },
-    {
-      "specId": "deathknight_unholy",
-      "count": 2902,
-      "percentage": 5.83
+      "percentage": 6.51
     },
     {
       "specId": "monk_mistweaver",
       "count": 2887,
-      "percentage": 5.8
-    },
-    {
-      "specId": "demonhunter_havoc",
-      "count": 2570,
-      "percentage": 5.16
+      "percentage": 6.3
     },
     {
       "specId": "mage_frost",
       "count": 2408,
-      "percentage": 4.84
+      "percentage": 5.25
     },
     {
       "specId": "hunter_marksmanship",
       "count": 2091,
-      "percentage": 4.2
+      "percentage": 4.56
     },
     {
       "specId": "warrior_fury",
       "count": 1858,
-      "percentage": 3.73
+      "percentage": 4.05
     },
     {
       "specId": "druid_restoration",
       "count": 1810,
-      "percentage": 3.64
+      "percentage": 3.95
     },
     {
       "specId": "priest_holy",
       "count": 1723,
-      "percentage": 3.46
+      "percentage": 3.76
     },
     {
       "specId": "monk_windwalker",
       "count": 1640,
-      "percentage": 3.29
+      "percentage": 3.58
+    },
+    {
+      "specId": "demonhunter_havoc",
+      "count": 1547,
+      "percentage": 3.37
     },
     {
       "specId": "warlock_destruction",
       "count": 1476,
-      "percentage": 2.97
+      "percentage": 3.22
     },
     {
       "specId": "shaman_restoration",
       "count": 1304,
-      "percentage": 2.62
+      "percentage": 2.84
     },
     {
       "specId": "warlock_demonology",
       "count": 1182,
-      "percentage": 2.37
+      "percentage": 2.58
     },
     {
       "specId": "druid_balance",
       "count": 1177,
-      "percentage": 2.36
+      "percentage": 2.57
     },
     {
       "specId": "mage_fire",
       "count": 1129,
-      "percentage": 2.27
+      "percentage": 2.46
     },
     {
       "specId": "priest_shadow",
       "count": 1061,
-      "percentage": 2.13
+      "percentage": 2.31
     },
     {
       "specId": "druid_feral",
       "count": 1040,
-      "percentage": 2.09
+      "percentage": 2.27
     },
     {
       "specId": "warrior_arms",
       "count": 922,
-      "percentage": 1.85
+      "percentage": 2.01
     },
     {
       "specId": "hunter_beastmastery",
       "count": 915,
-      "percentage": 1.84
+      "percentage": 2.0
     },
     {
       "specId": "shaman_enhancement",
       "count": 904,
-      "percentage": 1.82
+      "percentage": 1.97
     },
     {
       "specId": "evoker_preservation",
       "count": 773,
-      "percentage": 1.55
+      "percentage": 1.69
     },
     {
       "specId": "evoker_devastation",
       "count": 670,
-      "percentage": 1.35
+      "percentage": 1.46
     },
     {
       "specId": "shaman_elemental",
       "count": 604,
-      "percentage": 1.21
+      "percentage": 1.32
     },
     {
       "specId": "hunter_survival",
       "count": 598,
-      "percentage": 1.2
+      "percentage": 1.3
     },
     {
       "specId": "warlock_affliction",
       "count": 432,
-      "percentage": 0.87
+      "percentage": 0.94
     },
     {
       "specId": "deathknight_frost",
       "count": 428,
-      "percentage": 0.86
+      "percentage": 0.93
     },
     {
       "specId": "rogue_assassination",
       "count": 334,
-      "percentage": 0.67
+      "percentage": 0.73
     },
     {
       "specId": "mage_arcane",
       "count": 221,
-      "percentage": 0.44
+      "percentage": 0.48
     },
     {
       "specId": "druid_guardian",
       "count": 168,
-      "percentage": 0.34
+      "percentage": 0.37
     },
     {
       "specId": "paladin_protection",
       "count": 159,
-      "percentage": 0.32
+      "percentage": 0.35
     },
     {
       "specId": "rogue_outlaw",
       "count": 115,
-      "percentage": 0.23
+      "percentage": 0.25
     },
     {
       "specId": "deathknight_blood",
       "count": 66,
-      "percentage": 0.13
+      "percentage": 0.14
     },
     {
       "specId": "monk_brewmaster",
       "count": 61,
-      "percentage": 0.12
+      "percentage": 0.13
     },
     {
       "specId": "warrior_protection",
       "count": 46,
-      "percentage": 0.09
+      "percentage": 0.1
     },
     {
       "specId": "evoker_augmentation",
       "count": 26,
-      "percentage": 0.05
+      "percentage": 0.06
     },
     {
       "specId": "demonhunter_vengeance",
@@ -210,7 +205,8 @@
       "rating": 2239,
       "wins": 75,
       "losses": 27,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 2,
@@ -219,7 +215,8 @@
       "rating": 2172,
       "wins": 68,
       "losses": 32,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_fire"
     },
     {
       "rank": 3,
@@ -228,7 +225,8 @@
       "rating": 2169,
       "wins": 60,
       "losses": 30,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 4,
@@ -237,7 +235,8 @@
       "rating": 2144,
       "wins": 57,
       "losses": 6,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 5,
@@ -246,7 +245,8 @@
       "rating": 2117,
       "wins": 112,
       "losses": 53,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 6,
@@ -255,7 +255,8 @@
       "rating": 2070,
       "wins": 93,
       "losses": 45,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 7,
@@ -264,7 +265,8 @@
       "rating": 2051,
       "wins": 69,
       "losses": 38,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 8,
@@ -273,7 +275,8 @@
       "rating": 2047,
       "wins": 62,
       "losses": 27,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 9,
@@ -282,7 +285,8 @@
       "rating": 2043,
       "wins": 60,
       "losses": 34,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 10,
@@ -291,7 +295,8 @@
       "rating": 2040,
       "wins": 48,
       "losses": 18,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
       "rank": 11,
@@ -300,7 +305,8 @@
       "rating": 2036,
       "wins": 64,
       "losses": 16,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 12,
@@ -309,7 +315,8 @@
       "rating": 2032,
       "wins": 89,
       "losses": 63,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 13,
@@ -318,7 +325,8 @@
       "rating": 2026,
       "wins": 71,
       "losses": 54,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 14,
@@ -327,7 +335,8 @@
       "rating": 2025,
       "wins": 64,
       "losses": 42,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 15,
@@ -336,7 +345,8 @@
       "rating": 2022,
       "wins": 42,
       "losses": 13,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 16,
@@ -345,7 +355,8 @@
       "rating": 2021,
       "wins": 55,
       "losses": 25,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 16,
@@ -354,7 +365,8 @@
       "rating": 2021,
       "wins": 71,
       "losses": 50,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 16,
@@ -363,7 +375,8 @@
       "rating": 2021,
       "wins": 71,
       "losses": 50,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 19,
@@ -372,7 +385,8 @@
       "rating": 2020,
       "wins": 67,
       "losses": 39,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 20,
@@ -381,7 +395,8 @@
       "rating": 2015,
       "wins": 60,
       "losses": 37,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 21,
@@ -390,7 +405,8 @@
       "rating": 2012,
       "wins": 73,
       "losses": 18,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 22,
@@ -399,7 +415,8 @@
       "rating": 2011,
       "wins": 69,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 23,
@@ -408,7 +425,8 @@
       "rating": 2004,
       "wins": 90,
       "losses": 41,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 24,
@@ -417,7 +435,8 @@
       "rating": 2002,
       "wins": 92,
       "losses": 48,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 24,
@@ -426,7 +445,8 @@
       "rating": 2002,
       "wins": 49,
       "losses": 30,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 26,
@@ -435,7 +455,8 @@
       "rating": 2001,
       "wins": 48,
       "losses": 32,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_feral"
     },
     {
       "rank": 27,
@@ -444,7 +465,8 @@
       "rating": 1994,
       "wins": 110,
       "losses": 84,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 28,
@@ -453,7 +475,8 @@
       "rating": 1993,
       "wins": 48,
       "losses": 29,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 29,
@@ -462,7 +485,8 @@
       "rating": 1981,
       "wins": 82,
       "losses": 58,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 30,
@@ -471,7 +495,8 @@
       "rating": 1980,
       "wins": 52,
       "losses": 31,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_feral"
     },
     {
       "rank": 31,
@@ -480,7 +505,8 @@
       "rating": 1978,
       "wins": 41,
       "losses": 14,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 32,
@@ -489,7 +515,8 @@
       "rating": 1974,
       "wins": 108,
       "losses": 93,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 32,
@@ -498,7 +525,8 @@
       "rating": 1974,
       "wins": 108,
       "losses": 94,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 34,
@@ -507,7 +535,8 @@
       "rating": 1966,
       "wins": 54,
       "losses": 20,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 34,
@@ -516,7 +545,8 @@
       "rating": 1966,
       "wins": 55,
       "losses": 31,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 36,
@@ -525,7 +555,8 @@
       "rating": 1964,
       "wins": 40,
       "losses": 12,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 37,
@@ -534,7 +565,8 @@
       "rating": 1963,
       "wins": 39,
       "losses": 14,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 38,
@@ -543,7 +575,8 @@
       "rating": 1961,
       "wins": 49,
       "losses": 15,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 38,
@@ -552,7 +585,8 @@
       "rating": 1961,
       "wins": 47,
       "losses": 23,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 38,
@@ -561,7 +595,8 @@
       "rating": 1961,
       "wins": 39,
       "losses": 29,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_feral"
     },
     {
       "rank": 41,
@@ -570,7 +605,8 @@
       "rating": 1957,
       "wins": 65,
       "losses": 23,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 42,
@@ -579,7 +615,8 @@
       "rating": 1956,
       "wins": 41,
       "losses": 15,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 42,
@@ -588,7 +625,8 @@
       "rating": 1956,
       "wins": 43,
       "losses": 25,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 42,
@@ -597,7 +635,8 @@
       "rating": 1956,
       "wins": 46,
       "losses": 28,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 42,
@@ -606,7 +645,8 @@
       "rating": 1956,
       "wins": 104,
       "losses": 91,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 46,
@@ -615,7 +655,8 @@
       "rating": 1955,
       "wins": 53,
       "losses": 23,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 46,
@@ -624,7 +665,8 @@
       "rating": 1955,
       "wins": 40,
       "losses": 22,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 48,
@@ -633,7 +675,8 @@
       "rating": 1954,
       "wins": 58,
       "losses": 17,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 48,
@@ -642,7 +685,8 @@
       "rating": 1954,
       "wins": 47,
       "losses": 14,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 48,
@@ -651,7 +695,8 @@
       "rating": 1954,
       "wins": 65,
       "losses": 28,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 51,
@@ -660,7 +705,8 @@
       "rating": 1953,
       "wins": 38,
       "losses": 23,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_feral"
     },
     {
       "rank": 52,
@@ -669,7 +715,8 @@
       "rating": 1951,
       "wins": 62,
       "losses": 22,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 52,
@@ -678,7 +725,8 @@
       "rating": 1951,
       "wins": 46,
       "losses": 23,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 54,
@@ -687,7 +735,8 @@
       "rating": 1949,
       "wins": 65,
       "losses": 24,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_affliction"
     },
     {
       "rank": 54,
@@ -696,7 +745,8 @@
       "rating": 1949,
       "wins": 43,
       "losses": 25,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 54,
@@ -705,7 +755,8 @@
       "rating": 1949,
       "wins": 189,
       "losses": 156,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_guardian"
     },
     {
       "rank": 57,
@@ -714,7 +765,8 @@
       "rating": 1948,
       "wins": 64,
       "losses": 38,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_destruction"
     },
     {
       "rank": 57,
@@ -723,7 +775,8 @@
       "rating": 1948,
       "wins": 68,
       "losses": 52,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 57,
@@ -732,7 +785,8 @@
       "rating": 1948,
       "wins": 73,
       "losses": 64,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 60,
@@ -741,7 +795,8 @@
       "rating": 1944,
       "wins": 43,
       "losses": 16,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 61,
@@ -750,7 +805,8 @@
       "rating": 1941,
       "wins": 41,
       "losses": 4,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 61,
@@ -759,7 +815,8 @@
       "rating": 1941,
       "wins": 48,
       "losses": 24,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 63,
@@ -768,7 +825,8 @@
       "rating": 1936,
       "wins": 40,
       "losses": 21,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
       "rank": 64,
@@ -777,7 +835,8 @@
       "rating": 1935,
       "wins": 55,
       "losses": 7,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 64,
@@ -786,7 +845,8 @@
       "rating": 1935,
       "wins": 39,
       "losses": 15,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 66,
@@ -795,7 +855,8 @@
       "rating": 1934,
       "wins": 45,
       "losses": 11,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 67,
@@ -804,7 +865,8 @@
       "rating": 1931,
       "wins": 60,
       "losses": 43,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_fire"
     },
     {
       "rank": 68,
@@ -813,7 +875,8 @@
       "rating": 1930,
       "wins": 106,
       "losses": 99,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 69,
@@ -822,7 +885,8 @@
       "rating": 1929,
       "wins": 38,
       "losses": 12,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 69,
@@ -831,7 +895,8 @@
       "rating": 1929,
       "wins": 111,
       "losses": 57,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 71,
@@ -840,7 +905,8 @@
       "rating": 1928,
       "wins": 44,
       "losses": 14,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 72,
@@ -849,7 +915,8 @@
       "rating": 1926,
       "wins": 37,
       "losses": 10,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 72,
@@ -858,7 +925,8 @@
       "rating": 1926,
       "wins": 54,
       "losses": 19,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 74,
@@ -867,7 +935,8 @@
       "rating": 1921,
       "wins": 105,
       "losses": 46,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 75,
@@ -876,7 +945,8 @@
       "rating": 1920,
       "wins": 42,
       "losses": 25,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 76,
@@ -885,7 +955,8 @@
       "rating": 1918,
       "wins": 95,
       "losses": 74,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 77,
@@ -894,7 +965,8 @@
       "rating": 1915,
       "wins": 52,
       "losses": 20,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 78,
@@ -903,7 +975,8 @@
       "rating": 1914,
       "wins": 81,
       "losses": 38,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 79,
@@ -912,7 +985,8 @@
       "rating": 1913,
       "wins": 35,
       "losses": 17,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 79,
@@ -921,7 +995,8 @@
       "rating": 1913,
       "wins": 35,
       "losses": 18,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 79,
@@ -930,7 +1005,8 @@
       "rating": 1913,
       "wins": 59,
       "losses": 41,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 82,
@@ -939,7 +1015,8 @@
       "rating": 1911,
       "wins": 39,
       "losses": 19,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 82,
@@ -948,7 +1025,8 @@
       "rating": 1911,
       "wins": 92,
       "losses": 45,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 82,
@@ -957,7 +1035,8 @@
       "rating": 1911,
       "wins": 142,
       "losses": 134,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 82,
@@ -966,7 +1045,8 @@
       "rating": 1911,
       "wins": 142,
       "losses": 134,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 86,
@@ -975,7 +1055,8 @@
       "rating": 1910,
       "wins": 38,
       "losses": 24,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 87,
@@ -984,7 +1065,8 @@
       "rating": 1908,
       "wins": 43,
       "losses": 12,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 87,
@@ -993,7 +1075,8 @@
       "rating": 1908,
       "wins": 45,
       "losses": 23,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 87,
@@ -1002,7 +1085,8 @@
       "rating": 1908,
       "wins": 50,
       "losses": 29,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 90,
@@ -1011,7 +1095,8 @@
       "rating": 1907,
       "wins": 105,
       "losses": 83,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 91,
@@ -1020,7 +1105,8 @@
       "rating": 1904,
       "wins": 40,
       "losses": 14,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 91,
@@ -1029,7 +1115,8 @@
       "rating": 1904,
       "wins": 54,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 91,
@@ -1038,7 +1125,8 @@
       "rating": 1904,
       "wins": 45,
       "losses": 32,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 94,
@@ -1047,7 +1135,8 @@
       "rating": 1902,
       "wins": 90,
       "losses": 83,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 95,
@@ -1056,7 +1145,8 @@
       "rating": 1901,
       "wins": 40,
       "losses": 7,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 95,
@@ -1065,7 +1155,8 @@
       "rating": 1901,
       "wins": 40,
       "losses": 10,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 95,
@@ -1074,7 +1165,8 @@
       "rating": 1901,
       "wins": 62,
       "losses": 39,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 98,
@@ -1083,7 +1175,8 @@
       "rating": 1900,
       "wins": 41,
       "losses": 15,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 99,
@@ -1092,7 +1185,8 @@
       "rating": 1899,
       "wins": 71,
       "losses": 55,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 100,
@@ -1101,7 +1195,8 @@
       "rating": 1898,
       "wins": 68,
       "losses": 41,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 101,
@@ -1110,7 +1205,8 @@
       "rating": 1897,
       "wins": 42,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 101,
@@ -1119,7 +1215,8 @@
       "rating": 1897,
       "wins": 55,
       "losses": 40,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 103,
@@ -1128,7 +1225,8 @@
       "rating": 1896,
       "wins": 37,
       "losses": 21,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 104,
@@ -1137,7 +1235,8 @@
       "rating": 1894,
       "wins": 46,
       "losses": 22,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 105,
@@ -1146,7 +1245,8 @@
       "rating": 1893,
       "wins": 54,
       "losses": 22,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 106,
@@ -1155,7 +1255,8 @@
       "rating": 1892,
       "wins": 36,
       "losses": 10,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 107,
@@ -1164,7 +1265,8 @@
       "rating": 1891,
       "wins": 37,
       "losses": 7,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 107,
@@ -1173,7 +1275,8 @@
       "rating": 1891,
       "wins": 42,
       "losses": 26,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 109,
@@ -1182,7 +1285,8 @@
       "rating": 1890,
       "wins": 37,
       "losses": 10,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 109,
@@ -1191,7 +1295,8 @@
       "rating": 1890,
       "wins": 44,
       "losses": 26,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 111,
@@ -1200,7 +1305,8 @@
       "rating": 1888,
       "wins": 38,
       "losses": 13,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 111,
@@ -1209,7 +1315,8 @@
       "rating": 1888,
       "wins": 40,
       "losses": 20,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 111,
@@ -1218,7 +1325,8 @@
       "rating": 1888,
       "wins": 199,
       "losses": 103,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 114,
@@ -1227,7 +1335,8 @@
       "rating": 1887,
       "wins": 50,
       "losses": 27,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 115,
@@ -1236,7 +1345,8 @@
       "rating": 1886,
       "wins": 47,
       "losses": 16,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 115,
@@ -1245,7 +1355,8 @@
       "rating": 1886,
       "wins": 44,
       "losses": 26,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 117,
@@ -1254,7 +1365,8 @@
       "rating": 1885,
       "wins": 67,
       "losses": 57,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 118,
@@ -1263,7 +1375,8 @@
       "rating": 1884,
       "wins": 48,
       "losses": 24,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 119,
@@ -1272,7 +1385,8 @@
       "rating": 1883,
       "wins": 32,
       "losses": 3,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 120,
@@ -1281,7 +1395,8 @@
       "rating": 1882,
       "wins": 76,
       "losses": 40,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 121,
@@ -1290,7 +1405,8 @@
       "rating": 1881,
       "wins": 40,
       "losses": 15,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 122,
@@ -1299,7 +1415,8 @@
       "rating": 1880,
       "wins": 55,
       "losses": 31,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_brewmaster"
     },
     {
       "rank": 122,
@@ -1308,7 +1425,8 @@
       "rating": 1880,
       "wins": 45,
       "losses": 29,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 122,
@@ -1317,7 +1435,8 @@
       "rating": 1880,
       "wins": 128,
       "losses": 91,
-      "classId": "hunter"
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 125,
@@ -1326,7 +1445,8 @@
       "rating": 1879,
       "wins": 94,
       "losses": 43,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 126,
@@ -1335,7 +1455,8 @@
       "rating": 1877,
       "wins": 42,
       "losses": 30,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 126,
@@ -1344,7 +1465,8 @@
       "rating": 1877,
       "wins": 42,
       "losses": 30,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 128,
@@ -1353,7 +1475,8 @@
       "rating": 1876,
       "wins": 46,
       "losses": 12,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 129,
@@ -1362,7 +1485,8 @@
       "rating": 1874,
       "wins": 41,
       "losses": 9,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 130,
@@ -1371,7 +1495,8 @@
       "rating": 1871,
       "wins": 46,
       "losses": 35,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 131,
@@ -1380,7 +1505,8 @@
       "rating": 1870,
       "wins": 44,
       "losses": 12,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 132,
@@ -1389,7 +1515,8 @@
       "rating": 1868,
       "wins": 40,
       "losses": 14,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 133,
@@ -1398,7 +1525,8 @@
       "rating": 1867,
       "wins": 39,
       "losses": 22,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 133,
@@ -1407,7 +1535,8 @@
       "rating": 1867,
       "wins": 50,
       "losses": 29,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 135,
@@ -1416,7 +1545,8 @@
       "rating": 1865,
       "wins": 96,
       "losses": 73,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 136,
@@ -1425,7 +1555,8 @@
       "rating": 1864,
       "wins": 32,
       "losses": 9,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 136,
@@ -1434,7 +1565,8 @@
       "rating": 1864,
       "wins": 34,
       "losses": 14,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 136,
@@ -1443,7 +1575,8 @@
       "rating": 1864,
       "wins": 46,
       "losses": 33,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_destruction"
     },
     {
       "rank": 139,
@@ -1452,7 +1585,8 @@
       "rating": 1863,
       "wins": 34,
       "losses": 10,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 139,
@@ -1461,7 +1595,8 @@
       "rating": 1863,
       "wins": 39,
       "losses": 23,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 139,
@@ -1470,7 +1605,8 @@
       "rating": 1863,
       "wins": 44,
       "losses": 29,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 139,
@@ -1479,7 +1615,8 @@
       "rating": 1863,
       "wins": 92,
       "losses": 65,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 143,
@@ -1488,7 +1625,8 @@
       "rating": 1862,
       "wins": 40,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 144,
@@ -1497,7 +1635,8 @@
       "rating": 1861,
       "wins": 32,
       "losses": 6,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 145,
@@ -1506,7 +1645,8 @@
       "rating": 1860,
       "wins": 77,
       "losses": 66,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 146,
@@ -1515,7 +1655,8 @@
       "rating": 1859,
       "wins": 40,
       "losses": 17,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 146,
@@ -1524,7 +1665,8 @@
       "rating": 1859,
       "wins": 109,
       "losses": 56,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 148,
@@ -1533,7 +1675,8 @@
       "rating": 1858,
       "wins": 57,
       "losses": 32,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 148,
@@ -1542,7 +1685,8 @@
       "rating": 1858,
       "wins": 108,
       "losses": 67,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 148,
@@ -1551,7 +1695,8 @@
       "rating": 1858,
       "wins": 66,
       "losses": 57,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 148,
@@ -1560,7 +1705,8 @@
       "rating": 1858,
       "wins": 59,
       "losses": 52,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 148,
@@ -1569,7 +1715,8 @@
       "rating": 1858,
       "wins": 59,
       "losses": 52,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_protection"
     },
     {
       "rank": 153,
@@ -1578,7 +1725,8 @@
       "rating": 1857,
       "wins": 44,
       "losses": 32,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 153,
@@ -1587,7 +1735,8 @@
       "rating": 1857,
       "wins": 75,
       "losses": 60,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 155,
@@ -1596,7 +1745,8 @@
       "rating": 1856,
       "wins": 85,
       "losses": 60,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 156,
@@ -1605,7 +1755,8 @@
       "rating": 1855,
       "wins": 36,
       "losses": 21,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 157,
@@ -1614,7 +1765,8 @@
       "rating": 1854,
       "wins": 61,
       "losses": 51,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 158,
@@ -1623,7 +1775,8 @@
       "rating": 1853,
       "wins": 38,
       "losses": 9,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 158,
@@ -1632,7 +1785,8 @@
       "rating": 1853,
       "wins": 63,
       "losses": 45,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 160,
@@ -1641,7 +1795,8 @@
       "rating": 1852,
       "wins": 69,
       "losses": 27,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 160,
@@ -1650,7 +1805,8 @@
       "rating": 1852,
       "wins": 41,
       "losses": 30,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_restoration"
     },
     {
       "rank": 162,
@@ -1659,7 +1815,8 @@
       "rating": 1851,
       "wins": 49,
       "losses": 41,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 163,
@@ -1668,7 +1825,8 @@
       "rating": 1850,
       "wins": 36,
       "losses": 15,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 163,
@@ -1677,7 +1835,8 @@
       "rating": 1850,
       "wins": 57,
       "losses": 34,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 165,
@@ -1686,7 +1845,8 @@
       "rating": 1849,
       "wins": 73,
       "losses": 60,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 166,
@@ -1695,7 +1855,8 @@
       "rating": 1846,
       "wins": 32,
       "losses": 13,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 166,
@@ -1704,7 +1865,8 @@
       "rating": 1846,
       "wins": 36,
       "losses": 23,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
       "rank": 166,
@@ -1713,7 +1875,8 @@
       "rating": 1846,
       "wins": 54,
       "losses": 47,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 169,
@@ -1722,7 +1885,8 @@
       "rating": 1845,
       "wins": 38,
       "losses": 16,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 169,
@@ -1731,7 +1895,8 @@
       "rating": 1845,
       "wins": 118,
       "losses": 63,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 169,
@@ -1740,7 +1905,8 @@
       "rating": 1845,
       "wins": 55,
       "losses": 38,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 172,
@@ -1749,7 +1915,8 @@
       "rating": 1844,
       "wins": 40,
       "losses": 17,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 172,
@@ -1758,7 +1925,8 @@
       "rating": 1844,
       "wins": 35,
       "losses": 16,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 172,
@@ -1767,7 +1935,8 @@
       "rating": 1844,
       "wins": 45,
       "losses": 30,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 175,
@@ -1776,7 +1945,8 @@
       "rating": 1842,
       "wins": 33,
       "losses": 4,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 175,
@@ -1785,7 +1955,8 @@
       "rating": 1842,
       "wins": 53,
       "losses": 25,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 177,
@@ -1794,7 +1965,8 @@
       "rating": 1841,
       "wins": 48,
       "losses": 22,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 177,
@@ -1803,7 +1975,8 @@
       "rating": 1841,
       "wins": 33,
       "losses": 20,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
       "rank": 177,
@@ -1812,7 +1985,8 @@
       "rating": 1841,
       "wins": 51,
       "losses": 34,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 180,
@@ -1821,7 +1995,8 @@
       "rating": 1840,
       "wins": 40,
       "losses": 30,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 180,
@@ -1830,7 +2005,8 @@
       "rating": 1840,
       "wins": 52,
       "losses": 40,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 182,
@@ -1839,7 +2015,8 @@
       "rating": 1838,
       "wins": 35,
       "losses": 14,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 182,
@@ -1848,7 +2025,8 @@
       "rating": 1838,
       "wins": 40,
       "losses": 30,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 184,
@@ -1857,7 +2035,8 @@
       "rating": 1837,
       "wins": 32,
       "losses": 11,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 184,
@@ -1866,7 +2045,8 @@
       "rating": 1837,
       "wins": 52,
       "losses": 26,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 186,
@@ -1875,7 +2055,8 @@
       "rating": 1836,
       "wins": 36,
       "losses": 20,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 186,
@@ -1884,7 +2065,8 @@
       "rating": 1836,
       "wins": 36,
       "losses": 27,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 186,
@@ -1893,7 +2075,8 @@
       "rating": 1836,
       "wins": 47,
       "losses": 38,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 189,
@@ -1902,7 +2085,8 @@
       "rating": 1835,
       "wins": 38,
       "losses": 15,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 189,
@@ -1911,7 +2095,8 @@
       "rating": 1835,
       "wins": 37,
       "losses": 20,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 189,
@@ -1920,7 +2105,8 @@
       "rating": 1835,
       "wins": 59,
       "losses": 34,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 189,
@@ -1929,7 +2115,8 @@
       "rating": 1835,
       "wins": 41,
       "losses": 29,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 193,
@@ -1938,7 +2125,8 @@
       "rating": 1834,
       "wins": 33,
       "losses": 13,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 193,
@@ -1947,7 +2135,8 @@
       "rating": 1834,
       "wins": 43,
       "losses": 20,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 193,
@@ -1956,7 +2145,8 @@
       "rating": 1834,
       "wins": 34,
       "losses": 17,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 193,
@@ -1965,7 +2155,8 @@
       "rating": 1834,
       "wins": 41,
       "losses": 24,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 197,
@@ -1974,7 +2165,8 @@
       "rating": 1833,
       "wins": 46,
       "losses": 36,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 197,
@@ -1983,7 +2175,8 @@
       "rating": 1833,
       "wins": 55,
       "losses": 50,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 199,
@@ -1992,7 +2185,8 @@
       "rating": 1832,
       "wins": 51,
       "losses": 39,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 199,
@@ -2001,7 +2195,8 @@
       "rating": 1832,
       "wins": 52,
       "losses": 42,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 201,
@@ -2010,7 +2205,8 @@
       "rating": 1831,
       "wins": 33,
       "losses": 10,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 201,
@@ -2019,7 +2215,8 @@
       "rating": 1831,
       "wins": 52,
       "losses": 46,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 203,
@@ -2028,7 +2225,8 @@
       "rating": 1830,
       "wins": 58,
       "losses": 24,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 203,
@@ -2037,7 +2235,8 @@
       "rating": 1830,
       "wins": 35,
       "losses": 15,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 205,
@@ -2046,7 +2245,8 @@
       "rating": 1829,
       "wins": 40,
       "losses": 6,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 205,
@@ -2055,7 +2255,8 @@
       "rating": 1829,
       "wins": 32,
       "losses": 12,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 205,
@@ -2064,7 +2265,8 @@
       "rating": 1829,
       "wins": 35,
       "losses": 15,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 205,
@@ -2073,7 +2275,8 @@
       "rating": 1829,
       "wins": 35,
       "losses": 16,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 205,
@@ -2082,7 +2285,8 @@
       "rating": 1829,
       "wins": 38,
       "losses": 19,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_frost"
     },
     {
       "rank": 205,
@@ -2091,7 +2295,8 @@
       "rating": 1829,
       "wins": 40,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 205,
@@ -2100,7 +2305,8 @@
       "rating": 1829,
       "wins": 40,
       "losses": 22,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 212,
@@ -2109,7 +2315,8 @@
       "rating": 1828,
       "wins": 41,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 212,
@@ -2118,7 +2325,8 @@
       "rating": 1828,
       "wins": 51,
       "losses": 32,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 212,
@@ -2127,7 +2335,8 @@
       "rating": 1828,
       "wins": 88,
       "losses": 61,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 215,
@@ -2136,7 +2345,8 @@
       "rating": 1827,
       "wins": 34,
       "losses": 21,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 215,
@@ -2145,7 +2355,8 @@
       "rating": 1827,
       "wins": 36,
       "losses": 25,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 215,
@@ -2154,7 +2365,8 @@
       "rating": 1827,
       "wins": 90,
       "losses": 80,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_devourer"
     },
     {
       "rank": 218,
@@ -2163,7 +2375,8 @@
       "rating": 1826,
       "wins": 34,
       "losses": 9,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 219,
@@ -2172,7 +2385,8 @@
       "rating": 1825,
       "wins": 41,
       "losses": 26,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 219,
@@ -2181,7 +2395,8 @@
       "rating": 1825,
       "wins": 41,
       "losses": 34,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_devastation"
     },
     {
       "rank": 221,
@@ -2190,7 +2405,8 @@
       "rating": 1824,
       "wins": 34,
       "losses": 12,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 221,
@@ -2199,7 +2415,8 @@
       "rating": 1824,
       "wins": 32,
       "losses": 24,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 221,
@@ -2208,7 +2425,8 @@
       "rating": 1824,
       "wins": 32,
       "losses": 24,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 224,
@@ -2217,7 +2435,8 @@
       "rating": 1823,
       "wins": 32,
       "losses": 12,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 224,
@@ -2226,7 +2445,8 @@
       "rating": 1823,
       "wins": 44,
       "losses": 20,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 224,
@@ -2235,7 +2455,8 @@
       "rating": 1823,
       "wins": 53,
       "losses": 27,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 224,
@@ -2244,7 +2465,8 @@
       "rating": 1823,
       "wins": 39,
       "losses": 21,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_assassination"
     },
     {
       "rank": 228,
@@ -2253,7 +2475,8 @@
       "rating": 1822,
       "wins": 53,
       "losses": 21,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 228,
@@ -2262,7 +2485,8 @@
       "rating": 1822,
       "wins": 32,
       "losses": 15,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 228,
@@ -2271,7 +2495,8 @@
       "rating": 1822,
       "wins": 182,
       "losses": 112,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 228,
@@ -2280,7 +2505,8 @@
       "rating": 1822,
       "wins": 51,
       "losses": 32,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 232,
@@ -2289,7 +2515,8 @@
       "rating": 1821,
       "wins": 33,
       "losses": 7,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 232,
@@ -2298,7 +2525,8 @@
       "rating": 1821,
       "wins": 41,
       "losses": 20,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 232,
@@ -2307,7 +2535,8 @@
       "rating": 1821,
       "wins": 40,
       "losses": 25,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_assassination"
     },
     {
       "rank": 232,
@@ -2316,7 +2545,8 @@
       "rating": 1821,
       "wins": 39,
       "losses": 27,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 232,
@@ -2325,7 +2555,8 @@
       "rating": 1821,
       "wins": 79,
       "losses": 56,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 232,
@@ -2334,7 +2565,8 @@
       "rating": 1821,
       "wins": 53,
       "losses": 38,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 238,
@@ -2343,7 +2575,8 @@
       "rating": 1820,
       "wins": 36,
       "losses": 8,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_brewmaster"
     },
     {
       "rank": 238,
@@ -2352,7 +2585,8 @@
       "rating": 1820,
       "wins": 30,
       "losses": 7,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 238,
@@ -2361,7 +2595,8 @@
       "rating": 1820,
       "wins": 30,
       "losses": 11,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_devastation"
     },
     {
       "rank": 238,
@@ -2370,7 +2605,8 @@
       "rating": 1820,
       "wins": 37,
       "losses": 25,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_devourer"
     },
     {
       "rank": 238,
@@ -2379,7 +2615,8 @@
       "rating": 1820,
       "wins": 74,
       "losses": 54,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 238,
@@ -2388,7 +2625,8 @@
       "rating": 1820,
       "wins": 51,
       "losses": 43,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 244,
@@ -2397,7 +2635,8 @@
       "rating": 1819,
       "wins": 52,
       "losses": 28,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 244,
@@ -2406,7 +2645,8 @@
       "rating": 1819,
       "wins": 36,
       "losses": 21,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 244,
@@ -2415,7 +2655,8 @@
       "rating": 1819,
       "wins": 34,
       "losses": 20,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_assassination"
     },
     {
       "rank": 244,
@@ -2424,7 +2665,8 @@
       "rating": 1819,
       "wins": 52,
       "losses": 35,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 248,
@@ -2433,7 +2675,8 @@
       "rating": 1818,
       "wins": 82,
       "losses": 52,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 248,
@@ -2442,7 +2685,8 @@
       "rating": 1818,
       "wins": 55,
       "losses": 43,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 248,
@@ -2451,7 +2695,8 @@
       "rating": 1818,
       "wins": 52,
       "losses": 44,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 251,
@@ -2460,7 +2705,8 @@
       "rating": 1817,
       "wins": 34,
       "losses": 18,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
       "rank": 251,
@@ -2469,7 +2715,8 @@
       "rating": 1817,
       "wins": 55,
       "losses": 40,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 251,
@@ -2478,7 +2725,8 @@
       "rating": 1817,
       "wins": 53,
       "losses": 50,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 254,
@@ -2487,7 +2735,8 @@
       "rating": 1816,
       "wins": 182,
       "losses": 114,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 254,
@@ -2496,7 +2745,8 @@
       "rating": 1816,
       "wins": 35,
       "losses": 28,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 256,
@@ -2505,7 +2755,8 @@
       "rating": 1815,
       "wins": 36,
       "losses": 10,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 256,
@@ -2514,7 +2765,8 @@
       "rating": 1815,
       "wins": 37,
       "losses": 15,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 256,
@@ -2523,7 +2775,8 @@
       "rating": 1815,
       "wins": 34,
       "losses": 24,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 259,
@@ -2532,7 +2785,8 @@
       "rating": 1814,
       "wins": 31,
       "losses": 6,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 259,
@@ -2541,7 +2795,8 @@
       "rating": 1814,
       "wins": 39,
       "losses": 16,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 259,
@@ -2550,7 +2805,8 @@
       "rating": 1814,
       "wins": 41,
       "losses": 20,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 259,
@@ -2559,7 +2815,8 @@
       "rating": 1814,
       "wins": 36,
       "losses": 23,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 263,
@@ -2568,7 +2825,8 @@
       "rating": 1813,
       "wins": 31,
       "losses": 6,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 263,
@@ -2577,7 +2835,8 @@
       "rating": 1813,
       "wins": 40,
       "losses": 15,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 263,
@@ -2586,7 +2845,8 @@
       "rating": 1813,
       "wins": 40,
       "losses": 18,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 263,
@@ -2595,7 +2855,8 @@
       "rating": 1813,
       "wins": 43,
       "losses": 20,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 263,
@@ -2604,7 +2865,8 @@
       "rating": 1813,
       "wins": 33,
       "losses": 16,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_protection"
     },
     {
       "rank": 263,
@@ -2613,7 +2875,8 @@
       "rating": 1813,
       "wins": 34,
       "losses": 18,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 263,
@@ -2622,7 +2885,8 @@
       "rating": 1813,
       "wins": 54,
       "losses": 29,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 263,
@@ -2631,7 +2895,8 @@
       "rating": 1813,
       "wins": 54,
       "losses": 31,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 263,
@@ -2640,7 +2905,8 @@
       "rating": 1813,
       "wins": 32,
       "losses": 19,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 263,
@@ -2649,7 +2915,8 @@
       "rating": 1813,
       "wins": 57,
       "losses": 40,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 273,
@@ -2658,7 +2925,8 @@
       "rating": 1812,
       "wins": 32,
       "losses": 13,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 273,
@@ -2667,7 +2935,8 @@
       "rating": 1812,
       "wins": 65,
       "losses": 32,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 273,
@@ -2676,7 +2945,8 @@
       "rating": 1812,
       "wins": 35,
       "losses": 20,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_restoration"
     },
     {
       "rank": 273,
@@ -2685,7 +2955,8 @@
       "rating": 1812,
       "wins": 38,
       "losses": 22,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 273,
@@ -2694,7 +2965,8 @@
       "rating": 1812,
       "wins": 35,
       "losses": 22,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 273,
@@ -2703,7 +2975,8 @@
       "rating": 1812,
       "wins": 57,
       "losses": 39,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 273,
@@ -2712,7 +2985,8 @@
       "rating": 1812,
       "wins": 45,
       "losses": 32,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 273,
@@ -2721,7 +2995,8 @@
       "rating": 1812,
       "wins": 56,
       "losses": 44,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 273,
@@ -2730,7 +3005,8 @@
       "rating": 1812,
       "wins": 63,
       "losses": 57,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 273,
@@ -2739,7 +3015,8 @@
       "rating": 1812,
       "wins": 63,
       "losses": 57,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 283,
@@ -2748,7 +3025,8 @@
       "rating": 1811,
       "wins": 46,
       "losses": 18,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 283,
@@ -2757,7 +3035,8 @@
       "rating": 1811,
       "wins": 42,
       "losses": 17,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 283,
@@ -2766,7 +3045,8 @@
       "rating": 1811,
       "wins": 34,
       "losses": 16,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 283,
@@ -2775,7 +3055,8 @@
       "rating": 1811,
       "wins": 49,
       "losses": 26,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 283,
@@ -2784,7 +3065,8 @@
       "rating": 1811,
       "wins": 41,
       "losses": 23,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 283,
@@ -2793,7 +3075,8 @@
       "rating": 1811,
       "wins": 38,
       "losses": 23,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
       "rank": 289,
@@ -2802,7 +3085,8 @@
       "rating": 1810,
       "wins": 45,
       "losses": 13,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 289,
@@ -2811,7 +3095,8 @@
       "rating": 1810,
       "wins": 53,
       "losses": 20,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 289,
@@ -2820,7 +3105,8 @@
       "rating": 1810,
       "wins": 31,
       "losses": 14,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 289,
@@ -2829,7 +3115,8 @@
       "rating": 1810,
       "wins": 47,
       "losses": 33,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_feral"
     },
     {
       "rank": 289,
@@ -2838,7 +3125,8 @@
       "rating": 1810,
       "wins": 93,
       "losses": 70,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 289,
@@ -2847,7 +3135,8 @@
       "rating": 1810,
       "wins": 46,
       "losses": 35,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 295,
@@ -2856,7 +3145,8 @@
       "rating": 1809,
       "wins": 45,
       "losses": 22,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 295,
@@ -2865,7 +3155,8 @@
       "rating": 1809,
       "wins": 37,
       "losses": 19,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 295,
@@ -2874,7 +3165,8 @@
       "rating": 1809,
       "wins": 53,
       "losses": 38,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 295,
@@ -2883,7 +3175,8 @@
       "rating": 1809,
       "wins": 53,
       "losses": 38,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 295,
@@ -2892,7 +3185,8 @@
       "rating": 1809,
       "wins": 36,
       "losses": 28,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 295,
@@ -2901,7 +3195,8 @@
       "rating": 1809,
       "wins": 42,
       "losses": 33,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
       "rank": 295,
@@ -2910,7 +3205,8 @@
       "rating": 1809,
       "wins": 42,
       "losses": 33,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 295,
@@ -2919,7 +3215,8 @@
       "rating": 1809,
       "wins": 47,
       "losses": 37,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 295,
@@ -2928,7 +3225,8 @@
       "rating": 1809,
       "wins": 46,
       "losses": 45,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 304,
@@ -2937,7 +3235,8 @@
       "rating": 1808,
       "wins": 32,
       "losses": 11,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 304,
@@ -2946,7 +3245,8 @@
       "rating": 1808,
       "wins": 38,
       "losses": 18,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 304,
@@ -2955,7 +3255,8 @@
       "rating": 1808,
       "wins": 36,
       "losses": 21,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
       "rank": 304,
@@ -2964,7 +3265,8 @@
       "rating": 1808,
       "wins": 40,
       "losses": 25,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 308,
@@ -2973,7 +3275,8 @@
       "rating": 1807,
       "wins": 34,
       "losses": 5,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 308,
@@ -2982,7 +3285,8 @@
       "rating": 1807,
       "wins": 47,
       "losses": 20,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 308,
@@ -2991,7 +3295,8 @@
       "rating": 1807,
       "wins": 42,
       "losses": 19,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
       "rank": 311,
@@ -3000,7 +3305,8 @@
       "rating": 1806,
       "wins": 35,
       "losses": 19,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 311,
@@ -3009,7 +3315,8 @@
       "rating": 1806,
       "wins": 35,
       "losses": 19,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_devourer"
     },
     {
       "rank": 311,
@@ -3018,7 +3325,8 @@
       "rating": 1806,
       "wins": 31,
       "losses": 19,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 311,
@@ -3027,7 +3335,8 @@
       "rating": 1806,
       "wins": 31,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 311,
@@ -3036,7 +3345,8 @@
       "rating": 1806,
       "wins": 38,
       "losses": 26,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 311,
@@ -3045,7 +3355,8 @@
       "rating": 1806,
       "wins": 92,
       "losses": 75,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 317,
@@ -3054,7 +3365,8 @@
       "rating": 1805,
       "wins": 31,
       "losses": 4,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 317,
@@ -3063,7 +3375,8 @@
       "rating": 1805,
       "wins": 32,
       "losses": 13,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 317,
@@ -3072,7 +3385,8 @@
       "rating": 1805,
       "wins": 32,
       "losses": 13,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 317,
@@ -3081,7 +3395,8 @@
       "rating": 1805,
       "wins": 45,
       "losses": 25,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 317,
@@ -3090,7 +3405,8 @@
       "rating": 1805,
       "wins": 32,
       "losses": 22,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
       "rank": 317,
@@ -3099,7 +3415,8 @@
       "rating": 1805,
       "wins": 37,
       "losses": 28,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_assassination"
     },
     {
       "rank": 317,
@@ -3108,7 +3425,8 @@
       "rating": 1805,
       "wins": 37,
       "losses": 28,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 317,
@@ -3117,7 +3435,8 @@
       "rating": 1805,
       "wins": 35,
       "losses": 28,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
       "rank": 325,
@@ -3126,7 +3445,8 @@
       "rating": 1804,
       "wins": 36,
       "losses": 8,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 325,
@@ -3135,7 +3455,8 @@
       "rating": 1804,
       "wins": 42,
       "losses": 20,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 325,
@@ -3144,7 +3465,8 @@
       "rating": 1804,
       "wins": 35,
       "losses": 18,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
       "rank": 325,
@@ -3153,7 +3475,8 @@
       "rating": 1804,
       "wins": 33,
       "losses": 20,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 325,
@@ -3162,7 +3485,8 @@
       "rating": 1804,
       "wins": 34,
       "losses": 21,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 325,
@@ -3171,7 +3495,8 @@
       "rating": 1804,
       "wins": 51,
       "losses": 32,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 325,
@@ -3180,7 +3505,8 @@
       "rating": 1804,
       "wins": 35,
       "losses": 24,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_blood"
     },
     {
       "rank": 325,
@@ -3189,7 +3515,8 @@
       "rating": 1804,
       "wins": 85,
       "losses": 60,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 325,
@@ -3198,7 +3525,8 @@
       "rating": 1804,
       "wins": 35,
       "losses": 29,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 334,
@@ -3207,7 +3535,8 @@
       "rating": 1803,
       "wins": 39,
       "losses": 17,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 334,
@@ -3216,7 +3545,8 @@
       "rating": 1803,
       "wins": 34,
       "losses": 18,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 334,
@@ -3225,7 +3555,8 @@
       "rating": 1803,
       "wins": 41,
       "losses": 26,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 334,
@@ -3234,7 +3565,8 @@
       "rating": 1803,
       "wins": 43,
       "losses": 29,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 334,
@@ -3243,7 +3575,8 @@
       "rating": 1803,
       "wins": 35,
       "losses": 29,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 334,
@@ -3252,7 +3585,8 @@
       "rating": 1803,
       "wins": 35,
       "losses": 29,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 340,
@@ -3261,7 +3595,8 @@
       "rating": 1802,
       "wins": 32,
       "losses": 16,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 340,
@@ -3270,7 +3605,8 @@
       "rating": 1802,
       "wins": 45,
       "losses": 27,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 340,
@@ -3279,7 +3615,8 @@
       "rating": 1802,
       "wins": 31,
       "losses": 19,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
       "rank": 340,
@@ -3288,7 +3625,8 @@
       "rating": 1802,
       "wins": 58,
       "losses": 36,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
       "rank": 340,
@@ -3297,7 +3635,8 @@
       "rating": 1802,
       "wins": 37,
       "losses": 23,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 340,
@@ -3306,7 +3645,8 @@
       "rating": 1802,
       "wins": 32,
       "losses": 20,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_brewmaster"
     },
     {
       "rank": 340,
@@ -3315,7 +3655,8 @@
       "rating": 1802,
       "wins": 33,
       "losses": 21,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 340,
@@ -3324,7 +3665,8 @@
       "rating": 1802,
       "wins": 37,
       "losses": 24,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 340,
@@ -3333,7 +3675,8 @@
       "rating": 1802,
       "wins": 32,
       "losses": 22,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 340,
@@ -3342,7 +3685,8 @@
       "rating": 1802,
       "wins": 40,
       "losses": 30,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_blood"
     },
     {
       "rank": 350,
@@ -3351,7 +3695,8 @@
       "rating": 1801,
       "wins": 32,
       "losses": 5,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 350,
@@ -3360,7 +3705,8 @@
       "rating": 1801,
       "wins": 31,
       "losses": 15,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 350,
@@ -3369,7 +3715,8 @@
       "rating": 1801,
       "wins": 32,
       "losses": 19,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 350,
@@ -3378,7 +3725,8 @@
       "rating": 1801,
       "wins": 32,
       "losses": 19,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 350,
@@ -3387,7 +3735,8 @@
       "rating": 1801,
       "wins": 38,
       "losses": 26,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 350,
@@ -3396,7 +3745,8 @@
       "rating": 1801,
       "wins": 45,
       "losses": 33,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 350,
@@ -3405,7 +3755,8 @@
       "rating": 1801,
       "wins": 50,
       "losses": 38,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_vengeance"
     },
     {
       "rank": 350,
@@ -3414,7 +3765,8 @@
       "rating": 1801,
       "wins": 101,
       "losses": 95,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 358,
@@ -3423,7 +3775,8 @@
       "rating": 1800,
       "wins": 33,
       "losses": 8,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 358,
@@ -3432,7 +3785,8 @@
       "rating": 1800,
       "wins": 36,
       "losses": 20,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 358,
@@ -3441,7 +3795,8 @@
       "rating": 1800,
       "wins": 39,
       "losses": 24,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_marksmanship"
     },
     {
       "rank": 358,
@@ -3450,7 +3805,8 @@
       "rating": 1800,
       "wins": 39,
       "losses": 24,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 358,
@@ -3459,7 +3815,8 @@
       "rating": 1800,
       "wins": 30,
       "losses": 19,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 358,
@@ -3468,7 +3825,8 @@
       "rating": 1800,
       "wins": 30,
       "losses": 19,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 358,
@@ -3477,7 +3835,8 @@
       "rating": 1800,
       "wins": 44,
       "losses": 30,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
       "rank": 358,
@@ -3486,7 +3845,8 @@
       "rating": 1800,
       "wins": 45,
       "losses": 34,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 358,
@@ -3495,7 +3855,8 @@
       "rating": 1800,
       "wins": 40,
       "losses": 31,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 358,
@@ -3504,7 +3865,8 @@
       "rating": 1800,
       "wins": 40,
       "losses": 34,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_balance"
     },
     {
       "rank": 358,
@@ -3513,7 +3875,8 @@
       "rating": 1800,
       "wins": 40,
       "losses": 34,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 369,
@@ -3522,7 +3885,8 @@
       "rating": 1799,
       "wins": 64,
       "losses": 60,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 370,
@@ -3531,7 +3895,8 @@
       "rating": 1798,
       "wins": 29,
       "losses": 9,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 370,
@@ -3540,7 +3905,8 @@
       "rating": 1798,
       "wins": 48,
       "losses": 39,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 372,
@@ -3549,7 +3915,8 @@
       "rating": 1797,
       "wins": 29,
       "losses": 15,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_fire"
     },
     {
       "rank": 373,
@@ -3558,7 +3925,8 @@
       "rating": 1796,
       "wins": 33,
       "losses": 7,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 373,
@@ -3567,7 +3935,8 @@
       "rating": 1796,
       "wins": 37,
       "losses": 13,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 375,
@@ -3576,7 +3945,8 @@
       "rating": 1795,
       "wins": 38,
       "losses": 21,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 375,
@@ -3585,7 +3955,8 @@
       "rating": 1795,
       "wins": 59,
       "losses": 34,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 377,
@@ -3594,7 +3965,8 @@
       "rating": 1794,
       "wins": 36,
       "losses": 20,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 377,
@@ -3603,7 +3975,8 @@
       "rating": 1794,
       "wins": 59,
       "losses": 48,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 379,
@@ -3612,7 +3985,8 @@
       "rating": 1793,
       "wins": 33,
       "losses": 5,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 379,
@@ -3621,7 +3995,8 @@
       "rating": 1793,
       "wins": 32,
       "losses": 17,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 379,
@@ -3630,7 +4005,8 @@
       "rating": 1793,
       "wins": 49,
       "losses": 48,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 382,
@@ -3639,7 +4015,8 @@
       "rating": 1792,
       "wins": 31,
       "losses": 6,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 382,
@@ -3648,7 +4025,8 @@
       "rating": 1792,
       "wins": 54,
       "losses": 42,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 384,
@@ -3657,7 +4035,8 @@
       "rating": 1791,
       "wins": 30,
       "losses": 1,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 384,
@@ -3666,7 +4045,8 @@
       "rating": 1791,
       "wins": 36,
       "losses": 20,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 384,
@@ -3675,7 +4055,8 @@
       "rating": 1791,
       "wins": 38,
       "losses": 24,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 384,
@@ -3684,7 +4065,8 @@
       "rating": 1791,
       "wins": 29,
       "losses": 19,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 388,
@@ -3693,7 +4075,8 @@
       "rating": 1790,
       "wins": 31,
       "losses": 12,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 388,
@@ -3702,7 +4085,8 @@
       "rating": 1790,
       "wins": 40,
       "losses": 29,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_frost"
     },
     {
       "rank": 388,
@@ -3711,7 +4095,8 @@
       "rating": 1790,
       "wins": 52,
       "losses": 38,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 388,
@@ -3720,7 +4105,8 @@
       "rating": 1790,
       "wins": 50,
       "losses": 37,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 392,
@@ -3729,7 +4115,8 @@
       "rating": 1789,
       "wins": 33,
       "losses": 4,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 392,
@@ -3738,7 +4125,8 @@
       "rating": 1789,
       "wins": 39,
       "losses": 11,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 394,
@@ -3747,7 +4135,8 @@
       "rating": 1788,
       "wins": 74,
       "losses": 37,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 394,
@@ -3756,7 +4145,8 @@
       "rating": 1788,
       "wins": 62,
       "losses": 34,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 394,
@@ -3765,7 +4155,8 @@
       "rating": 1788,
       "wins": 62,
       "losses": 42,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 397,
@@ -3774,7 +4165,8 @@
       "rating": 1786,
       "wins": 45,
       "losses": 20,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 397,
@@ -3783,7 +4175,8 @@
       "rating": 1786,
       "wins": 40,
       "losses": 21,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 397,
@@ -3792,7 +4185,8 @@
       "rating": 1786,
       "wins": 51,
       "losses": 40,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 400,
@@ -3801,7 +4195,8 @@
       "rating": 1785,
       "wins": 37,
       "losses": 20,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 400,
@@ -3810,7 +4205,8 @@
       "rating": 1785,
       "wins": 42,
       "losses": 23,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_fire"
     },
     {
       "rank": 400,
@@ -3819,7 +4215,8 @@
       "rating": 1785,
       "wins": 39,
       "losses": 28,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 400,
@@ -3828,7 +4225,8 @@
       "rating": 1785,
       "wins": 39,
       "losses": 28,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_feral"
     },
     {
       "rank": 404,
@@ -3837,7 +4235,8 @@
       "rating": 1784,
       "wins": 31,
       "losses": 8,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 404,
@@ -3846,7 +4245,8 @@
       "rating": 1784,
       "wins": 28,
       "losses": 9,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
       "rank": 404,
@@ -3855,7 +4255,8 @@
       "rating": 1784,
       "wins": 37,
       "losses": 13,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 404,
@@ -3864,7 +4265,8 @@
       "rating": 1784,
       "wins": 43,
       "losses": 27,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 408,
@@ -3873,7 +4275,8 @@
       "rating": 1783,
       "wins": 31,
       "losses": 2,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 408,
@@ -3882,7 +4285,8 @@
       "rating": 1783,
       "wins": 41,
       "losses": 6,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 408,
@@ -3891,7 +4295,8 @@
       "rating": 1783,
       "wins": 49,
       "losses": 31,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 408,
@@ -3900,7 +4305,8 @@
       "rating": 1783,
       "wins": 47,
       "losses": 30,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 408,
@@ -3909,7 +4315,8 @@
       "rating": 1783,
       "wins": 53,
       "losses": 36,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 408,
@@ -3918,7 +4325,8 @@
       "rating": 1783,
       "wins": 92,
       "losses": 94,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 414,
@@ -3927,7 +4335,8 @@
       "rating": 1782,
       "wins": 39,
       "losses": 26,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 414,
@@ -3936,7 +4345,8 @@
       "rating": 1782,
       "wins": 47,
       "losses": 33,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 414,
@@ -3945,7 +4355,8 @@
       "rating": 1782,
       "wins": 40,
       "losses": 29,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_feral"
     },
     {
       "rank": 414,
@@ -3954,7 +4365,8 @@
       "rating": 1782,
       "wins": 47,
       "losses": 35,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 418,
@@ -3963,7 +4375,8 @@
       "rating": 1781,
       "wins": 50,
       "losses": 19,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 418,
@@ -3972,7 +4385,8 @@
       "rating": 1781,
       "wins": 30,
       "losses": 21,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 420,
@@ -3981,7 +4395,8 @@
       "rating": 1780,
       "wins": 38,
       "losses": 17,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 420,
@@ -3990,7 +4405,8 @@
       "rating": 1780,
       "wins": 72,
       "losses": 67,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 422,
@@ -3999,7 +4415,8 @@
       "rating": 1779,
       "wins": 49,
       "losses": 48,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 422,
@@ -4008,7 +4425,8 @@
       "rating": 1779,
       "wins": 49,
       "losses": 48,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 424,
@@ -4017,7 +4435,8 @@
       "rating": 1778,
       "wins": 56,
       "losses": 33,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 424,
@@ -4026,7 +4445,8 @@
       "rating": 1778,
       "wins": 50,
       "losses": 32,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 424,
@@ -4035,7 +4455,8 @@
       "rating": 1778,
       "wins": 49,
       "losses": 40,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 427,
@@ -4044,7 +4465,8 @@
       "rating": 1777,
       "wins": 28,
       "losses": 10,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 427,
@@ -4053,7 +4475,8 @@
       "rating": 1777,
       "wins": 43,
       "losses": 32,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 429,
@@ -4062,7 +4485,8 @@
       "rating": 1776,
       "wins": 34,
       "losses": 24,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 429,
@@ -4071,7 +4495,8 @@
       "rating": 1776,
       "wins": 29,
       "losses": 22,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 429,
@@ -4080,7 +4505,8 @@
       "rating": 1776,
       "wins": 85,
       "losses": 75,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 432,
@@ -4089,7 +4515,8 @@
       "rating": 1775,
       "wins": 34,
       "losses": 29,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 433,
@@ -4098,7 +4525,8 @@
       "rating": 1774,
       "wins": 48,
       "losses": 26,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 433,
@@ -4107,7 +4535,8 @@
       "rating": 1774,
       "wins": 72,
       "losses": 61,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 433,
@@ -4116,7 +4545,8 @@
       "rating": 1774,
       "wins": 32,
       "losses": 29,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 436,
@@ -4125,7 +4555,8 @@
       "rating": 1773,
       "wins": 40,
       "losses": 23,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 436,
@@ -4134,7 +4565,8 @@
       "rating": 1773,
       "wins": 31,
       "losses": 23,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 438,
@@ -4143,7 +4575,8 @@
       "rating": 1772,
       "wins": 43,
       "losses": 18,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 438,
@@ -4152,7 +4585,8 @@
       "rating": 1772,
       "wins": 30,
       "losses": 14,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 438,
@@ -4161,7 +4595,8 @@
       "rating": 1772,
       "wins": 34,
       "losses": 17,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 438,
@@ -4170,7 +4605,8 @@
       "rating": 1772,
       "wins": 37,
       "losses": 22,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 438,
@@ -4179,7 +4615,8 @@
       "rating": 1772,
       "wins": 98,
       "losses": 66,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 438,
@@ -4188,7 +4625,8 @@
       "rating": 1772,
       "wins": 56,
       "losses": 43,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 438,
@@ -4197,7 +4635,8 @@
       "rating": 1772,
       "wins": 56,
       "losses": 45,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_destruction"
     },
     {
       "rank": 438,
@@ -4206,7 +4645,8 @@
       "rating": 1772,
       "wins": 36,
       "losses": 31,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 446,
@@ -4215,7 +4655,8 @@
       "rating": 1771,
       "wins": 32,
       "losses": 17,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 446,
@@ -4224,7 +4665,8 @@
       "rating": 1771,
       "wins": 46,
       "losses": 30,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 446,
@@ -4233,7 +4675,8 @@
       "rating": 1771,
       "wins": 47,
       "losses": 31,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 446,
@@ -4242,7 +4685,8 @@
       "rating": 1771,
       "wins": 52,
       "losses": 42,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 446,
@@ -4251,7 +4695,8 @@
       "rating": 1771,
       "wins": 46,
       "losses": 43,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
       "rank": 451,
@@ -4260,7 +4705,8 @@
       "rating": 1770,
       "wins": 34,
       "losses": 2,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 451,
@@ -4269,7 +4715,8 @@
       "rating": 1770,
       "wins": 37,
       "losses": 18,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 451,
@@ -4278,7 +4725,8 @@
       "rating": 1770,
       "wins": 51,
       "losses": 25,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 451,
@@ -4287,7 +4735,8 @@
       "rating": 1770,
       "wins": 40,
       "losses": 24,
-      "classId": "warlock"
+      "classId": "warlock",
+      "specId": "warlock_demonology"
     },
     {
       "rank": 451,
@@ -4296,7 +4745,8 @@
       "rating": 1770,
       "wins": 31,
       "losses": 20,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_frost"
     },
     {
       "rank": 451,
@@ -4305,7 +4755,8 @@
       "rating": 1770,
       "wins": 45,
       "losses": 33,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 457,
@@ -4314,7 +4765,8 @@
       "rating": 1769,
       "wins": 35,
       "losses": 11,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 457,
@@ -4323,7 +4775,8 @@
       "rating": 1769,
       "wins": 30,
       "losses": 15,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 457,
@@ -4332,7 +4785,8 @@
       "rating": 1769,
       "wins": 35,
       "losses": 20,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 457,
@@ -4341,7 +4795,8 @@
       "rating": 1769,
       "wins": 48,
       "losses": 29,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 457,
@@ -4350,7 +4805,8 @@
       "rating": 1769,
       "wins": 49,
       "losses": 32,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_holy"
     },
     {
       "rank": 462,
@@ -4359,7 +4815,8 @@
       "rating": 1768,
       "wins": 46,
       "losses": 27,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_beastmastery"
     },
     {
       "rank": 462,
@@ -4368,7 +4825,8 @@
       "rating": 1768,
       "wins": 33,
       "losses": 23,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 462,
@@ -4377,7 +4835,8 @@
       "rating": 1768,
       "wins": 34,
       "losses": 25,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 462,
@@ -4386,7 +4845,8 @@
       "rating": 1768,
       "wins": 45,
       "losses": 38,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 466,
@@ -4395,7 +4855,8 @@
       "rating": 1767,
       "wins": 28,
       "losses": 0,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 466,
@@ -4404,7 +4865,8 @@
       "rating": 1767,
       "wins": 42,
       "losses": 19,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 466,
@@ -4413,7 +4875,8 @@
       "rating": 1767,
       "wins": 30,
       "losses": 20,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 466,
@@ -4422,7 +4885,8 @@
       "rating": 1767,
       "wins": 43,
       "losses": 37,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 466,
@@ -4431,7 +4895,8 @@
       "rating": 1767,
       "wins": 43,
       "losses": 37,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 471,
@@ -4440,7 +4905,8 @@
       "rating": 1766,
       "wins": 33,
       "losses": 15,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 471,
@@ -4449,7 +4915,8 @@
       "rating": 1766,
       "wins": 31,
       "losses": 17,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 471,
@@ -4458,7 +4925,8 @@
       "rating": 1766,
       "wins": 33,
       "losses": 19,
-      "classId": "hunter"
+      "classId": "hunter",
+      "specId": "hunter_survival"
     },
     {
       "rank": 471,
@@ -4467,7 +4935,8 @@
       "rating": 1766,
       "wins": 44,
       "losses": 29,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 475,
@@ -4476,7 +4945,8 @@
       "rating": 1765,
       "wins": 28,
       "losses": 9,
-      "classId": "evoker"
+      "classId": "evoker",
+      "specId": "evoker_preservation"
     },
     {
       "rank": 475,
@@ -4485,7 +4955,8 @@
       "rating": 1765,
       "wins": 48,
       "losses": 20,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 475,
@@ -4494,7 +4965,8 @@
       "rating": 1765,
       "wins": 30,
       "losses": 13,
-      "classId": "druid"
+      "classId": "druid",
+      "specId": "druid_balance"
     },
     {
       "rank": 475,
@@ -4503,7 +4975,8 @@
       "rating": 1765,
       "wins": 39,
       "losses": 26,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 479,
@@ -4512,7 +4985,8 @@
       "rating": 1764,
       "wins": 31,
       "losses": 15,
-      "classId": "warrior"
+      "classId": "warrior",
+      "specId": "warrior_fury"
     },
     {
       "rank": 479,
@@ -4521,7 +4995,8 @@
       "rating": 1764,
       "wins": 115,
       "losses": 67,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_holy"
     },
     {
       "rank": 479,
@@ -4530,7 +5005,8 @@
       "rating": 1764,
       "wins": 44,
       "losses": 26,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 479,
@@ -4539,7 +5015,8 @@
       "rating": 1764,
       "wins": 50,
       "losses": 42,
-      "classId": "deathknight"
+      "classId": "deathknight",
+      "specId": "deathknight_unholy"
     },
     {
       "rank": 479,
@@ -4548,7 +5025,8 @@
       "rating": 1764,
       "wins": 50,
       "losses": 42,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 484,
@@ -4557,7 +5035,8 @@
       "rating": 1763,
       "wins": 46,
       "losses": 27,
-      "classId": null
+      "classId": null,
+      "specId": null
     },
     {
       "rank": 484,
@@ -4566,7 +5045,8 @@
       "rating": 1763,
       "wins": 51,
       "losses": 32,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     },
     {
       "rank": 484,
@@ -4575,7 +5055,8 @@
       "rating": 1763,
       "wins": 40,
       "losses": 30,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 487,
@@ -4584,7 +5065,8 @@
       "rating": 1762,
       "wins": 32,
       "losses": 9,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 487,
@@ -4593,7 +5075,8 @@
       "rating": 1762,
       "wins": 46,
       "losses": 35,
-      "classId": "paladin"
+      "classId": "paladin",
+      "specId": "paladin_retribution"
     },
     {
       "rank": 489,
@@ -4602,7 +5085,8 @@
       "rating": 1761,
       "wins": 29,
       "losses": 15,
-      "classId": "demonhunter"
+      "classId": "demonhunter",
+      "specId": "demonhunter_havoc"
     },
     {
       "rank": 489,
@@ -4611,7 +5095,8 @@
       "rating": 1761,
       "wins": 29,
       "losses": 18,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_windwalker"
     },
     {
       "rank": 489,
@@ -4620,7 +5105,8 @@
       "rating": 1761,
       "wins": 43,
       "losses": 28,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 489,
@@ -4629,7 +5115,8 @@
       "rating": 1761,
       "wins": 32,
       "losses": 24,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_shadow"
     },
     {
       "rank": 489,
@@ -4638,7 +5125,8 @@
       "rating": 1761,
       "wins": 33,
       "losses": 26,
-      "classId": "shaman"
+      "classId": "shaman",
+      "specId": "shaman_enhancement"
     },
     {
       "rank": 489,
@@ -4647,7 +5135,8 @@
       "rating": 1761,
       "wins": 64,
       "losses": 58,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 495,
@@ -4656,7 +5145,8 @@
       "rating": 1760,
       "wins": 86,
       "losses": 51,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 495,
@@ -4665,7 +5155,8 @@
       "rating": 1760,
       "wins": 56,
       "losses": 34,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 495,
@@ -4674,7 +5165,8 @@
       "rating": 1760,
       "wins": 50,
       "losses": 31,
-      "classId": "rogue"
+      "classId": "rogue",
+      "specId": "rogue_subtlety"
     },
     {
       "rank": 495,
@@ -4683,7 +5175,8 @@
       "rating": 1760,
       "wins": 48,
       "losses": 42,
-      "classId": "mage"
+      "classId": "mage",
+      "specId": "mage_fire"
     },
     {
       "rank": 495,
@@ -4692,7 +5185,8 @@
       "rating": 1760,
       "wins": 50,
       "losses": 45,
-      "classId": "monk"
+      "classId": "monk",
+      "specId": "monk_mistweaver"
     },
     {
       "rank": 500,
@@ -4701,7 +5195,8 @@
       "rating": 1759,
       "wins": 39,
       "losses": 25,
-      "classId": "priest"
+      "classId": "priest",
+      "specId": "priest_discipline"
     }
   ]
 }
