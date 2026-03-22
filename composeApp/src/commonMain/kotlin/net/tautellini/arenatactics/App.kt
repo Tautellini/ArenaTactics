@@ -223,7 +223,7 @@ fun App() {
                         val vm = viewModel(key = "spec_${screen.addonId}_${screen.specId}") {
                             SpecGuideViewModel(
                                 screen.addonId, screen.classId, screen.specId,
-                                addonRepository, specRepository, compositionRepository, gearRepository
+                                addonRepository, specRepository, compositionRepository, ladderRepository
                             )
                         }
                         SpecGuideScreen(viewModel = vm)
