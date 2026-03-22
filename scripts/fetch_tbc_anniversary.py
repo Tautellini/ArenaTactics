@@ -131,11 +131,24 @@ def main():
 
         print(f"  [{region}] Fetched {len(player_profiles)}/{len(unique_ids)} profiles")
 
+        # ── Collect unique items from all profiles and strip _items from player data ──
+        all_items: dict[int, dict] = {}
+        for char_id_str, profile in player_profiles.items():
+            items = profile.pop("_items", {})
+            for item_id, item_data in items.items():
+                all_items.setdefault(int(item_id), item_data)
+
         # ── Write players_{region}.json ──
         players_file = addon_dir / f"players_{region}.json"
         with open(players_file, "w", encoding="utf-8") as f:
             json.dump(player_profiles, f, indent=2, ensure_ascii=False)
         print(f"  [{region}] Wrote {players_file.name} ({len(player_profiles)} players)")
+
+        # ── Write items_{region}.json ──
+        items_file = addon_dir / f"items_{region}.json"
+        with open(items_file, "w", encoding="utf-8") as f:
+            json.dump({str(k): v for k, v in all_items.items()}, f, indent=2, ensure_ascii=False)
+        print(f"  [{region}] Wrote {items_file.name} ({len(all_items)} unique items)")
 
         # ── Build snapshot per bracket ──
         for bracket in BRACKETS:

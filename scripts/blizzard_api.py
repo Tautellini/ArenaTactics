@@ -232,7 +232,6 @@ def fetch_full_player_profile(
         for item in equip.get("equipped_items", []):
             slot = item.get("slot", {}).get("type", "UNKNOWN")
             enchants = item.get("enchantments", [])
-            # First PERMANENT enchant is the main one
             enchant_name = None
             gems = []
             for e in enchants:
@@ -241,7 +240,6 @@ def fetch_full_player_profile(
                 if slot_type == "PERMANENT" and source:
                     enchant_name = source
                 elif source and not slot_type:
-                    # Gem slots don't have a "type" field, or have numeric IDs
                     gems.append(source)
 
             result["equipment"].append({
@@ -252,6 +250,40 @@ def fetch_full_player_profile(
                 "enchant": enchant_name,
                 "gems": gems,
             })
+
+            # Collect full item tooltip data for dedup storage
+            item_id = item.get("item", {}).get("id", 0)
+            if item_id and "_items" not in result:
+                result["_items"] = {}
+            if item_id and item_id not in result.get("_items", {}):
+                weapon_data = item.get("weapon")
+                result.setdefault("_items", {})[item_id] = {
+                    "itemId": item_id,
+                    "name": item.get("name", "Unknown"),
+                    "quality": item.get("quality", {}).get("type"),
+                    "slotName": item.get("slot", {}).get("name"),
+                    "itemSubclass": item.get("item_subclass", {}).get("name"),
+                    "binding": item.get("binding", {}).get("name"),
+                    "armor": item.get("armor", {}).get("value") if item.get("armor") else None,
+                    "stats": [
+                        s.get("display", {}).get("display_string", "")
+                        for s in item.get("stats", [])
+                    ],
+                    "spells": [
+                        s.get("description", "")
+                        for s in item.get("spells", [])
+                    ],
+                    "weaponDamage": weapon_data.get("damage", {}).get("display_string") if weapon_data else None,
+                    "weaponSpeed": weapon_data.get("attack_speed", {}).get("display_string") if weapon_data else None,
+                    "weaponDps": weapon_data.get("dps", {}).get("display_string") if weapon_data else None,
+                    "setName": item.get("set", {}).get("item_set", {}).get("name") if item.get("set") else None,
+                    "setEffects": [
+                        e.get("display_string", "")
+                        for e in item.get("set", {}).get("effects", [])
+                    ] if item.get("set") else [],
+                    "requiredLevel": item.get("requirements", {}).get("level", {}).get("display_string"),
+                    "requiredClasses": item.get("requirements", {}).get("playable_classes", {}).get("display_string"),
+                }
     except Exception:
         pass
 

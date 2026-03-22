@@ -9,9 +9,13 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.foundation.clickable
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -22,12 +26,15 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
 import net.tautellini.arenatactics.data.model.EquippedItem
+import net.tautellini.arenatactics.data.model.ItemTooltipData
 import net.tautellini.arenatactics.data.model.PlayerProfile
 import net.tautellini.arenatactics.data.model.PvpBracketRating
 import net.tautellini.arenatactics.data.model.TalentGroup
 import net.tautellini.arenatactics.data.model.WowheadIcons
+import net.tautellini.arenatactics.openUrl
 import net.tautellini.arenatactics.presentation.PlayerDetailState
 import net.tautellini.arenatactics.presentation.PlayerDetailViewModel
+import net.tautellini.arenatactics.presentation.screens.components.ItemTooltipPopup
 import net.tautellini.arenatactics.presentation.theme.*
 
 // ─── Icon maps (shared with LadderScreen via convention — extract later if needed) ──
@@ -110,12 +117,12 @@ fun PlayerDetailScreen(viewModel: PlayerDetailViewModel) {
             contentAlignment = Alignment.Center
         ) { Text(s.message, color = TextSecondary) }
 
-        is PlayerDetailState.Success -> PlayerDetailContent(s.player)
+        is PlayerDetailState.Success -> PlayerDetailContent(s.player, s.items)
     }
 }
 
 @Composable
-private fun PlayerDetailContent(player: PlayerProfile) {
+private fun PlayerDetailContent(player: PlayerProfile, items: Map<String, ItemTooltipData>) {
     val classClr = player.classId?.let { classColor(it) } ?: TextPrimary
 
     Column(
@@ -151,7 +158,7 @@ private fun PlayerDetailContent(player: PlayerProfile) {
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 sorted.forEach { item ->
-                    EquipmentItemCard(item)
+                    EquipmentItemCard(item, items[item.itemId.toString()])
                 }
             }
         }
@@ -261,47 +268,68 @@ private fun BracketRatingCard(bracket: String, rating: PvpBracketRating) {
 }
 
 @Composable
-private fun EquipmentItemCard(item: EquippedItem) {
+private fun EquipmentItemCard(item: EquippedItem, tooltipData: ItemTooltipData? = null) {
     val qualityColor = QualityColors[item.quality] ?: TextPrimary
     val shape = RoundedCornerShape(10.dp)
+    var showTooltip by remember { mutableStateOf(false) }
 
-    Surface(color = CardColor, shape = shape, modifier = Modifier.widthIn(min = 260.dp, max = 400.dp)) {
-        Row(
-            modifier = Modifier.padding(10.dp),
-            horizontalArrangement = Arrangement.spacedBy(10.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            // Item icon from Wowhead
-            if (item.itemId > 0) {
-                AsyncImage(
-                    model = WowheadIcons.medium("inv_misc_questionmark"),
-                    contentDescription = item.name,
-                    modifier = Modifier.size(36.dp).clip(RoundedCornerShape(6.dp))
-                        .border(1.dp, qualityColor.copy(alpha = 0.5f), RoundedCornerShape(6.dp))
-                )
-            }
-
-            Column(modifier = Modifier.weight(1f)) {
-                Text(
-                    slotDisplayName(item.slot),
-                    color = TextSecondary, fontSize = 10.sp
-                )
-                Text(
-                    item.name,
-                    color = qualityColor, fontSize = 13.sp, fontWeight = FontWeight.Medium,
-                    maxLines = 1, overflow = TextOverflow.Ellipsis
-                )
-                if (!item.enchant.isNullOrEmpty()) {
-                    Text(item.enchant!!, color = Color(0xFF1EFF00), fontSize = 11.sp, maxLines = 1, overflow = TextOverflow.Ellipsis)
+    Box {
+        Surface(
+            color = CardColor,
+            shape = shape,
+            modifier = Modifier
+                .widthIn(min = 260.dp, max = 400.dp)
+                .clickable {
+                    if (tooltipData != null) showTooltip = !showTooltip
+                    else if (item.itemId > 0) openUrl("https://www.wowhead.com/tbc/item=${item.itemId}")
                 }
-                if (item.gems.isNotEmpty()) {
-                    Text(
-                        item.gems.joinToString(", "),
-                        color = TextSecondary.copy(alpha = 0.7f),
-                        fontSize = 10.sp, maxLines = 1, overflow = TextOverflow.Ellipsis
+        ) {
+            Row(
+                modifier = Modifier.padding(10.dp),
+                horizontalArrangement = Arrangement.spacedBy(10.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                if (item.itemId > 0) {
+                    AsyncImage(
+                        model = WowheadIcons.medium("inv_misc_questionmark"),
+                        contentDescription = item.name,
+                        modifier = Modifier.size(36.dp).clip(RoundedCornerShape(6.dp))
+                            .border(1.dp, qualityColor.copy(alpha = 0.5f), RoundedCornerShape(6.dp))
                     )
                 }
+
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(slotDisplayName(item.slot), color = TextSecondary, fontSize = 10.sp)
+                    Text(
+                        item.name,
+                        color = qualityColor, fontSize = 13.sp, fontWeight = FontWeight.Medium,
+                        maxLines = 1, overflow = TextOverflow.Ellipsis
+                    )
+                    if (!item.enchant.isNullOrEmpty()) {
+                        Text(item.enchant!!, color = Color(0xFF1EFF00), fontSize = 11.sp, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                    }
+                    if (item.gems.isNotEmpty()) {
+                        Text(
+                            item.gems.joinToString(", "),
+                            color = TextSecondary.copy(alpha = 0.7f),
+                            fontSize = 10.sp, maxLines = 1, overflow = TextOverflow.Ellipsis
+                        )
+                    }
+                }
             }
+        }
+
+        if (showTooltip && tooltipData != null) {
+            ItemTooltipPopup(
+                item = tooltipData,
+                playerEnchant = item.enchant,
+                playerGems = item.gems,
+                onDismiss = { showTooltip = false },
+                onWowheadClick = {
+                    showTooltip = false
+                    openUrl("https://www.wowhead.com/tbc/item=${item.itemId}")
+                }
+            )
         }
     }
 }
