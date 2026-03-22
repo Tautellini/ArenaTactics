@@ -6,6 +6,7 @@ import kotlinx.serialization.Serializable
 data class ItemTooltipData(
     val itemId: Int,
     val name: String,
+    val icon: String? = null,
     val quality: String? = null,
     val slotName: String? = null,
     val itemSubclass: String? = null,

@@ -289,14 +289,13 @@ private fun EquipmentItemCard(item: EquippedItem, tooltipData: ItemTooltipData? 
                 horizontalArrangement = Arrangement.spacedBy(10.dp),
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                if (item.itemId > 0) {
-                    AsyncImage(
-                        model = WowheadIcons.medium("inv_misc_questionmark"),
-                        contentDescription = item.name,
-                        modifier = Modifier.size(36.dp).clip(RoundedCornerShape(6.dp))
-                            .border(1.dp, qualityColor.copy(alpha = 0.5f), RoundedCornerShape(6.dp))
-                    )
-                }
+                val iconName = tooltipData?.icon ?: "inv_misc_questionmark"
+                AsyncImage(
+                    model = WowheadIcons.medium(iconName),
+                    contentDescription = item.name,
+                    modifier = Modifier.size(36.dp).clip(RoundedCornerShape(6.dp))
+                        .border(1.dp, qualityColor.copy(alpha = 0.5f), RoundedCornerShape(6.dp))
+                )
 
                 Column(modifier = Modifier.weight(1f)) {
                     Text(slotDisplayName(item.slot), color = TextSecondary, fontSize = 10.sp)

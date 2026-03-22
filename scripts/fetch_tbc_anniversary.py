@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from blizzard_api import (
     API_HOSTS, OUTPUT_BASE,
     get_access_token, get_current_season_id, get_pvp_rewards,
-    get_leaderboard, fetch_full_player_profile, write_index,
+    get_leaderboard, fetch_full_player_profile, resolve_item_icons, write_index,
 )
 
 ADDON_ID = "tbc_anniversary"
@@ -137,6 +137,10 @@ def main():
             items = profile.pop("_items", {})
             for item_id, item_data in items.items():
                 all_items.setdefault(int(item_id), item_data)
+
+        # ── Resolve item icons ──
+        print(f"  [{region}] Resolving item icons for {len(all_items)} unique items...")
+        resolve_item_icons(all_items, token)
 
         # ── Write players_{region}.json ──
         players_file = addon_dir / f"players_{region}.json"

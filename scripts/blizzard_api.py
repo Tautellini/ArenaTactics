@@ -257,7 +257,9 @@ def fetch_full_player_profile(
                 result["_items"] = {}
             if item_id and item_id not in result.get("_items", {}):
                 weapon_data = item.get("weapon")
+                media_href = item.get("media", {}).get("key", {}).get("href")
                 result.setdefault("_items", {})[item_id] = {
+                    "_media_href": media_href,  # temp: used to resolve icon, stripped before output
                     "itemId": item_id,
                     "name": item.get("name", "Unknown"),
                     "quality": item.get("quality", {}).get("type"),
@@ -332,6 +334,44 @@ def fetch_full_player_profile(
             pass  # Player doesn't have this bracket
 
     return result
+
+
+def resolve_icon_from_media_href(href: str, token: str) -> str | None:
+    """Follow a media href and extract the icon slug from the response."""
+    try:
+        data = http_get_json(href, token)
+        for asset in data.get("assets", []):
+            if asset.get("key") == "icon":
+                icon_url = asset.get("value", "")
+                if "/" in icon_url:
+                    filename = icon_url.rsplit("/", 1)[-1]
+                    return filename.rsplit(".", 1)[0]
+    except Exception:
+        pass
+    return None
+
+
+def resolve_item_icons(items: dict, token: str) -> None:
+    """Resolve icon names for items that have a _media_href. Modifies in place."""
+    to_resolve = [(k, v) for k, v in items.items() if not v.get("icon") and v.get("_media_href")]
+    if not to_resolve:
+        return
+
+    resolved = 0
+    for i, (item_id_str, item_data) in enumerate(to_resolve):
+        icon = resolve_icon_from_media_href(item_data["_media_href"], token)
+        if icon:
+            item_data["icon"] = icon
+            resolved += 1
+        item_data.pop("_media_href", None)  # clean up temp field
+        if (i + 1) % 100 == 0:
+            print(f"    ... {i + 1}/{len(to_resolve)} icons resolved")
+
+    # Clean up _media_href from items that already had icons
+    for v in items.values():
+        v.pop("_media_href", None)
+
+    print(f"    Resolved {resolved}/{len(to_resolve)} item icons")
 
 
 def write_index(addon_dir: Path):
