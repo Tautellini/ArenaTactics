@@ -95,9 +95,9 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 
 ## Addon Lifecycle & "Retail"
 - **Retail** is always the currently active expansion on WoW's live servers. Right now that is "The War Within — Midnight" (addon ID `midnight`). It is displayed as "RETAIL" in the UI, not by its expansion name.
-- When the next retail expansion launches, the `midnight` addon entry should be updated to reflect the new expansion (new description, potentially new spec/class pools). There is no need to keep the old retail entry — it becomes obsolete.
-- **Anniversary servers** (e.g., TBC Anniversary) are separate Classic-era servers running older expansion states. Blizzard rotates these forward over time — TBC Anniversary will eventually become WotLK Anniversary, etc. When that happens, a new addon entry replaces the old one (or the existing entry is updated).
-- There are **no history servers for modern expansions** (e.g., no "The War Within" server after Midnight launches). This may never change. Only Classic-era rotations exist.
+- When the next retail expansion launches, the `midnight` addon entry keeps its curated data (compositions, matchups, gear, ladder) but gets `hasData: false` — a new addon entry is created for the new expansion and becomes the active "Retail" entry. The old data is preserved because Blizzard may introduce history servers for it later.
+- **Anniversary servers** (e.g., TBC Anniversary) are separate Classic-era servers running older expansion states. Blizzard rotates these forward over time — TBC Anniversary will eventually become WotLK Anniversary, etc. When that happens, the old addon entry is deactivated (`hasData: false`) and a new one is created. **Never delete curated data** for a rotated-out addon — it may return as a history server.
+- There are **no history servers for modern expansions yet** (e.g., no "The War Within" server after Midnight launches). This may change in the future, which is why we always preserve data.
 - An addon is **selectable on the home screen** if it has any data at all (tactics, guides, or ladder). Each section tile (Tactics, Class Guides, Ladder) is individually enabled/disabled based on what data exists for that addon.
 
 ## Ladder Data Pipeline
