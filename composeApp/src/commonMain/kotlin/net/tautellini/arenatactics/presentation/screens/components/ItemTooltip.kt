@@ -32,7 +32,7 @@ private val QualityColors = mapOf(
 private val GreenText = Color(0xFF1EFF00)
 private val GrayText = Color(0xFF9D9D9D)
 private val YellowText = Color(0xFFFFD100)
-private val TooltipBg = Color(0xFF1A1A2E)
+private val TooltipBg = Color(0xFF121012)
 
 /**
  * Wraps content with a hover-triggered item tooltip.

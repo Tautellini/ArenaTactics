@@ -372,7 +372,7 @@ private fun BracketSegmentContent(mode: GameMode?, gameModeId: String?) {
 
 // ─── Inline option composables (expand to the right) ────────────────────────
 
-private val GreyedOut = Color(0xFF5A6A6B)
+private val GreyedOut = Color(0xFF5A5255)
 
 @Composable
 private fun InlineAddonOption(addon: Addon, enabled: Boolean = true, onClick: () -> Unit) {

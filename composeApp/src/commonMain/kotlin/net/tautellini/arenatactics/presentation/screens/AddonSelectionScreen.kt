@@ -247,8 +247,8 @@ private fun parseHexColor(hex: String): Color {
     return Color(argb.toInt())
 }
 
-private val GreyedOut = Color(0xFF5A6A6B)
-private val GreyedOutBg = Color(0xFF1A2E30)
+private val GreyedOut = Color(0xFF5A5255)
+private val GreyedOutBg = Color(0xFF141012)
 
 @Composable
 private fun AddonTile(
