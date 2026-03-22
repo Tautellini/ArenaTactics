@@ -251,6 +251,9 @@ private fun BracketRatingCard(bracket: String, rating: PvpBracketRating) {
             Text("${rating.rating}", color = Primary, fontSize = 24.sp, fontWeight = FontWeight.Bold)
             val total = rating.wins + rating.losses
             val winRate = if (total > 0) "${((rating.wins * 1000L / total) / 10.0)}%" else "-"
+            if (rating.rank != null) {
+                Text("Rank #${rating.rank}", color = TextSecondary.copy(alpha = 0.7f), fontSize = 11.sp)
+            }
             Text("${rating.wins}W ${rating.losses}L", color = TextSecondary, fontSize = 12.sp)
             Text(winRate, color = TextSecondary.copy(alpha = 0.7f), fontSize = 11.sp)
         }

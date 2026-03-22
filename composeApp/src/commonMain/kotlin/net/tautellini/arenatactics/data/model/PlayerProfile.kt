@@ -44,5 +44,6 @@ data class TalentTreeSpec(
 data class PvpBracketRating(
     val rating: Int = 0,
     val wins: Int = 0,
-    val losses: Int = 0
+    val losses: Int = 0,
+    val rank: Int? = null
 )

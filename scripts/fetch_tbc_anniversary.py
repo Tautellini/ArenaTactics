@@ -98,9 +98,10 @@ def main():
                     "losses": stats.get("lost", 0),
                 })
 
-        # ── Fetch full profiles for unique characters (once each) ──
+        # ── Fetch profiles for unique characters (profile + equipment + specializations) ──
+        # PvP bracket ratings are derived from the leaderboard data we already have.
         unique_ids = list(char_info.keys())
-        print(f"  [{region}] Fetching full profiles for {len(unique_ids)} unique characters...")
+        print(f"  [{region}] Fetching profiles for {len(unique_ids)} unique characters (3 calls each)...")
 
         player_profiles: dict[str, dict] = {}  # keyed by str(char_id)
         for i, char_id in enumerate(unique_ids):
@@ -109,16 +110,26 @@ def main():
                 continue
 
             profile = fetch_full_player_profile(
-                api_host, profile_ns, realm_slug, name, token, brackets=BRACKETS
+                api_host, profile_ns, realm_slug, name, token, brackets=[]  # skip pvp-bracket calls
             )
             if profile:
                 profile["characterId"] = char_id
+                # Map PvP bracket ratings from leaderboard data we already collected
+                pvp = {}
+                for app in char_brackets.get(char_id, []):
+                    pvp[app["bracket"]] = {
+                        "rating": app["rating"],
+                        "wins": app["wins"],
+                        "losses": app["losses"],
+                        "rank": app["rank"],
+                    }
+                profile["pvpBrackets"] = pvp
                 player_profiles[str(char_id)] = profile
 
             if (i + 1) % 50 == 0:
                 print(f"    ... {i + 1}/{len(unique_ids)} fetched")
 
-        print(f"  [{region}] Fetched {len(player_profiles)}/{len(unique_ids)} full profiles")
+        print(f"  [{region}] Fetched {len(player_profiles)}/{len(unique_ids)} profiles")
 
         # ── Write players_{region}.json ──
         players_file = addon_dir / f"players_{region}.json"
