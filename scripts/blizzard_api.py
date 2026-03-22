@@ -181,6 +181,127 @@ def resolve_character_profile(
     return result
 
 
+def fetch_full_player_profile(
+    api_host: str, profile_namespace: str, realm_slug: str, char_name: str,
+    token: str, brackets: list[str] = ("2v2", "3v3", "5v5")
+) -> dict | None:
+    """
+    Fetch complete player profile: base profile + equipment + specializations + pvp brackets.
+    Returns a full player dict or None on failure.
+    Calls: profile (1) + equipment (1) + specializations (1) + brackets (2-3) = 5-6 total.
+    """
+    name_lower = char_name.lower()
+    base_url = f"{api_host}/profile/wow/character/{realm_slug}/{urllib.parse.quote(name_lower)}"
+    ns_param = f"namespace={profile_namespace}&locale=en_US"
+
+    # 1. Base profile
+    try:
+        profile = http_get_json(f"{base_url}?{ns_param}", token)
+    except Exception:
+        return None
+
+    class_id_num = profile.get("character_class", {}).get("id")
+    class_slug = BLIZZARD_CLASS_MAP.get(class_id_num) if class_id_num else None
+    if not class_slug:
+        return None
+
+    result = {
+        "name": profile.get("name", char_name),
+        "realmSlug": realm_slug,
+        "classId": class_slug,
+        "specId": None,
+        "race": profile.get("race", {}).get("name"),
+        "guild": profile.get("guild", {}).get("name"),
+        "faction": profile.get("faction", {}).get("type"),
+        "level": profile.get("level"),
+        "equipment": [],
+        "talentGroups": [],
+        "pvpBrackets": {},
+    }
+
+    # Resolve spec from active_spec (retail) or specializations (classic)
+    active_spec = profile.get("active_spec")
+    if active_spec:
+        spec_name = active_spec.get("name", "").lower().replace(" ", "")
+        slug = f"{class_slug}_{spec_name}"
+        result["specId"] = SPEC_NAME_ALIASES.get(slug, slug)
+
+    # 2. Equipment
+    try:
+        equip = http_get_json(f"{base_url}/equipment?{ns_param}", token)
+        for item in equip.get("equipped_items", []):
+            slot = item.get("slot", {}).get("type", "UNKNOWN")
+            enchants = item.get("enchantments", [])
+            # First PERMANENT enchant is the main one
+            enchant_name = None
+            gems = []
+            for e in enchants:
+                slot_type = e.get("enchantment_slot", {}).get("type")
+                source = e.get("source_item", {}).get("name")
+                if slot_type == "PERMANENT" and source:
+                    enchant_name = source
+                elif source and not slot_type:
+                    # Gem slots don't have a "type" field, or have numeric IDs
+                    gems.append(source)
+
+            result["equipment"].append({
+                "slot": slot,
+                "itemId": item.get("item", {}).get("id", 0),
+                "name": item.get("name", "Unknown"),
+                "quality": item.get("quality", {}).get("type"),
+                "enchant": enchant_name,
+                "gems": gems,
+            })
+    except Exception:
+        pass
+
+    # 3. Specializations (talents)
+    try:
+        spec_data = http_get_json(f"{base_url}/specializations?{ns_param}", token)
+        for group in spec_data.get("specialization_groups", []):
+            talent_group = {
+                "isActive": group.get("is_active", False),
+                "specializations": [],
+            }
+            for spec in group.get("specializations", []):
+                tree_name = spec.get("specialization_name", "Unknown")
+                spent = spec.get("spent_points", 0)
+                talent_group["specializations"].append({
+                    "treeName": tree_name,
+                    "spentPoints": spent,
+                })
+
+                # Resolve specId from active group
+                if talent_group["isActive"] and result["specId"] is None:
+                    # Best tree = most points
+                    current_best = max(
+                        talent_group["specializations"],
+                        key=lambda s: s["spentPoints"]
+                    )
+                    if current_best["spentPoints"] > 0:
+                        slug = f"{class_slug}_{current_best['treeName'].lower().replace(' ', '')}"
+                        result["specId"] = SPEC_NAME_ALIASES.get(slug, slug)
+
+            result["talentGroups"].append(talent_group)
+    except Exception:
+        pass
+
+    # 4. PvP brackets
+    for bracket in brackets:
+        try:
+            data = http_get_json(f"{base_url}/pvp-bracket/{bracket}?{ns_param}", token)
+            stats = data.get("season_match_statistics", {})
+            result["pvpBrackets"][bracket] = {
+                "rating": data.get("rating", 0),
+                "wins": stats.get("won", 0),
+                "losses": stats.get("lost", 0),
+            }
+        except Exception:
+            pass  # Player doesn't have this bracket
+
+    return result
+
+
 def write_index(addon_dir: Path):
     """Write an index.json listing all snapshot files in the addon directory."""
     index = []

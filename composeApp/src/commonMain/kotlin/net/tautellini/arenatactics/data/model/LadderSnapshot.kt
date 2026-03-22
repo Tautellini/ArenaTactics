@@ -33,6 +33,7 @@ data class LadderEntry(
     val rank: Int,
     val characterName: String,
     val realmSlug: String = "",
+    val characterId: Long? = null,
     val rating: Int,
     val wins: Int = 0,
     val losses: Int = 0,

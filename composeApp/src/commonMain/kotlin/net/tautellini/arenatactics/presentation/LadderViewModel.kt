@@ -22,6 +22,7 @@ sealed class LadderState {
     data object Loading : LadderState()
 
     data class Success(
+        val addonId: String,
         val index: List<LadderIndex>,
         val snapshots: Map<String, LadderSnapshot>,
         val classes: List<WowClass>,
@@ -119,7 +120,7 @@ class LadderViewModel(
 
                     val firstRegion = index.firstOrNull()?.region ?: "us"
                     val firstBracket = index.firstOrNull()?.bracket ?: "2v2"
-                    LadderState.Success(index, snapshots, classes, firstRegion, firstBracket)
+                    LadderState.Success(addonId, index, snapshots, classes, firstRegion, firstBracket)
                 }
             } catch (e: Throwable) {
                 LadderState.Error(e.message ?: "Failed to load ladder data")

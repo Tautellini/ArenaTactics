@@ -78,6 +78,7 @@ private fun Screen.extractAddonId(): String? = when (this) {
     is Screen.ClassGuideList -> addonId
     is Screen.SpecGuide -> addonId
     is Screen.Ladder -> addonId
+    is Screen.PlayerDetail -> addonId
 }
 
 private fun Screen.extractGameModeId(): String? = when (this) {
@@ -119,7 +120,7 @@ fun AppHeader(
     val gameModeId = currentScreen.extractGameModeId()
     val isTactics = currentScreen.isTacticsPath()
     val isGuides = currentScreen.isGuidesPath()
-    val isLadder = currentScreen is Screen.Ladder
+    val isLadder = currentScreen is Screen.Ladder || currentScreen is Screen.PlayerDetail
 
     // Ensure game modes are loaded for the current addon
     LaunchedEffect(addonId) {
@@ -466,6 +467,10 @@ private fun buildTrailingBreadcrumbs(screen: Screen): List<TrailingCrumb> = when
     )
     is Screen.Ladder -> listOf(
         TrailingCrumb("Ladder", isCurrent = true, target = null)
+    )
+    is Screen.PlayerDetail -> listOf(
+        TrailingCrumb("Ladder", isCurrent = false, target = Screen.Ladder(screen.addonId)),
+        TrailingCrumb("Player", isCurrent = true, target = null)
     )
     else -> emptyList()
 }

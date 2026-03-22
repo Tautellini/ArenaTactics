@@ -23,7 +23,9 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
 import net.tautellini.arenatactics.data.repository.*
 import net.tautellini.arenatactics.presentation.LadderViewModel
+import net.tautellini.arenatactics.presentation.PlayerDetailViewModel
 import net.tautellini.arenatactics.presentation.screens.LadderScreen
+import net.tautellini.arenatactics.presentation.screens.PlayerDetailScreen
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.navigation.toScreen
 import net.tautellini.arenatactics.presentation.HomeViewModel
@@ -231,7 +233,14 @@ fun App() {
                         val vm = viewModel(key = "ladder_${screen.addonId}") {
                             LadderViewModel(screen.addonId, ladderRepository, addonRepository, compositionRepository)
                         }
-                        LadderScreen(viewModel = vm)
+                        LadderScreen(viewModel = vm, onNavigate = { navController.navigate(it) })
+                    }
+                    composable<Screen.PlayerDetail> { entry ->
+                        val screen = entry.toRoute<Screen.PlayerDetail>()
+                        val vm = viewModel(key = "player_${screen.characterId}") {
+                            PlayerDetailViewModel(screen.addonId, screen.region, screen.characterId, ladderRepository)
+                        }
+                        PlayerDetailScreen(viewModel = vm)
                     }
                 }
             }

@@ -10,13 +10,12 @@ Output: composeApp/src/commonMain/composeResources/files/ladder/tbc_anniversary/
 """
 
 import json
-import sys
 from datetime import datetime, timezone
 
 from blizzard_api import (
     API_HOSTS, OUTPUT_BASE,
     get_access_token, get_current_season_id, get_pvp_rewards,
-    get_leaderboard, resolve_character_profile, write_index,
+    get_leaderboard, fetch_full_player_profile, write_index,
 )
 
 ADDON_ID = "tbc_anniversary"
@@ -67,11 +66,8 @@ def main():
         print(f"  [{region}] Season {season_id}")
 
         # ── Collect unique characters across all brackets ──
-        # Key: character ID, Value: list of (bracket, rank, rating, wins, losses)
         char_brackets: dict[int, list] = {}
-        # Key: character ID, Value: (name, realm_slug)
         char_info: dict[int, tuple] = {}
-        # Total entries per bracket (full leaderboard size, not just top N)
         bracket_totals: dict[str, int] = {}
 
         for bracket in BRACKETS:
@@ -102,39 +98,50 @@ def main():
                     "losses": stats.get("lost", 0),
                 })
 
-        # ── Resolve profiles for unique characters (once each) ──
+        # ── Fetch full profiles for unique characters (once each) ──
         unique_ids = list(char_info.keys())
-        print(f"  [{region}] Resolving {len(unique_ids)} unique character profiles...")
+        print(f"  [{region}] Fetching full profiles for {len(unique_ids)} unique characters...")
 
-        profile_cache: dict[int, dict] = {}
+        player_profiles: dict[str, dict] = {}  # keyed by str(char_id)
         for i, char_id in enumerate(unique_ids):
             name, realm_slug = char_info[char_id]
             if name == "Unknown" or not realm_slug:
                 continue
-            profile = resolve_character_profile(api_host, profile_ns, realm_slug, name, token)
-            if profile:
-                profile_cache[char_id] = profile
-            if (i + 1) % 100 == 0:
-                print(f"    ... {i + 1}/{len(unique_ids)} resolved")
 
-        print(f"  [{region}] Resolved {len(profile_cache)}/{len(unique_ids)} profiles")
+            profile = fetch_full_player_profile(
+                api_host, profile_ns, realm_slug, name, token, brackets=BRACKETS
+            )
+            if profile:
+                profile["characterId"] = char_id
+                player_profiles[str(char_id)] = profile
+
+            if (i + 1) % 50 == 0:
+                print(f"    ... {i + 1}/{len(unique_ids)} fetched")
+
+        print(f"  [{region}] Fetched {len(player_profiles)}/{len(unique_ids)} full profiles")
+
+        # ── Write players_{region}.json ──
+        players_file = addon_dir / f"players_{region}.json"
+        with open(players_file, "w", encoding="utf-8") as f:
+            json.dump(player_profiles, f, indent=2, ensure_ascii=False)
+        print(f"  [{region}] Wrote {players_file.name} ({len(player_profiles)} players)")
 
         # ── Build snapshot per bracket ──
         for bracket in BRACKETS:
             cutoffs = get_pvp_rewards(api_host, namespace, season_id, bracket, token)
             print(f"  [{region}] {bracket} cutoffs: {cutoffs}")
 
-            # Reconstruct top entries for this bracket
             bracket_entries = []
             for char_id, appearances in char_brackets.items():
                 for app in appearances:
                     if app["bracket"] == bracket:
                         name, realm_slug = char_info[char_id]
-                        profile = profile_cache.get(char_id, {})
+                        profile = player_profiles.get(str(char_id), {})
                         bracket_entries.append({
                             "rank": app["rank"],
                             "characterName": name,
                             "realmSlug": realm_slug,
+                            "characterId": char_id,
                             "rating": app["rating"],
                             "wins": app["wins"],
                             "losses": app["losses"],
