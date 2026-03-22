@@ -49,7 +49,7 @@ fun ClassGuideListScreen(
             is ClassGuideListState.Loading -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                 CircularProgressIndicator(color = Primary)
             }
-            is ClassGuideListState.Error   -> Text(s.message, color = TextSecondary)
+            is ClassGuideListState.Error -> Text(s.message, color = TextSecondary)
             is ClassGuideListState.Success -> {
                 LazyVerticalGrid(
                     columns = GridCells.Adaptive(minSize = 140.dp),
@@ -58,10 +58,9 @@ fun ClassGuideListScreen(
                 ) {
                     items(s.specs) { spec ->
                         val wowClass = s.classMap[spec.classId]
-                        SpecGuideCard(spec = spec, wowClass = wowClass) {
-                            if (spec.hasData) {
-                                onNavigate(Screen.SpecGuide(addonId, spec.classId, spec.id))
-                            }
+                        val hasData = spec.id in s.specsWithData
+                        SpecGuideCard(spec = spec, wowClass = wowClass, hasData = hasData) {
+                            onNavigate(Screen.SpecGuide(addonId, spec.classId, spec.id))
                         }
                     }
                 }
@@ -71,10 +70,9 @@ fun ClassGuideListScreen(
 }
 
 @Composable
-private fun SpecGuideCard(spec: WowSpec, wowClass: WowClass?, onClick: () -> Unit) {
-    val enabled = spec.hasData
-    val cardAlpha = if (enabled) 1f else 0.45f
-    val grayscaleFilter = if (enabled) null else ColorFilter.colorMatrix(
+private fun SpecGuideCard(spec: WowSpec, wowClass: WowClass?, hasData: Boolean, onClick: () -> Unit) {
+    val cardAlpha = if (hasData) 1f else 0.45f
+    val grayscaleFilter = if (hasData) null else ColorFilter.colorMatrix(
         ColorMatrix().apply { setToSaturation(0f) }
     )
 
@@ -83,7 +81,7 @@ private fun SpecGuideCard(spec: WowSpec, wowClass: WowClass?, onClick: () -> Uni
         shape = RoundedCornerShape(12.dp),
         modifier = Modifier
             .alpha(cardAlpha)
-            .then(if (enabled) Modifier.clickable(onClick = onClick) else Modifier)
+            .then(if (hasData) Modifier.clickable(onClick = onClick) else Modifier)
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -98,10 +96,10 @@ private fun SpecGuideCard(spec: WowSpec, wowClass: WowClass?, onClick: () -> Uni
             )
             Text(spec.name, color = TextPrimary, fontSize = 12.sp, fontWeight = FontWeight.SemiBold)
             if (wowClass != null) {
-                Text(wowClass.name, color = TextSecondary, fontSize = 11.sp)
+                Text(wowClass.name, color = classColor(wowClass.id), fontSize = 11.sp)
             }
-            if (!enabled) {
-                Text("Coming Soon", color = TextSecondary, fontSize = 10.sp)
+            if (!hasData) {
+                Text("No Data", color = TextSecondary, fontSize = 10.sp)
             }
         }
     }

@@ -196,7 +196,7 @@ fun App() {
                     composable<Screen.ClassGuideList> { entry ->
                         val screen = entry.toRoute<Screen.ClassGuideList>()
                         val vm = viewModel(key = "guides_${screen.addonId}") {
-                            ClassGuideListViewModel(screen.addonId, addonRepository, compositionRepository)
+                            ClassGuideListViewModel(screen.addonId, addonRepository, compositionRepository, ladderRepository)
                         }
                         ClassGuideListScreen(addonId = screen.addonId, viewModel = vm, onNavigate = { navController.navigate(it) })
                     }
