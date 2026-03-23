@@ -20,7 +20,14 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
-import net.tautellini.arenatactics.data.repository.*
+import net.tautellini.arenatactics.data.repository.AddonRepository
+import net.tautellini.arenatactics.data.repository.CompositionRepository
+import net.tautellini.arenatactics.data.repository.GameModeRepository
+import net.tautellini.arenatactics.data.repository.GearRepository
+import net.tautellini.arenatactics.data.repository.LadderRepository
+import net.tautellini.arenatactics.data.repository.MatchupRepository
+import net.tautellini.arenatactics.data.repository.SpecRepository
+import net.tautellini.arenatactics.data.repository.TalentTreeRepository
 import net.tautellini.arenatactics.presentation.LadderViewModel
 import net.tautellini.arenatactics.presentation.PlayerDetailViewModel
 import net.tautellini.arenatactics.presentation.screens.LadderScreen
@@ -32,11 +39,13 @@ import net.tautellini.arenatactics.presentation.ClassGuideListViewModel
 import net.tautellini.arenatactics.presentation.CompositionSelectionViewModel
 import net.tautellini.arenatactics.presentation.MatchupDetailViewModel
 import net.tautellini.arenatactics.presentation.MatchupListViewModel
+import net.tautellini.arenatactics.presentation.MetaViewModel
 import net.tautellini.arenatactics.presentation.SpecGuideViewModel
 import net.tautellini.arenatactics.presentation.screens.AddonSelectionScreen
 import net.tautellini.arenatactics.presentation.screens.ClassGuideListScreen
 import net.tautellini.arenatactics.presentation.screens.CompositionSelectionScreen
 import net.tautellini.arenatactics.presentation.screens.MatchupDetailScreen
+import net.tautellini.arenatactics.presentation.screens.MetaScreen
 import net.tautellini.arenatactics.presentation.screens.MatchupListScreen
 import net.tautellini.arenatactics.presentation.screens.SpecGuideScreen
 import net.tautellini.arenatactics.presentation.screens.components.AppHeader
@@ -52,6 +61,7 @@ fun App() {
     val gearRepository = remember { GearRepository() }
     val matchupRepository = remember { MatchupRepository() }
     val ladderRepository = remember { LadderRepository() }
+    val talentTreeRepository = remember { TalentTreeRepository() }
 
     val homeViewModel = remember { HomeViewModel(addonRepository, gameModeRepository, ladderRepository) }
     val navController = rememberNavController()
@@ -193,6 +203,13 @@ fun App() {
                         }
                         MatchupDetailScreen(viewModel = vm)
                     }
+                    composable<Screen.Meta> { entry ->
+                        val screen = entry.toRoute<Screen.Meta>()
+                        val vm = viewModel(key = "meta_${screen.addonId}") {
+                            MetaViewModel(screen.addonId, addonRepository, compositionRepository, ladderRepository, talentTreeRepository)
+                        }
+                        MetaScreen(viewModel = vm)
+                    }
                     composable<Screen.ClassGuideList> { entry ->
                         val screen = entry.toRoute<Screen.ClassGuideList>()
                         val vm = viewModel(key = "guides_${screen.addonId}") {
@@ -220,7 +237,7 @@ fun App() {
                     composable<Screen.PlayerDetail> { entry ->
                         val screen = entry.toRoute<Screen.PlayerDetail>()
                         val vm = viewModel(key = "player_${screen.characterId}") {
-                            PlayerDetailViewModel(screen.addonId, screen.region, screen.characterId, ladderRepository)
+                            PlayerDetailViewModel(screen.addonId, screen.region, screen.characterId, ladderRepository, talentTreeRepository)
                         }
                         PlayerDetailScreen(viewModel = vm)
                     }

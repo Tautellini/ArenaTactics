@@ -1,0 +1,437 @@
+{
+  "classId": "hunter",
+  "trees": [
+    {
+      "name": "Beast Mastery",
+      "icon": "ability_hunter_bestialdiscipline",
+      "talents": [
+        {
+          "id": 1382,
+          "name": "Improved Aspect of the Hawk",
+          "icon": "spell_nature_ravenform",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1389,
+          "name": "Endurance Training",
+          "icon": "spell_nature_reincarnation",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1624,
+          "name": "Improved Eyes of the Beast",
+          "icon": "ability_eyeoftheowl",
+          "row": 1,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1381,
+          "name": "Unknown (24387)",
+          "icon": "ability_hunter_aspectofthemonkey",
+          "row": 1,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1395,
+          "name": "Thick Hide",
+          "icon": "inv_misc_pelt_bear_03",
+          "row": 1,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1625,
+          "name": "Improved Revive Pet",
+          "icon": "ability_hunter_beastsoothe",
+          "row": 1,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1384,
+          "name": "Pathfinding",
+          "icon": "ability_mount_jungletiger",
+          "row": 2,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1391,
+          "name": "Bestial Swiftness",
+          "icon": "ability_druid_dash",
+          "row": 2,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1396,
+          "name": "Unleashed Fury",
+          "icon": "ability_bullrush",
+          "row": 2,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1385,
+          "name": "Improved Mend Pet",
+          "icon": "ability_hunter_mendpet",
+          "row": 3,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1393,
+          "name": "Ferocity",
+          "icon": "inv_misc_monsterclaw_04",
+          "row": 3,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1388,
+          "name": "Spirit Bond",
+          "icon": "ability_druid_demoralizingroar",
+          "row": 4,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1387,
+          "name": "Intimidation",
+          "icon": "ability_devour",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1390,
+          "name": "Bestial Discipline",
+          "icon": "spell_nature_abolishmagic",
+          "row": 4,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1397,
+          "name": "Frenzy",
+          "icon": "inv_misc_monsterclaw_03",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": 1393
+        },
+        {
+          "id": 1386,
+          "name": "Bestial Wrath",
+          "icon": "ability_druid_ferociousbite",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1387
+        }
+      ]
+    },
+    {
+      "name": "Marksmanship",
+      "icon": "ability_marksmanship",
+      "talents": [
+        {
+          "id": 1341,
+          "name": "Improved Concussive Shot",
+          "icon": "spell_frost_stun",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1342,
+          "name": "Efficiency",
+          "icon": "spell_frost_wizardmark",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1343,
+          "name": "Improved Hunter's Mark",
+          "icon": "ability_hunter_snipershot",
+          "row": 1,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1344,
+          "name": "Lethal Shots",
+          "icon": "ability_searingarrow",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1345,
+          "name": "Aimed Shot",
+          "icon": "inv_spear_07",
+          "row": 2,
+          "col": 0,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1346,
+          "name": "Improved Arcane Shot",
+          "icon": "ability_impalingbolt",
+          "row": 2,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1352,
+          "name": "Hawk Eye",
+          "icon": "ability_townwatch",
+          "row": 2,
+          "col": 3,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1348,
+          "name": "Improved Stings",
+          "icon": "ability_hunter_quickshot",
+          "row": 3,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1349,
+          "name": "Mortal Shots",
+          "icon": "ability_piercedamage",
+          "row": 3,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": 1344
+        },
+        {
+          "id": 1353,
+          "name": "Scatter Shot",
+          "icon": "ability_golemstormbolt",
+          "row": 4,
+          "col": 0,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1347,
+          "name": "Barrage",
+          "icon": "ability_upgrademoonglaive",
+          "row": 4,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1351,
+          "name": "Improved Scorpid Sting",
+          "icon": "ability_hunter_criticalshot",
+          "row": 4,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1362,
+          "name": "Ranged Weapon Specialization",
+          "icon": "inv_weapon_rifle_06",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1361,
+          "name": "Trueshot Aura",
+          "icon": "ability_trueshot",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1347
+        }
+      ]
+    },
+    {
+      "name": "Survival",
+      "icon": "ability_hunter_swiftstrike",
+      "talents": [
+        {
+          "id": 1623,
+          "name": "Monster Slaying",
+          "icon": "inv_misc_head_dragon_black",
+          "row": 0,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1301,
+          "name": "Humanoid Slaying",
+          "icon": "spell_holy_prayerofhealing",
+          "row": 0,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1311,
+          "name": "Deflection",
+          "icon": "ability_parry",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1304,
+          "name": "Unknown (19390)",
+          "icon": "spell_nature_stranglevines",
+          "row": 1,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1621,
+          "name": "Savage Strikes",
+          "icon": "ability_racial_bloodrage",
+          "row": 1,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1305,
+          "name": "Unknown (19235)",
+          "icon": "ability_rogue_trip",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1306,
+          "name": "Clever Traps",
+          "icon": "spell_nature_timestop",
+          "row": 2,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1622,
+          "name": "Survivalist",
+          "icon": "spell_shadow_twilight",
+          "row": 2,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1308,
+          "name": "Deterrence",
+          "icon": "ability_whirlwind",
+          "row": 2,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1322,
+          "name": "Trap Mastery",
+          "icon": "ability_ensnare",
+          "row": 3,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1310,
+          "name": "Surefooted",
+          "icon": "ability_kick",
+          "row": 3,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1309,
+          "name": "Improved Feign Death",
+          "icon": "ability_rogue_feigndeath",
+          "row": 3,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1321,
+          "name": "Killer Instinct",
+          "icon": "spell_holy_blessingofstamina",
+          "row": 4,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1312,
+          "name": "Counterattack",
+          "icon": "ability_warrior_challange",
+          "row": 4,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": 1308
+        },
+        {
+          "id": 1303,
+          "name": "Lightning Reflexes",
+          "icon": "spell_nature_invisibilty",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1325,
+          "name": "Wyvern Sting",
+          "icon": "inv_spear_02",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1321
+        }
+      ]
+    }
+  ]
+}

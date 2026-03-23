@@ -37,7 +37,14 @@ data class TalentGroup(
 @Serializable
 data class TalentTreeSpec(
     val treeName: String,
-    val spentPoints: Int
+    val spentPoints: Int,
+    val talents: List<TalentSelection> = emptyList()
+)
+
+@Serializable
+data class TalentSelection(
+    val id: Int,
+    val rank: Int
 )
 
 @Serializable

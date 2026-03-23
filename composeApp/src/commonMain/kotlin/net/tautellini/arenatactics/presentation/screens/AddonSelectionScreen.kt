@@ -134,14 +134,14 @@ fun AddonSelectionScreen(
                                 )
                                 SectionTile(
                                     icon = Icons.Rounded.MenuBook,
-                                    title = "Class Guides",
-                                    subtitle = "Best-in-slot gear per spec",
+                                    title = "Meta",
+                                    subtitle = "Popular gear, talents & enchants",
                                     isSelected = selection.section == HomeSection.CLASS_GUIDES,
                                     alpha = if (guidesEnabled) 1f else 0.35f,
                                     loadingState = null,
                                     onClick = if (guidesEnabled) ({
                                         selection.addon?.let { addon ->
-                                            onNavigate(Screen.ClassGuideList(addon.id))
+                                            onNavigate(Screen.Meta(addon.id))
                                         }
                                     }) else null
                                 )
@@ -240,8 +240,8 @@ private fun parseHexColor(hex: String): Color {
     return Color(argb.toInt())
 }
 
-private val GreyedOut = Color(0xFF555555)
-private val GreyedOutBg = Color(0xFF101010)
+private val GreyedOut = Color(0xFF5A6A6B)
+private val GreyedOutBg = Color(0xFF1A2E30)
 
 @Composable
 private fun AddonTile(

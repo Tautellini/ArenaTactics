@@ -18,18 +18,18 @@ import arenatactics.composeapp.generated.resources.NotoSans_SemiBold
 import arenatactics.composeapp.generated.resources.Res
 import org.jetbrains.compose.resources.Font
 
-val Primary = Color(0xFFE53935)
-val Secondary = Color(0xFF8B1A1A)
-val Background = Color(0xFF080808)
-val Surface = Color(0xFF111111)
-val TextPrimary = Color(0xFFE8E8E8)
-val TextSecondary = Color(0xFF787878)
+val Primary = Color(0xFF27E0E0)
+val Secondary = Color(0xFF0F5959)
+val Background   = Color(0xFF042326)
+val Surface      = Color(0xFF0A3A40)
+val TextPrimary   = Color(0xFFE8F4F4)
+val TextSecondary = Color(0xFF7AABAA)
 
-val CardColor = Color(0xFF141414)
-val CardElevated = Color(0xFF1C1C1C)
-val CardBorder = Color(0xFF252525)
+val CardColor    = Color(0xFF0F4A52)
+val CardElevated = Color(0xFF1D6066)
+val CardBorder   = Color(0xFF0F5959)
 
-val DividerColor = Color(0xFF222222)
+val DividerColor = Color(0xFF0F5959)
 
 // WoW class colors
 val ClassColors = mapOf(

@@ -308,9 +308,15 @@ def fetch_full_player_profile(
             for spec in group.get("specializations", []):
                 tree_name = spec.get("specialization_name", "Unknown")
                 spent = spec.get("spent_points", 0)
+                talents = [
+                    {"id": t["talent"]["id"], "rank": t.get("talent_rank", 1)}
+                    for t in spec.get("talents", [])
+                    if "talent" in t and "id" in t["talent"]
+                ]
                 talent_group["specializations"].append({
                     "treeName": tree_name,
                     "spentPoints": spent,
+                    "talents": talents,
                 })
 
                 # Resolve specId from active group

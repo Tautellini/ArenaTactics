@@ -1,0 +1,473 @@
+{
+  "classId": "warlock",
+  "trees": [
+    {
+      "name": "Affliction",
+      "icon": "spell_shadow_deathcoil",
+      "talents": [
+        {
+          "id": 1005,
+          "name": "Suppression",
+          "icon": "spell_shadow_unsummonbuilding",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1003,
+          "name": "Improved Corruption",
+          "icon": "spell_shadow_abominationexplosion",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1006,
+          "name": "Unknown (18181)",
+          "icon": "spell_shadow_curseofmannoroth",
+          "row": 1,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1101,
+          "name": "Improved Drain Soul",
+          "icon": "spell_shadow_haunting",
+          "row": 1,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1007,
+          "name": "Improved Life Tap",
+          "icon": "spell_shadow_burningspirit",
+          "row": 1,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1004,
+          "name": "Unknown (17808)",
+          "icon": "spell_shadow_lifedrain02",
+          "row": 1,
+          "col": 3,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1284,
+          "name": "Unknown (18830)",
+          "icon": "spell_shadow_curseofsargeras",
+          "row": 2,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1001,
+          "name": "Fel Concentration",
+          "icon": "spell_shadow_fingerofdeath",
+          "row": 2,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1061,
+          "name": "Amplify Curse",
+          "icon": "spell_shadow_contagion",
+          "row": 2,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1021,
+          "name": "Grim Reach",
+          "icon": "spell_shadow_callofbone",
+          "row": 3,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1002,
+          "name": "Nightfall",
+          "icon": "spell_shadow_twilight",
+          "row": 3,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1121,
+          "name": "Unknown (18393)",
+          "icon": "spell_shadow_siphonmana",
+          "row": 3,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1041,
+          "name": "Siphon Life",
+          "icon": "spell_shadow_requiem",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1081,
+          "name": "Curse of Exhaustion",
+          "icon": "spell_shadow_grimward",
+          "row": 4,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": 1061
+        },
+        {
+          "id": 1082,
+          "name": "Unknown (18313)",
+          "icon": "spell_shadow_grimward",
+          "row": 4,
+          "col": 3,
+          "maxRank": 4,
+          "prerequisiteId": 1081
+        },
+        {
+          "id": 1042,
+          "name": "Shadow Mastery",
+          "icon": "spell_shadow_shadetruesight",
+          "row": 5,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": 1041
+        },
+        {
+          "id": 1022,
+          "name": "Dark Pact",
+          "icon": "spell_shadow_darkritual",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        }
+      ]
+    },
+    {
+      "name": "Demonology",
+      "icon": "spell_shadow_metamorphosis",
+      "talents": [
+        {
+          "id": 1221,
+          "name": "Improved Healthstone",
+          "icon": "inv_stone_04",
+          "row": 0,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1222,
+          "name": "Improved Imp",
+          "icon": "spell_shadow_summonimp",
+          "row": 0,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1223,
+          "name": "Demonic Embrace",
+          "icon": "spell_shadow_metamorphosis",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1224,
+          "name": "Improved Health Funnel",
+          "icon": "spell_shadow_lifedrain",
+          "row": 1,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1225,
+          "name": "Improved Voidwalker",
+          "icon": "spell_shadow_summonvoidwalker",
+          "row": 1,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1242,
+          "name": "Unknown (18746)",
+          "icon": "spell_holy_magicalsentry",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1243,
+          "name": "Improved Sayaad",
+          "icon": "spell_shadow_summonsuccubus",
+          "row": 2,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1226,
+          "name": "Fel Domination",
+          "icon": "spell_nature_removecurse",
+          "row": 2,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1241,
+          "name": "Unknown (18752)",
+          "icon": "spell_shadow_antishadow",
+          "row": 2,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1227,
+          "name": "Master Summoner",
+          "icon": "spell_shadow_impphaseshift",
+          "row": 3,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": 1226
+        },
+        {
+          "id": 1262,
+          "name": "Unholy Power",
+          "icon": "spell_shadow_shadowworddominate",
+          "row": 3,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1283,
+          "name": "Unknown (18825)",
+          "icon": "spell_shadow_enslavedemon",
+          "row": 4,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1281,
+          "name": "Demonic Sacrifice",
+          "icon": "spell_shadow_psychicscream",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1261,
+          "name": "Master Conjuror",
+          "icon": "inv_ammo_firetar",
+          "row": 4,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1244,
+          "name": "Master Demonologist",
+          "icon": "spell_shadow_shadowpact",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": 1262
+        },
+        {
+          "id": 1282,
+          "name": "Soul Link",
+          "icon": "spell_shadow_gathershadows",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1281
+        },
+        {
+          "id": 1263,
+          "name": "Unknown (18775)",
+          "icon": "inv_misc_gem_sapphire_01",
+          "row": 6,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        }
+      ]
+    },
+    {
+      "name": "Destruction",
+      "icon": "spell_shadow_rainoffire",
+      "talents": [
+        {
+          "id": 944,
+          "name": "Improved Shadow Bolt",
+          "icon": "spell_shadow_shadowbolt",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 941,
+          "name": "Cataclysm",
+          "icon": "spell_fire_windsofwoe",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 943,
+          "name": "Bane",
+          "icon": "spell_shadow_deathpact",
+          "row": 1,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 982,
+          "name": "Aftermath",
+          "icon": "spell_fire_fire",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 983,
+          "name": "Improved Firebolt",
+          "icon": "spell_fire_firebolt",
+          "row": 2,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 984,
+          "name": "Improved Lash of Pain",
+          "icon": "spell_shadow_curse",
+          "row": 2,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 981,
+          "name": "Devastation",
+          "icon": "spell_fire_flameshock",
+          "row": 2,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 963,
+          "name": "Shadowburn",
+          "icon": "spell_shadow_scourgebuild",
+          "row": 2,
+          "col": 3,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 985,
+          "name": "Intensity",
+          "icon": "spell_fire_lavaspawn",
+          "row": 3,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 964,
+          "name": "Destructive Reach",
+          "icon": "spell_shadow_corpseexplode",
+          "row": 3,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 965,
+          "name": "Unknown (17932)",
+          "icon": "spell_fire_soulburn",
+          "row": 3,
+          "col": 3,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 986,
+          "name": "Pyroclasm",
+          "icon": "spell_fire_volcano",
+          "row": 4,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": 985
+        },
+        {
+          "id": 961,
+          "name": "Improved Immolate",
+          "icon": "spell_fire_immolation",
+          "row": 4,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 967,
+          "name": "Ruin",
+          "icon": "spell_shadow_shadowwordpain",
+          "row": 4,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": 981
+        },
+        {
+          "id": 966,
+          "name": "Emberstorm",
+          "icon": "spell_fire_selfdestruct",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 968,
+          "name": "Conflagrate",
+          "icon": "spell_fire_fireball",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 961
+        }
+      ]
+    }
+  ]
+}

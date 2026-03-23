@@ -1,0 +1,464 @@
+{
+  "classId": "mage",
+  "trees": [
+    {
+      "name": "Arcane",
+      "icon": "spell_holy_magicalsentry",
+      "talents": [
+        {
+          "id": 74,
+          "name": "Arcane Subtlety",
+          "icon": "spell_holy_dispelmagic",
+          "row": 0,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 76,
+          "name": "Arcane Focus",
+          "icon": "spell_holy_devotion",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 80,
+          "name": "Improved Arcane Missiles",
+          "icon": "spell_nature_starfall",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 78,
+          "name": "Wand Specialization",
+          "icon": "inv_wand_01",
+          "row": 1,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1650,
+          "name": "Magic Absorption",
+          "icon": "spell_nature_astralrecalgroup",
+          "row": 1,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 75,
+          "name": "Arcane Concentration",
+          "icon": "spell_shadow_manaburn",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 82,
+          "name": "Magic Attunement",
+          "icon": "spell_nature_abolishmagic",
+          "row": 2,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 81,
+          "name": "Arcane Impact",
+          "icon": "spell_nature_wispsplode",
+          "row": 2,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 85,
+          "name": "Arcane Fortitude",
+          "icon": "spell_arcane_arcaneresilience",
+          "row": 2,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 83,
+          "name": "Improved Mana Shield",
+          "icon": "spell_shadow_detectlesserinvisibility",
+          "row": 3,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 88,
+          "name": "Improved Counterspell",
+          "icon": "spell_frost_iceshock",
+          "row": 3,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1142,
+          "name": "Arcane Meditation",
+          "icon": "spell_shadow_siphonmana",
+          "row": 3,
+          "col": 3,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 86,
+          "name": "Presence of Mind",
+          "icon": "spell_nature_enchantarmor",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 77,
+          "name": "Arcane Mind",
+          "icon": "spell_shadow_charm",
+          "row": 4,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": 85
+        },
+        {
+          "id": 421,
+          "name": "Arcane Instability",
+          "icon": "spell_shadow_teleport",
+          "row": 5,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": 86
+        },
+        {
+          "id": 87,
+          "name": "Arcane Power",
+          "icon": "spell_nature_lightning",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 421
+        }
+      ]
+    },
+    {
+      "name": "Fire",
+      "icon": "spell_fire_firebolt02",
+      "talents": [
+        {
+          "id": 26,
+          "name": "Improved Fireball",
+          "icon": "spell_fire_flamebolt",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 30,
+          "name": "Impact",
+          "icon": "spell_fire_meteorstorm",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 34,
+          "name": "Ignite",
+          "icon": "spell_fire_incinerate",
+          "row": 1,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 28,
+          "name": "Flame Throwing",
+          "icon": "spell_fire_flare",
+          "row": 1,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 27,
+          "name": "Improved Fire Blast",
+          "icon": "spell_fire_fireball",
+          "row": 1,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1141,
+          "name": "Incineration",
+          "icon": "spell_fire_flameshock",
+          "row": 2,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 31,
+          "name": "Improved Flamestrike",
+          "icon": "spell_fire_selfdestruct",
+          "row": 2,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 29,
+          "name": "Pyroblast",
+          "icon": "spell_fire_fireball02",
+          "row": 2,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 23,
+          "name": "Burning Soul",
+          "icon": "spell_fire_fire",
+          "row": 2,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 25,
+          "name": "Improved Scorch",
+          "icon": "spell_fire_soulburn",
+          "row": 3,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 24,
+          "name": "Molten Shields",
+          "icon": "spell_fire_firearmor",
+          "row": 3,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1639,
+          "name": "Master of Elements",
+          "icon": "spell_fire_masterofelements",
+          "row": 3,
+          "col": 3,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 33,
+          "name": "Critical Mass",
+          "icon": "spell_nature_wispheal",
+          "row": 4,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 32,
+          "name": "Blast Wave",
+          "icon": "spell_holy_excorcism_02",
+          "row": 4,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": 29
+        },
+        {
+          "id": 35,
+          "name": "Fire Power",
+          "icon": "spell_fire_immolation",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 36,
+          "name": "Combustion",
+          "icon": "spell_fire_sealoffire",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 33
+        }
+      ]
+    },
+    {
+      "name": "Frost",
+      "icon": "spell_frost_frostbolt02",
+      "talents": [
+        {
+          "id": 70,
+          "name": "Frost Warding",
+          "icon": "spell_frost_frostward",
+          "row": 0,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 37,
+          "name": "Improved Frostbolt",
+          "icon": "spell_frost_frostbolt02",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1649,
+          "name": "Elemental Precision",
+          "icon": "spell_ice_magicdamage",
+          "row": 0,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 73,
+          "name": "Ice Shards",
+          "icon": "spell_frost_iceshard",
+          "row": 1,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 38,
+          "name": "Frostbite",
+          "icon": "spell_frost_frostarmor",
+          "row": 1,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 62,
+          "name": "Improved Frost Nova",
+          "icon": "spell_frost_freezingbreath",
+          "row": 1,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 65,
+          "name": "Permafrost",
+          "icon": "spell_frost_wisp",
+          "row": 1,
+          "col": 3,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 61,
+          "name": "Piercing Ice",
+          "icon": "spell_frost_frostbolt",
+          "row": 2,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 69,
+          "name": "Icy Veins",
+          "icon": "spell_frost_wizardmark",
+          "row": 2,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 63,
+          "name": "Improved Blizzard",
+          "icon": "spell_frost_icestorm",
+          "row": 2,
+          "col": 3,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 741,
+          "name": "Arctic Reach",
+          "icon": "spell_shadow_darkritual",
+          "row": 3,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 66,
+          "name": "Frost Channeling",
+          "icon": "spell_frost_stun",
+          "row": 3,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 67,
+          "name": "Shatter",
+          "icon": "spell_frost_frostshock",
+          "row": 3,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": 62
+        },
+        {
+          "id": 72,
+          "name": "Cold Snap",
+          "icon": "spell_frost_frost",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 64,
+          "name": "Improved Cone of Cold",
+          "icon": "spell_frost_glacier",
+          "row": 4,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 68,
+          "name": "Winter's Chill",
+          "icon": "spell_frost_chillingblast",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 71,
+          "name": "Ice Barrier",
+          "icon": "spell_ice_lament",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 72
+        }
+      ]
+    }
+  ]
+}

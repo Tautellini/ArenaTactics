@@ -1,6 +1,7 @@
 package net.tautellini.arenatactics.domain
 
 import net.tautellini.arenatactics.data.model.PlayerProfile
+import net.tautellini.arenatactics.data.model.TalentSelection
 
 /**
  * Aggregated meta data for a specialization, computed at runtime from player profiles.
@@ -36,7 +37,8 @@ data class TalentBuildEntry(
     val label: String,          // e.g. "Frost (44) / Arcane (17)"
     val trees: List<Pair<String, Int>>,  // treeName to spentPoints
     val count: Int,
-    val percentage: Double
+    val percentage: Double,
+    val talentSelections: List<TalentSelection> = emptyList()  // representative build's individual talents
 )
 
 private val SLOT_ORDER = listOf(
@@ -70,7 +72,7 @@ fun computeSpecMeta(specId: String, players: List<PlayerProfile>): SpecMeta {
         val items = slotItems[slot] ?: return@mapNotNull null
         val itemCounts = items.groupingBy { it }.eachCount()
             .entries.sortedByDescending { it.value }
-            .take(5)
+            .take(10)
             .map { (pair, count) ->
                 ItemUsage(
                     itemId = pair.first,
@@ -84,7 +86,7 @@ fun computeSpecMeta(specId: String, players: List<PlayerProfile>): SpecMeta {
         val enchants = slotEnchants[slot]?.let { list ->
             list.groupingBy { it }.eachCount()
                 .entries.sortedByDescending { it.value }
-                .take(3)
+                .take(5)
                 .map { (name, count) ->
                     EnchantUsage(name, count, (count * 1000L / total) / 10.0)
                 }
@@ -94,20 +96,30 @@ fun computeSpecMeta(specId: String, players: List<PlayerProfile>): SpecMeta {
     }
 
     // ── Talent builds ──
-    val buildCounts = mutableMapOf<String, Pair<List<Pair<String, Int>>, Int>>()
+    data class BuildData(
+        val trees: List<Pair<String, Int>>,
+        val count: Int,
+        val talents: List<TalentSelection>  // representative build (first seen)
+    )
+    val buildCounts = mutableMapOf<String, BuildData>()
     for (player in matching) {
         val activeGroup = player.talentGroups.firstOrNull { it.isActive } ?: continue
         val trees = activeGroup.specializations.map { it.treeName to it.spentPoints }
         val label = trees.joinToString(" / ") { "${it.first} (${it.second})" }
         val existing = buildCounts[label]
-        buildCounts[label] = (existing?.first ?: trees) to (existing?.second ?: 0) + 1
+        if (existing != null) {
+            buildCounts[label] = existing.copy(count = existing.count + 1)
+        } else {
+            val allTalents = activeGroup.specializations.flatMap { it.talents }
+            buildCounts[label] = BuildData(trees, 1, allTalents)
+        }
     }
 
     val talentBuilds = buildCounts.entries
-        .sortedByDescending { it.value.second }
+        .sortedByDescending { it.value.count }
         .take(5)
-        .map { (label, pair) ->
-            TalentBuildEntry(label, pair.first, pair.second, (pair.second * 1000L / total) / 10.0)
+        .map { (label, data) ->
+            TalentBuildEntry(label, data.trees, data.count, (data.count * 1000L / total) / 10.0, data.talents)
         }
 
     return SpecMeta(specId, total, slotBreakdowns, talentBuilds)

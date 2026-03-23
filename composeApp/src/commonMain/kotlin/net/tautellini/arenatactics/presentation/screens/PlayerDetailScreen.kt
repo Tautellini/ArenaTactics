@@ -28,10 +28,12 @@ import net.tautellini.arenatactics.data.model.ItemTooltipData
 import net.tautellini.arenatactics.data.model.PlayerProfile
 import net.tautellini.arenatactics.data.model.PvpBracketRating
 import net.tautellini.arenatactics.data.model.TalentGroup
+import net.tautellini.arenatactics.data.model.TalentTreeDefinition
 import net.tautellini.arenatactics.data.model.WowheadIcons
 import net.tautellini.arenatactics.openUrl
 import net.tautellini.arenatactics.presentation.PlayerDetailState
 import net.tautellini.arenatactics.presentation.PlayerDetailViewModel
+import net.tautellini.arenatactics.presentation.screens.components.PlayerTalentTreeCard
 import net.tautellini.arenatactics.presentation.screens.components.WithItemTooltip
 import net.tautellini.arenatactics.presentation.theme.*
 
@@ -115,12 +117,12 @@ fun PlayerDetailScreen(viewModel: PlayerDetailViewModel) {
             contentAlignment = Alignment.Center
         ) { Text(s.message, color = TextSecondary) }
 
-        is PlayerDetailState.Success -> PlayerDetailContent(s.player, s.items)
+        is PlayerDetailState.Success -> PlayerDetailContent(s.player, s.items, s.talentTree)
     }
 }
 
 @Composable
-private fun PlayerDetailContent(player: PlayerProfile, items: Map<String, ItemTooltipData>) {
+private fun PlayerDetailContent(player: PlayerProfile, items: Map<String, ItemTooltipData>, talentTree: TalentTreeDefinition? = null) {
     val classClr = player.classId?.let { classColor(it) } ?: TextPrimary
 
     Column(
@@ -165,13 +167,21 @@ private fun PlayerDetailContent(player: PlayerProfile, items: Map<String, ItemTo
         val activeGroup = player.talentGroups.firstOrNull { it.isActive }
         if (activeGroup != null && activeGroup.specializations.isNotEmpty()) {
             SectionTitle("Talents")
-            TalentTreeCard(activeGroup)
+            if (talentTree != null) {
+                PlayerTalentTreeCard(talentTree, activeGroup)
+            } else {
+                TalentBarCard(activeGroup)
+            }
 
             // Show secondary spec if it exists
             val secondaryGroup = player.talentGroups.firstOrNull { !it.isActive }
             if (secondaryGroup != null && secondaryGroup.specializations.isNotEmpty()) {
                 Text("Secondary Spec", color = TextSecondary, fontSize = 12.sp, fontWeight = FontWeight.Medium)
-                TalentTreeCard(secondaryGroup)
+                if (talentTree != null) {
+                    PlayerTalentTreeCard(talentTree, secondaryGroup)
+                } else {
+                    TalentBarCard(secondaryGroup)
+                }
             }
         }
 
@@ -315,7 +325,7 @@ private fun EquipmentItemCard(item: EquippedItem, tooltipData: ItemTooltipData? 
 }
 
 @Composable
-private fun TalentTreeCard(group: TalentGroup) {
+private fun TalentBarCard(group: TalentGroup) {
     val shape = RoundedCornerShape(12.dp)
     val totalPoints = group.specializations.sumOf { it.spentPoints }
     val maxPoints = group.specializations.maxOfOrNull { it.spentPoints } ?: 1

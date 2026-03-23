@@ -62,15 +62,9 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - Compose Navigation
 
 ## DESIGN GUIDELINES
-- dark, powerful design with glass-like elements
-- **premium feel** — black to red palette, imposing and bold
+- dark, premium design with glass-like translucent elements
+- **teal/aqua palette** — deep ocean darks with cyan accents
 - modern icon first design
-- Background color: #080808 (near-black)
-- Surface color: #111111 (dark gray)
-- Card color: #141414 (neutral dark)
-- Card border: #252525 (subtle edge for glass-panel definition)
-- Primary color: #E53935 (vivid red)
-- Secondary color: #8B1A1A (dark crimson)
 - **Always use theme color tokens** (`Primary`, `TextPrimary`, `TextSecondary`, `CardColor`,
   `CardBorder`, `Background`, etc.) from `Theme.kt`. Never hardcode `Color.White`, `Color.Black`, or hex
   literals for UI elements that should follow the theme. The only exceptions are WoW-standard
@@ -85,6 +79,9 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - Addon tiles use custom "W" emblems with per-addon accent colors instead of Wowhead icons. Accent colors are defined in `addons.json` as hex strings.
 
 ## Additional Code Guidance
+-  **Never use Unicode text characters as icons** (e.g., `"▼"`, `"▲"`, `"✕"`). They render
+   inconsistently across platforms. Always use Material Icons (`Icons.Rounded.*`) from
+   `androidx.compose.material.icons` or Wowhead icon images instead.
 -  any exception-generating code on the web path (IO, JS interop) needs catch
    (Throwable) and must never be left uncaught in a LaunchedEffect
 -  UI must be fully adaptive — use `GridCells.Adaptive`, `FlowRow`, or equivalent so

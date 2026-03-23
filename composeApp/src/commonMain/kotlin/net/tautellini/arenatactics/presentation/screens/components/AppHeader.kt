@@ -79,6 +79,7 @@ private fun Screen.extractAddonId(): String? = when (this) {
     is Screen.CompositionSelection -> addonId
     is Screen.MatchupList -> addonId
     is Screen.MatchupDetail -> addonId
+    is Screen.Meta -> addonId
     is Screen.ClassGuideList -> addonId
     is Screen.SpecGuide -> addonId
     is Screen.Ladder -> addonId
@@ -97,8 +98,8 @@ private fun Screen.isTacticsPath(): Boolean = when (this) {
     else -> false
 }
 
-private fun Screen.isGuidesPath(): Boolean = when (this) {
-    is Screen.ClassGuideList, is Screen.SpecGuide -> true
+private fun Screen.isMetaPath(): Boolean = when (this) {
+    is Screen.Meta, is Screen.ClassGuideList, is Screen.SpecGuide -> true
     else -> false
 }
 
@@ -123,7 +124,7 @@ fun AppHeader(
     val addonId = currentScreen.extractAddonId()
     val gameModeId = currentScreen.extractGameModeId()
     val isTactics = currentScreen.isTacticsPath()
-    val isGuides = currentScreen.isGuidesPath()
+    val isMeta = currentScreen.isMetaPath()
     val isLadder = currentScreen is Screen.Ladder || currentScreen is Screen.PlayerDetail
 
     // Ensure game modes are loaded for the current addon
@@ -248,7 +249,7 @@ fun AppHeader(
                                 expanded = null
                                 homeViewModel.selectAddon(addon)
                                 if (isTactics) homeViewModel.selectSection(HomeSection.TACTICS)
-                                else if (isGuides) homeViewModel.selectSection(HomeSection.CLASS_GUIDES)
+                                else if (isMeta) homeViewModel.selectSection(HomeSection.CLASS_GUIDES)
                                 onNavigate(Screen.AddonSelection)
                             }
                         )
@@ -258,7 +259,7 @@ fun AppHeader(
                 SegmentType.SECTION -> {
                     val alternatives = listOf(
                         "Tactics" to isTactics,
-                        "Class Guides" to isGuides,
+                        "Meta" to isMeta,
                         "Ladder" to isLadder
                     )
                     alternatives.filter { !it.second }.forEach { (label, _) ->
@@ -275,7 +276,7 @@ fun AppHeader(
                                             }
                                         }
                                         "Ladder" -> onNavigate(Screen.Ladder(addonId))
-                                        else -> onNavigate(Screen.ClassGuideList(addonId))
+                                        else -> onNavigate(Screen.Meta(addonId))
                                     }
                                 }
                             }
@@ -346,7 +347,7 @@ private fun SectionSegmentContent(isTactics: Boolean, isLadder: Boolean = false)
         text = when {
             isTactics -> "Tactics"
             isLadder  -> "Ladder"
-            else      -> "Guides"
+            else      -> "Meta"
         },
         color = TextPrimary,
         fontSize = 13.sp,
@@ -366,7 +367,7 @@ private fun BracketSegmentContent(mode: GameMode?, gameModeId: String?) {
 
 // ─── Inline option composables (expand to the right) ────────────────────────
 
-private val GreyedOut = Color(0xFF555555)
+private val GreyedOut = Color(0xFF5A6A6B)
 
 @Composable
 private fun InlineAddonOption(addon: Addon, enabled: Boolean = true, onClick: () -> Unit) {
@@ -437,6 +438,7 @@ private fun buildTrailingBreadcrumbs(screen: Screen): List<TrailingCrumb> = when
         ),
         TrailingCrumb("Detail", isCurrent = true, target = null)
     )
+    is Screen.Meta -> emptyList()
     is Screen.ClassGuideList -> listOf(
         TrailingCrumb("Classes", isCurrent = true, target = null)
     )

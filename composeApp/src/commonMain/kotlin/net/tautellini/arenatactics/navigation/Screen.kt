@@ -10,6 +10,7 @@ sealed class Screen {
     @Serializable data class CompositionSelection(val addonId: String, val gameModeId: String) : Screen()
     @Serializable data class MatchupList(val addonId: String, val gameModeId: String, val compositionId: String) : Screen()
     @Serializable data class MatchupDetail(val addonId: String, val gameModeId: String, val compositionId: String, val matchupId: String) : Screen()
+    @Serializable data class Meta(val addonId: String) : Screen()
     @Serializable data class ClassGuideList(val addonId: String) : Screen()
     @Serializable data class SpecGuide(val addonId: String, val classId: String, val specId: String) : Screen()
     @Serializable data class Ladder(val addonId: String) : Screen()
@@ -29,6 +30,7 @@ sealed class Screen {
         is CompositionSelection -> "/$addonId/tactics/${gameModeId.shortBracket(addonId)}"
         is MatchupList          -> "/$addonId/tactics/${gameModeId.shortBracket(addonId)}/${compositionId.specIdsToPlus()}"
         is MatchupDetail        -> "/$addonId/tactics/${gameModeId.shortBracket(addonId)}/${compositionId.specIdsToPlus()}/vs/${matchupId.enemyPart()}"
+        is Meta                 -> "/$addonId/meta"
         is ClassGuideList       -> "/$addonId/guides"
         is SpecGuide            -> "/$addonId/guides/$specId"
         is Ladder               -> "/$addonId/ladder"
@@ -51,6 +53,7 @@ sealed class Screen {
                     val matchupId = "${compId}_vs_${enemySlug.plusToSpecIds()}"
                     MatchupDetail(addonId, modeId, compId, matchupId)
                 }
+                "meta"    -> Meta(addonId)
                 "guides"  -> {
                     val specId = segs.getOrNull(2) ?: return ClassGuideList(addonId)
                     val classId = specId.substringBefore('_')
@@ -71,6 +74,7 @@ sealed class Screen {
             is CompositionSelection -> listOf(AddonSelection, screen)
             is MatchupList          -> listOf(AddonSelection, CompositionSelection(screen.addonId, screen.gameModeId), screen)
             is MatchupDetail        -> listOf(AddonSelection, CompositionSelection(screen.addonId, screen.gameModeId), MatchupList(screen.addonId, screen.gameModeId, screen.compositionId), screen)
+            is Meta                 -> listOf(AddonSelection, screen)
             is ClassGuideList       -> listOf(AddonSelection, screen)
             is SpecGuide            -> listOf(AddonSelection, ClassGuideList(screen.addonId), screen)
             is Ladder               -> listOf(AddonSelection, screen)
@@ -99,6 +103,8 @@ fun NavBackStackEntry.toScreen(): Screen {
             .let { Screen.MatchupList(it.addonId, it.gameModeId, it.compositionId) }
         "CompositionSelection" in route -> toRoute<Screen.CompositionSelection>()
             .let { Screen.CompositionSelection(it.addonId, it.gameModeId) }
+        "Meta"                 in route -> toRoute<Screen.Meta>()
+            .let { Screen.Meta(it.addonId) }
         "ClassGuideList"       in route -> toRoute<Screen.ClassGuideList>()
             .let { Screen.ClassGuideList(it.addonId) }
         "SpecGuide"            in route -> toRoute<Screen.SpecGuide>()

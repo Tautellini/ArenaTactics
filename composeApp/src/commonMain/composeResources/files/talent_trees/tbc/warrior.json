@@ -1,0 +1,491 @@
+{
+  "classId": "warrior",
+  "trees": [
+    {
+      "name": "Arms",
+      "icon": "ability_rogue_eviscerate",
+      "talents": [
+        {
+          "id": 124,
+          "name": "Improved Heroic Strike",
+          "icon": "ability_rogue_ambush",
+          "row": 0,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 130,
+          "name": "Deflection",
+          "icon": "ability_parry",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 127,
+          "name": "Improved Rend",
+          "icon": "ability_gouge",
+          "row": 0,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 126,
+          "name": "Improved Charge",
+          "icon": "ability_warrior_charge",
+          "row": 1,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 641,
+          "name": "Unknown (12679)",
+          "icon": "spell_nature_enchantarmor",
+          "row": 1,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 128,
+          "name": "Improved Thunder Clap",
+          "icon": "ability_thunderclap",
+          "row": 1,
+          "col": 3,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 131,
+          "name": "Improved Overpower",
+          "icon": "inv_sword_05",
+          "row": 2,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 137,
+          "name": "Anger Management",
+          "icon": "spell_holy_blessingofstamina",
+          "row": 2,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 641
+        },
+        {
+          "id": 121,
+          "name": "Deep Wounds",
+          "icon": "ability_backstab",
+          "row": 2,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": 127
+        },
+        {
+          "id": 136,
+          "name": "Two-Handed Weapon Specialization",
+          "icon": "inv_axe_09",
+          "row": 3,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 662,
+          "name": "Impale",
+          "icon": "ability_searingarrow",
+          "row": 3,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": 121
+        },
+        {
+          "id": 132,
+          "name": "Poleaxe Specialization",
+          "icon": "inv_axe_06",
+          "row": 4,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 133,
+          "name": "Death Wish",
+          "icon": "ability_rogue_slicedice",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 125,
+          "name": "Mace Specialization",
+          "icon": "inv_mace_01",
+          "row": 4,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 123,
+          "name": "Sword Specialization",
+          "icon": "inv_sword_27",
+          "row": 4,
+          "col": 3,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 134,
+          "name": "Unknown (12833)",
+          "icon": "inv_weapon_halbard_01",
+          "row": 5,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 129,
+          "name": "Improved Hamstring",
+          "icon": "ability_shockwave",
+          "row": 5,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 135,
+          "name": "Mortal Strike",
+          "icon": "ability_warrior_savageblow",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 133
+        }
+      ]
+    },
+    {
+      "name": "Fury",
+      "icon": "ability_warrior_innerrage",
+      "talents": [
+        {
+          "id": 158,
+          "name": "Booming Voice",
+          "icon": "spell_nature_purge",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 157,
+          "name": "Cruelty",
+          "icon": "ability_rogue_eviscerate",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 161,
+          "name": "Improved Demoralizing Shout",
+          "icon": "ability_warrior_warcry",
+          "row": 1,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 159,
+          "name": "Unbridled Wrath",
+          "icon": "spell_nature_stoneclawtotem",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 166,
+          "name": "Improved Cleave",
+          "icon": "ability_warrior_cleave",
+          "row": 2,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 160,
+          "name": "Piercing Howl",
+          "icon": "spell_shadow_deathscream",
+          "row": 2,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 661,
+          "name": "Blood Craze",
+          "icon": "spell_shadow_summonimp",
+          "row": 2,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 154,
+          "name": "Commanding Presence",
+          "icon": "ability_warrior_battleshout",
+          "row": 2,
+          "col": 3,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1581,
+          "name": "Dual Wield Specialization",
+          "icon": "ability_dualwield",
+          "row": 3,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1542,
+          "name": "Improved Execute",
+          "icon": "inv_sword_48",
+          "row": 3,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 155,
+          "name": "Enrage",
+          "icon": "spell_shadow_unholyfrenzy",
+          "row": 3,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 168,
+          "name": "Unknown (20499)",
+          "icon": "ability_warrior_decisivestrike",
+          "row": 4,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 165,
+          "name": "Sweeping Strikes",
+          "icon": "spell_shadow_deathpact",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1543,
+          "name": "Weapon Mastery",
+          "icon": "ability_rogue_sprint",
+          "row": 4,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1541,
+          "name": "Improved Berserker Rage",
+          "icon": "spell_nature_ancestralguardian",
+          "row": 5,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 156,
+          "name": "Flurry",
+          "icon": "ability_ghoulfrenzy",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": 155
+        },
+        {
+          "id": 167,
+          "name": "Bloodthirst",
+          "icon": "spell_nature_bloodlust",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 165
+        }
+      ]
+    },
+    {
+      "name": "Protection",
+      "icon": "ability_warrior_defensivestance",
+      "talents": [
+        {
+          "id": 1601,
+          "name": "Shield Specialization",
+          "icon": "inv_shield_06",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 138,
+          "name": "Anticipation",
+          "icon": "spell_nature_mirrorimage",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 142,
+          "name": "Improved Bloodrage",
+          "icon": "ability_racial_bloodrage",
+          "row": 1,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 140,
+          "name": "Toughness",
+          "icon": "spell_holy_devotion",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 141,
+          "name": "Iron Will",
+          "icon": "spell_magic_magearmor",
+          "row": 1,
+          "col": 3,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 153,
+          "name": "Last Stand",
+          "icon": "spell_holy_ashestoashes",
+          "row": 2,
+          "col": 0,
+          "maxRank": 1,
+          "prerequisiteId": 142
+        },
+        {
+          "id": 145,
+          "name": "Unknown (12944)",
+          "icon": "ability_defend",
+          "row": 2,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": 1601
+        },
+        {
+          "id": 147,
+          "name": "Improved Revenge",
+          "icon": "ability_warrior_revenge",
+          "row": 2,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 144,
+          "name": "Unknown (12792)",
+          "icon": "ability_warrior_innerrage",
+          "row": 2,
+          "col": 3,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 146,
+          "name": "Improved Sunder Armor",
+          "icon": "ability_warrior_sunder",
+          "row": 3,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 151,
+          "name": "Improved Disarm",
+          "icon": "ability_warrior_disarm",
+          "row": 3,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 143,
+          "name": "Improved Taunt",
+          "icon": "spell_nature_reincarnation",
+          "row": 3,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 150,
+          "name": "Improved Shield Wall",
+          "icon": "ability_warrior_shieldwall",
+          "row": 4,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 152,
+          "name": "Concussion Blow",
+          "icon": "ability_thunderbolt",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 149,
+          "name": "Improved Shield Bash",
+          "icon": "ability_warrior_shieldbash",
+          "row": 4,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 702,
+          "name": "One-Handed Weapon Specialization",
+          "icon": "inv_sword_20",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 148,
+          "name": "Shield Slam",
+          "icon": "inv_shield_05",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 152
+        }
+      ]
+    }
+  ]
+}

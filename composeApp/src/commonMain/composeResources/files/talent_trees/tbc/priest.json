@@ -1,0 +1,446 @@
+{
+  "classId": "priest",
+  "trees": [
+    {
+      "name": "Discipline",
+      "icon": "spell_holy_wordfortitude",
+      "talents": [
+        {
+          "id": 342,
+          "name": "Unbreakable Will",
+          "icon": "spell_magic_magearmor",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 345,
+          "name": "Wand Specialization",
+          "icon": "inv_wand_01",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 352,
+          "name": "Silent Resolve",
+          "icon": "spell_nature_manaregentotem",
+          "row": 1,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 344,
+          "name": "Improved Power Word: Fortitude",
+          "icon": "spell_holy_wordfortitude",
+          "row": 1,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 343,
+          "name": "Improved Power Word: Shield",
+          "icon": "spell_holy_powerwordshield",
+          "row": 1,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 321,
+          "name": "Martyrdom",
+          "icon": "spell_nature_tranquility",
+          "row": 1,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 348,
+          "name": "Inner Focus",
+          "icon": "spell_frost_windwalkon",
+          "row": 2,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 347,
+          "name": "Meditation",
+          "icon": "spell_nature_sleep",
+          "row": 2,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 346,
+          "name": "Improved Inner Fire",
+          "icon": "spell_holy_innerfire",
+          "row": 3,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 341,
+          "name": "Mental Agility",
+          "icon": "ability_hibernation",
+          "row": 3,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 350,
+          "name": "Improved Mana Burn",
+          "icon": "spell_shadow_manaburn",
+          "row": 3,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1201,
+          "name": "Mental Strength",
+          "icon": "spell_nature_enchantarmor",
+          "row": 4,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 351,
+          "name": "Divine Spirit",
+          "icon": "spell_holy_divinespirit",
+          "row": 4,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": 347
+        },
+        {
+          "id": 1202,
+          "name": "Force of Will",
+          "icon": "spell_nature_slowingtotem",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 322,
+          "name": "Power Infusion",
+          "icon": "spell_holy_powerinfusion",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1201
+        }
+      ]
+    },
+    {
+      "name": "Holy",
+      "icon": "spell_holy_holybolt",
+      "talents": [
+        {
+          "id": 410,
+          "name": "Healing Focus",
+          "icon": "spell_holy_healingfocus",
+          "row": 0,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 406,
+          "name": "Improved Renew",
+          "icon": "spell_holy_renew",
+          "row": 0,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 401,
+          "name": "Holy Specialization",
+          "icon": "spell_holy_sealofsalvation",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 411,
+          "name": "Spell Warding",
+          "icon": "spell_holy_spellwarding",
+          "row": 1,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1181,
+          "name": "Divine Fury",
+          "icon": "spell_holy_sealofwrath",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 442,
+          "name": "Holy Nova",
+          "icon": "spell_holy_holynova",
+          "row": 2,
+          "col": 0,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1636,
+          "name": "Blessed Recovery",
+          "icon": "spell_holy_blessedrecovery",
+          "row": 2,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 361,
+          "name": "Inspiration",
+          "icon": "spell_holy_layonhands",
+          "row": 2,
+          "col": 3,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1635,
+          "name": "Holy Reach",
+          "icon": "spell_holy_purify",
+          "row": 3,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 408,
+          "name": "Improved Healing",
+          "icon": "spell_holy_heal02",
+          "row": 3,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 403,
+          "name": "Searing Light",
+          "icon": "spell_holy_searinglightpriest",
+          "row": 3,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": 1181
+        },
+        {
+          "id": 413,
+          "name": "Healing Prayers",
+          "icon": "spell_holy_prayerofhealing02",
+          "row": 4,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1561,
+          "name": "Spirit of Redemption",
+          "icon": "inv_enchant_essenceeternallarge",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 402,
+          "name": "Spiritual Guidance",
+          "icon": "spell_holy_spiritualguidence",
+          "row": 4,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 404,
+          "name": "Spiritual Healing",
+          "icon": "spell_nature_moonglow",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1637,
+          "name": "Lightwell",
+          "icon": "spell_holy_summonlightwell",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1561
+        }
+      ]
+    },
+    {
+      "name": "Shadow",
+      "icon": "spell_shadow_shadowwordpain",
+      "talents": [
+        {
+          "id": 465,
+          "name": "Spirit Tap",
+          "icon": "spell_shadow_requiem",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 464,
+          "name": "Blackout",
+          "icon": "spell_shadow_gathershadows",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 466,
+          "name": "Shadow Affinity",
+          "icon": "spell_shadow_shadowward",
+          "row": 1,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 482,
+          "name": "Improved Shadow Word: Pain",
+          "icon": "spell_shadow_shadowwordpain",
+          "row": 1,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 463,
+          "name": "Shadow Focus",
+          "icon": "spell_shadow_burningspirit",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 542,
+          "name": "Improved Psychic Scream",
+          "icon": "spell_shadow_psychicscream",
+          "row": 2,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 481,
+          "name": "Improved Mind Blast",
+          "icon": "spell_shadow_unholyfrenzy",
+          "row": 2,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 501,
+          "name": "Mind Flay",
+          "icon": "spell_shadow_siphonmana",
+          "row": 2,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 483,
+          "name": "Improved Fade",
+          "icon": "spell_magic_lesserinvisibilty",
+          "row": 3,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 881,
+          "name": "Unknown (17325)",
+          "icon": "spell_shadow_chilltouch",
+          "row": 3,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 461,
+          "name": "Shadow Weaving",
+          "icon": "spell_shadow_blackplague",
+          "row": 3,
+          "col": 3,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 541,
+          "name": "Silence",
+          "icon": "spell_shadow_impphaseshift",
+          "row": 4,
+          "col": 0,
+          "maxRank": 1,
+          "prerequisiteId": 542
+        },
+        {
+          "id": 484,
+          "name": "Vampiric Embrace",
+          "icon": "spell_shadow_unsummonbuilding",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1638,
+          "name": "Improved Vampiric Embrace",
+          "icon": "spell_shadow_improvedvampiricembrace",
+          "row": 4,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": 484
+        },
+        {
+          "id": 462,
+          "name": "Darkness",
+          "icon": "spell_shadow_twilight",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 521,
+          "name": "Shadowform",
+          "icon": "spell_shadow_shadowform",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 484
+        }
+      ]
+    }
+  ]
+}

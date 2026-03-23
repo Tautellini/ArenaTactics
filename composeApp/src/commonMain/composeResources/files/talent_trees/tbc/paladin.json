@@ -1,0 +1,419 @@
+{
+  "classId": "paladin",
+  "trees": [
+    {
+      "name": "Holy",
+      "icon": "spell_holy_holybolt",
+      "talents": [
+        {
+          "id": 1450,
+          "name": "Divine Strength",
+          "icon": "ability_golemthunderclap",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1449,
+          "name": "Divine Intellect",
+          "icon": "spell_nature_sleep",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1432,
+          "name": "Spiritual Focus",
+          "icon": "spell_arcane_blink",
+          "row": 1,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1463,
+          "name": "Improved Seal of Righteousness",
+          "icon": "ability_thunderbolt",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1444,
+          "name": "Healing Light",
+          "icon": "spell_holy_holybolt",
+          "row": 2,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1435,
+          "name": "Consecration",
+          "icon": "spell_holy_innerfire",
+          "row": 2,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1443,
+          "name": "Improved Lay on Hands",
+          "icon": "spell_holy_layonhands",
+          "row": 2,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1628,
+          "name": "Unyielding Faith",
+          "icon": "spell_holy_unyieldingfaith",
+          "row": 2,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1461,
+          "name": "Illumination",
+          "icon": "spell_holy_greaterheal",
+          "row": 3,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1446,
+          "name": "Improved Blessing of Wisdom",
+          "icon": "spell_holy_sealofwisdom",
+          "row": 3,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1433,
+          "name": "Divine Favor",
+          "icon": "spell_holy_heal",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1461
+        },
+        {
+          "id": 1465,
+          "name": "Sanctified Light",
+          "icon": "spell_holy_healingaura",
+          "row": 4,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1627,
+          "name": "Holy Power",
+          "icon": "spell_holy_power",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1502,
+          "name": "Holy Shock",
+          "icon": "spell_holy_searinglight",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1433
+        }
+      ]
+    },
+    {
+      "name": "Protection",
+      "icon": "spell_holy_devotionaura",
+      "talents": [
+        {
+          "id": 1422,
+          "name": "Improved Devotion Aura",
+          "icon": "spell_holy_devotionaura",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1421,
+          "name": "Redoubt",
+          "icon": "ability_defend",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1630,
+          "name": "Precision",
+          "icon": "ability_rogue_ambush",
+          "row": 1,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1425,
+          "name": "Guardian's Favor",
+          "icon": "spell_holy_sealofprotection",
+          "row": 1,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1423,
+          "name": "Toughness",
+          "icon": "spell_holy_devotion",
+          "row": 1,
+          "col": 3,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1442,
+          "name": "Blessing of Kings",
+          "icon": "spell_magic_magearmor",
+          "row": 2,
+          "col": 0,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1501,
+          "name": "Improved Righteous Fury",
+          "icon": "spell_holy_sealoffury",
+          "row": 2,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1424,
+          "name": "Shield Specialization",
+          "icon": "inv_shield_06",
+          "row": 2,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": 1421
+        },
+        {
+          "id": 1629,
+          "name": "Anticipation",
+          "icon": "spell_magic_lesserinvisibilty",
+          "row": 2,
+          "col": 3,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1521,
+          "name": "Improved Hammer of Justice",
+          "icon": "spell_holy_sealofmight",
+          "row": 3,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1626,
+          "name": "Improved Concentration Aura",
+          "icon": "spell_holy_mindsooth",
+          "row": 3,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1431,
+          "name": "Blessing of Sanctuary",
+          "icon": "spell_nature_lightningshield",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1426,
+          "name": "Reckoning",
+          "icon": "spell_holy_blessingofstrength",
+          "row": 4,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1429,
+          "name": "One-Handed Weapon Specialization",
+          "icon": "inv_sword_20",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1430,
+          "name": "Holy Shield",
+          "icon": "spell_holy_blessingofprotection",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1431
+        }
+      ]
+    },
+    {
+      "name": "Retribution",
+      "icon": "spell_holy_auraoflight",
+      "talents": [
+        {
+          "id": 1401,
+          "name": "Improved Blessing of Might",
+          "icon": "spell_holy_fistofjustice",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1407,
+          "name": "Benediction",
+          "icon": "spell_frost_windwalkon",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1631,
+          "name": "Improved Judgement",
+          "icon": "spell_holy_righteousfury",
+          "row": 1,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1464,
+          "name": "Improved Seal of the Crusader",
+          "icon": "spell_holy_holysmite",
+          "row": 1,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1403,
+          "name": "Deflection",
+          "icon": "ability_parry",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1633,
+          "name": "Vindication",
+          "icon": "spell_holy_vindication",
+          "row": 2,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1411,
+          "name": "Conviction",
+          "icon": "spell_holy_retributionaura",
+          "row": 2,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1481,
+          "name": "Seal of Command",
+          "icon": "ability_warrior_innerrage",
+          "row": 2,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1634,
+          "name": "Pursuit of Justice",
+          "icon": "spell_holy_persuitofjustice",
+          "row": 2,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1632,
+          "name": "Eye for an Eye",
+          "icon": "spell_holy_eyeforaneye",
+          "row": 3,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1405,
+          "name": "Improved Retribution Aura",
+          "icon": "spell_holy_auraoflight",
+          "row": 3,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1410,
+          "name": "Two-Handed Weapon Specialization",
+          "icon": "inv_hammer_04",
+          "row": 4,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1409,
+          "name": "Sanctity Aura",
+          "icon": "spell_holy_mindvision",
+          "row": 4,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1402,
+          "name": "Vengeance",
+          "icon": "ability_racial_avatar",
+          "row": 5,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": 1411
+        },
+        {
+          "id": 1441,
+          "name": "Repentance",
+          "icon": "spell_holy_prayerofhealing",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        }
+      ]
+    }
+  ]
+}

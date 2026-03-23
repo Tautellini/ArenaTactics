@@ -1,0 +1,446 @@
+{
+  "classId": "druid",
+  "trees": [
+    {
+      "name": "Balance",
+      "icon": "spell_nature_starfall",
+      "talents": [
+        {
+          "id": 762,
+          "name": "Starlight Wrath",
+          "icon": "spell_nature_abolishmagic",
+          "row": 0,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 761,
+          "name": "Nature's Grasp",
+          "icon": "spell_nature_natureswrath",
+          "row": 0,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 921,
+          "name": "Improved Nature's Grasp",
+          "icon": "spell_nature_natureswrath",
+          "row": 0,
+          "col": 2,
+          "maxRank": 4,
+          "prerequisiteId": 761
+        },
+        {
+          "id": 787,
+          "name": "Control of Nature",
+          "icon": "spell_nature_stranglevines",
+          "row": 1,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 763,
+          "name": "Unknown (16825)",
+          "icon": "spell_nature_starfall",
+          "row": 1,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 791,
+          "name": "Unknown (16906)",
+          "icon": "inv_staff_01",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 781,
+          "name": "Natural Shapeshifter",
+          "icon": "spell_nature_wispsplode",
+          "row": 1,
+          "col": 3,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 782,
+          "name": "Brambles",
+          "icon": "spell_nature_thorns",
+          "row": 2,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 788,
+          "name": "Omen of Clarity",
+          "icon": "spell_nature_crystalball",
+          "row": 2,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": 791
+        },
+        {
+          "id": 764,
+          "name": "Nature's Reach",
+          "icon": "spell_nature_naturetouchgrow",
+          "row": 2,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 792,
+          "name": "Vengeance",
+          "icon": "spell_nature_purge",
+          "row": 3,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": 763
+        },
+        {
+          "id": 784,
+          "name": "Unknown (16926)",
+          "icon": "spell_arcane_starfire",
+          "row": 3,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 789,
+          "name": "Nature's Grace",
+          "icon": "spell_nature_naturesblessing",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 783,
+          "name": "Moonglow",
+          "icon": "spell_nature_sentinal",
+          "row": 4,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 790,
+          "name": "Moonfury",
+          "icon": "spell_nature_moonglow",
+          "row": 5,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": 789
+        },
+        {
+          "id": 793,
+          "name": "Moonkin Form",
+          "icon": "spell_nature_forceofnature",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        }
+      ]
+    },
+    {
+      "name": "Feral Combat",
+      "icon": "ability_racial_bearform",
+      "talents": [
+        {
+          "id": 796,
+          "name": "Ferocity",
+          "icon": "ability_hunter_pet_hyena",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 795,
+          "name": "Feral Aggression",
+          "icon": "ability_druid_demoralizingroar",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 799,
+          "name": "Unknown (16951)",
+          "icon": "ability_ambush",
+          "row": 1,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 797,
+          "name": "Brutal Impact",
+          "icon": "ability_druid_bash",
+          "row": 1,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 794,
+          "name": "Unknown (16933)",
+          "icon": "inv_misc_pelt_bear_03",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 807,
+          "name": "Feral Swiftness",
+          "icon": "spell_nature_spiritwolf",
+          "row": 2,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 804,
+          "name": "Feral Charge",
+          "icon": "ability_hunter_pet_bear",
+          "row": 2,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 798,
+          "name": "Sharpened Claws",
+          "icon": "inv_misc_monsterclaw_04",
+          "row": 2,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 802,
+          "name": "Shredding Attacks",
+          "icon": "spell_shadow_vampiricaura",
+          "row": 3,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 803,
+          "name": "Predatory Strikes",
+          "icon": "ability_hunter_pet_cat",
+          "row": 3,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 800,
+          "name": "Blood Frenzy",
+          "icon": "ability_ghoulfrenzy",
+          "row": 3,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": 798
+        },
+        {
+          "id": 801,
+          "name": "Primal Fury",
+          "icon": "ability_racial_cannibalize",
+          "row": 3,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": 798
+        },
+        {
+          "id": 805,
+          "name": "Savage Fury",
+          "icon": "ability_druid_ravage",
+          "row": 4,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1162,
+          "name": "Faerie Fire (Feral)",
+          "icon": "spell_nature_faeriefire",
+          "row": 4,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 808,
+          "name": "Heart of the Wild",
+          "icon": "spell_holy_blessingofagility",
+          "row": 5,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": 803
+        },
+        {
+          "id": 809,
+          "name": "Leader of the Pack",
+          "icon": "spell_nature_unyeildingstamina",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        }
+      ]
+    },
+    {
+      "name": "Restoration",
+      "icon": "spell_nature_healingtouch",
+      "talents": [
+        {
+          "id": 821,
+          "name": "Improved Mark of the Wild",
+          "icon": "spell_nature_regeneration",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 822,
+          "name": "Furor",
+          "icon": "spell_holy_blessingofstamina",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 824,
+          "name": "Naturalist",
+          "icon": "spell_nature_healingtouch",
+          "row": 1,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 823,
+          "name": "Nature's Focus",
+          "icon": "spell_nature_healingwavegreater",
+          "row": 1,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 826,
+          "name": "Unknown (17082)",
+          "icon": "ability_druid_enrage",
+          "row": 1,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 829,
+          "name": "Intensity",
+          "icon": "spell_frost_windwalkon",
+          "row": 2,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 827,
+          "name": "Insect Swarm",
+          "icon": "spell_nature_insectswarm",
+          "row": 2,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 841,
+          "name": "Subtlety",
+          "icon": "ability_eyeoftheowl",
+          "row": 2,
+          "col": 3,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 843,
+          "name": "Tranquil Spirit",
+          "icon": "spell_holy_elunesgrace",
+          "row": 3,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 830,
+          "name": "Improved Rejuvenation",
+          "icon": "spell_nature_rejuvenation",
+          "row": 3,
+          "col": 3,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 831,
+          "name": "Nature's Swiftness",
+          "icon": "spell_nature_ravenform",
+          "row": 4,
+          "col": 0,
+          "maxRank": 1,
+          "prerequisiteId": 824
+        },
+        {
+          "id": 828,
+          "name": "Gift of Nature",
+          "icon": "spell_nature_protectionformnature",
+          "row": 4,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": 827
+        },
+        {
+          "id": 842,
+          "name": "Improved Tranquility",
+          "icon": "spell_nature_tranquility",
+          "row": 4,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 825,
+          "name": "Improved Regrowth",
+          "icon": "spell_nature_resistnature",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 844,
+          "name": "Swiftmend",
+          "icon": "inv_relics_idolofrejuvenation",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 843
+        }
+      ]
+    }
+  ]
+}

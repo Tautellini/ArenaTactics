@@ -1,0 +1,482 @@
+{
+  "classId": "rogue",
+  "trees": [
+    {
+      "name": "Assassination",
+      "icon": "ability_rogue_eviscerate",
+      "talents": [
+        {
+          "id": 276,
+          "name": "Improved Eviscerate",
+          "icon": "ability_rogue_eviscerate",
+          "row": 0,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 272,
+          "name": "Remorseless Attacks",
+          "icon": "ability_fiegndead",
+          "row": 0,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 270,
+          "name": "Malice",
+          "icon": "ability_racial_bloodrage",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 273,
+          "name": "Ruthlessness",
+          "icon": "ability_druid_disembowel",
+          "row": 1,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 274,
+          "name": "Murder",
+          "icon": "spell_shadow_deathscream",
+          "row": 1,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 277,
+          "name": "Improved Slice and Dice",
+          "icon": "ability_rogue_slicedice",
+          "row": 1,
+          "col": 3,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 281,
+          "name": "Relentless Strikes",
+          "icon": "ability_warrior_decisivestrike",
+          "row": 2,
+          "col": 0,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 278,
+          "name": "Improved Expose Armor",
+          "icon": "ability_warrior_riposte",
+          "row": 2,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 269,
+          "name": "Lethality",
+          "icon": "ability_criticalstrike",
+          "row": 2,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": 270
+        },
+        {
+          "id": 682,
+          "name": "Vile Poisons",
+          "icon": "ability_rogue_feigndeath",
+          "row": 3,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 268,
+          "name": "Improved Poisons",
+          "icon": "ability_poisons",
+          "row": 3,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 280,
+          "name": "Cold Blood",
+          "icon": "spell_ice_lament",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 279,
+          "name": "Improved Kidney Shot",
+          "icon": "ability_rogue_kidneyshot",
+          "row": 4,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 283,
+          "name": "Seal Fate",
+          "icon": "spell_shadow_chilltouch",
+          "row": 5,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": 280
+        },
+        {
+          "id": 382,
+          "name": "Vigor",
+          "icon": "spell_nature_earthbindtotem",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        }
+      ]
+    },
+    {
+      "name": "Combat",
+      "icon": "ability_backstab",
+      "talents": [
+        {
+          "id": 203,
+          "name": "Improved Gouge",
+          "icon": "ability_gouge",
+          "row": 0,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 201,
+          "name": "Improved Sinister Strike",
+          "icon": "spell_shadow_ritualofsacrifice",
+          "row": 0,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 186,
+          "name": "Lightning Reflexes",
+          "icon": "spell_nature_invisibilty",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 202,
+          "name": "Puncturing Wounds",
+          "icon": "ability_backstab",
+          "row": 1,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 187,
+          "name": "Deflection",
+          "icon": "ability_parry",
+          "row": 1,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 181,
+          "name": "Precision",
+          "icon": "ability_marksmanship",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 204,
+          "name": "Endurance",
+          "icon": "spell_shadow_shadowward",
+          "row": 2,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 301,
+          "name": "Riposte",
+          "icon": "ability_warrior_challange",
+          "row": 2,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 187
+        },
+        {
+          "id": 222,
+          "name": "Improved Sprint",
+          "icon": "ability_rogue_sprint",
+          "row": 2,
+          "col": 3,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 206,
+          "name": "Improved Kick",
+          "icon": "ability_kick",
+          "row": 3,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 182,
+          "name": "Dagger Specialization",
+          "icon": "inv_weapon_shortblade_05",
+          "row": 3,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 221,
+          "name": "Dual Wield Specialization",
+          "icon": "ability_dualwield",
+          "row": 3,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": 181
+        },
+        {
+          "id": 184,
+          "name": "Mace Specialization",
+          "icon": "inv_mace_01",
+          "row": 4,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 223,
+          "name": "Blade Flurry",
+          "icon": "ability_warrior_punishingblow",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 242,
+          "name": "Sword Specialization",
+          "icon": "inv_sword_27",
+          "row": 4,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 183,
+          "name": "Fist Weapon Specialization",
+          "icon": "inv_gauntlets_04",
+          "row": 4,
+          "col": 3,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1703,
+          "name": "Weapon Expertise",
+          "icon": "spell_holy_blessingofstrength",
+          "row": 5,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": 223
+        },
+        {
+          "id": 1122,
+          "name": "Aggression",
+          "icon": "ability_racial_avatar",
+          "row": 5,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 205,
+          "name": "Adrenaline Rush",
+          "icon": "spell_shadow_shadowworddominate",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        }
+      ]
+    },
+    {
+      "name": "Subtlety",
+      "icon": "ability_stealth",
+      "talents": [
+        {
+          "id": 241,
+          "name": "Master of Deception",
+          "icon": "spell_shadow_charm",
+          "row": 0,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 261,
+          "name": "Opportunity",
+          "icon": "ability_warrior_warcry",
+          "row": 0,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1700,
+          "name": "Sleight of Hand",
+          "icon": "ability_rogue_feint",
+          "row": 1,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 247,
+          "name": "Elusiveness",
+          "icon": "spell_magic_lesserinvisibilty",
+          "row": 1,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 244,
+          "name": "Camouflage",
+          "icon": "ability_stealth",
+          "row": 1,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 245,
+          "name": "Initiative",
+          "icon": "spell_shadow_fumble",
+          "row": 2,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 303,
+          "name": "Ghostly Strike",
+          "icon": "spell_shadow_curse",
+          "row": 2,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 263,
+          "name": "Improved Ambush",
+          "icon": "ability_rogue_ambush",
+          "row": 2,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 246,
+          "name": "Setup",
+          "icon": "spell_nature_mirrorimage",
+          "row": 3,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 262,
+          "name": "Unknown (14095)",
+          "icon": "ability_sap",
+          "row": 3,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1123,
+          "name": "Serrated Blades",
+          "icon": "inv_sword_17",
+          "row": 3,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1701,
+          "name": "Heightened Senses",
+          "icon": "ability_ambush",
+          "row": 4,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 284,
+          "name": "Preparation",
+          "icon": "spell_shadow_antishadow",
+          "row": 4,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 265,
+          "name": "Dirty Deeds",
+          "icon": "spell_shadow_summonsuccubus",
+          "row": 4,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 681,
+          "name": "Hemorrhage",
+          "icon": "spell_shadow_lifedrain",
+          "row": 4,
+          "col": 3,
+          "maxRank": 1,
+          "prerequisiteId": 1123
+        },
+        {
+          "id": 1702,
+          "name": "Deadliness",
+          "icon": "inv_weapon_crossbow_11",
+          "row": 5,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 381,
+          "name": "Premeditation",
+          "icon": "spell_shadow_possession",
+          "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 284
+        }
+      ]
+    }
+  ]
+}
