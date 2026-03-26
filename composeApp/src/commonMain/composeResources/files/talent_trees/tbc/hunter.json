@@ -34,7 +34,7 @@
         },
         {
           "id": 1381,
-          "name": "Unknown (24387)",
+          "name": "Improved Aspect of the Monkey",
           "icon": "ability_hunter_aspectofthemonkey",
           "row": 1,
           "col": 1,
@@ -132,6 +132,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1793,
+          "name": "Catlike Reflexes",
+          "icon": "ability_hunter_catlikereflexes",
+          "row": 5,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 1397,
           "name": "Frenzy",
           "icon": "inv_misc_monsterclaw_03",
@@ -148,6 +157,42 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 1387
+        },
+        {
+          "id": 1794,
+          "name": "Serpent's Swiftness",
+          "icon": "ability_hunter_serpentswiftness",
+          "row": 6,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1795,
+          "name": "Ferocious Inspiration",
+          "icon": "ability_hunter_ferociousinspiration",
+          "row": 7,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": 1386
+        },
+        {
+          "id": 1796,
+          "name": "The Beast Within",
+          "icon": "ability_hunter_beastwithin",
+          "row": 7,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": 1386
+        },
+        {
+          "id": 1812,
+          "name": "Snake Trap",
+          "icon": "ability_hunter_snaketrap",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
         }
       ]
     },
@@ -264,12 +309,30 @@
           "prerequisiteId": null
         },
         {
+          "id": 1797,
+          "name": "Improved Barrage",
+          "icon": "ability_upgrademoonglaive",
+          "row": 5,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": 1347
+        },
+        {
           "id": 1362,
           "name": "Ranged Weapon Specialization",
           "icon": "inv_weapon_rifle_06",
           "row": 5,
           "col": 2,
           "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1798,
+          "name": "Combat Experience",
+          "icon": "ability_hunter_combatexperience",
+          "row": 5,
+          "col": 3,
+          "maxRank": 2,
           "prerequisiteId": null
         },
         {
@@ -280,6 +343,42 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 1347
+        },
+        {
+          "id": 1800,
+          "name": "Master Marksman",
+          "icon": "ability_hunter_mastermarksman",
+          "row": 6,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1801,
+          "name": "Careful Aim",
+          "icon": "ability_hunter_zenarchery",
+          "row": 7,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1802,
+          "name": "Silencing Shot",
+          "icon": "ability_theblackarrow",
+          "row": 7,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1813,
+          "name": "Readiness",
+          "icon": "ability_hunter_readiness",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
         }
       ]
     },
@@ -316,7 +415,7 @@
         },
         {
           "id": 1304,
-          "name": "Unknown (19390)",
+          "name": "Entrapment",
           "icon": "spell_nature_stranglevines",
           "row": 1,
           "col": 0,
@@ -334,7 +433,7 @@
         },
         {
           "id": 1305,
-          "name": "Unknown (19235)",
+          "name": "Improved Wing Clip",
           "icon": "ability_rogue_trip",
           "row": 1,
           "col": 2,
@@ -414,12 +513,30 @@
           "prerequisiteId": 1308
         },
         {
+          "id": 1803,
+          "name": "Survival Instincts",
+          "icon": "ability_hunter_survivalinstincts",
+          "row": 5,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
           "id": 1303,
           "name": "Lightning Reflexes",
           "icon": "spell_nature_invisibilty",
           "row": 5,
           "col": 2,
           "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1804,
+          "name": "Resourcefulness",
+          "icon": "ability_hunter_resourcefulness",
+          "row": 6,
+          "col": 0,
+          "maxRank": 3,
           "prerequisiteId": null
         },
         {
@@ -430,6 +547,42 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 1321
+        },
+        {
+          "id": 1805,
+          "name": "Expose Weakness",
+          "icon": "ability_rogue_findweakness",
+          "row": 6,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1806,
+          "name": "Thrill of the Hunt",
+          "icon": "ability_hunter_thrillofthehunt",
+          "row": 7,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1807,
+          "name": "Master Tactician",
+          "icon": "ability_hunter_mastertactitian",
+          "row": 7,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1814,
+          "name": "Readiness",
+          "icon": "ability_hunter_readiness",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1325
         }
       ]
     }

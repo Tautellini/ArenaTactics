@@ -114,6 +114,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1741,
+          "name": "Blessed Life",
+          "icon": "spell_holy_blessedlife",
+          "row": 5,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 1627,
           "name": "Holy Power",
           "icon": "spell_holy_power",
@@ -130,6 +139,42 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 1433
+        },
+        {
+          "id": 1746,
+          "name": "Holy Guidance",
+          "icon": "spell_holy_holyguidance",
+          "row": 6,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1742,
+          "name": "Light's Grace",
+          "icon": "spell_holy_lightsgrace",
+          "row": 7,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1743,
+          "name": "Divine Illumination",
+          "icon": "spell_holy_divineillumination",
+          "row": 7,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1831,
+          "name": "Holy Shock",
+          "icon": "spell_holy_searinglight",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1502
         }
       ]
     },
@@ -255,12 +300,30 @@
           "prerequisiteId": null
         },
         {
+          "id": 1748,
+          "name": "Armor",
+          "icon": "ability_warrior_defensivestance",
+          "row": 5,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
           "id": 1429,
           "name": "One-Handed Weapon Specialization",
           "icon": "inv_sword_20",
           "row": 5,
           "col": 2,
           "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1749,
+          "name": "Sacred Duty",
+          "icon": "spell_holy_divineintervention",
+          "row": 5,
+          "col": 3,
+          "maxRank": 2,
           "prerequisiteId": null
         },
         {
@@ -271,6 +334,42 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 1431
+        },
+        {
+          "id": 1750,
+          "name": "Improved Holy Shield",
+          "icon": "spell_holy_greaterblessingoflight",
+          "row": 6,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": 1430
+        },
+        {
+          "id": 1751,
+          "name": "Ardent Defender",
+          "icon": "spell_holy_ardentdefender",
+          "row": 7,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1752,
+          "name": "Combat Expertise",
+          "icon": "spell_holy_weaponmastery",
+          "row": 7,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1832,
+          "name": "Avenger's Shield",
+          "icon": "spell_holy_avengersshield",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1430
         }
       ]
     },
@@ -396,6 +495,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1753,
+          "name": "Sanctified Judgement",
+          "icon": "spell_holy_righteousfury",
+          "row": 5,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 1402,
           "name": "Vengeance",
           "icon": "ability_racial_avatar",
@@ -405,10 +513,55 @@
           "prerequisiteId": 1411
         },
         {
+          "id": 1756,
+          "name": "Fanaticism",
+          "icon": "spell_holy_fanaticism",
+          "row": 6,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
           "id": 1441,
           "name": "Repentance",
           "icon": "spell_holy_prayerofhealing",
           "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1755,
+          "name": "Crusader Strike",
+          "icon": "spell_holy_crusaderstrike",
+          "row": 6,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1757,
+          "name": "Improved Sanctity Aura",
+          "icon": "spell_holy_mindvision",
+          "row": 7,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": 1409
+        },
+        {
+          "id": 1758,
+          "name": "Divine Purpose",
+          "icon": "spell_holy_divinepurpose",
+          "row": 7,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1833,
+          "name": "Crusader Strike",
+          "icon": "spell_holy_crusaderstrike",
+          "row": 8,
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": null

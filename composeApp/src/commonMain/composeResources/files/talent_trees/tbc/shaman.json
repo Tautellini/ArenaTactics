@@ -123,6 +123,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1834,
+          "name": "Unrelenting Storm",
+          "icon": "spell_nature_unrelentingstorm",
+          "row": 5,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
           "id": 721,
           "name": "Lightning Mastery",
           "icon": "spell_lightning_lightningbolt01",
@@ -139,6 +148,33 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 565
+        },
+        {
+          "id": 1683,
+          "name": "Lightning Overload",
+          "icon": "spell_nature_lightningoverload",
+          "row": 7,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1684,
+          "name": "Elemental Shields",
+          "icon": "spell_nature_elementalshields",
+          "row": 7,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1682,
+          "name": "Totem of Wrath",
+          "icon": "spell_fire_totemofwrath",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 573
         }
       ]
     },
@@ -211,7 +247,7 @@
         },
         {
           "id": 617,
-          "name": "Unknown (16269)",
+          "name": "Two-Handed Axes and Maces",
           "icon": "inv_axe_10",
           "row": 2,
           "col": 2,
@@ -273,6 +309,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1685,
+          "name": "Dual Wield",
+          "icon": "ability_dualwield",
+          "row": 5,
+          "col": 0,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
           "id": 1643,
           "name": "Weapon Mastery",
           "icon": "ability_hunter_swiftstrike",
@@ -289,6 +334,42 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 611
+        },
+        {
+          "id": 1686,
+          "name": "Shamanistic Rage",
+          "icon": "spell_nature_shamanrage",
+          "row": 6,
+          "col": 2,
+          "maxRank": 1,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1687,
+          "name": "Unleashed Rage",
+          "icon": "spell_nature_unleashedrage",
+          "row": 7,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1688,
+          "name": "Mental Quickness",
+          "icon": "spell_nature_mentalquickness",
+          "row": 7,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1835,
+          "name": "Stormstrike",
+          "icon": "ability_shaman_stormstrike",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 901
         }
       ]
     },
@@ -414,12 +495,30 @@
           "prerequisiteId": null
         },
         {
+          "id": 1689,
+          "name": "Nature's Guardian",
+          "icon": "spell_nature_natureguardian",
+          "row": 5,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
           "id": 592,
           "name": "Purification",
           "icon": "spell_frost_wizardmark",
           "row": 5,
           "col": 2,
           "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1690,
+          "name": "Focused Mind",
+          "icon": "spell_nature_focusedmind",
+          "row": 6,
+          "col": 0,
+          "maxRank": 3,
           "prerequisiteId": null
         },
         {
@@ -430,6 +529,42 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 588
+        },
+        {
+          "id": 1691,
+          "name": "Nature's Blessing",
+          "icon": "spell_nature_natureblessing",
+          "row": 6,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1692,
+          "name": "Improved Chain Heal",
+          "icon": "spell_nature_healingwavegreater",
+          "row": 7,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1836,
+          "name": "Nature's Guardian",
+          "icon": "spell_nature_natureguardian",
+          "row": 7,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1693,
+          "name": "Earth Shield",
+          "icon": "spell_nature_skinofearth",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 590
         }
       ]
     }

@@ -25,7 +25,7 @@
         },
         {
           "id": 1006,
-          "name": "Unknown (18181)",
+          "name": "Improved Curse of Weakness",
           "icon": "spell_shadow_curseofmannoroth",
           "row": 1,
           "col": 0,
@@ -52,7 +52,7 @@
         },
         {
           "id": 1004,
-          "name": "Unknown (17808)",
+          "name": "Improved Drain Life",
           "icon": "spell_shadow_lifedrain02",
           "row": 1,
           "col": 3,
@@ -61,7 +61,7 @@
         },
         {
           "id": 1284,
-          "name": "Unknown (18830)",
+          "name": "Improved Curse of Agony",
           "icon": "spell_shadow_curseofsargeras",
           "row": 2,
           "col": 0,
@@ -106,7 +106,7 @@
         },
         {
           "id": 1121,
-          "name": "Unknown (18393)",
+          "name": "Improved Drain Mana",
           "icon": "spell_shadow_siphonmana",
           "row": 3,
           "col": 3,
@@ -133,12 +133,21 @@
         },
         {
           "id": 1082,
-          "name": "Unknown (18313)",
+          "name": "Improved Curse of Exhaustion",
           "icon": "spell_shadow_grimward",
           "row": 4,
           "col": 3,
           "maxRank": 4,
           "prerequisiteId": 1081
+        },
+        {
+          "id": 1764,
+          "name": "Malediction",
+          "icon": "spell_shadow_curseofachimonde",
+          "row": 5,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
         },
         {
           "id": 1042,
@@ -150,6 +159,15 @@
           "prerequisiteId": 1041
         },
         {
+          "id": 1765,
+          "name": "Contagion",
+          "icon": "spell_shadow_painfulafflictions",
+          "row": 6,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
           "id": 1022,
           "name": "Dark Pact",
           "icon": "spell_shadow_darkritual",
@@ -157,6 +175,24 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": null
+        },
+        {
+          "id": 1767,
+          "name": "Siphon Life",
+          "icon": "spell_shadow_requiem",
+          "row": 7,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1822,
+          "name": "Unstable Affliction",
+          "icon": "spell_shadow_unstableaffliction_3",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1042
         }
       ]
     },
@@ -211,7 +247,7 @@
         },
         {
           "id": 1242,
-          "name": "Unknown (18746)",
+          "name": "Fel Intellect",
           "icon": "spell_holy_magicalsentry",
           "row": 1,
           "col": 2,
@@ -238,7 +274,7 @@
         },
         {
           "id": 1241,
-          "name": "Unknown (18752)",
+          "name": "Fel Stamina",
           "icon": "spell_shadow_antishadow",
           "row": 2,
           "col": 2,
@@ -265,7 +301,7 @@
         },
         {
           "id": 1283,
-          "name": "Unknown (18825)",
+          "name": "Improved Subjugate Demon",
           "icon": "spell_shadow_enslavedemon",
           "row": 4,
           "col": 0,
@@ -291,6 +327,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1774,
+          "name": "Demonic Knowledge",
+          "icon": "spell_shadow_improvedvampiricembrace",
+          "row": 5,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 1244,
           "name": "Master Demonologist",
           "icon": "spell_shadow_shadowpact",
@@ -298,6 +343,15 @@
           "col": 2,
           "maxRank": 5,
           "prerequisiteId": 1262
+        },
+        {
+          "id": 1775,
+          "name": "Demonic Tactics",
+          "icon": "spell_shadow_demonictactics",
+          "row": 6,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
         },
         {
           "id": 1282,
@@ -310,12 +364,30 @@
         },
         {
           "id": 1263,
-          "name": "Unknown (18775)",
+          "name": "Improved Spellstone",
           "icon": "inv_misc_gem_sapphire_01",
           "row": 6,
           "col": 2,
           "maxRank": 2,
           "prerequisiteId": null
+        },
+        {
+          "id": 1777,
+          "name": "Demonic Resilience",
+          "icon": "spell_shadow_demonicfortitude",
+          "row": 7,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1823,
+          "name": "Summon Felguard",
+          "icon": "spell_shadow_summonfelguard",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1282
         }
       ]
     },
@@ -415,7 +487,7 @@
         },
         {
           "id": 965,
-          "name": "Unknown (17932)",
+          "name": "Improved Searing Pain",
           "icon": "spell_fire_soulburn",
           "row": 3,
           "col": 3,
@@ -450,12 +522,30 @@
           "prerequisiteId": 981
         },
         {
+          "id": 1778,
+          "name": "Backlash",
+          "icon": "spell_fire_playingwithfire",
+          "row": 5,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 966,
           "name": "Emberstorm",
           "icon": "spell_fire_selfdestruct",
           "row": 5,
           "col": 2,
           "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1779,
+          "name": "Nether Protection",
+          "icon": "spell_shadow_netherprotection",
+          "row": 6,
+          "col": 0,
+          "maxRank": 3,
           "prerequisiteId": null
         },
         {
@@ -466,6 +556,33 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 961
+        },
+        {
+          "id": 1780,
+          "name": "Shadow and Flame",
+          "icon": "spell_shadow_shadowandflame",
+          "row": 6,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1781,
+          "name": "Soul Leech",
+          "icon": "spell_shadow_soulleech_3",
+          "row": 7,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1824,
+          "name": "Shadowfury",
+          "icon": "spell_shadow_shadowfury",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 968
         }
       ]
     }

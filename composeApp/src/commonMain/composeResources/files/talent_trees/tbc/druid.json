@@ -43,7 +43,7 @@
         },
         {
           "id": 763,
-          "name": "Unknown (16825)",
+          "name": "Improved Moonfire",
           "icon": "spell_nature_starfall",
           "row": 1,
           "col": 1,
@@ -52,7 +52,7 @@
         },
         {
           "id": 791,
-          "name": "Unknown (16906)",
+          "name": "Natural Weapons",
           "icon": "inv_staff_01",
           "row": 1,
           "col": 2,
@@ -106,7 +106,7 @@
         },
         {
           "id": 784,
-          "name": "Unknown (16926)",
+          "name": "Improved Starfire",
           "icon": "spell_arcane_starfire",
           "row": 3,
           "col": 2,
@@ -141,6 +141,24 @@
           "prerequisiteId": 789
         },
         {
+          "id": 1782,
+          "name": "Celestial Focus",
+          "icon": "spell_arcane_starfire",
+          "row": 5,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1783,
+          "name": "Lunar Guidance",
+          "icon": "ability_druid_lunarguidance",
+          "row": 6,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 793,
           "name": "Moonkin Form",
           "icon": "spell_nature_forceofnature",
@@ -148,6 +166,42 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": null
+        },
+        {
+          "id": 1784,
+          "name": "Improved Faerie Fire",
+          "icon": "spell_nature_faeriefire",
+          "row": 6,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1785,
+          "name": "Dreamstate",
+          "icon": "ability_druid_dreamstate",
+          "row": 7,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1786,
+          "name": "Wrath of Cenarius",
+          "icon": "ability_druid_twilightswrath",
+          "row": 7,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1829,
+          "name": "Force of Nature",
+          "icon": "ability_druid_forceofnature",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 793
         }
       ]
     },
@@ -175,7 +229,7 @@
         },
         {
           "id": 799,
-          "name": "Unknown (16951)",
+          "name": "Feral Instinct",
           "icon": "ability_ambush",
           "row": 1,
           "col": 0,
@@ -193,7 +247,7 @@
         },
         {
           "id": 794,
-          "name": "Unknown (16933)",
+          "name": "Thick Hide",
           "icon": "inv_misc_pelt_bear_03",
           "row": 1,
           "col": 2,
@@ -291,6 +345,24 @@
           "prerequisiteId": 803
         },
         {
+          "id": 1787,
+          "name": "Nurturing Instinct",
+          "icon": "ability_druid_healinginstincts",
+          "row": 5,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1788,
+          "name": "Primal Tenacity",
+          "icon": "ability_druid_primaltenacity",
+          "row": 6,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 809,
           "name": "Leader of the Pack",
           "icon": "spell_nature_unyeildingstamina",
@@ -298,6 +370,42 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": null
+        },
+        {
+          "id": 1789,
+          "name": "Predatory Instincts",
+          "icon": "ability_druid_predatoryinstincts",
+          "row": 6,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1790,
+          "name": "Survival of the Fittest",
+          "icon": "ability_druid_enrage",
+          "row": 7,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1791,
+          "name": "Natural Perfection",
+          "icon": "ability_druid_naturalperfection",
+          "row": 7,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1830,
+          "name": "Mangle (Cat)",
+          "icon": "ability_druid_mangle2",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 809
         }
       ]
     },
@@ -343,7 +451,7 @@
         },
         {
           "id": 826,
-          "name": "Unknown (17082)",
+          "name": "Improved Enrage",
           "icon": "ability_druid_enrage",
           "row": 1,
           "col": 2,
@@ -423,12 +531,30 @@
           "prerequisiteId": null
         },
         {
+          "id": 1792,
+          "name": "Empowered Touch",
+          "icon": "ability_druid_empoweredtouch",
+          "row": 5,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
           "id": 825,
           "name": "Improved Regrowth",
           "icon": "spell_nature_resistnature",
           "row": 5,
           "col": 2,
           "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1810,
+          "name": "Natural Perfection",
+          "icon": "ability_druid_naturalperfection",
+          "row": 6,
+          "col": 0,
+          "maxRank": 3,
           "prerequisiteId": null
         },
         {
@@ -439,6 +565,33 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 843
+        },
+        {
+          "id": 1811,
+          "name": "Living Spirit",
+          "icon": "spell_nature_giftofthewaterspirit",
+          "row": 6,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1809,
+          "name": "Empowered Rejuvenation",
+          "icon": "ability_druid_empoweredrejuvination",
+          "row": 7,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1828,
+          "name": "Tree of Life",
+          "icon": "ability_druid_treeoflife",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 844
         }
       ]
     }

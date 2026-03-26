@@ -43,7 +43,7 @@
         },
         {
           "id": 641,
-          "name": "Unknown (12679)",
+          "name": "Tactical Mastery",
           "icon": "spell_nature_enchantarmor",
           "row": 1,
           "col": 1,
@@ -142,11 +142,20 @@
         },
         {
           "id": 134,
-          "name": "Unknown (12833)",
+          "name": "Polearm Specialization",
           "icon": "inv_weapon_halbard_01",
           "row": 5,
           "col": 0,
           "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1862,
+          "name": "Second Wind",
+          "icon": "ability_hunter_harass",
+          "row": 5,
+          "col": 1,
+          "maxRank": 2,
           "prerequisiteId": null
         },
         {
@@ -159,6 +168,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1863,
+          "name": "Improved Intercept",
+          "icon": "ability_rogue_sprint",
+          "row": 6,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
           "id": 135,
           "name": "Mortal Strike",
           "icon": "ability_warrior_savageblow",
@@ -166,6 +184,33 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 133
+        },
+        {
+          "id": 1864,
+          "name": "Blood Frenzy",
+          "icon": "ability_warrior_bloodfrenzy",
+          "row": 6,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1866,
+          "name": "Improved Mortal Strike",
+          "icon": "ability_warrior_savageblow",
+          "row": 7,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": 135
+        },
+        {
+          "id": 1865,
+          "name": "Endless Rage",
+          "icon": "ability_warrior_endlessrage",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
         }
       ]
     },
@@ -274,7 +319,7 @@
         },
         {
           "id": 168,
-          "name": "Unknown (20499)",
+          "name": "Improved Slam",
           "icon": "ability_warrior_decisivestrike",
           "row": 4,
           "col": 0,
@@ -309,6 +354,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1868,
+          "name": "Improved Berserker Stance",
+          "icon": "ability_racial_avatar",
+          "row": 5,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
           "id": 156,
           "name": "Flurry",
           "icon": "ability_ghoulfrenzy",
@@ -318,6 +372,15 @@
           "prerequisiteId": 155
         },
         {
+          "id": 1870,
+          "name": "Improved Whirlwind",
+          "icon": "ability_whirlwind",
+          "row": 6,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
           "id": 167,
           "name": "Bloodthirst",
           "icon": "spell_nature_bloodlust",
@@ -325,6 +388,33 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 165
+        },
+        {
+          "id": 1869,
+          "name": "Focused Rage",
+          "icon": "ability_warrior_focusedrage",
+          "row": 6,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1871,
+          "name": "Precision",
+          "icon": "ability_marksmanship",
+          "row": 7,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1872,
+          "name": "Rampage",
+          "icon": "ability_warrior_rampage",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 167
         }
       ]
     },
@@ -388,7 +478,7 @@
         },
         {
           "id": 145,
-          "name": "Unknown (12944)",
+          "name": "Improved Shield Block",
           "icon": "ability_defend",
           "row": 2,
           "col": 1,
@@ -406,7 +496,7 @@
         },
         {
           "id": 144,
-          "name": "Unknown (12792)",
+          "name": "Defiance",
           "icon": "ability_warrior_innerrage",
           "row": 2,
           "col": 3,
@@ -468,6 +558,24 @@
           "prerequisiteId": null
         },
         {
+          "id": 1875,
+          "name": "Focused Rage",
+          "icon": "ability_warrior_focusedrage",
+          "row": 5,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1874,
+          "name": "Improved Defensive Stance",
+          "icon": "ability_warrior_defensivestance",
+          "row": 5,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 702,
           "name": "One-Handed Weapon Specialization",
           "icon": "inv_sword_20",
@@ -484,6 +592,33 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 152
+        },
+        {
+          "id": 1873,
+          "name": "Vitality",
+          "icon": "inv_helmet_21",
+          "row": 6,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1876,
+          "name": "Shield Mastery",
+          "icon": "ability_warrior_shieldmastery",
+          "row": 7,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1877,
+          "name": "Devastate",
+          "icon": "inv_sword_11",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 148
         }
       ]
     }

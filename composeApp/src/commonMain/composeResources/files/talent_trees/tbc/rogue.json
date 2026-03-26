@@ -123,6 +123,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1709,
+          "name": "Fleet Footed",
+          "icon": "ability_rogue_fleetfooted",
+          "row": 5,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
           "id": 283,
           "name": "Seal Fate",
           "icon": "spell_shadow_chilltouch",
@@ -139,6 +148,42 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": null
+        },
+        {
+          "id": 1712,
+          "name": "Find Weakness",
+          "icon": "ability_rogue_findweakness",
+          "row": 6,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1706,
+          "name": "Master Poisoner",
+          "icon": "ability_creature_poison_06",
+          "row": 7,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1707,
+          "name": "Quick Recovery",
+          "icon": "ability_rogue_quickrecovery",
+          "row": 7,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1819,
+          "name": "Mutilate",
+          "icon": "ability_rogue_shadowstrikes",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 382
         }
       ]
     },
@@ -291,6 +336,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1711,
+          "name": "Nerves of Steel",
+          "icon": "ability_rogue_nervesofsteel",
+          "row": 5,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
           "id": 1703,
           "name": "Weapon Expertise",
           "icon": "spell_holy_blessingofstrength",
@@ -316,6 +370,33 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": null
+        },
+        {
+          "id": 1713,
+          "name": "Combat Potency",
+          "icon": "inv_weapon_shortblade_38",
+          "row": 7,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1714,
+          "name": "Blade Twisting",
+          "icon": "ability_rogue_bladetwisting",
+          "row": 7,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1820,
+          "name": "Surprise Attacks",
+          "icon": "ability_rogue_surpriseattack",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 205
         }
       ]
     },
@@ -406,7 +487,7 @@
         },
         {
           "id": 262,
-          "name": "Unknown (14095)",
+          "name": "Improved Sap",
           "icon": "ability_sap",
           "row": 3,
           "col": 1,
@@ -459,6 +540,15 @@
           "prerequisiteId": 1123
         },
         {
+          "id": 1715,
+          "name": "Enveloping Shadows",
+          "icon": "ability_rogue_envelopingshadows",
+          "row": 5,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 1702,
           "name": "Deadliness",
           "icon": "inv_weapon_crossbow_11",
@@ -472,6 +562,42 @@
           "name": "Premeditation",
           "icon": "spell_shadow_possession",
           "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 284
+        },
+        {
+          "id": 1710,
+          "name": "Cheat Death",
+          "icon": "ability_rogue_cheatdeath",
+          "row": 6,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1716,
+          "name": "Sinister Calling",
+          "icon": "ability_rogue_sinistercalling",
+          "row": 7,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1718,
+          "name": "Cloak of Shadows",
+          "icon": "spell_shadow_nethercloak",
+          "row": 7,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1821,
+          "name": "Shadowstep",
+          "icon": "ability_rogue_shadowstep",
+          "row": 8,
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 284

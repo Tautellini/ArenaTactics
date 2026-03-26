@@ -123,6 +123,15 @@
           "prerequisiteId": 347
         },
         {
+          "id": 1769,
+          "name": "Absolution",
+          "icon": "spell_holy_absolution",
+          "row": 5,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 1202,
           "name": "Force of Will",
           "icon": "spell_nature_slowingtotem",
@@ -139,6 +148,42 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 1201
+        },
+        {
+          "id": 1770,
+          "name": "Focused Power",
+          "icon": "spell_shadow_focusedpower",
+          "row": 6,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1771,
+          "name": "Enlightenment",
+          "icon": "spell_arcane_mindmastery",
+          "row": 7,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1772,
+          "name": "Reflective Shield",
+          "icon": "spell_holy_powerwordshield",
+          "row": 7,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1773,
+          "name": "Pain Suppression",
+          "icon": "spell_holy_painsupression",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 322
         }
       ]
     },
@@ -273,6 +318,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1774,
+          "name": "Blessed Resilience",
+          "icon": "spell_holy_blessedresillience",
+          "row": 5,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 404,
           "name": "Spiritual Healing",
           "icon": "spell_nature_moonglow",
@@ -289,6 +343,33 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 1561
+        },
+        {
+          "id": 1775,
+          "name": "Empowered Healing",
+          "icon": "spell_holy_greaterheal",
+          "row": 6,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1776,
+          "name": "Surge of Light",
+          "icon": "spell_holy_surgeoflight",
+          "row": 7,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1778,
+          "name": "Circle of Healing",
+          "icon": "spell_holy_circleofrenewal",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 1637
         }
       ]
     },
@@ -379,7 +460,7 @@
         },
         {
           "id": 881,
-          "name": "Unknown (17325)",
+          "name": "Shadow Reach",
           "icon": "spell_shadow_chilltouch",
           "row": 3,
           "col": 2,
@@ -423,12 +504,30 @@
           "prerequisiteId": 484
         },
         {
+          "id": 1779,
+          "name": "Shadow Resilience",
+          "icon": "spell_shadow_grimward",
+          "row": 5,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
           "id": 462,
           "name": "Darkness",
           "icon": "spell_shadow_twilight",
           "row": 5,
           "col": 2,
           "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1780,
+          "name": "Focused Mind",
+          "icon": "spell_nature_focusedmind",
+          "row": 6,
+          "col": 0,
+          "maxRank": 3,
           "prerequisiteId": null
         },
         {
@@ -439,6 +538,33 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 484
+        },
+        {
+          "id": 1816,
+          "name": "Shadow Power",
+          "icon": "spell_shadow_shadowpower",
+          "row": 7,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1781,
+          "name": "Misery",
+          "icon": "spell_shadow_misery",
+          "row": 7,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1817,
+          "name": "Vampiric Touch",
+          "icon": "spell_holy_stoicism",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 521
         }
       ]
     }

@@ -132,6 +132,15 @@
           "prerequisiteId": 85
         },
         {
+          "id": 1726,
+          "name": "Improved Blink",
+          "icon": "spell_arcane_blink",
+          "row": 5,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
           "id": 421,
           "name": "Arcane Instability",
           "icon": "spell_shadow_teleport",
@@ -148,6 +157,51 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 421
+        },
+        {
+          "id": 1727,
+          "name": "Arcane Potency",
+          "icon": "spell_arcane_arcanepotency",
+          "row": 6,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": 86
+        },
+        {
+          "id": 1728,
+          "name": "Empowered Arcane Missiles",
+          "icon": "spell_nature_starfall",
+          "row": 7,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1729,
+          "name": "Mind Mastery",
+          "icon": "spell_arcane_mindmastery",
+          "row": 7,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1730,
+          "name": "Spell Power",
+          "icon": "spell_arcane_arcanetorrent",
+          "row": 7,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1825,
+          "name": "Slow",
+          "icon": "spell_nature_slow",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
         }
       ]
     },
@@ -282,6 +336,15 @@
           "prerequisiteId": 29
         },
         {
+          "id": 1731,
+          "name": "Blazing Speed",
+          "icon": "spell_fire_burningspeed",
+          "row": 5,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
           "id": 35,
           "name": "Fire Power",
           "icon": "spell_fire_immolation",
@@ -298,6 +361,42 @@
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 33
+        },
+        {
+          "id": 1733,
+          "name": "Playing with Fire",
+          "icon": "spell_fire_playingwithfire",
+          "row": 6,
+          "col": 2,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1732,
+          "name": "Molten Fury",
+          "icon": "spell_fire_moltenblood",
+          "row": 7,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1734,
+          "name": "Empowered Fireball",
+          "icon": "spell_fire_flamebolt",
+          "row": 7,
+          "col": 2,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1826,
+          "name": "Dragon's Breath",
+          "icon": "inv_misc_head_dragon_01",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 36
         }
       ]
     },
@@ -441,6 +540,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1735,
+          "name": "Ice Floes",
+          "icon": "spell_frost_icefloes",
+          "row": 5,
+          "col": 0,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
           "id": 68,
           "name": "Winter's Chill",
           "icon": "spell_frost_chillingblast",
@@ -450,10 +558,46 @@
           "prerequisiteId": null
         },
         {
+          "id": 1736,
+          "name": "Frozen Core",
+          "icon": "spell_frost_frozencore",
+          "row": 6,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 71,
           "name": "Ice Barrier",
           "icon": "spell_ice_lament",
           "row": 6,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": 72
+        },
+        {
+          "id": 1738,
+          "name": "Empowered Frostbolt",
+          "icon": "spell_frost_frostbolt02",
+          "row": 7,
+          "col": 0,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1737,
+          "name": "Arctic Winds",
+          "icon": "spell_frost_arcticwinds",
+          "row": 7,
+          "col": 1,
+          "maxRank": 5,
+          "prerequisiteId": null
+        },
+        {
+          "id": 1827,
+          "name": "Summon Water Elemental",
+          "icon": "spell_frost_summonwaterelemental_2",
+          "row": 8,
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 72

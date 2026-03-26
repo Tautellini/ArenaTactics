@@ -650,12 +650,13 @@ private fun TopEntryRow(
             modifier = Modifier.width(40.dp)
         )
 
-        if (!isHeader && entry!!.classId != null) {
-            val iconName = CLASS_ICON_NAMES[entry.classId]
+        if (!isHeader && entry != null) {
+            val iconName = entry.specId?.let { SPEC_ICON_NAMES[it] }
+                ?: entry.classId?.let { CLASS_ICON_NAMES[it] }
             if (iconName != null) {
                 AsyncImage(
                     model = WowheadIcons.medium(iconName),
-                    contentDescription = entry.classId,
+                    contentDescription = entry.specId ?: entry.classId,
                     modifier = Modifier.size(20.dp).clip(RoundedCornerShape(4.dp))
                 )
                 Spacer(Modifier.width(6.dp))

@@ -319,16 +319,16 @@ def fetch_full_player_profile(
                     "talents": talents,
                 })
 
-                # Resolve specId from active group
-                if talent_group["isActive"] and result["specId"] is None:
-                    # Best tree = most points
-                    current_best = max(
-                        talent_group["specializations"],
-                        key=lambda s: s["spentPoints"]
-                    )
-                    if current_best["spentPoints"] > 0:
-                        slug = f"{class_slug}_{current_best['treeName'].lower().replace(' ', '')}"
-                        result["specId"] = SPEC_NAME_ALIASES.get(slug, slug)
+            # Resolve specId from active group (after all trees are collected)
+            if talent_group["isActive"] and result["specId"] is None:
+                # Best tree = most points
+                current_best = max(
+                    talent_group["specializations"],
+                    key=lambda s: s["spentPoints"]
+                )
+                if current_best["spentPoints"] > 0:
+                    slug = f"{class_slug}_{current_best['treeName'].lower().replace(' ', '')}"
+                    result["specId"] = SPEC_NAME_ALIASES.get(slug, slug)
 
             result["talentGroups"].append(talent_group)
     except Exception:
