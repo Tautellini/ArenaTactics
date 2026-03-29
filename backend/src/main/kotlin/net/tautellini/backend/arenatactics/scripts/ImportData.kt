@@ -11,7 +11,10 @@ import java.io.File
 private val json = Json { ignoreUnknownKeys = true }
 private const val BATCH_LIMIT = 500
 
-private val RESOURCES = "composeApp/src/commonMain/composeResources/files"
+// Point to a local directory with JSON data files for import.
+// Usage: IMPORT_DATA_DIR=/path/to/files ./gradlew :backend:importData
+private val RESOURCES = System.getenv("IMPORT_DATA_DIR")
+    ?: error("Set IMPORT_DATA_DIR to the directory containing JSON data files (e.g. addons.json, spec_pools/, ladder/, etc.)")
 
 fun main() {
     val databaseId = System.getenv("FIRESTORE_DATABASE") ?: "tautellini"
