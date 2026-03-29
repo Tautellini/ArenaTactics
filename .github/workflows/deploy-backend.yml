@@ -8,7 +8,7 @@ on:
 
 env:
   GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
-  GCP_REGION: ${{ vars.GCP_REGION || 'europe-west1' }}
+  GCP_REGION: ${{ vars.GCP_REGION || 'europe-west3' }}
   SERVICE_NAME: ${{ vars.CLOUD_RUN_SERVICE || 'backend' }}
   ARTIFACT_REGISTRY: ${{ vars.ARTIFACT_REGISTRY || 'tautellini' }}
 
