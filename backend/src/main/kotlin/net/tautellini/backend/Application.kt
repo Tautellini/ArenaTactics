@@ -8,6 +8,7 @@ import net.tautellini.backend.plugins.configureRouting
 import net.tautellini.backend.plugins.configureSerialization
 import net.tautellini.backend.plugins.configureCors
 import net.tautellini.backend.plugins.configureStatusPages
+import net.tautellini.backend.plugins.configureAuth
 import net.tautellini.backend.plugins.configureRateLimiting
 import net.tautellini.backend.arenatactics.services.FirestoreService
 
@@ -20,6 +21,7 @@ fun main() {
         configureCompression()
         configureCors()
         configureStatusPages()
+        configureAuth()
         configureRateLimiting()
         configureRouting(firestoreService)
     }.start(wait = true)

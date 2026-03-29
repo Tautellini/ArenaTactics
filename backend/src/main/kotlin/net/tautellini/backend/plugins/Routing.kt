@@ -32,5 +32,11 @@ fun Application.configureRouting(firestoreService: FirestoreService) {
                 }
             }
         }
+
+        rateLimit(RateLimitName("write")) {
+            route("/api/v1") {
+                adminRoutes(firestoreService)
+            }
+        }
     }
 }

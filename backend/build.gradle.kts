@@ -14,12 +14,6 @@ ktor {
     }
 }
 
-tasks.register<JavaExec>("importData") {
-    classpath = sourceSets["main"].runtimeClasspath
-    mainClass.set("net.tautellini.backend.arenatactics.scripts.ImportDataKt")
-    workingDir = rootDir
-}
-
 dependencies {
     implementation(project(":models"))
     implementation(libs.ktor.server.core)
@@ -30,6 +24,7 @@ dependencies {
     implementation(libs.ktor.server.status.pages)
     implementation(libs.ktor.server.rate.limit)
     implementation(libs.ktor.server.compression)
+    implementation(libs.ktor.server.auth)
     implementation(libs.ktor.serialization.kotlinx.json)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.google.cloud.firestore)
