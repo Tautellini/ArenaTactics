@@ -61,6 +61,55 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 - Compose Multiplatform for a shared UI
 - Compose Navigation
 
+## Backend & Data Layer
+
+**Infrastructure:**
+- **Cloud Run** backend (Ktor + Netty) at `https://backend-532845578761.europe-west3.run.app`
+- **Firestore** (named database `tautellini`, region `europe-west3`) as the single source of truth for all data
+- **Artifact Registry** (`tautellini`, `europe-west3`) for Docker images
+- GCP project: `tautellini`
+
+**Firestore namespace:** All data lives under `projects/arenatactics/` as a top-level document scope. This allows future projects to coexist in the same database (e.g., `projects/project2/`).
+
+**Module structure:**
+- `:models` — shared KMP module (`net.tautellini.models.arenatactics`) with all `@Serializable` data classes. Used by both frontend and backend. **Never duplicate model classes** — always add them here.
+- `:backend` — Ktor server. Plugins (CORS, auth, compression, rate limiting) are in `backend/.../plugins/`. ArenaTactics-specific routes and services are under `backend/.../arenatactics/`.
+- `:arenatactics` — KMP frontend. Repositories call the backend API via `ArenaApi`, not local files. Only `TalentTreeRepository` still uses local resources.
+
+**Data flow:**
+```
+Frontend Repositories → ArenaApi (ktor-client) → Backend Routes → FirestoreService → Firestore
+```
+
+**API endpoints:** All read endpoints are under `GET /api/v1/arena-tactics/` with rate limiting (60 req/min per IP). Key endpoints:
+- `/addons`, `/game-modes`, `/spec-pools/{id}`, `/class-pools/{id}`
+- `/composition-sets/{id}`, `/matchups/{compositionId}`, `/gear/{classId}`
+- `/ladder/{addonId}/index`, `/ladder/{addonId}/snapshots/{region}/{bracket}`
+- `/ladder/{addonId}/players/{region}/{characterId}`, `/ladder/{addonId}/items/{itemId}`
+- `/spec-meta/{specId}` — precomputed aggregation, not computed at runtime
+
+**Admin write endpoints:** All under `PUT /api/v1/admin/arena-tactics/` with bearer token auth (`ADMIN_API_KEY` env var) and stricter rate limiting (10 req/min). Used to upsert data during development:
+```bash
+curl -X PUT .../api/v1/admin/arena-tactics/addons \
+  -H "Authorization: Bearer $ADMIN_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d @addons.json
+```
+The admin key is stored in `secrets.properties` (gitignored) as `ADMIN_API_KEY`.
+
+**Updating data during development:**
+- **Firestore is the source of truth.** Do not create local JSON data files.
+- Use the admin PUT endpoints to upsert data. All endpoints accept the same JSON format as the model classes.
+- For bulk updates, POST the full list/map. For individual documents, use the specific endpoint.
+- `SpecMeta` is precomputed from player profiles — push it via `PUT /admin/arena-tactics/spec-meta/{specId}`.
+- Talent trees are the **only** data still embedded as local resources (`arenatactics/src/.../files/talent_trees/`).
+
+**Deployment:**
+- Backend deploys automatically via GitHub Actions when `backend/**` changes are pushed to main.
+- Frontend deploys to GitHub Pages when `arenatactics/**` changes are pushed to main.
+- Both workflows use path filters — changes to one don't trigger the other.
+- Docker base image must be `eclipse-temurin:21-jre-noble` (NOT Alpine — gRPC native SSL crashes on musl).
+
 ## DESIGN GUIDELINES
 - dark, premium design with glass-like translucent elements
 - **teal/aqua palette** — deep ocean darks with cyan accents
@@ -110,7 +159,7 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 ## Ladder Data Pipeline
 - PvP ladder data is fetched from the Blizzard Game Data API. **Each addon has its own fetch script** in `scripts/` (e.g., `fetch_tbc_anniversary.py`, `fetch_midnight.py`). Shared helpers live in `scripts/blizzard_api.py`.
 - Scripts read credentials from `secrets.properties` (gitignored) or environment variables (`BLIZZARD_CLIENT_ID`, `BLIZZARD_CLIENT_SECRET`).
-- Data is organized per-addon: `files/ladder/{addonId}/index.json` + `{region}_{bracket}.json`.
+- Fetched data is pushed to Firestore via the admin API endpoints. Scripts should use the `ADMIN_API_KEY` from `secrets.properties` to authenticate.
 - A GitHub Actions workflow (`.github/workflows/fetch-ladder.yml`) runs daily to refresh data. Addon scripts are enabled/disabled independently in the workflow.
 - **Brutal efficiency is required for fetch scripts.** The Blizzard API has a hard rate limit of 36,000 requests/hour. Every call counts:
   - **Deduplicate across brackets**: the same player in 2v2, 3v3, and 5v5 is resolved once. Character profile data (gear, talents, race, guild) is identical across brackets.
@@ -122,4 +171,4 @@ This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting
 ## Spec Ordering
 - `specIds` in JSON data files are always **alphabetically sorted** — this is enforced by `Composition.init` and is required for stable IDs and deduplication.
 - `RichComposition.specs` (the display layer) are always reordered **DPS first, HEALER last** in `enrichCompositions()`. Never change this order at the UI layer; fix it at the enrichment layer if it is wrong.
-- When adding new compositions to JSON, keep `specIds` alphabetical. The display order is handled automatically.
+- When adding new compositions, keep `specIds` alphabetical. The display order is handled automatically.
