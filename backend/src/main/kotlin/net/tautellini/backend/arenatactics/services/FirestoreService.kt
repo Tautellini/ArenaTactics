@@ -5,9 +5,15 @@ import com.google.cloud.firestore.FirestoreOptions
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class FirestoreService(private val projectNamespace: String = "arenatactics") {
+class FirestoreService(
+    private val projectNamespace: String = "arenatactics",
+    private val databaseId: String = System.getenv("FIRESTORE_DATABASE") ?: "tautellini"
+) {
     val db: Firestore by lazy {
-        FirestoreOptions.getDefaultInstance().service
+        FirestoreOptions.newBuilder()
+            .setDatabaseId(databaseId)
+            .build()
+            .service
     }
 
     private fun ref(collection: String) =

@@ -14,7 +14,11 @@ private const val BATCH_LIMIT = 500
 private val RESOURCES = "composeApp/src/commonMain/composeResources/files"
 
 fun main() {
-    val db = FirestoreOptions.getDefaultInstance().service
+    val databaseId = System.getenv("FIRESTORE_DATABASE") ?: "tautellini"
+    val db = FirestoreOptions.newBuilder()
+        .setDatabaseId(databaseId)
+        .build()
+        .service
     val root = db.collection("projects").document("arenatactics")
 
     println("=== ArenaTactics Firestore Import ===")
