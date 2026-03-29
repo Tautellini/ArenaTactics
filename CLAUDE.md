@@ -6,41 +6,41 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Desktop (JVM):**
 ```bash
-./gradlew :composeApp:run
+./gradlew :arenatactics:run
 ```
 
 **Web (Wasm — modern browsers, faster):**
 ```bash
-./gradlew :composeApp:wasmJsBrowserDevelopmentRun
+./gradlew :arenatactics:wasmJsBrowserDevelopmentRun
 ```
 
 **Web (JS — wider browser support):**
 ```bash
-./gradlew :composeApp:jsBrowserDevelopmentRun
+./gradlew :arenatactics:jsBrowserDevelopmentRun
 ```
 
 **Run tests:**
 ```bash
-./gradlew :composeApp:allTests
+./gradlew :arenatactics:allTests
 ```
 
 **Run a single test class:**
 ```bash
-./gradlew :composeApp:jvmTest --tests "net.tautellini.arenatactics.ComposeAppCommonTest"
+./gradlew :arenatactics:jvmTest --tests "net.tautellini.arenatactics.ComposeAppCommonTest"
 ```
 
 **Build distribution packages (DMG/MSI/DEB):**
 ```bash
-./gradlew :composeApp:packageDistributionForCurrentOS
+./gradlew :arenatactics:packageDistributionForCurrentOS
 ```
 
 On Windows use `gradlew.bat` instead of `./gradlew`.
 
 ## Architecture
 
-This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting Desktop (JVM), Web (JS), and Web (Wasm). Single module: `composeApp`.
+This is a **Kotlin Multiplatform** app using **Compose Multiplatform** targeting Desktop (JVM), Web (JS), and Web (Wasm). Modules: `arenatactics` (frontend), `backend` (Ktor API), `models` (shared data classes).
 
-**Source sets under `composeApp/src/`:**
+**Source sets under `arenatactics/src/`:**
 - `commonMain` — shared UI and business logic (all platforms)
 - `commonTest` — shared tests
 - `jvmMain` — desktop entry point (`main.kt`), JVM-specific platform impl

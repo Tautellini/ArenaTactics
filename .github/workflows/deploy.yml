@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'composeApp/**'
+      - 'arenatactics/**'
       - 'gradle/**'
       - '*.gradle.kts'
       - 'gradle.properties'
@@ -41,13 +41,13 @@ jobs:
           cache-read-only: false
 
       - name: Build wasmJs production bundle
-        run: ./gradlew :composeApp:wasmJsBrowserDistribution
+        run: ./gradlew :arenatactics:wasmJsBrowserDistribution
 
       - name: Fix base href for GitHub Pages subdirectory
         run: |
           REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
           sed -i "s|href=\"/\"|href=\"/$REPO_NAME/\"|g" \
-            composeApp/build/dist/wasmJs/productionExecutable/index.html
+            arenatactics/build/dist/wasmJs/productionExecutable/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -55,7 +55,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: composeApp/build/dist/wasmJs/productionExecutable
+          path: arenatactics/build/dist/wasmJs/productionExecutable
 
       - name: Deploy to GitHub Pages
         id: deployment

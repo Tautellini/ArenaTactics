@@ -1,4 +1,4 @@
-rootProject.name = "ArenaTactics"
+rootProject.name = "tautellini"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
@@ -33,5 +33,5 @@ plugins {
 }
 
 include(":models")
-include(":composeApp")
+include(":arenatactics")
 include(":backend")

@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add composeApp/src/commonMain/composeResources/files/ladder/
+          git add arenatactics/src/commonMain/composeResources/files/ladder/
           if git diff --cached --quiet; then
             echo "No ladder data changes to commit."
           else

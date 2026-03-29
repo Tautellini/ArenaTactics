@@ -1,6 +1,6 @@
 package net.tautellini.arenatactics.data.repository
 
-import arenatactics.composeapp.generated.resources.Res
+import tautellini.arenatactics.generated.resources.Res
 import net.tautellini.models.arenatactics.TalentTreeDefinition
 
 class TalentTreeRepository {

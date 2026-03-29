@@ -9,13 +9,13 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import arenatactics.composeapp.generated.resources.CinzelDecorative_Bold
-import arenatactics.composeapp.generated.resources.CinzelDecorative_Regular
-import arenatactics.composeapp.generated.resources.NotoSans_Bold
-import arenatactics.composeapp.generated.resources.NotoSans_Medium
-import arenatactics.composeapp.generated.resources.NotoSans_Regular
-import arenatactics.composeapp.generated.resources.NotoSans_SemiBold
-import arenatactics.composeapp.generated.resources.Res
+import tautellini.arenatactics.generated.resources.CinzelDecorative_Bold
+import tautellini.arenatactics.generated.resources.CinzelDecorative_Regular
+import tautellini.arenatactics.generated.resources.NotoSans_Bold
+import tautellini.arenatactics.generated.resources.NotoSans_Medium
+import tautellini.arenatactics.generated.resources.NotoSans_Regular
+import tautellini.arenatactics.generated.resources.NotoSans_SemiBold
+import tautellini.arenatactics.generated.resources.Res
 import org.jetbrains.compose.resources.Font
 
 val Primary = Color(0xFF27E0E0)
