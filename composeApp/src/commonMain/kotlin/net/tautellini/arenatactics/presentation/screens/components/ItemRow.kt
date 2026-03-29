@@ -13,7 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import net.tautellini.arenatactics.data.model.GearItem
+import net.tautellini.models.arenatactics.GearItem
 import net.tautellini.arenatactics.openUrl
 import net.tautellini.arenatactics.presentation.theme.*
 
@@ -35,7 +35,7 @@ fun ItemRow(item: GearItem, modifier: Modifier = Modifier) {
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Icon(Icons.Rounded.AutoAwesome, contentDescription = null, modifier = Modifier.size(12.dp), tint = Primary)
-                            Text(item.enchant, fontSize = 12.sp)
+                            Text(item.enchant!!, fontSize = 12.sp)
                         }
                     }
                     if (item.gems.isNotEmpty()) {
@@ -93,7 +93,7 @@ fun ItemRow(item: GearItem, modifier: Modifier = Modifier) {
                 ) {
                     if (item.enchant != null) {
                         Icon(Icons.Rounded.AutoAwesome, contentDescription = null, modifier = Modifier.size(11.dp), tint = Primary)
-                        Text(item.enchant, color = TextSecondary, fontSize = 11.sp)
+                        Text(item.enchant!!, color = TextSecondary, fontSize = 11.sp)
                     }
                     if (item.gems.isNotEmpty()) {
                         Icon(Icons.Rounded.Diamond, contentDescription = null, modifier = Modifier.size(11.dp), tint = TextSecondary)

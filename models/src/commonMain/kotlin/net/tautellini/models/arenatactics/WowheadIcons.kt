@@ -1,4 +1,4 @@
-package net.tautellini.arenatactics.data.model
+package net.tautellini.models.arenatactics
 
 object WowheadIcons {
     private const val BASE = "https://wow.zamimg.com/images/wow/icons"

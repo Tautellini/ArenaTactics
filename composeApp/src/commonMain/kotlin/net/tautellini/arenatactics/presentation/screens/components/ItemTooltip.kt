@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Popup
-import net.tautellini.arenatactics.data.model.ItemTooltipData
+import net.tautellini.models.arenatactics.ItemTooltipData
 
 private val QualityColors = mapOf(
     "LEGENDARY" to Color(0xFFFF8000),
@@ -124,8 +124,9 @@ fun ItemTooltipContent(
                 }
             }
 
-            if (item.armor != null && item.armor > 0) {
-                Text("${item.armor} Armor", color = Color.White, fontSize = 11.sp)
+            val armor = item.armor
+            if (armor != null && armor > 0) {
+                Text("$armor Armor", color = Color.White, fontSize = 11.sp)
             }
 
             item.stats.forEach { stat ->

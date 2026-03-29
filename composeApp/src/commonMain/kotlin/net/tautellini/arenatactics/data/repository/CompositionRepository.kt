@@ -1,32 +1,11 @@
 package net.tautellini.arenatactics.data.repository
 
-import arenatactics.composeapp.generated.resources.Res
-import kotlinx.serialization.Serializable
-import net.tautellini.arenatactics.data.model.Composition
-import net.tautellini.arenatactics.data.model.CompositionTier
-import net.tautellini.arenatactics.data.model.SpecRole
-import net.tautellini.arenatactics.data.model.WowClass
-import net.tautellini.arenatactics.data.model.WowSpec
-import net.tautellini.arenatactics.domain.RichComposition
-
-/** Surrogate used during JSON parsing to avoid triggering Composition.init sort-check. */
-@Serializable
-private data class CompositionDto(
-    val specIds: List<String>,
-    val tier: CompositionTier,
-    val hasData: Boolean
-)
-
-internal fun parseWowClasses(jsonString: String): List<WowClass> =
-    appJson.decodeFromString(jsonString)
-
-internal fun parseCompositions(jsonString: String): List<Composition> {
-    val dtos: List<CompositionDto> = appJson.decodeFromString(jsonString)
-    // Normalise spec order on load — defensive against unsorted JSON
-    return dtos.map { dto ->
-        Composition(specIds = dto.specIds.sorted(), tier = dto.tier, hasData = dto.hasData)
-    }
-}
+import net.tautellini.arenatactics.data.api.ArenaApi
+import net.tautellini.models.arenatactics.Composition
+import net.tautellini.models.arenatactics.RichComposition
+import net.tautellini.models.arenatactics.SpecRole
+import net.tautellini.models.arenatactics.WowClass
+import net.tautellini.models.arenatactics.WowSpec
 
 internal fun enrichCompositions(
     compositions: List<Composition>,
@@ -54,15 +33,15 @@ internal fun enrichCompositions(
 }
 
 class CompositionRepository(
+    private val api: ArenaApi,
     private val specRepository: SpecRepository
 ) {
     private val classCache = mutableMapOf<String, List<WowClass>>()
-    private val compCache  = mutableMapOf<String, List<Composition>>()
+    private val compCache = mutableMapOf<String, List<Composition>>()
 
     suspend fun getClasses(classPoolId: String): List<WowClass> {
         return classCache.getOrPut(classPoolId) {
-            val bytes = Res.readBytes("files/class_pools/$classPoolId.json")
-            parseWowClasses(bytes.decodeToString())
+            api.getClassPool(classPoolId)
         }
     }
 
@@ -71,8 +50,7 @@ class CompositionRepository(
 
     suspend fun getCompositions(compositionSetId: String): List<Composition> {
         return compCache.getOrPut(compositionSetId) {
-            val bytes = Res.readBytes("files/composition_sets/$compositionSetId.json")
-            parseCompositions(bytes.decodeToString())
+            api.getCompositionSet(compositionSetId)
         }
     }
 
@@ -82,11 +60,11 @@ class CompositionRepository(
         compositionSetId: String,
         teamSize: Int
     ): List<RichComposition> {
-        val specs    = specRepository.getSpecs(specPoolId)
-        val specMap  = specs.associateBy { it.id }
-        val classes  = getClasses(classPoolId)
+        val specs = specRepository.getSpecs(specPoolId)
+        val specMap = specs.associateBy { it.id }
+        val classes = getClasses(classPoolId)
         val classMap = classes.associateBy { it.id }
-        val comps    = getCompositions(compositionSetId)
+        val comps = getCompositions(compositionSetId)
         return enrichCompositions(comps, specMap, classMap, teamSize)
     }
 

@@ -31,11 +31,11 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
-import net.tautellini.arenatactics.data.model.ClassDistributionEntry
-import net.tautellini.arenatactics.data.model.LadderEntry
-import net.tautellini.arenatactics.data.model.LadderSnapshot
-import net.tautellini.arenatactics.data.model.SpecDistribution
-import net.tautellini.arenatactics.data.model.WowheadIcons
+import net.tautellini.models.arenatactics.ClassDistributionEntry
+import net.tautellini.models.arenatactics.LadderEntry
+import net.tautellini.models.arenatactics.LadderSnapshot
+import net.tautellini.models.arenatactics.SpecDistribution
+import net.tautellini.models.arenatactics.WowheadIcons
 import net.tautellini.arenatactics.presentation.LadderState
 import net.tautellini.arenatactics.presentation.LadderViewModel
 import net.tautellini.arenatactics.presentation.screens.components.ClassFilterBar

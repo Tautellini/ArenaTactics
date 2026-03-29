@@ -6,27 +6,22 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import net.tautellini.arenatactics.data.model.ItemTooltipData
-import net.tautellini.arenatactics.data.model.PlayerProfile
-import net.tautellini.arenatactics.data.model.SpecRole
-import net.tautellini.arenatactics.data.model.WowClass
-import net.tautellini.arenatactics.data.model.WowSpec
-import net.tautellini.arenatactics.data.model.TalentTreeDefinition
+import net.tautellini.models.arenatactics.SpecRole
+import net.tautellini.models.arenatactics.WowClass
+import net.tautellini.models.arenatactics.WowSpec
+import net.tautellini.models.arenatactics.TalentTreeDefinition
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.LadderRepository
 import net.tautellini.arenatactics.data.repository.TalentTreeRepository
-import net.tautellini.arenatactics.domain.SpecMeta
-import net.tautellini.arenatactics.domain.computeSpecMeta
+import net.tautellini.models.arenatactics.SpecMeta
 
 sealed class MetaState {
     data object Loading : MetaState()
     data class Success(
         val specs: List<WowSpec>,
         val classMap: Map<String, WowClass>,
-        val specsWithData: Set<String>,
-        val allPlayers: List<PlayerProfile>,
-        val allItems: Map<String, ItemTooltipData>
+        val specsWithData: Set<String>
     ) : MetaState()
     data class Error(val message: String) : MetaState()
 }
@@ -61,8 +56,6 @@ class MetaViewModel(
     private val _specMetaState = MutableStateFlow<SpecMetaState>(SpecMetaState.Idle)
     val specMetaState: StateFlow<SpecMetaState> = _specMetaState.asStateFlow()
 
-    private val specMetaCache = mutableMapOf<String, SpecMeta>()
-
     init {
         viewModelScope.launch {
             _state.value = try {
@@ -73,26 +66,17 @@ class MetaViewModel(
                 val classes = compositionRepository.getClasses(addon.classPoolId)
                 val classMap = classes.associateBy { it.id }
 
-                // Load all player profiles from both regions
-                val allPlayers = listOf("us", "eu").flatMap { region ->
-                    try {
-                        ladderRepository.getPlayerProfiles(addonId, region).values.toList()
-                    } catch (_: Throwable) { emptyList() }
-                }
-
-                // Load all item tooltip data from both regions
-                val allItems = mutableMapOf<String, ItemTooltipData>()
-                for (region in listOf("us", "eu")) {
-                    try { allItems.putAll(ladderRepository.getItems(addonId, region)) } catch (_: Throwable) {}
-                }
-
-                // Determine which specs have player data
+                // Determine which specs have data from ladder snapshot distributions
                 val specsWithData = mutableSetOf<String>()
-                for (player in allPlayers) {
-                    player.specId?.let { specsWithData.add(it) }
+                val indices = ladderRepository.getIndex(addonId)
+                for (idx in indices) {
+                    try {
+                        val snapshot = ladderRepository.getSnapshot(addonId, idx.region, idx.bracket)
+                        snapshot.specDistribution.forEach { specsWithData.add(it.specId) }
+                    } catch (_: Throwable) {}
                 }
 
-                MetaState.Success(specs, classMap, specsWithData, allPlayers, allItems)
+                MetaState.Success(specs, classMap, specsWithData)
             } catch (e: Throwable) {
                 MetaState.Error(e.message ?: "Failed to load meta data")
             }
@@ -121,9 +105,10 @@ class MetaViewModel(
 
         _specMetaState.value = SpecMetaState.Loading
         viewModelScope.launch {
-            // Check cache first
-            val meta = specMetaCache.getOrPut(toggled) {
-                computeSpecMeta(toggled, success.allPlayers)
+            val meta = ladderRepository.getSpecMeta(toggled)
+            if (meta == null) {
+                _specMetaState.value = SpecMetaState.Idle
+                return@launch
             }
             val talentTree = try {
                 talentTreeRepository.getTree(addonId, spec.classId)

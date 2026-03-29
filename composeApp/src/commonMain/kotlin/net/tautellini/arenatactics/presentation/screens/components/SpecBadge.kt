@@ -8,9 +8,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-import net.tautellini.arenatactics.data.model.WowClass
-import net.tautellini.arenatactics.data.model.WowSpec
-import net.tautellini.arenatactics.data.model.WowheadIcons
+import net.tautellini.models.arenatactics.WowClass
+import net.tautellini.models.arenatactics.WowSpec
+import net.tautellini.models.arenatactics.WowheadIcons
 import net.tautellini.arenatactics.presentation.theme.classColor
 
 @Composable

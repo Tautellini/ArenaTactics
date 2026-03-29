@@ -1,5 +1,6 @@
 package net.tautellini.arenatactics.data.model
 
+import net.tautellini.models.arenatactics.WowheadIcons
 import kotlin.test.Test
 import kotlin.test.assertEquals
 

@@ -1,9 +1,12 @@
 package net.tautellini.arenatactics.data.repository
 
-import net.tautellini.arenatactics.data.model.*
+import kotlinx.serialization.json.Json
+import net.tautellini.models.arenatactics.*
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
+
+private val json = Json { ignoreUnknownKeys = true }
 
 class CompositionRepositoryTest {
 
@@ -29,41 +32,41 @@ class CompositionRepositoryTest {
 
     @Test
     fun parseCompositionsSortsSpecIds() {
-        val comps = parseCompositions(compositionsJson)
+        val comps = json.decodeFromString<List<Composition>>(compositionsJson)
         assertEquals(listOf("priest_discipline", "rogue_subtlety"), comps.first().specIds)
     }
 
     @Test
     fun parseCompositionsReadsTierAndHasData() {
-        val comp = parseCompositions(compositionsJson).first()
+        val comp = json.decodeFromString<List<Composition>>(compositionsJson).first()
         assertEquals(CompositionTier.DOMINANT, comp.tier)
         assertEquals(true, comp.hasData)
     }
 
     @Test
     fun enrichReturnsRichCompositionWithCorrectSpecs() {
-        val specs = parseWowSpecs(specsJson)
-        val classes = parseWowClasses(classesJson)
-        val comps = parseCompositions(compositionsJson)
+        val specs = json.decodeFromString<List<WowSpec>>(specsJson)
+        val classes = json.decodeFromString<List<WowClass>>(classesJson)
+        val comps = json.decodeFromString<List<Composition>>(compositionsJson)
         val specMap = specs.associateBy { it.id }
         val classMap = classes.associateBy { it.id }
 
         val rich = enrichCompositions(comps, specMap, classMap, teamSize = 2)
 
         assertEquals(1, rich.size)
-        assertEquals("Subtlety",   rich.first().specs[0].name)   // DPS first
-        assertEquals("Discipline", rich.first().specs[1].name)   // HEALER second
+        assertEquals("Subtlety",   rich.first().specs[0].name)
+        assertEquals("Discipline", rich.first().specs[1].name)
         assertEquals("Rogue",  rich.first().classes[0].name)
         assertEquals("Priest", rich.first().classes[1].name)
     }
 
     @Test
     fun enrichThrowsOnUnknownSpecId() {
-        val comps = parseCompositions("""
-            [{ "specIds": ["unknown_spec", "rogue_subtlety"], "tier": "OTHERS", "hasData": false }]
+        val comps = json.decodeFromString<List<Composition>>("""
+            [{ "specIds": ["rogue_subtlety", "unknown_spec"], "tier": "OTHERS", "hasData": false }]
         """.trimIndent())
-        val specMap = parseWowSpecs(specsJson).associateBy { it.id }
-        val classMap = parseWowClasses(classesJson).associateBy { it.id }
+        val specMap = json.decodeFromString<List<WowSpec>>(specsJson).associateBy { it.id }
+        val classMap = json.decodeFromString<List<WowClass>>(classesJson).associateBy { it.id }
 
         assertFailsWith<IllegalStateException> {
             enrichCompositions(comps, specMap, classMap, teamSize = 2)
@@ -72,9 +75,9 @@ class CompositionRepositoryTest {
 
     @Test
     fun enrichThrowsOnTeamSizeMismatch() {
-        val comps = parseCompositions(compositionsJson)  // has 2 specs
-        val specMap = parseWowSpecs(specsJson).associateBy { it.id }
-        val classMap = parseWowClasses(classesJson).associateBy { it.id }
+        val comps = json.decodeFromString<List<Composition>>(compositionsJson)
+        val specMap = json.decodeFromString<List<WowSpec>>(specsJson).associateBy { it.id }
+        val classMap = json.decodeFromString<List<WowClass>>(classesJson).associateBy { it.id }
 
         assertFailsWith<IllegalArgumentException> {
             enrichCompositions(comps, specMap, classMap, teamSize = 3)

@@ -1,45 +1,13 @@
 package net.tautellini.arenatactics.domain
 
-import net.tautellini.arenatactics.data.model.PlayerProfile
-import net.tautellini.arenatactics.data.model.TalentSelection
-
-/**
- * Aggregated meta data for a specialization, computed at runtime from player profiles.
- */
-data class SpecMeta(
-    val specId: String,
-    val sampleSize: Int,
-    val slotBreakdowns: List<SlotBreakdown>,
-    val popularTalentBuilds: List<TalentBuildEntry>
-)
-
-data class SlotBreakdown(
-    val slot: String,
-    val items: List<ItemUsage>,
-    val enchants: List<EnchantUsage>
-)
-
-data class ItemUsage(
-    val itemId: Int,
-    val name: String,
-    val quality: String?,
-    val count: Int,
-    val percentage: Double
-)
-
-data class EnchantUsage(
-    val name: String,
-    val count: Int,
-    val percentage: Double
-)
-
-data class TalentBuildEntry(
-    val label: String,          // e.g. "Frost (44) / Arcane (17)"
-    val trees: List<Pair<String, Int>>,  // treeName to spentPoints
-    val count: Int,
-    val percentage: Double,
-    val talentSelections: List<TalentSelection> = emptyList()  // representative build's individual talents
-)
+import net.tautellini.models.arenatactics.EnchantUsage
+import net.tautellini.models.arenatactics.ItemUsage
+import net.tautellini.models.arenatactics.PlayerProfile
+import net.tautellini.models.arenatactics.SlotBreakdown
+import net.tautellini.models.arenatactics.SpecMeta
+import net.tautellini.models.arenatactics.TalentBuildEntry
+import net.tautellini.models.arenatactics.TalentSelection
+import net.tautellini.models.arenatactics.TalentTreePair
 
 private val SLOT_ORDER = listOf(
     "HEAD", "NECK", "SHOULDER", "BACK", "CHEST", "WRIST",
@@ -54,9 +22,9 @@ fun computeSpecMeta(specId: String, players: List<PlayerProfile>): SpecMeta {
     if (total == 0) return SpecMeta(specId, 0, emptyList(), emptyList())
 
     // ── Slot breakdowns ──
-    val slotItems = mutableMapOf<String, MutableList<Pair<Int, String>>>()     // slot → (itemId, name) list
-    val slotQualities = mutableMapOf<Pair<String, Int>, String?>()              // (slot, itemId) → quality
-    val slotEnchants = mutableMapOf<String, MutableList<String>>()              // slot → enchant names
+    val slotItems = mutableMapOf<String, MutableList<Pair<Int, String>>>()
+    val slotQualities = mutableMapOf<Pair<String, Int>, String?>()
+    val slotEnchants = mutableMapOf<String, MutableList<String>>()
 
     for (player in matching) {
         for (item in player.equipment) {
@@ -97,15 +65,15 @@ fun computeSpecMeta(specId: String, players: List<PlayerProfile>): SpecMeta {
 
     // ── Talent builds ──
     data class BuildData(
-        val trees: List<Pair<String, Int>>,
+        val trees: List<TalentTreePair>,
         val count: Int,
-        val talents: List<TalentSelection>  // representative build (first seen)
+        val talents: List<TalentSelection>
     )
     val buildCounts = mutableMapOf<String, BuildData>()
     for (player in matching) {
         val activeGroup = player.talentGroups.firstOrNull { it.isActive } ?: continue
-        val trees = activeGroup.specializations.map { it.treeName to it.spentPoints }
-        val label = trees.joinToString(" / ") { "${it.first} (${it.second})" }
+        val trees = activeGroup.specializations.map { TalentTreePair(it.treeName, it.spentPoints) }
+        val label = trees.joinToString(" / ") { "${it.treeName} (${it.spentPoints})" }
         val existing = buildCounts[label]
         if (existing != null) {
             buildCounts[label] = existing.copy(count = existing.count + 1)

@@ -6,9 +6,9 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import net.tautellini.arenatactics.data.model.Matchup
-import net.tautellini.arenatactics.data.model.WowClass
-import net.tautellini.arenatactics.data.model.WowSpec
+import net.tautellini.models.arenatactics.Matchup
+import net.tautellini.models.arenatactics.WowClass
+import net.tautellini.models.arenatactics.WowSpec
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.MatchupRepository

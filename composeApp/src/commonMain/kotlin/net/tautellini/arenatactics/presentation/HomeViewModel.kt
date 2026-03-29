@@ -7,8 +7,8 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import net.tautellini.arenatactics.data.model.Addon
-import net.tautellini.arenatactics.data.model.GameMode
+import net.tautellini.models.arenatactics.Addon
+import net.tautellini.models.arenatactics.GameMode
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
 import net.tautellini.arenatactics.data.repository.LadderRepository

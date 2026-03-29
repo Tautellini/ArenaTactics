@@ -1,7 +1,7 @@
 package net.tautellini.arenatactics.data.repository
 
 import arenatactics.composeapp.generated.resources.Res
-import net.tautellini.arenatactics.data.model.TalentTreeDefinition
+import net.tautellini.models.arenatactics.TalentTreeDefinition
 
 class TalentTreeRepository {
     private val cache = mutableMapOf<String, TalentTreeDefinition?>()

@@ -1,4 +1,4 @@
-package net.tautellini.arenatactics.data.model
+package net.tautellini.models.arenatactics
 
 import kotlinx.serialization.Serializable
 

@@ -1,4 +1,4 @@
-package net.tautellini.arenatactics.data.model
+package net.tautellini.models.arenatactics
 
 import kotlinx.serialization.Serializable
 
@@ -44,7 +44,6 @@ data class LadderEntry(
     val faction: String? = null
 )
 
-/** Runtime-only — computed from top entries, not serialized. */
 data class ClassDistributionEntry(
     val classId: String,
     val count: Int,

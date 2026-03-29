@@ -28,8 +28,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
-import net.tautellini.arenatactics.data.model.WowSpec
-import net.tautellini.arenatactics.data.model.WowheadIcons
+import net.tautellini.models.arenatactics.WowSpec
+import net.tautellini.models.arenatactics.WowheadIcons
 import net.tautellini.arenatactics.presentation.MetaState
 import net.tautellini.arenatactics.presentation.MetaViewModel
 import net.tautellini.arenatactics.presentation.SpecMetaState
@@ -143,7 +143,7 @@ private fun MetaContent(
                     spec = specMetaState.spec,
                     wowClass = specMetaState.wowClass,
                     meta = specMetaState.meta,
-                    items = state.allItems,
+                    items = emptyMap(),
                     talentTree = specMetaState.talentTree
                 )
             }

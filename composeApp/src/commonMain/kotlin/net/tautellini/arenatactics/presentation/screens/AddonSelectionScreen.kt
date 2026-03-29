@@ -39,8 +39,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import net.tautellini.arenatactics.data.model.Addon
-import net.tautellini.arenatactics.data.model.GameMode
+import net.tautellini.models.arenatactics.Addon
+import net.tautellini.models.arenatactics.GameMode
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.presentation.GameModeRowState
 import net.tautellini.arenatactics.presentation.HomeSection

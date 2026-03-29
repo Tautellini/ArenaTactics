@@ -6,13 +6,13 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import net.tautellini.arenatactics.data.model.CompositionTier
-import net.tautellini.arenatactics.data.model.SpecRole
-import net.tautellini.arenatactics.data.model.WowClass
+import net.tautellini.models.arenatactics.CompositionTier
+import net.tautellini.models.arenatactics.SpecRole
+import net.tautellini.models.arenatactics.WowClass
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
-import net.tautellini.arenatactics.domain.RichComposition
+import net.tautellini.models.arenatactics.RichComposition
 
 sealed class CompositionSelectionState {
     data object Loading : CompositionSelectionState()

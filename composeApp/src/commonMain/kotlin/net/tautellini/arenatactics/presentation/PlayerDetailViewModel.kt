@@ -2,13 +2,15 @@ package net.tautellini.arenatactics.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import net.tautellini.arenatactics.data.model.ItemTooltipData
-import net.tautellini.arenatactics.data.model.PlayerProfile
-import net.tautellini.arenatactics.data.model.TalentTreeDefinition
+import net.tautellini.models.arenatactics.ItemTooltipData
+import net.tautellini.models.arenatactics.PlayerProfile
+import net.tautellini.models.arenatactics.TalentTreeDefinition
 import net.tautellini.arenatactics.data.repository.LadderRepository
 import net.tautellini.arenatactics.data.repository.TalentTreeRepository
 
@@ -36,12 +38,26 @@ class PlayerDetailViewModel(
         viewModelScope.launch {
             _state.value = try {
                 val player = ladderRepository.getPlayerProfile(addonId, region, characterId)
-                val items = try { ladderRepository.getItems(addonId, region) } catch (_: Throwable) { emptyMap() }
-                val talentTree = try {
-                    player?.classId?.let { talentTreeRepository.getTree(addonId, it) }
-                } catch (_: Throwable) { null }
-                if (player != null) PlayerDetailState.Success(player, items, talentTree)
-                else PlayerDetailState.Error("Player not found")
+                if (player == null) {
+                    PlayerDetailState.Error("Player not found")
+                } else {
+                    // Fetch item tooltips for equipped items in parallel
+                    val itemIds = player.equipment.map { it.itemId }.filter { it > 0 }.distinct()
+                    val items = itemIds.map { itemId ->
+                        async {
+                            try {
+                                val item = ladderRepository.getItem(addonId, itemId)
+                                if (item != null) itemId.toString() to item else null
+                            } catch (_: Throwable) { null }
+                        }
+                    }.awaitAll().filterNotNull().toMap()
+
+                    val talentTree = try {
+                        player.classId?.let { talentTreeRepository.getTree(addonId, it) }
+                    } catch (_: Throwable) { null }
+
+                    PlayerDetailState.Success(player, items, talentTree)
+                }
             } catch (e: Throwable) {
                 PlayerDetailState.Error(e.message ?: "Failed to load player")
             }

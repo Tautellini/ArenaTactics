@@ -1,4 +1,4 @@
-package net.tautellini.arenatactics.data.model
+package net.tautellini.models.arenatactics
 
 import kotlinx.serialization.Serializable
 
@@ -7,18 +7,18 @@ data class WowClass(
     val id: String,
     val name: String,
     val color: String,
-    val iconName: String  // stored for future use; UI currently uses spec icon only
+    val iconName: String
 )
 
 @Serializable
-enum class SpecRole { DPS, HEALER }  // TANK omitted: TBC 2v2/3v3 arena has no tank role
+enum class SpecRole { DPS, HEALER }
 
 @Serializable
 data class WowSpec(
-    val id: String,       // format: "{classId}_{specName}" e.g. "rogue_subtlety"
-    val name: String,     // spec name only e.g. "Subtlety"
+    val id: String,
+    val name: String,
     val classId: String,
-    val iconName: String, // Wowhead icon slug e.g. "ability_stealth"
+    val iconName: String,
     val role: SpecRole,
     val hasData: Boolean = true
 )
@@ -28,14 +28,13 @@ enum class CompositionTier { DOMINANT, STRONG, PLAYABLE, OTHERS }
 
 @Serializable
 data class Composition(
-    val specIds: List<String>,  // sorted; length == GameMode.teamSize
+    val specIds: List<String>,
     val tier: CompositionTier,
     val hasData: Boolean
 ) {
     init {
         require(specIds == specIds.sorted()) { "specIds must be sorted: $specIds" }
     }
-    // Lookup key only — never parse back into spec IDs (underscores are ambiguous)
     val id: String get() = specIds.joinToString("_")
 }
 
@@ -59,6 +58,6 @@ data class GearPhase(
 @Serializable
 data class Matchup(
     val id: String,
-    val enemySpecIds: List<String>,  // sorted; length == GameMode.teamSize
+    val enemySpecIds: List<String>,
     val strategyMarkdown: String
 )

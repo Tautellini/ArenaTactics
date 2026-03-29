@@ -16,7 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import net.tautellini.arenatactics.data.model.CompositionTier
+import net.tautellini.models.arenatactics.CompositionTier
 import net.tautellini.arenatactics.navigation.Screen
 import net.tautellini.arenatactics.presentation.CompositionSelectionState
 import net.tautellini.arenatactics.presentation.CompositionSelectionViewModel

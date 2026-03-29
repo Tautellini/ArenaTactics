@@ -17,7 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.unit.dp
-import net.tautellini.arenatactics.domain.RichComposition
+import net.tautellini.models.arenatactics.RichComposition
 import net.tautellini.arenatactics.presentation.theme.CardBorder
 import net.tautellini.arenatactics.presentation.theme.CardColor
 import net.tautellini.arenatactics.presentation.theme.CardElevated

@@ -6,23 +6,20 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import net.tautellini.arenatactics.data.model.ItemTooltipData
-import net.tautellini.arenatactics.data.model.WowClass
-import net.tautellini.arenatactics.data.model.WowSpec
+import net.tautellini.models.arenatactics.WowClass
+import net.tautellini.models.arenatactics.WowSpec
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.LadderRepository
 import net.tautellini.arenatactics.data.repository.SpecRepository
-import net.tautellini.arenatactics.domain.SpecMeta
-import net.tautellini.arenatactics.domain.computeSpecMeta
+import net.tautellini.models.arenatactics.SpecMeta
 
 sealed class SpecGuideState {
     data object Loading : SpecGuideState()
     data class Success(
         val spec: WowSpec,
         val wowClass: WowClass,
-        val meta: SpecMeta,
-        val items: Map<String, ItemTooltipData> = emptyMap()
+        val meta: SpecMeta
     ) : SpecGuideState()
     data class Error(val message: String) : SpecGuideState()
 }
@@ -50,21 +47,10 @@ class SpecGuideViewModel(
                 val wowClass = classes.find { it.id == classId }
                     ?: throw IllegalArgumentException("Unknown class: $classId")
 
-                // Aggregate from all regions' player profiles
-                val allPlayers = listOf("us", "eu").flatMap { region ->
-                    try {
-                        ladderRepository.getPlayerProfiles(addonId, region).values.toList()
-                    } catch (_: Throwable) { emptyList() }
-                }
+                val meta = ladderRepository.getSpecMeta(specId)
+                    ?: SpecMeta(specId, 0, emptyList(), emptyList())
 
-                // Load item tooltip data from all regions
-                val allItems = mutableMapOf<String, ItemTooltipData>()
-                for (region in listOf("us", "eu")) {
-                    try { allItems.putAll(ladderRepository.getItems(addonId, region)) } catch (_: Throwable) {}
-                }
-
-                val meta = computeSpecMeta(specId, allPlayers)
-                SpecGuideState.Success(spec, wowClass, meta, allItems)
+                SpecGuideState.Success(spec, wowClass, meta)
             } catch (e: Throwable) {
                 SpecGuideState.Error(e.message ?: "Failed to load spec guide")
             }

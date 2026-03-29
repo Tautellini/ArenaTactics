@@ -24,12 +24,12 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
-import net.tautellini.arenatactics.data.model.TalentDefinition
-import net.tautellini.arenatactics.data.model.TalentGroup
-import net.tautellini.arenatactics.data.model.TalentTreeData
-import net.tautellini.arenatactics.data.model.TalentTreeDefinition
-import net.tautellini.arenatactics.data.model.WowheadIcons
-import net.tautellini.arenatactics.domain.TalentBuildEntry
+import net.tautellini.models.arenatactics.TalentDefinition
+import net.tautellini.models.arenatactics.TalentGroup
+import net.tautellini.models.arenatactics.TalentTreeData
+import net.tautellini.models.arenatactics.TalentTreeDefinition
+import net.tautellini.models.arenatactics.WowheadIcons
+import net.tautellini.models.arenatactics.TalentBuildEntry
 import net.tautellini.arenatactics.presentation.theme.*
 
 private val TalentMaxed = Color(0xFFFFD100)
@@ -51,7 +51,7 @@ fun TalentTreeCard(
 
     // Find the tree with most points for auto-select when switching builds
     LaunchedEffect(builds, selectedBuildIndex) {
-        val bestTree = selectedBuild.trees.maxByOrNull { it.second }?.first
+        val bestTree = selectedBuild.trees.maxByOrNull { it.spentPoints }?.treeName
         if (bestTree != null) {
             val idx = talentTree.trees.indexOfFirst { it.name == bestTree }
             if (idx >= 0) selectedTreeIndex = idx
@@ -86,7 +86,7 @@ fun TalentTreeCard(
             ) {
                 talentTree.trees.forEachIndexed { index, tree ->
                     val isActive = index == selectedTreeIndex
-                    val pts = selectedBuild.trees.find { it.first == tree.name }?.second ?: 0
+                    val pts = selectedBuild.trees.find { it.treeName == tree.name }?.spentPoints ?: 0
                     TreeTab(
                         tree = tree,
                         points = pts,

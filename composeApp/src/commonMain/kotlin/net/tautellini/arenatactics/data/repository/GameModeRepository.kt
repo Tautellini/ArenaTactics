@@ -1,17 +1,15 @@
 package net.tautellini.arenatactics.data.repository
 
-import arenatactics.composeapp.generated.resources.Res
-import net.tautellini.arenatactics.data.model.GameMode
+import net.tautellini.arenatactics.data.api.ArenaApi
+import net.tautellini.models.arenatactics.GameMode
 
-internal fun parseGameModes(jsonString: String): List<GameMode> =
-    appJson.decodeFromString(jsonString)
+class GameModeRepository(private val api: ArenaApi) {
+    private var cache: List<GameMode>? = null
 
-open class GameModeRepository {
-    open suspend fun getAll(): List<GameMode> {
-        val bytes = Res.readBytes("files/game_modes.json")
-        return parseGameModes(bytes.decodeToString())
+    suspend fun getAll(): List<GameMode> {
+        return cache ?: api.getGameModes().also { cache = it }
     }
 
-    open suspend fun getByAddon(addonId: String): List<GameMode> =
+    suspend fun getByAddon(addonId: String): List<GameMode> =
         getAll().filter { it.addonId == addonId }
 }

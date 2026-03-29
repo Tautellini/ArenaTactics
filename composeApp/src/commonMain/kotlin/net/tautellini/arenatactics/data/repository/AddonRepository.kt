@@ -1,16 +1,14 @@
 package net.tautellini.arenatactics.data.repository
 
-import arenatactics.composeapp.generated.resources.Res
-import net.tautellini.arenatactics.data.model.Addon
+import net.tautellini.arenatactics.data.api.ArenaApi
+import net.tautellini.models.arenatactics.Addon
 
-internal fun parseAddons(jsonString: String): List<Addon> =
-    appJson.decodeFromString(jsonString)
+class AddonRepository(private val api: ArenaApi) {
+    private var cache: List<Addon>? = null
 
-open class AddonRepository {
-    open suspend fun getAll(): List<Addon> {
-        val bytes = Res.readBytes("files/addons.json")
-        return parseAddons(bytes.decodeToString())
+    suspend fun getAll(): List<Addon> {
+        return cache ?: api.getAddons().also { cache = it }
     }
 
-    open suspend fun getById(id: String): Addon? = getAll().find { it.id == id }
+    suspend fun getById(id: String): Addon? = getAll().find { it.id == id }
 }

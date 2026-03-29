@@ -27,17 +27,17 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
-import net.tautellini.arenatactics.data.model.ItemTooltipData
-import net.tautellini.arenatactics.data.model.TalentTreeDefinition
-import net.tautellini.arenatactics.data.model.WowClass
-import net.tautellini.arenatactics.data.model.WowSpec
-import net.tautellini.arenatactics.data.model.WowheadIcons
+import net.tautellini.models.arenatactics.ItemTooltipData
+import net.tautellini.models.arenatactics.TalentTreeDefinition
+import net.tautellini.models.arenatactics.WowClass
+import net.tautellini.models.arenatactics.WowSpec
+import net.tautellini.models.arenatactics.WowheadIcons
 import net.tautellini.arenatactics.openUrl
-import net.tautellini.arenatactics.domain.EnchantUsage
-import net.tautellini.arenatactics.domain.ItemUsage
-import net.tautellini.arenatactics.domain.SlotBreakdown
-import net.tautellini.arenatactics.domain.SpecMeta
-import net.tautellini.arenatactics.domain.TalentBuildEntry
+import net.tautellini.models.arenatactics.EnchantUsage
+import net.tautellini.models.arenatactics.ItemUsage
+import net.tautellini.models.arenatactics.SlotBreakdown
+import net.tautellini.models.arenatactics.SpecMeta
+import net.tautellini.models.arenatactics.TalentBuildEntry
 import net.tautellini.arenatactics.presentation.theme.*
 
 private val QualityColors = mapOf(
@@ -176,14 +176,14 @@ fun TalentBuildRow(build: TalentBuildEntry, total: Int) {
             }
 
             // Visual bars
-            val maxPts = build.trees.maxOfOrNull { it.second } ?: 1
-            build.trees.forEach { (tree, pts) ->
+            val maxPts = build.trees.maxOfOrNull { it.spentPoints } ?: 1
+            build.trees.forEach { (treeName, pts) ->
                 if (pts > 0) {
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier.fillMaxWidth().height(20.dp)
                     ) {
-                        Text(tree, color = TextSecondary, fontSize = 11.sp, modifier = Modifier.width(70.dp))
+                        Text(treeName, color = TextSecondary, fontSize = 11.sp, modifier = Modifier.width(70.dp))
                         Box(
                             modifier = Modifier.weight(1f).height(12.dp)
                                 .clip(RoundedCornerShape(6.dp)).background(Background)

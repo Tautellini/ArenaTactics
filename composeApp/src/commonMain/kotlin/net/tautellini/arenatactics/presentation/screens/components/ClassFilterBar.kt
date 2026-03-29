@@ -27,8 +27,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
-import net.tautellini.arenatactics.data.model.WowClass
-import net.tautellini.arenatactics.data.model.WowheadIcons
+import net.tautellini.models.arenatactics.WowClass
+import net.tautellini.models.arenatactics.WowheadIcons
 import net.tautellini.arenatactics.presentation.theme.CardBorder
 import net.tautellini.arenatactics.presentation.theme.CardColor
 import net.tautellini.arenatactics.presentation.theme.CardElevated

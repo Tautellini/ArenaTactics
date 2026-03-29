@@ -6,9 +6,9 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import net.tautellini.arenatactics.data.model.SpecRole
-import net.tautellini.arenatactics.data.model.WowClass
-import net.tautellini.arenatactics.data.model.WowSpec
+import net.tautellini.models.arenatactics.SpecRole
+import net.tautellini.models.arenatactics.WowClass
+import net.tautellini.models.arenatactics.WowSpec
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.LadderRepository
@@ -42,14 +42,13 @@ class ClassGuideListViewModel(
                 val classes = compositionRepository.getClasses(addon.classPoolId)
                 val classMap = classes.associateBy { it.id }
 
-                // Determine which specs have player data from ladder profiles
+                // Determine which specs have data from ladder snapshot distributions
                 val specsWithData = mutableSetOf<String>()
-                for (region in listOf("us", "eu")) {
+                val indices = ladderRepository.getIndex(addonId)
+                for (idx in indices) {
                     try {
-                        val players = ladderRepository.getPlayerProfiles(addonId, region)
-                        for (player in players.values) {
-                            player.specId?.let { specsWithData.add(it) }
-                        }
+                        val snapshot = ladderRepository.getSnapshot(addonId, idx.region, idx.bracket)
+                        snapshot.specDistribution.forEach { specsWithData.add(it.specId) }
                     } catch (_: Throwable) {}
                 }
 

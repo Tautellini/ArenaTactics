@@ -20,6 +20,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
+import net.tautellini.arenatactics.data.api.ArenaApi
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.GameModeRepository
@@ -54,13 +55,14 @@ import net.tautellini.arenatactics.presentation.theme.Background
 
 @Composable
 fun App() {
-    val addonRepository = remember { AddonRepository() }
-    val gameModeRepository = remember { GameModeRepository() }
-    val specRepository = remember { SpecRepository() }
-    val compositionRepository = remember { CompositionRepository(specRepository) }
-    val gearRepository = remember { GearRepository() }
-    val matchupRepository = remember { MatchupRepository() }
-    val ladderRepository = remember { LadderRepository() }
+    val api = remember { ArenaApi() }
+    val addonRepository = remember { AddonRepository(api) }
+    val gameModeRepository = remember { GameModeRepository(api) }
+    val specRepository = remember { SpecRepository(api) }
+    val compositionRepository = remember { CompositionRepository(api, specRepository) }
+    val gearRepository = remember { GearRepository(api) }
+    val matchupRepository = remember { MatchupRepository(api) }
+    val ladderRepository = remember { LadderRepository(api) }
     val talentTreeRepository = remember { TalentTreeRepository() }
 
     val homeViewModel = remember { HomeViewModel(addonRepository, gameModeRepository, ladderRepository) }
