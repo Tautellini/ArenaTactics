@@ -43,7 +43,7 @@
         },
         {
           "id": 641,
-          "name": "Tactical Mastery",
+          "name": "Iron Will",
           "icon": "spell_nature_enchantarmor",
           "row": 1,
           "col": 1,
@@ -142,7 +142,7 @@
         },
         {
           "id": 134,
-          "name": "Polearm Specialization",
+          "name": "Improved Intercept",
           "icon": "inv_weapon_halbard_01",
           "row": 5,
           "col": 0,
@@ -150,7 +150,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1862,
+          "id": 1663,
           "name": "Second Wind",
           "icon": "ability_hunter_harass",
           "row": 5,
@@ -168,12 +168,12 @@
           "prerequisiteId": null
         },
         {
-          "id": 1863,
-          "name": "Improved Intercept",
+          "id": 1662,
+          "name": "Improved Disciplines",
           "icon": "ability_rogue_sprint",
           "row": 6,
           "col": 0,
-          "maxRank": 2,
+          "maxRank": 3,
           "prerequisiteId": null
         },
         {
@@ -186,7 +186,7 @@
           "prerequisiteId": 133
         },
         {
-          "id": 1864,
+          "id": 1664,
           "name": "Blood Frenzy",
           "icon": "ability_warrior_bloodfrenzy",
           "row": 6,
@@ -195,7 +195,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1866,
+          "id": 1824,
           "name": "Improved Mortal Strike",
           "icon": "ability_warrior_savageblow",
           "row": 7,
@@ -204,7 +204,7 @@
           "prerequisiteId": 135
         },
         {
-          "id": 1865,
+          "id": 1661,
           "name": "Endless Rage",
           "icon": "ability_warrior_endlessrage",
           "row": 8,
@@ -354,7 +354,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1868,
+          "id": 1658,
           "name": "Improved Berserker Stance",
           "icon": "ability_racial_avatar",
           "row": 5,
@@ -372,7 +372,7 @@
           "prerequisiteId": 155
         },
         {
-          "id": 1870,
+          "id": 1655,
           "name": "Improved Whirlwind",
           "icon": "ability_whirlwind",
           "row": 6,
@@ -399,7 +399,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1871,
+          "id": 1657,
           "name": "Precision",
           "icon": "ability_marksmanship",
           "row": 7,
@@ -408,7 +408,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1872,
+          "id": 1659,
           "name": "Rampage",
           "icon": "ability_warrior_rampage",
           "row": 8,
@@ -460,7 +460,7 @@
         },
         {
           "id": 141,
-          "name": "Iron Will",
+          "name": "Tactical Mastery",
           "icon": "spell_magic_magearmor",
           "row": 1,
           "col": 3,
@@ -558,7 +558,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1875,
+          "id": 1660,
           "name": "Focused Rage",
           "icon": "ability_warrior_focusedrage",
           "row": 5,
@@ -567,7 +567,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1874,
+          "id": 1652,
           "name": "Improved Defensive Stance",
           "icon": "ability_warrior_defensivestance",
           "row": 5,
@@ -594,7 +594,7 @@
           "prerequisiteId": 152
         },
         {
-          "id": 1873,
+          "id": 1653,
           "name": "Vitality",
           "icon": "inv_helmet_21",
           "row": 6,
@@ -603,7 +603,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1876,
+          "id": 1654,
           "name": "Shield Mastery",
           "icon": "ability_warrior_shieldmastery",
           "row": 7,
@@ -612,7 +612,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1877,
+          "id": 1666,
           "name": "Devastate",
           "icon": "inv_sword_11",
           "row": 8,

@@ -1,0 +1,5 @@
+.gradle/
+build/
+!build/libs/backend-all.jar
+src/
+*.md

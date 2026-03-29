@@ -25,7 +25,7 @@
         },
         {
           "id": 1624,
-          "name": "Improved Eyes of the Beast",
+          "name": "Focused Fire",
           "icon": "ability_eyeoftheowl",
           "row": 1,
           "col": 0,
@@ -132,12 +132,12 @@
           "prerequisiteId": null
         },
         {
-          "id": 1793,
-          "name": "Catlike Reflexes",
+          "id": 1799,
+          "name": "Animal Handler",
           "icon": "ability_hunter_catlikereflexes",
           "row": 5,
           "col": 0,
-          "maxRank": 3,
+          "maxRank": 2,
           "prerequisiteId": null
         },
         {
@@ -159,7 +159,7 @@
           "prerequisiteId": 1387
         },
         {
-          "id": 1794,
+          "id": 1802,
           "name": "Serpent's Swiftness",
           "icon": "ability_hunter_serpentswiftness",
           "row": 6,
@@ -168,7 +168,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1795,
+          "id": 1800,
           "name": "Ferocious Inspiration",
           "icon": "ability_hunter_ferociousinspiration",
           "row": 7,
@@ -177,7 +177,7 @@
           "prerequisiteId": 1386
         },
         {
-          "id": 1796,
+          "id": 1803,
           "name": "The Beast Within",
           "icon": "ability_hunter_beastwithin",
           "row": 7,
@@ -255,12 +255,12 @@
           "prerequisiteId": null
         },
         {
-          "id": 1352,
-          "name": "Hawk Eye",
+          "id": 1819,
+          "name": "Rapid Killing",
           "icon": "ability_townwatch",
           "row": 2,
           "col": 3,
-          "maxRank": 3,
+          "maxRank": 2,
           "prerequisiteId": null
         },
         {
@@ -300,16 +300,16 @@
           "prerequisiteId": null
         },
         {
-          "id": 1351,
-          "name": "Improved Scorpid Sting",
+          "id": 1818,
+          "name": "Go for the Throat",
           "icon": "ability_hunter_criticalshot",
           "row": 4,
           "col": 2,
-          "maxRank": 3,
+          "maxRank": 2,
           "prerequisiteId": null
         },
         {
-          "id": 1797,
+          "id": 1821,
           "name": "Improved Barrage",
           "icon": "ability_upgrademoonglaive",
           "row": 5,
@@ -327,7 +327,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1798,
+          "id": 1804,
           "name": "Combat Experience",
           "icon": "ability_hunter_combatexperience",
           "row": 5,
@@ -345,7 +345,7 @@
           "prerequisiteId": 1347
         },
         {
-          "id": 1800,
+          "id": 1807,
           "name": "Master Marksman",
           "icon": "ability_hunter_mastermarksman",
           "row": 6,
@@ -354,7 +354,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1801,
+          "id": 1806,
           "name": "Careful Aim",
           "icon": "ability_hunter_zenarchery",
           "row": 7,
@@ -363,7 +363,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1802,
+          "id": 1808,
           "name": "Silencing Shot",
           "icon": "ability_theblackarrow",
           "row": 7,
@@ -513,7 +513,7 @@
           "prerequisiteId": 1308
         },
         {
-          "id": 1803,
+          "id": 1810,
           "name": "Survival Instincts",
           "icon": "ability_hunter_survivalinstincts",
           "row": 5,
@@ -531,8 +531,8 @@
           "prerequisiteId": null
         },
         {
-          "id": 1804,
-          "name": "Resourcefulness",
+          "id": 1820,
+          "name": "Hawk Eye",
           "icon": "ability_hunter_resourcefulness",
           "row": 6,
           "col": 0,
@@ -549,7 +549,7 @@
           "prerequisiteId": 1321
         },
         {
-          "id": 1805,
+          "id": 1812,
           "name": "Expose Weakness",
           "icon": "ability_rogue_findweakness",
           "row": 6,
@@ -558,7 +558,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1806,
+          "id": 1811,
           "name": "Thrill of the Hunt",
           "icon": "ability_hunter_thrillofthehunt",
           "row": 7,
@@ -567,7 +567,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1807,
+          "id": 1813,
           "name": "Master Tactician",
           "icon": "ability_hunter_mastertactitian",
           "row": 7,

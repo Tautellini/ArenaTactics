@@ -52,7 +52,7 @@
         },
         {
           "id": 1004,
-          "name": "Improved Drain Life",
+          "name": "Soul Siphon",
           "icon": "spell_shadow_lifedrain02",
           "row": 1,
           "col": 3,
@@ -105,8 +105,8 @@
           "prerequisiteId": null
         },
         {
-          "id": 1121,
-          "name": "Improved Drain Mana",
+          "id": 1668,
+          "name": "Improved Howl of Terror",
           "icon": "spell_shadow_siphonmana",
           "row": 3,
           "col": 3,
@@ -132,17 +132,17 @@
           "prerequisiteId": 1061
         },
         {
-          "id": 1082,
-          "name": "Improved Curse of Exhaustion",
+          "id": 1667,
+          "name": "Malediction",
           "icon": "spell_shadow_grimward",
           "row": 4,
           "col": 3,
-          "maxRank": 4,
+          "maxRank": 3,
           "prerequisiteId": 1081
         },
         {
           "id": 1764,
-          "name": "Malediction",
+          "name": "Empowered Corruption",
           "icon": "spell_shadow_curseofachimonde",
           "row": 5,
           "col": 0,
@@ -159,7 +159,7 @@
           "prerequisiteId": 1041
         },
         {
-          "id": 1765,
+          "id": 1669,
           "name": "Contagion",
           "icon": "spell_shadow_painfulafflictions",
           "row": 6,
@@ -177,16 +177,16 @@
           "prerequisiteId": null
         },
         {
-          "id": 1767,
-          "name": "Siphon Life",
+          "id": 1763,
+          "name": "Shadow Embrace",
           "icon": "spell_shadow_requiem",
           "row": 7,
           "col": 0,
-          "maxRank": 2,
+          "maxRank": 5,
           "prerequisiteId": null
         },
         {
-          "id": 1822,
+          "id": 1670,
           "name": "Unstable Affliction",
           "icon": "spell_shadow_unstableaffliction_3",
           "row": 8,
@@ -318,17 +318,17 @@
           "prerequisiteId": null
         },
         {
-          "id": 1261,
-          "name": "Master Conjuror",
+          "id": 1681,
+          "name": "Mana Feed",
           "icon": "inv_ammo_firetar",
           "row": 4,
           "col": 3,
-          "maxRank": 2,
+          "maxRank": 1,
           "prerequisiteId": null
         },
         {
-          "id": 1774,
-          "name": "Demonic Knowledge",
+          "id": 1671,
+          "name": "Demonic Aegis",
           "icon": "spell_shadow_improvedvampiricembrace",
           "row": 5,
           "col": 0,
@@ -345,7 +345,7 @@
           "prerequisiteId": 1262
         },
         {
-          "id": 1775,
+          "id": 1673,
           "name": "Demonic Tactics",
           "icon": "spell_shadow_demonictactics",
           "row": 6,
@@ -364,7 +364,7 @@
         },
         {
           "id": 1263,
-          "name": "Improved Spellstone",
+          "name": "Demonic Knowledge",
           "icon": "inv_misc_gem_sapphire_01",
           "row": 6,
           "col": 2,
@@ -372,7 +372,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1777,
+          "id": 1680,
           "name": "Demonic Resilience",
           "icon": "spell_shadow_demonicfortitude",
           "row": 7,
@@ -381,7 +381,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1823,
+          "id": 1672,
           "name": "Summon Felguard",
           "icon": "spell_shadow_summonfelguard",
           "row": 8,
@@ -522,7 +522,7 @@
           "prerequisiteId": 981
         },
         {
-          "id": 1778,
+          "id": 1817,
           "name": "Backlash",
           "icon": "spell_fire_playingwithfire",
           "row": 5,
@@ -540,7 +540,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1779,
+          "id": 1679,
           "name": "Nether Protection",
           "icon": "spell_shadow_netherprotection",
           "row": 6,
@@ -558,7 +558,7 @@
           "prerequisiteId": 961
         },
         {
-          "id": 1780,
+          "id": 1677,
           "name": "Shadow and Flame",
           "icon": "spell_shadow_shadowandflame",
           "row": 6,
@@ -567,7 +567,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1781,
+          "id": 1678,
           "name": "Soul Leech",
           "icon": "spell_shadow_soulleech_3",
           "row": 7,
@@ -576,7 +576,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1824,
+          "id": 1676,
           "name": "Shadowfury",
           "icon": "spell_shadow_shadowfury",
           "row": 8,

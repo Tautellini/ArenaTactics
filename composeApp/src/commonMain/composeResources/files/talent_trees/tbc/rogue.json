@@ -219,8 +219,8 @@
           "prerequisiteId": null
         },
         {
-          "id": 202,
-          "name": "Puncturing Wounds",
+          "id": 1827,
+          "name": "Improved Slice and Dice",
           "icon": "ability_backstab",
           "row": 1,
           "col": 0,
@@ -273,8 +273,8 @@
           "prerequisiteId": null
         },
         {
-          "id": 206,
-          "name": "Improved Kick",
+          "id": 1705,
+          "name": "Vitality",
           "icon": "ability_kick",
           "row": 3,
           "col": 0,
@@ -336,7 +336,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1711,
+          "id": 1707,
           "name": "Nerves of Steel",
           "icon": "ability_rogue_nervesofsteel",
           "row": 5,
@@ -372,7 +372,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1713,
+          "id": 1825,
           "name": "Combat Potency",
           "icon": "inv_weapon_shortblade_38",
           "row": 7,
@@ -381,8 +381,8 @@
           "prerequisiteId": null
         },
         {
-          "id": 1714,
-          "name": "Blade Twisting",
+          "id": 1706,
+          "name": "Savage Combat",
           "icon": "ability_rogue_bladetwisting",
           "row": 7,
           "col": 2,
@@ -390,7 +390,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1820,
+          "id": 1709,
           "name": "Surprise Attacks",
           "icon": "ability_rogue_surpriseattack",
           "row": 8,
@@ -487,7 +487,7 @@
         },
         {
           "id": 262,
-          "name": "Improved Sap",
+          "name": "Dirty Tricks",
           "icon": "ability_sap",
           "row": 3,
           "col": 1,
@@ -540,7 +540,7 @@
           "prerequisiteId": 1123
         },
         {
-          "id": 1715,
+          "id": 1711,
           "name": "Enveloping Shadows",
           "icon": "ability_rogue_envelopingshadows",
           "row": 5,
@@ -567,7 +567,7 @@
           "prerequisiteId": 284
         },
         {
-          "id": 1710,
+          "id": 1722,
           "name": "Cheat Death",
           "icon": "ability_rogue_cheatdeath",
           "row": 6,
@@ -576,7 +576,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1716,
+          "id": 1712,
           "name": "Sinister Calling",
           "icon": "ability_rogue_sinistercalling",
           "row": 7,
@@ -585,16 +585,16 @@
           "prerequisiteId": null
         },
         {
-          "id": 1718,
-          "name": "Cloak of Shadows",
+          "id": 1713,
+          "name": "Master of Subtlety",
           "icon": "spell_shadow_nethercloak",
           "row": 7,
           "col": 2,
-          "maxRank": 2,
+          "maxRank": 3,
           "prerequisiteId": null
         },
         {
-          "id": 1821,
+          "id": 1714,
           "name": "Shadowstep",
           "icon": "ability_rogue_shadowstep",
           "row": 8,

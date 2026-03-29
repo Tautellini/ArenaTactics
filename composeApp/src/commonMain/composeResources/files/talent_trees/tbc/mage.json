@@ -132,7 +132,7 @@
           "prerequisiteId": 85
         },
         {
-          "id": 1726,
+          "id": 1724,
           "name": "Improved Blink",
           "icon": "spell_arcane_blink",
           "row": 5,
@@ -150,6 +150,15 @@
           "prerequisiteId": 86
         },
         {
+          "id": 1726,
+          "name": "Prismatic Cloak",
+          "icon": "spell_arcane_prismaticcloak",
+          "row": 5,
+          "col": 2,
+          "maxRank": 2,
+          "prerequisiteId": null
+        },
+        {
           "id": 87,
           "name": "Arcane Power",
           "icon": "spell_nature_lightning",
@@ -159,7 +168,7 @@
           "prerequisiteId": 421
         },
         {
-          "id": 1727,
+          "id": 1725,
           "name": "Arcane Potency",
           "icon": "spell_arcane_arcanepotency",
           "row": 6,
@@ -169,7 +178,7 @@
         },
         {
           "id": 1728,
-          "name": "Empowered Arcane Missiles",
+          "name": "Mind Mastery",
           "icon": "spell_nature_starfall",
           "row": 7,
           "col": 0,
@@ -178,7 +187,7 @@
         },
         {
           "id": 1729,
-          "name": "Mind Mastery",
+          "name": "Slow",
           "icon": "spell_arcane_mindmastery",
           "row": 7,
           "col": 1,
@@ -186,7 +195,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1730,
+          "id": 1826,
           "name": "Spell Power",
           "icon": "spell_arcane_arcanetorrent",
           "row": 7,
@@ -354,6 +363,15 @@
           "prerequisiteId": null
         },
         {
+          "id": 1730,
+          "name": "Playing with Fire",
+          "icon": "spell_fire_playingwithfire",
+          "row": 6,
+          "col": 0,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 36,
           "name": "Combustion",
           "icon": "spell_fire_sealoffire",
@@ -364,7 +382,7 @@
         },
         {
           "id": 1733,
-          "name": "Playing with Fire",
+          "name": "Pyromaniac",
           "icon": "spell_fire_playingwithfire",
           "row": 6,
           "col": 2,
@@ -390,7 +408,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1826,
+          "id": 1735,
           "name": "Dragon's Breath",
           "icon": "inv_misc_head_dragon_01",
           "row": 8,
@@ -540,7 +558,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1735,
+          "id": 1737,
           "name": "Ice Floes",
           "icon": "spell_frost_icefloes",
           "row": 5,
@@ -576,7 +594,7 @@
           "prerequisiteId": 72
         },
         {
-          "id": 1738,
+          "id": 1740,
           "name": "Empowered Frostbolt",
           "icon": "spell_frost_frostbolt02",
           "row": 7,
@@ -585,7 +603,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1737,
+          "id": 1738,
           "name": "Arctic Winds",
           "icon": "spell_frost_arcticwinds",
           "row": 7,
@@ -594,7 +612,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1827,
+          "id": 1741,
           "name": "Summon Water Elemental",
           "icon": "spell_frost_summonwaterelemental_2",
           "row": 8,

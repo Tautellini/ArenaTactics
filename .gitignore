@@ -24,3 +24,5 @@ node_modules/
 /.superpowers/
 /secrets.properties
 scripts/.icon_cache.json
+
+scripts/__pycache__/

@@ -60,12 +60,12 @@
           "prerequisiteId": null
         },
         {
-          "id": 781,
-          "name": "Natural Shapeshifter",
+          "id": 1822,
+          "name": "Focused Starlight",
           "icon": "spell_nature_wispsplode",
           "row": 1,
           "col": 3,
-          "maxRank": 3,
+          "maxRank": 2,
           "prerequisiteId": null
         },
         {
@@ -79,7 +79,7 @@
         },
         {
           "id": 788,
-          "name": "Omen of Clarity",
+          "name": "Insect Swarm",
           "icon": "spell_nature_crystalball",
           "row": 2,
           "col": 2,
@@ -106,7 +106,7 @@
         },
         {
           "id": 784,
-          "name": "Improved Starfire",
+          "name": "Celestial Focus",
           "icon": "spell_arcane_starfire",
           "row": 3,
           "col": 2,
@@ -142,7 +142,7 @@
         },
         {
           "id": 1782,
-          "name": "Celestial Focus",
+          "name": "Lunar Guidance",
           "icon": "spell_arcane_starfire",
           "row": 5,
           "col": 2,
@@ -151,7 +151,7 @@
         },
         {
           "id": 1783,
-          "name": "Lunar Guidance",
+          "name": "Balance of Power",
           "icon": "ability_druid_lunarguidance",
           "row": 6,
           "col": 0,
@@ -169,7 +169,7 @@
         },
         {
           "id": 1784,
-          "name": "Improved Faerie Fire",
+          "name": "Dreamstate",
           "icon": "spell_nature_faeriefire",
           "row": 6,
           "col": 2,
@@ -178,7 +178,7 @@
         },
         {
           "id": 1785,
-          "name": "Dreamstate",
+          "name": "Improved Faerie Fire",
           "icon": "ability_druid_dreamstate",
           "row": 7,
           "col": 0,
@@ -195,7 +195,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1829,
+          "id": 1787,
           "name": "Force of Nature",
           "icon": "ability_druid_forceofnature",
           "row": 8,
@@ -300,8 +300,8 @@
           "prerequisiteId": null
         },
         {
-          "id": 800,
-          "name": "Blood Frenzy",
+          "id": 1798,
+          "name": "Improved Leader of the Pack",
           "icon": "ability_ghoulfrenzy",
           "row": 3,
           "col": 2,
@@ -345,7 +345,7 @@
           "prerequisiteId": 803
         },
         {
-          "id": 1787,
+          "id": 1792,
           "name": "Nurturing Instinct",
           "icon": "ability_druid_healinginstincts",
           "row": 5,
@@ -354,7 +354,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1788,
+          "id": 1793,
           "name": "Primal Tenacity",
           "icon": "ability_druid_primaltenacity",
           "row": 6,
@@ -372,7 +372,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1789,
+          "id": 1795,
           "name": "Predatory Instincts",
           "icon": "ability_druid_predatoryinstincts",
           "row": 6,
@@ -381,7 +381,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1790,
+          "id": 1794,
           "name": "Survival of the Fittest",
           "icon": "ability_druid_enrage",
           "row": 7,
@@ -399,8 +399,8 @@
           "prerequisiteId": null
         },
         {
-          "id": 1830,
-          "name": "Mangle (Cat)",
+          "id": 1796,
+          "name": "Mangle",
           "icon": "ability_druid_mangle2",
           "row": 8,
           "col": 1,
@@ -451,7 +451,7 @@
         },
         {
           "id": 826,
-          "name": "Improved Enrage",
+          "name": "Natural Shapeshifter",
           "icon": "ability_druid_enrage",
           "row": 1,
           "col": 2,
@@ -469,7 +469,7 @@
         },
         {
           "id": 827,
-          "name": "Insect Swarm",
+          "name": "Omen of Clarity",
           "icon": "spell_nature_insectswarm",
           "row": 2,
           "col": 2,
@@ -531,7 +531,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1792,
+          "id": 1788,
           "name": "Empowered Touch",
           "icon": "ability_druid_empoweredtouch",
           "row": 5,
@@ -549,7 +549,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1810,
+          "id": 1790,
           "name": "Natural Perfection",
           "icon": "ability_druid_naturalperfection",
           "row": 6,
@@ -567,7 +567,7 @@
           "prerequisiteId": 843
         },
         {
-          "id": 1811,
+          "id": 1797,
           "name": "Living Spirit",
           "icon": "spell_nature_giftofthewaterspirit",
           "row": 6,
@@ -576,7 +576,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1809,
+          "id": 1789,
           "name": "Empowered Rejuvenation",
           "icon": "ability_druid_empoweredrejuvination",
           "row": 7,
@@ -585,7 +585,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1828,
+          "id": 1791,
           "name": "Tree of Life",
           "icon": "ability_druid_treeoflife",
           "row": 8,

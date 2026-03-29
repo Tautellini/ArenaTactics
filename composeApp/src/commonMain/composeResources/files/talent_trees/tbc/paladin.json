@@ -52,7 +52,7 @@
         },
         {
           "id": 1435,
-          "name": "Consecration",
+          "name": "Aura Mastery",
           "icon": "spell_holy_innerfire",
           "row": 2,
           "col": 1,
@@ -114,7 +114,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1741,
+          "id": 1744,
           "name": "Blessed Life",
           "icon": "spell_holy_blessedlife",
           "row": 5,
@@ -151,7 +151,7 @@
         },
         {
           "id": 1742,
-          "name": "Light's Grace",
+          "name": "Pure of Heart",
           "icon": "spell_holy_lightsgrace",
           "row": 7,
           "col": 0,
@@ -159,8 +159,17 @@
           "prerequisiteId": null
         },
         {
+          "id": 1745,
+          "name": "Light's Grace",
+          "icon": "spell_holy_lightsgrace",
+          "row": 7,
+          "col": 1,
+          "maxRank": 3,
+          "prerequisiteId": null
+        },
+        {
           "id": 1743,
-          "name": "Divine Illumination",
+          "name": "Purifying Power",
           "icon": "spell_holy_divineillumination",
           "row": 7,
           "col": 2,
@@ -168,8 +177,8 @@
           "prerequisiteId": null
         },
         {
-          "id": 1831,
-          "name": "Holy Shock",
+          "id": 1747,
+          "name": "Divine Illumination",
           "icon": "spell_holy_searinglight",
           "row": 8,
           "col": 1,
@@ -301,7 +310,7 @@
         },
         {
           "id": 1748,
-          "name": "Armor",
+          "name": "Stoicism",
           "icon": "ability_warrior_defensivestance",
           "row": 5,
           "col": 0,
@@ -319,7 +328,7 @@
         },
         {
           "id": 1749,
-          "name": "Sacred Duty",
+          "name": "Spell Warding",
           "icon": "spell_holy_divineintervention",
           "row": 5,
           "col": 3,
@@ -337,7 +346,7 @@
         },
         {
           "id": 1750,
-          "name": "Improved Holy Shield",
+          "name": "Sacred Duty",
           "icon": "spell_holy_greaterblessingoflight",
           "row": 6,
           "col": 2,
@@ -354,7 +363,16 @@
           "prerequisiteId": null
         },
         {
-          "id": 1752,
+          "id": 1829,
+          "name": "Improved Holy Shield",
+          "icon": "spell_holy_blessingofprotection",
+          "row": 7,
+          "col": 1,
+          "maxRank": 2,
+          "prerequisiteId": 1430
+        },
+        {
+          "id": 1753,
           "name": "Combat Expertise",
           "icon": "spell_holy_weaponmastery",
           "row": 7,
@@ -363,7 +381,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1832,
+          "id": 1754,
           "name": "Avenger's Shield",
           "icon": "spell_holy_avengersshield",
           "row": 8,
@@ -468,12 +486,12 @@
           "prerequisiteId": null
         },
         {
-          "id": 1405,
-          "name": "Improved Retribution Aura",
+          "id": 1759,
+          "name": "Fanaticism",
           "icon": "spell_holy_auraoflight",
           "row": 3,
           "col": 2,
-          "maxRank": 2,
+          "maxRank": 5,
           "prerequisiteId": null
         },
         {
@@ -495,12 +513,12 @@
           "prerequisiteId": null
         },
         {
-          "id": 1753,
-          "name": "Sanctified Judgement",
+          "id": 1823,
+          "name": "Crusader Strike",
           "icon": "spell_holy_righteousfury",
           "row": 5,
           "col": 0,
-          "maxRank": 3,
+          "maxRank": 1,
           "prerequisiteId": null
         },
         {
@@ -514,7 +532,7 @@
         },
         {
           "id": 1756,
-          "name": "Fanaticism",
+          "name": "Improved Sanctity Aura",
           "icon": "spell_holy_fanaticism",
           "row": 6,
           "col": 0,
@@ -532,7 +550,7 @@
         },
         {
           "id": 1755,
-          "name": "Crusader Strike",
+          "name": "Crusade",
           "icon": "spell_holy_crusaderstrike",
           "row": 6,
           "col": 2,
@@ -541,7 +559,7 @@
         },
         {
           "id": 1757,
-          "name": "Improved Sanctity Aura",
+          "name": "Divine Purpose",
           "icon": "spell_holy_mindvision",
           "row": 7,
           "col": 0,
@@ -550,7 +568,7 @@
         },
         {
           "id": 1758,
-          "name": "Divine Purpose",
+          "name": "Sanctified Judgement",
           "icon": "spell_holy_divinepurpose",
           "row": 7,
           "col": 2,
@@ -558,8 +576,8 @@
           "prerequisiteId": null
         },
         {
-          "id": 1833,
-          "name": "Crusader Strike",
+          "id": 1761,
+          "name": "Sanctified Seals",
           "icon": "spell_holy_crusaderstrike",
           "row": 8,
           "col": 1,

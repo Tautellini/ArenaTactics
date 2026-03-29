@@ -123,8 +123,8 @@
           "prerequisiteId": null
         },
         {
-          "id": 1834,
-          "name": "Unrelenting Storm",
+          "id": 1686,
+          "name": "Lightning Overload",
           "icon": "spell_nature_unrelentingstorm",
           "row": 5,
           "col": 0,
@@ -151,7 +151,7 @@
         },
         {
           "id": 1683,
-          "name": "Lightning Overload",
+          "name": "Elemental Shields",
           "icon": "spell_nature_lightningoverload",
           "row": 7,
           "col": 0,
@@ -159,8 +159,8 @@
           "prerequisiteId": null
         },
         {
-          "id": 1684,
-          "name": "Elemental Shields",
+          "id": 1685,
+          "name": "Elemental Precision",
           "icon": "spell_nature_elementalshields",
           "row": 7,
           "col": 2,
@@ -169,12 +169,21 @@
         },
         {
           "id": 1682,
-          "name": "Totem of Wrath",
+          "name": "Unrelenting Storm",
           "icon": "spell_fire_totemofwrath",
           "row": 8,
           "col": 1,
           "maxRank": 1,
           "prerequisiteId": 573
+        },
+        {
+          "id": 1687,
+          "name": "Totem of Wrath",
+          "icon": "spell_fire_totemofwrath",
+          "row": 8,
+          "col": 1,
+          "maxRank": 1,
+          "prerequisiteId": null
         }
       ]
     },
@@ -247,7 +256,7 @@
         },
         {
           "id": 617,
-          "name": "Two-Handed Axes and Maces",
+          "name": "Shamanistic Focus",
           "icon": "inv_axe_10",
           "row": 2,
           "col": 2,
@@ -309,7 +318,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1685,
+          "id": 1690,
           "name": "Dual Wield",
           "icon": "ability_dualwield",
           "row": 5,
@@ -336,7 +345,7 @@
           "prerequisiteId": 611
         },
         {
-          "id": 1686,
+          "id": 1693,
           "name": "Shamanistic Rage",
           "icon": "spell_nature_shamanrage",
           "row": 6,
@@ -345,7 +354,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1687,
+          "id": 1689,
           "name": "Unleashed Rage",
           "icon": "spell_nature_unleashedrage",
           "row": 7,
@@ -354,7 +363,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1688,
+          "id": 1691,
           "name": "Mental Quickness",
           "icon": "spell_nature_mentalquickness",
           "row": 7,
@@ -363,12 +372,12 @@
           "prerequisiteId": null
         },
         {
-          "id": 1835,
-          "name": "Stormstrike",
+          "id": 1692,
+          "name": "Dual Wield Specialization",
           "icon": "ability_shaman_stormstrike",
           "row": 8,
           "col": 1,
-          "maxRank": 1,
+          "maxRank": 3,
           "prerequisiteId": 901
         }
       ]
@@ -513,7 +522,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1690,
+          "id": 1695,
           "name": "Focused Mind",
           "icon": "spell_nature_focusedmind",
           "row": 6,
@@ -531,7 +540,7 @@
           "prerequisiteId": 588
         },
         {
-          "id": 1691,
+          "id": 1696,
           "name": "Nature's Blessing",
           "icon": "spell_nature_natureblessing",
           "row": 6,
@@ -540,7 +549,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1692,
+          "id": 1697,
           "name": "Improved Chain Heal",
           "icon": "spell_nature_healingwavegreater",
           "row": 7,
@@ -549,7 +558,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1836,
+          "id": 1699,
           "name": "Nature's Guardian",
           "icon": "spell_nature_natureguardian",
           "row": 7,
@@ -558,7 +567,7 @@
           "prerequisiteId": null
         },
         {
-          "id": 1693,
+          "id": 1698,
           "name": "Earth Shield",
           "icon": "spell_nature_skinofearth",
           "row": 8,

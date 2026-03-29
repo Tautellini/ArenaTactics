@@ -41,16 +41,16 @@ fun TalentTreeCard(
     talentTree: TalentTreeDefinition,
     builds: List<TalentBuildEntry>
 ) {
-    var selectedBuildIndex by remember { mutableStateOf(0) }
-    var selectedTreeIndex by remember { mutableStateOf(0) }
+    var selectedBuildIndex by remember(builds) { mutableStateOf(0) }
+    var selectedTreeIndex by remember(builds) { mutableStateOf(0) }
     val selectedBuild = builds.getOrNull(selectedBuildIndex) ?: return
 
-    val talentRanks = remember(selectedBuildIndex) {
+    val talentRanks = remember(builds, selectedBuildIndex) {
         selectedBuild.talentSelections.associate { it.id to it.rank }
     }
 
     // Find the tree with most points for auto-select when switching builds
-    LaunchedEffect(selectedBuildIndex) {
+    LaunchedEffect(builds, selectedBuildIndex) {
         val bestTree = selectedBuild.trees.maxByOrNull { it.second }?.first
         if (bestTree != null) {
             val idx = talentTree.trees.indexOfFirst { it.name == bestTree }
