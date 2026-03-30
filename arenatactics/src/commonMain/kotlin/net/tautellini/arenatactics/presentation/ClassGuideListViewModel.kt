@@ -42,7 +42,7 @@ class ClassGuideListViewModel(
                 val classes = compositionRepository.getClasses(addon.classPoolId)
                 val classMap = classes.associateBy { it.id }
 
-                // Determine which specs have data from ladder snapshots
+                // Determine which specs have data — try first snapshot only
                 val specsWithData = mutableSetOf<String>()
                 val indices = ladderRepository.getIndex(addonId)
                 for (idx in indices) {
@@ -55,7 +55,13 @@ class ClassGuideListViewModel(
                                 entry.specId?.let { specsWithData.add(it) }
                             }
                         }
+                        if (specsWithData.isNotEmpty()) break
                     } catch (_: Throwable) {}
+                }
+
+                // If no ladder data, assume all specs are available
+                if (specsWithData.isEmpty()) {
+                    specs.forEach { specsWithData.add(it.id) }
                 }
 
                 ClassGuideListState.Success(specs, classMap, specsWithData)
