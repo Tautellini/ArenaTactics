@@ -66,13 +66,20 @@ class MetaViewModel(
                 val classes = compositionRepository.getClasses(addon.classPoolId)
                 val classMap = classes.associateBy { it.id }
 
-                // Determine which specs have data from ladder snapshot distributions
+                // Determine which specs have data from ladder snapshots
                 val specsWithData = mutableSetOf<String>()
                 val indices = ladderRepository.getIndex(addonId)
                 for (idx in indices) {
                     try {
                         val snapshot = ladderRepository.getSnapshot(addonId, idx.region, idx.bracket)
-                        snapshot.specDistribution.forEach { specsWithData.add(it.specId) }
+                        // Try specDistribution first, fall back to topEntries
+                        if (snapshot.specDistribution.isNotEmpty()) {
+                            snapshot.specDistribution.forEach { specsWithData.add(it.specId) }
+                        } else {
+                            snapshot.topEntries.forEach { entry ->
+                                entry.specId?.let { specsWithData.add(it) }
+                            }
+                        }
                     } catch (_: Throwable) {}
                 }
 
