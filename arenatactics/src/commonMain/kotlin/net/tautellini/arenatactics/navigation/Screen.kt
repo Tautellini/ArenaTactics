@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 sealed class Screen {
-    @Serializable data object AddonSelection : Screen()
+    @Serializable data object Dashboard : Screen()
     @Serializable data class CompositionSelection(val addonId: String, val gameModeId: String) : Screen()
     @Serializable data class MatchupList(val addonId: String, val gameModeId: String, val compositionId: String) : Screen()
     @Serializable data class MatchupDetail(val addonId: String, val gameModeId: String, val compositionId: String, val matchupId: String) : Screen()
@@ -26,7 +26,7 @@ sealed class Screen {
      *   /tbc_anniversary/guides/hunter_marksmanship
      */
     val path: String get() = when (this) {
-        is AddonSelection       -> "/"
+        is Dashboard       -> "/"
         is CompositionSelection -> "/$addonId/tactics/${gameModeId.shortBracket(addonId)}"
         is MatchupList          -> "/$addonId/tactics/${gameModeId.shortBracket(addonId)}/${compositionId.specIdsToPlus()}"
         is MatchupDetail        -> "/$addonId/tactics/${gameModeId.shortBracket(addonId)}/${compositionId.specIdsToPlus()}/vs/${matchupId.enemyPart()}"
@@ -40,11 +40,11 @@ sealed class Screen {
     companion object {
         fun fromPath(pathname: String): Screen {
             val segs = pathname.trim('/').split('/').filter { it.isNotEmpty() }
-            val addonId = segs.getOrNull(0) ?: return AddonSelection
+            val addonId = segs.getOrNull(0) ?: return Dashboard
             return when (val section = segs.getOrNull(1)) {
-                null      -> AddonSelection
+                null      -> Dashboard
                 "tactics" -> {
-                    val shortBracket = segs.getOrNull(2) ?: return AddonSelection
+                    val shortBracket = segs.getOrNull(2) ?: return Dashboard
                     val modeId = shortBracket.expandBracket(addonId)
                     val compSlug = segs.getOrNull(3) ?: return CompositionSelection(addonId, modeId)
                     val compId = compSlug.plusToSpecIds()
@@ -65,20 +65,20 @@ sealed class Screen {
                     if (region != null && charId != null) PlayerDetail(addonId, region, charId)
                     else Ladder(addonId)
                 }
-                else      -> AddonSelection
+                else      -> Dashboard
             }
         }
 
         fun buildStack(screen: Screen): List<Screen> = when (screen) {
-            is AddonSelection       -> listOf(screen)
-            is CompositionSelection -> listOf(AddonSelection, screen)
-            is MatchupList          -> listOf(AddonSelection, CompositionSelection(screen.addonId, screen.gameModeId), screen)
-            is MatchupDetail        -> listOf(AddonSelection, CompositionSelection(screen.addonId, screen.gameModeId), MatchupList(screen.addonId, screen.gameModeId, screen.compositionId), screen)
-            is Meta                 -> listOf(AddonSelection, screen)
-            is ClassGuideList       -> listOf(AddonSelection, screen)
-            is SpecGuide            -> listOf(AddonSelection, ClassGuideList(screen.addonId), screen)
-            is Ladder               -> listOf(AddonSelection, screen)
-            is PlayerDetail         -> listOf(AddonSelection, Ladder(screen.addonId), screen)
+            is Dashboard       -> listOf(screen)
+            is CompositionSelection -> listOf(Dashboard, screen)
+            is MatchupList          -> listOf(Dashboard, CompositionSelection(screen.addonId, screen.gameModeId), screen)
+            is MatchupDetail        -> listOf(Dashboard, CompositionSelection(screen.addonId, screen.gameModeId), MatchupList(screen.addonId, screen.gameModeId, screen.compositionId), screen)
+            is Meta                 -> listOf(Dashboard, screen)
+            is ClassGuideList       -> listOf(Dashboard, screen)
+            is SpecGuide            -> listOf(Dashboard, ClassGuideList(screen.addonId), screen)
+            is Ladder               -> listOf(Dashboard, screen)
+            is PlayerDetail         -> listOf(Dashboard, Ladder(screen.addonId), screen)
 
         }
     }
@@ -94,9 +94,9 @@ sealed class Screen {
  * MatchupDetail is checked before MatchupList to avoid false positive on "Matchup".
  */
 fun NavBackStackEntry.toScreen(): Screen {
-    val route = destination.route ?: return Screen.AddonSelection
+    val route = destination.route ?: return Screen.Dashboard
     return when {
-        "AddonSelection"       in route -> Screen.AddonSelection
+        "Dashboard"       in route -> Screen.Dashboard
         "MatchupDetail"        in route -> toRoute<Screen.MatchupDetail>()
             .let { Screen.MatchupDetail(it.addonId, it.gameModeId, it.compositionId, it.matchupId) }
         "MatchupList"          in route -> toRoute<Screen.MatchupList>()
@@ -113,7 +113,7 @@ fun NavBackStackEntry.toScreen(): Screen {
             .let { Screen.PlayerDetail(it.addonId, it.region, it.characterId) }
         "Ladder"               in route -> toRoute<Screen.Ladder>()
             .let { Screen.Ladder(it.addonId) }
-        else                            -> Screen.AddonSelection // should not happen; all routes are registered above
+        else                            -> Screen.Dashboard // should not happen; all routes are registered above
     }
 }
 

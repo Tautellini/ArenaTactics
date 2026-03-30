@@ -9,29 +9,53 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import tautellini.arenatactics.generated.resources.CinzelDecorative_Bold
-import tautellini.arenatactics.generated.resources.CinzelDecorative_Regular
-import tautellini.arenatactics.generated.resources.NotoSans_Bold
-import tautellini.arenatactics.generated.resources.NotoSans_Medium
-import tautellini.arenatactics.generated.resources.NotoSans_Regular
-import tautellini.arenatactics.generated.resources.NotoSans_SemiBold
-import tautellini.arenatactics.generated.resources.Res
+import tautellini.arenatactics.generated.resources.*
 import org.jetbrains.compose.resources.Font
 
-val Primary = Color(0xFF27E0E0)
-val Secondary = Color(0xFF0F5959)
-val Background   = Color(0xFF042326)
-val Surface      = Color(0xFF0A3A40)
-val TextPrimary   = Color(0xFFE8F4F4)
-val TextSecondary = Color(0xFF7AABAA)
+// ── Core palette ──
+val Primary       = Color(0xFF2DE8D0)
+val PrimaryBright  = Color(0xFF5EFCE8)
+val PrimaryDim     = Color(0x1F2DE8D0)  // ~12% alpha
+val Secondary     = Color(0xFF0F5959)
 
-val CardColor    = Color(0xFF0F4A52)
+// ── Backgrounds (darkest → lightest) ──
+val BgVoid    = Color(0xFF03090B)
+val BgAbyss   = Color(0xFF051215)
+val BgDeep    = Color(0xFF0A1E22)
+val BgStone   = Color(0xFF0E2A2F)
+
+// ── Surfaces ──
+val Surface      = Color(0xFF112F35)
+val SurfaceLight = Color(0xFF163940)
+
+// ── Cards ──
+val CardColor    = Color(0xBF0E2A2F)  // ~75% alpha
+val CardHover    = Color(0xD9124B55)   // ~85% alpha
 val CardElevated = Color(0xFF1D6066)
-val CardBorder   = Color(0xFF0F5959)
+val CardBorder   = Color(0x0F2DE8D0)   // ~6% alpha
+val CardBorderHover = Color(0x2E2DE8D0) // ~18% alpha
 
-val DividerColor = Color(0xFF0F5959)
+// ── Text ──
+val TextHero      = Color(0xFFF0F8F7)
+val TextPrimary   = Color(0xFFD4E8E6)
+val TextSecondary = Color(0xFF7DA8A5)
+val TextMuted     = Color(0xFF4A7572)
+val TextDim       = Color(0xFF2E504D)
 
-// WoW class colors
+// ── Divider ──
+val DividerColor = Color(0x0F2DE8D0)  // matches CardBorder
+
+// ── Accent colors ──
+val Gold       = Color(0xFFD4A032)
+val GoldBright = Color(0xFFF5CC5A)
+val GoldDim    = Color(0x1FD4A032)
+val Ember      = Color(0xFFC4562A)
+val EmberGlow  = Color(0x4DC4562A)
+
+// ── Backward-compatible aliases ──
+val Background = BgVoid
+
+// ── WoW class colors ──
 val ClassColors = mapOf(
     "druid"   to Color(0xFFFF7D0A),
     "hunter"  to Color(0xFFABD473),
@@ -46,8 +70,22 @@ val ClassColors = mapOf(
 
 fun classColor(classId: String): Color = ClassColors[classId] ?: TextPrimary
 
+// ── Item quality colors ──
+val QualityCommon    = Color(0xFF9D9D9D)
+val QualityUncommon  = Color(0xFF1EFF00)
+val QualityRare      = Color(0xFF0070DD)
+val QualityEpic      = Color(0xFFA335EE)
+val QualityLegendary = Color(0xFFFF8000)
+
+// ── Rank colors ──
+val RankGladiator  = Color(0xFFFF8C00)
+val RankDuelist    = Color(0xFFFFD700)
+val RankRival      = Color(0xFFA335EE)
+val RankChallenger = Color(0xFF0070DD)
+val RankCombatant  = Color(0xFF1EFF00)
+
 private val DarkColors = darkColorScheme(
-    background = Background,
+    background = BgVoid,
     surface = Surface,
     primary = Primary,
     secondary = Secondary,
@@ -58,29 +96,41 @@ private val DarkColors = darkColorScheme(
 )
 
 @Composable
+fun cinzel() = FontFamily(
+    Font(Res.font.Cinzel_Regular, FontWeight.Normal),
+    Font(Res.font.Cinzel_SemiBold, FontWeight.SemiBold),
+    Font(Res.font.Cinzel_Bold, FontWeight.Bold),
+    Font(Res.font.Cinzel_ExtraBold, FontWeight.ExtraBold),
+)
+
+@Composable
 fun cinzelDecorative() = FontFamily(
     Font(Res.font.CinzelDecorative_Regular, FontWeight.Normal),
     Font(Res.font.CinzelDecorative_Bold, FontWeight.Bold),
 )
 
 @Composable
+fun outfit() = FontFamily(
+    Font(Res.font.Outfit_Light, FontWeight.Light),
+    Font(Res.font.Outfit_Regular, FontWeight.Normal),
+    Font(Res.font.Outfit_Medium, FontWeight.Medium),
+    Font(Res.font.Outfit_SemiBold, FontWeight.SemiBold),
+    Font(Res.font.Outfit_Bold, FontWeight.Bold),
+)
+
+@Composable
 fun ArenaTacticsTheme(content: @Composable () -> Unit) {
-    val notoSans = FontFamily(
-        Font(Res.font.NotoSans_Regular, FontWeight.Normal),
-        Font(Res.font.NotoSans_Medium, FontWeight.Medium),
-        Font(Res.font.NotoSans_SemiBold, FontWeight.SemiBold),
-        Font(Res.font.NotoSans_Bold, FontWeight.Bold),
-    )
+    val outfitFamily = outfit()
     val typography = Typography(
-        bodyLarge   = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.Normal, fontSize = 16.sp),
-        bodyMedium  = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.Normal, fontSize = 14.sp),
-        bodySmall   = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.Normal, fontSize = 12.sp),
-        labelLarge  = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.Medium, fontSize = 14.sp),
-        labelMedium = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.Medium, fontSize = 12.sp),
-        labelSmall  = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.Medium, fontSize = 11.sp),
-        titleLarge  = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.SemiBold, fontSize = 20.sp),
-        titleMedium = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.SemiBold, fontSize = 16.sp),
-        titleSmall  = TextStyle(fontFamily = notoSans, fontWeight = FontWeight.SemiBold, fontSize = 14.sp),
+        bodyLarge   = TextStyle(fontFamily = outfitFamily, fontWeight = FontWeight.Normal, fontSize = 16.sp),
+        bodyMedium  = TextStyle(fontFamily = outfitFamily, fontWeight = FontWeight.Normal, fontSize = 14.sp),
+        bodySmall   = TextStyle(fontFamily = outfitFamily, fontWeight = FontWeight.Normal, fontSize = 12.sp),
+        labelLarge  = TextStyle(fontFamily = outfitFamily, fontWeight = FontWeight.Medium, fontSize = 14.sp),
+        labelMedium = TextStyle(fontFamily = outfitFamily, fontWeight = FontWeight.Medium, fontSize = 12.sp),
+        labelSmall  = TextStyle(fontFamily = outfitFamily, fontWeight = FontWeight.Medium, fontSize = 11.sp),
+        titleLarge  = TextStyle(fontFamily = outfitFamily, fontWeight = FontWeight.SemiBold, fontSize = 20.sp),
+        titleMedium = TextStyle(fontFamily = outfitFamily, fontWeight = FontWeight.SemiBold, fontSize = 16.sp),
+        titleSmall  = TextStyle(fontFamily = outfitFamily, fontWeight = FontWeight.SemiBold, fontSize = 14.sp),
     )
     MaterialTheme(
         colorScheme = DarkColors,

@@ -9,13 +9,13 @@ class ScreenNavigationTest {
     // ─── fromPath ────────────────────────────────────────────────────────────
 
     @Test fun fromPathRoot() =
-        assertEquals(Screen.AddonSelection, Screen.fromPath("/"))
+        assertEquals(Screen.Dashboard, Screen.fromPath("/"))
 
     @Test fun fromPathAddonIdFallsBackToHome() =
-        assertEquals(Screen.AddonSelection, Screen.fromPath("/tbc_anniversary"))
+        assertEquals(Screen.Dashboard, Screen.fromPath("/tbc_anniversary"))
 
     @Test fun fromPathTacticsMissingModeFallsBackToHome() =
-        assertEquals(Screen.AddonSelection, Screen.fromPath("/tbc_anniversary/tactics"))
+        assertEquals(Screen.Dashboard, Screen.fromPath("/tbc_anniversary/tactics"))
 
     @Test fun fromPathCompositionSelection() =
         assertEquals(
@@ -48,22 +48,22 @@ class ScreenNavigationTest {
             Screen.fromPath("/tbc_anniversary/guides/druid_restoration")
         )
 
-    @Test fun fromPathUnknownReturnsAddonSelection() =
-        assertEquals(Screen.AddonSelection, Screen.fromPath("/unknown/route/that/has/many/segments"))
+    @Test fun fromPathUnknownReturnsDashboard() =
+        assertEquals(Screen.Dashboard, Screen.fromPath("/unknown/route/that/has/many/segments"))
 
     // ─── buildStack ──────────────────────────────────────────────────────────
 
-    @Test fun buildStackAddonSelectionIsSingle() {
-        val stack = Screen.buildStack(Screen.AddonSelection)
+    @Test fun buildStackDashboardIsSingle() {
+        val stack = Screen.buildStack(Screen.Dashboard)
         assertEquals(1, stack.size)
-        assertIs<Screen.AddonSelection>(stack[0])
+        assertIs<Screen.Dashboard>(stack[0])
     }
 
     @Test fun buildStackCompositionSelection() {
         val screen = Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2")
         val stack = Screen.buildStack(screen)
         assertEquals(2, stack.size)
-        assertIs<Screen.AddonSelection>(stack[0])
+        assertIs<Screen.Dashboard>(stack[0])
         assertEquals(screen, stack[1])
     }
 
@@ -71,7 +71,7 @@ class ScreenNavigationTest {
         val screen = Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_frost_rogue_subtlety")
         val stack = Screen.buildStack(screen)
         assertEquals(3, stack.size)
-        assertIs<Screen.AddonSelection>(stack[0])
+        assertIs<Screen.Dashboard>(stack[0])
         assertEquals(Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2"), stack[1])
         assertEquals(screen, stack[2])
     }
@@ -84,7 +84,7 @@ class ScreenNavigationTest {
         )
         val stack = Screen.buildStack(screen)
         assertEquals(4, stack.size)
-        assertIs<Screen.AddonSelection>(stack[0])
+        assertIs<Screen.Dashboard>(stack[0])
         assertEquals(Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2"), stack[1])
         assertEquals(Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_frost_rogue_subtlety"), stack[2])
         assertEquals(screen, stack[3])
@@ -94,7 +94,7 @@ class ScreenNavigationTest {
         val screen = Screen.ClassGuideList("tbc_anniversary")
         val stack = Screen.buildStack(screen)
         assertEquals(2, stack.size)
-        assertIs<Screen.AddonSelection>(stack[0])
+        assertIs<Screen.Dashboard>(stack[0])
         assertEquals(screen, stack[1])
     }
 
@@ -102,7 +102,7 @@ class ScreenNavigationTest {
         val screen = Screen.SpecGuide("tbc_anniversary", "druid", "druid_restoration")
         val stack = Screen.buildStack(screen)
         assertEquals(3, stack.size)
-        assertIs<Screen.AddonSelection>(stack[0])
+        assertIs<Screen.Dashboard>(stack[0])
         assertEquals(Screen.ClassGuideList("tbc_anniversary"), stack[1])
         assertEquals(screen, stack[2])
     }
@@ -111,7 +111,7 @@ class ScreenNavigationTest {
 
     @Test fun pathRoundTrip() {
         val screens = listOf(
-            Screen.AddonSelection,
+            Screen.Dashboard,
             Screen.CompositionSelection("tbc_anniversary", "tbc_anniversary_2v2"),
             Screen.MatchupList("tbc_anniversary", "tbc_anniversary_2v2", "mage_frost_rogue_subtlety"),
             Screen.MatchupDetail(
