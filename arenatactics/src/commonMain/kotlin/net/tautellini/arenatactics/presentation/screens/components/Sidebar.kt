@@ -152,69 +152,50 @@ private fun SidebarBrand(onClick: () -> Unit) {
                 )
             )
     ) {
-        // Atmospheric glow overlay
+        // Atmospheric glow
         Box(
             Modifier
-                .fillMaxWidth()
-                .height(140.dp)
+                .fillMaxSize()
                 .background(
                     Brush.radialGradient(
-                        listOf(Primary.copy(alpha = 0.06f), Color.Transparent),
-                        center = Offset(130f, 50f),
-                        radius = 220f
+                        listOf(Primary.copy(alpha = 0.05f), Color.Transparent),
+                        center = Offset(60f, 40f),
+                        radius = 180f
                     )
                 )
         )
 
-        Column(
+        Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(20.dp, 24.dp, 20.dp, 20.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+                .padding(16.dp, 18.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(14.dp)
         ) {
             // AT monogram logo
             androidx.compose.foundation.Image(
                 painter = painterResource(Res.drawable.logo_at),
                 contentDescription = "Arena Tactics",
-                modifier = Modifier.size(44.dp)
+                modifier = Modifier.size(40.dp)
             )
-            Spacer(Modifier.height(10.dp))
-            Text(
-                "ARENA",
-                fontFamily = cinzelFont,
-                fontWeight = FontWeight.Bold,
-                fontSize = 20.sp,
-                letterSpacing = 8.sp,
-                color = TextHero
-            )
-            Text(
-                "TACTICS",
-                fontFamily = cinzelFont,
-                fontWeight = FontWeight.Normal,
-                fontSize = 20.sp,
-                letterSpacing = 12.sp,
-                color = Primary
-            )
-            Spacer(Modifier.height(8.dp))
-            // Decorative line
-            Box(
-                Modifier
-                    .width(80.dp)
-                    .height(1.dp)
-                    .background(
-                        Brush.horizontalGradient(
-                            listOf(Color.Transparent, Primary.copy(alpha = 0.4f), Color.Transparent)
-                        )
-                    )
-            )
-            Spacer(Modifier.height(8.dp))
-            Text(
-                "WORLD OF WARCRAFT PVP",
-                fontSize = 8.sp,
-                letterSpacing = 3.sp,
-                color = TextMuted,
-                fontWeight = FontWeight.Medium
-            )
+
+            Column {
+                Text(
+                    "ARENA TACTICS",
+                    fontFamily = cinzelFont,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 14.sp,
+                    letterSpacing = 2.sp,
+                    color = TextHero
+                )
+                Text(
+                    "World of Warcraft PvP",
+                    fontSize = 9.sp,
+                    letterSpacing = 1.sp,
+                    color = TextMuted,
+                    fontWeight = FontWeight.Medium
+                )
+            }
         }
     }
     // Bottom border with glow
