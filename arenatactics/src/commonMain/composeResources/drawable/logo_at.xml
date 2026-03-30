@@ -4,7 +4,7 @@
     android:viewportWidth="96"
     android:viewportHeight="96">
 
-    <!-- Outer diamond shape with pointed edges -->
+    <!-- Outer diamond shape -->
     <path
         android:pathData="M48,2 L72,24 L94,48 L72,72 L48,94 L24,72 L2,48 L24,24 Z"
         android:fillColor="#0E2A2F"
@@ -20,39 +20,39 @@
         android:strokeWidth="0.6"
         android:strokeAlpha="0.12" />
 
-    <!-- Sword 1: top-left to bottom-right (\ direction) -->
-    <!-- Blade -->
+    <!-- Sword 1: top-left to bottom-right (\) -->
     <path
-        android:pathData="M26,18 L30,16 L70,76 L66,78 Z"
+        android:pathData="M26,16 L30,16 L70,80 L66,80 Z"
         android:fillColor="#F0F8F7"
         android:fillAlpha="0.9" />
-    <!-- Blade highlight edge -->
+    <!-- Sword 1 highlight -->
     <path
-        android:pathData="M27,18 L30,16 L48,46 L46,48 Z"
+        android:pathData="M26,16 L30,16 L48,46 L46,48 Z"
         android:fillColor="#FFFFFF"
-        android:fillAlpha="0.3" />
-    <!-- Crossguard -->
-    <path
-        android:pathData="M25,42 L30,36 L34,40 L29,46 Z"
-        android:fillColor="#F0F8F7"
-        android:fillAlpha="0.75" />
+        android:fillAlpha="0.25" />
 
-    <!-- Sword 2: top-right to bottom-left (/ direction) -->
-    <!-- Blade -->
+    <!-- Sword 2: top-right to bottom-left (/) -->
     <path
-        android:pathData="M66,16 L70,18 L30,78 L26,76 Z"
+        android:pathData="M66,16 L70,16 L30,80 L26,80 Z"
         android:fillColor="#F0F8F7"
         android:fillAlpha="0.9" />
-    <!-- Blade highlight edge -->
+    <!-- Sword 2 highlight -->
     <path
-        android:pathData="M66,16 L69,18 L50,46 L48,44 Z"
+        android:pathData="M66,16 L70,16 L50,46 L48,48 Z"
         android:fillColor="#FFFFFF"
-        android:fillAlpha="0.3" />
-    <!-- Crossguard -->
+        android:fillAlpha="0.25" />
+
+    <!-- Crossguard 1 (perpendicular to sword 1, centered at 38,38) -->
     <path
-        android:pathData="M67,42 L62,36 L66,40 L71,46 Z"
+        android:pathData="M28,34 L34,28 L38,32 L32,38 Z"
         android:fillColor="#F0F8F7"
-        android:fillAlpha="0.75" />
+        android:fillAlpha="0.7" />
+
+    <!-- Crossguard 2 (perpendicular to sword 2, centered at 58,38) — mirror of crossguard 1 -->
+    <path
+        android:pathData="M62,28 L68,34 L64,38 L58,32 Z"
+        android:fillColor="#F0F8F7"
+        android:fillAlpha="0.7" />
 
     <!-- Center circle at intersection -->
     <path
@@ -66,6 +66,6 @@
     <path
         android:pathData="M48,48 m-3,0 a3,3 0 1,1 6,0 a3,3 0 1,1 -6,0"
         android:fillColor="#5EFCE8"
-        android:fillAlpha="0.7" />
+        android:fillAlpha="0.8" />
 
 </vector>
