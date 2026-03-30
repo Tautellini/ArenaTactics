@@ -3,8 +3,6 @@ package net.tautellini.arenatactics
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
-import androidx.compose.animation.scaleIn
-import androidx.compose.animation.scaleOut
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -162,10 +160,10 @@ fun App() {
                         navController = navController,
                         startDestination = Screen.Dashboard,
                         modifier = Modifier.weight(1f),
-                        enterTransition  = { fadeIn(tween(220)) + scaleIn(tween(220), initialScale = 0.95f) },
-                        exitTransition   = { fadeOut(tween(180)) + scaleOut(tween(180), targetScale = 1.05f) },
-                        popEnterTransition = { fadeIn(tween(220)) + scaleIn(tween(220), initialScale = 1.05f) },
-                        popExitTransition  = { fadeOut(tween(180)) + scaleOut(tween(180), targetScale = 0.95f) }
+                        enterTransition  = { fadeIn(tween(200)) },
+                        exitTransition   = { fadeOut(tween(150)) },
+                        popEnterTransition = { fadeIn(tween(200)) },
+                        popExitTransition  = { fadeOut(tween(150)) }
                     ) {
                         composable<Screen.Dashboard> {
                             DashboardScreen(
