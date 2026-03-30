@@ -48,12 +48,20 @@ class NavigationViewModel(
                     isLoading = false
                 )
 
-                // Auto-select the first addon with data if none is selected
-                if (_state.value.selectedAddonId == null) {
+                // Auto-select first addon with data, or load game modes
+                // for an addon already set by deep-link sync
+                val currentAddonId = _state.value.selectedAddonId
+                if (currentAddonId == null) {
                     val defaultAddon = addons.firstOrNull { it.hasData }
                     if (defaultAddon != null) {
                         selectAddon(defaultAddon.id)
                     }
+                } else if (_state.value.gameModes.isEmpty()) {
+                    // Deep-link already set the addon but game modes weren't loaded yet
+                    try {
+                        val modes = gameModeRepository.getByAddon(currentAddonId)
+                        _state.value = _state.value.copy(gameModes = modes)
+                    } catch (_: Throwable) {}
                 }
             } catch (_: Throwable) {
                 _state.value = _state.value.copy(isLoading = false)

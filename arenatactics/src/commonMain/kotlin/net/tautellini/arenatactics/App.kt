@@ -60,8 +60,6 @@ fun App() {
                     }
                     val screen = entry.toScreen()
                     pushNavigationState(screen.path)
-                    // Sync sidebar state from navigation
-                    navigationViewModel.syncFromScreen(screen)
                 } catch (_: Throwable) {}
             }
     }
@@ -86,12 +84,15 @@ fun App() {
                 navController.navigate(screen)
             }
         }
-        // Sync sidebar to initial deep-linked screen
-        navigationViewModel.syncFromScreen(initialScreen)
     }
 
     val currentBackStackEntry by navController.currentBackStackEntryAsState()
     val currentScreen = currentBackStackEntry?.toScreen() ?: Screen.Dashboard
+
+    // Reactively sync sidebar state whenever the visible screen changes
+    LaunchedEffect(currentScreen) {
+        navigationViewModel.syncFromScreen(currentScreen)
+    }
     val navState by navigationViewModel.state.collectAsState()
 
     ArenaTacticsTheme {
