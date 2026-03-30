@@ -2,8 +2,6 @@ package net.tautellini.arenatactics.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import kotlinx.coroutines.async
-import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -41,16 +39,9 @@ class PlayerDetailViewModel(
                 if (player == null) {
                     PlayerDetailState.Error("Player not found")
                 } else {
-                    // Fetch item tooltips for equipped items in parallel
+                    // Fetch item tooltips in a single batch request
                     val itemIds = player.equipment.map { it.itemId }.filter { it > 0 }.distinct()
-                    val items = itemIds.map { itemId ->
-                        async {
-                            try {
-                                val item = ladderRepository.getItem(addonId, itemId)
-                                if (item != null) itemId.toString() to item else null
-                            } catch (_: Throwable) { null }
-                        }
-                    }.awaitAll().filterNotNull().toMap()
+                    val items = ladderRepository.getItemsBatch(addonId, itemIds)
 
                     val talentTree = try {
                         player.classId?.let { talentTreeRepository.getTree(addonId, it) }

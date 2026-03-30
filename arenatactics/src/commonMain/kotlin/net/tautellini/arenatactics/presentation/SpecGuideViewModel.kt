@@ -2,8 +2,6 @@ package net.tautellini.arenatactics.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import kotlinx.coroutines.async
-import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -54,19 +52,12 @@ class SpecGuideViewModel(
                 val meta = ladderRepository.getSpecMeta(specId)
                     ?: SpecMeta(specId, 0, emptyList(), emptyList())
 
-                // Fetch item tooltips for all items in slot breakdowns
+                // Fetch item tooltips in a single batch request
                 val itemIds = meta.slotBreakdowns
                     .flatMap { slot -> slot.items.map { it.itemId } }
                     .filter { it > 0 }
                     .distinct()
-                val items = itemIds.map { itemId ->
-                    async {
-                        try {
-                            val item = ladderRepository.getItem(addonId, itemId)
-                            if (item != null) itemId.toString() to item else null
-                        } catch (_: Throwable) { null }
-                    }
-                }.awaitAll().filterNotNull().toMap()
+                val items = ladderRepository.getItemsBatch(addonId, itemIds)
 
                 SpecGuideState.Success(spec, wowClass, meta, items)
             } catch (e: Throwable) {

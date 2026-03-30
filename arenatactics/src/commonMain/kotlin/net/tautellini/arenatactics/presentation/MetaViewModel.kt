@@ -10,8 +10,6 @@ import net.tautellini.models.arenatactics.SpecRole
 import net.tautellini.models.arenatactics.WowClass
 import net.tautellini.models.arenatactics.WowSpec
 import net.tautellini.models.arenatactics.TalentTreeDefinition
-import kotlinx.coroutines.async
-import kotlinx.coroutines.awaitAll
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.LadderRepository
@@ -111,19 +109,12 @@ class MetaViewModel(
                 return@launch
             }
 
-            // Fetch item tooltips for all items in the meta slot breakdowns
+            // Fetch item tooltips in a single batch request
             val itemIds = meta.slotBreakdowns
                 .flatMap { slot -> slot.items.map { it.itemId } }
                 .filter { it > 0 }
                 .distinct()
-            val items = itemIds.map { itemId ->
-                async {
-                    try {
-                        val item = ladderRepository.getItem(addonId, itemId)
-                        if (item != null) itemId.toString() to item else null
-                    } catch (_: Throwable) { null }
-                }
-            }.awaitAll().filterNotNull().toMap()
+            val items = ladderRepository.getItemsBatch(addonId, itemIds)
 
             val talentTree = try {
                 talentTreeRepository.getTree(addonId, spec.classId)

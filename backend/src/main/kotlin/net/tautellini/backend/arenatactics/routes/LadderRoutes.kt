@@ -55,5 +55,26 @@ fun Route.ladderRoutes(firestore: FirestoreService) {
             }
             call.respond(HttpStatusCode.NotFound)
         }
+
+        // Batch fetch multiple items by ID
+        get("/items") {
+            val addonId = call.parameters["addonId"]!!
+            val ids = call.request.queryParameters["ids"]?.split(",")?.filter { it.isNotBlank() }
+                ?: return@get call.respond(HttpStatusCode.BadRequest, mapOf("error" to "Missing 'ids' query parameter"))
+
+            val result = mutableMapOf<String, ItemTooltipData>()
+            for (itemId in ids) {
+                for (region in listOf("us", "eu")) {
+                    val item = firestore.getSubDocument("ladder", addonId, "items", "${region}_$itemId") {
+                        fromFirestore<ItemTooltipData>(it)
+                    }
+                    if (item != null) {
+                        result[itemId] = item
+                        break
+                    }
+                }
+            }
+            call.respond(result)
+        }
     }
 }

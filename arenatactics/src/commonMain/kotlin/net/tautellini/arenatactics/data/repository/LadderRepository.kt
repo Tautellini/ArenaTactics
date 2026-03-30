@@ -52,6 +52,28 @@ class LadderRepository(private val api: ArenaApi) {
         }
     }
 
+    suspend fun getItemsBatch(addonId: String, itemIds: List<Int>): Map<String, ItemTooltipData> {
+        // Check cache first, only fetch missing items
+        val result = mutableMapOf<String, ItemTooltipData>()
+        val missing = mutableListOf<Int>()
+        for (id in itemIds) {
+            val cached = itemCache["${addonId}_$id"]
+            if (cached != null) result[id.toString()] = cached else missing.add(id)
+        }
+        if (missing.isEmpty()) return result
+
+        return try {
+            val fetched = api.getItemsBatch(addonId, missing)
+            fetched.forEach { (id, item) ->
+                itemCache["${addonId}_$id"] = item
+                result[id] = item
+            }
+            result
+        } catch (_: Throwable) {
+            result
+        }
+    }
+
     suspend fun getSpecMeta(specId: String): SpecMeta? {
         return specMetaCache.getOrPut(specId) {
             try {

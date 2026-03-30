@@ -50,6 +50,11 @@ class ArenaApi(private val client: HttpClient = ApiClient.httpClient) {
     suspend fun getItem(addonId: String, itemId: Int): ItemTooltipData =
         client.get("$base/ladder/$addonId/items/$itemId").body()
 
+    suspend fun getItemsBatch(addonId: String, itemIds: List<Int>): Map<String, ItemTooltipData> =
+        client.get("$base/ladder/$addonId/items") {
+            parameter("ids", itemIds.joinToString(","))
+        }.body()
+
     suspend fun getSpecMeta(specId: String): SpecMeta =
         client.get("$base/spec-meta/$specId").body()
 }
