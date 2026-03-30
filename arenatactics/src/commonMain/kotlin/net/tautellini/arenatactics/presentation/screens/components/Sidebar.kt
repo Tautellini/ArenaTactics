@@ -28,6 +28,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import org.jetbrains.compose.resources.painterResource
+import tautellini.arenatactics.generated.resources.Res
+import tautellini.arenatactics.generated.resources.logo_at
 import androidx.compose.ui.unit.sp
 import net.tautellini.arenatactics.presentation.NavSection
 import net.tautellini.arenatactics.presentation.NavigationState
@@ -153,12 +156,12 @@ private fun SidebarBrand(onClick: () -> Unit) {
         Box(
             Modifier
                 .fillMaxWidth()
-                .height(110.dp)
+                .height(140.dp)
                 .background(
                     Brush.radialGradient(
                         listOf(Primary.copy(alpha = 0.06f), Color.Transparent),
-                        center = Offset(130f, 40f),
-                        radius = 200f
+                        center = Offset(130f, 50f),
+                        radius = 220f
                     )
                 )
         )
@@ -166,14 +169,21 @@ private fun SidebarBrand(onClick: () -> Unit) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(20.dp, 28.dp, 20.dp, 24.dp),
+                .padding(20.dp, 24.dp, 20.dp, 20.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            // AT monogram logo
+            androidx.compose.foundation.Image(
+                painter = painterResource(Res.drawable.logo_at),
+                contentDescription = "Arena Tactics",
+                modifier = Modifier.size(44.dp)
+            )
+            Spacer(Modifier.height(10.dp))
             Text(
                 "ARENA",
                 fontFamily = cinzelFont,
                 fontWeight = FontWeight.Bold,
-                fontSize = 22.sp,
+                fontSize = 20.sp,
                 letterSpacing = 8.sp,
                 color = TextHero
             )
@@ -181,7 +191,7 @@ private fun SidebarBrand(onClick: () -> Unit) {
                 "TACTICS",
                 fontFamily = cinzelFont,
                 fontWeight = FontWeight.Normal,
-                fontSize = 22.sp,
+                fontSize = 20.sp,
                 letterSpacing = 12.sp,
                 color = Primary
             )
