@@ -2,8 +2,8 @@
 // The CMP runtime fetches resources at ./composeResources/{moduleId}/files/...
 // and the processed files live in build/processedResources/{target}/main/.
 //
-// __dirname = build/wasm/packages/ArenaTactics-composeApp (for wasmJs)
-//           = build/js/packages/ArenaTactics-composeApp  (for js)
+// __dirname = build/wasm/packages/ArenaTactics-arenatactics (for wasmJs)
+//           = build/js/packages/ArenaTactics-arenatactics  (for js)
 // ../../../../ = project root in both cases.
 const path = require('path');
 
@@ -14,7 +14,7 @@ if (config.devServer) {
     ['wasmJs', 'js'].forEach(function(target) {
         const resourceDir = path.resolve(
             __dirname,
-            '../../../../composeApp/build/processedResources/' + target + '/main'
+            '../../../../arenatactics/build/processedResources/' + target + '/main'
         );
         const alreadyAdded = staticEntries.some(function(e) {
             return (typeof e === 'string' ? e : (e && e.directory)) === resourceDir;
