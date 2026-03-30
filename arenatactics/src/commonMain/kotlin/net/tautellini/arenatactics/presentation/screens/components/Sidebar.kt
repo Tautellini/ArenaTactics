@@ -22,6 +22,8 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
@@ -137,41 +139,84 @@ fun Sidebar(
 @Composable
 private fun SidebarBrand(onClick: () -> Unit) {
     val cinzelFont = cinzel()
-    Column(
+    Box(
         modifier = Modifier
             .fillMaxWidth()
             .clickable(onClick = onClick)
-            .padding(28.dp, 24.dp, 28.dp, 20.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
+            .background(
+                Brush.verticalGradient(
+                    listOf(BgStone, BgDeep)
+                )
+            )
     ) {
-        // Shield logo placeholder (reuse ShieldCanvas at small size)
+        // Atmospheric glow overlay
         Box(
-            modifier = Modifier.size(48.dp),
-            contentAlignment = Alignment.Center
+            Modifier
+                .fillMaxWidth()
+                .height(110.dp)
+                .background(
+                    Brush.radialGradient(
+                        listOf(Primary.copy(alpha = 0.06f), Color.Transparent),
+                        center = Offset(130f, 40f),
+                        radius = 200f
+                    )
+                )
+        )
+
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(20.dp, 28.dp, 20.dp, 24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            ShieldCanvas(Modifier.size(48.dp, 56.dp))
+            Text(
+                "ARENA",
+                fontFamily = cinzelFont,
+                fontWeight = FontWeight.Bold,
+                fontSize = 22.sp,
+                letterSpacing = 8.sp,
+                color = TextHero
+            )
+            Text(
+                "TACTICS",
+                fontFamily = cinzelFont,
+                fontWeight = FontWeight.Normal,
+                fontSize = 22.sp,
+                letterSpacing = 12.sp,
+                color = Primary
+            )
+            Spacer(Modifier.height(8.dp))
+            // Decorative line
+            Box(
+                Modifier
+                    .width(80.dp)
+                    .height(1.dp)
+                    .background(
+                        Brush.horizontalGradient(
+                            listOf(Color.Transparent, Primary.copy(alpha = 0.4f), Color.Transparent)
+                        )
+                    )
+            )
+            Spacer(Modifier.height(8.dp))
+            Text(
+                "WORLD OF WARCRAFT PVP",
+                fontSize = 8.sp,
+                letterSpacing = 3.sp,
+                color = TextMuted,
+                fontWeight = FontWeight.Medium
+            )
         }
-        Spacer(Modifier.height(10.dp))
-        Text(
-            "ARENA TACTICS",
-            fontFamily = cinzelFont,
-            fontWeight = FontWeight.ExtraBold,
-            fontSize = 15.sp,
-            letterSpacing = 3.sp,
-            color = TextHero
-        )
-        Text(
-            "WORLD OF WARCRAFT PVP",
-            fontSize = 9.sp,
-            letterSpacing = 4.sp,
-            color = TextMuted,
-            fontWeight = FontWeight.SemiBold
-        )
     }
-    // Divider with glow
+    // Bottom border with glow
     Box(
-        Modifier.fillMaxWidth().height(1.dp)
-            .background(DividerColor)
+        Modifier
+            .fillMaxWidth()
+            .height(1.dp)
+            .background(
+                Brush.horizontalGradient(
+                    listOf(Color.Transparent, Primary.copy(alpha = 0.2f), Color.Transparent)
+                )
+            )
     )
 }
 
