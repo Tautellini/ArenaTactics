@@ -37,7 +37,7 @@ fun SpecGuideScreen(viewModel: SpecGuideViewModel) {
                     .padding(24.dp),
                 verticalArrangement = Arrangement.spacedBy(20.dp)
             ) {
-                SpecMetaContent(s.spec, s.wowClass, s.meta, emptyMap())
+                SpecMetaContent(s.spec, s.wowClass, s.meta, s.items)
                 Spacer(Modifier.height(24.dp))
             }
         }

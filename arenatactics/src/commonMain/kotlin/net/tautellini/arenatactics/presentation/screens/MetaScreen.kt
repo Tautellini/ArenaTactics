@@ -143,7 +143,7 @@ private fun MetaContent(
                     spec = specMetaState.spec,
                     wowClass = specMetaState.wowClass,
                     meta = specMetaState.meta,
-                    items = emptyMap(),
+                    items = specMetaState.items,
                     talentTree = specMetaState.talentTree
                 )
             }

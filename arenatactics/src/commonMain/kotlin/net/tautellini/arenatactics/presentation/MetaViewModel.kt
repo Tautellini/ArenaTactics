@@ -10,10 +10,13 @@ import net.tautellini.models.arenatactics.SpecRole
 import net.tautellini.models.arenatactics.WowClass
 import net.tautellini.models.arenatactics.WowSpec
 import net.tautellini.models.arenatactics.TalentTreeDefinition
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import net.tautellini.arenatactics.data.repository.AddonRepository
 import net.tautellini.arenatactics.data.repository.CompositionRepository
 import net.tautellini.arenatactics.data.repository.LadderRepository
 import net.tautellini.arenatactics.data.repository.TalentTreeRepository
+import net.tautellini.models.arenatactics.ItemTooltipData
 import net.tautellini.models.arenatactics.SpecMeta
 
 sealed class MetaState {
@@ -33,6 +36,7 @@ sealed class SpecMetaState {
         val spec: WowSpec,
         val wowClass: WowClass,
         val meta: SpecMeta,
+        val items: Map<String, ItemTooltipData> = emptyMap(),
         val talentTree: TalentTreeDefinition? = null
     ) : SpecMetaState()
 }
@@ -117,10 +121,25 @@ class MetaViewModel(
                 _specMetaState.value = SpecMetaState.Idle
                 return@launch
             }
+
+            // Fetch item tooltips for all items in the meta slot breakdowns
+            val itemIds = meta.slotBreakdowns
+                .flatMap { slot -> slot.items.map { it.itemId } }
+                .filter { it > 0 }
+                .distinct()
+            val items = itemIds.map { itemId ->
+                async {
+                    try {
+                        val item = ladderRepository.getItem(addonId, itemId)
+                        if (item != null) itemId.toString() to item else null
+                    } catch (_: Throwable) { null }
+                }
+            }.awaitAll().filterNotNull().toMap()
+
             val talentTree = try {
                 talentTreeRepository.getTree(addonId, spec.classId)
             } catch (_: Throwable) { null }
-            _specMetaState.value = SpecMetaState.Ready(spec, wowClass, meta, talentTree)
+            _specMetaState.value = SpecMetaState.Ready(spec, wowClass, meta, items, talentTree)
         }
     }
 }
