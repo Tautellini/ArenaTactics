@@ -4,30 +4,79 @@
     android:viewportWidth="96"
     android:viewportHeight="96">
 
-    <!-- Rounded rectangle background -->
+    <!-- Outer diamond shape with blade-like pointed edges -->
     <path
-        android:pathData="M12,4 L84,4 Q92,4 92,12 L92,84 Q92,92 84,92 L12,92 Q4,92 4,84 L4,12 Q4,4 12,4 Z"
-        android:fillColor="#0E2A2F"
+        android:pathData="M48,2 L72,24 L94,48 L72,72 L48,94 L24,72 L2,48 L24,24 Z"
+        android:fillColor="#0A1E22"
         android:strokeColor="#2DE8D0"
-        android:strokeWidth="1.5"
-        android:strokeAlpha="0.5" />
+        android:strokeWidth="1.8"
+        android:strokeAlpha="0.6" />
 
-    <!-- Inner border -->
+    <!-- Inner diamond border -->
     <path
-        android:pathData="M16,9 L80,9 Q87,9 87,16 L87,80 Q87,87 80,87 L16,87 Q9,87 9,80 L9,16 Q9,9 16,9 Z"
+        android:pathData="M48,10 L68,28 L86,48 L68,68 L48,86 L28,68 L10,48 L28,28 Z"
         android:fillColor="#00000000"
         android:strokeColor="#2DE8D0"
-        android:strokeWidth="0.5"
-        android:strokeAlpha="0.12" />
+        android:strokeWidth="0.8"
+        android:strokeAlpha="0.15" />
 
-    <!-- Letter A -->
+    <!-- Sharp blade accents — top-left edge -->
     <path
-        android:pathData="M22,72 L38,24 L43,24 L59,72 L53,72 L49,60 L32,60 L28,72 Z M34,54 L47,54 L40.5,33 Z"
-        android:fillColor="#F0F8F7" />
+        android:pathData="M24,24 L36,18 L42,24 Z"
+        android:fillColor="#2DE8D0"
+        android:fillAlpha="0.12" />
 
-    <!-- Letter T -->
+    <!-- Sharp blade accents — bottom-right edge -->
     <path
-        android:pathData="M52,24 L82,24 L82,30 L70,30 L70,72 L64,72 L64,30 L52,30 Z"
-        android:fillColor="#2DE8D0" />
+        android:pathData="M72,72 L60,78 L54,72 Z"
+        android:fillColor="#2DE8D0"
+        android:fillAlpha="0.12" />
+
+    <!-- Center gem/crystal — outer facet -->
+    <path
+        android:pathData="M48,28 L62,48 L48,68 L34,48 Z"
+        android:fillColor="#112F35"
+        android:strokeColor="#2DE8D0"
+        android:strokeWidth="1.2"
+        android:strokeAlpha="0.4" />
+
+    <!-- Center gem — inner facet (top half, lighter) -->
+    <path
+        android:pathData="M48,32 L59,48 L48,48 L37,48 Z"
+        android:fillColor="#2DE8D0"
+        android:fillAlpha="0.08" />
+
+    <!-- Center gem — inner facet (bottom half, darker) -->
+    <path
+        android:pathData="M48,48 L59,48 L48,64 L37,48 Z"
+        android:fillColor="#0E2A2F" />
+
+    <!-- Gem highlight — small bright facet -->
+    <path
+        android:pathData="M48,34 L54,44 L48,44 Z"
+        android:fillColor="#5EFCE8"
+        android:fillAlpha="0.2" />
+
+    <!-- Horizontal blade edges extending from center gem -->
+    <path
+        android:pathData="M10,48 L34,48 L34,46 L16,46 Z"
+        android:fillColor="#2DE8D0"
+        android:fillAlpha="0.2" />
+
+    <path
+        android:pathData="M62,48 L86,48 L80,46 L62,46 Z"
+        android:fillColor="#2DE8D0"
+        android:fillAlpha="0.2" />
+
+    <!-- Vertical blade edges from center gem -->
+    <path
+        android:pathData="M48,10 L48,28 L46,28 L46,16 Z"
+        android:fillColor="#2DE8D0"
+        android:fillAlpha="0.15" />
+
+    <path
+        android:pathData="M48,68 L48,86 L50,86 L50,68 Z"
+        android:fillColor="#2DE8D0"
+        android:fillAlpha="0.1" />
 
 </vector>
