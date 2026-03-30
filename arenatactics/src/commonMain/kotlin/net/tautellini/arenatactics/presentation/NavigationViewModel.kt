@@ -47,6 +47,14 @@ class NavigationViewModel(
                     addonsWithLadder = addonsWithLadder,
                     isLoading = false
                 )
+
+                // Auto-select the first addon with data if none is selected
+                if (_state.value.selectedAddonId == null) {
+                    val defaultAddon = addons.firstOrNull { it.hasData }
+                    if (defaultAddon != null) {
+                        selectAddon(defaultAddon.id)
+                    }
+                }
             } catch (_: Throwable) {
                 _state.value = _state.value.copy(isLoading = false)
             }

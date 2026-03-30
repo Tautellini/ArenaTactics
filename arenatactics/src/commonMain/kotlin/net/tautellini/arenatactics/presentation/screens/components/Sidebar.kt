@@ -55,9 +55,9 @@ fun Sidebar(
         // ── Brand ──
         SidebarBrand(onClick = onGoHome)
 
-        // ── Expansion ──
+        // ── Expansion (only show addons with data) ──
         SectionLabel("Expansion")
-        state.addons.forEach { addon ->
+        state.addons.filter { it.hasData }.forEach { addon ->
             val isActive = state.selectedAddonId == addon.id
             val accentColor = try {
                 val hex = addon.accentColor.removePrefix("#")
