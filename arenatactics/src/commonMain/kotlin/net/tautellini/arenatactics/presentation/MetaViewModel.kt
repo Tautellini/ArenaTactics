@@ -70,30 +70,11 @@ class MetaViewModel(
                 val classes = compositionRepository.getClasses(addon.classPoolId)
                 val classMap = classes.associateBy { it.id }
 
-                // Determine which specs have data — try the first available
-                // snapshot only (not all 6) to keep the initial load fast
-                val specsWithData = mutableSetOf<String>()
-                val indices = ladderRepository.getIndex(addonId)
-                for (idx in indices) {
-                    try {
-                        val snapshot = ladderRepository.getSnapshot(addonId, idx.region, idx.bracket)
-                        if (snapshot.specDistribution.isNotEmpty()) {
-                            snapshot.specDistribution.forEach { specsWithData.add(it.specId) }
-                        } else {
-                            snapshot.topEntries.forEach { entry ->
-                                entry.specId?.let { specsWithData.add(it) }
-                            }
-                        }
-                        // One snapshot is enough to know which specs exist
-                        if (specsWithData.isNotEmpty()) break
-                    } catch (_: Throwable) {}
-                }
-
-                // If no ladder data at all, assume all specs have data
-                // (SpecMeta might still exist from the import)
-                if (specsWithData.isEmpty()) {
-                    specs.forEach { specsWithData.add(it.id) }
-                }
+                // All specs are potentially available — SpecMeta data is
+                // precomputed and stored independently of ladder snapshots.
+                // Mark all specs as having data; clicking one will attempt
+                // to load its SpecMeta and gracefully show empty if missing.
+                val specsWithData = specs.map { it.id }.toSet()
 
                 MetaState.Success(specs, classMap, specsWithData)
             } catch (e: Throwable) {

@@ -76,18 +76,23 @@ fun App() {
         onDispose { registerPopCallback { _ -> } }
     }
 
-    // Deep-link initialization
-    LaunchedEffect(Unit) {
-        val initialScreen = Screen.fromPath(getInitialPath())
-        if (initialScreen !is Screen.Dashboard) {
-            Screen.buildStack(initialScreen).drop(1).forEach { screen ->
-                navController.navigate(screen)
+    val currentBackStackEntry by navController.currentBackStackEntryAsState()
+    val currentScreen = currentBackStackEntry?.toScreen() ?: Screen.Dashboard
+
+    // Deep-link initialization — runs once the NavHost graph is available
+    // (currentBackStackEntry becomes non-null after NavHost composes)
+    val deepLinkHandled = remember { booleanArrayOf(false) }
+    LaunchedEffect(currentBackStackEntry) {
+        if (!deepLinkHandled[0] && currentBackStackEntry != null) {
+            deepLinkHandled[0] = true
+            val initialScreen = Screen.fromPath(getInitialPath())
+            if (initialScreen !is Screen.Dashboard) {
+                Screen.buildStack(initialScreen).drop(1).forEach { screen ->
+                    navController.navigate(screen)
+                }
             }
         }
     }
-
-    val currentBackStackEntry by navController.currentBackStackEntryAsState()
-    val currentScreen = currentBackStackEntry?.toScreen() ?: Screen.Dashboard
 
     // Reactively sync sidebar state whenever the visible screen changes
     LaunchedEffect(currentScreen) {
