@@ -120,10 +120,10 @@ The admin key is stored in `secrets.properties` (gitignored) as `ADMIN_API_KEY`.
   colors (class colors, item quality colors, faction colors) which are universal constants.
 
 ## Wowhead / Zamimg Icons
-- Icons for specs, classes, items, and game modes are loaded from `wow.zamimg.com/images/wow/icons/{size}/{iconName}.jpg` via the `WowheadIcons` helper.
-- Sizes: `medium` (36px) and `large` (56px). Use `WowheadIcons.large(name)` for tile-sized images.
+- Icons for specs, classes, items, and game modes are loaded from Blizzard's official render CDN: `render.worldofwarcraft.com/us/icons/{size}/{iconName}.jpg` via the `WowheadIcons` helper.
+- Sizes: `36` (medium) and `56` (large). Use `WowheadIcons.large(name)` for tile-sized images.
 - Icon names follow WoW's internal naming (e.g., `classicon_rogue`, `ability_stealth`, `achievement_arena_2v2_7`).
-- To verify an icon exists: `curl -s -o /dev/null -w "%{http_code}" "https://wow.zamimg.com/images/wow/icons/large/{name}.jpg"` — 200 means it exists, 404 means it doesn't.
+- To verify an icon exists: `curl -s -o /dev/null -w "%{http_code}" "https://render.worldofwarcraft.com/us/icons/56/{name}.jpg"` — 200 means it exists, 404 means it doesn't.
 - Wowhead item tooltips can be integrated on the web target by loading `https://wow.zamimg.com/js/tooltips.js` and using `data-wowhead="item={wowheadId}"` attributes on anchor elements. This is **JS/Wasm web only** — desktop has no tooltip integration.
 - Addon tiles use custom "W" emblems with per-addon accent colors instead of Wowhead icons. Accent colors are defined in `addons.json` as hex strings.
 

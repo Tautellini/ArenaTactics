@@ -8,7 +8,7 @@ class WowheadIconsTest {
     @Test
     fun mediumUrlIsCorrect() {
         assertEquals(
-            "https://wow.zamimg.com/images/wow/icons/medium/ability_stealth.jpg",
+            "https://render.worldofwarcraft.com/us/icons/36/ability_stealth.jpg",
             WowheadIcons.medium("ability_stealth")
         )
     }
@@ -16,7 +16,7 @@ class WowheadIconsTest {
     @Test
     fun largeUrlIsCorrect() {
         assertEquals(
-            "https://wow.zamimg.com/images/wow/icons/large/ability_stealth.jpg",
+            "https://render.worldofwarcraft.com/us/icons/56/ability_stealth.jpg",
             WowheadIcons.large("ability_stealth")
         )
     }
