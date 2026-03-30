@@ -12,12 +12,18 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Leaderboard
+import androidx.compose.material.icons.rounded.Shield
+import androidx.compose.material.icons.rounded.Stars
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -72,21 +78,21 @@ fun Sidebar(
             val hasLadder = state.selectedAddonId in state.addonsWithLadder
 
             NavLink(
-                icon = "\u2694",
+                icon = Icons.Rounded.Shield,
                 label = "Tactics",
                 isActive = state.selectedSection == NavSection.TACTICS,
                 isDisabled = !hasTactics,
                 onClick = { onSelectSection(NavSection.TACTICS) }
             )
             NavLink(
-                icon = "\u2605",
+                icon = Icons.Rounded.Stars,
                 label = "Meta",
                 isActive = state.selectedSection == NavSection.META,
                 isDisabled = !hasMeta,
                 onClick = { onSelectSection(NavSection.META) }
             )
             NavLink(
-                icon = "\u25B2",
+                icon = Icons.Rounded.Leaderboard,
                 label = "Ladder",
                 isActive = state.selectedSection == NavSection.LADDER,
                 isDisabled = !hasLadder,
@@ -99,11 +105,10 @@ fun Sidebar(
                 SectionLabel("Bracket")
                 state.gameModes.forEach { mode ->
                     NavLink(
-                        icon = "${mode.teamSize}v${mode.teamSize}",
+                        textIcon = "${mode.teamSize}v${mode.teamSize}",
                         label = "Arena ${mode.teamSize}v${mode.teamSize}",
                         isActive = state.selectedGameModeId == mode.id,
                         isDisabled = !mode.hasData,
-                        iconIsText = true,
                         onClick = { onSelectBracket(mode.id) }
                     )
                 }
@@ -252,11 +257,11 @@ private fun AddonItem(
 
 @Composable
 private fun NavLink(
-    icon: String,
+    icon: ImageVector? = null,
+    textIcon: String? = null,
     label: String,
     isActive: Boolean,
     isDisabled: Boolean,
-    iconIsText: Boolean = false,
     onClick: () -> Unit
 ) {
     val interactionSource = remember { MutableInteractionSource() }
@@ -268,6 +273,12 @@ private fun NavLink(
             else -> Color.Transparent
         }, tween(150)
     )
+
+    val iconColor = when {
+        isDisabled -> TextDim
+        isActive -> Primary
+        else -> TextMuted
+    }
 
     Row(
         modifier = Modifier
@@ -292,17 +303,24 @@ private fun NavLink(
             )
         }
 
-        Text(
-            icon,
-            fontSize = if (iconIsText) 11.sp else 14.sp,
-            fontWeight = if (iconIsText) FontWeight.Bold else FontWeight.Normal,
-            color = when {
-                isDisabled -> TextDim
-                isActive -> Primary
-                else -> TextMuted
-            },
-            modifier = Modifier.width(20.dp)
-        )
+        // Icon (either Material icon or text)
+        Box(modifier = Modifier.width(20.dp), contentAlignment = Alignment.Center) {
+            if (icon != null) {
+                Icon(
+                    icon,
+                    contentDescription = label,
+                    tint = iconColor,
+                    modifier = Modifier.size(18.dp)
+                )
+            } else if (textIcon != null) {
+                Text(
+                    textIcon,
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = iconColor
+                )
+            }
+        }
 
         Text(
             label,
