@@ -22,3 +22,6 @@ expect fun getInitialPath(): String
 
 /** Returns the current URL pathname (called from popstate callback). Returns "/" on JVM. */
 expect fun getCurrentPath(): String
+
+/** Returns current URL query parameters as a map. Empty map on JVM. */
+expect fun getQueryParams(): Map<String, String>

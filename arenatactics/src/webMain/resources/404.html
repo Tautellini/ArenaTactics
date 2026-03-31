@@ -6,12 +6,13 @@
   <script>
     // SPA deep-link redirect for GitHub Pages.
     // Strips the repo base (/ArenaTactics) from the path, stores the route
-    // in sessionStorage, then redirects to the app root.
+    // (including query string) in sessionStorage, then redirects to the app root.
     // index.html reads this and restores the URL before the app boots.
     var base = '/ArenaTactics';
     var route = window.location.pathname.replace(base, '') || '/';
-    if (route !== '/') {
-      sessionStorage.setItem('spa-route', route);
+    var query = window.location.search || '';
+    if (route !== '/' || query) {
+      sessionStorage.setItem('spa-route', route + query);
     }
     window.location.replace(base + '/');
   </script>

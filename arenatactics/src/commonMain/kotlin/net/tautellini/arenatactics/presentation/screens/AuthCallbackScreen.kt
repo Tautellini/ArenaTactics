@@ -9,30 +9,18 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import net.tautellini.arenatactics.getCurrentPath
-import net.tautellini.arenatactics.navigation.Screen
+import net.tautellini.arenatactics.getQueryParams
 import net.tautellini.arenatactics.presentation.AuthViewModel
 import net.tautellini.arenatactics.presentation.theme.Background
 import net.tautellini.arenatactics.presentation.theme.Primary
 
-/**
- * Handles the OAuth redirect callback. Parses token and refreshToken
- * from the URL query parameters, stores them, and navigates to dashboard.
- */
 @Composable
 fun AuthCallbackScreen(
     authViewModel: AuthViewModel,
     onNavigateHome: () -> Unit
 ) {
     LaunchedEffect(Unit) {
-        // Parse tokens from URL query string
-        val path = getCurrentPath()
-        val queryString = path.substringAfter("?", "")
-        val params = queryString.split("&").associate {
-            val (key, value) = it.split("=", limit = 2)
-            key to value
-        }
-
+        val params = getQueryParams()
         val token = params["token"]
         val refresh = params["refresh"]
 
@@ -40,11 +28,9 @@ fun AuthCallbackScreen(
             authViewModel.handleCallback(token, refresh)
         }
 
-        // Navigate to dashboard regardless
         onNavigateHome()
     }
 
-    // Show loading while processing
     Box(
         Modifier.fillMaxSize().background(Background),
         contentAlignment = Alignment.Center

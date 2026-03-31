@@ -5,3 +5,4 @@ actual fun pushNavigationState(path: String) {}
 actual fun registerPopCallback(callback: (isBack: Boolean) -> Unit) {}
 actual fun getInitialPath(): String = "/"
 actual fun getCurrentPath(): String = "/"
+actual fun getQueryParams(): Map<String, String> = emptyMap()

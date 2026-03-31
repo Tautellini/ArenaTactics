@@ -51,6 +51,15 @@ actual fun registerPopCallback(callback: (isBack: Boolean) -> Unit) {
 actual fun getInitialPath(): String = window.location.pathname.removeAppBase()
 actual fun getCurrentPath(): String = window.location.pathname.removeAppBase()
 
+actual fun getQueryParams(): Map<String, String> {
+    val search = window.location.search
+    if (search.isNullOrBlank() || search == "?") return emptyMap()
+    return search.removePrefix("?").split("&").mapNotNull { param ->
+        val parts = param.split("=", limit = 2)
+        if (parts.size == 2) parts[0] to parts[1] else null
+    }.toMap()
+}
+
 private fun String.removeAppBase(): String {
     val base = getAppBase()
     return if (base.isNotEmpty()) removePrefix(base) else this
