@@ -31,7 +31,8 @@ actual class AuthService actual constructor() {
     }
 
     actual fun startOAuthFlow(provider: OAuthProvider) {
-        val redirectUri = "${window.location.origin}/auth/callback"
+        val appBase = js("window.__appBase || ''") as String
+        val redirectUri = "${window.location.origin}$appBase/auth/callback"
         val encoded = js("encodeURIComponent")(redirectUri) as String
         val backendUrl = "${ApiConfig.BASE_URL}/auth/oauth/${provider.id}/start?redirect_uri=$encoded"
         window.location.href = backendUrl

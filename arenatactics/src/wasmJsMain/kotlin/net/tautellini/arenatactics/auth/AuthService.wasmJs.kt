@@ -46,6 +46,10 @@ private external fun getJwtSub(token: String): String
 @JsFun("() => window.location.origin")
 private external fun getOrigin(): String
 
+@OptIn(ExperimentalWasmJsInterop::class)
+@JsFun("() => window.__appBase || ''")
+private external fun getAppBase(): String
+
 private const val KEY_TOKEN = "at_token"
 private const val KEY_REFRESH = "at_refresh"
 
@@ -66,7 +70,8 @@ actual class AuthService actual constructor() {
 
     actual fun startOAuthFlow(provider: OAuthProvider) {
         val origin = getOrigin()
-        val redirectUri = "$origin/auth/callback"
+        val appBase = getAppBase()
+        val redirectUri = "$origin$appBase/auth/callback"
         val backendUrl = "${ApiConfig.BASE_URL}/auth/oauth/${provider.id}/start?redirect_uri=${encodeUri(redirectUri)}"
         navigateTo(backendUrl)
     }
