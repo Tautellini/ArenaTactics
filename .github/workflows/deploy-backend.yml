@@ -65,4 +65,4 @@ jobs:
             --memory 512Mi \
             --min-instances 0 \
             --max-instances 3 \
-            --set-env-vars "ADMIN_API_KEY=${{ secrets.ADMIN_API_KEY }}"
+            --set-env-vars "ADMIN_API_KEY=${{ secrets.ADMIN_API_KEY }},JWT_SECRET=${{ secrets.JWT_SECRET }},GOOGLE_OAUTH_CLIENT_ID=${{ secrets.GOOGLE_OAUTH_CLIENT_ID }},GOOGLE_OAUTH_CLIENT_SECRET=${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}"
