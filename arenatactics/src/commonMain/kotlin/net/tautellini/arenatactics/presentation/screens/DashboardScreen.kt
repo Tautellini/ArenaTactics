@@ -55,22 +55,8 @@ fun DashboardScreen(
         verticalArrangement = Arrangement.spacedBy(14.dp),
         horizontalArrangement = Arrangement.spacedBy(14.dp)
     ) {
-        // ── Greeting or Personalization CTA ──
-        if (authState is AuthState.Authenticated) {
-            item {
-                val firstName = authState.name?.split(" ")?.firstOrNull() ?: "Champion"
-                val cinzelFont = cinzel()
-                Text(
-                    "Hello, $firstName",
-                    fontFamily = cinzelFont,
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 20.sp,
-                    letterSpacing = 1.sp,
-                    color = TextHero,
-                    modifier = Modifier.padding(bottom = 4.dp)
-                )
-            }
-        } else {
+        // ── Personalization CTA (when not logged in) ──
+        if (authState !is AuthState.Authenticated) {
             item {
                 PersonalizationCard(onSignIn = onSignIn)
             }
