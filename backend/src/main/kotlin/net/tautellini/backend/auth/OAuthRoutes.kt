@@ -24,7 +24,7 @@ private data class StateData(
     val createdAt: Long = System.currentTimeMillis()
 )
 
-private val httpClient = HttpClient {
+private val httpClient = HttpClient(io.ktor.client.engine.java.Java) {
     install(ContentNegotiation) {
         json(Json { ignoreUnknownKeys = true })
     }
@@ -120,9 +120,20 @@ fun Route.oauthRoutes(jwtService: JwtService, userService: UserService) {
                 }
 
                 // Fetch user profile
-                val profileData: Map<String, Any?> = httpClient.get(provider.profileUrl) {
+                val profileJson: kotlinx.serialization.json.JsonObject = httpClient.get(provider.profileUrl) {
                     headers { append(HttpHeaders.Authorization, "Bearer $accessToken") }
                 }.body()
+
+                // Convert JsonObject to Map<String, Any?> for the profile parser
+                val profileData = profileJson.entries.associate { (k, v) ->
+                    k to when (v) {
+                        is kotlinx.serialization.json.JsonPrimitive -> {
+                            if (v.isString) v.content
+                            else v.content.toBooleanStrictOrNull() ?: v.content.toLongOrNull() ?: v.content
+                        }
+                        else -> v.toString()
+                    }
+                }
 
                 val profile = provider.parseProfile(profileData)
 
@@ -145,8 +156,11 @@ fun Route.oauthRoutes(jwtService: JwtService, userService: UserService) {
                 val separator = if ("?" in stateData.redirectUri) "&" else "?"
                 call.respondRedirect("${stateData.redirectUri}${separator}token=$jwt&refresh=$refreshToken")
             } catch (e: Exception) {
-                call.application.environment.log.error("OAuth callback error", e)
-                call.respond(HttpStatusCode.InternalServerError, mapOf("error" to "Authentication failed"))
+                call.application.environment.log.error("OAuth callback error for $providerName", e)
+                call.respond(HttpStatusCode.InternalServerError, mapOf(
+                    "error" to "Authentication failed",
+                    "detail" to (e.message ?: e.toString())
+                ))
             }
         }
     }
