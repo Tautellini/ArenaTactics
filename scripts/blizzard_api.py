@@ -15,7 +15,6 @@ from pathlib import Path
 import time
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-OUTPUT_BASE = REPO_ROOT / "composeApp" / "src" / "commonMain" / "composeResources" / "files" / "ladder"
 SECRETS_FILE = REPO_ROOT / "secrets.properties"
 
 OAUTH_HOST = "https://oauth.battle.net"
