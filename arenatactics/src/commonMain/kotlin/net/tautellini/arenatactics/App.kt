@@ -181,7 +181,9 @@ fun App() {
                         composable<Screen.Dashboard> {
                             DashboardScreen(
                                 viewModel = dashboardViewModel,
-                                selectedAddonId = navState.selectedAddonId
+                                selectedAddonId = navState.selectedAddonId,
+                                authState = authState,
+                                onSignIn = { provider -> authViewModel.signIn(provider) }
                             )
                         }
                         composable<Screen.CompositionSelection> { entry ->

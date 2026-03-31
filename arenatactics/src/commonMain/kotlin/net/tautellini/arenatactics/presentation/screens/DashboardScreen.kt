@@ -2,22 +2,27 @@ package net.tautellini.arenatactics.presentation.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Dashboard
+import androidx.compose.material.icons.rounded.PersonAdd
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import net.tautellini.arenatactics.presentation.DashboardData
+import net.tautellini.arenatactics.auth.AuthState
+import net.tautellini.arenatactics.auth.OAuthProvider
 import net.tautellini.arenatactics.presentation.DashboardViewModel
 import net.tautellini.arenatactics.presentation.theme.*
 import net.tautellini.models.arenatactics.*
@@ -25,7 +30,9 @@ import net.tautellini.models.arenatactics.*
 @Composable
 fun DashboardScreen(
     viewModel: DashboardViewModel,
-    selectedAddonId: String?
+    selectedAddonId: String?,
+    authState: AuthState,
+    onSignIn: (OAuthProvider) -> Unit
 ) {
     val data by viewModel.data.collectAsState()
 
@@ -48,7 +55,14 @@ fun DashboardScreen(
         verticalArrangement = Arrangement.spacedBy(14.dp),
         horizontalArrangement = Arrangement.spacedBy(14.dp)
     ) {
-        // ── Ladder Overview ──
+        // ── Personalization CTA (when not logged in) ──
+        if (authState !is AuthState.Authenticated) {
+            item {
+                PersonalizationCard(onSignIn = onSignIn)
+            }
+        }
+
+        // ── Default data cards ──
         item {
             DashCard(title = "LADDER OVERVIEW", badge = "All Brackets") {
                 val snapshots = data.ladderSnapshots
@@ -71,7 +85,6 @@ fun DashboardScreen(
             }
         }
 
-        // ── Top Compositions ──
         item {
             DashCard(title = "TOP COMPOSITIONS", badge = "All Brackets") {
                 if (data.topCompositions.isEmpty()) {
@@ -86,7 +99,6 @@ fun DashboardScreen(
             }
         }
 
-        // ── Class Distribution ──
         item {
             DashCard(title = "CLASS DISTRIBUTION", badge = "All Brackets") {
                 if (data.classDistribution.isEmpty()) {
@@ -101,7 +113,6 @@ fun DashboardScreen(
             }
         }
 
-        // ── Top Players ──
         item {
             DashCard(title = "TOP PLAYERS", badge = "All Brackets") {
                 if (data.topPlayers.isEmpty()) {
@@ -119,7 +130,69 @@ fun DashboardScreen(
 }
 
 @Composable
-private fun DashCard(
+private fun PersonalizationCard(onSignIn: (OAuthProvider) -> Unit) {
+    val cinzelFont = cinzel()
+    val shape = RoundedCornerShape(14.dp)
+    Column(
+        modifier = Modifier
+            .clip(shape)
+            .background(CardColor)
+            .border(1.dp, Primary.copy(alpha = 0.15f), shape)
+            .padding(24.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(12.dp)
+    ) {
+        Icon(
+            Icons.Rounded.Dashboard,
+            contentDescription = null,
+            tint = Primary.copy(alpha = 0.6f),
+            modifier = Modifier.size(32.dp)
+        )
+        Text(
+            "Your Personal Dashboard",
+            fontFamily = cinzelFont,
+            fontWeight = FontWeight.Bold,
+            fontSize = 14.sp,
+            letterSpacing = 2.sp,
+            color = TextHero,
+            textAlign = TextAlign.Center
+        )
+        Text(
+            "Sign in to customize this dashboard with cards from any expansion, bracket, or spec. Pin gear guides, ladder stats, composition tiers — all in one place.",
+            fontSize = 12.sp,
+            color = TextSecondary,
+            textAlign = TextAlign.Center,
+            lineHeight = 18.sp
+        )
+        Spacer(Modifier.height(4.dp))
+        Row(
+            modifier = Modifier
+                .clip(RoundedCornerShape(8.dp))
+                .background(Primary.copy(alpha = 0.12f))
+                .border(1.dp, Primary.copy(alpha = 0.25f), RoundedCornerShape(8.dp))
+                .clickable { onSignIn(OAuthProvider.GOOGLE) }
+                .padding(horizontal = 16.dp, vertical = 10.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            Icon(
+                Icons.Rounded.PersonAdd,
+                contentDescription = null,
+                tint = Primary,
+                modifier = Modifier.size(16.dp)
+            )
+            Text(
+                "Sign in with Google",
+                fontSize = 12.sp,
+                fontWeight = FontWeight.SemiBold,
+                color = Primary
+            )
+        }
+    }
+}
+
+@Composable
+internal fun DashCard(
     title: String,
     badge: String? = null,
     content: @Composable ColumnScope.() -> Unit
@@ -132,7 +205,6 @@ private fun DashCard(
             .background(CardColor)
             .border(1.dp, CardBorder, shape)
     ) {
-        // Header
         Row(
             modifier = Modifier.fillMaxWidth().padding(14.dp, 12.dp),
             horizontalArrangement = Arrangement.SpaceBetween,
@@ -161,7 +233,6 @@ private fun DashCard(
             }
         }
         Box(Modifier.fillMaxWidth().height(1.dp).background(CardBorder))
-        // Body
         Column(
             modifier = Modifier.padding(14.dp, 12.dp),
             content = content
@@ -197,10 +268,8 @@ private fun FeaturedCompRow(rich: RichComposition) {
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(8.dp)
     ) {
-        // Spec badges
         Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
             rich.classes.forEachIndexed { i, wowClass ->
-                val spec = rich.specs[i]
                 Box(
                     Modifier
                         .size(30.dp)
@@ -217,7 +286,6 @@ private fun FeaturedCompRow(rich: RichComposition) {
                 }
             }
         }
-        // Comp name
         Text(
             rich.specs.joinToString(" / ") { it.name },
             fontSize = 12.sp,
@@ -225,7 +293,6 @@ private fun FeaturedCompRow(rich: RichComposition) {
             color = TextSecondary,
             modifier = Modifier.weight(1f)
         )
-        // Tier
         val tierLabel = when (rich.composition.tier) {
             CompositionTier.DOMINANT -> "S+"
             CompositionTier.STRONG -> "A"
@@ -282,7 +349,7 @@ private fun MiniDistRow(entry: ClassDistributionEntry) {
                 .clip(RoundedCornerShape(3.dp))
                 .background(BgAbyss)
         ) {
-            val maxPct = 20.0 // scale bars relative to ~20% max
+            val maxPct = 20.0
             Box(
                 Modifier
                     .fillMaxHeight()
