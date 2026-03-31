@@ -7,12 +7,23 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import net.tautellini.backend.arenatactics.routes.*
 import net.tautellini.backend.arenatactics.services.FirestoreService
+import net.tautellini.backend.auth.JwtService
+import net.tautellini.backend.auth.UserService
+import net.tautellini.backend.auth.oauthRoutes
+import net.tautellini.backend.auth.userRoutes
 
-fun Application.configureRouting(firestoreService: FirestoreService) {
+fun Application.configureRouting(
+    firestoreService: FirestoreService,
+    jwtService: JwtService,
+    userService: UserService
+) {
     routing {
         get("/health") {
             call.respond(HttpStatusCode.OK, mapOf("status" to "ok"))
         }
+
+        // OAuth routes (public, no rate limit — has its own CSRF protection)
+        oauthRoutes(jwtService, userService)
 
         rateLimit(RateLimitName("api")) {
             route("/api/v1") {
@@ -30,6 +41,9 @@ fun Application.configureRouting(firestoreService: FirestoreService) {
                     ladderRoutes(firestoreService)
                     specMetaRoutes(firestoreService)
                 }
+
+                // User routes (JWT authenticated)
+                userRoutes(jwtService, userService)
             }
         }
 
