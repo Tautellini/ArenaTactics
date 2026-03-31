@@ -7,17 +7,17 @@ import kotlin.time.Duration.Companion.seconds
 
 fun Application.configureRateLimiting() {
     install(RateLimit) {
-        // Default rate limit for API routes: 60 requests per minute per IP
+        // Default rate limit for API routes: 300 requests per minute per IP
         register(RateLimitName("api")) {
-            rateLimiter(limit = 60, refillPeriod = 1.minutes)
+            rateLimiter(limit = 300, refillPeriod = 1.minutes)
             requestKey { call ->
                 call.request.local.remoteAddress
             }
         }
 
-        // Stricter limit for write operations: 10 requests per minute per IP
+        // Stricter limit for write operations: 30 requests per minute per IP
         register(RateLimitName("write")) {
-            rateLimiter(limit = 10, refillPeriod = 1.minutes)
+            rateLimiter(limit = 30, refillPeriod = 1.minutes)
             requestKey { call ->
                 call.request.local.remoteAddress
             }
