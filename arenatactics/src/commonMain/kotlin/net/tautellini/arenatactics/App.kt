@@ -16,6 +16,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
+import net.tautellini.arenatactics.auth.AuthService
 import net.tautellini.arenatactics.data.api.ArenaApi
 import net.tautellini.arenatactics.data.repository.*
 import net.tautellini.arenatactics.navigation.Screen
@@ -39,6 +40,8 @@ fun App() {
     val ladderRepository = remember { LadderRepository(api) }
     val talentTreeRepository = remember { TalentTreeRepository() }
 
+    val authService = remember { AuthService() }
+    val authViewModel = remember { AuthViewModel(authService) }
     val navigationViewModel = remember { NavigationViewModel(addonRepository, gameModeRepository, ladderRepository) }
     val dashboardViewModel = remember { DashboardViewModel(addonRepository, gameModeRepository, compositionRepository, ladderRepository) }
     val navController = rememberNavController()
@@ -99,6 +102,7 @@ fun App() {
         navigationViewModel.syncFromScreen(currentScreen)
     }
     val navState by navigationViewModel.state.collectAsState()
+    val authState by authViewModel.authState.collectAsState()
 
     ArenaTacticsTheme {
         BoxWithConstraints(Modifier.fillMaxSize().background(BgVoid)) {
@@ -109,6 +113,7 @@ fun App() {
                 if (!isCompact) {
                     Sidebar(
                         state = navState,
+                        authState = authState,
                         onSelectAddon = { addonId ->
                             navigationViewModel.selectAddon(addonId)
                             navController.navigate(Screen.Dashboard) {
@@ -142,7 +147,9 @@ fun App() {
                             navController.navigate(Screen.Dashboard) {
                                 popUpTo<Screen.Dashboard> { inclusive = true }
                             }
-                        }
+                        },
+                        onSignIn = { provider -> authViewModel.signIn(provider) },
+                        onSignOut = { authViewModel.signOut() }
                     )
                 }
 
@@ -256,6 +263,16 @@ fun App() {
                             }
                             PlayerDetailScreen(viewModel = vm)
                         }
+                        composable<Screen.AuthCallback> {
+                            AuthCallbackScreen(
+                                authViewModel = authViewModel,
+                                onNavigateHome = {
+                                    navController.navigate(Screen.Dashboard) {
+                                        popUpTo<Screen.Dashboard> { inclusive = true }
+                                    }
+                                }
+                            )
+                        }
                     }
                 }
             }
@@ -265,6 +282,7 @@ fun App() {
                 Row(Modifier.fillMaxSize()) {
                     Sidebar(
                         state = navState,
+                        authState = authState,
                         onSelectAddon = { addonId ->
                             navigationViewModel.selectAddon(addonId)
                             navigationViewModel.closeDrawer()
@@ -302,7 +320,9 @@ fun App() {
                             navController.navigate(Screen.Dashboard) {
                                 popUpTo<Screen.Dashboard> { inclusive = true }
                             }
-                        }
+                        },
+                        onSignIn = { provider -> authViewModel.signIn(provider) },
+                        onSignOut = { authViewModel.signOut() }
                     )
                     // Scrim
                     Box(

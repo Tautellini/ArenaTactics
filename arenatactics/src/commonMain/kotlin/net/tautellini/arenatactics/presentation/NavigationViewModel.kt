@@ -167,6 +167,7 @@ class NavigationViewModel(
                     selectedGameModeId = null
                 )
             }
+            is Screen.AuthCallback -> {} // No sidebar state change for auth callback
         }
     }
 

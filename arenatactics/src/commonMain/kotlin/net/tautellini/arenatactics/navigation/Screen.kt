@@ -15,6 +15,7 @@ sealed class Screen {
     @Serializable data class SpecGuide(val addonId: String, val classId: String, val specId: String) : Screen()
     @Serializable data class Ladder(val addonId: String) : Screen()
     @Serializable data class PlayerDetail(val addonId: String, val region: String, val characterId: String) : Screen()
+    @Serializable data object AuthCallback : Screen()
 
     /**
      * Compact browser URL. Internal IDs are unchanged; only the URL is shortened.
@@ -35,11 +36,13 @@ sealed class Screen {
         is SpecGuide            -> "/$addonId/guides/$specId"
         is Ladder               -> "/$addonId/ladder"
         is PlayerDetail         -> "/$addonId/ladder/$region/$characterId"
+        is AuthCallback         -> "/auth/callback"
     }
 
     companion object {
         fun fromPath(pathname: String): Screen {
             val segs = pathname.trim('/').split('/').filter { it.isNotEmpty() }
+            if (segs.getOrNull(0) == "auth" && segs.getOrNull(1) == "callback") return AuthCallback
             val addonId = segs.getOrNull(0) ?: return Dashboard
             return when (val section = segs.getOrNull(1)) {
                 null      -> Dashboard
@@ -79,7 +82,7 @@ sealed class Screen {
             is SpecGuide            -> listOf(Dashboard, ClassGuideList(screen.addonId), screen)
             is Ladder               -> listOf(Dashboard, screen)
             is PlayerDetail         -> listOf(Dashboard, Ladder(screen.addonId), screen)
-
+            is AuthCallback         -> listOf(Dashboard, screen)
         }
     }
 }
@@ -113,7 +116,8 @@ fun NavBackStackEntry.toScreen(): Screen {
             .let { Screen.PlayerDetail(it.addonId, it.region, it.characterId) }
         "Ladder"               in route -> toRoute<Screen.Ladder>()
             .let { Screen.Ladder(it.addonId) }
-        else                            -> Screen.Dashboard // should not happen; all routes are registered above
+        "AuthCallback"         in route -> Screen.AuthCallback
+        else                            -> Screen.Dashboard
     }
 }
 

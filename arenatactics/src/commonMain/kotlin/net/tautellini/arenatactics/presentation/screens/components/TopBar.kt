@@ -147,5 +147,6 @@ private fun buildBreadcrumbs(screen: Screen): List<Pair<String, Screen?>> {
             "Ladder" to Screen.Ladder(screen.addonId),
             "Player" to null
         )
+        is Screen.AuthCallback -> listOf("Signing in..." to null)
     }
 }

@@ -32,6 +32,8 @@ import org.jetbrains.compose.resources.painterResource
 import tautellini.arenatactics.generated.resources.Res
 import tautellini.arenatactics.generated.resources.logo_at
 import androidx.compose.ui.unit.sp
+import net.tautellini.arenatactics.auth.AuthState
+import net.tautellini.arenatactics.auth.OAuthProvider
 import net.tautellini.arenatactics.presentation.NavSection
 import net.tautellini.arenatactics.presentation.NavigationState
 import net.tautellini.arenatactics.presentation.theme.*
@@ -39,10 +41,13 @@ import net.tautellini.arenatactics.presentation.theme.*
 @Composable
 fun Sidebar(
     state: NavigationState,
+    authState: AuthState,
     onSelectAddon: (String) -> Unit,
     onSelectSection: (NavSection) -> Unit,
     onSelectBracket: (String) -> Unit,
     onGoHome: () -> Unit,
+    onSignIn: (OAuthProvider) -> Unit,
+    onSignOut: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(
@@ -121,6 +126,68 @@ fun Sidebar(
         }
 
         Spacer(Modifier.weight(1f))
+
+        // ── Auth Section ──
+        SidebarDivider()
+        when (authState) {
+            is AuthState.Loading -> {}
+            is AuthState.NotAuthenticated -> {
+                Box(
+                    modifier = Modifier.fillMaxWidth().padding(12.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Column(
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.spacedBy(6.dp)
+                    ) {
+                        Text("Sign In", fontSize = 11.sp, color = TextSecondary, fontWeight = FontWeight.Medium)
+                        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            SignInButton("G", "Google") { onSignIn(OAuthProvider.GOOGLE) }
+                        }
+                    }
+                }
+            }
+            is AuthState.Authenticated -> {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(12.dp, 10.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(10.dp)
+                ) {
+                    // Avatar placeholder
+                    Box(
+                        modifier = Modifier
+                            .size(28.dp)
+                            .clip(RoundedCornerShape(14.dp))
+                            .background(Primary.copy(alpha = 0.2f)),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            (authState.name?.firstOrNull()?.uppercase() ?: "?"),
+                            fontSize = 11.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = Primary
+                        )
+                    }
+                    Column(modifier = Modifier.weight(1f)) {
+                        Text(
+                            authState.name ?: "User",
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Medium,
+                            color = TextPrimary,
+                            maxLines = 1
+                        )
+                        Text(
+                            "Sign Out",
+                            fontSize = 10.sp,
+                            color = TextMuted,
+                            modifier = Modifier.clickable { onSignOut() }
+                        )
+                    }
+                }
+            }
+        }
 
         // ── Footer ──
         Box(
@@ -380,4 +447,25 @@ private fun SidebarDivider() {
             .height(1.dp)
             .background(DividerColor)
     )
+}
+
+@Composable
+private fun SignInButton(letter: String, label: String, onClick: () -> Unit) {
+    val interactionSource = remember { MutableInteractionSource() }
+    val isHovered by interactionSource.collectIsHoveredAsState()
+
+    Row(
+        modifier = Modifier
+            .clip(RoundedCornerShape(8.dp))
+            .background(if (isHovered) CardHover else CardColor)
+            .border(1.dp, if (isHovered) CardBorderHover else CardBorder, RoundedCornerShape(8.dp))
+            .hoverable(interactionSource)
+            .clickable(onClick = onClick)
+            .padding(horizontal = 12.dp, vertical = 7.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(6.dp)
+    ) {
+        Text(letter, fontSize = 12.sp, fontWeight = FontWeight.Bold, color = TextPrimary)
+        Text(label, fontSize = 11.sp, color = TextSecondary)
+    }
 }
