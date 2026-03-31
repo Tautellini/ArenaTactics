@@ -35,31 +35,7 @@ fun DashboardScreen(
         }
     }
 
-    if (selectedAddonId == null) {
-        // No addon selected — show prompt
-        Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            val cinzelFont = cinzel()
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(
-                    "Select an expansion",
-                    fontFamily = cinzelFont,
-                    fontWeight = FontWeight.SemiBold,
-                    fontSize = 16.sp,
-                    letterSpacing = 3.sp,
-                    color = TextMuted
-                )
-                Spacer(Modifier.height(8.dp))
-                Text(
-                    "Choose from the sidebar to get started",
-                    fontSize = 12.sp,
-                    color = TextDim
-                )
-            }
-        }
-        return
-    }
-
-    if (data.isLoading) {
+    if (selectedAddonId == null || data.isLoading) {
         Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             CircularProgressIndicator(color = Primary, strokeWidth = 2.dp)
         }
