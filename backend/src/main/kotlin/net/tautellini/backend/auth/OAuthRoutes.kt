@@ -16,6 +16,7 @@ import java.util.concurrent.ConcurrentHashMap
 
 private val stateStore = ConcurrentHashMap<String, StateData>()
 private val random = SecureRandom()
+private val BACKEND_PUBLIC_URL = System.getenv("BACKEND_PUBLIC_URL") ?: "https://backend-532845578761.europe-west3.run.app"
 
 private data class StateData(
     val redirectUri: String,
@@ -63,7 +64,7 @@ fun Route.oauthRoutes(jwtService: JwtService, userService: UserService) {
             stateStore.entries.removeIf { it.value.createdAt < cutoff }
 
             // Build authorization URL
-            val backendCallbackUrl = "${call.request.local.scheme}://${call.request.local.serverHost}:${call.request.local.serverPort}/auth/oauth/$providerName/callback"
+            val backendCallbackUrl = "$BACKEND_PUBLIC_URL/auth/oauth/$providerName/callback"
             val authUrl = URLBuilder(provider.authUrl).apply {
                 parameters.append("client_id", provider.clientId)
                 parameters.append("redirect_uri", backendCallbackUrl)
@@ -97,7 +98,7 @@ fun Route.oauthRoutes(jwtService: JwtService, userService: UserService) {
                 return@get
             }
 
-            val backendCallbackUrl = "${call.request.local.scheme}://${call.request.local.serverHost}:${call.request.local.serverPort}/auth/oauth/$providerName/callback"
+            val backendCallbackUrl = "$BACKEND_PUBLIC_URL/auth/oauth/$providerName/callback"
 
             try {
                 // Exchange code for tokens
